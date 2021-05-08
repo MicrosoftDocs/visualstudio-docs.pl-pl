@@ -1,0 +1,95 @@
+### YamlMime:FAQ
+metadata:
+  title: Często zadawane pytania — znajdowanie funkcji debugowania
+  description: Często zadawane pytania, które ułatwiają zidentyfikowanie funkcji debugera, która pomoże w debugowaniu aplikacji
+  ms.custom: ''
+  ms.date: 10/01/2019
+  ms.topic: conceptual
+  helpviewer_keywords:
+  - debugging [Visual Studio], find your feature
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jmartens
+  ms.workload:
+  - multiple
+  ms.openlocfilehash: be2f8aa5e625015aec444a76d71433d02da578df
+  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 05/06/2021
+  ms.locfileid: "108800371"
+title: Często zadawane pytania — znajdowanie funkcji debugowania potrzebnej w Visual Studio
+summary: >
+  Jeśli potrzebujesz pomocy w zamapowania zadania debugowania na właściwą funkcję odpowiedniego debugera Visual Studio, użyj linków podanych w tym artykule. Lista zadań w tym miejscu zawiera typowe zadania, takie jak wstydowanie kodu do debugowania, sprawdzanie zmiennych i wysyłanie komunikatów do **okna Dane** wyjściowe. Jeśli potrzebujesz przeglądu funkcji debugera, zobacz [Najpierw przyjrzyj się debugerowi.](debugger-feature-tour.md)
+sections:
+- name: Ignorowane
+  questions:
+  - question: >
+      Naprawianie wyjątku
+    answer: >
+      - Zobacz [Naprawianie wyjątku](write-better-code-with-visual-studio.md#fix-an-exception).
+  - question: >
+      Wstrzymywanie uruchomionego kodu
+    answer: "- **Wstrzymywanie uruchamiania kodu w celu sprawdzenia wiersza kodu, który może zawierać usterkę**\n\n  Ustaw punkt przerwania. Aby uzyskać więcej informacji, zobacz [Using breakpoints (Używanie punktów przerwania).](using-breakpoints.md)\n\n- **Wstrzymywanie i sprawdzanie aplikacji po osiągnięciu określonego stanu**\n\n  Wypróbuj warunkowy punkt przerwania, aby kontrolować, gdzie i kiedy punkt przerwania zostanie aktywowany przy użyciu logiki warunkowej. Aby uzyskać więcej informacji, zobacz [Warunki punktu przerwania](using-breakpoints.md#breakpoint-conditions).\n\n- **Wstrzymywanie kodu tylko wtedy, gdy zmienia się właściwość lub wartość określonego obiektu**\n\n  Dla języka C++ ustaw punkt [przerwania danych](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). \n  ::: moniker range=\">= vs-2019\"\n  W przypadku aplikacji korzystających z programu .NET Core 3 można również ustawić [punkt przerwania danych.](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)\n  ::: moniker-end\n\n  W przeciwnym razie tylko w przypadku języka C# i F# można śledzić identyfikator obiektu [z warunkowym punktem przerwania](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).\n\n- **Wstrzymywanie kodu wewnątrz pętli w określonej iteracji**\n\n  Ustaw punkt przerwania przy użyciu **liczby trafień** jako warunku. Aby uzyskać więcej informacji, zobacz [Liczba trafień](using-breakpoints.md#set-a-hit-count-condition).\n\n- **Wstrzymywanie kodu na początku funkcji, gdy znasz nazwę funkcji, ale nie jej lokalizację**\n\n  Można to zrobić za pomocą punktu przerwania funkcji. Aby uzyskać więcej informacji, zobacz [Set function breakpoints (Ustawianie punktów przerwania funkcji).](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)\n\n- **Wstrzymywanie kodu na początku wielu funkcji o tej samej nazwie**\n\n  Jeśli masz wiele funkcji o tej samej nazwie (przeciążone funkcje lub funkcje w różnych projektach), możesz użyć [punktu przerwania funkcji](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).\n\n- **Śledzenie punktów przerwania i zarządzanie nimi**\n\n  Użyj **okna Punkty przerwania.** Aby uzyskać więcej informacji, zobacz [Zarządzanie punktami przerwania.](using-breakpoints.md#BKMK_Specify_advanced_properties_of_a_breakpoint_)\n\n- **Wstrzymywanie kodu i debugowanie po wyrzuceniu określonego obsługiwanego lub nieobsługiwanego wyjątku**\n\n  Mimo że Pomocnik wyjątków pokazuje, gdzie wystąpił błąd, jeśli chcesz wstrzymać i debugować określony błąd, możesz poinformować debuger, aby przerywał działania po [wyrzuceniu wyjątku](managing-exceptions-with-the-debugger.md#tell-the-debugger-to-break-when-an-exception-is-thrown).\n\n- **Ustawianie punktu przerwania ze stosu wywołań**\n\n  Jeśli chcesz wstrzymać i debugować kod podczas badania  przepływu wykonywania lub przeglądania funkcji w oknach stosu wywołań, zobacz Ustawianie punktu przerwania [w oknie stosu wywołań](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).\n\n- **Wstrzymywanie kodu dla określonej instrukcji zestawu**\n\n  Można to zrobić, [ustawiając punkt przerwania w oknie Dezmisja.](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows)\n"
+  - question: >
+      Wykonywanie kodu
+    answer: >
+      - **Poznasz polecenia umożliwiające krokowe przechodzinie przez kod podczas debugowania**
+
+        Aby uzyskać więcej informacji, zobacz [Navigate code with the debugger (Nawigowanie po kodzie za pomocą debugera).](navigating-through-code-with-the-debugger.md)
+  - question: >
+      Sprawdzanie danych
+    answer: >
+      - **Sprawdzanie wartości zmiennych podczas uruchamiania aplikacji**
+
+        Umieść kursor na zmiennych przy [użyciu porad dotyczących danych](view-data-values-in-data-tips-in-the-code-editor.md) lub sprawdź zmienne w oknie Wartości automatyczne i zmienne [lokalne.](autos-and-locals-windows.md)
+
+      - **Obserwowanie zmieniającej się wartości określonej zmiennej**
+
+        Ustaw zegarek na zmiennej . Aby uzyskać więcej informacji, zobacz [Ustawianie zegarka dla zmiennych](watch-and-quickwatch-windows.md).
+
+      - **Wyświetlanie ciągów, które są zbyt długie dla okna debugera**
+
+        Otwórz wbudowany wizualizator [ciągów](view-strings-visualizer.md) podczas debugowania.
+  - question: >
+      Debugowanie aplikacji, która jest już uruchomiona
+    answer: >
+      - Zobacz [Dołączanie do uruchomionych procesów.](attach-to-running-processes-with-the-visual-studio-debugger.md)
+  - question: >
+      Debugowanie aplikacji wielowątkowych
+    answer: >
+      - Zobacz [Debugowanie aplikacji wielowątkowych.](debug-multithreaded-applications-in-visual-studio.md)
+  - question: >
+      Konfigurowanie debugowania
+    answer: >
+      - **Konfigurowanie ustawień debugera**
+
+        Aby skonfigurować opcje debugera i ustawienia projektu debugera, zobacz [Ustawienia debugera i przygotowanie](debugger-settings-and-preparation.md).
+
+      - **Dostosowywanie informacji wyświetlanych w debugerze**
+
+        Informacje inne niż typ obiektu mogą być wyświetlane jako wartość w różnych oknach debugera. W przypadku kodu języka C#, Visual Basic, F# i C++/CLI użyj [atrybutu DebuggerDisplay.](using-the-debuggerdisplay-attribute.md) Aby uzyskać bardziej zaawansowane opcje, możesz również dostosować interfejs użytkownika, tworząc [niestandardowy wizualizator](create-custom-visualizers-of-data.md).
+
+        W przypadku natywnego języka C++, użyj [struktury NatVis](create-custom-views-of-native-objects.md).
+  - question: >
+      Dodatkowe zadania
+    answer: >-
+      - **Edytowanie kodu podczas sesji debugowania**
+
+        Użyj [funkcji Edytuj i kontynuuj.](edit-and-continue.md) W przypadku języka XAML użyj [Przeładowywanie kodu XAML na gorąco](../xaml-tools/xaml-hot-reload.md).
+
+      - **Wysyłanie komunikatów do okna Danych wyjściowych bez modyfikowania kodu**
+
+        Ustaw punkt śledzenia. Aby uzyskać więcej informacji, zobacz [Using tracepoints (Używanie punktów śledzenia).](using-tracepoints.md)
+
+      - **Wyświetlanie kolejności, w której są wywoływane funkcje**
+
+        Zobacz How to view the call stack (Jak [wyświetlić stos wywołań).](how-to-use-the-call-stack-window.md)
+
+      - **Debugowanie na maszynach zdalnych**
+
+        Zobacz [Zdalne debugowanie](remote-debugging.md).
+
+      - **Rozwiązywanie problemów z wydajnością**
+
+        Zobacz [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bb78ce04f57f537a6e595fe55d41b220c4476a7b
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: b45b67f03c7f95fe12c0f4322e682588a7f50714
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798248"
+ms.locfileid: "108640990"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historia nowości w dokumentacji programu Visual Studio
 
@@ -38,7 +38,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 **Zaktualizowane artykuły**
 
-- [Use Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes: Use .NET todo-app sample (Używanie przykładu todo-app dla aplikacji .NET)
+- [Use Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes: Use .NET todo-app sample (Korzystanie z Bridge to Kubernetes todo-app w aplikacji .NET)
 - [Docker Compose właściwości kompilacji](../containers/docker-compose-properties.md) — dodawanie obiektu ComposeProjectName
 - [Jak Bridge to Kubernetes działa](../containers/overview-bridge-to-kubernetes.md) — sekcja Bridge to Kubernetes: Ograniczenia aktualizacji
 - [Samouczek: tworzenie aplikacji z wieloma kontenerami za pomocą Docker Compose](../containers/tutorial-multicontainer.md) — samouczek narzędzi kontenera dla wielu kontenerów: naprawianie linku do obrazu
@@ -54,7 +54,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 - [Specyfikatory formatu dla języka C++ w debugerze Visual Studio —](../debugger/format-specifiers-in-cpp.md) problemy z serwisem GitHub działają
 - [Konfigurowanie Zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md) — poprawki problemów z usługą GitHub
 - [Zdalne debugowanie ASP.NET zdalnym komputerze usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
-- [Zdalne debugowanie ASP.NET Core na zdalnym](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) komputerze usług IIS w usłudze Visual Studio — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
+- [Zdalne debugowanie ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) na zdalnym komputerze usług IIS w usłudze Visual Studio — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
 - [Usługa Remote Debug ASP.NET Core w usługach IIS na](../debugger/remote-debugging-azure.md) platformie Azure w usłudze Visual Studio — aktualizacje dokumentów zdalnego debugowania dla usług IIS i platformy Azure
 
 ### <a name="deployment"></a>Wdrożenie
@@ -205,7 +205,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 - [Konfigurowanie testów jednostkowych przy użyciu *pliku .runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
   - wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
   - Poprawiono literówki
-- [VSTest.Console.exe wiersza polecenia —](../test/vstest-console-options.md) wiersz polecenia dla deweloperów program PowerShell dla deweloperów
+- [VSTest.Console.exe wiersza polecenia — wiersz polecenia dla deweloperów](../test/vstest-console-options.md) program PowerShell dla deweloperów
 
 ## <a name="february-2021"></a>Luty 2021 r.
 
@@ -248,7 +248,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 **Zaktualizowane artykuły**
 
 - [Używanie struktury Microsoft Unit Testing Framework dla języka C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) w Visual Studio — odświeżanie i edytowanie małej zawartości
-- [Pisanie testów jednostkowych dla bibliotek DLL języka C++ w języku Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) — odświeżanie i edytowanie małej ilości zawartości
+- [Pisanie testów jednostkowych dla bibliotek DLL języka C++ w języku Visual Studio](../test/how-to-write-unit-tests-for-cpp-dlls.md) — odświeżanie i edytowanie małej zawartości
 - [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) — aktualizacje ułatwień dostępu
 - [Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) — aktualizacje ułatwień dostępu
 - [Izolowanie testowego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) — jawnie wspomnieć o programie .NET 5.0 w dokumentów fakes
@@ -340,7 +340,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 **Nowe artykuły**
 
-- [Dodawanie Azure App Configuration przy użyciu usług Visual Studio —](../azure/vs-azure-tools-connected-services-app-configuration.md) samouczek dotyczący usług połączonych app Config
+- [Dodawanie Azure App Configuration przy użyciu Visual Studio połączonych](../azure/vs-azure-tools-connected-services-app-configuration.md) — samouczek dotyczący usług połączonych konfiguracji aplikacji
 
 ### <a name="code-quality"></a>Jakość kodu
 
@@ -348,7 +348,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 - [Omówienie](../code-quality/use-roslyn-analyzers.md) — tworzenie z wiersza polecenia za pomocą polecenia editorconfig
 - [Włączanie lub instalowanie analizatorów .NET innych firm](../code-quality/install-net-analyzers.md)
-  - Dodanie większej przejrzystości do dokumentów migracji dla fxCopAnalyzers do narzędzia NetAnalyzers
+  - Dodanie większej przejrzystości do dokumentów migracji dla narzędzia FxCopAnalyzers do narzędzia NetAnalyzers
   - Ponowne rozmieszczanie spisu treści dla analizatorów .NET
 - [Migrowanie z analizatorów FxCop do analizatorów .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) — większa przejrzystość dokumentów migracji do analizatorów FxCopAnalyzer do narzędzia NetAnalyzers
 
@@ -362,7 +362,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 **Zaktualizowane artykuły**
 
-- [Często zadawane pytania — znajdowanie funkcji debugowania potrzebnej w programie Visual Studio](../debugger/find-your-debugging-task.yml) — odnajdywanie działa w celu znalezienia zadania debugowania i tematów z omówieniem
+- [Często zadawane pytania — znajdowanie funkcji debugowania potrzebnej w programie Visual Studio](../debugger/find-your-debugging-task.md) — odnajdywanie działa w celu znalezienia zadania debugowania i tematów z omówieniem
 
 ### <a name="get-started"></a>Rozpoczęcie pracy
 
@@ -406,17 +406,17 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 - [Włączanie lub instalowanie analizatorów .NET](../code-quality/install-net-analyzers.md) — dodawanie dokumentacji umożliwiającej migrację z analizatorów FxCop do analizatorów .NET
 - [Migrowanie z analizatorów FxCop do analizatorów .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) — dodawanie dokumentacji do migrowania z analizatorów FxCop do analizatorów .NET
 - [Migrowanie ze starszej analizy (FxCop)](../code-quality/migrate-from-legacy-analysis-to-net-analyzers.md) do analizy źródła (analizatory .NET) — dodawanie dokumentacji do migrowania z analizatorów FxCop do analizatorów .NET
-- [Często zadawane pytania dotyczące starszych analizatorów FxCop](../code-quality/net-analyzers-faq.yml) i .NET — dodawanie dokumentacji do migrowania z analizatorów FxCop do analizatorów .NET
+- [Często zadawane pytania dotyczące starszych](../code-quality/net-analyzers-faq.md) analizatorów FxCop i .NET — dodawanie dokumentacji do migracji z analizatorów FxCop do analizatorów .NET
 
 **Zaktualizowane artykuły**
 
-- [Analiza kodu — często zadawane](../code-quality/analyzers-faq.yml) pytania — dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
-- [Stan portu reguły Fxcop —](../code-quality/fxcop-rule-port-status.md) dodano dokumentację migracji z analizatorów FxCop do analizatorów .NET
+- [Analiza kodu — często zadawane](../code-quality/analyzers-faq.md) pytania — dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
+- [Stan portu reguły Fxcop —](../code-quality/fxcop-rule-port-status.md) dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
 - [Przestarzałe reguły —](../code-quality/fxcop-unported-deprecated-rules.md) dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
 - [Niezportowane reguły, które mogą być przenoszone](../code-quality/fxcop-unported-rules-may-get-ported.md) — dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
 - [Niezportowane reguły —](../code-quality/fxcop-unported-rules.md) dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
-- [Instalowanie analizatorów innych firm —](../code-quality/install-roslyn-analyzers.md) dodano dokumentację migracji z analizatorów FxCop do analizatorów .NET
-- [Omówienie](../code-quality/use-roslyn-analyzers.md) — dodano dokumentację dotyczącą migracji z analizatorów FxCop do analizatorów .NET
+- [Instalowanie analizatorów innych firm —](../code-quality/install-roslyn-analyzers.md) dodano dokumentację migrowania z analizatorów FxCop do analizatorów .NET
+- [Omówienie](../code-quality/use-roslyn-analyzers.md) — dodano dokumentację migracji z analizatorów FxCop do analizatorów .NET
 
 ### <a name="containers"></a>Kontenery
 
@@ -439,7 +439,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 **Nowe artykuły**
 
-- [Wdrażanie aplikacji klasycznej .NET dla systemu Windows przy użyciu technologii ClickOnce](../deployment/quickstart-deploy-using-clickonce-folder.md) — dodawanie szybkiego startu technologii ClickOnce dla projektów .NET dla systemu Windows
+- [Wdrażanie aplikacji klasycznej .NET dla systemu Windows przy użyciu technologii ClickOnce](../deployment/quickstart-deploy-using-clickonce-folder.md) — dodawanie szybkiego startu technologii ClickOnce dla projektów systemu Windows .NET
 
 **Zaktualizowane artykuły**
 
@@ -482,9 +482,9 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
   - Aktualizacje zawartości nowego typu usługi Git dla wersji 16.8 (ga ga)
 - [Co nowego w programie Visual Studio 2019](./whats-new-visual-studio-2019.md)
   - Zaktualizowano tekst alternatywny & metadanych
-  - Zaktualizowano stronę Co nowego w programie Visual Studio 2019 dla wersji 16.8 GA
+  - Zaktualizowano stronę Co nowego w programie Visual Studio 2019 dla wersji 16.8 (wersja gawędowa)
 - [Nawiązywanie połączenia z projektami w Team Explorer](./connect-team-project.md) — zaktualizowano stronę Team Explorer o nową uwagę na temat obsługi usługi Git & linku
-- [Praca z wieloma kontami użytkowników](./work-with-multiple-user-accounts.md) — dodano informacje o logować się w usłudze GitHub na innych stronach
+- [Praca z wieloma kontami użytkowników](./work-with-multiple-user-accounts.md) — dodano informacje dotyczące logowania w usłudze GitHub na innych stronach
 - [Konwencje formatowania języka C++ w narzędziu EditorConfig](./cpp-editorconfig-properties.md)
   - Prefiks jest cpp_, a nie _cpp_ _ dla ustawień .editorconfig języka C++
   - Usunięto nieprawidłowy znak w przykładzie pliku editorconfig języka C++
@@ -498,7 +498,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
   - Dodano dane 16.8.2
   - Dodano 16.8.1
   - Zaktualizowano numery kompilacji dla wersji 16.8 GA i nie tylko
-- [Visual Studio na platformie Azure](../install/using-visual-studio-vm.md) — zmieniono datę publikacji i zaktualizowano pomocnicze wersje poprawek
+- [Visual Studio na platformie Azure](../install/using-visual-studio-vm.md) — zmieniono datę opublikowania i zaktualizowano wersje pomocnicze poprawek
 - [Visual Studio i identyfikatory składników](../install/workload-and-component-ids.md) — zaktualizowano dokumenty dotyczące składników dla wersji 16.8
 - [Visual Studio Build Tools component directory](../install/workload-component-id-vs-build-tools.md) — zaktualizowano dokumenty składników dla wersji 16.8
 - [Visual Studio Community component directory](../install/workload-component-id-vs-community.md) — zaktualizowano dokumenty składników dla wersji 16.8
@@ -649,7 +649,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 **Nowe artykuły**
 
-- [Use Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Local Process with Kubernetes rebranding to Bridge to Kubernetes (Używanie Bridge to Kubernetes — proces lokalny z rebrandingiem kubernetes w celu Bridge to Kubernetes
+- [Use Bridge to Kubernetes](../containers/bridge-to-kubernetes.md) - Local Process with Kubernetes rebranding to Bridge to Kubernetes
 - [Jak Bridge to Kubernetes —](../containers/overview-bridge-to-kubernetes.md) proces lokalny z rebrandingiem kubernetes w celu Bridge to Kubernetes
 
 ### <a name="deployment"></a>Wdrożenie
@@ -722,9 +722,9 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 - [CA1838: Unikaj `StringBuilder` parametrów P/Invokes](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) — dodaj dokumentację dla CA1838
 - [CA2008: Nie](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) twórz zadań bez przekazywania TaskScheduler — dodaj dokumentację dla CA2008
 - [CA2249: Rozważ użycie funkcji String.Contains zamiast String.IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) — Docs dla CA2249
-- CA2361: Upewnij się, że automatycznie wygenerowana klasa zawierająca funkcję [DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) nie jest używana z niezaufanymi danymi — więcej reguł DataSet/DataTable
+- CA2361: Upewnij się, że automatycznie wygenerowana klasa zawierająca [funkcję DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) nie jest używana z niezaufanymi danymi — więcej reguł DataSet/DataTable
 - [CA2362:](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) Niebezpieczny typ DataSet lub DataTable w automatycznie wygenerowanym typie serializowalnym może być narażony na ataki zdalnego wykonywania kodu — więcej reguł DataSet/DataTable
-- [IL3000: Unikaj uzyskiwania](/dotnet/fundamentals/code-analysis/quality-rules/il3000) dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik — dodaj dokumentację dla IL3000
+- [IL3000: Unikaj](/dotnet/fundamentals/code-analysis/quality-rules/il3000) uzyskiwania dostępu do ścieżki pliku zestawu podczas publikowania jako pojedynczy plik — dodawanie dokumentacji dla il3000
 - [IL3001: Unikaj uzyskiwania dostępu do](/dotnet/fundamentals/code-analysis/quality-rules/il3001) ścieżki pliku zestawu podczas publikowania jako pojedynczy plik — dodawanie dokumentów dla IL3001
 
 **Aktualizacja**
@@ -735,7 +735,7 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 - [CA1700: Nie należy ](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) nazywać wartości wyli roku &#39;zarezerwowanych&#39;— dodawanie możliwości konfiguracji — sekcja Interfejs API Surface
 - [CA1707: Identyfikatory nie powinny zawierać podkreśleń](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) — dodawanie możliwości konfigurowania — sekcja interfejsu API Surface
 - [CA1822: Oznacz elementy członkowskie jako statyczne](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) — dodawanie możliwości konfigurowania — sekcja interfejsu API Surface
-- CA2351: Upewnij się, że dane wejściowe metody [DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) są zaufane — więcej reguł dataset/datatable
+- CA2351: Upewnij się, że dane wejściowe metody [DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) są zaufane — więcej reguł DataSet/DataTable
 - [Instalowanie analizatorów innych firm —](../code-quality/install-roslyn-analyzers.md) zmieniona struktura i tytuły dokumentacji analizy kodu
 
 ### <a name="containers"></a>Kontenery
@@ -803,13 +803,13 @@ Witamy w historii nowości w Visual Studio dokumentów. Ten artykuł zawiera naj
 
 - [CA1417: Nie używaj w parametrach ciągu `OutAttribute` dla P/Invokes](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) — dodaj dokumentację dla CA1417
 - [CA1805: Nie inicjuj niepotrzebnie.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) - Dodawanie dokumentów dla CA1805
-- [CA1836: Preferuj pozycję IsEmpty](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) zamiast count, jeśli jest dostępna — dodaj dokumentację dla CA1836 (preferuj isEmpty zamiast count)
+- [CA1836: Preferuj pozycję IsEmpty](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) zamiast count, jeśli jest dostępna — dodaj dokumentację dla CA1836 (Preferuj isEmpty zamiast count)
 - [CA2016: Przekaż parametr CancellationToken](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) do metod, które je biorą — Document CA2016 — Przekaż parametr CancellationToken do metod, które je biorą
 - CA2350: Upewnij się, że dane wejściowe elementu [DataTable.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) są zaufane — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 - CA2351: Upewnij się, że dane wejściowe elementu [DataSet.ReadXml()](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) są zaufane — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 - [CA2352:](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) Niebezpieczny typ DataSet lub DataTable w typie, który można serializuje, może być narażony na ataki zdalnego wykonywania kodu — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 - [CA2353: Niebezpieczny zestaw danych](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) lub tabela DataTable w typie zdyserializowalnym — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
-- [CA2354:](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) Niebezpieczny obiekt DataSet lub DataTable w deserializowanym grafie obiektów może być narażony na atak zdalnego wykonywania kodu — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
+- [CA2354:](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) Niebezpieczny obiekt DataSet lub DataTable na deserializowanym grafie obiektu może być narażony na atak zdalnego wykonywania kodu — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 - [CA2355: Niebezpieczny obiekt DataSet](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) lub DataTable w deserializowanym grafie obiektu — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 - [CA2356: Niebezpieczny typ DataSet](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) lub DataTable w internetowym deserializowanym wykresie obiektów — dokumenty dotyczące początkowych reguł deserializacji elementu DataSet/DataTable
 

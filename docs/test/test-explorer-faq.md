@@ -1,6 +1,6 @@
 ---
 title: Eksplorator testów — często zadawane pytania
-description: Zapoznaj się z często zadawanymi pytaniami dotyczącymi programu Visual Studio Test Explorer, które obejmują pewne typowe Rozwiązywanie problemów.
+description: Zapoznaj się z tymi często zadawanych pytań dotyczących Visual Studio Test Explorer, które obejmują niektóre typowe procedury rozwiązywania problemów.
 ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
@@ -16,129 +16,129 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jmartens
-ms.openlocfilehash: a1e0f998b5fff45a8fee9ac6f9cc6a0ce2268907
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ac969ba2ad918fcbeb7c53e04cd3f2b03a0431
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894468"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798573"
 ---
-# <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
+# <a name="visual-studio-test-explorer-faq"></a>Visual Studio Eksplorator testów — często zadawane pytania
 
 ## <a name="dynamic-test-discovery"></a>Odnajdywanie testów dynamicznych
 
-**Eksplorator testów nie odnajduje moich testów, które są definiowane dynamicznie. (Na przykład teorie, niestandardowe karty, cechy niestandardowe, #ifdefs itd.) Jak można odnaleźć te testy?**
+**Eksplorator testów nie odnajduje moich testów, które są definiowane dynamicznie. (Na przykład teorie, karty niestandardowe, cechy niestandardowe, #ifdefs itp.) Jak mogę odnaleźć te testy?**
 
 ::: moniker range=">=vs-2019"
-Skompiluj projekt, aby uruchomić odnajdywanie oparte na zestawie.
+Skompilowanie projektu w celu uruchomienia odnajdywania opartego na zestawie.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone  w >  > **test** Options Tools.
+Skompilować projekt i upewnić się, że  odnajdywanie oparte na zestawie jest włączone w > **narzędziu Opcje** > **Testuj.**
 ::: moniker-end
-[Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) jest odnajdywaniem testów opartym na źródle. Nie można wykryć testów, które używają teorie, niestandardowych kart, cech niestandardowych, `#ifdef` instrukcji i innych, ponieważ są one zdefiniowane w czasie wykonywania. Dla tych testów jest wymagana kompilacja. W programie Visual Studio 2017 w wersji 15,6 lub nowszej odnajdywanie oparte na zestawie (tradycyjny program Discovery) działa tylko po kompilacji. To ustawienie oznacza, że funkcja odnajdywania testów w czasie rzeczywistym znajduje tyle testów, ile jest w trakcie edycji, a funkcja odnajdywania oparta na zestawach umożliwia dynamiczne Definiowanie testów, które są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym zwiększa czas odpowiedzi, ale nadal umożliwia uzyskanie pełnych i precyzyjnych wyników po kompilacji.
+[Odnajdywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) jest oparte na źródle. Nie może odnajdywać testów, które używają teorii, kart niestandardowych, niestandardowych cech, instrukcji i innych, ponieważ są one definiowane `#ifdef` w czasie uruchamiania. Aby te testy zostały dokładnie znalezione, wymagana jest kompilacja. W Visual Studio 2017 r. w wersji 15.6 lub nowszej odnajdywanie oparte na zestawie (tradycyjny program odnajdywania) jest uruchamiane tylko po kompilacji. To ustawienie oznacza, że odnajdywanie testów w czasie rzeczywistym znajduje tyle testów, ile jest w trakcie edytowania, a odnajdywanie oparte na zestawie umożliwia dynamiczne pojawianie się testów po kompilacji. Odnajdywanie testów w czasie rzeczywistym poprawia czas odpowiedzi, ale nadal umożliwia uzyskiwanie pełnych i dokładnych wyników po kompilacji.
 
-## <a name="test-explorer--plus-symbol"></a>Symbol programu Test Explorer ' + ' (plus)
+## <a name="test-explorer--plus-symbol"></a>Symbol "+" (plus) eksploratora testów
 
-**Co oznacza symbol "+" (plus), który pojawia się w górnej linii Eksploratora testów?**
+**Co oznacza symbol "+" (plus), który pojawia się w górnym wierszu Eksploratora testów?**
 
-Symbol "+" (plus) wskazuje, że więcej testów może zostać odnalezione po kompilacji podczas uruchamiania odnajdywania opartego na zestawach. Ten symbol pojawia się, jeśli w projekcie wykryto dynamiczne zdefiniowane testy.
+Symbol "+" (plus) wskazuje, że po kompilacji po zakończeniu odnajdywania opartego na zestawie można wykryć więcej testów. Ten symbol jest wyświetlany, jeśli w projekcie zostaną wykryte dynamicznie zdefiniowane testy.
 
-![Linia podsumowania symboli Plus](media/testex-plussymbol.png)
+![Znak plus symbolu wiersz podsumowania](media/testex-plussymbol.png)
 
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Odnajdywanie oparte na zestawie
 
-**Odnajdywanie oparte na zestawie nie działa już w projekcie. Jak mogę włączyć ją ponownie?**
+**Odnajdywanie oparte na zestawie nie działa już w moim projekcie. Jak mogę ją ponownie włączyć?**
 
-Przejdź do pozycji **Narzędzia** > **Opcje** > **test** i zaznacz pole wyboru **Odnajdź testy od skompilowanych zestawów po kompilacji.**
+Przejdź do **opcji** narzędzia Test i zaznacz pole wyboru Dodatkowo odnajduj testy z zestawów skompilowanych >  >  **po kompilacjach.**
 
 ![Opcja oparta na zestawie](media/testex-toolsoptions.png)
 ::: moniker-end
 
-## <a name="real-time-test-discovery"></a>Wykrywanie testów w czasie rzeczywistym
+## <a name="real-time-test-discovery"></a>Odnajdywanie testów w czasie rzeczywistym
 
-**Testy są teraz wyświetlane w Eksploratorze testów podczas wpisywania, bez konieczności kompilowania projektu. Co się zmieniło?**
+**Testy są teraz wyświetlane w Eksploratorze testów podczas wpisywania bez konieczności kompilowania projektu. Co się zmieniło?**
 
-Ta funkcja jest nazywana [odnajdywaniem testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Używa analizatora Roslyn do znajdowania testów i wypełniania Eksploratora testów w czasie rzeczywistym, bez konieczności kompilowania projektu. Aby uzyskać więcej informacji na temat zachowania odnajdywania testów dla dynamicznie zdefiniowanych testów, takich jak teorie lub cechy niestandardowe, zobacz [odnajdywanie testów dynamicznych](#dynamic-test-discovery).
+Ta funkcja jest [nazywana odnajdywaniem testów w czasie rzeczywistym.](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) Używa analizatora Roslyn do wyszukiwania testów i wypełniania Eksploratora testów w czasie rzeczywistym, bez konieczności kompilowania projektu. Aby uzyskać więcej informacji na temat zachowania odnajdywania testów dla dynamicznie zdefiniowanych testów, takich jak teorie lub niestandardowe cechy, zobacz [Dynamiczne odnajdywanie testów](#dynamic-test-discovery).
 
-## <a name="real-time-test-discovery-compatibility"></a>Zgodność z odnajdywaniem testów w czasie rzeczywistym
+## <a name="real-time-test-discovery-compatibility"></a>Zgodność odnajdywania testów w czasie rzeczywistym
 
-**Jakie języki i platformy testowe mogą korzystać z odnajdywania testów w czasie rzeczywistym?**
+**Jakie języki i struktury testowe mogą używać odnajdywania testów w czasie rzeczywistym?**
 
-[Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ zostały skompilowane przy użyciu kompilatora Roslyn. Obecnie wykrywanie testów w czasie rzeczywistym działa tylko dla platform xUnit, NUnit i MSTest.
+[Odnajdywanie testów w](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) czasie rzeczywistym działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ jest ono zbudowane przy użyciu kompilatora Roslyn. Na razie odnajdywanie testów w czasie rzeczywistym działa tylko w przypadku platform xUnit, NUnit i MSTest.
 
 ## <a name="test-explorer-logs"></a>Dzienniki Eksploratora testów
 
-**Jak włączyć dzienniki dla Eksploratora testów?**
+**Jak mogę włączyć dzienniki dla Eksploratora testów?**
 
-Przejdź do   >  **opcji** narzędzia  >  **testy** i Znajdź sekcję rejestrowanie.
+Przejdź do **opcji**  >    >  **narzędzia Test** i znajdź sekcję Rejestrowanie.
 
-## <a name="uwp-test-discovery"></a>Odnajdywanie testów platformy UWP
+## <a name="uwp-test-discovery"></a>Odnajdywanie testów platformy uniwersalnej systemu Windows
 
-**Dlaczego moje testy w projektach platformy UWP nie zostały odnalezione przed wdrożeniem mojej aplikacji?**
+**Dlaczego moje testy w projektach platformy uniwersalnej systemu Windows nie są odnalezione, dopóki nie wdaję aplikacji?**
 
-Testy platformy UWP są ukierunkowane na inne środowisko uruchomieniowe, gdy aplikacja jest wdrażana. Oznacza to, że aby znaleźć testy dokładnie dla projektów platformy UWP, które nie są potrzebne tylko do skompilowania projektu, ale również do wdrożenia.
+Testy platformy uniwersalnej systemu Windows mają na celu inne środowisko uruchomieniowe podczas wdrażania aplikacji. Oznacza to, że dokładne znalezienie testów dla projektów platformy UWP wymaga nie tylko skompilowania projektu, ale również wdrożenia.
 
-## <a name="test-explorer-sorting"></a>Sortowanie Eksploratora testów
+## <a name="test-explorer-sorting"></a>Sortowanie w Eksploratorze testów
 
-**Jak sortowanie wyników testów działa w widoku hierarchii?**
+**Jak działa sortowanie wyników testów w widoku hierarchii?**
 
-Widok hierarchii sortuje testy alfabetycznie, w przeciwieństwie do wyników. Poprzednia Grupa według ustawień posortować wyniki testów według wyniku, a następnie alfabetycznie. Można nadal włączać sortowanie według wyniku, klikając prawym przyciskiem myszy nagłówek kolumny w Eksploratorze testów, włączając kolumnę State, a następnie klikając nagłówek kolumny State, aby zastosować sortowanie dla tej kolumny. Możesz przekazać opinię na temat projektu w tym [wydaniu usługi GitHub](https://github.com/Microsoft/vstest/issues/1425).
+Widok hierarchii sortuje testy alfabetycznie, a nie według wyniku. Poprzednie grupowanie według ustawień posortowało wyniki testu według wyniku, a następnie alfabetycznie. Nadal możesz włączyć sortowanie według wyniku, klikając prawym przyciskiem myszy nagłówek kolumny w Eksploratorze testów, włączając kolumnę State, a następnie klikając nagłówek Kolumna stanu, aby zastosować sortowanie dla tej kolumny. Możesz przekazać opinię na temat projektu w tym problemie [w usłudze GitHub.](https://github.com/Microsoft/vstest/issues/1425)
 
 ## <a name="test-explorer-hierarchy-view"></a>Widok hierarchii Eksploratora testów
 
-**W widoku hierarchia są wyświetlane ikony "zakończone niepowodzeniem, pominięte" i nie są uruchamiane obok grup węzłów nadrzędnych. Co oznaczają te ikony?**
+**W widoku hierarchii obok grup węzłów nadrzędnych znajdują się ikony przekazywane, pomijane, pomijane i nie uruchamiania. Co oznaczają te ikony?**
 
-Ikony obok projektu, obszaru nazw i grup klas przedstawiają stan testów w ramach tego grupowania. Zobacz poniższą tabelę.
+Ikony obok grupowania Projekt, Przestrzeń nazw i Klasa pokazują stan testów w ramach tego grupowania. Zobacz poniższą tabelę.
 
 ![Ikony hierarchii Eksploratora testów](media/testex-hierarchyicons.png)
 
-## <a name="search-by-file-path"></a>Wyszukaj według ścieżki pliku
+## <a name="search-by-file-path"></a>Wyszukiwanie według ścieżki pliku
 
-**W polu wyszukiwania Eksploratora testów nie ma już filtru "ścieżka do pliku".**
+**W polu wyszukiwania Eksplorator testów nie ma już filtru "Ścieżka pliku".**
 
-Filtr ścieżka pliku w polu wyszukiwania programu **Test Explorer** został usunięty z programu Visual Studio 2017 w wersji 15,7. Ta funkcja ma niskie użycie i Eksplorator testów może szybciej pobrać metody testowe, pozostawiając tę funkcję. Jeśli ta zmiana przerwie przepływ tworzenia, powiadom nas o przesłaniu opinii na temat [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
+Filtr ścieżki pliku w polu wyszukiwania **Eksplorator testów** został usunięty w wersji 15.7 Visual Studio 2017. Ta funkcja miała niskie użycie, a Eksplorator testów może szybciej pobierać metody testowe, pomijając tę funkcję. Jeśli ta zmiana przerywa przepływ tworzenia aplikacji, daj nam znać, przesyłając opinię na [Developer Community.](https://aka.ms/feedback/suggest?space=8)
 
-## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
+## <a name="remove-undocumented-interfaces"></a>Usuwanie nieudokumentowanych interfejsów
 
-**Niektóre interfejsy API związane z testami nie są już obecne w programie Visual Studio 2019. Co się zmieniło?**
+**Niektóre interfejsy API związane z testami nie są już dostępne w Visual Studio 2019 r. Co się zmieniło?**
 
-W programie Visual Studio 2019 niektóre interfejsy API okna testowego, które zostały wcześniej oznaczone jako publiczne, ale nigdy nie zostały oficjalnie udokumentowane, zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w programie Visual Studio 2017, aby zapewnić obsłudze rozszerzenia wczesne ostrzeżenie. W naszej wiedzy bardzo kilka rozszerzeń odnalazło te interfejsy API i pobrano od nich zależność. Należą `IGroupByProvider` do nich, `IGroupByProvider<T>` ,,,, `KeyComparer` `ISearchFilter` `ISearchFilterToken` `ISearchToken` i `SearchFilterTokenType` . Jeśli ta zmiana wpłynie na Twoje rozszerzenie, poinformuj nas o błędzie w [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
+W Visual Studio 2019 r. niektóre interfejsy API okna testowego, które wcześniej były oznaczone jako publiczne, ale nigdy nie były oficjalnie udokumentowane, zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w Visual Studio 2017 r., aby zapewnić obsługi rozszerzeń wczesne ostrzeżenie. Z naszej wiedzy bardzo niewiele rozszerzeń znalazło te interfejsy API i było od nich zależne. Należą do `IGroupByProvider` nich , , , , , i `IGroupByProvider<T>` `KeyComparer` `ISearchFilter` `ISearchFilterToken` `ISearchToken` `SearchFilterTokenType` . Jeśli ta zmiana ma wpływ na Twoje rozszerzenie, daj nam znać, zgłaszanie usterki w [Developer Community](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="test-adapter-nuget-reference"></a>Dokumentacja NuGet adaptera testowego
+## <a name="test-adapter-nuget-reference"></a>Odwołanie NuGet adaptera testowego
 
-**W programie Visual Studio 2017 w wersji 15,8 moje testy zostały wykryte, ale nie są wykonywane.**
+**W Visual Studio 2017 w wersji 15.8 moje testy zostały odnalezione, ale nie są wykonywane.**
 
-Wszystkie projekty testowe muszą zawierać w pliku csproj swoje odwołanie NuGet do adaptera testowego platformy .NET. Jeśli nie, następujące dane wyjściowe testu pojawiają się w projekcie, jeśli odnajdywanie przez rozszerzenie adaptera testowego zostanie uruchomione po kompilacji lub użytkownik próbuje uruchomić wybrane testy:
+Wszystkie projekty testowe muszą zawierać odwołanie NuGet adaptera testowego .NET w pliku csproj. Jeśli tak się nie stanie, w projekcie zostaną wyświetlone następujące dane wyjściowe testu, jeśli odnajdywanie przez rozszerzenie adaptera testowego rozpocznie się po kompilacji lub jeśli użytkownik spróbuje uruchomić wybrane testy:
 
-**Projekt testowy {} nie odwołuje się do żadnej karty NuGet programu .NET. Odnajdywanie lub wykonywanie testów może nie zadziałało dla tego projektu. Zalecane jest odwoływanie się do adapterów testowych NuGet w każdym projekcie testowym .NET w rozwiązaniu.**
+**Projekt {} testowy nie odwołuje się do żadnej karty NuGet .NET. Odnajdywanie lub wykonywanie testów może nie działać w tym projekcie. Zaleca się odwołanie do adapterów testowych NuGet w każdym projekcie testowym .NET w rozwiązaniu.**
 
-Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do korzystania z pakietów NuGet adaptera testowego. Ten wymóg znacznie poprawia wydajność i powoduje mniejsze problemy związane z ciągłą integracją. Więcej informacji na temat przestarzałych rozszerzeń programu .NET test adapter można znaleźć w [informacjach o wersji](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
+Zamiast używać rozszerzeń adaptera testowego, projekty są wymagane do korzystania z pakietów NuGet adaptera testowego. To wymaganie znacznie zwiększa wydajność i powoduje mniejszą liczbę problemów z ciągłą integracją. Przeczytaj więcej na temat cofania wersji rozszerzenia adaptera testowego .NET w [informacjach o wersji](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Jeśli używasz karty testowej nunit 2 i nie można przeprowadzić migracji do karty testowej nunit 3, możesz wyłączyć to nowe zachowanie odnajdywania w programie Visual Studio w wersji 15,8 w **narzędziu**  >  **Opcje**  >  **testów**.
+> Jeśli używasz adaptera testowego NUnit 2 i nie możesz przeprowadzić migracji do adaptera testowego NUnit 3, możesz wyłączyć to nowe zachowanie odnajdywania w programie Visual Studio w wersji 15.8 w teście Narzędzia Opcje  >    >  .
 
-![Zachowanie karty Eksploratora testów w opcjach narzędzi](media/testex-adapterbehavior.png)
+![Zachowanie adaptera Eksploratora testów w opcjach narzędzi](media/testex-adapterbehavior.png)
 ::: moniker-end
 
-## <a name="uwp-testcontainer-was-not-found"></a>Nie znaleziono platformy UWP TestContainer
+## <a name="uwp-testcontainer-was-not-found"></a>Nie znaleziono aplikacji TestContainer platformy uniwersalnej systemu Windows
 
-**Moje testy platformy UWP nie są już wykonywane w programie Visual Studio 2017 w wersji 15,7 lub nowszej.**
+**Moje testy platformy uniwersalnej systemu Windows nie są już wykonywane w Visual Studio 2017 w wersji 15.7 i nowszych.**
 
-Ostatnie projekty testów platformy UWP określają Właściwość Build platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testu platformy UWP, który został zainicjowany przed programem Visual Studio w wersji 15,7, ten błąd może pojawić się w  >  **testach** wyjściowych:
+Ostatnie projekty testowe platformy uniwersalnej systemu Windows określają właściwość kompilacji platformy testowej, która umożliwia lepszą wydajność identyfikowania aplikacji testowych. Jeśli masz projekt testowy platformy uniwersalnej systemu Windows, który został zainicjowany przed wersją Visual Studio 15.7, w testach **wyjściowych** może zostać wyświetlony ten  >  **błąd:**
 
-**System. AggregateException: wystąpił co najmniej jeden błąd. ---> system. InvalidOperationException: nie znaleziono następującego TestContainer {} w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync> D__61. MoveNext ()**
+**System.AggregateException: Wystąpił co najmniej jeden błąd. ---> System.InvalidOperationException: W aplikacji {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider nie znaleziono następującego \<GetTestContainerAsync> d__61.MoveNext()**
 
 Aby naprawić ten błąd:
 
-- Zaktualizuj Właściwość Build projektu testowego przy użyciu następującego kodu:
+- Zaktualizuj właściwość kompilacji projektu testowego przy użyciu następującego kodu:
 
 ```XML
 <UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
 ```
 
-- Zaktualizuj wersję zestawu SDK TestPlatform przy użyciu następującego kodu:
+- Zaktualizuj wersję zestawu SDK Platformy TestPlatform przy użyciu następującego kodu:
 
 ```XML
 <SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
@@ -146,29 +146,29 @@ Aby naprawić ten błąd:
 ::: moniker range=">=vs-2019"
 ## <a name="using-preview-features"></a>Korzystanie z funkcji w wersji zapoznawczej
 
-W programie Visual Studio 2019 możesz dołączać do funkcji w wersji zapoznawczej w obszarze **narzędzia > opcje > środowisku > funkcji w wersji zapoznawczej**.
+W Visual Studio 2019 r. możesz wybrać funkcje w wersji zapoznawczej w narzędziu **Narzędzia > Opcje > Environment > wersji zapoznawczej.**
 ::: moniker-end
 ::: moniker range=">=vs-2017"
-## <a name="using-feature-flags"></a>Korzystanie z flag funkcji
+## <a name="using-feature-flags"></a>Używanie flag funkcji
 
-**Jak włączyć flagi funkcji, aby wypróbować nowe funkcje testowania?**
+**Jak mogę włączyć flagi funkcji, aby wypróbować nowe funkcje testowania?**
 
-Flagi funkcji są używane do dostarczania eksperymentalnych lub nieukończonych części produktu do Avid użytkowników, którzy chcą przesłać opinię, zanim funkcje zostaną opublikowane oficjalnie. Mogą one spowodować zastabilizację środowiska IDE. Używaj ich tylko w bezpiecznych środowiskach programistycznych, takich jak maszyny wirtualne. Flagi funkcji są zawsze używane na własnych ustawieniach ryzyka. Funkcje eksperymentalne można włączyć za pomocą [rozszerzenia flag funkcji](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension)lub w wierszu polecenia dla deweloperów.
+Flagi funkcji są używane do wysłania eksperymentalnych lub niedokończonych części produktu do zapalonych użytkowników, którzy chcą przekazać opinię, zanim funkcje zostaną oficjalnie nadane. Mogą one zdestabilizować środowisko IDE. Należy ich używać tylko w bezpiecznych środowiskach programistycznych, takich jak maszyny wirtualne. Flagi funkcji są zawsze ustawieniami własnego ryzyka. Funkcje eksperymentalne można włączyć z rozszerzeniem [flag funkcji lub](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension)za pomocą wiersza polecenia dewelopera.
 
 ![Rozszerzenie flagi funkcji](media/testex-featureflag.png)
 
-Aby włączyć flagę funkcji za pomocą wiersza polecenia programu Visual Studio Developer, użyj następującego polecenia. Zmień ścieżkę do lokalizacji, w której program Visual Studio jest zainstalowany na komputerze, a następnie Zmień klucz rejestru na żądaną flagę funkcji.
+Aby włączyć flagę funkcji za pomocą Visual Studio wiersza polecenia dla deweloperów, użyj następującego polecenia. Zmień ścieżkę na miejsce Visual Studio na komputerze, a następnie zmień klucz rejestru na flagę funkcji, której chcesz użyć.
 
 ```shell
 vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise" HKLM FeatureFlags\TestingTools\UnitTesting\HierarchyView Value dword 1
 ```
 
 > [!NOTE]
-> Można wyłączyć flagę z tym samym poleceniem, używając wartości 0 zamiast 1 po DWORD.
+> Flagę można wyłączyć za pomocą tego samego polecenia, używając wartości 0 zamiast 1 po dword.
 ::: moniker-end
 ## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Tworzenie i uruchamianie testów jednostkowych dla istniejącego kodu](/previous-versions/dd293546(v=vs.110))
 - [Testowanie jednostkowe kodu](unit-test-your-code.md)
-- [Live Unit Testing — często zadawane pytania](live-unit-testing-faq.md)
+- [Testy jednostkowe na żywo — często zadawane pytania](live-unit-testing-faq.yml)
