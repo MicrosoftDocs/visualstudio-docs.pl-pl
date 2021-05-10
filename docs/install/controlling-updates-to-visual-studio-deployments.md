@@ -1,6 +1,6 @@
 ---
-title: Sterowanie aktualizacjami wdrożeń
-description: Dowiedz się, jak zmienić lokalizację, w której program Visual Studio poszukuje aktualizacji podczas instalacji z sieci.
+title: Kontrolowanie aktualizacji wdrożeń
+description: Dowiedz się, jak Visual Studio szuka aktualizacji podczas instalacji z sieci.
 ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547495"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666799"
 ---
-# <a name="control-updates-to-network-based-visual-studio-deployments"></a>Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci
+# <a name="control-updates-to-network-based-visual-studio-deployments"></a>Kontrolowanie aktualizacji wdrożeń Visual Studio sieciowych
 
-Administratorzy przedsiębiorstwa często tworzą układ i obsługują go w sieciowym udziale plików, aby wdrażać je dla użytkowników końcowych. Na tej stronie opisano, jak prawidłowo skonfigurować opcje układu sieciowego. 
+Administratorzy przedsiębiorstwa często tworzą układ i hostują go w sieciowym udziałach plików w celu wdrożenia ich dla użytkowników końcowych. Na tej stronie opisano sposób prawidłowego konfigurowania opcji układu sieci. 
 
-## <a name="controlling-where-visual-studio-looks-for-updates"></a>Kontrolowanie miejsca, w którym program Visual Studio szuka aktualizacji
+## <a name="controlling-where-visual-studio-looks-for-updates"></a>Kontrolowanie, Visual Studio szuka aktualizacji
 
-**Scenariusz 1: klient pierwotnie zainstalowany z układu, ale jest skonfigurowany do otrzymywania aktualizacji z lokalizacji układu sieciowego lub sieci Web**
+**Scenariusz 1. Klient pierwotnie zainstalowany z układu, ale jest skonfigurowany do odbierania aktualizacji z lokalizacji układu sieciowego lub sieci Web**
 
-Domyślnie program Visual Studio kontynuuje wyszukiwanie aktualizacji nawet wtedy, gdy instalacja została pierwotnie wdrożona z udziału sieciowego. Jeśli w sieci Web jest dostępna aktualizacja, użytkownik może ją zainstalować. Mimo że pamięć podręczna układu sieciowego jest najpierw sprawdzana pod kątem wszelkich zaktualizowanych bitów produktu, jeśli nie zostały one tam odnalezione, program Visual Studio wyświetli i pobierze zaktualizowane bity produktu z sieci Web.
+Domyślnie program Visual Studio wyszukiwania aktualizacji w trybie online nawet wtedy, gdy instalacja została pierwotnie wdrożona z udziału sieciowego. Jeśli aktualizacja jest dostępna w Internecie, użytkownik może ją zainstalować. Mimo że pamięć podręczna układu sieciowego jest najpierw sprawdzana pod celu sprawdzenia, czy nie znaleziono tam zaktualizowanych bitów produktu, Visual Studio będzie szukać zaktualizowanych bitów produktów z Internetu i pobierać je z Internetu.
 
-**Scenariusz 2: klient zainstalowany pierwotnie i powinien otrzymywać tylko aktualizacje z układu sieciowego**
+**Scenariusz 2. Klient został pierwotnie zainstalowany i powinien otrzymywać aktualizacje tylko z układu sieci**
 
-Jeśli chcesz kontrolować miejsce, w którym klient programu Visual Studio szuka aktualizacji, na przykład jeśli komputer kliencki nie ma dostępu do Internetu i chcesz się upewnić, że tylko i zawsze jest instalowany z układu, można skonfigurować lokalizację, w której instalator klienta szuka zaktualizowanych bitów produktu. Najlepszym rozwiązaniem jest upewnienie się, że to ustawienie jest skonfigurowane poprawnie przed rozpoczęciem instalacji początkowej z układu przez klienta. 
+Jeśli chcesz kontrolować, gdzie klient programu Visual Studio szuka aktualizacji, na przykład jeśli komputer kliencki nie ma dostępu do Internetu i chcesz upewnić się, że jest on instalowany tylko i zawsze z układu, możesz skonfigurować lokalizację, w której instalator klienta szuka zaktualizowanych bitów produktów. Najlepiej jest upewnić się, że to ustawienie jest poprawnie skonfigurowane, zanim klient dokona początkowej instalacji z układu. 
 
-1. Utwórz układ offline:
+1. Tworzenie układu w trybie offline:
 
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
@@ -48,66 +48,66 @@ Jeśli chcesz kontrolować miejsce, w którym klient programu Visual Studio szuk
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
-3. Zmodyfikuj `response.json` plik w układzie i Zmień `channelUri` wartość tak, aby wskazywała kopię channelManifest.jsna tym formancie administratora.
+3. Zmodyfikuj plik w układzie i zmień wartość tak, aby wskazać kopię pliku `response.json` `channelUri` channelManifest.jsna kontrolce administratora.
 
-   Upewnij się, że w wartości są wyprowadzane ukośniki odwrotne, jak w poniższym przykładzie:
+   Pamiętaj, aby przed ukośnikami odwrotnym w wartości, jak w poniższym przykładzie:
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-   Teraz użytkownicy końcowi mogą uruchomić Instalatora z tego udziału, aby zainstalować program Visual Studio.
+   Teraz użytkownicy końcowi mogą uruchomić instalatora z tego udziału, aby zainstalować Visual Studio.
 
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
 
-Gdy administrator przedsiębiorstwa określi czas, aby użytkownicy mogli zaktualizować do nowszej wersji programu Visual Studio, mogą [zaktualizować lokalizację układu](update-a-network-installation-of-visual-studio.md) w celu uwzględnienia zaktualizowanych plików w następujący sposób.
+Gdy administrator przedsiębiorstwa określi, że na czas ich użytkowników zostanie zaktualizowana do [](update-a-network-installation-of-visual-studio.md) nowszej wersji programu Visual Studio, może zaktualizować lokalizację układu, aby uwzględnić zaktualizowane pliki w następujący sposób.
 
-1. Użyj polecenia, które jest podobne do następującego polecenia:
+1. Użyj polecenia podobnego do następującego polecenia:
 
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
-2. Upewnij się, że `response.json` plik w zaktualizowanym układzie nadal zawiera dostosowania, w tym modyfikacje identyfikator channeluri, w następujący sposób:
+2. Upewnij się, że plik w zaktualizowanym układzie nadal zawiera dostosowania, w szczególności modyfikację `response.json` channelUri, w następujący sposób:
 
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
-Istniejące instalacje programu Visual Studio z tego układu odszukają aktualizacje pod adresem `\\server\share\VS\ChannelManifest.json` . Jeśli channelManifest.jsw wersji nowszej niż zainstalowana przez użytkownika, program Visual Studio powiadamia użytkownika, że aktualizacja jest dostępna.
+Istniejące Visual Studio instalacji z tego układu poszukaj aktualizacji na stronie `\\server\share\VS\ChannelManifest.json` . Jeśli channelManifest.jsjest nowsza niż zainstalowana przez użytkownika, program Visual Studio powiadamia użytkownika, że aktualizacja jest dostępna.
 
-Każda aktualizacja instalacji zainicjowana z poziomu klienta automatycznie zainstaluje zaktualizowaną wersję programu Visual Studio bezpośrednio z układu.
+Każda aktualizacja instalacji zainicjowana przez klienta automatycznie zainstaluje zaktualizowaną wersję Visual Studio bezpośrednio z układu.
 
-**Scenariusz 3: klient pierwotnie zainstalowany z sieci Web, ale teraz powinien otrzymywać tylko aktualizacje z układu sieciowego**
+**Scenariusz 3. Klient pierwotnie zainstalowany z Internetu, ale teraz powinien odbierać aktualizacje tylko z układu sieci**
 
-W niektórych przypadkach na komputerze klienckim mógł już zostać zainstalowany program Visual Studio z sieci Web, ale teraz administrator chce, aby wszystkie przyszłe aktualizacje były dostarczane z zarządzanego układu. Jedynym obsługiwanym sposobem jest utworzenie układu sieciowego z odpowiednią wersją produktu, a następnie na komputerze klienckim uruchomienie programu inicjującego _z lokalizacji układu_ (np. `\\network\share\vs_enterprise.exe` ). W idealnym przypadku oryginalna instalacja klienta mogłaby nastąpić przy użyciu programu inicjującego z układu sieciowego ze skonfigurowanym prawidłowo identyfikator channeluri, ale uruchomienie zaktualizowanego programu inicjującego z lokalizacji układu sieciowego również będzie działać. Jedna z tych akcji zostałaby osadzona na komputerze klienckim, a połączenie z tą konkretną lokalizacją układu. Jedynym warunkiem, aby ten scenariusz działał prawidłowo, jest to, że "Identyfikator channeluri" w `response.json` pliku układu musi być taki sam jak identyfikator channeluri, który został ustawiony na komputerze klienta po wystąpieniu oryginalnej instalacji. Najprawdopodobniej ta wartość została pierwotnie ustawiona na [kanał wydania](https://aka.ms/vs/16/release/channel)internetowego. 
+W niektórych przypadkach komputer kliencki może już być zainstalowany Visual Studio z Sieci Web, ale teraz administrator chce, aby wszystkie przyszłe aktualizacje pochodziły z układu zarządzanego. Jedynym obsługiwanym sposobem jest utworzenie układu sieci z odpowiednią wersją produktu, a następnie uruchomienie programu  inicjjącego na maszynie klienckiej z lokalizacji układu (np. `\\server\share\vs_enterprise.exe` ). W idealnym przypadku pierwotna instalacja klienta byłaby uruchamiana przy użyciu programu inicjjącego z układu sieciowego z poprawnie skonfigurowanym wartością ChannelURI, ale uruchomienie zaktualizowanego programu inicjjącego z lokalizacji układu sieciowego również będzie działać. Jedna z tych akcji osadzi na komputerze klienckim połączenie z określoną lokalizacją układu. Jedynym zastrzeżeniam do poprawnego działania tego scenariusza jest to, że "ChannelURI" w pliku układu musi być taki sam jak wartość ChannelURI ustawioną na komputerze klienta podczas oryginalnej `response.json` instalacji. Najprawdopodobniej ta wartość została pierwotnie ustawiona na internetowy [kanał wydań](https://aka.ms/vs/16/release/channel). 
 
 
-## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Kontrolowanie powiadomień w środowisku IDE programu Visual Studio
+## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Kontrolowanie powiadomień w Visual Studio IDE
 
 ::: moniker range="vs-2017"
 
-Jak opisano wcześniej, program Visual Studio sprawdza lokalizację, z której została zainstalowana, na przykład udział sieciowy lub Internet, aby sprawdzić, czy są dostępne aktualizacje. Po udostępnieniu aktualizacji program Visual Studio powiadamia użytkownika z flagą powiadomienia w prawym górnym rogu okna.
+Jak opisano wcześniej, Visual Studio sprawdza lokalizację, z której została zainstalowana, na przykład udział sieciowy lub Internet, aby sprawdzić, czy są dostępne jakiekolwiek aktualizacje. Gdy aktualizacja jest dostępna, Visual Studio powiadomi użytkownika za pomocą flagi powiadomienia w prawym górnym rogu okna.
 
    ![Flaga powiadomienia dla aktualizacji](media/notification-flag.png)
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="vs-2019&quot;
 
-Jak opisano wcześniej, program Visual Studio sprawdza lokalizację, z której została zainstalowana, na przykład udział sieciowy lub Internet, aby sprawdzić, czy są dostępne aktualizacje. Po udostępnieniu aktualizacji program Visual Studio powiadamia użytkownika o ikonie powiadomienia w prawym dolnym rogu okna.
+Jak opisano wcześniej, Visual Studio sprawdza lokalizację, z której została zainstalowana, na przykład udział sieciowy lub Internet, aby sprawdzić, czy są dostępne jakiekolwiek aktualizacje. Gdy aktualizacja jest dostępna, Visual Studio powiadomi użytkownika za pomocą ikony powiadomienia w prawym dolnym rogu okna.
 
-   ![Ikona powiadomienia w środowisku IDE programu Visual Studio](media/vs-2019/notification-bar.png "Ikona powiadomienia w środowisku IDE programu Visual Studio")
+   ![Ikona powiadomienia w Visual Studio IDE](media/vs-2019/notification-bar.png &quot;Ikona powiadomienia w Visual Studio IDE")
 
 ::: moniker-end
 
-Powiadomienia można wyłączyć, jeśli nie chcesz, aby użytkownicy końcowi byli powiadamiani o aktualizacjach. (Na przykład może być konieczne wyłączenie powiadomień w przypadku dostarczania aktualizacji za pomocą centralnego mechanizmu dystrybucji oprogramowania).
+Powiadomienia można wyłączyć, jeśli nie chcesz, aby użytkownicy końcowi otrzymywać powiadomienia o aktualizacjach. (Na przykład można wyłączyć powiadomienia w przypadku dostarczania aktualizacji za pośrednictwem centralnego mechanizmu dystrybucji oprogramowania).
 
 ::: moniker range="vs-2017"
 
-Ponieważ program Visual Studio 2017 [przechowuje wpisy rejestru w rejestrze prywatnym](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), nie można bezpośrednio edytować rejestru w typowy sposób. Program Visual Studio zawiera jednak `vsregedit.exe` narzędzie umożliwiające zmianę ustawień programu Visual Studio. Powiadomienia można wyłączyć za pomocą następującego polecenia:
+Ponieważ Visual Studio 2017 [](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)przechowuje wpisy rejestru w rejestrze prywatnym, nie można bezpośrednio edytować rejestru w typowy sposób. Jednak Visual Studio narzędzie, które umożliwia zmianę `vsregedit.exe` Visual Studio ustawień. Powiadomienia można wyłączyć za pomocą następującego polecenia:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
@@ -117,7 +117,7 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 ::: moniker range="vs-2019"
 
-Ponieważ program Visual Studio 2019 [przechowuje wpisy rejestru w rejestrze prywatnym](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), nie można bezpośrednio edytować rejestru w typowy sposób. Program Visual Studio zawiera jednak `vsregedit.exe` narzędzie umożliwiające zmianę ustawień programu Visual Studio. Powiadomienia można wyłączyć za pomocą następującego polecenia:
+Ponieważ Visual Studio 2019 [](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)przechowuje wpisy rejestru w rejestrze prywatnym, nie można bezpośrednio edytować rejestru w typowy sposób. Jednak Visual Studio narzędzie, które umożliwia zmianę `vsregedit.exe` Visual Studio ustawień. Powiadomienia można wyłączyć za pomocą następującego polecenia:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
@@ -125,18 +125,18 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 
 ::: moniker-end
 
-(Pamiętaj, aby zastąpić katalog, aby był zgodny z zainstalowanym wystąpieniem, które chcesz edytować).
+(Pamiętaj, aby zastąpić katalog w taki sposób, aby był on taki, aby był taki, jak zainstalowane wystąpienie, które chcesz edytować).
 
 > [!TIP]
-> Użyj [vswhere.exe](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) , aby znaleźć określone wystąpienie programu Visual Studio na stacji roboczej klienta.
+> Użyj [vswhere.exe, ](tools-for-managing-visual-studio-instances.md#detecting-existing-visual-studio-instances) aby znaleźć określone wystąpienie Visual Studio na stacji roboczej klienta.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz też
 
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
-* [Włączanie aktualizacji administratorów](enabling-administrator-updates.md)
-* [Stosowanie aktualizacji administratorów](applying-administrator-updates.md)
+* [Włączanie aktualizacji administratora](enabling-administrator-updates.md)
+* [Stosowanie aktualizacji administratora](applying-administrator-updates.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Narzędzia do zarządzania wystąpieniami programu Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
+* [Narzędzia do zarządzania Visual Studio wystąpień](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio produktu i jego obsługa](/visualstudio/releases/2019/servicing/)

@@ -1,96 +1,94 @@
 ---
-title: Metryki kodu — sprzęganie klas
+title: Metryki kodu — sprzężenie klas
 ms.date: 1/8/2021
-description: Dowiedz się więcej o metryki sprzęgania klas w programie Visual Studio.
+description: Dowiedz się więcej na temat metryk sprzężenia klas dla metryk kodu w Visual Studio.
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8320c460faf7532887364693080d38c0ff6baa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0853b807d3287eb584e76d9640ac98f930edb1a7
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860519"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666812"
 ---
-# <a name="code-metrics---class-coupling"></a>Metryki kodu — sprzęganie klas
+# <a name="code-metrics---class-coupling"></a>Metryki kodu — sprzężenie klas
 
-Sprzęganie klas jest również nadawany przez Sprzęganie nazw między obiektami (CBO), jak pierwotnie zdefiniowane przez [CK94](#ck94). W zasadzie sprzęganie klasowe jest miarą liczby klas używanych przez jedną klasę. Duża liczba jest zła, a niska liczba jest zazwyczaj dobrym razem z tą metryką. Sprzęganie klas zostało pokazane jako dokładne przewidywalność awarii oprogramowania, a ostatnie badania pokazują, że górny limit wartości 9 to najbardziej wydajny [S2010](#s2010).
+Sprzężenie klas jest również określane przez nazwę Sprzężenie między obiektami (CBO) zgodnie z pierwotnie zdefiniowaną przez [klasę CK94](#ck94). Zasadniczo sprzężenie klas jest miarą, ilu klas używa pojedyncza klasa. Duża liczba jest zła, a niska liczba jest zazwyczaj dobra w przypadku tej metryki. Sprzężenie klas było dokładnym predyktorem awarii oprogramowania, a ostatnie badania wykazały, że wartość górnego limitu 9 jest najbardziej wydajną wartością [W2010.](#s2010)
 
-Zgodnie z dokumentacją firmy Microsoft sprzęganie klas "mierzy sprzężenie do unikatowych klas za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpień ogólnych lub szablonów, klas bazowych, implementacji interfejsów, pól zdefiniowanych w typach zewnętrznych i dekoracji atrybutu. Dobre projektowanie oprogramowania oznacza, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Duże sprzężenie wskazuje, że projekt jest trudno używany i konserwowany ze względu na wiele współzależności z innymi typami ".
+Zgodnie z dokumentacją firmy Microsoft sprzężenie klas "mierzy sprzężenie z unikatowymi klasami za pomocą parametrów, zmiennych lokalnych, typów zwracanych, wywołań metod, wystąpienia ogólnych lub szablonów, klas bazowych, implementacji interfejsów, pól zdefiniowanych na typach zewnętrznych i dekoracji atrybutów. Dobry projekt oprogramowania określa, że typy i metody powinny mieć wysoką spójność i niskie sprzężenie. Wysokie sprzężenie oznacza projekt, który jest trudny do ponownego użycia i utrzymania ze względu na wiele współzależności od innych typów".
 
-Koncepcje sprzężenia i spójności są wyraźnie powiązane. Aby zachować tę dyskusję w temacie, nie dowiesz się więcej o spójności, która nie zawiera krótkiej definicji z [KKLS2000](#kkls2000):
+Pojęcia sprzężenia i spójności są wyraźnie powiązane. Aby zachować tę dyskusję na ten temat, nie będziemy szczegółowo zagłębiać się w spójność inną niż w celu uzyskania krótkiej definicji z [KKLS2000:](#kkls2000)
 
-"Spójność modułu została wprowadzona przez Yourdon i Constantine jako" jak ściśle powiązane lub powiązane z wewnętrznymi elementami modułu należy do siebie nawzajem " [YC79](#yc79). Moduł ma silną spójność, jeśli reprezentuje dokładnie jedno zadanie [...], a wszystkie jego elementy współtworzą to pojedyncze zadanie. Określają one spójność jako atrybut projektu, a nie kod i atrybut, który może służyć do przewidywania wykorzystania, utrzymania i możliwości zmiany ".
+"Spójność modułów została wprowadzona przez Wasz i Constantine jako 'jak ściśle powiązane lub powiązane wewnętrzne elementy modułu są ze sobą' [YC79.](#yc79) Moduł ma silną spójność, jeśli reprezentuje dokładnie jedno zadanie [...], a wszystkie jego elementy przyczyniają się do tego pojedynczego zadania. Opisują one spójność jako atrybut projektu, a nie kod, oraz atrybut, który może służyć do przewidywania możliwości ponownego użyteczności, możliwości konserwacji i możliwości zmiany".
 
-## <a name="class-coupling-example"></a>Przykład sprzęgania klasy
+## <a name="class-coupling-example"></a>Przykład sprzężenia klas
 
-Przyjrzyjmy się przyłączeniu klasy do działania. Najpierw utwórz nową aplikację konsolową i Utwórz nową klasę o nazwie Person z kilkoma właściwościami, a następnie natychmiast Oblicz metryki kodu:
+Przyjrzyjmy się sprzężenia klasom w działaniu. Najpierw utwórz nową aplikację konsolową i utwórz nową klasę o nazwie Person z pewnymi właściwościami, a następnie natychmiast oblicz metryki kodu:
 
-![Przykład sprzęgu klasy 1](media/class-coupling-example-1.png)
+![Przykład sprzężenia klas 1](media/class-coupling-example-1.png)
 
-Należy zauważyć, że sprzęganie klas ma wartość 0, ponieważ ta klasa nie używa żadnych innych klas. Teraz Utwórz inną klasę o nazwie PersonStuff z metodą, która tworzy wystąpienie osoby i ustawia wartości właściwości. Ponownie Oblicz metryki kodu:
+Zwróć uwagę, że sprzężenie klasy ma 0, ponieważ ta klasa nie używa żadnych innych klas. Teraz utwórz kolejną klasę o nazwie PersonStuff przy użyciu metody , która tworzy wystąpienie klasy Person i ustawia wartości właściwości. Oblicz ponownie metryki kodu:
 
-![Przykład sprzęgu klasy 2](media/class-coupling-example-2.png)
+![Przykład sprzężenia klas 2](media/class-coupling-example-2.png)
 
-Zobaczyć, jak działa wartość sprzęgania klasy? Zwróć również uwagę, że niezależnie od tego, jak wiele ustawionych właściwości, wartość sprzęgu klasy jest przychodząca o 1, a nie przez inną wartość. Sprzęganie klasowe mierzy każdej klasy tylko raz dla tej metryki, niezależnie od jej użycia. Ponadto, czy można zobaczyć, że `DoSomething()` ma 1, ale Konstruktor, `PersonStuff()` , ma 0 dla jego wartości? Obecnie w konstruktorze nie ma kodu, który używa innej klasy.
+Zobacz, jak wartość sprzężenia klasy podniesie się? Zauważ również, że niezależnie od tego, ile właściwości ustawisz, wartość sprzężenia klasy po prostu podniesie się o 1, a nie o jakąś inną wartość. Sprzężenie klas mierzy każdą klasę tylko raz dla tej metryki niezależnie od tego, ile jest używana. Ponadto, czy widzisz, że ma on wartość 1, ale konstruktor , , ma `DoSomething()` `PersonStuff()` wartość 0 dla swojej wartości? Obecnie w konstruktorze nie ma kodu, który używa innej klasy.
 
-Co zrobić, jeśli umieścisz kod w konstruktorze, który używał innej klasy? Oto co otrzymujesz:
+Co zrobić, jeśli umieścisz kod w konstruktorze, który używa innej klasy? Oto, co możesz uzyskać:
 
-![Przykład sprzęgu klasy 3](media/class-coupling-example-3.png)
+![Przykład sprzężenia klas 3](media/class-coupling-example-3.png)
 
-Teraz Konstruktor wyraźnie ma kod, który używa innej klasy, a Metryka sprzęgania klas pokazuje ten fakt. Ponownie można zobaczyć ogólne sprzężenia klasy dla `PersonStuff()` wynosi 1, a `DoSomething()` także 1, aby pokazać, że tylko jedna Klasa zewnętrzna jest używana niezależnie od tego, ile kodu wewnętrznego jest używany.
+Teraz konstruktor wyraźnie zawiera kod, który używa innej klasy, a metryka sprzężenia klasy pokazuje ten fakt. Ponownie można zobaczyć, że ogólny sprzężenie klas dla jest 1, a także 1, aby pokazać, że używana jest tylko jedna klasa zewnętrzna niezależnie od tego, ile kodu wewnętrznego z `PersonStuff()` `DoSomething()` niego korzysta.
 
-Następnie utwórz kolejną nową klasę. Nadaj tej klasie nazwę i Utwórz w niej pewne właściwości:
+Następnie utwórz kolejną nową klasę. Nadaj tej klasie nazwę i utwórz w jej obrębie kilka właściwości:
 
-![Przykład sprzęgania klasy — Dodaj nową klasę](media/class-coupling-example-add-new-class.png)
+![Przykład sprzężenia klas — dodawanie nowej klasy](media/class-coupling-example-add-new-class.png)
 
-Teraz Użyj klasy w naszej `DoSomething()` metodzie w `PersonStuff` klasie i ponownie Oblicz metryki kodu:
+Teraz zużyj klasę w `DoSomething()` naszej metodzie w klasie i ponownie oblicz `PersonStuff` metryki kodu:
 
-![Przykład sprzęgu klasy 4](media/class-coupling-example-4.png)
+![Przykład sprzężenia klas 4](media/class-coupling-example-4.png)
 
-Jak widać, Sprzęganie klasy dla klasy PersonStuff przechodzi do 2 i, w przypadku przechodzenia do szczegółów klasy, można zobaczyć, że `DoSomething()` Metoda ma najwięcej sprzęgu, ale Konstruktor nadal wykorzystuje 1 klasę.  Korzystając z tych metryk, można zobaczyć ogólną maksymalną liczbę dla danej klasy i przejść do szczegółów dotyczących poszczególnych elementów członkowskich.
+Jak widać, sprzężenie klas dla klasy PersonStuff wynosi do 2, a jeśli przejdziesz do szczegółów klasy, zobaczysz, że metoda zawiera najwięcej sprzężeń, ale konstruktor nadal zużywa tylko `DoSomething()` 1 klasę.  Korzystając z tych metryk, można wyświetlić ogólną maksymalną liczbę dla danej klasy i przejść do szczegółów dla poszczególnych członków.
 
-## <a name="the-magic-number"></a>Magiczna liczba
+## <a name="the-magic-number"></a>Magiczny numer
 
-Podobnie jak w przypadku złożoności cyklomatyczna, nie ma żadnego limitu zgodnego ze wszystkimi organizacjami. Jednak [S2010](#s2010) wskazuje, że limit 9 jest optymalny:
+Podobnie jak w przypadku skomplikowanej złożoności, nie ma żadnego limitu, który pasuje do wszystkich organizacji. Jednak [S2010](#s2010) wskazuje, że limit 9 jest optymalny:
 
-"Dlatego rozważamy wartości progowe [...] najwydajniejszie. Te wartości progowe (dla pojedynczego elementu członkowskiego) to CBO = 9 [...]. (wyróżnienie dodane)
+"W związku z tym uwzględniamy wartości progowe [...] najskuteczniejszy. Te wartości progowe (dla pojedynczego członka) to CBO = 9[...]". (dodano wyróżnienie)
 
 ## <a name="code-analysis"></a>Analiza kodu
 
-Analiza kodu obejmuje kategorię reguł zarządzania. Aby uzyskać więcej informacji, zobacz [zasady zarządzania](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). W przypadku korzystania ze starszej wersji analizy kodu rozszerzona reguła wytycznych projektowych zawiera obszar utrzymania:
+Analiza kodu obejmuje kategorię Reguł konserwacji. Aby uzyskać więcej informacji, zobacz [Reguły konserwacji](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings). W przypadku korzystania ze starszej analizy kodu zestaw rozszerzonych wytycznych projektowych zawiera obszar konserwacji:
 
-![Rozszerzone reguły wskazówek dotyczących projektowania sprzęgania klas](media/class-coupling-extended-design-guideline-rules.png)
+![Rozszerzone reguły wywłaszcze projektu sprzężenia klas](media/class-coupling-extended-design-guideline-rules.png)
 
-W obszarze łatwość utrzymania jest to reguła sprzęgania klas:
+Wewnątrz obszaru konserwacji znajduje się reguła sprzężenia klas:
 
-![Reguła sprzęgania klas](media/class-coupling-maintainability-area-rules.png)
+![Reguła sprzężenia klas](media/class-coupling-maintainability-area-rules.png)
 
-Ta reguła powoduje wygenerowanie ostrzeżenia w przypadku nadmiernego sprzęgania klas. Aby uzyskać więcej informacji, zobacz [CA1506: Unikaj nadmiernego sprzęgania klas](/dotnet/fundamentals/code-analysis/quality-rules/ca1506).
+Ta reguła wydaje ostrzeżenie, gdy sprzężenie klas jest nadmierne. Aby uzyskać więcej informacji, zobacz [CA1506: Unikaj nadmiernego sprzężenia klas](/dotnet/fundamentals/code-analysis/quality-rules/ca1506).
 
-Aby uzyskać opis tej reguły, zobacz wpis w blogu analiza zarchiwizowanych kodów: [metryki kodu jako zasady ewidencjonowania](/archive/blogs/codeanalysis/code-metrics-as-check-in-policy) i ostrzeżenia o opisie progowym *o powyżej 80 dla klasy i powyżej 30 dla metody*.  Te wartości są nietypowe, ale co najmniej zapewnia górny limit. Po osiągnięciu tego ostrzeżenia coś jest niemal niewłaściwe.
-
-## <a name="citations"></a>Cytowań
+## <a name="citations"></a>Cytatów
 
 ### <a name="ck94"></a>CK94
 
-Chidamber, S. R. & Kemerer, C. F. (1994). Pakiet metryk dla projektowania zorientowanego obiektowo (IEEE Transactions w inżynierii oprogramowania, vol. 20, No. 6). Pobrano 14 maja 2011 z witryny sieci Web University of Pittsburgh: [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
+Chidamber, S. R. & Kemerer, C. F. (1994). Pakiet metryk dla projektowania obiektowego (transakcje IEEE dotyczące inżynierii oprogramowania, tom 20, nie. 6). Pobrana 14 maja 2011 r. z witryny internetowej Uniwersytetu Pittsburgh: [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
 
 ### <a name="kkls2000"></a>KKLS2000
 
-Kabaili, H., Keller, R., Lustman, F. i Saint-Denis, G. (2000). Oglądany spójności klasy: badanie analityczne w systemach przemysłowych (postępowania warsztatów dotyczących ilościowych metod w Object-Oriented inżynieria oprogramowania). Pobrano 20 maja 2011 z witryny sieci Web Université de Montréal [http://www.iro.umontreal.ca/~sahraouh/qaoose/papers/Kabaili.pdf](http://www.iro.umontreal.ca/~sahraouh/qaoose/papers/Kabaili.pdf)
+);aili, H., Keller, R.,Cznaman, F. i Saint-Czna, G. (2000). Zmiana klas ponownie: Badanie empiryczne dotyczące systemów przemysłowych (Proceedings of the Workshop on Quantitative Approaches in Object-Oriented Software Engineering). Pobrano 20 maja 2011 r. z witryny internetowej w Montréal [http://www.iro.umontreal.ca/~sahraouh/qaoose/papers/Kabaili.pdf](http://www.iro.umontreal.ca/~sahraouh/qaoose/papers/Kabaili.pdf)
 
 ### <a name="sk2003"></a>SK2003
 
-Subramanyam, R. & Krishnan, M. S. (2003). Analiza analityczna metryk z SOCZEWKami dla Object-Oriented złożoności projektu: implikacje dla wad oprogramowania (IEEE Transactions, Tom. 29, No. 4). Pobrano 14 maja 2011 z University of Massachusetts Darmouth Web site [http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf](http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf)
+Subramanyam, R. & Krishnan, M. S. (2003). Empiryczna analiza metryk PChN dla złożoności projektu Object-Oriented: Implikacje dotyczące wad oprogramowania (transakcje IEEE dotyczące inżynierii oprogramowania, tom 29, nie. 4). Pobrano 14 maja 2011 r., z witryny internetowej Uniwersytetu w Chicago [http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf](http://moosehead.cis.umassd.edu/cis580/readings/OO_Design_Complexity_Metrics.pdf)
 
 ### <a name="s2010"></a>S2010
 
-Shatnawi, R. (2010). Badanie ilościowe dopuszczalnych poziomów ryzyka Object-Oriented metryki w systemach Open-Source (IEEE Transactions, vol. 36, No. 2).
+Shatnawi, R. (2010). Ilościowe badanie akceptowalnych poziomów ryzyka metryk Object-Oriented w systemach Open-Source (transakcje IEEE dotyczące inżynierii oprogramowania, tom 36, nie. 2).
 
 ### <a name="yc79"></a>YC79
 
-Edward Yourdon i Larry L. Constantine. Projektowanie strukturalne. Prentice, Englewood Cliffs, N.J., 1979.
+Paul Yourdon i Larry L. Constantine. Structured Design (Projekt strukturalny). Prentice Hall, Englewood Cliffs, N.J., 1979.
