@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie z Visual Studio Tools for Unity | Microsoft Docs
-description: Dowiedz się, jak zainstalować i skonfigurować program Visual Studio do tworzenia aplikacji dla aparatu Unity.
+description: Dowiedz się, jak instalować i instalować Visual Studio do budowania aplikacji unity.
 ms.custom: ''
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
@@ -13,94 +13,94 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
-ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
+ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912571"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782611"
 ---
-# <a name="get-started-with-visual-studio-and-unity"></a>Wprowadzenie do programu Visual Studio i aparatu Unity
+# <a name="get-started-with-visual-studio-and-unity"></a>Wprowadzenie do Visual Studio i aparatu Unity
 
 > [!NOTE]
-> W tym przewodniku przyjęto założenie, że masz już zainstalowany aparat Unity przy użyciu programu Unity Hub. Jeśli dopiero zaczynasz korzystanie z aparatu Unity, zalecamy odwiedzenie aparatu Unity i przeprowadzenie pierwszej [ścieżki szkoleniowej aparatu Unity Essentials](https://learn.unity.com/pathway/unity-essentials) .
+> W tym przewodniku przyjęto założenie, że zainstalowano już unity przy użyciu programu Unity Hub. Jeśli jesteś nowym użytkownikom aparatu Unity, zalecamy odwiedzenie strony Unity Learn i ukończenie ścieżki szkoleniowej [Unity Essentials.](https://learn.unity.com/pathway/unity-essentials)
 
-## <a name="install-unity-support-for-visual-studio"></a>Zainstaluj obsługę aparatu Unity dla programu Visual Studio
+## <a name="install-unity-support-for-visual-studio"></a>Instalowanie obsługi aparatu Unity dla Visual Studio
 
-Visual Studio Tools for Unity to bezpłatne rozszerzenie, które zapewnia obsługę pisania i debugowania języka C# i nie tylko. Zapoznaj się z [omówieniem narzędzi dla aparatu Unity](./visual-studio-tools-for-unity.md) , aby uzyskać pełną listę rozszerzeń, które zawiera.
+Visual Studio Tools for Unity to bezpłatne rozszerzenie, które zapewnia obsługę pisania i debugowania języka C# i nie tylko. Odwiedź stronę [Przeglądu narzędzi dla aparatu Unity,](./visual-studio-tools-for-unity.md) aby uzyskać pełną listę informacji o rozszerzeniach.
 
 :::zone pivot="windows"
 
 > [!NOTE]
-> Ten przewodnik instalacji dotyczy programu Visual Studio. Jeśli używasz Visual Studio Code, odwiedź stronę [projektowania środowiska Unity przy użyciu vs Code dokumentacji](https://code.visualstudio.com/docs/other/unity).
+> Ten przewodnik instalacji jest dla Visual Studio. Jeśli używasz aplikacji, Visual Studio Code unity development with VS Code documentation (Tworzenie aplikacji na platformie [Unity przy użyciu VS Code dokumentacji).](https://code.visualstudio.com/docs/other/unity)
 
-1. [Pobierz instalatora programu Visual Studio](/visualstudio/docs/install/install-visual-studio.md)lub uruchom go, jeśli jest już zainstalowany.
-2. Kliknij przycisk **Modyfikuj** (jeśli jest już zainstalowany) lub **Zainstaluj** (w przypadku nowych instalacji) dla żądanej wersji programu Visual Studio.
-3. Na karcie **obciążenia** przejdź do sekcji **gry** i wybierz pozycję **Programowanie gier z użyciem obciążenia aparatu Unity** .
+1. [Pobierz instalatora Visual Studio lub](/visualstudio/install/install-visual-studio.md)uruchom go, jeśli został już zainstalowany.
+2. Kliknij **pozycję Modyfikuj** (jeśli jest już zainstalowana) lub **Zainstaluj** (w przypadku nowych instalacji) dla żądanej wersji Visual Studio.
+3. Na karcie **Workloads (Obciążenia)** przewiń do sekcji **Gaming (Gry)** i wybierz obciążenie **Game development with Unity (Opracowywanie gier za pomocą aparatu Unity).**
 
-    ![Programowanie gier za pomocą aparatu Unity w instalatorze](../media/vs/unity-workload.png)
+    ![Okno obciążenia tworzenia gier za pomocą aparatu Unity w instalatorze](../media/vs/unity-workload.png)
 
 :::zone-end
 :::zone pivot="macos"
 
 > [!NOTE]
-> Ten przewodnik instalacji dotyczy Visual Studio dla komputerów Mac. Jeśli używasz Visual Studio Code, odwiedź stronę [projektowania środowiska Unity przy użyciu vs Code dokumentacji](https://code.visualstudio.com/docs/other/unity).
+> Ten przewodnik instalacji jest dla Visual Studio dla komputerów Mac. Jeśli używasz aplikacji, Visual Studio Code unity development with VS Code documentation (Tworzenie aplikacji na platformie [Unity przy użyciu VS Code dokumentacji).](https://code.visualstudio.com/docs/other/unity)
 
-Narzędzia dla aparatu Unity są dołączone do instalacji Visual Studio dla komputerów Mac i nie są wymagane żadne oddzielne kroki instalacji. Można to sprawdzić w **Visual Studio dla komputerów Mac rozszerzenia > > Programowanie gier** . Należy włączyć **Visual Studio dla komputerów Mac narzędzia dla aparatu Unity** .
+Narzędzia dla aparatu Unity są dołączone do instalacji Visual Studio dla komputerów Mac i nie są wymagane żadne oddzielne kroki instalacji. Możesz to sprawdzić w **Visual Studio dla komputerów Mac > Extensions > Game Development.** **Visual Studio dla komputerów Mac tools for Unity** powinny być włączone.
 
-![Widok Menedżera rozszerzeń z włączonymi narzędziami Visual Studio dla komputerów Mac dla aparatu Unity](../media/vsm/unity-workload.png)
+![Widok Menedżera rozszerzeń z włączonymi Visual Studio dla komputerów Mac Tools for Unity](../media/vsm/unity-workload.png)
 
 :::zone-end
 
 ## <a name="check-for-updates"></a>Sprawdź aktualizacje
 
-Zalecane jest pozostawienie zaktualizowanego programu Visual Studio i Visual Studio dla komputerów Mac, aby były dostępne najnowsze poprawki, funkcje i wsparcie dla aparatu Unity. Nie wymaga to aktualizacji wersji aparatu Unity.
+Zaleca się, aby zawsze Visual Studio i Visual Studio dla komputerów Mac, aby mieć najnowsze poprawki usterek, funkcje i obsługę aparatu Unity. Nie wymaga to aktualizacji wersji aparatu Unity.
 
 :::zone pivot="windows"
 
-1. Kliknij menu **pomoc > Sprawdź dostępność aktualizacji** .
+1. Kliknij menu **> Sprawdź aktualizacje.**
 
-    ![Menu Sprawdź dostępność aktualizacji w programie Visual Studio 2019](../media/vs/check-for-updates.png)
+    ![Menu Sprawdź aktualizacje w programie Visual Studio 2019](../media/vs/check-for-updates.png)
 
-2. Jeśli dostępna jest aktualizacja, zostanie wyświetlona nowa wersja Instalator programu Visual Studio. Kliknij przycisk **Aktualizuj** .
+2. Jeśli jest dostępna aktualizacja, Instalator programu Visual Studio zostanie pokazana nowa wersja. Kliknij przycisk **Aktualizuj.**
 
 :::zone-end
 :::zone pivot="macos"
 
-1. Kliknij polecenie **Visual Studio dla komputerów Mac > Sprawdź, czy są aktualizacje...** , aby otworzyć okno dialogowe **aktualizacji programu Visual Studio** .
-2. Jeśli dostępna jest aktualizacja, kliknij przycisk **Instaluj** .
+1. Kliknij menu **Visual Studio dla komputerów Mac > Sprawdź aktualizacje...,** aby otworzyć **okno dialogowe Visual Studio Update.**
+2. Jeśli jest dostępna aktualizacja, kliknij **przycisk** Zainstaluj.
 
 :::zone-end
 
-## <a name="configure-unity-to-use-visual-studio"></a>Konfigurowanie aparatu Unity do korzystania z programu Visual Studio
+## <a name="configure-unity-to-use-visual-studio"></a>Konfigurowanie aparatu Unity do używania Visual Studio
 
-Domyślnie aparat Unity powinien już być skonfigurowany do korzystania z programu Visual Studio lub Visual Studio dla komputerów Mac jako Edytor skryptów. Możesz to potwierdzić lub zmienić zewnętrzny edytor skryptów na określoną wersję programu Visual Studio z edytora Unity.
+Domyślnie aparatu Unity należy już skonfigurować do używania Visual Studio lub Visual Studio dla komputerów Mac jako edytor skryptów. Możesz to potwierdzić lub zmienić zewnętrzny edytor skryptów na określoną wersję Visual Studio edytorze aparatu Unity.
 
 :::zone pivot="windows"
 
-1. W edytorze aparatu Unity wybierz menu **Edytuj preferencje >** .
-2. Wybierz kartę **narzędzia zewnętrzne** po lewej stronie.
-3. Lista rozwijana **zewnętrzny edytor skryptów** umożliwia wybór różnych instalacji programu Visual Studio. Możesz również kliknąć przycisk **Przeglądaj...** na liście rozwijanej, aby dodać niewyświetlaną wersję.
+1. W edytorze aparatu Unity wybierz menu **> preferencje.**
+2. Wybierz **kartę Narzędzia zewnętrzne** po lewej stronie.
+3. Lista **rozwijana Edytor** skryptów zewnętrznych umożliwia wybór różnych instalacji Visual Studio. Możesz również kliknąć pozycję **Przeglądaj...** z listy rozwijanej, aby dodać wersję nieznajdową na liście.
 
-    ![Menu Preferencje narzędzi zewnętrznych w edytorze aparatu Unity w systemie Windows](../media/vs/preferences-external-tools.png)
+    ![Menu preferencji Narzędzia zewnętrzne w edytorze aparatu Unity w systemie Windows](../media/vs/preferences-external-tools.png)
 
-4. Jeśli wybrano opcję **Przeglądaj...** , przejdź do katalogu **Common7/IDE** w katalogu instalacyjnym programu Visual Studio i wybierz pozycję **devenv.exe**. Następnie kliknij przycisk **Otwórz**.
-5. Po wybraniu programu Visual Studio na liście **zewnętrznych edytorów skryptów** upewnij się, że pole wyboru **dołączanie edytora** jest zaznaczone.
-6. Zamknij okno dialogowe **Preferencje** , aby zakończyć proces konfiguracji.
+4. Jeśli **wybrano** pozycję Przeglądaj..., przejdź do katalogu **Common7/IDE** w katalogu Visual Studio i wybierz pozycję **devenv.exe**. Następnie kliknij pozycję **Otwórz**.
+5. Po Visual Studio na liście **Edytor** skryptów zewnętrznych upewnij się, **że** pole wyboru Dołączanie edytora jest zaznaczone.
+6. Zamknij okno **dialogowe Preferencje,** aby ukończyć proces konfiguracji.
 
 :::zone-end
 :::zone pivot="macos"
 
-1. W edytorze Unity wybierz menu **preferencji > Unity** .
-2. Wybierz kartę **narzędzia zewnętrzne** po lewej stronie.
-3. Lista rozwijana **zewnętrzny edytor skryptów** umożliwia wybór różnych instalacji programu Visual Studio. Możesz również kliknąć przycisk **Przeglądaj...** na liście rozwijanej, aby dodać niewyświetlaną wersję.
+1. W edytorze aparatu Unity wybierz menu **Preferencje > Unity.**
+2. Wybierz **kartę Narzędzia zewnętrzne** po lewej stronie.
+3. Lista **rozwijana Zewnętrzny** edytor skryptów umożliwia wybór różnych instalacji Visual Studio. Możesz również kliknąć pozycję **Przeglądaj...** na liście rozwijanej, aby dodać wersję nieznajdową na liście.
 
-    ![Menu Preferencje narzędzi zewnętrznych w edytorze aparatu Unity w systemie macOS](../media/vsm/preferences-external-tools.png)
+    ![Menu preferencji Narzędzia zewnętrzne w edytorze aparatu Unity w systemie macOS](../media/vsm/preferences-external-tools.png)
 
-4. Zamknij okno dialogowe **Preferencje** , aby zakończyć proces konfiguracji.
+4. Zamknij okno **dialogowe** Preferencje, aby zakończyć proces konfiguracji.
 
 :::zone-end
 
 ## <a name="next-steps"></a>Następne kroki
 
- Aby dowiedzieć się, jak korzystać z i debugować projekt Unity w programie Visual Studio, odwiedź stronę [przy użyciu Visual Studio Tools for Unity](using-visual-studio-tools-for-unity.md).
+ Aby dowiedzieć się, jak pracować z projektem aparatu Unity i debugować go w programie Visual Studio, odwiedź stronę Using Visual Studio Tools for Unity (Korzystanie [z Visual Studio Tools for Unity).](using-visual-studio-tools-for-unity.md)
