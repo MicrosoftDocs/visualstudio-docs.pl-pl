@@ -16,6 +16,7 @@
   items:
     - name: Instalowanie programu Visual Studio
       href: install/install-visual-studio.md
+      displayName: system requirements
     - name: Instalowanie w trybie offline
       items:
         - name: Tworzenie instalacji w trybie offline programu Visual Studio
@@ -194,7 +195,7 @@
           href: ide/creating-solutions-and-projects.md
         - name: Otwieranie projektu z repo w Visual Studio 2017 r.
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Otwieranie projektu z repo w programie Visual Studio 2019
+        - name: Otwieranie projektu z repo w Visual Studio 2019 r.
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Przenoszenie, migrowanie i uaktualnianie projektów'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -268,16 +269,6 @@
         - name: Dostosowywanie zadań kompilacji i debugowania
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-    - name: Programowanie z zastosowaniem usługi Codespaces (wersja zapoznawcza)
-      items:
-        - name: Omówienie
-          href: ide/codespaces/codespaces-overview.md
-        - name: Korzystanie z programu Visual Studio ze środowiskiem codespace
-          href: ide/codespaces/use-visual-studio-with-codespaces.md
-        - name: Dostosowywanie środowiska codespace
-          href: ide/codespaces/customize-codespaces.md
-        - name: Obsługiwane funkcje programu Visual Studio
-          href: ide/codespaces/supported-features-codespaces.md
     - name: Nawiązywanie połączenia z projektami w programie Team Explorer
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
@@ -1443,38 +1434,16 @@
       href: ide/whats-new-visual-studio-docs.md
     - name: Historia nowości w 2018 r.
       href: ide/whats-new-visual-studio-docs-history.md
-    - name: Informacje o wersji i wymagania systemowe
+    - name: Informacje o wersji
       items:
         - name: Rytm wydawania
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2017
-          items:
-            - name: Informacje o bieżącej wersji
-              href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: Informacje o wersji zapoznawczej
-              href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: Historia informacji o wersji
-              href: /visualstudio/releasenotes/vs2017-relnotes-history/
-            - name: Kod dystrybucyjny
-              href: /visualstudio/productinfo/2017-redistribution-vs/
-            - name: Zgodność platformy
-              href: /visualstudio/productinfo/vs2017-compatibility-vs/
-            - name: Wymagania systemowe
-              href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
-          items:
-            - name: Informacje o bieżącej wersji
-              href: /visualstudio/releases/2019/release-notes/
-            - name: Informacje o wersji zapoznawczej
-              href: /visualstudio/releases/2019/release-notes-preview/
-            - name: Historia informacji o wersji
-              href: /visualstudio/releases/2019/release-notes-history/
-            - name: Kod dystrybucyjny
-              href: /visualstudio/releases/2019/redistribution/
-            - name: Zgodność platformy
-              href: /visualstudio/releases/2019/compatibility/
-            - name: Wymagania systemowe
-              href: /visualstudio/releases/2019/system-requirements/
+        - name: Visual Studio 2019 r.
+          href: /visualstudio/releases/2019/release-notes/
+        - name: Visual Studio z 2017 r.
+          href: /visualstudio/releasenotes/vs2017-relnotes/
+        - name: Visual Studio z 2015 r.
+          href: vs-2015-archive.md
         - name: Postanowienia licencyjne
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Cykl życia pomocy technicznej i obsługi
@@ -1512,8 +1481,3 @@
       href: ide/developer-community-guidelines.md
     - name: Prywatność danych w społeczności deweloperów
       href: ide/developer-community-privacy.md
-- name: Visual Studio 2015
-  expanded: true
-  items:
-    - name: Dokumentacja programu Visual Studio 2015
-      href: vs-2015-archive.md

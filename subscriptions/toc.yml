@@ -161,7 +161,7 @@
         - name: Superadministratorzy i administratorzy
           href: admin-roles.md
         - name: Ustawianie preferencji umowy
-          href: admin-prefs.md
+          href: admin-preferences.md
         - name: Omówienie
           href: using-admin-portal.md
         - name: Dodawanie subskrypcji miesięcznych

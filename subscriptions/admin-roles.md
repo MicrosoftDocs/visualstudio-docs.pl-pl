@@ -1,58 +1,58 @@
 ---
-title: Administratorzy i role administratora dla subskrypcji programu Visual Studio
+title: Role administratora i administratora dla Visual Studio subskrypcji
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
-description: Dowiedz się więcej o rolach administratora i administratora oraz o sposobach przypisywania administratorów.
-ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+description: Dowiedz się więcej na temat ról administratora i administratora oraz sposobu przypisywania administratorów.
+ms.openlocfilehash: 1f107a5bcef9be61c4693549ee8e628a207cc789
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757597"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973539"
 ---
-# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Administratorzy i Administratorzy dla umów dotyczących subskrypcji programu Visual Studio
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Super admins and admins for Visual Studio subscription agreements (Super admins and admins for Visual Studio subscription agreements
 
-W nowym portalu administratora subskrypcji programu Visual Studio dla klientów korzystających z licencjonowania zbiorowego istnieją dwie różne role. Role te są podobne do roli kontakt podstawowy/powiadomienie i rola Menedżera subskrypcji, która została użyta w VLSC.
+Istnieją dwie różne role w nowym portalu Visual Studio subskrypcji dla klientów korzystających z licencjonowania zbiorowego. Te role są podobne do roli Kontakt podstawowy/powiadomienia i Menedżer subskrypcji, które istniały w UCC.
 
-**Administratorzy:** Po wstępnym skonfigurowaniu organizacji główna lub informacja kontaktowa jest domyślnie administratora. Kontakt podstawowy lub osoba kontaktowa mogą wybrać opcję przypisania dodatkowych administratorów lub administratorów. Administrator może dodawać i usuwać innych administratorów oraz subskrybentów. Jeśli w systemie istnieje więcej niż dwóch administratorów, administrator może usunąć wszystkie z nich oprócz ostatnich dwóch z nich w celu zabezpieczenia.
+**Super administratorzy:** Po początkowym skonfigurowaniu organizacji kontakt podstawowy lub kontakt z powiadomieniem staje się domyślnie administratorem. Kontakt podstawowy lub kontakt z powiadomieniami może przypisać dodatkowych administratorów lub administratorów. Administrator może dodawać i usuwać innych administratorów, a także subskrybentów. Jeśli w systemie jest więcej niż dwóch administratorów, administrator może usunąć wszystkich administratorów oprócz dwóch ostatnich ze względów bezpieczeństwa.
 
-**Administratorzy:** Administrator może być przypisany tylko przez administratora. Administrator może zarządzać tylko subskrybentami w umowach, do których przypisuje administrator.
+**Administratorzy:** Administrator może zostać przypisany tylko przez administratora. Administrator może zarządzać subskrybentami tylko w umowach przypisanych im przez administratora.
 
-Obejrzyj pokaz dotyczący zarządzania administratorami. 
+Obejrzyj pokaz sposobu zarządzania administratorami. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
 ## <a name="assigning-admins"></a>Przypisywanie administratorów
-Aby przypisać nowych administratorów (administratorów):
-1. Zaloguj się, aby https://manage.visualstudio.com korzystać z adresu e-mail, który został przypisany jako administrator z umową, w której zostały zakupione subskrypcje.
-2. Kliknij kartę z etykietą **Zarządzaj administratorami**.
+Aby przypisać nowych administratorów:
+1. Zaloguj się przy użyciu adresu e-mail przypisanego jako administrator w umowie, w ramach której https://manage.visualstudio.com zostały zakupione subskrypcje.
+2. Kliknij kartę z etykietą **Zarządzaj administratorami.**
 3. Kliknij pozycję **Dodaj**.
    > [!div class="mx-imgBorder"]
-   > ![Dodaj administratorów](_img/admin-roles/add-admins.png "Kliknij blok zarządzanie administratorami, a następnie kliknij przycisk Dodaj, aby przypisać nowych administratorów.")
-4. Wypełnij formularz nowymi informacjami administratora.  
+   > ![Dodawanie administratorów](_img/admin-roles/add-admins.png "Kliknij blok Zarządzanie administratorami, a następnie kliknij przycisk Dodaj, aby przypisać nowych administratorów.")
+4. Wypełnij formularz, aby uzyskać informacje od nowego administratora.  
    > [!div class="mx-imgBorder"]
-   > ![Dodaj formularz administratora](_img/admin-roles/add-form.png "Wprowadź informacje dotyczące logowania dla nowego administratora i zdecyduj, czy chcesz je utworzyć administratora.  Następnie kliknij przycisk Dodaj.")
+   > ![Dodawanie formularza administratora](_img/admin-roles/add-form.png "Wprowadź informacje logowania dla nowego administratora i wybierz, czy ma być administratorem.  Następnie kliknij przycisk Dodaj.")
 
    > [!NOTE]
-   > Jeśli chcesz, aby ten administrator mógł przypisać dodatkowych administratorów, **Pamiętaj o zaznaczeniu pola administratora** .
+   > Jeśli chcesz, aby ten administrator mógł przypisywać dodatkowych administratorów, pamiętaj, aby zaznacz pole **superadministracyjnym.**
 
-5. Po kliknięciu przycisku **Dodaj** , aby przypisać nowego administratora, otrzymają wiadomość e-mail z zaproszeniem do logowania się do portalu.  
+5. Po kliknięciu **przycisku Dodaj** w celu przypisania nowego administratora otrzymają oni wiadomość e-mail z zaproszeniem do zalogowania się do portalu.  
 
 ## <a name="resources"></a>Zasoby
-- [Wsparcie administracyjne i subskrypcje programu Visual Studio](https://aka.ms/vsadminhelp)
+- [Visual Studio administracji i subskrypcji](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Visual Studio dokumentacji](/visualstudio/)
 - [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)
 - [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja Microsoft 365](/microsoft-365/)
+- [Microsoft 365 dokumentacji](/microsoft-365/)
 
 
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się, jak [przypisywać subskrypcje](assign-license.md)
 - Dowiedz się więcej na temat pełnego zakresu [korzyści z subskrypcji](https://visualstudio.microsoft.com/vs/benefits/)
-- [Ustawianie preferencji umowy](admin-prefs.md)
+- [Ustawianie preferencji umowy](admin-preferences.md)
