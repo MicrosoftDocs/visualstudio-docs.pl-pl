@@ -1,8 +1,8 @@
 ---
 title: Nie można ustawić punktu przerwania danych | Microsoft Docs
-description: Znajdź wyjaśnienia, rozwiązania i obejścia "nie można ustawić błędów punktów przerwania danych", które występują podczas korzystania z funkcji "Przerwij przy zmianie wartości".
+description: Znajdź wyjaśnienia, rozwiązania i obejścia dla błędu "Nie można ustawić błędów punktu przerwania danych", które występują podczas używania funkcji "Przerwij, gdy wartość zmienia się".
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,64 +17,69 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150460"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231968"
 ---
-# <a name="troubleshooting-data-breakpoint-errors"></a>Rozwiązywanie problemów z błędami punktów przerwania danych
-Ta strona zawiera instrukcje dotyczące rozwiązywania typowych błędów, które pojawiają się podczas korzystania z funkcji "Przerwij przy zmianie wartości".
+# <a name="troubleshooting-data-breakpoint-errors"></a>Rozwiązywanie problemów z błędami punktu przerwania danych
+Ta strona zawiera informacje na temat rozwiązywania typowych błędów występujących podczas używania funkcji "Przerwij, gdy wartość zmienia się"
 
-## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnozowanie błędów "nie można ustawić punktu przerwania danych"
+## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>Diagnozowanie błędów "Nie można ustawić punktu przerwania danych"
 > [!IMPORTANT]
-> Zarządzane punkty przerwania danych są obsługiwane w programie .NET Core 3,0 i w górę. Najnowszą wersję możesz pobrać [tutaj](https://dotnet.microsoft.com/download).
+> Zarządzane punkty przerwania danych są obsługiwane w programie .NET Core 3.0 i jego up oraz w programie .NET 5.0.3 i jego up. Najnowszą wersję można pobrać [tutaj.](https://dotnet.microsoft.com/download)
 
-Poniżej znajduje się lista błędów, które mogą wystąpić podczas korzystania z punktów przerwania zarządzanych danych. Zawierają one dodatkowe wyjaśnienie przyczyny wystąpienia błędu oraz możliwe rozwiązania lub obejścia problemu.
+Poniżej znajduje się lista błędów, które mogą wystąpić podczas korzystania z zarządzanych punktów przerwania danych. Zawierają one więcej informacji na temat przyczyny błędu oraz możliwych rozwiązań lub obejść w celu usunięcia błędu.
 
-- *"Wersja platformy .NET używana przez proces docelowy nie obsługuje punktów przerwania danych. Punkty przerwania danych wymagają programu .NET Core 3.0 + uruchomionego na x86 lub x64 ".*
+- *"Wersja programu .NET używana przez proces docelowy nie obsługuje punktów przerwania danych. Punkty przerwania danych wymagają programu .NET Core 3.x lub .NET 5.0.3+, działającego w wersji x86 lub x64".*
 
-  - Obsługa punktów przerwania zarządzanych danych rozpoczęła się w programie .NET Core 3,0. Nie jest to obecnie obsługiwane w .NET Framework lub wersji programu .NET Core w systemie 3,0. 
+  - Obsługa zarządzanych punktów przerwania danych rozpoczęła się na platformie .NET Core 3.0. Nie jest ona obecnie obsługiwana w .NET Framework, wersjach programu .NET Core w wersji 3.0 ani wersjach programu .NET w wersji 5.0.3. 
     
-  - **Rozwiązanie**: rozwiązanie to może spowodować uaktualnienie projektu do programu .net Core 3,0.
+  - **Rozwiązanie:** Rozwiązaniem tego problemu jest uaktualnienie projektu do programu .NET Core 3.0.
 
-- *"Nie można odnaleźć wartości na stercie zarządzanym i nie można jej śledzić".*
+- *"Nie można znaleźć wartości na zarządzanym stosie i nie można jej śledzić".*
   - Zmienna zadeklarowana na stosie.
-    - Nie obsługujemy ustawiania punktów przerwania danych dla zmiennych utworzonych na stosie, ponieważ ta zmienna będzie nieprawidłowa po zamknięciu funkcji.
-    - **Obejście**: Ustaw punkty przerwania w wierszach, w których jest używana zmienna.
+    - Nie obsługujemy ustawiania punktów przerwania danych dla zmiennych utworzonych na stosie, ponieważ ta zmienna będzie nieprawidłowa po zakończeniu działania funkcji.
+    - **Obejście:** Ustaw punkty przerwania w wierszach, w których jest używana zmienna.
 
-  - "Przerwij, gdy zmienia się wartość" w zmiennej, która nie jest rozwinięta z listy rozwijanej.
-    - Debuger wewnętrznie musi znać obiekt zawierający pole, które ma być śledzone. Moduł wyrzucania elementów bezużytecznych może przenieść obiekt wokół sterty, aby debuger musiał znać obiekt, który utrzymuje zmienną, którą chcesz śledzić. 
-    - **Obejście**: Jeśli korzystasz z metody w obiekcie, dla którego chcesz ustawić punkt przerwania danych, przejdź do jednej ramki i Użyj `locals/autos/watch` okna do rozwinięcia obiektu i ustaw punkt przerwania danych w polu, które chcesz.
+  - "Przerwij, gdy wartość zmienia się" dla zmiennej, która nie jest rozwijana z listy rozwijanej.
+    - Debuger wewnętrznie musi znać obiekt zawierający pole, które chcesz śledzić. Moduł odśmiecania pamięci może poruszać obiekt w stercie, więc debuger musi znać obiekt, który zawiera zmienną, którą chcesz śledzić. 
+    - **Obejście:** Jeśli znajdujesz się w metodzie w obiekcie, dla którego chcesz ustawić punkt przerwania danych, przejdź w górę o jedną ramkę i użyj okna, aby rozwinąć obiekt i ustawić punkt przerwania danych dla `locals/autos/watch` odpowiedniego pola.
 
-- *"Punkty przerwania danych nie są obsługiwane w przypadku pól statycznych lub właściwości statycznych".*
+- *"Punkty przerwania danych nie są obsługiwane w przypadku pól statycznych ani właściwości statycznych".*
     
-  - Pola i właściwości statyczne nie są obecnie obsługiwane. Jeśli interesuje Cię tę funkcję, Przekaż [opinię](#provide-feedback).
+  - Pola statyczne i właściwości nie są obecnie obsługiwane. Jeśli interesuje Cię ta funkcja, prosimy o [opinię.](#provide-feedback)
 
-- *"Pola i właściwości struktur nie mogą być śledzone".*
+- *"Nie można śledzić pól i właściwości struktur".*
 
-  - Pola i właściwości struktur nie są obecnie obsługiwane. Jeśli interesuje Cię tę funkcję, Przekaż [opinię](#provide-feedback).
+  - Pola i właściwości struktur nie są obecnie obsługiwane. Jeśli interesuje Cię ta funkcja, prosimy o [opinię.](#provide-feedback)
 
-- *"Wartość właściwości została zmieniona i nie może już być śledzona".*
+- *"Wartość właściwości została zmieniona i nie można już jej śledzić".*
 
-  - Właściwość może zmienić sposób, w jaki jest obliczany w czasie wykonywania, a jeśli tak się stanie, liczba zmiennych, które zależy od wzrostu i może przekroczyć ograniczenie sprzętowe. Zobacz `"The property is dependent on more memory than can be tracked by the hardware."` poniżej.
+  - Właściwość może zmienić sposób jej obliczania w czasie wykonywania. Jeśli tak się stanie, liczba zmiennych, od których zależy właściwość, zwiększa się i może przekraczać ograniczenie sprzętowe. Zobacz `"The property is dependent on more memory than can be tracked by the hardware."` poniżej.
 
-- *"Właściwość jest zależna od większej ilości pamięci, niż może być śledzona przez sprzęt".*
+- *"Właściwość jest zależna od większej ilości pamięci niż może być śledzona przez sprzęt".*
     
-  - Każda architektura ma ustawioną liczbę bajtów i punkty przerwania danych sprzętowych, które może obsłużyć i właściwość, dla której ma zostać ustawiony punkt przerwania danych, przekroczyła ten limit. Zapoznaj się z tabelą [ograniczeń sprzętowych punktów przerwania danych](#data-breakpoint-hardware-limitations) , aby dowiedzieć się, ile zasobów punktów przerwania i bajtów danych jest dostępnych dla używanej architektury. 
-  - **Obejście**: Ustaw punkt przerwania danych dla wartości, która może ulec zmianie we właściwości.
+  - Każda architektura ma ustawioną liczbę bajtów i punktów przerwania danych sprzętowych, które może obsługiwać, a właściwość, dla których chcesz ustawić punkt przerwania danych, przekroczyła ten limit. Zapoznaj się z tabelą [Ograniczenia](#data-breakpoint-hardware-limitations) sprzętowe punktu przerwania danych, aby dowiedzieć się, ile punktów przerwania danych obsługiwanych przez sprzęt i bajtów jest dostępnych dla architektury, z których korzystasz. 
+  - **Obejście:** Ustaw punkt przerwania danych na wartość, która może ulec zmianie we właściwości .
 
-- *"Punkty przerwania danych nie są obsługiwane w przypadku używania starszej ewaluatora wyrażeń języka C#".*
+- *"Punkty przerwania danych nie są obsługiwane w przypadku korzystania ze starszej wersji ewaluatora wyrażeń języka C#".*
 
-  - Punkty przerwania danych są obsługiwane tylko na niestarszej ewaluatora wyrażeń języka C#. 
-  - **Rozwiązanie**: nie można wyłączyć starszej kolekcji wyrażeń języka C#, przechodząc do pozycji `Debug -> Options` `Debugging -> General` Usuń zaznaczenie `"Use the legacy C# and VB expression evaluators"` .
+  - Punkty przerwania danych są obsługiwane tylko w przypadku programu ewaluatora wyrażeń języka C# w wersji starszej niż starsza. 
+  - **Rozwiązanie:** wyłączysz starszą ewaluator wyrażeń języka C#, przechodząc do pola `Debug -> Options` wyboru `Debugging -> General` `"Use the legacy C# and VB expression evaluators"` .
 
-## <a name="data-breakpoint-hardware-limitations"></a>Ograniczenia sprzętowe danych punktów przerwania
+- *"Klasa **X** ma niestandardowy widok debugera, który blokuje używanie punktów przerwania danych w danych specyficznych tylko dla niego".*
+  
+  - Punkty przerwania danych są obsługiwane tylko w pamięci utworzonej przez proces docelowy (debugowana aplikacja). Pamięć, w której ustawiany jest punkt przerwania danych, została oflagowana jako prawdopodobnie należąca do obiektu utworzonego przez atrybut [DebuggerTypeProxy](using-debuggertypeproxy-attribute.md) lub coś innego, co nie jest częścią procesu docelowego.
+  - **Obejście:** Rozwiń "Nieprzetworzny widok" obiektów zamiast rozwijać widok DebuggerTypeProxy obiektów, a następnie ustaw punkt przerwania danych. Gwarantuje to, że punkt przerwania danych nie znajduje się w pamięci należącej do obiektu utworzonego przez atrybut DebuggerTypeProxy.
 
-Architektura (Konfiguracja platformy), w której działa program, zawiera ograniczoną liczbę punktów przerwania danych sprzętowych, których można użyć. Poniższa tabela wskazuje, ile rejestrów jest dostępnych do użycia na architekturę.
+## <a name="data-breakpoint-hardware-limitations"></a>Ograniczenia sprzętowe punktu przerwania danych
 
-| Architektura | Liczba obsługiwanych przez sprzęt punktów przerwania danych | Maksymalny rozmiar bajtu|
+Architektura (konfiguracja platformy), na której działa program, ma ograniczoną liczbę punktów przerwania danych sprzętowych, których może używać. W poniższej tabeli przedstawiono, ile rejestrów jest dostępnych do użycia na architekturę.
+
+| Architektura | Liczba punktów przerwania danych obsługiwanych przez sprzęt | Maksymalny rozmiar bajtów|
 | :-------------: |:-------------:| :-------------:|
 | x86 | 4 | 4 |
 | x64 | 4 | 8 |
@@ -83,9 +88,9 @@ Architektura (Konfiguracja platformy), w której działa program, zawiera ograni
 
 ## <a name="provide-feedback"></a>Wyraź opinię
 
-Aby dowiedzieć się więcej na temat problemów lub sugestii dotyczących tej funkcji, skontaktuj się z pomocą techniczną, aby uzyskać pomoc w > wysłania opinii > [zgłosić problem](../ide/how-to-report-a-problem-with-visual-studio.md) w środowisku IDE lub [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8).
+W przypadku jakichkolwiek problemów lub sugestii dotyczących tej funkcji skontaktuj się z nami za pośrednictwem usługi Help > Send Feedback > [Report a Problem](../ide/how-to-report-a-problem-with-visual-studio.md) in the IDE or in the [Developer Community](https://aka.ms/feedback/suggest?space=8)(Zgłoś problem w programie IDE lub w Developer Community).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Używanie funkcji "Przerwij, gdy zmiany wartości" w programie .NET Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
-- [DevBlog: Przerwij w przypadku zmiany wartości: punkty przerwania danych dla platformy .NET Core w programie Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)
+- [Używanie funkcji "Przerwij, gdy wartość zmienia się" w programie .NET Core 3.0.](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)
+- [DevBlog: Break When Value Changes: Data Breakpoints for .NET Core in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)
