@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w Visual Studio subskrypcji za pomocą GitHub Enterprise
-ms.openlocfilehash: c174b9beb7a7a0eec6bdb65e684869bc0be7dadb
-ms.sourcegitcommit: 8da735b586276c95bf566a867655e3464ab1f989
+ms.openlocfilehash: a1ece92990bf54d85140b1d3548ebf811913fae4
+ms.sourcegitcommit: 0088835f22334b8fee89f8c07bb12bcdfdef1639
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740668"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110188113"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie Visual Studio subskrypcjami za pomocą GitHub Enterprise
 Klienci, którzy mają umowy Enterprise (EA) z firmą Microsoft, są uprawnieni do zakupu nowej oferty subskrypcji, która łączy Visual Studio standardowe subskrypcje i GitHub Enterprise. Jest to prosty i ekonomiczny sposób, w jaki subskrybenci Visual Studio mogą uzyskać GitHub Enterprise. 
@@ -33,6 +33,10 @@ Aby uzyskać więcej informacji na temat Visual Studio subskrypcji, zapoznaj si�
 > Jeśli Visual Studio z usługą GitHub Enterprise są przypisywane przez administratorów subskrypcji usługi Visual Studio bez wcześniejszego zakupu, usługa GitHub nie zostanie powiadomiona, że chcesz utworzyć GitHub Enterprise konto.  **Zakup co najmniej jednego** Visual Studio subskrypcję z GitHub Enterprise należy przed przypisaniem subskrypcji.
 
 ## <a name="moving-to-visual-studio-with-github-enterprise"></a>Przechodzenie do Visual Studio za pomocą GitHub Enterprise
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEAsv]
+
 Jeśli Twoja organizacja zakupi subskrypcje usługi Visual Studio za pomocą pakietów GitHub Enterprise po przypisaniu standardowych subskrypcji usług Visual Studio Enterprise i Visual Studio Professional, portal administracyjny zawiera funkcję, która pomaga przenieść istniejących subskrybentów do odpowiednich Visual Studio Enterprise przy użyciu usług GitHub Enterprise i/lub Visual Studio Professional z subskrypcjami GitHub Enterprise.  Na przykład subskrybenci z subskrypcjami Visual Studio Professional zostaną przeniesieni do Visual Studio Professional z GitHub Enterprise subskrypcji. Na lewym pasku panelu "Przegląd" zostanie wyświetlony następujący kafelek:
 
    > [!div class="mx-imgBorder"]
