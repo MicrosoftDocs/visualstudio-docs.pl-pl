@@ -1,6 +1,6 @@
 ---
-title: Nie można aktywować subskrypcji usługi Azure Dev/Test — płatność zgodnie z rzeczywistym użyciem
-description: Nie mogę aktywować subskrypcji usługi Azure Dev/Test — płatność zgodnie z rzeczywistym użyciem dołączona do mojej subskrypcji programu Visual Studio?
+title: Nie można aktywować subskrypcji usługi Azure Dev/Test z płatnością zgodnie z platformą Azure
+description: Nie mogę aktywować subskrypcji usługi Azure Dev/Test z płatnością zgodnie z Visual Studio użytkownika?
 ms.topic: include
 ms.assetid: 6ad8bb6e-e571-450e-860b-acf1e78921d7
 author: CaityBuschlen
@@ -10,23 +10,23 @@ user.type: subscriber
 tags: benefit, azure, dev-test
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 83907b80a67193230a31d9bad155ce72bd02a373
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 712ca286b960dd4f315223dffe45809ea4f63ea0
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541123"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349913"
 ---
-## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Nie mogę aktywować subskrypcji usługi Azure Dev/Test — płatność zgodnie z rzeczywistym użyciem.
+## <a name="im-unable-to-activate-my-azure-dev--test-pay-as-you-go-subscription"></a>Nie mogę aktywować subskrypcji usługi Azure Dev/Test z płatnością zgodnie z daniem.
 
-Jako subskrybent programu Visual Studio otrzymujesz stawki godzinowe z rabatem za tworzenie i testowanie oraz prawa do używania w chmurze na platformie Azure. 
+Jako Visual Studio subskrypcji otrzymujesz wyłącznie obniżone stawki godzinowe za prawa do tworzenia i testowania oraz używania w chmurze dla oprogramowania subskrypcji na platformie Azure. 
 
 ## <a name="set-up-a-subscription"></a>Konfigurowanie subskrypcji
 
-1. Zaloguj się do [portalu subskrypcji](https://my.visualstudio.com/benefits) i kliknij link Uaktywnij w dolnej części kafelka korzyści z korzystania z usługi Azure Dev/Test — płatność zgodnie z rzeczywistym użyciem.
-1. Na stronie Utwórz konto Microsoft Azure będziesz mieć możliwość skonfigurowania oferty Płatność zgodnie z rzeczywistym użyciem — tworzenie i testowanie (PAYG) lub uaktualnienia do oferty Visual Studio Enterprise. Kliknij przycisk Kontynuuj z bieżącą ofertą (Płatność zgodnie z rzeczywistym użyciem — tworzenie i testowanie), jeśli nie chcesz przeprowadzić uaktualnienia. 
-1. Dodaj metodę płatności, zaakceptuj umowę subskrypcyjną i wszystko jest gotowe do użycia. W przyszłości możesz uzyskać dostęp do subskrypcji platformy Azure w witrynie [Portal.Azure.com](https://portal.azure.com/). 
+1. Zaloguj się do portalu [subskrypcji i](https://my.visualstudio.com/benefits) kliknij link Aktywuj w dolnej części kafelka korzyści Azure — deweloperska/testowa z płatnością zgodnie z daniem.
+1. Na Microsoft Azure rejestracji możesz skonfigurować ofertę usługi Płatność zgodnie z rzeczywistym użyciem — tworzenie i testowanie (PAYG) lub podwyższyć jej Visual Studio Enterprise oferty. Kliknij przycisk Kontynuuj z bieżącą ofertą (Płatność zgodnie z rzeczywistym użyciem — tworzenie i testowanie), jeśli nie chcesz uaktualniać. 
+1. Dodaj formę płatności, zaakceptuj umowę subskrypcji i wszystko będzie gotowe. W przyszłości dostęp do subskrypcji platformy Azure będzie można uzyskać na stronie [portal.azure.com](https://portal.azure.com/). 
 
-## <a name="more-information-about-subscriptions"></a>Więcej informacji na temat subskrypcji
+## <a name="more-information-about-azure-devtest-pay-as-you-go-subscriptions"></a>Więcej informacji na temat subskrypcji usługi Azure Dev/Test z płatnością zgodnie z platformą Azure
  
-Przeczytaj więcej [informacji na temat usługi Azure Dev/Test — płatność zgodnie z rzeczywistym](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg)użyciem.
+Przeczytaj więcej [na temat subskrypcji usługi Azure Dev/Test](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-payg)z płatnością zgodnie z ty.

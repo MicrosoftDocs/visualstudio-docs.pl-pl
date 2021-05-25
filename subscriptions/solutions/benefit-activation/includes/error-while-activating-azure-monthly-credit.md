@@ -10,18 +10,18 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: afc2cb5f64e3f52f9801b4633165b0b516516cbf
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590130"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349763"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>Podczas próby aktywowania miesięcznych środków na korzystanie z platformy Azure występuje błąd.
 
 Na subskrypcję platformy Azure skojarzoną z subskrypcją platformy Azure skojarzoną z subskrypcją platformy Azure można uzyskać tylko jedną miesięczną indywidualną korzyść kredytową na Visual Studio Azure. Jeśli wcześniej aktywowano miesięczne środków na korzystanie z platformy Azure, może wystąpić błąd. Jeśli nie masz pewności, czy aktywowano kredyt, zaloguj się do [Azure Portal,](https://portal.azure.com/) aby zweryfikować. 
 
-Jeśli masz nową subskrypcję platformy Visual Studio i otrzymujesz błąd "Nie możesz aktywować tej korzyści Visual Studio więcej niż raz" podczas próby aktywowania miesięcznej korzyści ze środków na korzystanie z platformy Azure, skontaktuj się z pomocą techniczną dla subskrypcji platformy Visual Studio, klikając przycisk "Utwórz bilet pomocy technicznej" w dolnej części tego rozwiązania. 
+Jeśli masz nową subskrypcję platformy Visual Studio i otrzymujesz błąd "Nie możesz aktywować tej korzyści Visual Studio więcej niż raz" podczas próby aktywowania miesięcznej korzyści ze środków na korzystanie z platformy Azure, skontaktuj się z pomocą techniczną dla subskrypcji platformy Visual Studio, klikając przycisk "Żądanie online" w dolnej części tego rozwiązania. 
 
 ## <a name="verify-your-email"></a>Weryfikowanie wiadomości e-mail 
 
