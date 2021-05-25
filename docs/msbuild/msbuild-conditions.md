@@ -1,6 +1,6 @@
 ---
-title: Warunki MSBuild | Microsoft Docs
-description: Dowiedz się, w jaki sposób MSBuild obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam, gdzie atrybut Condition jest dozwolony.
+title: Warunki programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak program MSBuild obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam, gdzie atrybut Warunek jest dozwolony.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,31 +20,31 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76bafaf5192c59e0f23078e396ae553b3023e060
+ms.sourcegitcommit: d3577395cf016f2836eb5a3c1d496cca6d449baa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919163"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110413328"
 ---
 # <a name="msbuild-conditions"></a>Warunki programu MSBuild
 
-Program MSBuild obsługuje określony zestaw warunków, które mogą być stosowane wszędzie tam, gdzie `Condition` atrybut jest dozwolony. W poniższej tabeli opisano te warunki.
+Program MSBuild obsługuje określony zestaw warunków, które można stosować wszędzie tam, gdzie `Condition` atrybut jest dozwolony. W poniższej tabeli wyjaśniono te warunki.
 
 |Warunek|Opis|
 |---------------|-----------------|
-|'`stringA`' == '`stringB`'|Zwraca wartość, `true` Jeśli `stringA` jest równa `stringB` .<br /><br /> Na przykład:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
-|'`stringA`' != '`stringB`'|Daje w `true` przypadku, gdy `stringA` nie jest równe `stringB` .<br /><br /> Na przykład:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy. W tym sprawdzaniu nie jest rozróżniana wielkość liter.|
-|\<, >, \<=, >=|Oblicza wartości liczbowe argumentów operacji. Zwraca `true` czy wartość oceny relacyjnej to true. Operandy muszą mieć wartość dziesiętną lub szesnastkową. Liczby szesnastkowe muszą zaczynać się od ciągu "0x". **Uwaga:**  W formacie XML, znaki `<` i `>` muszą być zmienione. Symbol `<` jest reprezentowany jako `&lt;` . Symbol `>` jest reprezentowany jako `&gt;` .|
-|Istnieje (' `stringA` ')|Zwraca wartość, `true` Jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Na przykład:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
-|HasTrailingSlash (' `stringA` ')|Zwraca wartość `true` , jeśli określony ciąg zawiera znak ukośnika odwrotnego ( \\ ) lub ukośnika (/).<br /><br /> Na przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Pojedyncze cudzysłowy nie są wymagane w przypadku prostych ciągów alfanumerycznych lub wartości logicznych. Jednak dla pustych wartości są wymagane pojedyncze cudzysłowy.|
-|!|Daje w `true` przypadku, gdy operand zwraca wartość `false` .|
-|`And`|Zwraca wartość, `true` Jeśli oba operandy są oceniane do `true` .|
-|`Or`|Zwraca wartość, `true` Jeśli co najmniej jeden z operandów ma wartość `true` .|
-|()|Mechanizm grupowania, który jest obliczany w `true` wyrażeniach if zawartych w obliczaniu do `true` .|
-|$if $ (% Expression%), $else $, $endif $|Sprawdza, czy określony `%expression%` pasuje do wartości ciągu podanego parametru szablonu niestandardowego. Jeśli `$if$` warunek ma wartość `true` , instrukcje są uruchamiane; w przeciwnym razie `$else$` warunek jest zaznaczony. Jeśli `$else$` warunek ma wartość `true` , instrukcje są uruchamiane; w przeciwnym razie warunek spowoduje `$endif$` zakończenie obliczania wyrażenia.<br /><br /> Przykłady użycia można znaleźć w temacie [logika parametrów projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+|'`stringA`' == '`stringB`'|Oblicza wartość , `true` jeśli wartość jest równa `stringA` `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> A cudzysłów pojedynczy nie jest wymagany w przypadku prostych ciągów alfanumerycznych ani wartości logicznych. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. W tym przypadku nie jest uwzględniania litera.|
+|'`stringA`' != '`stringB`'|Oblicza wartość , `true` jeśli wartość nie jest równa `stringA` `stringB` .<br /><br /> Przykład:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> A cudzysłów pojedynczy nie jest wymagany w przypadku prostych ciągów alfanumerycznych ani wartości logicznych. Jednak pojedyncze cudzysłowy są wymagane dla pustych wartości. W tym przypadku nie jest uwzględniania litera.|
+|\<, >, \<=, >=|Oblicza wartości liczbowe operandów. Zwraca `true` wartość , jeśli ocena relacyjnych ma wartość true. Operandy muszą być obliczane jako liczba dziesiętna lub szesnastkowa albo cztero partiowa wersja kropkowana. Liczby szesnastkowe muszą zaczynać się od "0x". **Uwaga:**  W języku XML znaki `<` i `>` muszą być znakiem ucieczki. Symbol `<` jest reprezentowany jako `&lt;` . Symbol `>` jest reprezentowany jako `&gt;` .|
+|Exists(' `stringA` ')|Oblicza wartość , `true` jeśli istnieje plik lub folder o nazwie `stringA` .<br /><br /> Przykład:<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> A cudzysłowy pojedyncze nie są wymagane w przypadku prostych ciągów alfanumerycznych ani wartości logicznych. Jednak w przypadku pustych wartości wymagane są pojedyncze cudzysłowy.|
+|HasTrailingSlash(' `stringA` ')|Oblicza wartość , jeśli określony ciąg zawiera ukośnik odwrotny () lub ukośnik `true` \\ (/).<br /><br /> Przykład:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> A cudzysłowy pojedyncze nie są wymagane w przypadku prostych ciągów alfanumerycznych ani wartości logicznych. Jednak w przypadku pustych wartości wymagane są pojedyncze cudzysłowy.|
+|!|Oblicza wartość , `true` jeśli argument operand ma wartość `false` .|
+|`And`|Oblicza wartość , `true` jeśli oba operandy mają wartość `true` .|
+|`Or`|Oblicza wartość , `true` jeśli co najmniej jeden z operandów ma wartość `true` .|
+|()|Mechanizm grupowania, który ocenia wartość , jeśli `true` wyrażenia zawarte w wyrażeń wewnątrz oceniają wartość `true` .|
+|$if$ ( %expression% ), $else$, $endif$|Sprawdza, czy `%expression%` określona wartość odpowiada wartości ciągu przekazanego parametru szablonu niestandardowego. Jeśli warunek ma wartość , jego instrukcje są uruchamiane. W przeciwnym razie `$if$` `true` `$else$` warunek jest sprawdzany. Jeśli warunek to , zostaną uruchomione jego instrukcje. W przeciwnym razie `$else$` `true` `$endif$` warunek kończy się oceną wyrażenia.<br /><br /> Aby uzyskać przykłady użycia, [zobacz Visual Studio logiki parametrów szablonu projektu/elementu](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
 
-Można użyć metod String w warunkach, jak pokazano w poniższym przykładzie, w którym funkcja [TrimEnd ()](/dotnet/api/system.string.trimend) służy do porównywania tylko odpowiedniej części ciągu, aby rozróżnić między .NET Framework i platformą docelową platformy .NET Core.
+Metod ciągów można używać w warunkach, jak pokazano w poniższym przykładzie, w którym funkcja [TrimEnd()](/dotnet/api/system.string.trimend) jest używana do porównywania tylko odpowiedniej części ciągu w celu rozróżnienia między platformami docelowymi .NET Framework i .NET Core.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -60,11 +60,20 @@ Można użyć metod String w warunkach, jak pokazano w poniższym przykładzie, 
 </Project>
 ```
 
-W plikach projektu MSBuild nie istnieje prawdziwy typ Boolean. Dane logiczne są reprezentowane we właściwościach, które mogą być puste lub mieć dowolną wartość. W związku z tym `'$(Prop)' == 'true'` oznacza "Jeśli prop jest `true` ,", ale `'$(Prop)' != 'false'` oznacza "Jeśli prop jest lub deduplikowane `true` lub ustawione na coś innego".
+W plikach projektu MSBuild nie ma prawdziwego typu logicznych. Dane logiczne są reprezentowane we właściwościach, które mogą być puste lub ustawione na dowolną wartość. W związku `'$(Prop)' == 'true'` z tym, oznacza "jeśli Prop jest `true` ,", ale oznacza "jeśli Prop jest lub `'$(Prop)' != 'false'` `true` unset lub ustawione na coś innego".
 
-Logika logiczna jest obliczana tylko w kontekście warunków, dlatego ustawienia właściwości, takie jak `<Prop2>'$(Prop1)' == 'true'</Prop>` są reprezentowane jako ciąg (po rozszerzeniu zmiennej), nie są oceniane jako wartości logiczne.  
+Logika logiczna jest oceniana tylko w kontekście warunków, więc ustawienia właściwości, takie jak , są reprezentowane jako ciąg (po rozwinięciu zmiennej), a nie jako `<Prop2>'$(Prop1)' == 'true'</Prop>` wartości logiczne.  
 
-Program MSBuild implementuje kilka specjalnych reguł przetwarzania, aby ułatwić pracę z właściwościami ciągu, które są używane jako wartości logiczne. Literały logiczne są akceptowane, więc `Condition="true"` i `Condition="false"` działają zgodnie z oczekiwaniami. Program MSBuild zawiera również specjalne reguły obsługujące operator negacji logicznej. Tak więc, jeśli `$(Prop)` ma wartość "true", `!$(Prop)` rozwija się do `!true` i porównywane jest równe `false` , zgodnie z oczekiwaniami.
+MsBuild implementuje kilka specjalnych reguł przetwarzania, aby ułatwić pracę z właściwościami ciągów, które są używane jako wartości logiczne. Literały logiczne są akceptowane, więc `Condition="true"` działają `Condition="false"` zgodnie z oczekiwaniami. Program MSBuild zawiera również specjalne reguły do obsługi operatora negacji logicznych. Jeśli więc wartość jest równa "true", wartość rozwija się do , a ta wartość jest porównywana z wartością `$(Prop)` `!$(Prop)` , zgodnie z `!true` `false` oczekiwaniami.
+
+## <a name="comparing-versions"></a>Porównywanie wersji
+
+Operatory relacyjne , , i obsługują wersje analizowane przez usługę , dzięki czemu można porównać wersje, które mają cztery części `<` `>` `<=` `>=` <xref:System.Version?displayProperty=fullName> liczbowe. Na przykład `'1.2.3.4' < '1.10.0.0'` to `true` .
+
+> [!CAUTION]
+> `System.Version` Porównania mogą dawać zaskakujące wyniki, gdy jedna lub obie wersje nie określają wszystkich czterech części. Na przykład wersja 1.1 jest starsza niż 1.1.0.
+
+Program MSBuild [udostępnia funkcje właściwości do porównywania](property-functions.md#MSBuild-version-comparison-functions) wersji, które mają inny zestaw reguł zgodnych z semantyczną wersją (semver).
 
 ## <a name="see-also"></a>Zobacz też
 
