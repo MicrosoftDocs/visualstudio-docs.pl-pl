@@ -1,37 +1,37 @@
 ---
-title: Obciążenie i identyfikatory składników programu Visual Studio Test Agent 2019
+title: Visual Studio Identyfikatory obciążeń i składników agenta testowego 2019
 titleSuffix: ''
-description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do zdalnego uruchamiania testów i testów obciążeniowych
+description: Używanie Visual Studio i identyfikatorów składników do zdalnego uruchamiania testów automatycznych i testów obciążeniowych
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c5b9805b466f23be12fb6c66f0231d5c9a6ccec8
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8f9d4c873748f273515465f0ed833eaa9c1fe6b7
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683699"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449645"
 ---
 ## <a name="test-agent"></a>Test Agent
 
-**Identyfikator:** Microsoft. VisualStudio. obciążeni. agenta testowego
+**Identyfikator:** Microsoft.VisualStudio.Workload.TestAgent
 
-**Opis:** Obsługuje zdalne uruchamianie testów automatycznych i testów obciążenia
+**Opis:** Obsługuje zdalne uruchamianie testów automatycznych i testów obciążeniowych
 
-### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
+### <a name="components-included-by-this-workload"></a>Składniki dołączone do tego obciążenia
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft. VisualStudio. Component. TestTools. agenta testowego | Podstawowe funkcje agenta testowego | 16.9.31004.209 | Wymagane
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Podstawowe funkcje agenta testowego | 16.10.31205.180 | Wymagane
 
-## <a name="unaffiliated-components"></a>Niestowarzyszone składniki
+## <a name="unaffiliated-components"></a>Składniki nieskonflilitowane
 
-Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być wybierane jako poszczególne składniki.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---

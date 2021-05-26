@@ -1,38 +1,38 @@
 ---
-title: Pakiety i identyfikatory składników programu Visual Studio Team Explorer 2017
+title: Visual Studio Team Explorer 2017 i identyfikatory składników
 titleSuffix: ''
-description: Użyj obciążeń i identyfikatorów składników programu Visual Studio, aby zapewnić zintegrowane narzędzia do testowania dla testerów ogólnych
+description: Używanie Visual Studio i identyfikatorów składników w celu zapewnienia zintegrowanych narzędzi do testowania dla testerów generalistycznych
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 2f60ee53234d45ca43ea60fa4a56e51d7d23e914
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 560457caff5d67cff0d6a6b72c1612283e1f340f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868594"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449881"
 ---
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio Core Editor (dołączony do programu Visual Studio Team Explorer 2017)
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio podstawowy edytor (dołączony do Visual Studio Team Explorer 2017 r.)
 
-**Identyfikator:** Microsoft. VisualStudio. obciążeni. CoreEditor
+**Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Opis:** Podstawowe środowisko powłoki programu Visual Studio, w tym edytowanie kodu z rozpoznawaniem składni, Kontrola kodu źródłowego i zarządzanie elementami roboczymi.
+**Opis:** Środowisko Visual Studio, w tym edytowanie kodu uwzględniające składnię, kontrolę kodu źródłowego i zarządzanie elementami pracy.
 
-### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
+### <a name="components-included-by-this-workload"></a>Składniki dołączone do tego obciążenia
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft. VisualStudio. Component. CoreEditor | Visual Studio Core Editor | 15.8.27729.1 | Wymagane
-Microsoft. VisualStudio. Component. StartPageExperiment. cpp | Strona startowa programu Visual Studio dla użytkowników C++ | 15.0.27128.1 | Opcjonalne
+Microsoft.VisualStudio.Component.CoreEditor | Visual Studio edytor podstawowy | 15.8.27729.1 | Wymagane
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio startowa dla użytkowników języka C++ | 15.0.27128.1 | Opcjonalne
 
-## <a name="unaffiliated-components"></a>Niestowarzyszone składniki
+## <a name="unaffiliated-components"></a>Składniki nieskonflilitowane
 
-Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być wybierane jako poszczególne składniki.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---

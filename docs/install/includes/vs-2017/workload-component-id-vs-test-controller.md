@@ -1,37 +1,37 @@
 ---
-title: Pakiety i identyfikatory składników programu Visual Studio Test Controller 2017
+title: Visual Studio identyfikatory obciążeń i składników kontrolera testów 2017
 titleSuffix: ''
-description: Używanie obciążeń i identyfikatorów składników programu Visual Studio do dystrybuowania automatycznych testów do wielu maszyn
+description: Używanie Visual Studio i identyfikatorów składników do dystrybucji testów automatycznych na wielu maszynach
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a42697ccd673f11144fc2b53d566f6e03014aef1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f3b44936b14981760f397e5fda1063a4acaa3a1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932093"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449920"
 ---
-## <a name="test-controller"></a>Test Controller
+## <a name="test-controller"></a>Kontroler testów
 
-**Identyfikator:** Microsoft. VisualStudio. obciążeni. TestController
+**Identyfikator:** Microsoft.VisualStudio.Workload.TestController
 
-**Opis:** Rozpowszechnianie zautomatyzowanych testów na wielu maszynach
+**Opis:** Dystrybuowanie testów automatycznych na wielu maszynach
 
-### <a name="components-included-by-this-workload"></a>Składniki zawarte w tym obciążeniu
+### <a name="components-included-by-this-workload"></a>Składniki uwzględnione w tym obciążeniu
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft. VisualStudio. Component. TestTools. TestController | Podstawowe funkcje Test Controller | 15.6.27309.0 | Wymagane
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Podstawowe funkcje kontrolera testów | 15.6.27309.0 | Wymagane
 
-## <a name="unaffiliated-components"></a>Niestowarzyszone składniki
+## <a name="unaffiliated-components"></a>Składniki nieskonfiliowane
 
-Są to składniki, które nie są uwzględnione w obciążeniu, ale mogą być wybierane jako poszczególne składniki.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale można je wybrać jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---

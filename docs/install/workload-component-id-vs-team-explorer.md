@@ -1,10 +1,10 @@
 ---
-title: Program Visual Studio Team Explorer obciążenia i identyfikatory składników
+title: Visual Studio Team Explorer identyfikatory obciążeń i składników
 titleSuffix: ''
-description: Użyj obciążeń i identyfikatorów składników programu Visual Studio, aby zapewnić zintegrowane narzędzia do testowania dla testerów ogólnych
+description: Używanie Visual Studio i identyfikatorów składników w celu zapewnienia zintegrowanych narzędzi do testowania dla testerów generalistycznych
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 3/2/2020
 ms.topic: reference
@@ -16,14 +16,14 @@ ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1bc01bddd2035a1fcad62ac672156370b899bbc5
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8ae5e7236ecae86786782477edc1bd023da3a9a4
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683731"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449888"
 ---
-# <a name="visual-studio-team-explorer-component-directory"></a>Katalog składników programu Visual Studio Team Explorer
+# <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer katalogu składników
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
