@@ -1,9 +1,9 @@
 ---
 title: Projektant XAML — omówienie
-description: Dowiedz się więcej o interfejsie użytkownika obszaru roboczego i funkcjach projektant XAML platformie Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML.
+description: Dowiedz się więcej o interfejsie użytkownika obszaru roboczego i funkcjach interfejsu projektant XAML platformie Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
-ms.custom: contperf-fy21q4; SEO-VS-2020
+ms.custom: contperf-fy21q4, SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -14,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879359"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565235"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 
@@ -32,7 +32,7 @@ W przypadku zaawansowanych użytkowników można nawet [dostosować projektant X
 
 ## <a name="xaml-designer-workspace"></a>projektant XAML roboczy
 
-Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualnego. Obejmują one *obszar kompozycji* (czyli powierzchnię projektową wizualizacji), edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno Właściwości. Aby otworzyć projektant XAML, kliknij prawym przyciskiem myszy plik XAML w Eksplorator rozwiązań **i** wybierz **Projektant widoków**.
+Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualnego. Obejmują one obszar *kompozycji* (czyli powierzchnię projektową wizualizacji), edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno Właściwości. Aby otworzyć plik projektant XAML kliknij prawym przyciskiem myszy plik XAML w Eksplorator rozwiązań **i** wybierz **Projektant widoków**.
 
 projektant XAML widok XAML i zsynchronizowany widok Projekt renderowanych znaczników XAML aplikacji. Po otwarciu pliku XAML w Visual Studio lub Blend for Visual Studio można przełączać się między widok Projekt i widokiem XAML przy użyciu kart Projektowanie **i** **XAML.** Możesz użyć przycisku **Zamień** okienka Przycisk Zamień okienka w projektant XAML, aby przełączyć okno wyświetlane u góry: obszar kompozycji lub ![ ](media/swap-panes.PNG) edytor XAML.
 
@@ -70,7 +70,7 @@ Marginesy reprezentują stałą ilość miejsca między krawędzią kontrolki a 
 
 **Definiowanie układów marginesów**
 
-Użyj funkcji definiowania układu marginesów, aby zmienić marginesy elementu względem jego kontenera układu. Gdy definiowanie układu marginesu jest otwarte, margines nie jest ustawiony, a definiowanie układu marginesu wyświetla przerwany łańcuch. Gdy margines nie jest ustawiony, elementy pozostają na miejscu, gdy rozmiar kontenera układu jest zmieniany w czasie uruchamiania. Po zamknięciu definiowania układu marginesu, definiowanie układu marginesu wyświetla odłączony łańcuch, a elementy są przesuwane z marginesem, gdy rozmiar kontenera układu jest zmieniany w czasie uruchamiania (margines pozostaje stały).
+Użyj funkcji definiowania układu marginesów, aby zmienić marginesy elementu względem jego kontenera układu. Gdy definiowanie układu marginesu jest otwarte, margines nie jest ustawiony, a definiowanie układu marginesu wyświetla przerwany łańcuch. Gdy margines nie jest ustawiony, elementy pozostają na miejscu, gdy rozmiar kontenera układu jest zmieniany w czasie uruchamiania. Po zamknięciu definiowania układu marginesu program definiowania układu marginesu wyświetla odłączony łańcuch, a elementy są przesuwane z marginesem, ponieważ rozmiar kontenera układu jest zmieniany w czasie uruchamiania (margines pozostaje stały).
 
 **Dojścia elementów**
 
@@ -129,7 +129,7 @@ Aby wyświetlić okno Obiekty i oś czasu w Blend for Visual Studio, na pasku me
 
 ![Okno Konspekt dokumentu w Visual Studio](media/document-outline-window.png)
 
-Główny widok w oknie Konspekt/Obiekty i oś czasu dokument zawiera hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspektu dokumentu umożliwia badanie dokumentu na różnych poziomach szczegółowości oraz blokowanie i ukrywanie elementów w grupach lub w grupach. Następujące opcje są dostępne w oknie Konspekt/Obiekty i oś czasu dokumentu:
+Główny widok w oknie Konspekt/Obiekty i oś czasu dokument zawiera hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspektu dokumentu umożliwia badanie dokumentu na różnych poziomach szczegółowości oraz blokowanie i ukrywanie elementów po jednym lub w grupach. Następujące opcje są dostępne w oknie Konspekt/Obiekty i oś czasu dokumentu:
 
 **Pokaż/ukryj**
 
