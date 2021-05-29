@@ -1,7 +1,7 @@
 ---
 title: Aktualizowanie instalacji sieciowej
 description: Dowiedz się, jak zaktualizować instalację sieciową Visual Studio za pomocą polecenia --layout
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: 74464aa76c24a798d33fa7639cdd0b6a07489bf7
+ms.sourcegitcommit: 62e39ea1bf0ed939376c4375fc180ff7c4c760fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800775"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110660224"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -64,11 +64,11 @@ Przyjrzyjmy się kilku przykładom tworzenia, a następnie aktualizowania układ
   ```
 
     > [!IMPORTANT]
-    > Operacja aktualizacji nie instaluje nowo dodanych składników opcjonalnych. Jeśli potrzebujesz nowo dodanych składników opcjonalnych, usuń stare składniki opcjonalne z pliku odpowiedzi i uwzględnij potrzebne składniki w sekcji `Layout.JSON` [](automated-installation-with-response-file.md) "Dodaj" w pliku `Layout.JSON` . 
+    > Operacja aktualizacji nie pobiera ani nie instaluje dodatkowych składników opcjonalnych dla układu ani na kliencie. Jeśli musisz dodać lub zmienić składniki opcjonalne, najpierw usuń stare składniki opcjonalne z pliku odpowiedzi i dołącz nowe składniki, których potrzebujesz, w sekcji `Layout.JSON` [](automated-installation-with-response-file.md) "Dodaj" w pliku `Layout.JSON` . Następnie, po uruchomieniu polecenia aktualizacji w układzie, pobierze nowo dodane składniki do układu. 
     >
-    > **Obejście:** Uruchom oddzielną operację modyfikowania po uaktualnieniu, aby zainstalować brakujące składniki.
+    > Aby zainstalować te nowe składniki na komputerze klienckim, wykonaj następujące trzy kroki. Najpierw sprawdź, czy układ zawiera nowe składniki zgodnie z powyższym opisem. Następnie zaktualizuj klienta do najnowszych bitów w układzie.  Na koniec ponownie na kliencie uruchom operację modyfikowania, która spowoduje zainstalowanie nowych składników (które zostały dodane do układu) na komputerze klienckim.
 
-* Wreszcie poniżej opisano sposób dodawania dodatkowego obciążenia i zlokalizowanego języka bez aktualizowania wersji. (To polecenie dodaje obciążenie *tworzenie aplikacji ASP.NET sieci Web).*  Teraz w tym układzie znajdują się obciążenia Managed Desktop, Azure ASP.NET & Web Development. Zasoby językowe dla języka angielskiego, niemieckiego i francuskiego są również uwzględniane dla wszystkich tych obciążeń.  Jednak podczas uruchamiania tego polecenia układ nie został zaktualizowany do najnowszej dostępnej wersji. Pozostaje on w istniejącej wersji.
+* Wreszcie poniżej opisano sposób dodawania dodatkowego obciążenia i zlokalizowanego języka bez aktualizowania wersji. (To polecenie dodaje obciążenie *tworzenie aplikacji ASP.NET sieci Web).*  Teraz w tym układzie znajdują się obciążenia Managed Desktop, Azure ASP.NET & Web Development. Zasoby językowe dla języka angielskiego, niemieckiej i francuskiej są również uwzględniane dla wszystkich tych obciążeń.  Jednak układ nie został zaktualizowany do najnowszej dostępnej wersji podczas uruchamiania tego polecenia. Pozostaje on w istniejącej wersji.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
@@ -78,7 +78,7 @@ Przyjrzyjmy się kilku przykładom tworzenia, a następnie aktualizowania układ
 
 W zależności od konfiguracji środowiska sieciowego aktualizacja może zostać wdrożona przez administratora przedsiębiorstwa lub zainicjowana z komputera klienckiego.
 
-* Użytkownicy mogą zaktualizować Visual Studio zainstalowane z folderu instalacji w trybie offline:
+* Użytkownicy mogą zaktualizować Visual Studio, które zostało zainstalowane z folderu instalacji w trybie offline:
   * Uruchom Instalator programu Visual Studio.
   * Następnie kliknij pozycję **Aktualizuj**.
 
@@ -112,10 +112,10 @@ Użyj `--verify` funkcji , aby przeprowadzić weryfikację dostarczonej pamięci
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
-vs_enterprise.exe wywoływane wewnątrz layoutDir.
+Ten vs_enterprise.exe można wywołać wewnątrz layoutDir.
 
 > [!NOTE]
-> Niektóre ważne pliki metadanych, które są wymagane przez tę opcję, muszą znajdować `--verify` się w pamięci podręcznej układu w trybie offline. Jeśli brakuje tych plików metadanych, nie można uruchomić elementu "--verify", a Instalator zwraca błąd. Jeśli wystąpi ten błąd, utwórz ponownie nowy układ trybu offline w innym folderze (lub w tym samym folderze pamięci podręcznej trybu offline). W tym celu uruchom to samo polecenie układu, które było używane do utworzenia początkowego układu w trybie offline. Na przykład `vs_enterprise.exe --layout <layoutDir>`.
+> Niektóre ważne pliki metadanych, które są wymagane przez `--verify` tę opcję, muszą znajdować się w pamięci podręcznej układu w trybie offline. Jeśli brakuje tych plików metadanych, nie można uruchomić elementu "--verify", a Instalator zwraca błąd. Jeśli wystąpi ten błąd, utwórz ponownie nowy układ offline do innego folderu (lub do tego samego folderu pamięci podręcznej trybu offline). W tym celu uruchom to samo polecenie układu, które było używane do utworzenia początkowego układu w trybie offline. Na przykład `vs_enterprise.exe --layout <layoutDir>`.
 
 Firma Microsoft okresowo Visual Studio aktualizacje, więc nowy układ, który utworzysz, może nie być w tej samej wersji co układ początkowy.
 
@@ -138,7 +138,7 @@ Po zakończeniu aktualizacji układu pamięci podręcznej w trybie offline folde
 
 Aby to zrobić, musisz mieć ścieżki plików do wykazu manifestów, które zawierają przestarzałe pakiety. Manifesty wykazu można znaleźć w folderze "Archiwum" w pamięci podręcznej układu offline. Są one zapisywane w tym miejscu podczas aktualizowania układu. W folderze "Archive" znajduje się co najmniej jeden "identyfikator GUID" o nazwie foldery, z których każdy zawiera przestarzały manifest katalogu. Liczba folderów "GUID" powinna być taka sama jak liczba aktualizacji pamięci podręcznej trybu offline.
 
-W każdym folderze "GUID" jest zapisywanych kilka plików. Dwa najbardziej interesujące pliki to plik "catalog.js" i plik "version.txt". Plik "catalog.jssię" to przestarzały manifest wykazu, który należy przekazać do `--clean` opcji . Drugi plik version.txt zawiera wersję tego przestarzałego manifestu wykazu. Na podstawie numeru wersji możesz zdecydować, czy chcesz usunąć przestarzałe pakiety z tego manifestu wykazu. Możesz to zrobić tak samo, jak w przypadku innych folderów "GUID". Po podjęciu decyzji dotyczącej katalogów, które chcesz oczyścić, uruchom polecenie, po podaniem ścieżek `--clean` plików do tych katalogów.
+W każdym folderze "GUID" jest zapisywanych kilka plików. Dwa najbardziej interesujące pliki to plik "catalog.js" i plik "version.txt". Plik "catalog.jssię" to przestarzały manifest wykazu, który należy przekazać do `--clean` opcji . Drugi plik version.txt zawiera wersję tego przestarzałego manifestu katalogu. Na podstawie numeru wersji możesz zdecydować, czy chcesz usunąć przestarzałe pakiety z manifestu wykazu. Możesz to zrobić tak samo, jak w przypadku innych folderów "GUID". Po podjęciu decyzji dotyczącej katalogów, które chcesz oczyścić, uruchom polecenie, po podaniem ścieżek `--clean` plików do tych katalogów.
 
 Oto kilka przykładów użycia opcji --clean:
 
