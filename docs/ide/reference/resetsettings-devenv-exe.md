@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-description: Dowiedz się, jak użyć przełącznika wiersza polecenia ResetSettings devenv, aby przywrócić ustawienia domyślne programu Visual Studio i automatycznie uruchomić środowisko IDE programu Visual Studio.
+description: Dowiedz się, jak za pomocą przełącznika wiersza polecenia ResetSettings devenv przywrócić domyślne ustawienia Visual Studio i automatycznie uruchamiać Visual Studio IDE.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
@@ -15,21 +15,21 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958001"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724541"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Przywraca ustawienia domyślne programu Visual Studio i automatycznie uruchamia środowisko IDE programu Visual Studio. Ten przełącznik opcjonalnie resetuje ustawienia do określonego pliku ustawień.
+Przywraca Visual Studio domyślne i automatycznie uruchamia Visual Studio IDE. Ten przełącznik opcjonalnie resetuje ustawienia do określonego pliku ustawień ( `*.vssettings` ).
 
-Ustawienia domyślne pochodzą z profilu, który został wybrany podczas pierwszego uruchomienia programu Visual Studio.
+Ustawienia domyślne pochodzą z profilu wybranego podczas pierwszego Visual Studio aplikacji.
 
 > [!TIP]
-> Aby dowiedzieć się, jak zresetować ustawienia przy użyciu zintegrowanego środowiska programistycznego (IDE), zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
+> Aby dowiedzieć się, jak resetować ustawienia przy użyciu zintegrowanego środowiska projektowego (IDE), zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,7 +41,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Opcjonalny. Pełna ścieżka i nazwa pliku ustawień, który ma zostać zastosowany do programu Visual Studio.
+  Opcjonalny. Pełna ścieżka i nazwa `.vssettings` pliku, który ma być Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
@@ -55,26 +55,31 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Visual C #** | `CSharp` |
   | **Visual C++** | `VC` |
   | **Programowanie dla sieci Web** | `Web` |
-  | **Programowanie dla sieci Web (tylko kod)** | `WebCode` |
+  | **Tworzenie aplikacji internetowych (tylko kod)** | `WebCode` |
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli *SettingsFile* nie zostanie określony, IDE zostanie otwarty przy użyciu istniejących ustawień.
+Jeśli nie *określono ustawieniapliku,* zostanie otwarte ide przy użyciu istniejących ustawień. 
+
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład stosuje ustawienia przechowywane w pliku `MySettings.vssettings` .
+Pierwszy przykład dotyczy ustawień przechowywanych w pliku `MySettings.vssettings` .
 
 Drugi przykład przywraca domyślny profil języka Visual C#.
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+Trzeci przykład spowoduje również zamknięcie Visual Studio po zastosowaniu ustawień. Możesz dołączyć `/Command "File.Exit"` .
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia środowiska](../environment-settings.md)
-- [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
+- [Personalizowanie Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

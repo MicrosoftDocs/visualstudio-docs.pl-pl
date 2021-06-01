@@ -1,6 +1,6 @@
 ---
-title: Automatyzowanie instalacji przy użyciu pliku odpowiedzi
-description: Dowiedz się, jak utworzyć plik odpowiedzi JSON, który pomoże zautomatyzować instalację programu Visual Studio
+title: Automatyzowanie instalacji za pomocą pliku odpowiedzi
+description: Dowiedz się, jak utworzyć plik odpowiedzi JSON, który ułatwia automatyzowanie instalacji Visual Studio plików
 ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
@@ -9,46 +9,46 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7554ac46d7c4171cfb71166c51689ff4ae95c0d5
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868737"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724554"
 ---
-# <a name="how-to-define-settings-in-a-response-file"></a>Jak zdefiniować ustawienia w pliku odpowiedzi
+# <a name="automate-installs-by-using-settings-in-a-response-file"></a>Automatyzowanie instalacji przy użyciu ustawień w pliku odpowiedzi
 
-Administratorzy, którzy wdrażają program Visual Studio, mogą określić plik odpowiedzi przy użyciu `--in` parametru, jak w poniższym przykładzie:
+Administratorzy wdraża Visual Studio mogą określić plik odpowiedzi przy użyciu `--in` parametru , jak w poniższym przykładzie:
 
 ```cmd
 vs_enterprise.exe --in customInstall.json
 ```
 
-Pliki odpowiedzi to pliki [JSON](http://json-schema.org/) , których zawartość jest duplikatem argumentów wiersza polecenia.  Ogólnie rzecz biorąc, jeśli parametr wiersza polecenia nie przyjmuje argumentów (na przykład, `--quiet` `--passive` itp.), wartość w pliku odpowiedzi powinna być równa true/false.  Jeśli przyjmuje argument (na przykład `--installPath <dir>` ), wartość w pliku odpowiedzi powinna być ciągiem.  Jeśli przyjmuje argument i może być wyświetlany w wierszu polecenia więcej niż raz (na przykład `--add <id>` ), powinien być tablicą ciągów.
+Pliki odpowiedzi to [pliki JSON,](http://json-schema.org/) których zawartość odzwierciedla argumenty wiersza polecenia.  Ogólnie rzecz biorąc, jeśli parametr wiersza polecenia nie przyjmuje żadnych argumentów (na przykład , itp.), wartość w pliku odpowiedzi powinna `--quiet` `--passive` być true/false.  Jeśli przyjmuje argument (na przykład ), wartość w pliku `--installPath <dir>` odpowiedzi powinna być ciągiem.  Jeśli przyjmuje argument i może pojawić się w wierszu polecenia więcej niż raz (na przykład ), powinien `--add <id>` być tablicą ciągów.
 
-Parametry, które są określone w ustawieniach przesłonięcia wiersza polecenia z pliku odpowiedzi, z wyjątkiem przypadków, gdy parametry pobierają wiele danych wejściowych (na przykład `--add` ). Jeśli masz wiele danych wejściowych, dane wejściowe podane w wierszu polecenia są scalane z ustawieniami z pliku odpowiedzi.
+Parametry określone w ustawieniach zastąpienia wiersza polecenia z pliku odpowiedzi, z wyjątkiem sytuacji, gdy parametry mają wiele danych wejściowych (na przykład `--add` ). Jeśli masz wiele danych wejściowych, dane wejściowe podane w wierszu polecenia są scalane z ustawieniami z pliku odpowiedzi.
 
-## <a name="setting-a-default-configuration-for-visual-studio"></a>Ustawianie konfiguracji domyślnej dla programu Visual Studio
+## <a name="setting-a-default-configuration-for-visual-studio"></a>Ustawianie domyślnej konfiguracji dla Visual Studio
 
-W przypadku utworzenia pamięci podręcznej układu sieciowego przy użyciu programu `--layout` `response.json` tworzony jest początkowy plik w układzie. W przypadku utworzenia układu częściowego ten plik odpowiedzi obejmuje obciążenia i Języki, które zostały uwzględnione w układzie.  Uruchomienie Instalatora z tego układu automatycznie używa tego response.jsw pliku, który wybiera obciążenia i składniki zawarte w układzie.  Przed zainstalowaniem programu Visual Studio użytkownicy mogą nadal wybierać lub wyznaczać dowolne obciążenia w interfejsie użytkownika Instalatora.
+Jeśli utworzono pamięć podręczną układu sieciowego za pomocą pliku , w `--layout` `response.json` układzie zostanie utworzony plik początkowy. Jeśli utworzysz układ częściowy, ten plik odpowiedzi zawiera obciążenia i języki, które zostały uwzględnione w układzie.  Uruchomienie instalatora z tego układu automatycznie używa response.jsw pliku, który wybiera obciążenia i składniki zawarte w układzie.  Użytkownicy mogą nadal wybierać lub usuwać zaznaczenie dowolnych obciążeń w interfejsie użytkownika konfiguracji przed zainstalowaniem Visual Studio.
 
-Administratorzy, którzy tworzą układ, mogą modyfikować `response.json` plik w układzie w celu kontrolowania ustawień domyślnych, które użytkownicy widzą po zainstalowaniu programu Visual Studio z układu.  Na przykład, jeśli administrator chce, aby określone obciążenia i składniki były domyślnie instalowane, można skonfigurować `response.json` plik do dodania.
+Administratorzy, którzy tworzą układ, mogą modyfikować plik w układzie, aby kontrolować ustawienia domyślne, które użytkownicy widzą podczas instalowania Visual Studio `response.json` z układu.  Jeśli na przykład administrator chce domyślnie zainstalować określone obciążenia i składniki, może skonfigurować `response.json` plik, aby je dodać.
 
-Gdy Instalator programu Visual Studio jest uruchamiany z folderu układowego, _automatycznie_ używa pliku odpowiedzi w folderze układu.  Nie trzeba używać tej `--in` opcji.
+Gdy Visual Studio jest uruchamiana z folderu układu, automatycznie używa pliku odpowiedzi w folderze układu.   Nie musisz używać opcji `--in` .
 
-Można zaktualizować `response.json` plik, który jest tworzony w folderze układu offline w celu zdefiniowania ustawienia domyślnego dla użytkowników, którzy instalują się z tego układu.
+Możesz zaktualizować plik utworzony w folderze układu offline, aby zdefiniować domyślne ustawienie dla użytkowników, którzy `response.json` instalują z tego układu.
 
 > [!WARNING]
-> Ważne jest pozostawienie istniejących właściwości, które zostały zdefiniowane podczas tworzenia układu.
+> Bardzo ważne jest pozostawienie istniejących właściwości, które zostały zdefiniowane podczas tworzenia układu.
 
-Plik podstawowy `response.json` w układzie powinien wyglądać podobnie do poniższego przykładu, z tą różnicą, że będzie zawierać wartość dla produktu i kanału, który ma zostać zainstalowany:
+Plik podstawowy w układzie powinien wyglądać podobnie do poniższego przykładu, z tą różnicą, że zawierałby wartość produktu i kanału, `response.json` który chcesz zainstalować:
 
 ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Plik podstawowy `response.json` w układzie powinien wyglądać podobnie do poni
 
 ::: moniker-end
 
-Podczas tworzenia lub aktualizowania układu jest również tworzony response.template.jsna pliku.  Ten plik zawiera wszystkie identyfikatory obciążeń, składników i języka, których można użyć.  Ten plik jest dostarczany jako szablon dla wszystkich elementów, które można uwzględnić w instalacji niestandardowej.  Administratorzy mogą używać tego pliku jako punktu wyjścia dla niestandardowego pliku odpowiedzi.  Po prostu usuń identyfikatory elementów, których nie chcesz instalować, i Zapisz je w pliku odpowiedzi.  Nie dostosowuj response.template.jsw pliku lub zmiany zostaną utracone za każdym razem, gdy układ zostanie zaktualizowany.
+Podczas tworzenia lub aktualizowania układu jest również tworzona response.template.jspliku.  Ten plik zawiera wszystkie identyfikatory obciążenia, składnika i języka, których można użyć.  Ten plik jest dostarczany jako szablon dla tego, co można doinstalować w instalacji niestandardowej.  Administratorzy mogą używać tego pliku jako punktu wyjścia dla niestandardowego pliku odpowiedzi.  Po prostu usuń identyfikatory dla rzeczy, których nie chcesz instalować, i zapisz je we własnym pliku odpowiedzi.  Nie dostosuj response.template.jsw pliku lub zmiany zostaną utracone przy każdej aktualizacji układu.
 
 ## <a name="example-layout-response-file-content"></a>Przykładowa zawartość pliku odpowiedzi układu
 
-Poniższy przykład służy do instalowania Visual Studio Enterprise z sześcioma typowymi obciążeniami i składnikami oraz z językiem interfejsu użytkownika w języku angielskim i francuskim. Możesz użyć tego przykładu jako szablonu. wystarczy zmienić obciążenia i składniki na te, które mają zostać zainstalowane:
+W poniższym przykładzie jest instalowana Visual Studio Enterprise z sześcioma wspólnymi obciążeniami i składnikami oraz przy użyciu języka angielskiego i francuskiego interfejsu użytkownika. Możesz użyć tego przykładu jako szablonu; Wystarczy zmienić obciążenia i składniki na te, które chcesz zainstalować:
 
 ::: moniker range="vs-2017"
 
@@ -159,4 +159,4 @@ Poniższy przykład służy do instalowania Visual Studio Enterprise z sześciom
 ## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Rozwiązywanie problemów związanych z siecią podczas instalowania lub używania Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
