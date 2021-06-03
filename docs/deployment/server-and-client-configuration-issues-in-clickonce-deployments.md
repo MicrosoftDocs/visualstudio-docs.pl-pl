@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8040fb8028666d0dd551369b6b7f782de09058ca
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: 9f0361816d0621f52e9f95f4159dd0d46f4f5951
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449945"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111352010"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach technologii ClickOnce
 Jeśli używasz programu Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie jest rozpoznany przez system Windows, taki jak plik programu Microsoft Word, usługi IIS odmówią przekazania tego pliku, a wdrożenie nie powiedzie się.
@@ -33,7 +33,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 
  Chociaż to ograniczenie nie powinno powodować problemów z pobieraniem podstawowych plików, takich jak manifesty i zestawy, to ograniczenie może uniemożliwić pobieranie plików danych dołączonych [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji. W programie ten błąd można usunąć, usuwając program obsługi, który zabrania pobierania takich plików [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] z menedżera konfiguracji usług IIS. Aby uzyskać dodatkowe informacje, zobacz dokumentację serwera usług IIS.
 
- Niektóre serwery internetowe mogą blokować pliki z rozszerzeniami, takimi jak *dll,* *config* i *mdf.* Aplikacje oparte na systemie Windows zwykle zawierają pliki z niektórymi z tych rozszerzeń. Jeśli użytkownik spróbuje uruchomić aplikację, która uzyskuje dostęp do zablokowanego pliku na serwerze sieci Web, wystąpi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] błąd. Zamiast odblokowywać wszystkie rozszerzenia plików, program domyślnie publikuje każdy plik aplikacji z rozszerzeniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *.deploy.* W związku z tym administrator musi tylko skonfigurować serwer sieci Web, aby odblokować następujące trzy rozszerzenia plików:
+ Niektóre serwery sieci Web mogą blokować pliki z rozszerzeniami, takimi *jak.dll*, *.config*, i *mdf.* Aplikacje oparte na systemie Windows zwykle zawierają pliki z niektórymi z tych rozszerzeń. Jeśli użytkownik spróbuje uruchomić aplikację, która uzyskuje dostęp do zablokowanego pliku na serwerze sieci Web, wystąpi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] błąd. Zamiast odblokowywać wszystkie rozszerzenia plików, program domyślnie publikuje każdy plik aplikacji z rozszerzeniem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *.deploy.* W związku z tym administrator musi tylko skonfigurować serwer sieci Web, aby odblokować następujące trzy rozszerzenia plików:
 
 - *.application*
 
@@ -43,20 +43,20 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 
   Tę opcję można jednak wyłączyć, czyszcząc opcję Użyj rozszerzenia pliku **".deploy"** w oknie dialogowym Opcje publikowania [.](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))W takim przypadku należy skonfigurować serwer sieci Web w celu odblokowania wszystkich rozszerzeń plików używanych w aplikacji.
 
-  Musisz skonfigurować manifest *,* *.application* i *.deploy,* na przykład jeśli używasz usług IIS, w których nie zainstalowano programu .NET Framework, lub jeśli używasz innego serwera sieci Web (na przykład Apache).
+  Musisz skonfigurować manifest *,* aplikację i *.deploy,* na przykład jeśli używasz usług IIS, w których nie zainstalowano programu .NET Framework, lub jeśli używasz innego serwera sieci Web (na przykład Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce i Secure Sockets Layer (SSL)
- Aplikacja będzie działać prawidłowo za pośrednictwem protokołu SSL, z wyjątkiem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Internet Explorer zgłasza monit o certyfikat SSL. Monit może zostać wyświetlony, gdy istnieje problem z certyfikatem, na przykład gdy nazwy lokacji nie są zgodne lub certyfikat wygasł. Aby wykonać pracę za pośrednictwem połączenia SSL, upewnij się, że certyfikat jest aktualny i że dane certyfikatu są zgodne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z danymi lokacji.
+ Aplikacja będzie działać prawidłowo za pośrednictwem protokołu SSL, z Internet Explorer gdy zostanie wyświetlony [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] monit o certyfikat SSL. Monit może zostać wyświetlony w przypadku błędu certyfikatu, na przykład gdy nazwy lokacji nie są zgodne lub certyfikat wygasł. Aby pracować nad połączeniem SSL, upewnij się, że certyfikat jest aktualny i że dane certyfikatu są zgodne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z danymi lokacji.
 
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce i uwierzytelnianie serwera proxy
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Zapewnia obsługę zintegrowanego uwierzytelniania serwera proxy systemu Windows, począwszy od wersji .NET Framework 3.5. Nie są machine.config określone dyrektywy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nie zapewnia obsługi innych protokołów uwierzytelniania, takich jak Podstawowe lub Szyfrowane.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Zapewnia obsługę zintegrowanego uwierzytelniania serwera proxy systemu Windows, począwszy od .NET Framework 3.5. Nie są machine.config określone dyrektywy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Nie zapewnia obsługi innych protokołów uwierzytelniania, takich jak Basic lub Digest.
 
- Aby włączyć tę funkcję, można również zastosować poprawkę do .NET Framework 2.0. Aby uzyskać więcej informacji, zobacz FIX: Komunikat o błędzie podczas próby zainstalowania aplikacji ClickOnce utworzonej w programie [.NET Framework 2.0](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that)na komputerze klienckim skonfigurowanym do używania serwera proxy: "Wymagane jest uwierzytelnianie serwera proxy".
+ Możesz również zastosować poprawkę do .NET Framework 2.0, aby włączyć tę funkcję. Aby uzyskać więcej informacji, zobacz FIX: Komunikat o błędzie podczas próby zainstalowania aplikacji ClickOnce utworzonej w programie [.NET Framework 2.0](https://support.microsoft.com/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that)na komputerze klienckim skonfigurowanym do używania serwera proxy: "Wymagane uwierzytelnianie serwera proxy".
 
- Aby uzyskać więcej informacji, [ \<defaultProxy> zobacz element (ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).
+ Aby uzyskać więcej informacji, zobacz [ \<defaultProxy> element (ustawienia sieciowe).](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
 
 ## <a name="clickonce-and-web-browser-compatibility"></a>Zgodność z usługą ClickOnce i przeglądarką sieci Web
- Obecnie instalacje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będą uruchamiane tylko wtedy, gdy adres URL manifestu wdrożenia zostanie otwarty przy użyciu Internet Explorer. Wdrożenie, którego adres URL jest uruchamiany z innej aplikacji, takiej jak Microsoft Office Outlook, zostanie pomyślnie uruchomione tylko wtedy, Internet Explorer zostanie ustawiona jako domyślna przeglądarka sieci Web.
+ Obecnie instalacje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będą uruchamiane tylko wtedy, gdy adres URL manifestu wdrożenia zostanie otwarty przy użyciu Internet Explorer. Wdrożenie, którego adres URL jest uruchamiany z innej aplikacji, takiej jak Microsoft Office Outlook, zostanie uruchomione pomyślnie tylko wtedy, Internet Explorer jako domyślna przeglądarka sieci Web.
 
 > [!NOTE]
 > Mozilla Firefox jest obsługiwana, jeśli dostawca wdrażania nie jest pusty lub Microsoft .NET jest zainstalowane rozszerzenie Asystenta struktury. To rozszerzenie jest spakowane z .NET Framework 3.5 SP1. W przypadku obsługi XBAP wtyczka NPWPF jest aktywowana w razie potrzeby.
@@ -80,7 +80,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 > Uwierzytelnianie NTLM (NT challenge-response) może działać, jeśli witryna wyświetli monit o poświadczenia inne niż poświadczenia domyślne, a w oknie dialogowym zabezpieczeń kliknij przycisk **OK** po wyświetleniu monitu, jeśli chcesz zapisać podane poświadczenia dla przyszłych sesji. Jednak to obejście nie będzie działać w przypadku uwierzytelniania podstawowego.
 
 ## <a name="use-third-party-web-servers"></a>Korzystanie z serwerów sieci Web innych firm
- W przypadku wdrażania aplikacji z serwera sieci Web innego niż usługi IIS może wystąpić problem, jeśli serwer zwraca nieprawidłowy typ zawartości dla plików kluczy, takich jak manifest wdrożenia i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. Aby rozwiązać ten problem, zapoznaj się z dokumentacją pomocy serwera sieci Web dotyczącą dodawania nowych typów zawartości do serwera i upewnij się, że wszystkie mapowania rozszerzeń nazw plików wymienione w poniższej tabeli zostały podane.
+ W przypadku wdrażania aplikacji z serwera internetowego innego niż usługi IIS może wystąpić problem, jeśli serwer zwraca nieprawidłowy typ zawartości dla plików kluczy, takich jak manifest wdrożenia i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji. Aby rozwiązać ten problem, zapoznaj się z dokumentacją pomocy serwera sieci Web dotyczącą dodawania nowych typów zawartości do serwera i upewnij się, że wszystkie mapowania rozszerzeń nazw plików wymienione w poniższej tabeli zostały podane.
 
 |Rozszerzenie nazwy pliku|Typ zawartości|
 |-------------------------|------------------|
@@ -91,10 +91,10 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 |`.msp`|`application/octet-stream`|
 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce i zamapowane dyski
- Jeśli używasz Visual Studio do publikowania aplikacji ClickOnce, nie możesz określić zamapowany dysk jako lokalizację instalacji. Można jednak zmodyfikować aplikację ClickOnce, aby zainstalować ją z dysku zmapowanych przy użyciu generatora manifestu i edytora (Mage.exe i MageUI.exe). Aby uzyskać więcej informacji, [zobaczMage.exe (Narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) i [MageUI.exe (Narzędzie tworzenia i edycji manifestów, Graphical Client).](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+ Jeśli używasz Visual Studio do publikowania aplikacji ClickOnce, nie możesz określić zamapowany dysk jako lokalizację instalacji. Można jednak zmodyfikować aplikację ClickOnce, aby zainstalować ją z dysku zamapego przy użyciu generatora manifestu i edytora (Mage.exe i MageUI.exe). Aby uzyskać więcej informacji, [zobaczMage.exe (Narzędzie tworzenia i edycji manifestów)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) i [MageUI.exe (Narzędzie tworzenia i edycji manifestów, Graphical Client).](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokół FTP nie jest obsługiwany w przypadku instalowania aplikacji
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Obsługuje instalowanie aplikacji z dowolnego serwera sieci Web lub serwera plików HTTP 1.1. Protokół FTP, protokół transferu plików, nie jest obsługiwany w przypadku instalowania aplikacji. Za pomocą protokołu FTP można publikować tylko aplikacje. W poniższej tabeli podsumowano te różnice:
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Obsługuje instalowanie aplikacji z dowolnego serwera internetowego lub serwera plików HTTP 1.1. Protokół FTP, protokół transferu plików, nie jest obsługiwany w przypadku instalowania aplikacji. Za pomocą protokołu FTP można publikować tylko aplikacje. W poniższej tabeli przedstawiono podsumowanie tych różnic:
 
 | Typ adresu URL | Opis |
 |----------| - |
@@ -109,30 +109,30 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: włączanie rozszerzeń serwera FrontPage
  rozszerzenia FrontPage Server Extensions firmy Microsoft jest wymagany do publikowania aplikacji na serwerze sieci Web z systemem Windows, który używa protokołu HTTP.
 
- Domyślnie system Windows Server nie ma zainstalowanych rozszerzenia FrontPage Server Extensions instalacji. Jeśli chcesz użyć funkcji do publikowania na serwerze sieci Web z systemem Windows Server, który używa protokołu HTTP z rozszerzenia FrontPage Server Extensions, musisz najpierw [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia FrontPage Server Extensions. Instalację można przeprowadzić przy użyciu narzędzia do zarządzania serwerem w systemie Windows Server.
+ Domyślnie system Windows Server nie ma zainstalowanych rozszerzenia FrontPage Server Extensions instalacji. Jeśli chcesz użyć programu do publikowania na serwerze sieci Web z systemem Windows Server, który używa protokołu HTTP z rozszerzenia FrontPage Server Extensions, musisz najpierw [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia FrontPage Server Extensions. Instalację można przeprowadzić przy użyciu narzędzia do zarządzania serwerem w systemie Windows Server.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: zablokowane typy zawartości
- W usługach IIS wszystkie typy plików są blokowane z wyjątkiem niektórych znanych typów zawartości (na przykład [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] *htm,* *html,* *txt* itd.). Aby umożliwić wdrażanie aplikacji przy użyciu tego serwera, należy zmienić ustawienia usług IIS, aby umożliwić pobieranie plików typu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *.application,* *.manifest* i innych typów plików niestandardowych używanych przez aplikację.
+ W usługach IIS są blokowane wszystkie typy plików z wyjątkiem niektórych znanych typów zawartości (na przykład.htm[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] , *.html* **, *.txt* i tak dalej). Aby umożliwić wdrażanie aplikacji przy użyciu tego serwera, należy zmienić ustawienia usług IIS, aby umożliwić pobieranie plików typu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *.application,* *.manifest* i innych typów plików niestandardowych używanych przez aplikację.
 
  W przypadku wdrażania przy użyciu serwera usług IIS uruchom *inetmgr.exe* i dodaj nowe typy plików dla domyślnej strony sieci Web:
 
 - W przypadku *rozszerzeń .application* *i .manifest* typ MIME powinien być "application/x-ms-application". W przypadku innych typów plików typem MIME powinien być "application/octet-stream".
 
-- Jeśli utworzysz typ MIME z rozszerzeniem "" i typem MIME "application/octet-stream", umożliwi to pobranie plików o niezablokowanych \<em> typach. (Jednak nie można pobrać zablokowanych typów plików, takich jak *\* aspx* i *\* asmx).*
+- Jeśli utworzysz typ MIME z rozszerzeniem " " i typem MIME "application/octet-stream", umożliwi to pobranie plików o niezablokowanych \<em> typach. (Jednak nie można pobrać zablokowanych typów plików, takich jak *\* aspx* i *\* asmx).*
 
-  Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typów MIME w systemie Windows Server, zobacz Jak dodać typ [MIME](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)do witryny sieci Web lub aplikacji .
+  Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typów MIME w systemie Windows Server, zobacz Jak dodać typ [MIME](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application)do witryny internetowej lub aplikacji .
 
 ## <a name="content-type-mappings"></a>Mapowania typów zawartości
- Podczas publikowania za pośrednictwem protokołu HTTP typ zawartości (znany także jako typ MIME) dla pliku *.application* powinien być "application/x-ms-application". Jeśli zainstalowano .NET Framework 2.0 na serwerze, zostanie on ustawiony automatycznie. Jeśli ta aplikacja nie jest zainstalowana, należy utworzyć skojarzenie typu MIME dla wirtualnego serwera aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (lub całego serwera).
+ Podczas publikowania za pośrednictwem protokołu HTTP typem zawartości (znanym również jako typ MIME) pliku *.application* powinien być "application/x-ms-application". Jeśli zainstalowano .NET Framework 2.0 na serwerze, zostanie on ustawiony automatycznie. Jeśli ta aplikacja nie jest zainstalowana, należy utworzyć skojarzenie typu MIME dla wirtualnego serwera aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (lub całego serwera).
 
  W przypadku wdrażania przy użyciu serwera usług IIS uruchom <em>program inetmgr.</em> i dodaj nowy typ zawartości "application/x-ms-application" dla *rozszerzenia .application.*
 
 ## <a name="http-compression-issues"></a>Problemy z kompresją HTTP
  W programie można wykonywać pobieranie, które korzysta z kompresji HTTP, czyli technologii serwera sieci Web, która kompresuje strumień danych przy użyciu algorytmu GZIP przed wysłaniem strumienia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do klienta. Klient — w tym przypadku [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — dekompresuje strumień przed odczytaniem plików.
 
- Jeśli używasz usług IIS, możesz łatwo włączyć kompresję HTTP. Jednak po włączeniu kompresji HTTP jest ona włączona tylko dla niektórych typów plików — czyli plików HTML i tekstowych. Aby włączyć kompresję zestawów *(dll),* XML *(xml),* manifestów wdrażania (*.application*) i manifestów aplikacji *(manifest*), należy dodać te typy plików do listy typów dla usług IIS do skompresowania. Do momentu dodania typów plików do wdrożenia tylko pliki tekstowe i HTML będą kompresowane.
+ Jeśli używasz usług IIS, możesz łatwo włączyć kompresję HTTP. Jednak po włączeniu kompresji HTTP jest ona włączona tylko dla niektórych typów plików — czyli plików HTML i tekstowych. Aby włączyć kompresję zestawów *(.dll),* XML *(.xml),* manifestów wdrażania (*.application*) i manifestów aplikacji *(manifest*), należy dodać te typy plików do listy typów dla usług IIS do skompresowania. Do momentu dodania typów plików do wdrożenia tylko pliki tekstowe i HTML będą kompresowane.
 
- Aby uzyskać szczegółowe instrukcje dotyczące usług IIS, zobacz [Jak określić dodatkowe typy dokumentów](/troubleshoot/iis/content-types-http-compression.md)dla kompresji HTTP .
+ Aby uzyskać szczegółowe instrukcje dotyczące usług IIS, zobacz [Jak określić dodatkowe typy dokumentów](/troubleshoot/iis/content-types-http-compression)dla kompresji HTTP .
 
 ## <a name="see-also"></a>Zobacz też
 - [Rozwiązywanie problemów z wdrożeniami technologii ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

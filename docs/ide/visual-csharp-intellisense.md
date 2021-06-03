@@ -1,35 +1,35 @@
 ---
 title: C# IntelliSense
-description: Dowiedz się więcej na temat funkcji IntelliSense, których można użyć podczas kodowania projektu C#.
+description: Dowiedz się więcej o niektórych funkcjach IntelliSense, których można używać podczas kodowania projektu C#.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862066"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351958"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
-Funkcja IntelliSense języka C# jest dostępna podczas kodowania w edytorze oraz podczas debugowania w oknie poleceń [trybu natychmiastowego](../ide/reference/immediate-window.md) .
+Funkcja IntelliSense w języku C# jest dostępna podczas kodowania w edytorze i podczas debugowania w oknie [poleceń trybu natychmiastowego.](../ide/reference/immediate-window.md)
 
 ## <a name="completion-lists"></a>Listy uzupełniania
 
-Listy uzupełniania IntelliSense w języku C# zawierają tokeny z listy członków, kompletnych wyrazów i innych. Zapewnia szybki dostęp do:
+Listy uzupełniania IntelliSense w języku C# zawierają tokeny z elementów członkowskich listy, uzupełniania wyrazów i nie tylko. Zapewnia szybki dostęp do:
 
 - Elementy członkowskie typu lub przestrzeni nazw
 
-- Zmienne, polecenia i nazwy funkcji
+- Nazwy zmiennych, poleceń i funkcji
 
 - Fragmenty kodu
 
@@ -37,130 +37,134 @@ Listy uzupełniania IntelliSense w języku C# zawierają tokeny z listy członk�
 
 - Metody rozszerzeń
 
-Lista uzupełniania w języku C# jest również odpowiednio inteligentna, aby odfiltrować nieistotne tokeny i wstępnie wybierać token oparty na kontekście. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania](#filtered-completion-lists).
+Lista uzupełniania w języku C# jest również wystarczająco inteligentna, aby odfiltrować nieistotne tokeny i wstępnie wybrać token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [Filtrowane listy uzupełniania](#filtered-completion-lists).
 
 ### <a name="code-snippets-in-completion-lists"></a>Fragmenty kodu na listach uzupełniania
 
-W języku C# lista uzupełniania zawiera fragmenty kodu, które ułatwiają łatwe Wstawianie wstępnie zdefiniowanych treści kodu do programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako [tekst skrótu](../ide/code-snippets-schema-reference.md#shortcut-element)wstawki. Aby uzyskać więcej informacji na temat fragmentów kodu, które są domyślnie dostępne w języku C#, zobacz [fragmenty kodu w języku c#](../ide/visual-csharp-code-snippets.md).
+W języku C# lista uzupełniania zawiera fragmenty kodu, które ułatwiają wstawianie wstępnie zdefiniowanych treści kodu do programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako tekst skrótu [fragmentu kodu](../ide/code-snippets-schema-reference.md#shortcut-element). Aby uzyskać więcej informacji na temat fragmentów kodu, które są domyślnie dostępne w języku C#, zobacz Fragmenty kodu języka [C#.](../ide/visual-csharp-code-snippets.md)
 
 ### <a name="language-keywords-in-completion-lists"></a>Słowa kluczowe języka na listach uzupełniania
 
-W języku C# lista uzupełniania zawiera również słowa kluczowe języka. Aby uzyskać więcej informacji na temat słów kluczowych języka C#, zobacz [słowa kluczowe](/dotnet/csharp/language-reference/keywords/index)w języku c#.
+W języku C# lista uzupełniania zawiera również słowa kluczowe języka. Aby uzyskać więcej informacji na temat słów kluczowych języka C#, zobacz [Słowa kluczowe języka C#.](/dotnet/csharp/language-reference/keywords/index)
 
-### <a name="extension-methods-in-completion-lists"></a>Metody rozszerzające na listach uzupełniania
+### <a name="extension-methods-in-completion-lists"></a>Metody rozszerzeń na listach uzupełniania
 
-W języku C# lista uzupełniania zawiera metody rozszerzające, które znajdują się w zakresie.
+W języku C# lista uzupełniania zawiera metody rozszerzenia, które znajdują się w zakresie.
 
 > [!NOTE]
-> Na liście uzupełniania nie są wyświetlane wszystkie metody rozszerzające dla <xref:System.String> obiektów.
+> Lista uzupełniania nie zawiera wszystkich metod rozszerzenia dla <xref:System.String> obiektów.
 
-Metody rozszerzające używają innej ikony niż metody instancji. Aby uzyskać informacje na temat ikony listy, zobacz [Widok klasy i Przeglądarka obiektów ikon](../ide/class-view-and-object-browser-icons.md). Gdy metoda wystąpienia i Metoda rozszerzająca o tej samej nazwie znajdują się zarówno w zakresie, na liście uzupełniania jest wyświetlana ikona metody rozszerzenia.
+Metody rozszerzeń używają innej ikony niż metody wystąpienia. Aby uzyskać przewodnik referencyjny dotyczący ikon listy, [zobacz Widok klasy i Przeglądarka obiektów](../ide/class-view-and-object-browser-icons.md). Gdy zarówno metoda wystąpienia, jak i metoda rozszerzenia o tej samej nazwie znajdują się w zakresie, na liście uzupełniania jest wyświetlana ikona metody rozszerzenia.
 
 ### <a name="filtered-completion-lists"></a>Filtrowane listy uzupełniania
 
-Technologia IntelliSense usuwa zbędnych członków z listy uzupełniania, używając filtrów. Język C# filtruje listy uzupełniania, które są wyświetlane dla następujących elementów:
+Funkcja IntelliSense usuwa niepotrzebne elementy członkowskie z listy uzupełniania przy użyciu filtrów. Język C# filtruje listy uzupełniania wyświetlane dla tych elementów:
 
-- **Interfejsy i klasy bazowe**: Funkcja IntelliSense automatycznie usuwa elementy z list interfejsów i uzupełniania klas bazowych, zarówno na liście podstawowej deklaracji klasy, jak i na listach ograniczeń. Na przykład wyliczenia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ wyliczenia nie mogą być używane dla klas bazowych. Lista uzupełniania klas bazowych zawiera tylko interfejsy i przestrzenie nazw. Jeśli wybierzesz element na liście, a następnie wpisz przecinek, IntelliSense usunie klasy bazowe z listy uzupełniania, ponieważ język C# nie obsługuje wielokrotnego dziedziczenia. Takie samo zachowanie występuje w przypadku klauzul ograniczenia.
+- **Interfejsy i klasy bazowe:** funkcja IntelliSense automatycznie usuwa elementy z interfejsu i list uzupełniania klas bazowych, zarówno na listach podstawowych deklaracji klas, jak i listach ograniczeń. Na przykład wylinia nie są wyświetlane na liście uzupełniania dla klas bazowych, ponieważ wyli nie mogą być używane dla klas bazowych. Lista uzupełniania klas bazowych zawiera tylko interfejsy i przestrzenie nazw. Jeśli wybierzesz element na liście, a następnie wpiszesz przecinek, funkcja IntelliSense usunie klasy bazowe z listy uzupełniania, ponieważ język C# nie obsługuje wielokrotnego dziedziczenia. To samo zachowanie występuje również w przypadku klauzul ograniczeń.
 
-- **Atrybuty**: w przypadku zastosowania atrybutu do typu Lista uzupełniania jest filtrowana, tak aby lista zawierała tylko te typy, które są podrzędne od przestrzeni nazw, które zawierają te typy, takich jak <xref:System.Attribute> .
+- **Atrybuty:** po zastosowaniu atrybutu do typu lista uzupełniania jest filtrowana tak, aby lista zawierała tylko te typy, które pochodzą z przestrzeni nazw zawierających te typy, takie jak <xref:System.Attribute> .
 
-- **Klauzule catch**
+- **Klauzule Catch**
 
-- **Inicjatory obiektów**: na liście uzupełniania będą wyświetlane tylko elementy członkowskie, które mogą zostać zainicjowane.
+- **Inicjatory obiektów:** na liście uzupełniania będą wyświetlane tylko elementy członkowskie, które można zainicjować.
 
-- **New — słowo kluczowe**: gdy wpiszesz, `new` a następnie naciśniesz **spację**, zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania dla deklaracji i instrukcji return w metodach.
+- **new —** słowo kluczowe: po wpisaniu `new` i naciśnięciu **klawisza Spacja** zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania dla deklaracji i dla instrukcji return w metodach.
 
-- **enum — słowo kluczowe**: po naciśnięciu **miejsca** po znaku równości dla przypisania wyliczenia zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania po wpisaniu słowa kluczowego Return i po wprowadzeniu deklaracji.
+- **Słowo kluczowe enum:** po naciśnięciu klawisza **Spacja** po znaku równości w celu przypisania wyli zostanie wyświetlona lista uzupełniania. Element jest automatycznie wybierany na liście na podstawie kontekstu w kodzie. Na przykład elementy są automatycznie wybierane na liście uzupełniania po wpisaniu słowa kluczowego return i podczas deklaracji.
 
-- **Operatory AS i is**: filtrowana lista uzupełniania jest wyświetlana automatycznie po naciśnięciu **miejsca** po wpisaniu `as` `is` słowa kluczowego or.
+- **operatory as i is**: filtrowana lista uzupełniania jest wyświetlana automatycznie po naciśnięciu klawisza **Spacja** po wpisaniu słowa `as` kluczowego lub `is` .
 
-- **Zdarzenia**: po wpisaniu słowa kluczowego `event` Lista uzupełniania zawiera tylko typy delegatów.
+- **Zdarzenia:** po wpisaniu słowa kluczowego `event` lista uzupełniania zawiera tylko typy delegatów.
 
-- **Pomoc parametru** automatycznie sortuje do pierwszego przeciążenia metody, które jest zgodne z parametrami wprowadzonymi przez użytkownika. Jeśli dostępne są wiele przeciążeń metod, można użyć strzałek w górę i w dół, aby przejść do następnego możliwego przeciążenia na liście.
+- **Parametr pomaga** automatycznie sortować do pierwszego przeciążenia metody, które pasuje do parametrów podczas ich wprowadzania. Jeśli dostępnych jest wiele przeciążeń metod, możesz użyć strzałek w górę i w dół, aby przejść do następnego możliwego przeciążenia na liście.
 
 ### <a name="most-recently-used-members"></a>Ostatnio używane elementy członkowskie
 
-Technologia IntelliSense zapamiętuje członków, którzy zostali ostatnio wybrani w polu [Członkowie listy](../ide/using-intellisense.md) podręcznej, aby automatycznie uzupełniać nazwy obiektów. Przy następnym użyciu **listy składowych**, ostatnio używane elementy członkowskie są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między poszczególnymi sesjami programu Visual Studio.
+Funkcja IntelliSense zapamiętuje ostatnio wybrane elementy członkowskie w oknie podręcznym [Elementy](../ide/using-intellisense.md) członkowskie listy w celu automatycznego uzupełniania nazw obiektów. Przy następnym użyciu listy **członków** u góry są wyświetlane ostatnio używane elementy członkowskie. Historia ostatnio używanych elementów członkowskich jest czyszona między poszczególnymi Visual Studio użytkownikami.
 
 ### <a name="override"></a>override
 
-Po wpisaniu [przesłonięcia](/dotnet/csharp/language-reference/keywords/override) , a **następnie naciśnięciu** klawisza, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisanie zwracanego typu metody po `override` wyświetleniu przez funkcję IntelliSense tylko metod, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, wyświetla wszystkie elementy członkowskie klasy bazowej.
+Po [wpisaniu przesłonięcia](/dotnet/csharp/language-reference/keywords/override) i naciśnięciu klawisza **Spacja** funkcja IntelliSense wyświetla wszystkie prawidłowe składowe klasy bazowej, które można zastąpić w wyskakującym polu listy. Wpisanie zwracanych typów metody po wyświetleniu monitu funkcji IntelliSense o pokazanie tylko tych metod, `override` które zwracają ten sam typ. Gdy funkcja IntelliSense nie może znaleźć żadnych dopasowania, wyświetla wszystkie składowe klasy bazowej.
 
-### <a name="ai-enhanced-intellisense"></a>Ulepszona funkcja IntelliSense
+### <a name="ai-enhanced-intellisense"></a>Funkcja IntelliSense rozszerzona o AI
 
-[Program Visual Studio rozszerzenia intellicode](/visualstudio/intellicode/intellicode-visual-studio) zapewnia sztuczne, ulepszone listy uzupełniania technologii IntelliSense. Rozszerzenia intellicode przewiduje najbardziej właściwy interfejs API do użycia, a nie tylko prezentowanie alfabetycznej listy członków. Używa bieżącego kontekstu kodu i wzorców w celu udostępnienia listy dynamicznej.
+[Visual Studio IntelliCode udostępnia](/visualstudio/intellicode/intellicode-visual-studio) listy uzupełniania intelliSense ulepszone ze sztucznej inteligencji. Funkcja IntelliCode przewiduje najbardziej prawdopodobny poprawny interfejs API do użycia, a nie tylko prezentowanie alfabetycznej listy elementów członkowskich. Używa ona bieżącego kontekstu kodu i wzorców w celu zapewnienia listy dynamicznej.
 
 ## <a name="automatic-code-generation"></a>Automatyczne generowanie kodu
 
 ### <a name="add-using"></a>Dodawanie using
 
-Operacja **Dodaj przy użyciu funkcji** IntelliSense automatycznie dodaje dyrektywę wymaganą `using` do pliku kodu. Ta funkcja umożliwia utrzymywanie fokusu w kodzie, który jest pisany, a nie wymaga przesunięcia fokusu do innej części kodu.
+Operacja **Dodaj przy użyciu** funkcji IntelliSense automatycznie dodaje wymaganą `using` dyrektywę do pliku kodu. Ta funkcja umożliwia skoncentrowanie się na pisanych kodach, a nie na konieczności zmiany fokusu na inną część kodu.
 
-Aby zainicjować operację **Dodaj przy użyciu** , umieść kursor w odniesieniu do typu, którego nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsolowej, a następnie dodawania `XmlReader` do treści `Main` metody, w tym wierszu kodu pojawia się czerwona zygzakowata, ponieważ nie można rozpoznać odwołania do typu. Następnie można wywołać **Dodawanie przy użyciu** przez **szybkie akcje**. **Szybkie akcje** są widoczne tylko wtedy, gdy kursor jest ustawiony na niezwiązanym typie.
+Aby zainicjować **operację Dodaj przy** użyciu, umieść kursor na odwołaniach do typu, których nie można rozpoznać. Na przykład podczas tworzenia aplikacji konsolowej, a następnie dodawania do treści metody, w tym wierszu kodu pojawia się czerwony zygniak, ponieważ nie można rozpoznać odwołania `XmlReader` `Main` do typu. Następnie możesz wywołać pozycję **Dodaj przy użyciu za** pomocą **szybkich akcji**. Szybkie **akcje są** widoczne tylko wtedy, gdy kursor jest umieszczony na typie niepowiązanych.
 
-![Dodawanie przy użyciu, szybka akcja rozwinięta obraz](../ide/media/addusing-quickaction.png)
+![Dodawanie obrazu rozwiniętego przy użyciu szybkiej akcji](../ide/media/addusing-quickaction.png)
 
-Kliknij ikonę żarówki błędów, a następnie wybierz pozycję **użyj System.Xml;** , aby automatycznie dodać dyrektywę using.
+Kliknij ikonę żarówki błędu, a następnie wybierz **pozycję using System.Xml;,** aby automatycznie dodać dyrektywę using.
 
-### <a name="remove-and-sort-usings"></a>Usuń i Sortuj użycia
+### <a name="add-missing-using-directives-on-paste"></a>Dodawanie brakujących dyrektyw using przy wklejaniu
 
-Opcja **Usuń i Sortuj używa** sortuje i usuwa `using` `extern` deklaracje bez zmiany zachowania kodu źródłowego. W miarę upływu czasu pliki źródłowe mogą stać się bloated i trudne do odczytania ze względu na niepotrzebne i niezorganizowane `using` dyrektywy. Opcja **Usuń i Sortuj używa** kompaktuje kod źródłowy przez usunięcie nieużywanych `using` dyrektyw i zwiększa czytelność poprzez ich sortowanie. W menu **Edycja** wybierz pozycję **IntelliSense**, a następnie wybierz pozycję **Organizuj przy użyciu**.
+Funkcja IntelliSense może automatycznie dodawać brakujące `using` dyrektywy do kodu po wklejeniu typu do pliku kodu. Ta funkcja pozwala zaoszczędzić czas dzięki automatyzacji zadania dodawania brakujących dyrektyw using podczas wklejania typu do pliku. Włącz tę funkcję w **edytorze tekstów**  >  **Opcje**  >  **narzędzi**  >  **C#** lub Basic  >  **Advanced** i wybierz pozycję Dodaj brakujące dyrektywy using przy wklejeniu .
+
+### <a name="remove-and-sort-usings"></a>Usuwanie i sortowanie using
+
+Opcja **Usuń i sortuj deklaracje Usings** sortuje i usuwa deklaracje i bez zmiany `using` zachowania kodu `extern` źródłowego. Z czasem pliki źródłowe mogą stać się coraz bardziej utrudnione i trudne do odczytania z powodu niepotrzebnych i `using` niezorganizowanych dyrektyw. Opcja **Usuń i sortuj** using kompaktuje kod źródłowy przez usunięcie nieużywanych dyrektyw i zwiększa czytelność `using` dzięki posortowaniu ich. W menu **Edycja** wybierz pozycję **IntelliSense,** a następnie wybierz pozycję **Organizuj using.**
 
 ### <a name="implement-interface"></a>Implementowanie interfejsu
 
-Funkcja IntelliSense udostępnia opcję ułatwiającą implementowanie [interfejsu](/dotnet/csharp/language-reference/keywords/interface) podczas pracy w edytorze kodu. Zwykle aby poprawnie zaimplementować interfejs, należy utworzyć deklarację metody dla każdego elementu członkowskiego interfejsu w klasie. Przy użyciu funkcji IntelliSense po wpisaniu nazwy interfejsu w deklaracji klasy zostanie wyświetlona żarówka **Quick Actions** . Żarówka daje możliwość automatycznego zaimplementowania interfejsu przy użyciu jawnego lub niejawnego nazewnictwa. W przypadku jawnego nazewnictwa deklaracje metody zawierają nazwę interfejsu. W przypadku niejawnego nazewnictwa deklaracje metody nie wskazują interfejsu, do którego należą. Dostęp do metody jawnie nazwanego interfejsu można uzyskać tylko za pomocą wystąpienia interfejsu, a nie za pomocą wystąpienia klasy. Aby uzyskać więcej informacji, zobacz [jawną implementację interfejsu](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+Funkcja IntelliSense udostępnia opcję, która pomaga zaimplementować [interfejs](/dotnet/csharp/language-reference/keywords/interface) podczas pracy w edytorze kodu. Zwykle, aby poprawnie zaimplementować interfejs, należy utworzyć deklarację metody dla każdego członka interfejsu w klasie. Przy użyciu funkcji IntelliSense po wpisaniu nazwy interfejsu  w deklaracji klasy jest wyświetlana żarówka Szybkie akcje. Żarówka zapewnia opcję automatycznego implementowania interfejsu przy użyciu jawnego lub niejawnego nazewnictwa. W przypadku jawnego nazewnictwa deklaracje metod noszą nazwę interfejsu. W obszarze niejawnego nazewnictwa deklaracje metod nie wskazują interfejsu, do którego należą. Jawnie nazwana metoda interfejsu jest dostępna tylko za pośrednictwem wystąpienia interfejsu, a nie wystąpienia klasy. Aby uzyskać więcej informacji, zobacz [Jawna implementacja interfejsu](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
-Implementacja interfejsu generuje minimalną liczbę elementów zastępczych metod, które są wymagane do zaspokojenia interfejsu. Jeśli klasa bazowa implementuje części interfejsu, nie są one ponownie generowane.
+Implementacja interfejsu generuje minimalną liczbę wycinki metody, która jest wymagana do spełnienia interfejsu. Jeśli klasa bazowa implementuje części interfejsu, te wycinki nie są ponownie generowany.
 
-### <a name="implement-abstract-base-class"></a>Zaimplementuj abstrakcyjną klasę bazową
+### <a name="implement-abstract-base-class"></a>Implementowanie abstrakcyjnej klasy bazowej
 
-Funkcja IntelliSense udostępnia opcję ułatwiającą automatyczne implementowanie elementów członkowskich abstrakcyjnej klasy bazowej podczas pracy w edytorze kodu. Zwykle w celu zaimplementowania elementów członkowskich abstrakcyjnej klasy bazowej wymagane jest utworzenie nowej definicji metody dla każdej metody abstrakcyjnej klasy podstawowej w klasie pochodnej. Przy użyciu funkcji IntelliSense po wpisaniu nazwy abstrakcyjnej klasy podstawowej w deklaracji klasy zostanie wyświetlona żarówka **Quick Actions** . Żarówka daje możliwość automatycznego implementowania metod klasy bazowej.
+Funkcja IntelliSense udostępnia opcję, która pomaga automatycznie implementować składowe abstrakcyjnej klasy bazowej podczas pracy w edytorze kodu. Zwykle implementowanie składowych abstrakcyjnej klasy bazowej wymaga utworzenia nowej definicji metody dla każdej metody abstrakcyjnej klasy bazowej w klasie pochodnej. Przy użyciu funkcji IntelliSense po wpisaniu nazwy abstrakcyjnej  klasy bazowej w deklaracji klasy jest wyświetlana żarówka Szybkich akcji. Żarówka zapewnia opcję automatycznego implementowania metod klasy bazowej.
 
-Fragmenty metod, które są generowane przez **zaimplementowaną abstrakcyjną klasę bazową** , są modelowane przez fragment kodu zdefiniowany w pliku *MethodStub. fragment*. Fragmenty kodu są modyfikowane. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md).
+Wycinki metody generowane przez funkcję  Implementuj abstrakcyjną klasę bazową są modelowane za pomocą fragmentu kodu zdefiniowanego w pliku *MethodStub.snippet*. Fragmenty kodu można modyfikować. Aby uzyskać więcej informacji, [zobacz Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md).
 
-### <a name="generate-from-usage"></a>Generuj na podstawie użycia
+### <a name="generate-from-usage"></a>Generowanie na podstawie użycia
 
-Funkcja **generowania z użycia** umożliwia korzystanie z klas i elementów członkowskich przed ich zdefiniowaniem. Można wygenerować element zastępczy dla dowolnej klasy, konstruktora, metody, właściwości, pola lub wyliczenia, które mają być użyte, ale nie zostały jeszcze zdefiniowane. Można generować nowe typy i składowe bez opuszczania bieżącej lokalizacji w kodzie. Pozwala to zminimalizować przerwy w przepływie pracy.
+Funkcja **Generuj na** podstawie użycia umożliwia korzystanie z klas i składowych przed ich zdefiniowaniem. Można wygenerować wycinki dla dowolnej klasy, konstruktora, metody, właściwości, pola lub wyli możemy użyć, ale nie zostały jeszcze zdefiniowane. Możesz generować nowe typy i elementy członkowskie bez opuszczania bieżącej lokalizacji w kodzie. Pozwala to zminimalizować przerwy w przepływie pracy.
 
-Czerwone faliste podkreślenie pojawia się pod każdym niezdefiniowanym identyfikatorem. Po umieszczeniu wskaźnika myszy na identyfikatorze w etykietce narzędzia zostanie wyświetlony komunikat o błędzie. Aby wyświetlić odpowiednie opcje, można użyć jednej z następujących procedur:
+Pod każdym niezdefiniowym identyfikatorem jest wyświetlane czerwone podkreślenie faliste. Gdy na identyfikatorze znajduje się wskaźnik myszy, w etykietce narzędzia zostanie wyświetlony komunikat o błędzie. Aby wyświetlić odpowiednie opcje, można użyć jednej z następujących procedur:
 
-- Kliknij Niezdefiniowany identyfikator. W obszarze identyfikatora zostanie wyświetlona żarówka o błędzie **Quick Actions** . Kliknij żarówkę błędów.
+- Kliknij niezdefiniowany identyfikator. Pod **identyfikatorem pojawi** się żarówka błędu Szybkie akcje. Kliknij żarówkę błędu.
 
-- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl** + **.** (**Ctrl** + kropka).
+- Kliknij niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl** + **.** **(Ctrl** + okres).
 
-- Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij pozycję **szybkie akcje i refaktoryzacje**.
+- Kliknij prawym przyciskiem myszy niezdefiniowany identyfikator, a następnie kliknij pozycję Szybkie **akcje i refaktoryzowanie.**
 
-Dostępne opcje mogą obejmować następujące elementy:
+Wyświetlone opcje mogą obejmować następujące elementy:
 
-- **Generuj Właściwość**
+- **Generowanie właściwości**
 
-- **Generuj pole**
+- **Generowanie pola**
 
 - **Generowanie metody**
 
-- **Generuj klasę**
+- **Generowanie klasy**
 
-- **Generuj nowy typ** (dla klasy, struktury, interfejsu lub wyliczenia)
+- **Generowanie nowego typu** (dla klasy, struktury, interfejsu lub wyliczania)
 
-## <a name="generate-event-handlers"></a>Generuj programy obsługi zdarzeń
+## <a name="generate-event-handlers"></a>Generowanie programów obsługi zdarzeń
 
-W edytorze kodu technologia IntelliSense może pomóc w podłączaniu metod (obsługi zdarzeń) do pól zdarzeń.
+W edytorze kodu funkcja IntelliSense może pomóc w podłączaniu metod (programów obsługi zdarzeń) do pól zdarzeń.
 
-Po wpisaniu `+=` operatora po polu zdarzenia w pliku *CS* funkcja IntelliSense poprosi o wybranie klawisza **Tab** . Spowoduje to wstawienie nowego wystąpienia delegata wskazującego metodę obsługi zdarzenia.
+Po wpisaniu operatora po polu zdarzenia w pliku cs funkcja IntelliSense wyświetli monit z opcją `+=` naciśnięcia **klawisza Tab.**  Powoduje to wstawienie nowego wystąpienia delegata, który wskazuje na metodę obsługą zdarzenia.
 
-![Autohak przycisku](../ide/media/vxautohookup.gif)
+![Automatyczne podłączanie przycisku](../ide/media/vxautohookup.gif)
 
-Po naciśnięciu klawisza **Tab** funkcja IntelliSense automatycznie kończy instrukcję dla Ciebie i wyświetla odwołanie programu obsługi zdarzeń jako zaznaczony tekst w edytorze kodu. Aby ukończyć automatyczne podłączenie zdarzeń, IntelliSense poprosi o ponowne naciśnięcie klawisza **Tab** , aby utworzyć pustą procedurę dla programu obsługi zdarzeń.
+Po naciśnięciu **klawisza Tab** funkcja IntelliSense automatycznie zakończy instrukcje i wyświetli odwołanie do obsługi zdarzeń jako zaznaczony tekst w edytorze kodu. Aby zakończyć automatyczne podłączanie zdarzeń, funkcja IntelliSense monituje o naciśnięcie klawisza **Tab** ponownie w celu utworzenia pustego wyciskania dla programu obsługi zdarzeń.
 
-![Generuj procedurę obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif)
-
-> [!NOTE]
-> Jeśli nowy delegat tworzony przez funkcję IntelliSense odwołuje się do istniejącej procedury obsługi zdarzeń, technologia IntelliSense komunikuje te informacje w etykietce narzędzia. Następnie można zmodyfikować to odwołanie; tekst jest już zaznaczony w edytorze kodu. W przeciwnym razie na tym etapie zostanie ukończone automatyczne podłączenie zdarzeń.
-
-Po naciśnięciu klawisza **Tab** funkcja IntelliSense odtworzy metodę o poprawnym podpisie i umieści kursor w treści programu obsługi zdarzeń.
+![Generuj program obsługi zdarzeń](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
-> Użyj polecenia **Nawiguj wstecz** w menu **Widok** (**Ctrl** + **-** ), aby wrócić do instrukcji Event podłączenie.
+> Jeśli nowy delegat utworzony przez mechanizm IntelliSense odwołuje się do istniejącej procedury obsługi zdarzeń, funkcja IntelliSense przekazuje te informacje w etykietce narzędzia. Następnie można zmodyfikować to odwołanie. Tekst jest już zaznaczony w edytorze kodu. W przeciwnym razie w tym momencie zostanie ukończone automatyczne podłączanie zdarzeń.
+
+Po naciśnięciu **klawisza Tab** funkcja IntelliSense wycięła metodę z poprawną sygnaturą i umieściła kursor w treści procedury obsługi zdarzeń.
+
+> [!NOTE]
+> Użyj polecenia **Przejdź do tyłu** w menu **Widok** **(Ctrl),** aby wrócić do instrukcji + **-** podłączania zdarzeń.
 
 ## <a name="see-also"></a>Zobacz też
 
