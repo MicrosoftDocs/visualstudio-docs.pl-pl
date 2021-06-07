@@ -1,26 +1,22 @@
 ---
-title: Subskrypcje obsługują rozwiązania
-description: Lista plików zawiera pliki dla subskrypcji programu Visual Studio — zawartość widżetu
+title: Rozwiązania pomocy technicznej dotyczące subskrypcji
+description: Lista plików INCLUDEs dla subskrypcji Visual Studio obsługuje zawartość widżetu
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 9168e857d07c7843bd1576185598f5911263528e
-ms.sourcegitcommit: 5c146b2dfaefc4f44802600c2cd252a7a0e4b846
+ms.openlocfilehash: da284ea9403e4aab929e175f95508cc16684fc60
+ms.sourcegitcommit: a740129796159a69c704d9d372edaa7a7f191d17
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525550"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111530451"
 ---
-# <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Zawartość widżetu obsługa subskrypcji programu Visual Studio zawiera pliki
+# <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio subskrypcje obsługują zawartość widżetu PLIKI INCLUDES
 
-## <a name="admin-solutions"></a>Rozwiązania administratora
-
-[!INCLUDE [Admin sign-in issues](admin-solutions/includes/admin-sign-in-issues.md)]
-
-[!INCLUDE [Admin tasks](admin-solutions/includes/admin-task-how-to.md)]
+## <a name="admin-solutions"></a>Rozwiązania administracyjne
 
 [!INCLUDE [Become a super admin](admin-solutions/includes/become-a-super-admin-managed.md)]
 
@@ -28,15 +24,10 @@ ms.locfileid: "100525550"
 
 [!INCLUDE [Cannot access subscriptions](admin-solutions/includes/cannot-access-subs.md)]
 
-[!INCLUDE [Example change email](admin-solutions/includes/example-change-email.md)]
-
-[!INCLUDE [How do I change my sign-in email admin](admin-solutions/includes/how-do-i-change-my-sign-in-email-admin.md)]
-
 [!INCLUDE [I only see VSDE](admin-solutions/includes/only-see-vsde.md)]
 
-[!INCLUDE [Request subscriptions](admin-solutions/includes/request-subscriptions.md)]
 
-## <a name="benefit-activations"></a>Aktywacji korzyści
+## <a name="benefit-activations"></a>Aktywacje korzyści
 
 [!INCLUDE [Error while activating Azure monthly credit](benefit-activation/includes/error-while-activating-azure-monthly-credit.md)]
 
@@ -67,7 +58,7 @@ ms.locfileid: "100525550"
 
 [!INCLUDE [Unable to locate a product](downloading-activating-or-using-software/downloading-activating-or-using-software/includes/unable-to-locate-product.md)]
 
-### <a name="find-and-use-product-keys"></a>Znajdowanie i Używanie kluczy produktów
+### <a name="find-and-use-product-keys"></a>Znajdowanie i używanie kluczy produktów
 [!INCLUDE [Unable to find or claim product keys](downloading-activating-or-using-software/finding-or-using-product-keys/includes/unable-to-find-or-claim-product-keys.md)]
 
 ### <a name="use-product-features"></a>Korzystanie z funkcji produktu
@@ -83,7 +74,7 @@ ms.locfileid: "100525550"
 
 [!INCLUDE [Subscription licensing terms and conditions](licensing-terms/includes/subscription-licensing-terms-and-conditions.md)]
 
-## <a name="other-solutions-or-no-solution"></a>Inne rozwiązania lub nie rozwiązanie
+## <a name="other-solutions-or-no-solution"></a>Inne rozwiązania lub ich brak
 
 [!INCLUDE [No solution](other-or-no-solution/includes/no-solution.md)]
 
@@ -97,21 +88,21 @@ ms.locfileid: "100525550"
 
 [!INCLUDE [Portal outage](portal-issue/includes/portal-outage.md)]
 
-## <a name="purchase-renew-or-cancel-subscriptions"></a>Zakup, Odnów lub Anuluj subskrypcje
+## <a name="purchase-renew-or-cancel-subscriptions"></a>Kupowanie, odnawianie lub anulowanie subskrypcji
 
-### <a name="help-with-purchases"></a>Pomoc dotycząca zakupów
+### <a name="help-with-purchases"></a>Pomoc przy zakupach
 [!INCLUDE [Help me purchase via Marketplace](renewing-purchasing-or-canceling/help-purchasing/includes/help-me-purchase-marketplace.md)]
 
 [!INCLUDE [Help me purchase via Microsoft Store](renewing-purchasing-or-canceling/help-purchasing/includes/help-me-purchase-microsoft-store.md)]
 
 [!INCLUDE [Where can I purchase](renewing-purchasing-or-canceling/help-purchasing/includes/where-can-i-purchase-from.md)]
 
-### <a name="help-with-renewals"></a>Pomoc dotycząca odnawiania
+### <a name="help-with-renewals"></a>Pomoc w odnawianiu
 [!INCLUDE [Help me renew via Marketplace](renewing-purchasing-or-canceling/help-renewing/includes/help-me-renew-marketplace.md)]
 
 [!INCLUDE [Help me renew via Microsoft Store](renewing-purchasing-or-canceling/help-renewing/includes/help-me-renew-microsoft-store.md)]
 
-### <a name="help-with-canceling"></a>Pomoc dotycząca anulowania
+### <a name="help-with-canceling"></a>Pomoc w anulowaniu
 [!INCLUDE [Help me cancel monthly or annual subscriptions](renewing-purchasing-or-canceling/help-canceling/includes/help-me-cancel-monthly-annual.md)]
 
 ### <a name="order-or-purchase-status"></a>Stan zamówienia lub zakupu
