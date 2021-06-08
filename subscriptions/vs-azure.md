@@ -4,31 +4,31 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 05/18/2021
+ms.date: 06/07/2021
 ms.topic: how-to
 description: Dowiedz się, jak aktywować indywidualną korzyść kredytową usługi Azure DevTest w ramach Visual Studio subskrypcji.
-ms.openlocfilehash: 0888f20c80dbacad0237fdd12f987870c4834f2b
-ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
+ms.openlocfilehash: 4946efb3aa32fd7c80a2926ad2b83c15cfe92452
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110231978"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588441"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w Visual Studio subskrypcji
-Jako Visual Studio subskrypcji możesz korzystać Microsoft Azure bez dodatkowych opłat.  Dzięki [miesięcznym indywidualnym środków na korzystanie z usługi Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)platforma Azure jest twoją osobistą piaskownicą do tworzenia i testowania.  Możesz aprowizowania maszyn wirtualnych, usług w chmurze i innych zasobów platformy Azure.  Kwoty środków różnią się w zależności od poziomu subskrypcji.
+Jako subskrybent Visual Studio możesz korzystać z usługi Microsoft Azure bez dodatkowych opłat.  Dzięki [miesięcznym indywidualnym środków na korzystanie z usługi Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)platforma Azure jest Twoją osobistą piaskownicą do tworzenia i testowania.  Możesz aprowizowania maszyn wirtualnych, usług w chmurze i innych zasobów platformy Azure.  Kwoty środków różnią się w zależności od poziomu subskrypcji.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Znajdź kafelek Platformy Azure w sekcji Narzędzia na stronie Korzyści i wybierz **link** Aktywuj w dolnej części kafelka korzyści.
+2. Znajdź kafelek Azure w sekcji Narzędzia na stronie Korzyści i wybierz **link** Aktywuj w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
    > ![Kafelek platformy Azure](_img/vs-azure/vs-azure-tile.png "Kliknij przycisk &quot;Aktywuj&quot; na kafelku platformy Azure, aby rozpocząć pracę.")
 
-3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie poproszony o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie danych osobowych, a następnie wybranie **przycisku Dalej.**
+3. Jeśli nie masz istniejącej subskrypcji platformy Azure, konieczne będzie wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie danych osobowych, a następnie wybranie **przycisku Dalej.**
    > [!div class="mx-imgBorder"]
-   > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-about-you.png "Dodaj osobiste informacje kontaktowe do subskrypcji platformy Azure.")
+   > ![Rejestracja na platformie Azure](_img/vs-azure/vs-azure-about-you.png "Dodaj swoje osobiste informacje kontaktowe do subskrypcji platformy Azure.")
 
-4. Następnie musisz zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj swój numer telefonu i zdecyduj, czy chcesz otrzymywać kod za pomocą wiadomości SMS, czy też telefonu.  Wprowadź wyświetlony kod, a następnie wybierz pozycję **Weryfikuj kod**.   
+4. Następnie należy zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj swój numer telefonu i zdecyduj, czy chcesz otrzymywać kod za pomocą wiadomości SMS, czy też telefonu.  Wprowadź wyświetlony kod, a następnie wybierz pozycję **Weryfikuj kod**.   
    > [!div class="mx-imgBorder"]
    > ![Przygotowanie platformy Azure](_img/vs-azure/vs-azure-identity.png "Zażądaj kodu weryfikacyjnego, a następnie wprowadź go, aby kontynuować.")
 
@@ -43,7 +43,7 @@ Jako Visual Studio subskrypcji możesz korzystać Microsoft Azure bez dodatkowyc
 0. Dodaj do [zakładek Azure Portal,](https://portal.azure.com) aby mieć do nich łatwy dostęp w przyszłości.
 
 ## <a name="maintain-a-subscription-to-use-monthly-credits"></a>Obsługa subskrypcji w celu korzystania z miesięcznych środków
-Jeśli Subskrypcja Visual Studio wygaśnie lub zostanie usunięta, wszystkie korzyści z subskrypcji, w tym miesięczne indywidualne środków na korzystanie z platformy Azure w ramach tworzenia i testowania, nie będą już dostępne. Aby nadal korzystać z platformy Azure ze środków miesięcznych, musisz odnowić subskrypcję, zakupić nową subskrypcję lub przenieść korzyść platformy Azure do aktywnej subskrypcji, która obejmuje indywidualne indywidualne środków na korzystanie z platformy Azure w ramach tworzenia i testowania.  
+Jeśli Subskrypcja Visual Studio wygaśnie lub zostanie usunięta, wszystkie korzyści z subskrypcji, w tym miesięczne indywidualne środków na korzystanie z platformy Azure w ramach tworzenia i testowania, nie będą już dostępne. Aby nadal korzystać z platformy Azure ze środkami miesięcznymi, musisz odnowić subskrypcję, zakupić nową subskrypcję i/lub przenieść zasoby platformy Azure do innej subskrypcji platformy Azure, która obejmuje indywidualne środki na korzystanie z platformy Azure w ramach tworzenia i testowania.  
 
 > [!IMPORTANT]
 > Musisz przenieść zasoby do innej subskrypcji platformy Azure, zanim bieżąca subskrypcja platformy Azure zostanie wyłączona. W przypadku utraty dostępu do danych.  
@@ -74,11 +74,11 @@ Jeśli masz pytania dotyczące przenoszenia zasobów, usuwania limitów wydatkó
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standardowa               |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
 |              Visual Studio Enterprise subskrypcji przy użyciu GitHub Enterprise               |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
-|               Visual Studio Enterprise miesięczny               |        Niedostępne        |                                                             |
-|             Visual Studio Professional Standardowa              |     50 USD środków miesięcznych      |                             Tak
-|              Visual Studio Professional subskrypcji przy użyciu GitHub Enterprise              |     50 USD środków miesięcznych     |                             Tak                             |
+|               Visual Studio Enterprise miesięczne               |        Niedostępne        |                                                             |
+|             Visual Studio Professional Standardowa              |     Miesięczny kredyt w wysokości 50 USD      |                             Tak
+|              Visual Studio Professional subskrypcji przy użyciu GitHub Enterprise              |     Miesięczny kredyt w wysokości 50 USD     |                             Tak                             |
 |              Visual Studio Professional miesięczny              |        Niedostępne        |                                                             |
-|                    Visual Studio Test Pro                    |     50 USD środków miesięcznych      |                             Tak                             |
+|                    Visual Studio Test Pro                    |     Miesięczny kredyt w wysokości 50 USD      |                             Tak                             |
 |                        Platformy MSDN                        |     Miesięczny kredyt w wysokości 100 USD     |                             Tak                             |
 |               Visual Studio Enterprise — NFR<sup>1</sup>                 |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
 |                Visual Studio Enterprise — EMS                |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
@@ -87,34 +87,34 @@ Jeśli masz pytania dotyczące przenoszenia zasobów, usuwania limitów wydatkó
 |        Visual Studio Enterprise — Imagine (Standardowa)         |        Niedostępne        |                                                             |
 |         Visual Studio Enterprise — Imagine (Premium)         |        Niedostępne        |                                                             |
 |             Visual Studio Enterprise — BizSpark              |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
-|      Visual Studio Enterprise — mct software & services      |     Miesięczny kredyt w wysokości 100 USD     |                             Tak                             |
+|      Visual Studio Enterprise — MCT Software & Services      |     Miesięczny kredyt w wysokości 100 USD     |                             Tak                             |
 | Visual Studio Enterprise — MCT Software & Services Developer |     Miesięczny kredyt w wysokości 150 USD     |                             Tak                             |
 
 <sup>1 Obejmuje:</sup>Nie dla yzacji *(NFR), Najbardziej wartościowy specjalista (MVP), Dyrektor regionalny (RD), Visual Studio Industry Partner (VSIP) — wykluczenia: NFR Basic*  
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional subskrypcje roczne i Visual Studio Enterprise roczne subskrypcje w ramach subskrypcji w chmurze. Istniejące doświadczenia klientów nie zmienią się i nie będzie można odnawiać, zwiększać, zmniejszać ani anulować swoich subskrypcji. Zachęcamy nowych klientów do chowania się w celu [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) eksplorowania różnych opcji zakupu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional w ramach subskrypcji w chmurze Visual Studio Enterprise roczne subskrypcje. Istniejące doświadczenia klientów nie zmienią się i nie będzie można odnawiać, zwiększać, zmniejszać ani anulować swoich subskrypcji. Zachęcamy nowych klientów do chowania się w celu [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) eksplorowania różnych opcji zakupu Visual Studio.
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) z usługą , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć co najmniej jedną przypisaną do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy użyciu tego adresu e-mail.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Pytanie: Jak mogę zgłoszenie zdarzenia pomocy technicznej z poziomu Azure Portal?
-A: Przesłanie zdarzenia pomocy technicznej z Azure Portal jest procesem trzyetapowym.
-1. Aktywuj korzyść pomocy technicznej i uzyskaj identyfikator dostępu identyfikatora kontraktu.
+A: Przesyłanie zdarzenia pomocy technicznej z Azure Portal jest procesem trzyetapowym.
+1. Aktywuj swoją korzyść pomocy technicznej i uzyskaj identyfikator dostępu identyfikatora kontraktu.
 2. Połącz umowę pomocy technicznej z subskrypcją platformy Azure.
 3. Prześlij zdarzenie pomocy technicznej.
 
-Szczegółowe informacje można [znaleźć w dokumentacji](vs-tech-support.md) pomocy technicznej.
+Szczegółowe informacje można [znaleźć w](vs-tech-support.md) dokumentacji pomocy technicznej.
 
-### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Pytanie: Kto jest właścicielem własności intelektualnej, która jest tworzymy przy użyciu indywidualnych środków usługi Azure DevTest?
-A: Własność intelektualna utworzona przez pracownika na podstawie zasobów dostarczonych przez firmę jest w ten sposób własnością intelektualną firmy dostarczającej zasób. Dlatego jeśli twoja subskrypcja Visual Studio twojego pracodawcy, będą stosowane zasady dotyczące własności intelektualnej. 
+### <a name="q-who-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Pytanie: Kto jest właścicielem własności intelektualnej, która jest przeze mnie tworzymy przy użyciu moich indywidualnych środków usługi Azure DevTest?
+A: Własność intelektualna utworzona przez pracownika na podstawie zasobów dostarczanych przez firmę stanowi w ten sposób własność intelektualną firmy dostarczającej zasób. W związku z tym, jeśli subskrypcja Visual Studio twojego pracodawcy, będą stosowane zasady własności intelektualnej. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy z platformą Azure?  Zapoznaj się z tymi zasobami:
   - Pomocy technicznej: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Porady dotyczące platformy Azure & wskazówki](https://microsoft.github.io/AzureTipsAndTricks/ "Porady dotyczące platformy Azure & wskazówki") 
-- Aby uzyskać pomoc w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji Visual Studio, skontaktuj się z Visual Studio [pomocy technicznej dotyczącej subskrypcji.](https://aka.ms/vssubscriberhelp)
-- Masz pytanie dotyczące Visual Studio IDE, Azure DevOps Services lub innych Visual Studio lub usług?  Odwiedź [Visual Studio pomocy technicznej.](https://visualstudio.microsoft.com/support/)
+- Aby uzyskać pomoc w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji Visual Studio, skontaktuj się z Visual Studio [pomocy technicznej dotyczącej subskrypcji usługi](https://aka.ms/vssubscriberhelp).
+- Masz pytanie dotyczące Visual Studio IDE, Azure DevOps Services lub innych Visual Studio produktów lub usług?  Odwiedź [Visual Studio pomocy technicznej.](https://visualstudio.microsoft.com/support/)
 
 ## <a name="see-also"></a>Zobacz też
 - [Visual Studio dokumentacji](/visualstudio/)
