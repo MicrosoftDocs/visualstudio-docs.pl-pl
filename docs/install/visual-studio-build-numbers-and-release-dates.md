@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numerów kompilacji dla Visual Studio posor
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 06/08/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: a0aa395864aa05c268819e5da52d6fed80d96a56
-ms.sourcegitcommit: d6fb4f8dff6ac69dfdd61e481a4ddd6b0dd8fa63
+ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110395427"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761124"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,11 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.1 | Release | 8 czerwca 2021 r. | 16.10.31402.337 |
+| 16.9.7 | Release | 8 czerwca 2021 r. | 16.9.31328.270 |
+| 16.7.16 | Release | 8 czerwca 2021 r. | 16.7.31327.30 |
+| 16.4.23| Release | 8 czerwca 2021 r. | 16.4.31327.141 |
+| 16.11.0 | Wersja zapoznawcza 1 | 25 maja 2021 r. | 16.11.31320.298 |
 | 16.10.0 | Release | 25 maja 2021 r. | 16.10.31321.278 |
 | 16.10.0 | Wersja zapoznawcza 4 | 18 maja 2021 r. | 16.10.31313.381 |
 | 16.9.6 | Release | 18 maja 2021 r. | 16.9.31313.79 |
@@ -219,7 +224,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 > [!NOTE]
-> Aby uzyskać listę numerów kompilacji i dat wydania dla poprzedniej wersji, zobacz numery kompilacji Visual Studio [2017 i daty wydania](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)
+> Aby uzyskać listę numerów kompilacji i dat wydania dla poprzedniej wersji, zobacz numery kompilacji Visual Studio [2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true) i daty wydania
 
 ::: moniker-end
 

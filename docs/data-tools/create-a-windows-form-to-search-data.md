@@ -1,8 +1,8 @@
 ---
 title: Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
-description: Zapoznaj się z przykładem tworzenia formularza systemu Windows w celu przeszukiwania danych. Tworzenie aplikacji formularza systemu Windows, źródła danych i formularza. Dodaj parametryzacja. Testowanie aplikacji.
+description: Przeczytaj przykład sposobu tworzenia formularza systemu Windows do wyszukiwania danych. Utwórz aplikację Formularz systemu Windows, źródło danych i formularz. Dodaj parametryzację. Testowanie aplikacji.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/07/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms, searching data
@@ -16,104 +16,147 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ce9d3eeebf42855ad69f02b2d72330190a2b390
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859115"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761098"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 
-Typowym scenariuszem aplikacji jest wyświetlenie wybranych danych w formularzu. Na przykład może być konieczne wyświetlenie zamówień dla określonego klienta lub szczegółowych informacji o określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie wykonuje zapytanie z danymi wejściowymi użytkownika jako parametr; oznacza to, że dane są wybierane na podstawie zapytania parametrycznego. Zapytanie zwraca tylko dane, które spełniają kryteria wprowadzone przez użytkownika. W tym instruktażu pokazano, jak utworzyć zapytanie, które zwraca klientów w określonym mieście, i zmodyfikować interfejs użytkownika, tak aby użytkownicy mogli wprowadzić nazwę miasta i nacisnąć przycisk, aby wykonać zapytanie.
+Powszechnym scenariuszem aplikacji jest wyświetlanie wybranych danych w formularzu. Możesz na przykład wyświetlić zamówienia określonego klienta lub szczegóły określonego zamówienia. W tym scenariuszu użytkownik wprowadza informacje w formularzu, a następnie zapytanie jest wykonywane przy użyciu danych wejściowych użytkownika jako parametru; oznacza to, że dane są wybierane na podstawie zapytania sparametryzowanego. Zapytanie zwraca tylko dane spełniające kryteria wprowadzone przez użytkownika. W tym przewodniku pokazano, jak utworzyć zapytanie, które zwraca klientów z określonego miasta, i zmodyfikować interfejs użytkownika, aby użytkownicy mogą wprowadzić nazwę miasta i nacisnąć przycisk w celu wykonania zapytania.
 
-Korzystanie z zapytań parametrycznych ułatwia wydajne działanie aplikacji, dzięki czemu baza danych może być najlepszym rozwiązaniem — szybkie filtrowanie rekordów. Z drugiej strony, Jeśli zażądasz całej tabeli bazy danych, przeniesiesz ją za pośrednictwem sieci, a następnie użyjesz logiki aplikacji w celu znalezienia żądanych rekordów, aplikacja może stać się niska i nieefektywna.
+Użycie zapytań sparametryzowanej pomaga zwiększyć wydajność aplikacji, umożliwiając bazie danych pracę, w przypadku których najlepiej — szybkie filtrowanie rekordów. Natomiast jeśli zażądasz całej tabeli bazy danych, przekieruj ją za pośrednictwem sieci, a następnie użyj logiki aplikacji, aby znaleźć rekordy, których potrzebujesz, aplikacja może stać się powolna i nieefektywna.
 
-Zapytania parametryczne można dodawać do dowolnych TableAdapter (i kontrolek do akceptowania wartości parametrów i wykonywania zapytania) przy użyciu okna dialogowego **Konstruktor kryteriów wyszukiwania** . Otwórz okno dialogowe, wybierając polecenie **Dodaj zapytanie** w menu **dane** (lub dowolny tag inteligentny TableAdapter).
+Zapytania sparametryzowane można dodać do dowolnego narzędzia TableAdapter (i kontrolek w celu akceptowania wartości parametrów i wykonywania zapytania) przy użyciu okna dialogowego **Konstruktor kryteriów** wyszukiwania. Otwórz okno dialogowe, wybierając polecenie **Dodaj zapytanie** w menu **Dane** (lub w dowolnym tagu inteligentnym TableAdapter).
 
-Zadania przedstawione w tym instruktażu obejmują:
+Zadania przedstawione w tym przewodniku obejmują:
 
-- Tworzenie i Konfigurowanie źródła danych w aplikacji za pomocą kreatora **konfiguracji źródła danych** .
+- Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą kreatora **Konfiguracja źródła** danych.
 
-- Ustawianie typu upuszczania elementów w oknie **źródła danych** .
+- Ustawianie typu upuszczania elementów w **oknie Źródła** danych.
 
-- Tworzenie kontrolek, które wyświetlają dane poprzez przeciąganie elementów z okna **źródła danych** na formularz.
+- Tworzenie kontrolek wyświetlających dane przez przeciągnięcie elementów z **okna Źródła** danych do formularza.
 
-- Dodawanie kontrolek do wyświetlania danych w formularzu.
+- Dodawanie kontrolek w celu wyświetlenia danych w formularzu.
 
-- Wypełnienie okna dialogowego **Konstruktor kryteriów wyszukiwania** .
+- Ukończenie **okna dialogowego Konstruktor kryteriów** wyszukiwania.
 
-- Wprowadzanie parametrów do formularza i wykonywanie zapytania sparametryzowanego.
+- Wprowadzanie parametrów w formularzu i wykonywanie zapytania sparametryzowanego.
+
+> [!NOTE]
+> Procedury w tym artykule mają zastosowanie tylko do .NET Framework Windows Forms, a nie do projektów Windows Forms .NET Core.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza danych Northwind.
+Musisz mieć zainstalowane **obciążenie Magazyn danych i** przetwarzanie. Zobacz [Modyfikowanie Visual Studio](../install/modify-visual-studio.md).
 
-1. Jeśli nie masz SQL Server Express LocalDB, zainstaluj go na [stronie pobierania SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)lub za pośrednictwem **Instalator programu Visual Studio**. W **Instalator programu Visual Studio** można zainstalować SQL Server Express LocalDB jako część obciążenia **magazynu danych i przetwarzania** lub jako pojedynczy składnik.
+W tym przewodniku użyto SQL Server Express LocalDB i przykładowej bazy danych Northwind.
 
-2. Zainstaluj przykładową bazę danych Northwind, wykonując następujące kroki:
+1. Jeśli nie masz jeszcze bazy SQL Server Express LocalDB, zainstaluj [](https://www.microsoft.com/sql-server/sql-server-editions-express)ją ze strony pobierania SQL Server Express lub za pomocą Instalator programu Visual Studio **.** W **Instalator programu Visual Studio** można zainstalować program SQL Server Express LocalDB jako część obciążenia  Magazynowanie i przetwarzanie danych lub jako pojedynczy składnik.
 
-    1. W programie Visual Studio Otwórz okno **Eksplorator obiektów SQL Server** . (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia **magazynu i przetwarzania danych** w **Instalator programu Visual Studio**). Rozwiń węzeł **SQL Server** . Kliknij prawym przyciskiem myszy wystąpienie LocalDB i wybierz pozycję **nowe zapytanie**.
+2. Zainstaluj przykładową bazę danych Northwind, wykonać następujące kroki:
+
+    1. W Visual Studio otwórz okno **Eksplorator obiektów SQL Server** aplikacji. (Eksplorator obiektów SQL Server jest instalowany jako część obciążenia Magazyn danych i przetwarzanie **w** **Instalator programu Visual Studio.** Rozwiń **węzeł SQL Server** węzeł. Kliknij prawym przyciskiem myszy wystąpienie bazy danych LocalDB i wybierz **pozycję Nowe zapytanie.**
 
        Zostanie otwarte okno edytora zapytań.
 
-    2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
+    2. Skopiuj skrypt [Northwind Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do schowka. Ten skrypt języka T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz **przycisk Wykonaj.**
 
-       Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
+       Po krótkiej chwili zapytanie zakończy działanie i zostanie utworzona baza danych Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
+## <a name="create-the-windows-forms-application"></a>Tworzenie Windows Forms aplikacji
 
-Utwórz nowy projekt **aplikacji Windows Forms** dla języka C# lub Visual Basic. Nazwij projekt **WindowsSearchForm**.
+:::moniker range="vs-2017"
+
+Utwórz nowy **projekt Windows Forms App (.NET Framework)** dla języka C# lub Visual Basic. Nadaj **projektowi nazwę WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Tworzenie źródła danych
 
-Ten krok powoduje utworzenie źródła danych z bazy danych za pomocą kreatora **konfiguracji źródła danych** :
+Ten krok powoduje utworzenie źródła danych z bazy danych przy użyciu kreatora **Konfiguracja źródła** danych:
 
-1. Aby otworzyć okno **źródła danych** , w menu **dane** kliknij polecenie **Pokaż źródła danych**.
+1. Aby otworzyć **okno Źródła danych,** w menu **Dane** kliknij polecenie Pokaż **źródła danych.**
 
-2. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych** , aby uruchomić kreatora **konfiguracji źródła danych** .
+2. W **oknie Źródła** danych wybierz pozycję **Dodaj nowe źródło danych,** aby uruchomić **Kreatora konfiguracji źródła** danych.
 
-3. Wybierz pozycję **baza danych** na stronie **Wybierz typ źródła danych** , a następnie kliknij przycisk **dalej**.
+3. Wybierz **pozycję Baza** danych na stronie Wybierz typ źródła danych, **a** następnie kliknij przycisk **Dalej.**
 
-4. Na stronie **Wybierz połączenie danych** wykonaj jedną z następujących czynności:
+4. Na stronie **Wybieranie połączenia danych** wykonaj jedną z następujących czynności:
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-    - Wybierz pozycję **nowe połączenie** , aby uruchomić okno dialogowe **Dodawanie/modyfikowanie połączenia** .
+    - Wybierz **pozycję Nowe połączenie,** aby uruchomić **okno dialogowe Dodawanie/modyfikowanie** połączenia.
 
-5. Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie kliknij przycisk **dalej**.
+5. Jeśli baza danych wymaga hasła, wybierz opcję dołączania poufnych danych, a następnie kliknij przycisk **Dalej.**
 
-6. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij przycisk **dalej**.
+6. Na stronie **Zapisywanie parametrów połączenia w pliku konfiguracji aplikacji** kliknij przycisk **Dalej.**
 
-7. Na stronie **Wybierz obiekty bazy danych** rozwiń węzeł **tabele** .
+7. Na stronie **Wybieranie obiektów bazy danych** rozwiń węzeł **Tabele.**
 
-8. Wybierz tabelę **Customers** , a następnie kliknij przycisk **Zakończ**.
+8. Wybierz **tabelę Customers** (Klienci), a następnie kliknij przycisk **Finish (Zakończ).**
 
-     **NorthwindDataSet** jest dodawany do projektu, a tabela **Customers** pojawia się w oknie **źródła danych** .
+     Zestaw **NorthwindDataSet** zostanie dodany do projektu, a tabela **Customers zostanie** wyświetlona w **oknie Źródła** danych.
 
-## <a name="create-the-form"></a>Utwórz formularz
+:::moniker-end
 
-Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **źródła danych** na formularz:
+:::moniker range=">=vs-2019"
 
-1. W oknie **źródła danych** rozwiń węzeł **Customers** .
+Utwórz nowy **projekt Windows Forms App (.NET Framework)** dla języka C# lub Visual Basic. Nadaj **projektowi nazwę WindowsSearchForm**.
 
-2. Przeciągnij węzeł **Customers** z okna **źródła danych** do formularza.
+## <a name="create-the-data-source"></a>Tworzenie źródła danych
 
-     <xref:System.Windows.Forms.DataGridView>A i pasek narzędzi ( <xref:System.Windows.Forms.BindingNavigator> ) na potrzeby nawigowania po rekordach pojawia się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+Ten krok powoduje utworzenie źródła danych z bazy danych przy użyciu kreatora **Konfiguracja źródła** danych:
 
-## <a name="add-parameterization-search-functionality-to-the-query"></a>Dodawanie parametryzacja (funkcji wyszukiwania) do zapytania
+1. Aby otworzyć okno **Źródła danych,** użyj szybkiego wyszukiwania **(Ctrl** + **Q)** i wyszukaj źródło **danych**.
 
-Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialogowego **Konstruktor kryteriów wyszukiwania** :
+1. W **oknie Źródła** danych wybierz pozycję **Dodaj nowe źródło danych,** aby uruchomić **Kreatora konfiguracji źródła** danych.
 
-1. Zaznacz <xref:System.Windows.Forms.DataGridView> kontrolkę, a następnie wybierz polecenie **Dodaj zapytanie** w menu **dane** .
+1. Wybierz **pozycję Baza** danych na stronie Wybierz typ źródła danych, **a** następnie kliknij przycisk **Dalej.**
 
-2. Wpisz **FillByCity** w polu **Nowa nazwa zapytania** obszar w oknie dialogowym **Konstruktor kryteriów wyszukiwania** .
+1. Na **ekranie Choose a Database Model (Wybieranie modelu bazy** danych) wybierz pozycję **Dataset (Zestaw danych),** a następnie kliknij przycisk **Next (Dalej).**
 
-3. Dodaj `WHERE City = @City` do zapytania w obszarze **tekstu zapytania** .
+1. Na stronie **Wybieranie połączenia danych** wykonaj jedną z następujących czynności:
 
-     Zapytanie powinno być podobne do następujących:
+    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
+
+    - Wybierz **pozycję Nowe połączenie,** aby uruchomić **okno dialogowe Dodawanie/modyfikowanie** połączenia.
+
+1. Na stronie **Zapisywanie parametrów połączenia w pliku konfiguracji aplikacji** kliknij przycisk **Dalej.**
+
+1. Na stronie **Wybieranie obiektów bazy danych** rozwiń węzeł **Tabele.**
+
+1. Wybierz **tabelę Customers** (Klienci), a następnie kliknij przycisk **Finish (Zakończ).**
+
+     Zestaw **NorthwindDataSet** zostanie dodany do projektu, a tabela **Customers zostanie** wyświetlona w **oknie Źródła** danych.
+
+:::moniker-end
+
+## <a name="create-the-form"></a>Tworzenie formularza
+
+Kontrolki powiązane z danymi można tworzyć, przeciągając elementy z okna **Źródła** danych do formularza:
+
+1. Upewnij się, Windows Forms projektanta danych ma aktywny fokus, a okno **Źródła** danych jest otwarte i przypięte.
+
+1. Rozwiń **węzeł Klienci** w **oknie Źródła** danych.
+
+1. Przeciągnij węzeł **Klienci** z **okna Źródła danych** do formularza.
+
+     Na formularzu jest wyświetlany pasek narzędzi () do <xref:System.Windows.Forms.DataGridView> nawigowania po <xref:System.Windows.Forms.BindingNavigator> rekordach. Zestaw [Danych NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> , i jest wyświetlany na pasku <xref:System.Windows.Forms.BindingNavigator> składników.
+
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Dodawanie parametryzacji (funkcji wyszukiwania) do zapytania
+
+Klauzulę WHERE można dodać do oryginalnego zapytania przy użyciu okna dialogowego **Konstruktor** kryteriów wyszukiwania:
+
+1. Tuż pod powierzchnią projektową formularza wybierz przycisk **customersTableAdapter,** a następnie w oknie **Właściwości** wybierz pozycję **Dodaj zapytanie...**.
+
+2. Wpisz **FillByCity** w **obszarze Nazwa nowego** zapytania w **oknie dialogowym Konstruktor kryteriów** wyszukiwania.
+
+3. Dodaj `WHERE City = @City` do zapytania w obszarze **Tekst** zapytania.
+
+     Zapytanie powinno być podobne do następującego:
 
      ```sql
      SELECT CustomerID, CompanyName, ContactName, ContactTitle,
@@ -123,29 +166,29 @@ Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialog
      ```
 
     > [!NOTE]
-    > Dostęp do źródeł danych i ich OLE DB Użyj znaku zapytania ("?") w celu określenia parametrów, więc klauzula WHERE będzie wyglądać następująco: `WHERE City = ?` .
+    > Dostęp i OLE DB źródła danych używają znaku zapytania ("?"") do oznaczania parametrów, więc klauzula WHERE będzie wyglądać tak: `WHERE City = ?` .
 
-4. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Konstruktor kryteriów wyszukiwania** .
+4. Kliknij **przycisk OK,** aby zamknąć **okno dialogowe Konstruktor** kryteriów wyszukiwania.
 
-     Do formularza zostanie dodany **FillByCityToolStrip** .
+     Do formularza zostanie dodany formularz **FillByCityToolStrip.**
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
 
-Uruchomienie aplikacji otwiera formularz i przygotowuje go do przejęcia parametru jako dane wejściowe:
+Uruchomienie aplikacji otwiera formularz i przygotowuje go do użycia parametru jako danych wejściowych:
 
-1. Naciśnij klawisz **F5** , aby uruchomić aplikację.
+1. Naciśnij **klawisz F5,** aby uruchomić aplikację.
 
-2. Wpisz **Londyn** w polu tekstowym **miasto** , a następnie kliknij pozycję **FillByCity**.
+2. W **polu tekstowym** **City (Miasto)** wpisz London (Londyn), a następnie kliknij pozycję **FillByCity (FillByCity).**
 
-     Siatka danych zostanie wypełniona klientom spełniającym kryteria. W tym przykładzie siatka danych wyświetla tylko klientów, którzy mają wartość **Londyn** w ich kolumnie **miasto** .
+     Siatka danych jest wypełniana klientami spełniającymi kryteria. W tym przykładzie siatka danych wyświetla tylko klientów, którzy w kolumnie **City** mają wartość **Londyn.**
 
 ## <a name="next-steps"></a>Następne kroki
 
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po utworzeniu formularza sparametryzowanego. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:
 
-- Dodawanie kontrolek, które wyświetlają powiązane dane. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
+- Dodawanie kontrolek, które wyświetlają powiązane dane. Aby uzyskać więcej informacji, zobacz [Relacje w zestawach danych.](relationships-in-datasets.md)
 
-- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych.](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 
 ## <a name="see-also"></a>Zobacz też
 
