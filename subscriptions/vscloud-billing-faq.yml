@@ -1,0 +1,140 @@
+### YamlMime:FAQ
+metadata:
+  title: Często zadawane pytania dotyczące rozliczeń Visual Studio subskrypcji usługi Visual Cloud | Microsoft Docs
+  author: evanwindom
+  ms.author: v-evwin
+  manager: cabuschl
+  ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+  ms.date: 03/05/2021
+  ms.topic: conceptual
+  description: Pytania dotyczące rozliczeń subskrypcji w chmurze.
+  ms.openlocfilehash: c9eaad58f44955cf79154da780f9f2da9a64049b
+  ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+  ms.translationtype: MT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 06/12/2021
+  ms.locfileid: "112044144"
+title: Visual Studio subskrypcji w chmurze — często zadawane pytania
+summary: >
+  Pamiętaj, [](https://visualstudio.microsoft.com/vs/pricing/) aby porównać korzyści i ceny subskrypcji chmury, aby zrozumieć korzyści z poszczególnych subskrypcji usługi Visual Studio, porównania między subskrypcjami w chmurze i standardowych subskrypcji usługi Visual Studio, szczegółami korzyści dla subskrybentów i nie tylko.
+sections:
+- name: Ogólne pytania dotyczące zakupu
+  questions:
+  - question: >
+      Czy mogę kupić subskrypcje Visual Studio w chmurze przy użyciu zamówienia zakupu?
+    answer: >
+      Nie. Wszystkie Visual Studio w chmurze należy zakupić przy użyciu subskrypcji platformy Azure. (Pomyśl o tym jak o koncie rozliczeniowym platformy Azure).
+  - question: >
+      Jakiego typu subskrypcji platformy Azure można użyć do zakupu Visual Studio subskrypcji w chmurze?
+    answer: >
+      Można używać większości subskrypcji platformy Azure — obsługujemy subskrypcje platformy Azure połączone z subskrypcjami [platformy Enterprise Agreement (EA),](https://azure.microsoft.com/pricing/enterprise-agreement/)subskrypcjami platformy Azure ustawionymi przez dostawców rozwiązań w chmurze (CSP), subskrypcjami platformy Azure ustawionymi za pośrednictwem odsprzedawców licencji Microsoft Open License i subskrypcji platformy Azure z płatnością zgodnie z potrzebami.
+
+
+      Nie można używać niektórych typów subskrypcji platformy [Azure,](https://azure.microsoft.com/pricing/free-trial/) w tym bezpłatnej wersji próbnej platformy Azure i subskrypcji uwzględnionych jako korzyści Visual Studio subskrypcji platformy Azure.
+  - question: >
+      Czy muszę kupić inne usługi platformy Azure?
+    answer: >
+      Absolutnie nie. Jeśli chcesz kupić tylko subskrypcje Visual Studio w chmurze za pośrednictwem platformy Azure, możesz to zrobić.
+  - question: >
+      Gdzie mogę wyświetlić dane dotyczące rozliczeń i użycia?
+    answer: >
+      Uzyskaj informacje na [temat wyświetlania faktury i użycia](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
+- name: Enterprise Agreement (EA)
+  questions:
+  - question: >
+      Czy mogę kupić subskrypcje Enterprise Agreement w Visual Studio w chmurze?
+    answer: >
+      Tak, możesz. Musisz mieć rolę współautora lub wyższą dla subskrypcji platformy Azure, która została utworzona dla Twojego ea. Upewnij się, że zakupy dla subskrypcji Visual Studio w chmurze są bezpośrednio w Visual Studio Marketplace. Nie można Visual Studio subskrypcji w chmurze przy użyciu zamówienia zakupu.
+  - question: >
+      Jak sprawdzić, czy mam uprawnienia niezbędne do kupowania usług w Visual Studio Marketplace za pośrednictwem konta Enterprise Agreement?
+    answer: >
+      Najprostszym podejściem do określenia, czy masz odpowiednie  uprawnienia, jest wybranie przycisku Kup dla usługi oferowanej w Visual Studio Marketplace.
+
+      Musisz wybrać subskrypcję platformy Azure (czyli konto rozliczeniowe) z przedstawionej listy subskrypcji platformy Azure, które są obecnie połączone z Twoim identyfikatorem logowania.
+
+      Ponieważ nazwa subskrypcji platformy Azure jest domyślnie typu konta rozliczeniowego ("Płatność zgodnie z potrzebami", "Enterprise Agreement" itp.), często jest jasne, czy subskrypcja platformy Azure jest częścią twojej Enterprise Agreement.
+
+
+      Innym podejściem jest próba odwiedzenia witryny [Azure Enterprise Portal.](https://ea.azure.com)  Jeśli możesz uzyskać dostęp do niego pomyślnie, masz już rolę Administratora przedsiębiorstwa lub Właściciela konta. Tylko właściciele konta mogą skonfigurować nowe konta rozliczeniowe platformy Azure w Enterprise Agreement. Jeśli nie możesz uzyskać dostępu do usługi Azure Enterprise Portal, poproś organizację, aby dowiedzieć się, kim jest administrator przedsiębiorstwa, i poproś ją o dodanie Cię jako właściciela konta w usłudze Azure Enterprise Portal.  Jeśli nie możesz znaleźć tej osoby, możesz [przesłać](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) bilet pomocy technicznej i poprosić o informacje kontaktowe.  Potrzebna jest nazwa organizacji i numer Enterprise Agreement rejestracji dla biletu pomocy technicznej.
+  - question: >
+      Czy mogę użyć środków zobowiązania pieniężnego platformy Azure z mojej Enterprise Agreement do zakupu Visual Studio subskrypcji w chmurze?
+    answer: >
+      Nie, te środki przedpłacone nie kwalifikują się do zakupu Visual Studio subskrypcji w chmurze. Po wybraniu subskrypcji platformy Azure, która została utworzona dla umowy EA w celu zakupu Visual Studio subskrypcji w chmurze, opłaty będą widoczne na następnej fakturze "za przesłot". Zwykle dzieje się to co miesiąc, ale ze względu na reguły historyczne dla niektórych klientów z ea faktura za opłaty za nadsieć może nie być wystawiana przez kilka miesięcy. Skontaktuj się ze specjalistą ds. licencjonowania dla umowy EA, jeśli chcesz wiedzieć, jaka kwota dodatkowych zakupów (zakupów, które nie kwalifikują się do środków zobowiązania pieniężnego platformy Azure) wyzwoli fakturę za przesłoniętą kwotę.
+- name: Jak są przetwarzane opłaty
+  questions:
+  - question: >
+      Jak są przetwarzane miesięczne opłaty za subskrypcję chmury?
+    answer: >
+      Przy pierwszym zakupie rozliczamy proporcjonalną ilość, aby pokrywać pozostałe dni w bieżącym miesiącu. Jeśli na przykład 15 kwietnia dokonano zakupu 10 Visual Studio Professional miesięcznych subskrypcji w chmurze, naliczymy 5 jednostek, ponieważ pozostanie 50% miesiąca (15 dni 30-dniowego miesiąca).
+
+      W pierwszym maju, a następnie w każdym miesiącu do momentu anulowania, zostanie rozliowanych 10 pełnych jednostek.
+
+
+      W przypadku późniejszego zwiększenia ilości płatnej zwiększamy również liczbę jednostek w celu pokrycia pozostałych dni w bieżącym miesiącu. Jeśli więc zakupiono jeszcze 1 Visual Studio Professional miesięcznej subskrypcji chmury 10 maja, będziemy rozliczać około 0,677 jednostki (pozostałe 21 dni w 31-dniowych miesiącach maja).
+  - question: >
+      Jak są przetwarzane roczne opłaty za subskrypcję w chmurze?
+    answer: >
+      Przy każdym zakupie rozliczamy natychmiast zakupioną pełną ilość. Opłaty nie są rozłożone na rok i nie ma żadnych dodatkowych opłat. Jeśli zakupisz roczne subskrypcje w chmurze o różnych godzinach w roku, subskrypcje będą odnawiane w różnych miesiącach. Nie wszystkie roczne subskrypcje chmury klienta są współbieczne, co jest typowe w przypadku zakupu umowy licencjonowania zbiorowego firmy Microsoft.
+  - question: >
+      Jak działają anulowania?
+    answer: >
+      Anulowanie subskrypcji programu Visual Studio w chmurze jest równoznaczne z anulowaniem automatycznego odnawiania. Subskrypcja pozostanie ważna do zwykłej daty odnowienia, a potem po prostu wygaśnie.
+
+      Gdy subskrypcja wygaśnie, subskrybent programu Visual Studio nie będzie już mógł korzystać z programu Visual Studio i nie będzie miał dostępu do żadnych korzyści związanych z subskrypcją.
+
+
+      Subskrypcje miesięczne w chmurze zostaną anulowane pierwszego dnia kolejnego miesiąca. Jeśli chcesz anulować tylko część miesięcznych subskrypcji w chmurze, usuń użytkowników pierwszego dnia kolejnego miesiąca, aby mieć pewność, że właściwe osoby nadal będą miały przypisane aktywne subskrypcje.
+
+
+      Roczne subskrypcje w chmurze zostaną anulowane pierwszego dnia miesiąca przypadającego po upływie 12 miesięcy od daty zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Jeśli na przykład kupiono roczną subskrypcję programu Visual Studio Professional w chmurze 3 stycznia 2018 roku, będzie ona aktywna do 1 lutego 2019 roku i wtedy zostanie automatycznie odnowiona na kolejny rok. Jeśli anulujesz ją pomiędzy tą datą a 1 lutego 2020 roku, ta subskrypcja wygaśnie 1 lutego 2020 r. Nie ma rabatu za anulowanie rocznych subskrypcji w chmurze przed upływem roku.
+  - question: >
+      Jakiego rodzaju rabaty na woluminy są dostępne Visual Studio subskrypcji?
+    answer: >
+      Otrzymasz rabat 5% dla 6. i wszystkich kolejnych subskrypcji *w ramach każdego typu* subskrypcji:
+
+
+      * Visual Studio Professional miesięczny
+
+      * Visual Studio Professional roczne
+
+      * Visual Studio Enterprise miesięczny
+
+      * Visual Studio Enterprise roczne
+
+
+      Jeśli na przykład kupisz 6 subskrypcji Visual Studio Professional miesięcznych i 5 subskrypcji Visual Studio Enterprise miesięcznych, zapłacisz normalną cenę za 5 specjalistów, otrzymasz 5% rabatu na 6. subskrypcję Professional i zapłacisz regularną cenę za wszystkie 5 subskrypcji Enterprise.
+
+
+      Ponadto rabat dotyczy tylko opłat w danym miesięcznym okresie rozliczeniowym. Jeśli więc kupisz 5 Visual Studio Professional roczne subskrypcje w jednym miesiącu, a następnie kupisz 5 kolejnych subskrypcji w następnym miesiącu, zapłacisz normalną cenę za wszystkie 10 subskrypcji.
+
+
+      > [!NOTE]
+
+      > Firma Microsoft nie oferuje już Visual Studio Professional subskrypcji i Visual Studio Enterprise subskrypcji w chmurze. Nie będzie żadnych zmian w doświadczeniach istniejących klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów do zakupu różnych opcji zakupu [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio.
+- name: Inne pytania
+  questions:
+  - question: >
+      Czy mogę użyć miesięcznych środków indywidualnych usługi Azure DevTest jako Visual Studio subskrypcji, aby kupić Visual Studio subskrypcji w chmurze?
+    answer: >
+      Nie, nie można używać miesięcznych środków indywidualnych usługi [Azure DevTest](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) jako subskrybenta Visual Studio do płacenia za Visual Studio Marketplace zakupów. Wszelkie Visual Studio subskrypcji w chmurze będą rozliczane na karcie kredytowej.
+
+      Przed zakupem należy usunąć limit [wydatków.](https://azure.microsoft.com/pricing/spending-limits/)
+  - question: >
+      Jaka jest różnica między roczną i miesięczną subskrypcją chmury?
+    answer: >
+      Miesięczne subskrypcje chmury obejmują Visual Studio oraz korzystanie z Azure DevOps Services i serwera TFS. Roczne subskrypcje w chmurze również mają to zastosowanie, ale obejmują również korzyści dla subskrybentów, w tym użycie systemu Windows i innego oprogramowania firmy Microsoft do instalowania i uruchamiania w celu testowania, miesięczne indywidualne środków usługi Azure DevTest na eksperymentowanie z usługami platformy Azure oraz tworzenie i testowanie w chmurze, szkolenia, pomoc techniczną i wiele innych.
+
+      [Porównanie korzyści i cen subskrypcji chmury](https://visualstudio.microsoft.com/vs/pricing/)
+  - question: >
+      Czy mogę uzyskać nowe wersje usługi Visual Studio, jeśli kupię subskrypcję Visual Studio w chmurze?
+    answer: >
+      Tak. W przypadku nowych wersji można je pobierać i uruchamiać. Ponadto możesz nadal uruchamiać poprzednie wersje.
+  - question: >
+      Czy mogę kupić subskrypcje Visual Studio w chmurze od odsprzedawcy oprogramowania?
+    answer: >
+      Tak, możesz, jeśli odsprzedawca uczestniczy w programie Dostawca rozwiązań w chmurze (CSP). Po prostu zadaj im pytanie.
+  - question: >
+      Gdzie można znaleźć informacje o fakturach za platformę Azure?
+    answer: >
+      Zapoznaj się z [artykułem Understand your Azure invoice (Informacje](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice) o fakturze za platformę Azure) w [dokumentacji platformy Azure.](/azure/)
+additionalContent: "\n## <a name=\"related-resources\"></a>Powiązane zasoby          \n   - [Visual Studio administracyjnej subskrypcji](https://manage.visualstudio.com/)\n   - [Visual Studio subskrypcji chmury dla dostawców CSP](vscloud-csp.md)\n   - Aby uzyskać pomoc w zakresie sprzedaży, subskrypcji, kont i rozliczeń dla Visual Studio, zobacz Visual Studio [Subskrypcje pomocy technicznej](https://aka.ms/vssubscriberhelp).\n        \n## <a name=\"see-also\"></a>Zobacz też\n   - [Visual Studio dokumentacji](/visualstudio/)\n   - [Azure DevOps documentation (Dokumentacja usługi Azure DevOps)](/azure/devops/)\n   - [Dokumentacja platformy Azure](/azure/)\n   - [Microsoft 365 dokumentacji](/microsoft-365/)\n        \n## <a name=\"next-steps\"></a>Następne kroki\n   Kup teraz subskrypcje w chmurze\n   - [Visual Studio Professional miesięczny](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)\n   - [Visual Studio Enterprise miesięcznie](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)"

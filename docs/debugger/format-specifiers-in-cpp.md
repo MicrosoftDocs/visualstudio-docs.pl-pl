@@ -1,6 +1,6 @@
 ---
 title: Specyfikatory formatu w debugerze (C++) | Microsoft Docs
-description: Użyj specyfikatora formatu, aby zmienić format, w którym wartość jest wyświetlana w oknie Czujka, autostarty lub lokalne. Ten artykuł zawiera szczegółowe informacje dotyczące użycia.
+description: Użyj specyfikatora formatu, aby zmienić format, w którym wartość jest wyświetlana w oknie Czujka, Automatyczne lub Ustawienia lokalne. Ten artykuł zawiera szczegółowe informacje o użyciu.
 ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
@@ -26,23 +26,23 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483196"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042980"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w debugerze programu Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specyfikatory formatu dla języka C++ w Visual Studio debugerze
 
-Można zmienić format, w którym wartość jest wyświetlana w oknach **czujka**, **autostarty** i **lokalne** przy użyciu specyfikatorów formatu.
+Format, w którym wartość jest wyświetlana w oknach  **Czujka,** **Automatyczne** i Lokalne, można zmienić przy użyciu specyfikatorów formatu.
 
-Można również użyć specyfikatorów formatu w oknie **bezpośrednim** , oknie **polecenia** , w [punkty śledzenia](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints), a nawet w oknach źródłowych. Jeśli wstrzymasz w wyrażeniu w tych oknach, wynik zostanie wyświetlony w [etykietki danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Etykietki danych wyświetla specyfikator formatu.
+Specyfikatorów formatu można również  używać w oknie Natychmiastowe, **oknie** Polecenia, [w](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)punktach śledzenia, a nawet w oknach źródłowych. Jeśli wstrzymasz wyrażenie w tych oknach, wynik zostanie wyświetlony w [etykietce danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Wyświetlanie etykietki danych odzwierciedla specyfikator formatu.
 
 > [!NOTE]
-> Gdy debuger natywny programu Visual Studio został zmieniony na nowy aparat debugowania, dodano kilka nowych specyfikatorów formatu, a niektóre stare zostały usunięte. Starszy debuger jest nadal używany w przypadku debugowania międzyoperacyjności (natywne i zarządzane) przy użyciu języka C++/CLI.
+> Gdy Visual Studio debuger natywny został zmieniony na nowy aparat debugowania, dodano nowe specyfikatory formatu i usunięto niektóre stare. Starszy debuger jest nadal używany podczas debugowania międzyplatopowego (mieszanego natywnego i zarządzanego) za pomocą języka C++/interfejsu wiersza polecenia.
 
-## <a name="set-format-specifiers"></a>Ustaw specyfikatory formatu
+## <a name="set-format-specifiers"></a>Ustawianie specyfikatorów formatu
 
 Użyjemy następującego przykładowego kodu:
 
@@ -54,12 +54,12 @@ int main() {
 }
 ```
 
-Dodaj `my_var1` zmienną do okna **czujki** podczas debugowania, **Debuguj**  >    >  czujkę **czujki** w systemie Windows  >  **1**. Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetlanie w formacie szesnastkowym**. Teraz okno **czujki** pokazuje wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie liczbę całkowitą, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie w **formacie szesnastkowym**. Następnie Dodaj specyfikator formatu znaku **, c** w kolumnie **Nazwa** po nazwie zmiennej. Kolumna **wartość** zawiera teraz **101 ' e '**.
+Dodaj `my_var1` zmienną do okna **Czujka** podczas debugowania, Debug Windows Watch Watch 1 ( **Debugowanie**  >  **w systemie Windows**  >  **Watch**  >  **1).** Następnie kliknij prawym przyciskiem myszy zmienną i wybierz pozycję **Wyświetl szesnastkową**. Teraz **w oknie Czujka** zostanie pokazana wartość 0x0065. Aby wyświetlić tę wartość wyrażoną jako znak, a nie jako liczba całkowita, najpierw kliknij prawym przyciskiem myszy i usuń zaznaczenie opcji **Wyświetl szesnastkowo.** Następnie dodaj specyfikator formatu znaków **, c** w **kolumnie Nazwa** po nazwie zmiennej. Kolumna **Wartość** zawiera teraz **wartość 101 "e".**
 
-![Zrzut ekranu programu Visual Studio okno wyrażeń kontrolnych z jednym zaznaczonym wierszem, który pokazuje my_var1. c z wartością 101 "e" i typem int.](../debugger/media/watchformatcplus1.png)
+![Zrzut ekranu przedstawiający Visual Studio okno wyrażeń kontrolnych z jednym wybranym wierszem, który my_var1.c z wartością 101 "e" i typem int.](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
-Można wyświetlić i wybrać listę dostępnych specyfikatorów formatu, dołączając przecinek (,) do wartości w oknie **czujki** . 
+Możesz wyświetlić i wybrać z listy dostępnych specyfikatorów formatu, dołączając przecinek (,) do wartości w oknie **Czujka.** 
 
 ![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
 
@@ -67,133 +67,134 @@ Można wyświetlić i wybrać listę dostępnych specyfikatorów formatu, dołą
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Specyfikatory formatu
 
-W poniższych tabelach opisano specyfikatory formatu, których można użyć w programie Visual Studio. Specyfikatory pogrubione są obsługiwane tylko dla nowych debugerów, a nie do debugowania międzyoperacyjności przy użyciu języka C++/CLI.
+W poniższych tabelach opisano specyfikatory formatu, których można używać w Visual Studio. Specyfikatory pogrubione są obsługiwane tylko w nowym debugerze, a nie w przypadku debugowania międzyopcyjnie w języku C++/interfejsie wiersza polecenia.
 
 ::: moniker range=">= vs-2019" 
 
-|Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
+|Specyfikator|Format|Oryginalna wartość zegarka|Wyświetlana wartość|
 |---------------|------------|--------------------------|---------------------|
-|d|Liczba całkowita dziesiętna|0x00000066|102|
-|o|Liczba całkowita bez znaku|0x00000066|000000000146|
-|x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
-|X<br /><br /> **C**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
-|XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|cccccccc|
-|XB<br /><br /> **HB**|Szesnastkowa liczba całkowita (bez wiodącego 0x)|102|CCCCCCCC|
-|b|Liczba całkowita bez znaku|25|0b00000000000000000000000000011001|
-|bb|Liczba całkowita binarna bez znaku (bez wiodących 0b)|25|00000000000000000000000000011001|
-|e|zapis naukowy|25000000|2.500000 e + 07|
-|g|krótsze lub zmiennoprzecinkowe|25000000|2.5 e + 07|
-|c|pojedynczy znak|0x0065|101 ' e '|
-|s|ciąg const char * (ze znakami cudzysłowu)|\<location> "Hello World"|"Hello World"|
-|**SB**|ciąg const char * (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
-|s8|Ciąg UTF-8|\<location> "To jest ̃ kawy w formacie UTF-8"|"To jest ☕ kawy w formacie UTF-8"|
-|**s8b**|Ciąg UTF-8 (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
-|Su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<location> L "Hello World"|L "Hello World"<br /><br /> u "Hello World"|
-|Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowów)|\<location> L "Hello World"|Cześć ludzie|
-|bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<location> L "Hello World"|L "Hello World"|
-|kopert|Blok środowiska (ciąg zakończenia o wartości null)|\<location>L "=:: =:: \\ \\ "|L "=:: =:: \\ \\ \\ 0 = c: = c: \\ \\ Windows \\ \\ system32 \\ 0ALLUSERSPROFILE =...|
-|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U "Hello World"|U "Hello World"|
-|**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
-|**en**|enum|Sobota (6)|Sobota|
-|**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
-|**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
-|godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
-|w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
-|Media|Numery komunikatów systemu Windows|16|WM_CLOSE|
-|Nr|Pomijanie elementu "widok nieprzetworzony"|
-|nvo|Pokaż element "RAW View" tylko dla wartości numerycznych|
-|!|Format nieprzetworzony, ignorowanie dostosowanych widoków typów danych|\<customized representation>|4|
+|d|liczba całkowita dziesiętna|0x00000066|102|
+|o|niepodpisane ósemkowe liczby całkowite|0x00000066|000000000146|
+|x<br /><br /> **h**|szesnastkową liczbę całkowitą|102|0xcccccccc|
+|X<br /><br /> **H**|szesnastkową liczbę całkowitą|102|0xCCCCCCCC|
+|Xb<br /><br /> **Hb**|szesnastkowa liczba całkowita (bez wiodącej 0x)|102|przejściacccc|
+|Xb<br /><br /> **Hb**|szesnastkowa liczba całkowita (bez wiodącej 0x)|102|PRZEJŚCIACCCCC|
+|b|niepodpisane binarne liczby całkowite|25|0b000000000000000000000000000011001|
+|bb|niepodpisane binarne liczby całkowite (bez wiodącej liczby 0b)|25|00000000000000000000000000011001|
+|e|zapis naukowy|25000000|2,500000e+07|
+|g|krótszy punkt naukowy lub zmiennoprzecinkowy|25000000|2,5e+07|
+|c|pojedynczy znak|0x0065|101 "e"|
+|s|const char* ciąg (ze znakami cudzysłowu)|\<location> "hello world"|"hello world"|
+|**Sb**|const char* ciąg (bez cudzysłowów)|\<location> "hello world"|Cześć ludzie|
+|s8|Ciąg UTF-8|\<location> "To jest kubek do kawy UTF-8 â ̃•"|"To jest ekspres do kawy UTF-8 ☕"|
+|**s8b**|Ciąg UTF-8 (bez cudzysłowów)|\<location> "hello world"|Cześć ludzie|
+|Su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowów)|\<location> L"hello world"|Cześć ludzie|
+|bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<location> L"hello world"|L"hello world"|
+|Env|Blok środowiska (ciąg zakończony z podwójną wartością null)|\<location>L"=::=:: \\ \\ "|L"=::=:: \\ \\ \\ 0=C:=C: \\ \\ windows \\ \\ system32 \\ 0ALLUSERSPROFILE=...|
+|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U"hello world"|U"hello world"|
+|**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U"hello world"|Cześć ludzie|
+|**en**|enum|Saturday(6)|Sobota|
+|**Hv**|Typ wskaźnika — wskazuje, że sprawdzana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**Na**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member=value...}|{member=value...}|
+|**Nd**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera informacje o klasie bazowej i klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
+|godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już potrzebny w przypadku hresultów HRESULTs, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
+|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
+|Wm|Numery komunikatów systemu Windows|16|WM_CLOSE|
+|nr|Pomijanie elementu "Nieprzetworzone widoki"|
+|nvo|Pokaż element "Nieprzetworzone widoki" tylko dla wartości liczbowych|
+|!|format pierwotny, ignorując wszelkie dostosowania widoków typów danych|\<customized representation>|4|
+|Obsługi|Wyświetla informacje o dojściu win32|0x000000000000009c| Wyświetla przydatne informacje o dojściu, takie jak identyfikator wątku itp. |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017" 
 
-|Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
+|Specyfikator|Format|Oryginalna wartość zegarka|Wyświetlana wartość|
 |---------------|------------|--------------------------|---------------------|
-|d|Liczba całkowita dziesiętna|0x00000066|102|
-|o|Liczba całkowita bez znaku|0x00000066|000000000146|
-|x<br /><br /> **h**|Szesnastkowa liczba całkowita|102|0xcccccccc|
-|X<br /><br /> **C**|Szesnastkowa liczba całkowita|102|0xCCCCCCCC|
-|c|pojedynczy znak|0x0065, c|101 ' e '|
-|s|ciąg const char * (ze znakami cudzysłowu)|\<location> "Hello World"|"Hello World"|
-|**SB**|ciąg const char * (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
-|s8|Ciąg UTF-8|\<location> "To jest ̃ kawy w formacie UTF-8"|"To jest ☕ kawy w formacie UTF-8"|
-|**s8b**|Ciąg UTF-8 (bez cudzysłowów)|\<location> "Hello World"|Cześć ludzie|
-|Su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<location> L "Hello World"|L "Hello World"<br /><br /> u "Hello World"|
-|Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowów)|\<location> L "Hello World"|Cześć ludzie|
-|bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<location> L "Hello World"|L "Hello World"|
-|kopert|Blok środowiska (ciąg zakończenia o wartości null)|\<location>L "=:: =:: \\ \\ "|L "=:: =:: \\ \\ \\ 0 = c: = c: \\ \\ Windows \\ \\ system32 \\ 0ALLUSERSPROFILE =...|
-|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U "Hello World"|U "Hello World"|
-|**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U "Hello World"|Cześć ludzie|
-|**en**|enum|Sobota (6)|Sobota|
-|**HV**|Typ wskaźnika — wskazuje, że testowana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
-|**potrącon**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member = Value...}|{member = wartość...}|
-|**ND**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera klasę bazową i informacje o klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
-|godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
-|w górę|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
-|Media|Numery komunikatów systemu Windows|16|WM_CLOSE|
-|!|Format nieprzetworzony, ignorowanie dostosowanych widoków typów danych|\<customized representation>|4|
+|d|liczba całkowita dziesiętna|0x00000066|102|
+|o|niepodpisane ósemkowe liczby całkowite|0x00000066|000000000146|
+|x<br /><br /> **h**|szesnastkową liczbę całkowitą|102|0xcccccccc|
+|X<br /><br /> **H**|szesnastkową liczbę całkowitą|102|0xCCCCCCCC|
+|c|pojedynczy znak|0x0065, c|101 "e"|
+|s|const char* ciąg (ze znakami cudzysłowu)|\<location> "hello world"|"hello world"|
+|**Sb**|const char* ciąg (bez cudzysłowów)|\<location> "hello world"|Cześć ludzie|
+|s8|Ciąg UTF-8|\<location> "To jest kubek do kawy UTF-8 â ̃•"|"To jest ekspres do kawy UTF-8 ☕"|
+|**s8b**|Ciąg UTF-8 (bez cudzysłowów)|\<location> "hello world"|Cześć ludzie|
+|Su|Ciąg Unicode (kodowanie UTF-16) (ze znakami cudzysłowu)|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|Sub|Ciąg Unicode (kodowanie UTF-16) (bez cudzysłowu)|\<location> L"hello world"|Cześć ludzie|
+|bstr|Ciąg binarny BSTR (ze znakami cudzysłowu)|\<location> L"hello world"|L"hello world"|
+|Env|Blok środowiska (ciąg zakończony z podwójną wartością null)|\<location>L"=::=:: \\ \\ "|L"=::=:: \\ \\ \\ 0=C:=C: \\ \\ windows \\ \\ system32 \\ 0ALLUSERSPROFILE=...|
+|**s32**|Ciąg UTF-32 (ze znakami cudzysłowu)|\<location> U"hello world"|U"hello world"|
+|**s32b**|Ciąg UTF-32 (bez cudzysłowów)|\<location> U"hello world"|Cześć ludzie|
+|**en**|enum|Saturday(6)|Sobota|
+|**Hv**|Typ wskaźnika — wskazuje, że sprawdzana wartość wskaźnika jest wynikiem alokacji sterty tablicy, na przykład `new int[3]` .|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|
+|**Na**|Pomija adres pamięci wskaźnika do obiektu.|\<location>, {member=value...}|{member=value...}|
+|**Nd**|Wyświetla tylko informacje o klasie bazowej, ignorując klasy pochodne|`(Shape*) square` zawiera informacje o klasie bazowej i klasie pochodnej|Wyświetla tylko informacje o klasie bazowej|
+|godz.|Kod błędu HRESULT lub Win32. Ten specyfikator nie jest już potrzebny w przypadku hresultów HRESULTs, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
+|wc|Flaga klasy okna|0x0010|WC_DEFAULTCHAR|
+|Wm|Numery komunikatów systemu Windows|16|WM_CLOSE|
+|!|format pierwotny, ignorując wszelkie dostosowania widoków typów danych|\<customized representation>|4|
 
 ::: moniker-end
 
 > [!NOTE]
-> Gdy jest obecny Specyfikator formatu **HV** , debuger próbuje określić długość buforu i wyświetlić tę liczbę elementów. Ponieważ nie zawsze jest możliwe, aby debuger znalazł dokładny rozmiar buforu tablicy, należy użyć specyfikatora rozmiaru `(pBuffer,[bufferSize])` wszędzie tam, gdzie to możliwe. Specyfikator formatu **HV** jest przydatny, gdy rozmiar buforu nie jest łatwo dostępny.
+> Gdy **specyfikator** formatu hv jest obecny, debuger próbuje określić długość buforu i wyświetlić liczbę elementów. Ponieważ nie zawsze jest możliwe, aby debuger znalazł dokładny rozmiar buforu tablicy, należy używać specyfikatora rozmiaru zawsze, gdy `(pBuffer,[bufferSize])` jest to możliwe. Specyfikator **formatu hv** jest przydatny, gdy rozmiar buforu nie jest łatwo dostępny.
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Specyfikatory rozmiaru dla wskaźników jako tablic
 
 Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, możesz użyć liczby całkowitej lub wyrażenia, aby określić liczbę elementów tablicy.
 
-|Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
+|Specyfikator|Format|Oryginalna wartość zegarka|Wyświetlana wartość|
 |---------------|------------|---------------------------|---------------------|
-|n|Dziesiętna lub **szesnastkowa** liczba całkowita|pBuffer, [32]<br /><br /> pBuffer,**[0x20]**|Wyświetla `pBuffer` jako tablicę elementów 32.|
-|**EXP**|Prawidłowe wyrażenie języka C++, które daje w wyniku liczbę całkowitą.|pBuffer, [bufferSize]|Wyświetla pBuffer jako tablicę `bufferSize` elementów.|
-|**Rozwiń (n)**|Prawidłowe wyrażenie języka C++, które daje w wyniku liczbę całkowitą|pBuffer, rozwiń (2)|Wyświetla trzeci element  `pBuffer`|
+|n|Liczba **dziesiętna lub szesnastkowa liczba całkowita**|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Wyświetla `pBuffer` jako tablicę 32-elementową.|
+|**[exp]**|Prawidłowe wyrażenie języka C++, które jest obliczane jako liczba całkowita.|pBuffer,[bufferSize]|Wyświetla element pBuffer jako tablicę `bufferSize` elementów.|
+|**expand(n)**|Prawidłowe wyrażenie języka C++, które jest obliczane jako liczba całkowita|pBuffer, expand(2)|Wyświetla trzeci element elementu  `pBuffer`|
 
-## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu na potrzeby debugowania międzyoperacyjnego przy użyciu języka C++/CLI
+## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu na potrzeby debugowania międzyoptyków w języku C++/interfejsie wiersza polecenia
 
-Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera, określonego przy użyciu [zarządzanego trybu zgodności](../debugger/general-debugging-options-dialog-box.md).
+Specyfikatory pogrubione **są** obsługiwane tylko w przypadku debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera określonego przy użyciu trybu [zgodności zarządzanej.](../debugger/general-debugging-options-dialog-box.md)
 
-|Specyfikator|Format|Oryginalna wartość czujki|Wyświetlana wartość|
+|Specyfikator|Format|Oryginalna wartość zegarka|Wyświetlana wartość|
 |---------------|------------|--------------------------|---------------------|
-|**d**<br /><br />**i**|cyfra dziesiętna ze znakiem|0xF000F065|-268373915|
-|**'t**|Liczba całkowita dziesiętna bez znaku|0x0065|101|
-|o|Liczba całkowita bez znaku|0xF065|0170145|
+|**d**<br /><br />**i**|liczba całkowita ze znakami dziesiętnych|0xF000F065|-268373915|
+|**U**|liczba całkowita dziesiętna bez znaku|0x0065|101|
+|o|niepodpisane ósemkowe liczby całkowite|0xF065|0170145|
 |x<br /><br />X|Szesnastkowa liczba całkowita|61541|0x0000f065|
-|**&**<br /><br />**h**|długi lub krótki prefiks dla: d, i, u, o, x, X|00406042|0x0c22|
-|**n**|podpisany zmiennoprzecinkowy|(3./2.), f|1,500000|
-|**adres**|Notacja naukowa ze znakiem|(3.0/2.0)|1.500000 e + 000|
-|**g**|podpisany element zmiennoprzecinkowy lub podpisany Zapis naukowy,<br/> w zależności od tego co jest krótsze|(3.0/2.0)|1.5|
-|c|pojedynczy znak|\<location>|101 ' e '|
-|s|const char * (ze znakami cudzysłowu)|\<location>|"Hello World"|
-|Su|const wchar_t *<br /><br /> const char16_t \* (ze znakami cudzysłowu)|\<location>|L "Hello World"|
-|Sub|const wchar_t *<br /><br /> stała char16_t\*|\<location>|Cześć ludzie|
-|s8|const char * (ze znakami cudzysłowu)|\<location>|"Hello World"|
-|godz.|Kod błędu HRESULT lub Win32.<br/>Ten specyfikator nie jest już wymagany dla HRESULT, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
-|w górę|Flaga klasy okna|0x00000040|WC_DEFAULTCHAR|
-|Media|Numery komunikatów systemu Windows|0x0010|WM_CLOSE|
-|!|Format nieprzetworzony, ignorowanie wszelkich dostosowań widoku typu danych|\<customized representation>|4|
+|**L**<br /><br />**h**|długi lub krótki prefiks dla: d, i, u, o, x, X|00406042|0x0c22|
+|**F**|zmiennoprzecinkowy ze podpisem|(3./2.), f|1.500000|
+|**E**|podpisana notacja naukowa|(3.0/2.0)|1,500000e+000|
+|**G**|podpisana zmiennoprzecinkowa lub podpisana notacja naukowa,<br/> w zależności od tego, która wartość jest krótsza|(3.0/2.0)|1.5|
+|c|pojedynczy znak|\<location>|101 "e"|
+|s|const char* (ze znakami cudzysłowu)|\<location>|"hello world"|
+|Su|const wchar_t*<br /><br /> const char16_t \* (ze znakami cudzysłowu)|\<location>|L"hello world"|
+|Sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|Cześć ludzie|
+|s8|const char* (ze znakami cudzysłowu)|\<location>|"hello world"|
+|godz.|Kod błędu HRESULT lub Win32.<br/>Ten specyfikator nie jest już potrzebny w przypadku hresultów HRESULTs, ponieważ debuger dekoduje je automatycznie.|S_OK|S_OK|
+|wc|Flaga klasy okna|0x00000040,|WC_DEFAULTCHAR|
+|Wm|Numery komunikatów systemu Windows|0x0010|WM_CLOSE|
+|!|format pierwotny, ignorując wszelkie dostosowania widoku typu danych|\<customized representation>|4|
 
-### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla lokalizacji pamięci podczas debugowania międzyoperacyjności przy użyciu języka C++/CLI
+### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikatory formatu dla lokalizacji pamięci w debugowaniu międzyoptyków przy użyciu języka C++/interfejsu wiersza polecenia
 
-W poniższej tabeli opisano symbole formatowania używane dla lokalizacji pamięci. Można użyć specyfikatora lokalizacji pamięci z dowolną wartością lub wyrażeniem, które jest oceniane do lokalizacji.
+W poniższej tabeli opisano symbole formatowania używane dla lokalizacji pamięci. Można użyć specyfikatora lokalizacji pamięci z dowolną wartością lub wyrażeniem, które oblicza lokalizację.
 
-Specyfikatory **pogrubione** są obsługiwane tylko na potrzeby debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera, określonego przy użyciu [zarządzanego trybu zgodności](../debugger/general-debugging-options-dialog-box.md).
+Specyfikatory pogrubione **są** obsługiwane tylko w przypadku debugowania kodu natywnego i C++/CLI. Wymaga to starszego debugera określonego przy użyciu trybu [zgodności zarządzanej.](../debugger/general-debugging-options-dialog-box.md)
 
-|Symbol|Format|Oryginalna wartość czujki|Wyświetlana wartość|
+|Symbol|Format|Oryginalna wartość zegarka|Wyświetlana wartość|
 |------------|------------|--------------------------|---------------------|
-|**ruchom**|64 znaków ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W&...... 1W&.0.: W... 1.... ".. 1.JO&.1,2... 1... 0y... jedno|
-|**m**|16 bajtów w formacie szesnastkowym, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.4... 0.... 0W&..|
-|**megabit**|16 bajtów w formacie szesnastkowym, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00.4... 0.... 0W&..|
-|**MW**|8 słów|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
-|**algorytmu**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|
-|**MQ**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|
-|**mu**|znaki dwubajtowe (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 FFFF FFFF 0000 0000 0000 0000|
+|**ma**|64 znaki ASCII|0x0012ffac|0x0012ffac .4...0...". 0W&. 1W&.0.:W.. 1....".. 1.JO&.1.2."... 1...0y...... 1|
+|**m**|16 bajtów w postaci szesnastkowej, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...". 0W&..|
+|**Mb**|16 bajtów w postaci szesnastkowej, po których następuje 16 znaków ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...". 0W&..|
+|**Mw**|8 wyrazów|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
+|**Md**|4 podwójne słowa|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|
+|**Mq**|2 czworokątne hasła|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|
+|**mu**|Znaki 2-bajtowe (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
-### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikator rozmiaru dla wskaźników jako tablice w debugowaniu międzyoperacyjnym z C++/CLI
+### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Specyfikator rozmiaru wskaźników jako tablic w debugowaniu międzyoptyków za pomocą języka C++/interfejsu wiersza polecenia
 
 Jeśli masz wskaźnik do obiektu, który chcesz wyświetlić jako tablicę, możesz użyć liczby całkowitej, aby określić liczbę elementów tablicy.
 
 |Specyfikator|Format|Wyrażenie|Wyświetlana wartość|
 |---------------|------------|----------------|---------------------|
-|n|Liczba całkowita dziesiętna|pBuffer [32]|`pBuffer`Jest wyświetlana jako tablica elementów 32.|
+|n|Liczba całkowita dziesiętna|pBuffer[32]|Wyświetla `pBuffer` jako tablicę 32-elementową.|
