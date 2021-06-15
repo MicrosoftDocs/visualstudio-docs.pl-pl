@@ -1,8 +1,8 @@
 ---
-title: Praca z rozwiązaniami i projektami
-description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz sposobami ich używania w programie Visual Studio.
+title: Tworzenie &amp; rozwiązań Visual Studio projektów &amp;
+description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz o tym, jak ich używać w Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
@@ -16,145 +16,147 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
+ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956805"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112066946"
 ---
-# <a name="work-with-solutions-and-projects"></a>Praca z rozwiązaniami i projektami
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Tworzenie, praca z projektami i rozwiązaniami oraz Visual Studio z projektami i rozwiązaniami
 
-*Projekty* przechowują elementy, które są konieczne do kompilowania aplikacji w programie Visual Studio, takie jak pliki kodu źródłowego, mapy bitowe, ikony i odwołania do składników i usług. Podczas tworzenia nowego projektu program Visual Studio tworzy *rozwiązanie* , które zawiera projekt. Jeśli chcesz, możesz dodać inne nowe lub istniejące projekty do rozwiązania. Rozwiązania mogą również zawierać pliki, które nie są połączone z żadnym konkretnym projektem.
+W tym artykule dowiesz się, jak tworzyć projekty Visual Studio od podstaw i używać ich do przechowywania artefaktów potrzebnych do kompilowania aplikacji.  Jeśli nie znasz projektów w programie Visual Studio, zobacz to omówienie [projektów i rozwiązań.](solutions-and-projects-in-visual-studio.md)  Aby dowiedzieć się, jak szybko utworzyć projekt na podstawie szablonu, zobacz [Tworzenie projektu na podstawie szablonu.](create-new-project.md)
 
-![Diagram przedstawiający rozwiązanie i hierarchię projektu.](./media/vside-proj-soln.png)
+*W* projektach są zawarte elementy potrzebne do kompilowania aplikacji w usłudze Visual Studio, takie jak pliki kodu źródłowego, mapy bitowe, ikony oraz odwołania do składników i usług. Podczas tworzenia nowego projektu program Visual Studio *rozwiązanie zawierające* projekt. Następnie możesz dodać inne nowe lub istniejące projekty do rozwiązania, jeśli chcesz. Rozwiązania mogą również zawierać pliki, które nie są połączone z żadnym konkretnym projektem.
+
+![Diagram przedstawiający hierarchię rozwiązania i projektu.](./media/vside-proj-soln.png)
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Tworzenie projektów w Visual Studio dla komputerów Mac](/visualstudio/mac/create-new-projects).
+> Ten temat dotyczy Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac temat Create [projects in Visual Studio dla komputerów Mac (Tworzenie projektów w programie Visual Studio dla komputerów Mac](/visualstudio/mac/create-new-projects)).
 
-Możesz wyświetlić swoje rozwiązania i projekty w oknie narzędzia o nazwie **Eksplorator rozwiązań**. Poniższy zrzut ekranu przedstawia przykładowe rozwiązanie w **Eksplorator rozwiązań** (**BikeSharing. Xamarin-platformy UWP**), które zawiera dwa projekty: **BikeSharing. clients. Core** i **BikeSharing. clients. Windows**. Każdy projekt zawiera wiele plików, folderów i odwołań. Nazwa projektu pogrubiona to *projekt startowy*. oznacza to, że projekt jest uruchamiany po uruchomieniu aplikacji. Można określić, który projekt jest projektem startowym.
+Rozwiązania i projekty można wyświetlić w oknie narzędzi o nazwie **Eksplorator rozwiązań**. Poniższy zrzut ekranu przedstawia przykładowe rozwiązanie w systemie **Eksplorator rozwiązań** **(BikeSharing.Xamarin-UWP),** które zawiera dwa projekty: **BikeSharing.Clients.Core** i **BikeSharing.Clients.Windows.** Każdy projekt zawiera wiele plików, folderów i odwołań. Pogrubioną nazwą projektu jest *projekt startowy;* oznacza to, że projekt uruchamiany po uruchomieniu aplikacji. Możesz określić, który projekt jest projektem startowym.
 
 ![Zrzut ekranu przedstawiający Eksplorator rozwiązań z dwoma projektami.](./media/vside-solution-explorer-projects.png)
 
-Chociaż można skonstruować projekt samodzielnie przez dodanie do niego niezbędnych plików, program Visual Studio oferuje wybór szablonów projektu, które umożliwiają rozpoczęcie od początku. Tworzenie nowego projektu na podstawie szablonu zapewnia projekt z Essentials dla tego typu projektu i można zmienić jego nazwę lub dodać do niego nowy lub istniejący kod oraz inne zasoby.
+Projekt można skonstruować samodzielnie, dodając do niego niezbędne pliki, Visual Studio oferuje wybór szablonów projektów, które zapewniają dobry początek. Utworzenie nowego projektu na podstawie szablonu daje projekt z podstawowymi elementami dla tego typu projektu i można zmienić nazwy plików lub dodać do niego nowy lub istniejący kod i inne zasoby zgodnie z potrzebami.
 
-Z tego wynikają, że rozwiązania i projekty nie są wymagane do tworzenia aplikacji w programie Visual Studio. Możesz również otworzyć kod, który został sklonowany z usługi Git lub który został pobrany w innym miejscu. Aby uzyskać więcej informacji, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+Z tego względu rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć kod sklonowany z usługi Git lub pobrany w innym miejscu. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu w [programie Visual Studio bez projektów i rozwiązań).](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 
 ## <a name="create-a-project-from-a-project-template"></a>Tworzenie projektu na podstawie szablonu projektu
 
-Aby uzyskać informacje o sposobach wybierania szablonu w celu utworzenia nowego projektu, zobacz [Tworzenie nowego projektu w programie Visual Studio](create-new-project.md). Aby zapoznać się z przykładem projektu i rozwiązania tworzonego od podstaw, wykonaj instrukcje krok po kroku i przykładowy kod, zobacz [wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md).
+Aby uzyskać informacje na temat wybierania szablonu w celu utworzenia nowego projektu, zobacz [Create a new project in Visual Studio](create-new-project.md). Przykład projektu i rozwiązania utworzonego od podstaw wraz z instrukcjami krok po kroku i przykładowym kodem można znaleźć w te tematach Wprowadzenie do [projektów i rozwiązań.](../get-started/tutorial-projects-solutions.md)
 
-## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu na podstawie istniejących plików kodu
+## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
 
 Jeśli masz kolekcję plików źródłowych kodu, możesz łatwo dodać je do projektu.
 
-1. Z menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt z istniejącego kodu**.
+1. W menu wybierz pozycję **File** New Project From Existing Code (Plik  >  **nowego** projektu  >  **z istniejącego kodu).**
 
-1. W kreatorze **tworzenia projektu z istniejących plików z kodem** wybierz typ projektu, który chcesz **utworzyć?** pole listy rozwijanej, a następnie wybierz przycisk **dalej** .
+1. W **kreatorze Create Project from Existing Code Files** (Tworzenie projektu z istniejących plików kodu) wybierz typ projektu z listy rozwijanej Jakiego typu projekt chcesz **utworzyć?,** a następnie wybierz przycisk **Next (Dalej).**
 
-1. W Kreatorze przejdź do lokalizacji plików, a następnie wprowadź nazwę nowego projektu w polu **Nazwa** . Gdy wszystko będzie gotowe, wybierz przycisk **Zakończ** .
+1. W kreatorze przejdź do lokalizacji plików, a następnie wprowadź nazwę nowego projektu w **polu** Nazwa. Gdy wszystko będzie gotowe, wybierz **przycisk** Zakończ.
 
 > [!NOTE]
-> Ta opcja działa najlepiej dla stosunkowo prostej kolekcji plików. Obecnie obsługiwane są tylko typy projektów C++, Apache Cordova, Visual Basic i C#.
+> Ta opcja sprawdza się najlepiej w przypadku stosunkowo prostej kolekcji plików. Obecnie obsługiwane są tylko typy projektów C++, Apache Cordova, Visual Basic i C#.
 
 ## <a name="add-files-to-a-solution"></a>Dodawanie plików do rozwiązania
 
-Jeśli masz plik, który dotyczy wielu projektów, takich jak plik Readme dla rozwiązania lub inne pliki, które logicznie należą do poziomu rozwiązania, a nie w określonym projekcie, możesz dodać je do samego rozwiązania. Aby dodać element do rozwiązania, w menu kontekstowym (kliknij prawym przyciskiem myszy) węzła rozwiązania w **Eksplorator rozwiązań** wybierz pozycję **Dodaj**  >  **nowy element** lub **Dodaj**  >  **istniejący element**.
+Jeśli masz plik, który ma zastosowanie do wielu projektów, takich jak plik readme rozwiązania lub inne pliki, które logicznie należą na poziomie rozwiązania, a nie w ramach określonego projektu, możesz dodać je do samego rozwiązania. Aby dodać element do rozwiązania, w menu kontekstowym (kliknięcie prawym przyciskiem myszy) węzła rozwiązania w **programie Eksplorator rozwiązań** wybierz pozycję Dodaj nowy element lub Dodaj  >  istniejący   >  **element.**
 
 > [!TIP]
-> Plik rozwiązania to struktura służąca do organizowania projektów w programie Visual Studio. Zawiera ona informacje o stanie tych informacji w dwóch plikach: plik *. sln* (oparty na tekście, udostępniony) i *suo* (binarne, ukryte, specyficzne dla użytkownika opcje rozwiązania). W takim przypadku rozwiązanie nie jest coś, które należy skopiować i zmienić jego nazwę; Zamiast tego najlepiej utworzyć nowe rozwiązanie, a następnie dodać do niego istniejące elementy.
+> Plik rozwiązania to struktura do organizowania projektów w Visual Studio. Zawiera ona stan tych informacji w dwóch plikach: *plik sln* (tekstowy, udostępniony) i plik *suo* (binarny, ukryty, specyficzny dla użytkownika plik rozwiązania). W związku z tym rozwiązanie nie powinno być kopiowane i zmieniane. Zamiast tego najlepiej jest utworzyć nowe rozwiązanie, a następnie dodać do niego istniejące elementy.
 
-## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Utwórz projekt platformy .NET, który jest przeznaczony dla określonej wersji .NET Framework
+## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Tworzenie projektu .NET, który jest przeznaczony dla określonej wersji .NET Framework
 
-Podczas tworzenia projektu .NET Framework można określić określoną wersję .NET Framework, która ma być używana przez projekt. (Podczas tworzenia projektu .NET Core nie jest określana wersja struktury).
+Podczas tworzenia projektu .NET Framework można określić określoną wersję pliku .NET Framework, której ma używać projekt. (Podczas tworzenia projektu .NET Core nie określasz wersji struktury).
 
 ::: moniker range="vs-2017"
 
-Aby określić wersję .NET Framework, wybierz menu rozwijane **Struktura** w oknie dialogowym **Nowy projekt** .
+Aby określić wersję .NET Framework, wybierz menu rozwijane **Framework** w **oknie dialogowym Nowy** projekt.
 
-![Zrzut ekranu przedstawiający listę rozwijaną Framework w oknie dialogowym Nowy projekt.](./media/vside-newproject-framework.png)
+![Zrzut ekranu przedstawiający menu rozwijane Framework w oknie dialogowym Nowy projekt.](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Aby uzyskać dostęp do wersji .NET Framework starszej niż .NET Framework 4, musisz mieć zainstalowany .NET Framework 3,5 w systemie.
+> Aby uzyskać dostęp do .NET Framework starszych niż .NET Framework 4, w systemie musi być .NET Framework 3.5.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Aby określić wersję .NET Framework, wybierz menu rozwijane **Struktura** na stronie **Utwórz nowy projekt** .
+Aby określić .NET Framework wersji, wybierz menu rozwijane **Framework** na stronie **Tworzenie nowego** projektu.
 
-![Zrzut ekranu przedstawiający selektor struktury w oknie dialogowym "Konfigurowanie nowego projektu".](media/vs-2019/configure-new-project-framework.png)
+![Zrzut ekranu selektora struktury w oknie dialogowym "Konfigurowanie nowego projektu".](media/vs-2019/configure-new-project-framework.png)
 
 ::: moniker-end
 
-## <a name="create-empty-solutions"></a>Utwórz puste rozwiązania
+## <a name="create-empty-solutions"></a>Tworzenie pustych rozwiązań
 
-Można również tworzyć puste rozwiązania, które nie mają projektów. Może to być zalecane w przypadkach, w których chcesz skonstruować swoje rozwiązanie i projekty od podstaw.
+Można również tworzyć puste rozwiązania, które nie mają projektów. Może to być preferowane w przypadkach, gdy chcesz skonstruować rozwiązanie i projekty od podstaw.
 
 ### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie
 
-1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**.
+1. Na pasku menu wybierz pozycję **File** New Project  >  **(Plik nowego**  >  **projektu).**
 
 ::: moniker range="vs-2017"
 
-2. W okienku po lewej stronie (**Szablony**) wybierz pozycję **Inne typy projektów** > **Visual Studio** na rozwiniętej liście.
+2. W okienku po **lewej** stronie (Szablony) wybierz pozycję **Inne typy** projektów > **Visual Studio Rozwiązania** na rozwiniętej liście.
 
-3. W środkowym okienku wybierz pozycję **puste rozwiązanie**.
+3. W środkowym okienku wybierz pozycję **Puste rozwiązanie.**
 
-4. Wprowadź wartości **nazwy** i **lokalizacji** dla rozwiązania, a następnie wybierz przycisk **OK**.
+4. Wprowadź **wartości** w **polach** Nazwa i Lokalizacja dla rozwiązania, a następnie wybierz przycisk **OK.**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Na stronie **Tworzenie nowego projektu** wpisz **rozwiązanie** w polu wyszukiwania.
+2. Na **stronie Tworzenie nowego projektu** wpisz **rozwiązanie** w polu wyszukiwania.
 
-3. Wybierz szablon **pustego rozwiązania** , a następnie kliknij przycisk **dalej**.
+3. Wybierz szablon **Puste rozwiązanie,** a następnie kliknij przycisk **Dalej.**
 
-4. Wprowadź wartości **nazwy** i **lokalizacji** dla rozwiązania, a następnie wybierz pozycję **Utwórz**.
+4. Wprowadź **wartości** w **polach** Nazwa i Lokalizacja dla rozwiązania, a następnie wybierz pozycję **Utwórz.**
 
 ::: moniker-end
 
-Po utworzeniu pustego rozwiązania można dodać do niego nowe lub istniejące projekty lub elementy, wybierając pozycję **Dodaj nowy element** lub **Dodaj istniejący element** w menu **projekt** .
+Po utworzeniu pustego rozwiązania możesz dodać do niego nowe lub istniejące projekty albo elementy, wybierając pozycję Dodaj nowy **element** lub Dodaj istniejący **element** w menu **Projekt.**
 
-Jak wspomniano wcześniej, można również otwierać pliki kodu bez potrzeby projektu lub rozwiązania. Aby dowiedzieć się więcej na temat opracowywania kodu w ten sposób, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+Jak wspomniano wcześniej, możesz również otwierać pliki kodu bez konieczności użycia projektu lub rozwiązania. Aby dowiedzieć się więcej na temat tworzenia kodu w ten sposób, zobacz [Develop code in Visual Studio without projects or solutions (Tworzenie](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)kodu w programie Visual Studio bez projektów i rozwiązań).
 
 ::: moniker range="vs-2017"
 
 ## <a name="create-a-temporary-project"></a>Tworzenie projektu tymczasowego
 
-(Tylko w językach C# i Visual Basic)
+(Tylko W języku C# Visual Basic)
 
-Jeśli utworzysz. Projekt oparty na sieci, bez określania lokalizacji dysku, jest projektem tymczasowym. Projekty tymczasowe umożliwiają eksperymentowanie z projektami .NET. W dowolnym momencie podczas pracy z projektem tymczasowym można wybrać opcję zapisywania lub odrzucania go.
+Jeśli tworzysz . Projekt oparty na sieci bez określania lokalizacji dysku jest projektem tymczasowym. Projekty tymczasowe umożliwiają eksperymentowanie z projektami .NET. W dowolnym momencie podczas pracy z projektem tymczasowym można go zapisać lub odrzucić.
 
-Aby utworzyć projekt tymczasowy, najpierw przejdź do opcji **Narzędzia**  >  **Opcje**  >  **projekty i rozwiązania**  >  **Ogólne** i usuń zaznaczenie pola wyboru **Zapisz nowe projekty po utworzeniu** . Następnie otwórz okno dialogowe **Nowy projekt** w zwykły sposób.
+Aby utworzyć projekt tymczasowy, najpierw przejdź do pozycji **Narzędzia** Opcje Projekty i rozwiązania Ogólne i usuń zaznaczenie pola wyboru Zapisz nowe projekty  >    >    >   **po utworzeniu.** Następnie otwórz okno **dialogowe Nowy projekt** w zwykły sposób.
 
 ::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Usuwanie rozwiązania, projektu lub elementu
 
-Możesz użyć menu kontekstowego po kliknięciu prawym przyciskiem myszy, aby usunąć lub usunąć rozwiązania, projekty lub elementy w programie Visual Studio, ale które usuwają je tylko z bieżącego rozwiązania lub projektu.
+Menu kontekstowe dostępne po kliknięciu prawym przyciskiem myszy umożliwia usuwanie rozwiązań, projektów lub elementów w programie Visual Studio, ale powoduje tylko usunięcie ich z bieżącego rozwiązania lub projektu.
 
-Aby trwale usunąć rozwiązanie lub inne składniki z systemu, należy użyć **Eksploratora plików** w systemie Windows w celu usunięcia folderu zawierającego pliki rozwiązania *. sln* i *. suo* . (Przed usunięciem rozwiązania warto utworzyć kopię zapasową projektów i plików w razie potrzeby ponownie).
+Aby trwale usunąć rozwiązanie lub inne składniki z systemu, użyj programu **Eksplorator plików** w systemie Windows, aby usunąć folder zawierający pliki rozwiązania *sln* i *suo.* (Przed usunięciem rozwiązania możesz chcieć chcieć wrócić do kopii zapasowej projektów i plików).
 
 > [!NOTE]
-> Plik *. suo* to ukryty plik, który nie jest wyświetlany w domyślnych ustawieniach Eksploratora plików. Aby wyświetlić ukryte pliki, w menu **Widok** w Eksploratorze plików zaznacz pole wyboru **ukryte elementy** .
+> Plik *suo* jest ukrytym plikiem, który nie jest wyświetlany w domyślnych ustawieniach Eksplorator plików. Aby wyświetlić ukryte pliki, w menu **Widok** Eksplorator plików zaznacz pole **wyboru Ukryte** elementy.
 
 ### <a name="permanently-delete-a-solution"></a>Trwałe usuwanie rozwiązania
 
-Dostęp do Eksploratora plików w systemie Windows można uzyskać za pomocą Eksplorator rozwiązań w programie Visual Studio. Oto jak to zrobić.
+Dostęp do aplikacji w Eksplorator plików Windows można uzyskać przy użyciu Eksplorator rozwiązań w Visual Studio. Oto jak to zrobić.
 
-1. W **Eksplorator rozwiązań**, w menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) rozwiązania, które chcesz usunąć, wybierz polecenie **Otwórz folder w Eksploratorze plików**.
+1. W **Eksplorator rozwiązań** menu prawym przyciskiem myszy (menu kontekstowe) rozwiązania, które chcesz usunąć, wybierz pozycję **Otwórz folder** w Eksplorator plików .
 
-1. W Eksploratorze plików przejdź do góry o jeden poziom.
+1. W Eksplorator plików przejdź w górę o jeden poziom.
 
-1. Wybierz folder, który zawiera rozwiązanie, a następnie naciśnij klawisz **delete** .
+1. Wybierz folder zawierający rozwiązanie, a następnie naciśnij **klawisz** Delete.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
-- [Rozwiązania filtrowane w programie Visual Studio](filtered-solutions.md)
-- [Repozytoria Open Source firmy Microsoft w serwisie GitHub](https://github.com/Microsoft)
+- [Odfiltrowane rozwiązania w Visual Studio](filtered-solutions.md)
+- [Repozytoria open source firmy Microsoft w witrynie GitHub](https://github.com/Microsoft)
 - [Przykłady kodu dla deweloperów](https://code.msdn.microsoft.com/)
-- [Zasoby do rozwiązywania problemów z błędami środowiska IDE programu Visual Studio](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
+- [Zasoby dotyczące rozwiązywania problemów Visual Studio IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
