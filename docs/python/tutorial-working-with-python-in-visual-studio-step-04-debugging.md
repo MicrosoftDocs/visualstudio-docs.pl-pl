@@ -1,7 +1,7 @@
 ---
-title: Samouczek Python w programie Visual Studio — krok 4, debugowanie
+title: Python w Visual Studio samouczku, krok 4, debugowanie
 titleSuffix: ''
-description: Krok 4 podstawowego przewodnika dotyczącego możliwości języka Python w programie Visual Studio, w którym opisano sposób uruchamiania kodu w języku Python w debugerze.
+description: Krok 4 podstawowego przewodnika po możliwościach języka Python w języku Visual Studio, który obejmuje sposób uruchamiania kodu języka Python w debugerze.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -11,20 +11,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839166"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254865"
 ---
-# <a name="step-4-run-code-in-the-debugger"></a>Krok 4. uruchamianie kodu w debugerze
+# <a name="step-4-run-code-in-the-debugger"></a>Krok 4. Uruchamianie kodu w debugerze
 
-**Poprzedni krok: [Użyj interaktywnego okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Poprzedni krok: [Korzystanie z okna Interactive REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
-Poza zarządzaniem projektami, zapewnianie bogatego środowiska edycji i **interaktywnego** okna, program Visual Studio udostępnia w pełni funkcjonalne debugowanie dla kodu języka Python. W debugerze można uruchomić kod krok po kroku, włącznie z każdą iteracją pętli. Program można również wstrzymać w przypadku spełnienia określonych warunków. W dowolnym momencie, gdy program jest wstrzymany w debugerze, można odczytać cały stan programu i zmienić wartość zmiennych. Takie działania są niezbędne do śledzenia błędów programu, a także zapewniają bardzo przydatne ułatwienia w dokładnie podobny sposób do przepływu programu.
+Oprócz zarządzania projektami, zapewniania rozbudowanych  możliwości edytowania i okna interaktywnego, Visual Studio zapewnia w pełni funkcjonalne debugowanie kodu w języku Python. W debugerze można uruchamiać kod krok po kroku, w tym każdą iterację pętli. Możesz również wstrzymać program za każdym razem, gdy zostaną spełnione określone warunki. W dowolnym momencie, gdy program jest wstrzymany w debugerze, można zbadać cały stan programu i zmienić wartość zmiennych. Takie akcje są niezbędne do śledzenia błędów programu, a także zapewniają bardzo przydatne pomoc dla dokładnego śledzenia przepływu programu.
 
-1. Zastąp kod w pliku *PythonApplication1.py* następującym kodem. Ta odmiana kodu rozszerza się, `make_dot_string` Aby można było zapoznać się z jego dyskretnymi krokami w debugerze. Umieszcza również `for` pętlę w `main` funkcji i uruchamia ją jawnie przez wywołanie tej funkcji:
+1. Zastąp kod w pliku *PythonApplication1.py* poniższym kodem. Ta odmiana kodu rozszerza `make_dot_string` się, aby można było przeanalizować jego dyskretne kroki w debugerze. Umieszcza również `for` pętlę w funkcji i uruchamia ją `main` jawnie, wywołując tę funkcję:
 
     ```python
     from math import cos, radians
@@ -44,66 +44,68 @@ Poza zarządzaniem projektami, zapewnianie bogatego środowiska edycji i **inter
     main()
     ```
 
-1. Sprawdź, czy kod działa prawidłowo, naciskając klawisz **F5** lub wybierając polecenie **Debuguj**  >  **Rozpocznij debugowanie** menu. To polecenie uruchamia kod w debugerze, ale ponieważ nie wykonano żadnych czynności w celu wstrzymania programu, gdy jest on uruchomiony, po prostu drukuje wzorzec Wave dla kilku iteracji. Naciśnij dowolny klawisz, aby zamknąć okno dane wyjściowe.
+1. Sprawdź, czy kod działa prawidłowo, naciskając **klawisz F5** lub wybierając polecenie menu   >  **Debuguj rozpocznij** debugowanie. To polecenie uruchamia kod w debugerze, ale ponieważ nie zostało wykonane nic, aby wstrzymać program, gdy jest uruchomiony, po prostu drukuje wzorzec falowy dla kilku iteracji. Naciśnij dowolny klawisz, aby zamknąć okno danych wyjściowych.
 
     > [!Tip]
-    > Aby zamknąć okno dane wyjściowe automatycznie po zakończeniu działania programu, wybierz polecenie **Narzędzia**  >  menu **Opcje** , rozwiń węzeł **Python** , wybierz pozycję **debugowanie**, a następnie wyczyść opcję **czekaj na dane wejściowe, gdy proces kończy się normalnie**:
+    > Aby automatycznie zamknąć okno danych wyjściowych po zakończeniu pracy programu, wybierz polecenie menu Narzędzia Opcje, rozwiń węzeł Python, wybierz pozycję Debugowanie , a następnie wyczyść opcję Zaczekaj na dane wejściowe, gdy proces  >   zakończy się **normalnie:**  
     >
-    > ![Opcja debugowania języka Python, aby zamknąć okno dane wyjściowe na normalnym zakończeniu programu](media/vs-getting-started-python-22-debugging5.png)
+    > ![Opcja debugowania języka Python w celu zamknięcia okna danych wyjściowych przy normalnym zamykaniu programu](media/vs-getting-started-python-22-debugging5.png)
+    >
+    > Aby uzyskać dodatkowe informacje na temat debugowania, w tym zadania, takie jak ustawianie argumentów interpretera i skryptu, zobacz [Debugowanie kodu w języku Python](debugging-python-in-visual-studio.md).
 
-1. Aby ustawić punkt przerwania w `for` instrukcji, kliknij jeden raz na szarym marginesie przez ten wiersz lub przez umieszczenie karetki w tym wierszu i użycie polecenia **Debuguj**  >  **Przełącz punkt przerwania** (**F9**). Czerwona kropka pojawia się na szarym marginesie, aby wskazać punkt przerwania (zgodnie z poniższą strzałką):
+1. Ustaw punkt przerwania w instrukcji, klikając raz na szarym marginesie przy tym wierszu lub umieszczając karet w tym wierszu i używając polecenia `for`   >  **Debuguj** przełącznik punktu przerwania **(F9).** Czerwona kropka pojawia się na szarym marginesie, aby wskazać punkt przerwania (zgodnie ze strzałką poniżej):
 
     ![Ustawianie punktu przerwania](media/vs-getting-started-python-18-debugging1.png)
 
-1. Ponownie uruchom debuger (**F5**) i zobacz, że uruchamianie kodu zostaje zatrzymane w wierszu z tym punktem przerwania. Tutaj można sprawdzić stos wywołań i zbadać zmienne. Zmienne, które są w zakresie, są wyświetlane w oknie **Autostarty** , gdy są zdefiniowane; Możesz również przełączyć się na widok **ustawień lokalnych** w dolnej części tego okna, aby pokazać wszystkie zmienne, które program Visual Studio znajdzie w bieżącym zakresie (łącznie z funkcjami), nawet zanim są zdefiniowane:
+1. Uruchom debuger ponownie **(F5)** i zobacz, że uruchomienie kodu zatrzymuje się w wierszu z tym punktem przerwania. W tym miejscu możesz sprawdzić stos wywołań i zbadać zmienne. Zmienne, które znajdują się w zakresie, są wyświetlane w **oknie Automatyczne** podczas ich definiowania; Możesz również przełączyć  się do widoku Zmienne lokalne w dolnej części tego okna, aby wyświetlić wszystkie zmienne, które Visual Studio w bieżącym zakresie (w tym funkcje), nawet przed ich definicją:
 
     ![Środowisko interfejsu użytkownika punktu przerwania dla języka Python](media/vs-getting-started-python-19-debugging2b.png)
 
-1. Obserwuj pasek narzędzi debugowania (przedstawiony poniżej) w górnej części okna programu Visual Studio. Ten pasek narzędzi zapewnia szybki dostęp do najbardziej typowych poleceń debugowania (które można również znaleźć w menu **debugowanie** ):
+1. Obserwuj pasek narzędzi debugowania (pokazany poniżej) u góry Visual Studio okna. Ten pasek narzędzi zapewnia szybki dostęp do najbardziej typowych poleceń debugowania (które można również znaleźć w menu **Debugowanie):**
 
-    ![Najważniejsze przyciski paska narzędzi do debugowania](media/vs-getting-started-python-20-debugging3.png)
+    ![Przyciski podstawowych pasków narzędzi debugowania](media/vs-getting-started-python-20-debugging3.png)
 
-    Przyciski od lewej do prawej w następujący sposób:
-    - **Kontynuuj** (**F5**) uruchamia program aż do następnego punktu przerwania lub do zakończenia programu.
-    - **Przerwij wszystko** (**Ctrl** + **Alt** + **Break**) wstrzymuje długotrwały program.
-    - **Zatrzymaj debugowanie** (**SHIFT** + **F5**) zatrzymuje program w dowolnym miejscu i zamyka debuger.
-    - **Ponowne uruchomienie** (**Ctrl** + **SHIFT** + **F5**) powoduje zatrzymanie programu w dowolnym miejscu i ponowne uruchomienie go od początku w debugerze.
-    - **Pokaż następną instrukcję** (**Alt** + **NUM** **&#42;**) przełącza do następnego wiersza kodu do uruchomienia. Jest to najbardziej przydatne, gdy poruszasz się po kodzie podczas sesji debugowania i chcesz szybko wrócić do punktu, w którym debuger jest wstrzymany.
-    - **Wkrocz do** (**F11**) uruchamia następny wiersz kodu, wprowadzając do funkcji nazwanych.
-    - **Krok nad** (**F10**) uruchamia następny wiersz kodu bez wchodzenia do funkcji nazwanych.
-    - **Wyjdź** (**SHIFT** + **F11**) uruchamia pozostałą część bieżącej funkcji i wstrzymuje się w wywoływanym kodzie.
+    Przyciski od lewej do prawej:
+    - **Kontynuuj** (**F5**) uruchamia program do następnego punktu przerwania lub do zakończenia programu.
+    - **Break All** **(Ctrl** + **Alt** + **Break**) wstrzymuje długotrwały program.
+    - **Zatrzymaj** **debugowanie (Shift** F5 ) zatrzymuje program w dowolnym miejscu + i zamyka debuger.
+    - **Uruchom** ponownie **(Ctrl** Shift F5 ) zatrzymuje program wszędzie tam, gdzie jest, i uruchamia go ponownie +  + od początku w debugerze.
+    - **Show Next Statement** **(Alt** + **Num** **&#42;**) przełącza się do następnego wiersza kodu do uruchomienia. Jest to najbardziej przydatne, gdy poruszasz się po kodzie podczas sesji debugowania i chcesz szybko wrócić do punktu, w którym debuger jest wstrzymany.
+    - **Step Into** (**F11**) uruchamia następny wiersz kodu, wprowadzając do wywołanych funkcji.
+    - **Funkcja Step Over** **(F10)** uruchamia następny wiersz kodu bez wprowadzania do wywołanych funkcji.
+    - **Step Out** **(Shift** + **F11**) uruchamia pozostałą część bieżącej funkcji i wstrzymuje się w kodzie wywołującym.
 
-1. Przechodzenie do `for` instrukcji przy użyciu **kroku nad**. *Krokowe* oznacza, że debuger uruchamia bieżący wiersz kodu, w tym wszystkie wywołania funkcji, a następnie natychmiast zatrzymuje się ponownie. Zwróć uwagę, jak zmienna `i` jest teraz zdefiniowana w oknach **zmiennych lokalnych** i okienek. 
+1. Przekłoń `for` instrukcje przy **użyciu funkcji Step Over**. *Krokowe* oznacza, że debuger uruchamia bieżący wiersz kodu, w tym wszystkie wywołania funkcji, a następnie natychmiast wstrzymuje działanie. Zwróć uwagę, że `i` zmienna jest teraz zdefiniowana w **oknach Zmienne** lokalne **i** Automatyczne.
 
-1. Przekrocz następny wiersz kodu, który wywołuje `make_dot_string` i wstrzymuje. Tutaj **krok powyżej** oznacza, że debuger działa w całości `make_dot_string` i wstrzymuje się, gdy zwraca. Debuger nie zatrzymuje się w tej funkcji, chyba że tam istnieje osobny punkt przerwania.
+1. Przekń następny wiersz kodu, który wywołuje `make_dot_string` i wstrzymuje. **Krok powyżej** w szczególności oznacza, że debuger uruchamia całą część i wstrzymuje się `make_dot_string` po powrocie. Debuger nie zatrzymuje się wewnątrz tej funkcji, chyba że istnieje oddzielny punkt przerwania.
 
-1. Kontynuuj przechodzenie przez kod jeszcze kilka razy i obserwuj, jak wartości w oknie **zmiennych lokalnych** lub **Autokorekty** zmieniają się.
+1. Kontynuuj wykonywanie kodu kilka razy i obserwuj zmiany  wartości w oknie Ustawienia **lokalne** lub Automatyczne.
 
-1. W oknie zmienne **lokalne** lub  autozmienne kliknij dwukrotnie w kolumnie **wartość** , `i` `s` Aby edytować wartość. Naciśnij klawisz **Enter** lub kliknij dowolny obszar poza tą wartością, aby zastosować zmiany.
+1. W **oknie Zmienne** lokalne lub **Automatyczne** kliknij dwukrotnie kolumnę **Wartość** dla zmiennych lub , `i` aby `s` edytować wartość. Naciśnij **klawisz Enter** lub kliknij dowolny obszar poza wartością, aby zastosować zmiany.
 
-1. Kontynuuj przechodzenie przez kod przy użyciu **kroku do**. **Wkrocz do** oznacza, że debuger przechodzi wewnątrz dowolnego wywołania funkcji, dla którego ma informacje o debugowaniu, np `make_dot_string` .. Po wewnątrz można `make_dot_string` przeanalizować swoje zmienne lokalne i krokowo.
+1. Kontynuuj wykonywanie krokowe kodu, korzystając **z funkcji Step Into**. **Krok do** oznacza, że debuger wchodzi do dowolnego wywołania funkcji, dla którego zawiera informacje debugowania, takie jak `make_dot_string` . Wewnątrz `make_dot_string` możesz przeanalizować zmienne lokalne i przejść przez jego kod.
 
-1. Kontynuuj wykonywanie **kroków krok po kroku** i Zauważ, że gdy osiągniesz koniec `make_dot_string` , następnym krokiem powróci do `for` pętli z nową wartością zwracaną w `s` zmiennej. Po ponownym przekroczeniu `print` instrukcji należy zauważyć, że **krok do** `print` nie jest wprowadzany do tej funkcji. Dzieje się tak, ponieważ `print` nie jest on pisany w języku Python, ale raczej kod natywny wewnątrz środowiska uruchomieniowego języka Python.
+1. Kontynuuj wykonywanie **krokowe** za pomocą kroku Do i zwróć uwagę, że po osiągnięciu końca kroku następny krok powraca do pętli z nową wartością `make_dot_string` `for` zwracaną w `s` zmiennej . Po kolejnym kroku do instrukcji zwróć uwagę, że funkcja `print` **Step Into** on nie wchodzi do `print` tej funkcji. Wynika to z `print` tego, że nie jest on napisany w języku Python, ale jest raczej kodem natywnym w środowisku uruchomieniowym języka Python.
 
-1. Kontynuuj korzystanie z **kroku** do momentu ponownego partway się w programie `make_dot_string` . Następnie użyj instrukcji **krok po kroku** , aby powrócić do `for` pętli. Po zakończeniu **kroku** debuger uruchamia resztę funkcji, a następnie automatycznie wstrzymuje się w kodzie wywołującym. Jest to bardzo przydatne w przypadku przechodzenia przez część długiej funkcji, która ma być debugowana, ale nie trzeba przechodzić przez resztę i nie chce ustawiać jawnego punktu przerwania w kodzie wywołującym.
+1. Kontynuuj korzystanie **z funkcji Step Into** do momentu, aż ponownie przejdą do kroku `make_dot_string` . Następnie użyj **funkcji Step Out** i zwróć uwagę, że wrócisz do `for` pętli. W **przypadku funkcji Step Out** debuger uruchamia pozostałą część funkcji, a następnie automatycznie wstrzymuje działanie w wywołującym kodzie. Jest to bardzo przydatne, gdy przechodzisz przez część długiej funkcji, którą chcesz debugować, ale nie musisz przechodzić przez resztę i nie chcesz ustawiać jawnego punktu przerwania w kodzie wywołującym.
 
-1. Aby kontynuować uruchamianie programu do momentu osiągnięcia następnego punktu przerwania, użyj przycisku **Kontynuuj** (**F5**). Ponieważ masz punkt przerwania w `for` pętli, możesz przerwać kolejną iterację.
+1. Aby kontynuować uruchamianie programu do momentu, gdy zostanie osiągnięty następny punkt przerwania, użyj **klawisza Kontynuuj** **(F5).** Ponieważ w pętli jest punkt `for` przerwania, należy przerwać następną iterację.
 
-1. Przechodzenie przez setki iteracji pętli może być żmudnym, dzięki czemu program Visual Studio umożliwia dodanie *warunku* do punktu przerwania. Następnie debuger wstrzymuje program w punkcie przerwania tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktem przerwania w instrukcji, `for` Aby wstrzymywać się tylko wtedy, gdy wartość `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy czerwoną kropkę punktu przerwania i wybierz pozycję **warunki** (**Alt** + **F9**  >  **C**). W wyświetlonym oknie podręcznym **Ustawienia punktu przerwania** wprowadź `i > 1600` jako wyrażenie, a następnie wybierz przycisk **Zamknij**. Naciśnij klawisz **F5** , aby kontynuować i obserwować, że program uruchamia wiele iteracji przed następnym podziałem.
+1. Wykonywanie krokowe setek iteracji pętli może być pracochłonne, Visual Studio więc można dodać *warunek* do punktu przerwania. Debuger następnie wstrzymuje program w punkcie przerwania tylko wtedy, gdy warunek jest spełniony. Na przykład można użyć warunku z punktem przerwania w instrukcji , aby wstrzymać ją tylko wtedy, gdy wartość `for` `i` przekracza 1600. Aby ustawić ten warunek, kliknij prawym przyciskiem myszy czerwoną kropkę punktu przerwania i wybierz **pozycję Warunki** **(Alt** + **F9**  >  **C).** W **wyświetlonym oknie** podręcznym Ustawienia punktu przerwania wprowadź jako wyrażenie i `i > 1600` wybierz pozycję **Zamknij.** Naciśnij **klawisz F5,** aby kontynuować i zauważ, że program uruchamia wiele iteracji przed następnym podziałem.
 
     ![Ustawianie warunku punktu przerwania](media/vs-getting-started-python-21-debugging4.png)
 
-1. Aby uruchomić program do ukończenia, wyłącz punkt przerwania, klikając prawym przyciskiem myszy kropkę w marginesie i wybierając pozycję **Wyłącz punkt przerwania** (**Ctrl** + **F9**). Następnie wybierz pozycję **Kontynuuj** (lub naciśnij klawisz **F5**), aby uruchomić program. Po zakończeniu działania programu Program Visual Studio zatrzymuje swoją sesję debugowania i powraca do trybu edycji. Należy zauważyć, że punkt przerwania można również usunąć, zaznaczając jego kropkę lub klikając kropkę prawym przyciskiem myszy i wybierając polecenie **Usuń punkt przerwania**, ale również usuwa wszystkie ustawione warunki.
+1. Aby uruchomić program do ukończenia, wyłącz punkt przerwania, klikając prawym przyciskiem myszy kropkę na marginesie i wybierając polecenie **Wyłącz** punkt przerwania **(Ctrl** + **F9).** Następnie wybierz **pozycję Kontynuuj** (lub naciśnij **klawisz F5),** aby uruchomić program. Po zakończeniu działania programu program Visual Studio sesję debugowania i wróci do trybu edycji. Należy pamiętać, że punkt przerwania można również usunąć, wybierając jego kropkę lub klikając prawym przyciskiem myszy kropkę i wybierając polecenie Usuń punkt przerwania **,** ale spowoduje to również usunięcie wszystkich ustawionych warunków.
 
 > [!Tip]
-> W niektórych sytuacjach, takich jak błąd uruchamiania interpretera języka Python, okno danych wyjściowych może być wyświetlane tylko krótko, a następnie zamykane automatycznie bez podawania żadnych komunikatów o błędach. Jeśli tak się stanie, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań**, wybierz polecenie **Właściwości**, wybierz kartę **debugowanie** , a następnie Dodaj `-i` do pola **argumenty interpretera** . Ten argument powoduje, że interpreter przechodzi w tryb interaktywny po zakończeniu działania programu, dzięki czemu okno zostanie otwarte do momentu wprowadzenia **klawisza Ctrl** + **z**  >  **Enter** , aby wyjść.
+> W niektórych sytuacjach, na przykład w przypadku awarii samego interpretera języka Python, okno danych wyjściowych może pojawić się tylko na krótko, a następnie automatycznie zamknąć bez możliwości zobaczenia komunikatów o błędach. W takim przypadku kliknij prawym przyciskiem myszy projekt w oknie Eksplorator rozwiązań pozycję **Właściwości,** wybierz kartę **Debugowanie,** a następnie dodaj do pola `-i` **Argumenty interpretera.** Ten argument powoduje, że interpreter przejść w tryb interaktywny po zakończeniu działania programu, dzięki czemu okno będzie otwarte do momentu wciśniętego **klawisza Ctrl** + **Z**  >  **Enter,** aby zakończyć działanie.
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Instalowanie pakietów w środowisku języka Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-## <a name="go-deeper"></a>Przejdź głębiej
+## <a name="go-deeper"></a>Głębiej
 
 - [Debugowanie](debugging-python-in-visual-studio.md)
-- [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md) zawiera pełną dokumentację funkcji debugowania programu Visual Studio.
+- [Debugowanie w Visual Studio](../debugger/debugger-feature-tour.md) zapewnia pełną dokumentację Visual Studio funkcji debugowania programu .

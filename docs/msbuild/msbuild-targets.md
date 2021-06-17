@@ -1,6 +1,6 @@
 ---
-title: Elementy docelowe programu MSBuild | Microsoft Docs
-description: Dowiedz się, w jaki sposób MSBuild używa elementów docelowych do grupowania zadań razem i zezwól na umieszczenie procesu kompilacji w mniejszych jednostkach.
+title: Obiekty docelowe programu MSBuild | Microsoft Docs
+description: Dowiedz się, jak program MSBuild używa obiektów docelowych do grupowania zadań i umożliwia uwzględnianie procesu kompilacji w mniejsze jednostki.
 ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
@@ -12,20 +12,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2958b45fc64383fde7d762d4c20887b3f58669d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294877e4884ae7b89f1e9d6f015c5c9213eba52d
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878399"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254826"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 
-Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają umieszczenie procesu kompilacji w mniejszych jednostkach. Na przykład jeden obiekt docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inna kompiluje dane wejściowe dla projektu i umieszcza je w pustym katalogu. Aby uzyskać więcej informacji o zadaniach, zobacz [zadania](../msbuild/msbuild-tasks.md).
+Zadania są grupowane w określonej kolejności i umożliwiają uwzględnianie procesu kompilacji w mniejszych jednostkach. Na przykład jeden obiekt docelowy może usunąć wszystkie pliki w katalogu wyjściowym w celu przygotowania do kompilacji, podczas gdy inny kompiluje dane wejściowe dla projektu i umieszcza je w pustym katalogu. Aby uzyskać więcej informacji na temat zadań, zobacz [Zadania](../msbuild/msbuild-tasks.md).
 
-## <a name="declare-targets-in-the-project-file"></a>Zadeklaruj cele w pliku projektu
+## <a name="declare-targets-in-the-project-file"></a>Deklarowanie obiektów docelowych w pliku projektu
 
- Elementy docelowe są zadeklarowane w pliku projektu z elementem [docelowym](../msbuild/target-element-msbuild.md) . Na przykład poniższy kod XML tworzy element docelowy o nazwie konstrukcja, który następnie wywołuje zadanie CSC z typem elementu kompilowania.
+ Elementy docelowe są deklarowane w pliku projektu z [elementem Target.](../msbuild/target-element-msbuild.md) Na przykład poniższy kod XML tworzy element docelowy o nazwie Construct, który następnie wywołuje zadanie Csc z typem elementu Compile.
 
 ```xml
 <Target Name="Construct">
@@ -33,7 +33,7 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Na przykład
+ Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować obiekty docelowe. Na przykład
 
 ```xml
 <Target Name="AfterBuild" >
@@ -44,33 +44,43 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Jeśli `AfterBuild` jest wykonywana, wyświetla tylko wartość "drugie wystąpienie", ponieważ druga definicja `AfterBuild` ukrywa pierwszy.
+Jeśli `AfterBuild` polecenie jest wykonywane, wyświetla tylko "Drugie wystąpienie", ponieważ druga definicja powoduje `AfterBuild` ukrycie pierwszego.
 
- MSBuild jest zależna od kolejności importu, a ostatnią definicją obiektu docelowego jest definicja użyta.
+Program MSBuild jest zależny od kolejności importu, a ostatnią definicją obiektu docelowego jest używana definicja. Próba ponownego zdefiniowania obiektu docelowego nie będzie obowiązywać, jeśli wbudowany element docelowy zostanie zdefiniowany później. W przypadku projektów, które korzystają z zestawu SDK, kolejność definicji nie musi być oczywista, ponieważ importy dla obiektów docelowych są niejawnie dodawane po zakończeniu pliku projektu.
+
+W związku z tym, aby rozszerzyć zachowanie istniejącego obiektu docelowego, utwórz nowy element docelowy i `BeforeTargets` określ (lub `AfterTargets` w razie potrzeby) w następujący sposób:
+
+```xml
+<Target Name="MessageBeforePublish" BeforeTargets="BeforePublish">
+  <Message Text="BeforePublish" Importance="high" />
+</Target>
+```
+
+Nadaj elementowi doceloweowi opisową nazwę, tak jak nazwę funkcji w kodzie.
 
 ## <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 
- Elementy docelowe muszą być uporządkowane, jeśli dane wejściowe do jednego obiektu docelowego są zależne od danych wyjściowych innego obiektu docelowego.
+ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe do jednego obiektu docelowego zależą od danych wyjściowych innego obiektu docelowego.
  
- Istnieje kilka sposobów, aby określić kolejność, w której są uruchamiane obiekty docelowe.
+ Istnieje kilka sposobów określania kolejności uruchamiania obiektów docelowych.
 
-- Początkowe elementy docelowe
+- Początkowe cele
 
-- Domyślne elementy docelowe
+- Domyślne obiekty docelowe
 
 - Pierwszy element docelowy
 
 - Zależności docelowe
 
-- `BeforeTargets` i `AfterTargets` (MSBuild 4,0)
+- `BeforeTargets` i `AfterTargets` (MSBuild 4.0)
 
-Element docelowy nigdy nie jest uruchamiany dwukrotnie podczas pojedynczej kompilacji, nawet jeśli kolejny element docelowy w kompilacji zależy od niej. Po uruchomieniu elementu docelowego jego udział w kompilacji jest zakończony.
+Obiekt docelowy nigdy nie jest uruchamiany dwukrotnie podczas jednej kompilacji, nawet jeśli zależy od niego kolejny element docelowy w kompilacji. Po zakończeniu działania obiektu docelowego jego udział w kompilacji jest ukończony.
 
-Aby uzyskać szczegółowe informacje i uzyskać więcej informacji na temat docelowej kolejności kompilacji, zobacz [Target Order Build](../msbuild/target-build-order.md).
+Aby uzyskać szczegółowe informacje i więcej informacji o kolejności kompilacji docelowej, zobacz [Target build order (Docelowa kolejność kompilacji).](../msbuild/target-build-order.md)
 
-## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
+## <a name="target-batching"></a>Docelowe przetwarzanie wsadowe
 
-Element docelowy może mieć `Outputs` atrybut, który określa metadane w postaci%( \<Metadata> ). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Na przykład
+Element docelowy może mieć atrybut `Outputs` określający metadane w postaci %( \<Metadata> ). Jeśli tak, program MSBuild uruchamia element docelowy jeden raz dla każdej unikatowej wartości metadanych, grupując lub "grupując" elementy, które mają te wartości metadanych. Na przykład
 
 ```xml
 <ItemGroup>
@@ -91,24 +101,24 @@ Element docelowy może mieć `Outputs` atrybut, który określa metadane w posta
 </Target>
 ```
 
- przetwarza elementy odniesienia według ich metadanych RequiredTargetFramework. Wynik elementu docelowego wygląda następująco:
+ grupuje elementy odwołania według ich metadanych RequiredTargetFramework. Dane wyjściowe obiektu docelowego wyglądają następująco:
 
 ```
 Reference: 3.5;3.5
 Reference: 4.0
 ```
 
- Przetwarzanie wsadowe docelowe jest rzadko używane w rzeczywistych kompilacjach. Tworzenie wsadowe zadań jest bardziej popularne. Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
+ Docelowe przetwarzanie wsadowe jest rzadko używane w rzeczywistych kompilacjach. Przetwarzanie wsadowe zadań jest częściej spotykane. Aby uzyskać więcej informacji, zobacz [Batching (Przetwarzanie wsadowe).](../msbuild/msbuild-batching.md)
 
 ## <a name="incremental-builds"></a>Kompilacje przyrostowe
 
- Kompilacje przyrostowe to kompilacje, które są zoptymalizowane tak, aby obiekty docelowe z plikami wyjściowymi, które są aktualne w odniesieniu do odpowiadających im plików wejściowych, nie są wykonywane. Element docelowy może mieć zarówno `Inputs` `Outputs` atrybuty, jak i, wskazujące elementy, które element docelowy oczekuje jako dane wejściowe i jakie elementy są generowane jako dane wyjściowe.
+ Kompilacje przyrostowe to kompilacje zoptymalizowane tak, aby obiekty docelowe z plikami wyjściowych, które są aktualne w odniesieniu do odpowiadających im plików wejściowych, nie były wykonywane. Element docelowy może mieć atrybuty i wskazujące elementy, których obiekt docelowy oczekuje jako dane wejściowe, oraz elementy, które generuje `Inputs` `Outputs` jako dane wyjściowe.
 
- Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy, co znacznie zwiększa szybkość kompilacji. Jest to nazywane kompilacją przyrostową docelowej. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy bez aktualnych elementów. Ta nazwa jest nazywana częściową kompilacją przyrostową obiektu docelowego. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
+ Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy, co znacznie zwiększa szybkość kompilacji. Jest to nazywane przyrostową kompilacją obiektu docelowego. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy bez aktualnych elementów. Jest to nazywane częściową kompilacją przyrostową obiektu docelowego. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
 
-## <a name="default-build-targets"></a>Domyślne cele kompilacji
+## <a name="default-build-targets"></a>Domyślne obiekty docelowe kompilacji
 
-Poniżej wymieniono publiczne obiekty docelowe w Microsoft. Common. CurrentVersion. targets.
+Poniżej przedstawiono listę publicznych obiektów docelowych w Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================
@@ -123,14 +133,12 @@ The main build entry point.
 
 ===================================================
 BeforeBuild
-Redefine this target in your project in order to run tasks just before Build
 ===================================================
 <Target Name="BeforeBuild"/>
 
 
 ===================================================
 AfterBuild
-Redefine this target in your project in order to run tasks just after Build
 ===================================================
 <Target Name="AfterBuild"/>
 
@@ -155,21 +163,18 @@ Delete all intermediate and final build outputs, and then build the project from
 
 ===================================================
 BeforeRebuild
-Redefine this target in your project in order to run tasks just before Rebuild
 ===================================================
 <Target Name="BeforeRebuild"/>
 
 
 ===================================================
 AfterRebuild
-Redefine this target in your project in order to run tasks just after Rebuild
 ===================================================
 <Target Name="AfterRebuild"/>
 
 
 ===================================================
 BuildGenerateSources
-Redefine this target in your project in order to run tasks for BuildGenerateSources
 Set BuildPassReferences to enable P2P builds
 ===================================================
 <Target Name="BuildGenerateSources"
@@ -178,7 +183,6 @@ Set BuildPassReferences to enable P2P builds
 
 ===================================================
 BuildCompile
-Redefine this target in your project in order to run tasks for BuildCompile
 ===================================================
 <Target Name="BuildCompile"
         DependsOnTargets="BuildCompileTraverse;$(BuildCompileAction)" />
@@ -186,7 +190,6 @@ Redefine this target in your project in order to run tasks for BuildCompile
 
 ===================================================
 BuildLink
-Redefine this target in your project in order to run tasks for BuildLink
 ===================================================
 <Target Name="BuildLink"
         DependsOnTargets="BuildLinkTraverse;$(BuildLinkAction)" />
@@ -302,14 +305,12 @@ ResolveReferences
 
 ===================================================
 BeforeResolveReferences
-Redefine this target in your project in order to run tasks just before ResolveReferences
 ===================================================
 <Target Name="BeforeResolveReferences"/>
 
 
 ===================================================
 AfterResolveReferences
-Redefine this target in your project in order to run tasks just after ResolveReferences
 ===================================================
 <Target Name="AfterResolveReferences"/>
 
@@ -570,14 +571,12 @@ Run GenerateResource on the given resx files.
 
 ===================================================
 BeforeResGen
-Redefine this target in your project in order to run tasks just before Resgen.
 ===================================================
 <Target Name="BeforeResGen"/>
 
 
 ===================================================
 AfterResGen
-Redefine this target in your project in order to run tasks just after Resgen.
 ===================================================
 <Target Name="AfterResGen"/>
 
@@ -624,14 +623,12 @@ Emit any specified code fragments into a temporary source file for the compiler.
 
 ===================================================
 BeforeCompile
-Redefine this target in your project in order to run tasks just before Compile.
 ===================================================
 <Target Name="BeforeCompile"/>
 
 
 ===================================================
 AfterCompile
-Redefine this target in your project in order to run tasks just after Compile.
 ===================================================
 <Target Name="AfterCompile"/>
 
@@ -802,14 +799,12 @@ Delete all intermediate and final build outputs.
 
 ===================================================
 BeforeClean
-Redefine this target in your project in order to run tasks just before Clean.
 ===================================================
 <Target Name="BeforeClean"/>
 
 
 ===================================================
 AfterClean
-Redefine this target in your project in order to run tasks just after Clean.
 ===================================================
 <Target Name="AfterClean"/>
 
@@ -875,14 +870,12 @@ by the BuildManager.
 
 ===================================================
 BeforePublish
-Redefine this target in your project in order to run tasks just before Publish.
 ===================================================
 <Target Name="BeforePublish"/>
 
 
 ===================================================
 AfterPublish
-Redefine this target in your project in order to run tasks just after Publish.
 ===================================================
 <Target Name="AfterPublish"/>
 
@@ -1017,4 +1010,4 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 ## <a name="see-also"></a>Zobacz też
 
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Jak użyć tego samego obiektu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
