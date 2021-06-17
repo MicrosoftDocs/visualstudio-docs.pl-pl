@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numerów kompilacji dla Visual Studio posor
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 06/08/2021
+ms.date: 06/15/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 3006e92289a425c327241384e88fb69c567a7a5e
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 1866fa7e0dfdb3a51104a64dfecd1001e646d7e1
+ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111761124"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112126596"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.11.0 | Preview 2 | 15 czerwca 2021 r. | 16.11.31410.223 |
+| 16.10.2 | Release | 15 czerwca 2021 r. | 16.10.31410.357 |
+| 16.9.8 | Release | 15 czerwca 2021 r. | 16.9.31409.214 |
 | 16.10.1 | Release | 8 czerwca 2021 r. | 16.10.31402.337 |
 | 16.9.7 | Release | 8 czerwca 2021 r. | 16.9.31328.270 |
 | 16.7.16 | Release | 8 czerwca 2021 r. | 16.7.31327.30 |
@@ -417,7 +420,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 | 15.0.0 | Release | 7 marca 2017 r. | 15.0.26228.4 |
 
 > [!NOTE]
-> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania następnej wersji programu Visual Studio, zobacz stronę Visual Studio 2019 build numbers and release dates (Numery kompilacji i daty wydania programu [Visual Studio 2019).](?preserve-view=true&view=vs-2019)
+> Aby uzyskać więcej informacji o numerach kompilacji i datach wydania następnej wersji programu Visual Studio, zobacz stronę Visual Studio 2019 build numbers and release dates (Numery kompilacji i daty wydania) Visual Studio [2019.](?preserve-view=true&view=vs-2019)
 
 ::: moniker-end
 

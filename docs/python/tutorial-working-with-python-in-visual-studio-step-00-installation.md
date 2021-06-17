@@ -1,41 +1,41 @@
 ---
-title: Samouczek Python w programie Visual Studio — krok 0, instalacja
+title: Python w Visual Studio samouczku, krok 0, instalacja
 titleSuffix: ''
-description: Krok 0 (wymagania wstępne instalacji) podstawowego przewodnika prac z językiem Python w programie Visual Studio.
+description: Krok 0 (wymagania wstępne instalacji) podstawowego przewodnika pracy z językiem Python w programie Visual Studio.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: seodec18
+ms.custom: acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c0b50a74566edfb00cba7efae68a3626ec8ec6d
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970546"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112849"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalowanie obsługi języka Python w programie Visual Studio
 
 > [!Note]
-> Obsługa języka Python jest obecnie dostępna tylko w programie Visual Studio dla systemu Windows; w systemach Mac i Linux obsługa języka Python jest dostępna za pomocą [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> Obsługa języka Python jest obecnie dostępna tylko w Visual Studio dla systemu Windows. w systemach Mac i Linux obsługa języka Python jest dostępna za [pośrednictwem Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Pobierz i uruchom najnowszy Instalator programu Visual Studio dla systemu Windows (obsługa języka Python jest obecna w wersji 15,2 i nowszych). Jeśli masz już zainstalowany program Visual Studio, uruchom Instalatora programu Visual Studio i przejdź do kroku 2.
+1. Pobierz i uruchom najnowszą wersję Visual Studio systemu Windows (obsługa języka Python jest obecna w wersji 15.2 i nowszych). Jeśli zainstalowano Visual Studio, uruchom instalatora Visual Studio i przejdź do kroku 2.
 
     > [!div class="nextstepaction"]
-    > [Zainstaluj program Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Instalowanie Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Wersja Community jest przeznaczony dla indywidualnych deweloperów, uczenia klasowego, badań akademickich i opracowywania rozwiązań open source. Aby uzyskać inne zastosowania, zainstaluj [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) lub [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Wersja Community jest dla poszczególnych deweloperów, uczenia na potrzeby zajęć, badań akademickich i open source rozwoju. W przypadku innych zastosowań zainstaluj [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) lub [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
-1. Instalator przedstawia listę obciążeń, które są grupami powiązanych opcji dla określonych obszarów deweloperskich. W przypadku języka Python wybierz obciążenie programowanie w języku **Python** i wybierz pozycję **Zainstaluj**:
+1. Instalator przedstawia listę obciążeń, które są grupami powiązanych opcji dla określonych obszarów programisticznych. W przypadku języka Python wybierz obciążenie Programowanie **w języku Python,** a następnie wybierz pozycję **Zainstaluj:**
 
-    ![Obciążenie programowanie w języku Python w Instalatorze programu Visual Studio](media/installation-python-workload.png)
+    ![Obciążenie programowania w języku Python w Visual Studio instalatora](media/installation-python-workload.png)
 
-1. Aby szybko przetestować obsługę języka Python, uruchom program Visual Studio, naciśnij klawisz **Alt** + **i** , aby otworzyć okno **interaktywne Python** , a następnie wprowadź `2+2` . Jeśli nie widzisz danych wyjściowych **4**, sprawdź ponownie kroki.
+1. Aby szybko przetestować obsługę języka Python, uruchom Visual Studio, naciśnij klawisz **Alt** + **I,** aby otworzyć okno **interaktywne języka Python,** a następnie wprowadź `2+2` . Jeśli nie widzisz danych wyjściowych **4,** sprawdź ponownie kroki.
 
     ![Testowanie języka Python za pomocą okna interaktywnego](media/installation-interactive-test.png)
 
@@ -46,6 +46,6 @@ ms.locfileid: "99970546"
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Ręcznie Zidentyfikuj istniejący interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersjach](installing-python-support-in-visual-studio.md)
+- [Ręczne identyfikowanie istniejącego interpretera języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w wersji Visual Studio 2015 i starszych](installing-python-support-in-visual-studio.md)
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)

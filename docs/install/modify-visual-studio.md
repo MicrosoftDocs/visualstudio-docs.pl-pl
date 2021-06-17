@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Dowiedz się, jak Visual Studio instrukcje krok po kroku.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 3f4040023dd023db351571482ac2a17c18b46e06
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501775"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112931"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Modyfikowanie Visual Studio, składników i pakietów językowych
 
@@ -41,7 +41,7 @@ Nie tylko ułatwiliśmy personalizowanie Visual Studio do zadań, które chcesz 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-+ Aby zainstalować, zaktualizować lub zmodyfikować Visual Studio, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [Uprawnienia użytkownika i Visual Studio](../ide/user-permissions-and-visual-studio.md).
++ Aby zainstalować, zaktualizować lub zmodyfikować Visual Studio, musisz zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [Uprawnienia użytkownika i Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
 + W poniższych procedurach przyjęto założenie, że masz połączenie z Internetem. Aby uzyskać więcej informacji na temat modyfikowania wcześniej utworzonej instalacji w trybie [offline](create-an-offline-installation-of-visual-studio.md) programu Visual Studio, zobacz stronę Aktualizowanie instalacji sieciowej programu [Visual Studio](update-a-network-installation-of-visual-studio.md) i Stronę Kontrolowanie aktualizacji sieciowych wdrożeń Visual Studio [sieciowych.](controlling-updates-to-visual-studio-deployments.md)
 
@@ -53,7 +53,7 @@ Aby wprowadzić zmiany w instalacji, należy uruchomić instalatora Visual Studi
 
 1. Znajdź Instalator programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 start wybierz pozycję **,** a następnie przewiń do litery **V,** gdzie jest ona wymieniona jako **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 start **wybierz** pozycję , a następnie przewiń do litery **V,** gdzie jest ona wymieniona jako **Instalator programu Visual Studio**.
 
      ![Instalator programu Visual Studio](media/locate-the-visual-studio-installer.png "Lokalizowanie Microsoft Visual Studio instalatora")
 
@@ -101,17 +101,17 @@ Aby wprowadzić zmiany w instalacji, należy uruchomić instalatora Visual Studi
 
 ::: moniker range="vs-2017"
 
- [Obciążenia zawierają](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) funkcje potrzebne dla języka programowania lub platformy, której używasz. Użyj obciążeń, aby zmodyfikować Visual Studio tak, aby obsługiły pracę, którą chcesz wykonać, gdy chcesz to zrobić.
+ [Obciążenia zawierają](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) funkcje potrzebne dla języka programowania lub platformy, której używasz. Za pomocą obciążeń zmodyfikuj Visual Studio tak, aby obsługiły pracę, którą chcesz wykonać, gdy chcesz to zrobić.
 
 1. W Instalator programu Visual Studio wybierz **kartę Obciążenia,** a następnie wybierz lub usuń zaznaczenie wybranych obciążeń.
 
    Jeśli nie chcesz używać obciążeń do dostosowywania instalacji programu Visual Studio, wybierz  kartę Poszczególne składniki i wybierz odpowiednie składniki, a następnie postępuj zgodnie z monitami.
 
-    ![Visual Studio instalacji programu Visual Studio 2017](media/modify-workloads.png "Wybieranie obciążenia w Visual Studio 2019 r.")
+    ![Visual Studio instalacji programu Visual Studio 2017](media/modify-workloads.png "Wybierz obciążenie w programie Visual Studio 2019 r.")
 
-1. Wybierz, czy chcesz zaakceptować domyślną opcję Zainstaluj podczas **pobierania,** czy opcję **Pobierz wszystko,** a następnie opcję instalacji.
+1. Wybierz, czy chcesz zaakceptować domyślną opcję **Zainstaluj podczas pobierania,** czy opcję **Pobierz wszystko,** a następnie opcję instalacji.
 
-    ![Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Wybierz instalację podczas pobierania lub pobierz najpierw i zainstaluj później")
+    ![Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Wybierz opcję instalacji podczas pobierania lub pobrania i zainstalowania później")
 
     Opcja "Pobierz wszystko, a następnie zainstaluj" jest przydatna, jeśli chcesz pobrać najpierw, a następnie zainstalować później.
 
@@ -133,11 +133,11 @@ Aby wprowadzić zmiany w instalacji, należy uruchomić instalatora Visual Studi
 
 1. W Instalator programu Visual Studio wybierz **kartę Obciążenia,** a następnie wybierz lub usuń zaznaczenie wybranych obciążeń.
 
-    ![Visual Studio instalacji programu Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Wybieranie obciążenia w Visual Studio 2019 r.")
+    ![Visual Studio instalacji programu Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Wybierz obciążenie w programie Visual Studio 2019 r.")
 
 1. Wybierz, czy chcesz zaakceptować domyślną opcję **Zainstaluj podczas pobierania,** czy opcję **Pobierz wszystko,** a następnie opcję instalacji.
 
-    ![Visual Studio 2019 r.](media/vs-2019/vs-installer-choose-install-or-download.png "Wybierz instalację podczas pobierania lub pobierz najpierw i zainstaluj później")
+    ![Visual Studio 2019 r.](media/vs-2019/vs-installer-choose-install-or-download.png "Wybierz opcję instalacji podczas pobierania lub pobrania i zainstalowania później")
 
     Opcja "Pobierz wszystko, a następnie zainstaluj" jest przydatna, jeśli chcesz pobrać najpierw, a następnie zainstalować później.
 

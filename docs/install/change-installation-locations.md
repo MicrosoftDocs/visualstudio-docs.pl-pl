@@ -1,106 +1,106 @@
 ---
 title: Wybieranie lokalizacji instalacji
-description: Dowiedz się, jak zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym, zmieniając lokalizację pamięci podręcznej pobierania, współużytkowane składniki, zestawy SDK i narzędzia na różne dyski. Na przykład Przenieś niektóre pliki z dysku C na dysk D.
+description: Dowiedz się, jak zmniejszyć zużycie pamięci Visual Studio na dysku systemowym, zmieniając lokalizację pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i narzędzi na różne dyski. Na przykład przenieś niektóre pliki z dysku C na dysk D.
 ms.date: 03/30/2019
-ms.custom: seodec18
+ms.custom: acquisition
 ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e9ee5972a0f1acba37a6b6b417df00a925e5558
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868637"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112490"
 ---
-# <a name="select-the-installation-locations-in-visual-studio"></a>Wybierz lokalizacje instalacji w programie Visual Studio
+# <a name="select-the-installation-locations-in-visual-studio"></a>Wybierz lokalizacje instalacji w Visual Studio
 
 ::: moniker range="vs-2019"
 
-Możesz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym, zmieniając lokalizację niektórych plików. W odniesieniu do plików pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i narzędzi można użyć innej lokalizacji.
+Możesz zmniejszyć rozmiar instalacji Visual Studio dysku systemowego, zmieniając lokalizację niektórych plików. W szczególności można użyć innej lokalizacji dla pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i plików narzędzi.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-**Nowość w wersji 15,7**: można zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym, zmieniając lokalizację niektórych plików. W odniesieniu do plików pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i narzędzi można użyć innej lokalizacji.
+**Nowość w wersji 15.7:** możesz zmniejszyć rozmiar instalacji Visual Studio dysku systemowego, zmieniając lokalizację niektórych jego plików. W szczególności można użyć innej lokalizacji dla pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i plików narzędzi.
 
 ::: moniker-end
 
    > [!NOTE]
-   > Istnieją pewne narzędzia i zestawy SDK, które mają różne reguły, w których można je zainstalować. Takie narzędzia i zestawy SDK są instalowane na dysku systemowym nawet w przypadku wybrania innej lokalizacji.
+   > Istnieją pewne narzędzia i zestawy SDK, które mają różne reguły dotyczące miejsca, w którym można je zainstalować. Takie narzędzia i zestawy SDK są instalowane na dysku systemowym, nawet jeśli wybierzesz inną lokalizację.
 
 Możemy zaczynać? Oto jak to zrobić.
 
 ::: moniker range="vs-2017"
 
-1. Po zainstalowaniu programu Visual Studio wybierz kartę **lokalizacje instalacji** .
+1. Podczas instalowania Visual Studio wybierz **kartę Lokalizacje** instalacji.
 
-   ![Visual Studio 2017 — wybierz lokalizację instalacji](media/vs-installation-locations.png "Wybierz lokalizację instalacji.")
+   ![Visual Studio 2017 — wybieranie lokalizacji instalacji](media/vs-installation-locations.png "Wybierz lokalizację instalacji.")
 
-1. W sekcji **IDE programu Visual Studio** Zaakceptuj wartość domyślną. Program Visual Studio instaluje produkt podstawowy i zawiera pliki, które są specyficzne dla tej wersji programu Visual Studio.
+1. W sekcji **Visual Studio IDE** zaakceptuj wartość domyślną. Visual Studio produkt podstawowy i zawiera pliki specyficzne dla tej wersji programu Visual Studio.
 
-   ![Sekcja środowiska IDE programu Visual Studio na karcie lokalizacje instalacji](media/vs-installation-locations-ide.png "Zaakceptuj wartość domyślną w sekcji środowisko IDE programu Visual Studio na karcie Lokalizacja instalacji.")
+   ![Visual Studio IDE karty Lokalizacje instalacji](media/vs-installation-locations-ide.png "Zaakceptuj wartość domyślną dla Visual Studio IDE karty Lokalizacja instalacji.")
 
    > [!TIP]
-   > Jeśli dysk systemowy jest dyskiem SSD, zalecamy zaakceptowanie domyślnej lokalizacji na dysku systemowym. Powód? Podczas opracowywania w programie Visual Studio można czytać i zapisywać wiele plików, co zwiększa aktywność operacji we/wy dysku. Najlepiej wybrać najszybszy dysk do obsługi obciążenia.
+   > Jeśli dysk systemowy jest dyskiem półprzewodnikowym (SSD), zalecamy zaakceptowanie domyślnej lokalizacji na dysku systemowym. Przyczyna? Podczas tworzenia aplikacji przy Visual Studio odczytuj i zapisuj do wielu plików, co zwiększa aktywność we/wy dysku. Najlepiej wybrać najszybszy dysk do obsługi obciążenia.
 
-1. W sekcji **pobieranie pamięci podręcznej pobierania** Zdecyduj, czy chcesz zachować pamięć podręczną pobierania, a następnie zdecyduj, gdzie mają być przechowywane pliki.
+1. W sekcji **Pobieranie pamięci podręcznej** zdecyduj, czy chcesz zachować pamięć podręczną pobierania, a następnie zdecyduj, gdzie chcesz przechowywać jej pliki.
 
-     ![Sekcja pamięci podręcznej pobierania na karcie lokalizacje instalacji](media/vs-installation-locations-cache.png "Wybierz, czy chcesz zachować pamięć podręczną pobierania po zakończeniu instalacji, a następnie określ dysk, na którym mają być przechowywane pliki.")
+     ![Sekcja Pobieranie pamięci podręcznej na karcie Lokalizacje instalacji](media/vs-installation-locations-cache.png "Wybierz, czy zachować pamięć podręczną pobierania po zakończeniu instalacji, a następnie określ dysk, na którym chcesz przechowywać pliki.")
 
-    1. Zaznacz lub usuń zaznaczenie pola **Zachowaj pamięć podręczną pobierania po zakończeniu instalacji**.
+    1. Zaznacz lub usuń zaznaczenie **pola wyboru Zachowaj pamięć podręczną pobierania po zakończeniu instalacji.**
 
-       Jeśli użytkownik zdecyduje się nie utrzymywać pamięci podręcznej pobierania, lokalizacja jest używana tylko tymczasowo. Ta akcja nie wpływa ani nie usunie plików z poprzednich instalacji.
+       Jeśli zdecydujesz się nie przechowywać pamięci podręcznej pobierania, lokalizacja będzie używana tylko tymczasowo. Ta akcja nie wpływa na pliki z poprzednich instalacji ani ich nie usuwa.
 
     1. Określ dysk, na którym mają być przechowywane pliki instalacyjne i manifesty z pamięci podręcznej pobierania.
 
-        Na przykład w przypadku wybrania obciążenia "Programowanie aplikacji klasycznych w języku C++" czas wymagany tymczasowo wynosi 1,58 GB na dysku systemowym, który zostanie zwolniony zaraz po zakończeniu instalacji.
+        Jeśli na przykład wybierzesz obciążenie "Tworzenie aplikacji klasycznych w języku C++", tymczasowo wymagany rozmiar to 1,58 GB na dysku systemowym, który jest następnie bezpłatny po zakończeniu instalacji.
 
        > [!IMPORTANT]
-       > Ta lokalizacja jest ustawiana przy pierwszej instalacji i nie można jej później zmienić za pomocą interfejsu użytkownika Instalatora. Zamiast tego należy [użyć parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md) , aby przenieść pamięć podręczną pobierania.
+       > Ta lokalizacja jest ustawiana przy pierwszej instalacji i nie można jej później zmienić z interfejsu użytkownika instalatora. Zamiast tego należy użyć [parametrów wiersza polecenia, aby](use-command-line-parameters-to-install-visual-studio.md) przenieść pamięć podręczną pobierania.
 
-1. W sekcji **udostępnione składniki, narzędzia i zestawy SDK** Określ dysk, na którym mają być przechowywane pliki współużytkowane przez instalacje programu Visual Studio obok siebie. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
+1. W sekcji **Udostępnione składniki, narzędzia** i zestawy SDK określ dysk, na którym mają być przechowywane pliki udostępniane obok siebie w Visual Studio instalacji. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
 
-   ![Sekcja składniki udostępnione, narzędzia i zestawy SDK na karcie lokalizacje instalacji](media/vs-installation-locations-shared.png "Określ lokalizację, w której mają być przechowywane udostępnione składniki, narzędzia i zestawy SDK.")
+   ![Sekcja Udostępnione składniki, narzędzia i zestawy SDK na karcie Lokalizacje instalacji](media/vs-installation-locations-shared.png "Określ lokalizację, w której mają być przechowywane udostępnione składniki, narzędzia i zestawy SDK.")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Po zainstalowaniu programu Visual Studio wybierz kartę **lokalizacje instalacji** .
+1. Podczas instalowania Visual Studio wybierz **kartę Lokalizacje** instalacji.
 
-   ![Visual Studio 2019 — wybierz lokalizację instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji.")
+   ![Visual Studio 2019 r. — wybierz lokalizację instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji.")
 
-1. W sekcji **IDE programu Visual Studio** Zaakceptuj wartość domyślną. Program Visual Studio instaluje produkt podstawowy i zawiera pliki, które są specyficzne dla tej wersji programu Visual Studio.
+1. W sekcji **Visual Studio IDE** zaakceptuj wartość domyślną. Visual Studio produkt podstawowy i zawiera pliki specyficzne dla tej wersji programu Visual Studio.
 
    > [!TIP]
-   > Jeśli dysk systemowy jest dyskiem SSD, zalecamy zaakceptowanie domyślnej lokalizacji na dysku systemowym. Powód? Podczas opracowywania w programie Visual Studio można czytać i zapisywać wiele plików, co zwiększa aktywność operacji we/wy dysku. Najlepiej wybrać najszybszy dysk do obsługi obciążenia.
+   > Jeśli dysk systemowy jest dyskiem półprzewodnikowym (SSD), zalecamy zaakceptowanie domyślnej lokalizacji na dysku systemowym. Przyczyna? Podczas tworzenia aplikacji przy Visual Studio odczytuj i zapisuj do wielu plików, co zwiększa aktywność we/wy dysku. Najlepiej wybrać najszybszy dysk do obsługi obciążenia.
 
-1. W sekcji **pobieranie pamięci podręcznej pobierania** Zdecyduj, czy chcesz zachować pamięć podręczną pobierania, a następnie zdecyduj, gdzie mają być przechowywane pliki.
+1. W sekcji **Pobieranie pamięci podręcznej** zdecyduj, czy chcesz zachować pamięć podręczną pobierania, a następnie zdecyduj, gdzie chcesz przechowywać jej pliki.
 
-    * Zaznacz lub usuń zaznaczenie pola **Zachowaj pamięć podręczną pobierania po zakończeniu instalacji**.
+    * Zaznacz lub usuń zaznaczenie **pola wyboru Zachowaj pamięć podręczną pobierania po zakończeniu instalacji.**
 
-       Jeśli użytkownik zdecyduje się nie utrzymywać pamięci podręcznej pobierania, lokalizacja jest używana tylko tymczasowo. Ta akcja nie wpływa ani nie usunie plików z poprzednich instalacji.
+       Jeśli zdecydujesz się nie przechowywać pamięci podręcznej pobierania, lokalizacja będzie używana tylko tymczasowo. Ta akcja nie wpływa na pliki z poprzednich instalacji ani ich nie usuwa.
 
     * Określ dysk, na którym mają być przechowywane pliki instalacyjne i manifesty z pamięci podręcznej pobierania.
 
-        Na przykład w przypadku wybrania obciążenia "Programowanie aplikacji klasycznych w języku C++" czas wymagany tymczasowo wynosi 1,58 GB na dysku systemowym, który zostanie zwolniony zaraz po zakończeniu instalacji.
+        Jeśli na przykład wybierzesz obciążenie "Tworzenie aplikacji klasycznych w języku C++", tymczasowo wymagany rozmiar to 1,58 GB na dysku systemowym, który jest następnie bezpłatny po zakończeniu instalacji.
 
        > [!IMPORTANT]
-       > Ta lokalizacja jest ustawiana przy pierwszej instalacji i nie można jej później zmienić za pomocą interfejsu użytkownika Instalatora. Zamiast tego należy [użyć parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md) , aby przenieść pamięć podręczną pobierania.
+       > Ta lokalizacja jest ustawiana przy pierwszej instalacji i nie można jej później zmienić z interfejsu użytkownika instalatora. Zamiast tego należy użyć [parametrów wiersza polecenia, aby](use-command-line-parameters-to-install-visual-studio.md) przenieść pamięć podręczną pobierania.
 
-1. W sekcji **współużytkowane składniki, narzędzia i zestawy SDK** należy pamiętać, że program używa tego samego dysku, który został wybrany w sekcji "pamięć podręczna pobierania". Katalog \Microsoft\VisualStudio\Shared to miejsce, w którym program Visual Studio przechowuje pliki, które są współużytkowane przez instalacje programu Visual Studio obok siebie. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
+1. W sekcji **Udostępnione składniki, narzędzia** i zestawy SDK zwróć uwagę, że używa ona tego samego dysku, który został wybrany w sekcji "Pobieranie pamięci podręcznej". Katalog \Microsoft\VisualStudio\Shared Visual Studio pliki, które są współużytkowanie współużytkowany przez współużytkowanie obok siebie Visual Studio instalacji. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
 
 ::: moniker-end
 
