@@ -2,19 +2,19 @@
 title: Środowisko usługi Git w Visual Studio 2019 r.
 titleSuffix: ''
 description: Dowiedz się, jak nowe zintegrowane środowisko usługi Git w Visual Studio 2019 r. może pomóc w produktywności.
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7e8f428ea82fb36abf944b06c22e73f1b9ca9fb6
-ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112126566"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365459"
 ---
 # <a name="git-experience-in-visual-studio"></a>Środowisko git w usłudze Visual Studio
 
@@ -176,7 +176,7 @@ Zamiast tego Visual Studio w górnej części strony zostanie wyświetlony złot
 
 ### <a name="the-merge-editor"></a>Edytor scalania
 
-Edytor scalania w Visual Studio to trzykierunkowe narzędzie scalania, które wyświetla przychodzące zmiany, bieżące zmiany i wynik scalania. Możesz użyć paska narzędzi na najwyższym  poziomie edytora scalania, aby przechodzić między konfliktami i różnicami w pliku automatycznie scalanych.
+Edytor scalania w Visual Studio to trzykierunkowe narzędzie scalania, które wyświetla przychodzące zmiany, bieżące zmiany i wynik scalania. Paska narzędzi na najwyższym poziomie edytora  scalania można użyć do nawigowania między konfliktami i różnicami w pliku automatycznie scalanych.
 
 :::image type="content" source="media/git-merge-editor.png" alt-text="Edytor scalania w Visual Studio ":::
 
@@ -188,11 +188,15 @@ Aby spersonalizować i dostosować ustawienia usługi Git na poziomie repozytori
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Opcje okno dialogowe, w którym można wybrać ustawienia personalizacji i dostosowywania w Visual Studio IDE ":::
 
+::: moniker range="vs-2019"
+
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Jak korzystać z pełnego Team Explorer na Visual Studio
 
 Nowe środowisko Git to domyślny system kontroli wersji w wersji Visual Studio 2019 od [wersji 16.8.](/visualstudio/releases/2019/release-notes/) Jeśli jednak chcesz ją wyłączyć, możesz to zrobić. Przejdź do **strony Narzędzia** Opcje środowiska w wersji zapoznawczej, a następnie przełącz pole wyboru Nowe środowisko użytkownika usługi Git, co spowoduje powrót do  >    >    >   Team Explorer dla usługi Git. 
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sekcja Funkcje w wersji zapoznawczej okna dialogowego Opcje w Visual Studio ":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>Co dalej
 
@@ -204,10 +208,10 @@ Nowe środowisko Git jest teraz domyślnie włączone w wersji Visual Studio 201
 ## <a name="see-also"></a>Zobacz też
 
 - [Rozpocznij z narzędziami Git i serwisem GitHub w Visual Studio](/learn/modules/visual-studio-github-push/) samouczku Microsoft Learn
-- [Wprowadzenie do usługi Git w Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) wideo w serwisie YouTube
+- [Wprowadzenie do usługi Git w usłudze Visual Studio](https://www.youtube.com/watch?v=GCZ9x3yqkyc) wideo w serwisie YouTube
 - [Announcing the Release of the Git Experience in Visual Studio](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) blog post
 - [Wprowadzenie nowego wideo na temat usługi Git w](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) serwisie YouTube
-- [Seria Visual Studio Przybornik przedstawia: nowe](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) wideo dotyczące usługi Git w witrynie Channel 9 i w [serwisie YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
+- [Seria Visual Studio Przybornik przedstawia: nowe](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) wideo dotyczące usługi Git w witrynie Channel 9 i [serwisie YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Atrakcyjne nowe aktualizacje funkcji Git w Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) wpis w blogu
 - [Ulepszone środowisko git w Visual Studio 2019 r.](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
 - [Praca z kontami usługi GitHub w programie Visual Studio](../ide/work-with-github-accounts.md)

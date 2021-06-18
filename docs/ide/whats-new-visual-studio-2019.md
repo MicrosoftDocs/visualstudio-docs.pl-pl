@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f571860d08d16d85e53148bc1023cb08a1c36d2
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: d34c3a3b4d808b1f4e24051763f1c0876a175a3a
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307781"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365472"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -232,7 +232,7 @@ Obecnie trwają prace nad tym, co jest obecnie dostępne:
 
 - **Pierwsza publiczna wersja programu Visual Studio 2022 (wersja zapoznawcza) jest teraz dostępna**
 
-    Dostępna jest publiczna wersja zapoznawcza następnej wersji Visual Studio [2022](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)r. Nowa wersja jest szybsza, bardziej zbliżona i lżejsza. A po raz pierwszy w Visual Studio jest 64-bitowy. Aby uzyskać link pobierania i więcej informacji, zobacz wpis w **[blogu Download Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/?p=232975&preview=true)** (Pobieranie w wersji zapoznawczej 1).
+    Dostępna jest publiczna wersja zapoznawcza następnej wersji Visual Studio [2022](/visualstudio/releases/2022/release-notes-preview/)r. Nowa wersja jest szybsza, bardziej zbliżona i lżejsza. A po raz pierwszy w Visual Studio jest 64-bitowy. Aby uzyskać link do pobierania i więcej informacji, zobacz **[Visual Studio 2022 Preview 1 now available!](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)** Blogu.
 
 ## <a name="give-us-feedback"></a>Wyślij do nas swoją opinię
 
