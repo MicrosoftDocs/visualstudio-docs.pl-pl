@@ -1,6 +1,6 @@
 ---
 title: Opcje opinii
-description: Jesteśmy zainteresowani pomysłami dotyczącymi ulepszania naszych produktów i dokumentacji. Oto jak przesłać nam swoją opinię.
+description: Interesują nas Twoje pomysły dotyczące ulepszania naszych produktów i dokumentacji. poniżej opisano, jak wysłać nam opinię.
 ms.date: 11/20/2019
 ms.topic: overview
 ms.custom: seoapril2019
@@ -15,86 +15,86 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897973"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308158"
 ---
-# <a name="visual-studio-feedback-options"></a>Opcje opinii programu Visual Studio
+# <a name="visual-studio-feedback-options"></a>Visual Studio opcji opinii
 
-Dlaczego warto wysłać do nas opinię? Ze względu na to, że potraktujemy Opinie klientów. to wszystko, co robimy. Oto jak skontaktować się z nami, aby można było kierować swoją opinię do właściwej osoby lub zespołu.
+Dlaczego warto wysyłać do nas opinie? Ponieważ opinie klientów są bardzo poważne; Jest to bardzo ważne w tym, co robimy. Poniżej opisano sposób kontaktowania się z nami w celu rozsyłania opinii do odpowiedniej osoby lub zespołu.
 
 ## <a name="report-a-problem"></a>zgłaszanie problemu
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-W przypadku wystąpienia problemów z programem Visual Studio &mdash; , takich jak awarie, niska wydajność lub nieoczekiwane zachowanie, &mdash; daj nam znać przy użyciu narzędzia **Zgłoś problem** . W programie Visual Studio wybierz ikonę opinii w prawym górnym rogu lub wybierz polecenie **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** na pasku menu.
+Jeśli wystąpią problemy z Visual Studio, takie jak awarie, powolna wydajność lub nieoczekiwane zachowanie, daj nam znać za pomocą narzędzia &mdash; &mdash; Zgłoś **problem.** W Visual Studio wybierz ikonę opinii w prawym górnym rogu lub wybierz pozycję Pomoc Wyślij opinię Zgłoś problem na  >    >   pasku menu.
 
-![Ikona wysyłania opinii w środowisku IDE programu Visual Studio 2019](./media/vs-2019/send-feedback-icon.png)
+![Ikona Wyślij opinię w Visual Studio IDE](./media/vs-2019/send-feedback-icon.png)
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Następnie Visual Studio interfejs [Developer Community,](https://aka.ms/feedback/suggest?space=8) w którym możesz się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, [zobacz Jak zgłosić problem z Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-W przypadku wystąpienia problemów z programem Visual Studio &mdash; , takich jak awarie, niska wydajność lub nieoczekiwane zachowanie, &mdash; daj nam znać przy użyciu narzędzia **Zgłoś problem** . W programie Visual Studio wybierz ikonę opinii obok pola wyszukiwania lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Zgłoś problem** z paska menu.
+Jeśli wystąpią problemy z Visual Studio, takie jak awarie, powolna wydajność lub nieoczekiwane zachowanie, daj nam znać za pomocą narzędzia &mdash; &mdash; Zgłoś **problem.** W Visual Studio wybierz ikonę opinii obok pola wyszukiwania lub wybierz pozycję Pomoc Wyślij opinię Zgłoś problem na  >    >   pasku menu.
 
-![Ikona wysyłania opinii w środowisku IDE programu Visual Studio 2019](./media/send-feedback-icon.png)
+![Ikona Wyślij opinię w Visual Studio IDE 2019](./media/send-feedback-icon.png)
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , w którym można się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, zobacz [Jak zgłosić problem w programie Visual Studio](how-to-report-a-problem-with-visual-studio.md).
+Następnie Visual Studio interfejs [Developer Community,](https://aka.ms/feedback/suggest?space=8) w którym możesz się zalogować, aby zgłosić problem. Aby uzyskać więcej informacji, [zobacz Jak zgłosić problem z Visual Studio](how-to-report-a-problem-with-visual-studio.md).
 
 ::: moniker-end
 
 ## <a name="suggest-a-feature"></a>proponowanie funkcji
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Jeśli masz pomysł lub sugestię, aby ulepszyć program Visual Studio, poinformuj nas za pomocą narzędzia **Zasugeruj funkcję** . W programie Visual Studio wybierz ikonę opinii w prawym górnym rogu lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**  >  **Sugeruj funkcję** z paska menu.
+Jeśli masz pomysł lub sugestię, aby poprawić Visual Studio, daj nam znać za pomocą narzędzia Zaproponuj **funkcję.** W Visual Studio wybierz ikonę opinii w prawym górnym rogu lub wybierz pozycję Pomoc Wyślij opinię Zasugeruj  >    >   funkcję na pasku menu.
 
-Następnie program Visual Studio otwiera interfejs [społeczności deweloperów](https://aka.ms/feedback/suggest?space=8) , który umożliwia zalogowanie się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
+Następnie Visual Studio interfejs [Developer Community,](https://aka.ms/feedback/suggest?space=8) w którym możesz się zalogować, aby udostępnić swój pomysł. Aby uzyskać więcej informacji, zobacz [Sugerowanie funkcji dla Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Jeśli masz pomysł lub sugestię, aby ulepszyć program Visual Studio, poinformuj nas za pomocą narzędzia do **tworzenia sugestii** . W programie Visual Studio wybierz ikonę opinii obok pola wyszukiwania lub wybierz pozycję **Pomoc**  >  **Wyślij opinię**, aby  >  **uzyskać sugestię** z paska menu.
+Jeśli masz pomysł lub sugestię, aby poprawić Visual Studio, daj nam znać za pomocą narzędzia **Podaj sugestię.** W Visual Studio wybierz ikonę opinii obok pola wyszukiwania lub wybierz pozycję Pomoc Wyślij opinię Prześlij sugestię  >    >   na pasku menu.
 
-Następnie w programie Visual Studio zostanie otwarta strona [społeczność deweloperów](https://aka.ms/feedback/suggest?space=8) , na której możesz zalogować się w celu udostępnienia pomysłu. Aby uzyskać więcej informacji, zobacz temat [Zasugeruj funkcję dla programu Visual Studio](suggest-a-feature.md).
+Następnie Visual Studio stronę [Developer Community,](https://aka.ms/feedback/suggest?space=8) na której możesz się zalogować, aby udostępnić swój pomysł. Aby uzyskać więcej informacji, zobacz [Sugerowanie funkcji dla Visual Studio](suggest-a-feature.md).
 
 ::: moniker-end
 
 ## <a name="improve-the-documentation"></a>Ulepszanie dokumentacji
 
-Istnieją dwa sposoby, aby pomóc nam ulepszyć dokumentację:
+Istnieją dwa sposoby, które mogą pomóc nam ulepszyć dokumentację:
 
-* Użyj narzędzia **czy ta strona jest pomocna?** w prawym górnym rogu dowolnej strony dokumentacji.
-* Użyj swojego konta w usłudze GitHub, aby przekazać opinię na temat dowolnej strony programu Visual Studio w witrynie [docs.Microsoft.com](../index.yml). Aby to zrobić, wybierz przycisk **Wyślij opinię na temat**  >  **tej strony** w dolnej części każdej strony dokumentacji.
+* Użyj narzędzia **odpowiedzi Czy ta strona** jest pomocna w prawym górnym rogu dowolnej strony dokumentacji.
+* Użyj swojego konta usługi GitHub, aby przekazać opinię na Visual Studio stronie docs.microsoft.com [.](../index.yml) W tym celu wybierz przycisk **Wyślij opinię** na  >  **temat tej strony** w dolnej części dowolnej strony dokumentacji.
 
 ## <a name="contact-microsoft-support"></a>Kontaktowanie się z pomocą techniczną firmy Microsoft
 
-Informacje o pomocy technicznej programu Visual Studio można znaleźć na stronie [obsługi cyklu życia produktu &](/visualstudio/releases/2019/servicing/) . Aby uzyskać inne produkty i usługi firmy Microsoft, zobacz Pomoc [techniczna firmy Microsoft](https://support.microsoft.com/) dla pomocy online.
+Aby Visual Studio pomocy technicznej, zobacz [stronę Cykl życia produktu & technicznej.](/visualstudio/releases/2019/servicing/) Aby uzyskać pomoc online dla innych produktów i usług firmy Microsoft, zobacz Pomoc techniczna firmy [Microsoft.](https://support.microsoft.com/)
 
 > [!NOTE]
-> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [Microsoft Worldwide sites](https://www.microsoft.com/worldwide/).
+> Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [Witryny firmy Microsoft na całym świecie.](https://www.microsoft.com/worldwide/)
 
-W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft, umowy są dostępne za pośrednictwem różnych ofert pomocy technicznej dla przedsiębiorstw. Aby uzyskać więcej informacji, zobacz [Microsoft Enterprise Support Solutions](https://www.microsoft.com/industry/services/support).
+W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft, umowy są dostępne za pośrednictwem różnych ofert pomocy technicznej dla przedsiębiorstw. Aby uzyskać więcej informacji, zobacz [Rozwiązania pomocy technicznej dla przedsiębiorstw firmy Microsoft.](https://www.microsoft.com/industry/services/support)
 
 Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, producent sprzętu zapewnia pomoc i obsługę techniczną dla tego oprogramowania. Skontaktuj się bezpośrednio z producentem, aby uzyskać wsparcie.
 
 Usługi pomocy technicznej firmy Microsoft podlegają aktualnej cenie i warunkom. Ceny, warunki i postanowienia mogą ulec zmianie bez powiadomienia.
 
-## <a name="ask-the-community"></a>Zadawaj społeczność
+## <a name="ask-the-community"></a>Zapytaj społeczność
 
-Jeśli chcesz udostępniać pytania i odpowiedzi innym deweloperom, Rozważ połączenie z nimi w następujących witrynach społeczności:
+Jeśli chcesz udostępnić pytania i odpowiedzi innym deweloperom, rozważ nawiązanie z nimi połączenia w następujących witrynach społeczności:
 
 * [Fora MSDN](https://social.msdn.microsoft.com/Forums/home)
-* Program Visual Studio na [reddit](https://www.reddit.com/r/VisualStudio/)
+* Visual Studio na [redycie](https://www.reddit.com/r/VisualStudio/)
 * [Stack Overflow](https://stackoverflow.com/search?q=visual+studio+-code)
 
-Możesz również wyświetlić kod od innych deweloperów i udostępnić własne przykłady na stronie [przeglądania przykładów kodu](/samples/browse/) .
+Możesz również wyświetlać kod od innych deweloperów i udostępniać własne przykłady na [stronie Przeglądanie przykładów](/samples/browse/) kodu.
 
 ## <a name="see-also"></a>Zobacz też
 

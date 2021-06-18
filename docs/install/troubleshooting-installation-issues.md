@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3d7dfacf00dbbb37946e4eaa8f1feb89b4059103
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: e0bc092663cc0e100598f991ae1b2a18a4b94501
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112470"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306868"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie Visual Studio instalacji i uaktualniania
 
@@ -41,7 +41,7 @@ Istnieją znane problemy z błędami, Instalator programu Visual Studio nad ich 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Istnieją znane problemy z błędami, Instalator programu Visual Studio nad ich rozwiązaniem pracuje firma Microsoft. Aby sprawdzić, czy istnieje obejście problemu, zapoznaj się z sekcją Znane problemy [w informacjach o wersji](/visualstudio/releases/2019/release-notes#-known-issues).
 
@@ -71,7 +71,7 @@ Program Instalator programu Visual Studio inicjujący to minimalny lekki plik wy
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Zamknij Instalatora programu Visual Studio.
 2. Usuń Instalator programu Visual Studio katalogu. Zazwyczaj katalog to `C:\Program Files (x86)\Microsoft Visual Studio\Installer` .
@@ -94,7 +94,7 @@ W niektórych sytuacjach, takich jak te związane z uszkodzonymi plikami, proble
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Zbierz dzienniki instalacji. Aby [uzyskać szczegółowe informacje, zobacz Visual Studio dziennika](#installation-logs) instalacji aplikacji.
 2. Otwórz Instalator programu Visual Studio, a następnie kliknij pozycję Zgłoś **problem,** aby otworzyć Visual Studio opinie.

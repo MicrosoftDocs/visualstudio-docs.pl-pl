@@ -1,97 +1,100 @@
 ---
-title: Włączanie aktualizacji administratorów do programu Visual Studio przy użyciu programu Microsoft Endpoint Configuration Manager
+title: Włączanie aktualizacji administratora do Visual Studio z Microsoft Endpoint Configuration Manager
 titleSuffix: ''
-description: Dowiedz się więcej o sposobie wdrażania aktualizacji administratorów w programie Visual Studio.
+description: Dowiedz się więcej na temat sposobu wdrażania aktualizacji administratora w Visual Studio.
 ms.date: 04/06/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 546fbad6-f12b-49cf-bccc-f2e63e051a18
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9ca14e1f4e84777fd1781249dd54a6646fb2c72a
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: affb5a0c78c1ad1e230c571485385d9f55fc2bec
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547482"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307456"
 ---
-# <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>Włączanie aktualizacji administratorów do programu Visual Studio przy użyciu programu Microsoft Endpoint Configuration Manager
+# <a name="enabling-administrator-updates-to-visual-studio-with-microsoft-endpoint-configuration-manager"></a>Włączanie aktualizacji administratora do Visual Studio z Microsoft Endpoint Configuration Manager
 
-Program Microsoft Endpoint Configuration Manager (SCCM) może zarządzać aktualizacjami programu Visual Studio 2017 i programu Visual Studio 2019 za pomocą przepływu pracy zarządzania aktualizacjami oprogramowania.
+Program Microsoft Endpoint Configuration Manager (SCCM) może zarządzać aktualizacjami Visual Studio 2017 i Visual Studio 2019 przy użyciu przepływu pracy zarządzania aktualizacjami oprogramowania.
 
 > [!NOTE]
-> W celu uproszczenia dokumentacji zawartość poniżej będzie odnosić się do produktów Visual Studio 2017 i Visual Studio 2019 w sposób zbiorczy jako "Visual Studio".
+> Dla uproszczenia dokumentacji zawartość poniżej będzie zbiorczo odnosić się do produktów z Visual Studio 2017, Visual Studio 2019 i Visual Studio 2022 jako "Visual Studio".
 
-Gdy firma Microsoft opublikuje nową aktualizację programu Visual Studio w usłudze Content Delivery Network (CDN), firma Microsoft jednocześnie opublikuje odpowiedni pakiet aktualizacji administratora na serwerach Microsoft Update. Następnie umożliwi to administratorowi dystrybucję aktualizacji programu Visual Studio za pośrednictwem [wykazu Microsoft Update](https://www.catalog.update.microsoft.com/Home.aspx) (MUC) lub [Windows Server Update Services](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (WSUS). Configuration Manager można skonfigurować w celu synchronizowania aktualizacji administratora programu Visual Studio z wykazu usług WSUS z serwerem lokacji, a następnie pobrania aktualizacji i rozesłania ich do komputerów klienckich programu Visual Studio w całej organizacji. Aby uzyskać więcej informacji na temat poprawek dostępnych w poszczególnych wersjach programu Visual Studio, zobacz [Informacje o wersji](https://docs.microsoft.com/visualstudio/releases/2019/release-notes). 
+Gdy firma Microsoft opublikuje nową Visual Studio aktualizacji usługi Content Delivery Network (CDN), firma Microsoft jednocześnie opublikuje odpowiedni pakiet aktualizacji administratora na Microsoft Update serwerach. Umożliwi to administratorowi dystrybucję aktualizacji Visual Studio za [](https://www.catalog.update.microsoft.com/Home.aspx) pośrednictwem katalogu Microsoft Update (MUC) [lub Windows Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (WSUS). Menedżer konfiguracji można skonfigurować do synchronizowania aktualizacji administratora programu Visual Studio z katalogu programu WSUS z serwerem lokacji, a następnie pobrać aktualizację i rozpowszechnić ją na maszynach klienckich Visual Studio w całej organizacji. Aby uzyskać więcej informacji o poprawkach, które są obecne w poszczególnych wersjach Visual Studio, zobacz informacje [o wersji](/visualstudio/releases/2019/release-notes).
 
-Aby dystrybuować aktualizacje administratorów programu Visual Studio za poorednictwem Configuration Manager, należy wykonać następujące dwa kroki wstępnego przygotowania: 
-1. Włącz Configuration Manager otrzymywanie powiadomień o aktualizacjach administratora programu Visual Studio. 
-2. Włącz (lub Wyłącz) komputery klienckie, aby otrzymywać aktualizacje administratorów programu Visual Studio z programu Configuration Manager.
+Aby dystrybuować Visual Studio administratorów za pośrednictwem Menedżer konfiguracji, należy wykonać następujące dwa początkowe kroki przygotowania:
+1. Włącz Menedżer konfiguracji, aby otrzymywać Visual Studio aktualizacji administratora. 
+2. Włącz lub wyłącz maszyny klienckie, aby otrzymywać Visual Studio administratorów z Menedżer konfiguracji.
 
-Po wykonaniu tych kroków można użyć funkcji zarządzania aktualizacjami oprogramowania Configuration Manager, aby wdrożyć aktualizacje administratorów programu Visual Studio. Różne typy i cechy aktualizacji administratora programu Visual Studio zostały opisane w artykule [stosowanie aktualizacji administratorów](../install/applying-administrator-updates.md), które udostępniają wskazówki dotyczące sposobu i czasu, w którym powinny być dystrybuowane w całej organizacji. Aby uzyskać więcej informacji na temat funkcji i opcji Configuration Manager, zobacz [wdrażanie aktualizacji oprogramowania w programie Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/deploy-software-updates). 
+Po wykonanie tych kroków można użyć funkcji zarządzania aktualizacjami oprogramowania usługi Menedżer konfiguracji w celu wdrożenia aktualizacji Visual Studio administratora. Różne typy i cechy aktualizacji Visual Studio są opisane w te tematach Stosowanie aktualizacji administratora [,](../install/applying-administrator-updates.md)który zawiera wskazówki dotyczące tego, jak i kiedy powinny być dystrybuowane w całej organizacji. Aby uzyskać więcej informacji o Menedżer konfiguracji i opcjach, zobacz [Wdrażanie aktualizacji oprogramowania w programie Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/deploy-use/deploy-software-updates).
 
-## <a name="enable-configuration-manager-to-receive-visual-studio-administrator-update-notifications"></a>Włącz Configuration Manager otrzymywanie powiadomień o aktualizacjach administratora programu Visual Studio 
+## <a name="enable-configuration-manager-to-receive-visual-studio-administrator-update-notifications"></a>Włącz Menedżer konfiguracji, aby otrzymywać Visual Studio aktualizacji administratora
 
-Aby umożliwić Configuration Manager zarządzania aktualizacjami administratora programu Visual Studio, potrzebne są następujące elementy: 
+Aby umożliwić Menedżer konfiguracji zarządzania Visual Studio aktualizacjami administratora, potrzebne są:
 
-* Bieżąca licencjonowana wersja systemu Windows Server z uruchomionym programem Microsoft Endpoint Configuration Manager (Current Branch) i Windows Server Update Services (WSUS). Nie można użyć programu WSUS do wdrożenia tych aktualizacji; musi być używana w połączeniu z Configuration Manager. 
+* Bieżąca licencjonowana wersja systemu Windows Server z systemem Microsoft Endpoint Configuration Manager (Current Branch) i Windows Server Update Services (WSUS). Do wdrażania tych aktualizacji nie można używać samego programu WSUS; Należy go używać w połączeniu z Menedżer konfiguracji.
 
-* Serwer WSUS najwyższego poziomu hierarchii i serwer lokacji najwyższego poziomu Configuration Manager muszą mieć dostęp do adresów URL i portów programu Visual Studio wymienionych tutaj: [Instalowanie i używanie usług programu Visual Studio i platformy Azure za zaporą lub serwerem proxy](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md).  
+* Serwer usług WSUS najwyższego poziomu hierarchii i serwer lokacji najwyższego poziomu Menedżer konfiguracji muszą mieć dostęp do adresów URL i portów Visual Studio wymienionych tutaj: Instalowanie i używanie usług Visual Studio i usług platformy Azure za zaporą lub serwerem [proxy.](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)  
 
-* Program Microsoft Endpoint Configuration Manager musi być skonfigurowany do odbierania powiadomień, gdy dostępne są pakiety aktualizacji administratora programu Visual Studio.  Aby to zrobić, wykonaj następujące czynności i aby uzyskać więcej informacji, zobacz [wprowadzenie do aktualizacji oprogramowania w programie Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/understand/software-updates-introduction).
+* Serwer Microsoft Endpoint Configuration Manager musi być skonfigurowany do odbierania powiadomień, Visual Studio są dostępne pakiety aktualizacji administratora.  Aby to zrobić, wykonaj poniższe kroki i aby uzyskać więcej informacji, zobacz Wprowadzenie do [aktualizacji oprogramowania w programie Microsoft Endpoint Configuration Manager](/mem/configmgr/sum/understand/software-updates-introduction).
 
-  1. W konsoli Configuration Manager wybierz pozycję **Administracja** (w lewym dolnym rogu), a następnie wybierz pozycję **Konfiguracja lokacji** (z lewej strony), a następnie pozycję **Lokacje**, a następnie wybierz serwer lokacji. 
+  1. W konsoli Menedżer konfiguracji wybierz pozycję Administracja **(w** lewym dolnym rogu), a następnie wybierz pozycję Konfiguracja lokacji **(w** lewym środkowym rogu), a następnie pozycję Lokacje **i** wybierz serwer lokacji.
 
-  2. Na karcie **Narzędzia główne** w górnej **części okna wybierz** pozycję **Konfiguruj składniki lokacji**, a następnie wybierz pozycję **punkt aktualizacji oprogramowania**. 
+  2. Na **wstążce** karty Narzędzia główne w górnej części **przycisku** grupy Ustawienia wybierz pozycję Konfiguruj składniki lokacji, a następnie wybierz pozycję Punkt aktualizacji **oprogramowania.**
 
-  3. W oknie dialogowym **właściwości składnika punktu aktualizacji oprogramowania** : 
+  3. W **oknie dialogowym Właściwości składnika punktu** aktualizacji oprogramowania:
 
-        * Na karcie **produkty** w hierarchii **Narzędzia deweloperskie, środowiska uruchomieniowe i redystrybucyjne** wybierz wersje programu Visual Studio, które chcesz synchronizować.   
+        * Na karcie **Produkty** w **hierarchii Narzędzia deweloperskie,** środowiska uruchomieniowe i redystrybucyjne wybierz wersje Visual Studio, które chcesz zsynchronizować.
 
-        * Na karcie **klasyfikacje** upewnij się, że są zaznaczone pozycje "aktualizacje zabezpieczeń", "pakiety funkcji" i "aktualizacje".   
+        * Na karcie **Klasyfikacje** upewnij się, że wybrano opcje "Aktualizacje zabezpieczeń", "Pakiety funkcji" i "Aktualizacje".
 
-  4. Następnie zsynchronizuj aktualizacje oprogramowania z serwerem WSUS, wybierając pozycję **Biblioteka oprogramowania** (z lewej strony), a następnie na karcie **Narzędzia główne** w górnej części ekranu wybierz przycisk **Synchronizuj aktualizacje oprogramowania** . Synchronizowanie aktualizacji oprogramowania spowoduje, że dostępne aktualizacje administratora programu Visual Studio będą widoczne w programie i można je wdrożyć z poziomu konsoli Configuration Manager.   
+  4. Następnie zsynchronizuj aktualizacje oprogramowania z serwerem WSUS, wybierając pozycję  Biblioteka oprogramowania **(w** lewym dolnym rogu), a następnie na wstążce karty Narzędzia główne u góry wybierz przycisk **Synchronizuj aktualizacje** oprogramowania. Synchronizowanie aktualizacji oprogramowania spowoduje, że Visual Studio aktualizacje administratora będą widoczne w konsoli programu i będzie można je wdrożyć z Menedżer konfiguracji oprogramowania.
 
-## <a name="enable-or-disable-client-machines-ability-to-receive-visual-studio-administrator-updates-from-configuration-manager"></a>Włącz (lub Wyłącz) możliwość odbierania aktualizacji administratorów programu Visual Studio z programu Configuration Manager
+## <a name="enable-or-disable-client-machines-ability-to-receive-visual-studio-administrator-updates-from-configuration-manager"></a>Włącz (lub wyłącz) możliwość otrzymywania aktualizacji Visual Studio administratora z Menedżer konfiguracji
 
-Aby umożliwić komputerowi klienckiemu akceptowanie aktualizacji administratora programu Visual Studio, należy się upewnić, że narzędzie wykrywania klienta programu Visual Studio jest prawidłowo zainstalowane i należy ustawić klucz rejestru, aby umożliwić klientowi otrzymywanie aktualizacji administratora.  
+Aby umożliwić komputerowi klienckiemu akceptowanie aktualizacji administratora programu Visual Studio, należy się upewnić, że narzędzie do wykrywania klienta programu Visual Studio jest poprawnie zainstalowane, a następnie należy ustawić klucz rejestru, aby umożliwić klientowi otrzymywanie aktualizacji administratora.  
 
-### <a name="visual-studio-client-detector-utility"></a>Narzędzie wykrywania klienta programu Visual Studio 
+### <a name="visual-studio-client-detector-utility"></a>Visual Studio narzędzia do wykrywania klienta
 
-[Narzędzie do wykrywania klienta programu Visual Studio](https://support.microsoft.com/help/5001148) musi być zainstalowane na komputerach klienckich, aby administrator mógł prawidłowo rozpoznać i odebrać aktualizacje. To narzędzie zostało dołączone do wszystkich aktualizacji produktu Visual Studio 2017 i Visual Studio 2019, które zostały wydane od 12 maja 2020, a także dostępne w [katalogu Microsoft Update](https://catalog.update.microsoft.com) w celu samodzielnego zainstalowania go w programie. 
+Aby [aktualizacje Visual Studio](https://support.microsoft.com/help/5001148) zostały prawidłowo rozpoznane i odebrane, na komputerach klienckich musi być zainstalowane narzędzie do wykrywania klienta. To narzędzie zostało dołączone do wszystkich aktualizacji produktów z wersji Visual Studio 2017 i Visual Studio 2019, które zostały wydane 12 maja 2020 r. lub później, jest ono dołączone jako wymaganie wstępne ze wszystkimi aktualizacjami administratora programu Visual Studio i jest również dostępne w wykazie usług [Microsoft Update](https://catalog.update.microsoft.com) do niezależnej instalacji.
 
-### <a name="encoding-administrator-intent-on-the-client-machines"></a>Zamiar administratora kodowania na komputerach klienckich 
+### <a name="encoding-administrator-intent-on-the-client-machines"></a>Intencja administratora kodowania na maszynach klienckich
 
-Komputery klienckie muszą być włączone, aby otrzymywać aktualizacje administratora. Ten krok jest niezbędny, aby upewnić się, że aktualizacje nie są przypadkowo ani przypadkowe wypchnięcie do komputerów klienckich. 
+Komputery klienckie muszą być włączone, aby otrzymywać aktualizacje administratora. Ten krok jest niezbędny, aby upewnić się, że aktualizacje nie zostaną przypadkowo lub przypadkowo wypchnąć do nieświadomych komputerów klienckich.
 
-Klucz **AdministratorUpdatesEnabled**   został zaprojektowany z myślą o zakodowaniu zamiaru administratora przez administratora. Ten klucz może znajdować się w dowolnej standardowej lokalizacji programu Visual Studio, zgodnie z opisem w temacie ustawienia [domyślne dla wdrożeń w przedsiębiorstwie](https://docs.microsoft.com/visualstudio/install/set-defaults-for-enterprise-deployments) w dokumentacji programu Visual Studio. Do utworzenia i ustawienia wartości tego klucza wymagany jest dostęp administratora na komputerze klienckim. 
+Klucz **AdministratorUpdatesEnabled** jest przeznaczony dla administratora w celu kodowania   intencji administratora. Ten klucz może być w dowolnej standardowej lokalizacji Visual Studio zgodnie z opisem w dokumentacji ustawianie wartości domyślnych dla wdrożeń w [przedsiębiorstwie Visual Studio](/visualstudio/install/set-defaults-for-enterprise-deployments) aplikacji. Aby utworzyć i ustawić wartość tego klucza, wymagany jest dostęp administratora na komputerze klienckim.
 
-* Aby skonfigurować komputer kliencki do akceptowania aktualizacji administratorów, ustaw ****   klucz REG_DWORD AdministratorUpdatesEnabled na **1**. 
-* Jeśli  ****   brakuje klucza REG_DWORD AdministratorUpdatesEnabled **lub ustawiono wartość 0**, aktualizacje administratorów będą blokowane przed zastosowaniem do komputera klienckiego. 
+* Aby skonfigurować komputer kliencki do akceptowania aktualizacji administratora, ustaw dla ustawienia **AdministratorUpdatesEnabled**   REG_DWORD wartość **1**.
+* Jeśli brakuje klucza REG_DWORD **AdministratorUpdatesEnabled** lub ustawiono wartość 0, aktualizacje administratora będą blokowane na   komputerze klienckim. 
 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-Poniższe metody umożliwiają przesłanie opinii na temat aktualizacji administratora programu Visual Studio lub raportów dotyczących problemów, które mają wpływ na aktualizacje:
-* Zapoznaj się ze wskazówkami dotyczącymi [rozwiązywania problemów dotyczących instalacji i uaktualniania programu Visual Studio](../install/troubleshooting-installation-issues.md) .
-* Zadawaj pytania do społeczności w witrynie [Visual Studio Setup Q&forum](https://docs.microsoft.com/answers/topics/vs-setup.html).
-* Przejdź do [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)i sprawdź, czy Twój problem znajduje się na liście często zadawanych pytań.  Można również wybrać przycisk [link do pomocy technicznej](https://visualstudio.microsoft.com/vs/support/#talktous) , aby uzyskać pomoc dotyczącą rozmowy.
-* [Podaj opinię dotyczącą funkcji lub Zgłoś problem](https://aka.ms/vs/wsus/feedback) do zespołu programu Visual Studio, który dotyczy tego środowiska, włączając aktualizacje administratorów.
-* Skontaktuj się z kierownikiem ds. klientów firmy Microsoft.
+Za pomocą następujących metod można przekazać opinię na temat aktualizacji Visual Studio administratorów lub zgłaszania problemów, które mają wpływ na aktualizacje:
+
+* Zapoznaj się ze [wskazówkami Visual Studio rozwiązywanie problemów z instalacją i uaktualnianiem.](../install/troubleshooting-installation-issues.md)
+* Ask questions to the community at the [Visual Studio Setup Q&A Forum](/answers/topics/vs-setup.html).
+* Przejdź do strony [Visual Studio pomocy technicznej](https://visualstudio.microsoft.com/vs/support/)i sprawdź, czy problem znajduje się na liście często zadawanych pytań.  Możesz również wybrać przycisk [Link do pomocy technicznej,](https://visualstudio.microsoft.com/vs/support/#talktous) aby uzyskać pomoc w czacie.
+* [Przekazać opinię na temat](https://aka.ms/vs/wsus/feedback) funkcji lub zgłosić problem Visual Studio dotyczące tego doświadczenia podczas włączania aktualizacji administratora.
+* Skontaktuj się z menedżerem ds. technicznych kont w organizacji firmy Microsoft.
 
 ## <a name="see-also"></a>Zobacz też
-* [Stosowanie aktualizacji administratorów](../install/applying-administrator-updates.md)
+
+* [Stosowanie aktualizacji administratora](../install/applying-administrator-updates.md)
 * [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)
-* [Cykl życia produktu i obsługa techniczna programu Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)
-* [Informacje o wersji programu Visual Studio 2019](https://docs.microsoft.com/visualstudio/releases/2019/release-notes)
-* [Informacje o wersji programu Visual Studio 2017](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes)
+* [Cykl życia produktu i obsługa techniczna programu Visual Studio](/visualstudio/productinfo/vs-servicing-vs)
+* [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes)
+* [Informacje o wersji programu Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Instalowanie programu Visual Studio](../install/install-visual-studio.md)
-* [Wykaz Microsoft Update — często zadawane pytania](https://www.catalog.update.microsoft.com/faq.aspx)
-* [Dokumentacja programu Microsoft Endpoint Configuration Manager (SCCM)](https://docs.microsoft.com/mem/configmgr)
-* [Importuj aktualizacje z usługi Microsoft Catalog do Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)
-* [Dokumentacja programu Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started-windows-server-update-services-wsus)
+* [Katalog Microsoft Update — często zadawane pytania](https://www.catalog.update.microsoft.com/faq.aspx)
+* [Microsoft Endpoint Configuration Manager (SCCM)](/mem/configmgr)
+* [Importowanie aktualizacji z wykazu firmy Microsoft do Menedżer konfiguracji](/mem/configmgr/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)
+* [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started-windows-server-update-services-wsus)

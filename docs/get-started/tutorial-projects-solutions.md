@@ -15,33 +15,39 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11db2d793f284557f709a4f72362cfc89a77a059
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113035"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308405"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
-W tym artykule wprowadzającym dowiesz się, co oznacza utworzenie rozwiązania *i* *projektu* w Visual Studio. Rozwiązanie to kontener, który służy do organizowania co najmniej jednego powiązanego projektu kodu, na przykład projektu biblioteki klas i odpowiadającego mu projektu testowego. Przyjrzymy się właściwościom projektu i niektórym plikom, które może on zawierać. Utworzymy również odwołanie z jednego projektu do innego.
+W tym artykule wprowadzającym dowiesz się, co  oznacza utworzenie rozwiązania i *projektu w* Visual Studio. Rozwiązanie to kontener, który służy do organizowania co najmniej jednego powiązanego projektu kodu, na przykład projektu biblioteki klas i odpowiedniego projektu testowego. Przyjrzymy się właściwościom projektu i niektórym plikom, które może zawierać. Utworzymy również odwołanie z jednego projektu do innego.
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio, aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://visualstudio.microsoft.com/downloads) do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/downloads) Visual Studio, aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
-Skonstru będziemy konstruować rozwiązanie i projekt od podstaw jako ćwiczenie edukacyjne, aby zrozumieć koncepcję projektu. W przypadku ogólnego użycia Visual Studio prawdopodobnie będziesz używać niektórych różnych  szablonów projektów, które Visual Studio oferuje podczas tworzenia nowego projektu.
+::: moniker range="vs-2022"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2022 (wersja zapoznawcza), przejdź do strony pobierania programu [Visual Studio 2022 Preview,](https://visualstudio.microsoft.com/vs/preview/vs2022) aby zainstalować ją bezpłatnie.
+
+::: moniker-end
+
+Skonstruujemy rozwiązanie i projekt od podstaw jako ćwiczenie edukacyjne, aby zrozumieć koncepcję projektu. Podczas ogólnego korzystania z Visual Studio projektach prawdopodobnie będziesz używać różnych  szablonów projektów, które Visual Studio oferuje podczas tworzenia nowego projektu.
 
 > [!NOTE]
-> Rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć folder, który zawiera kod, i rozpocząć kodowanie, tworzenie i debugowanie. Na przykład klonowanie repozytorium [GitHub](https://github.com/) może nie zawierać Visual Studio i rozwiązań. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu [w programie Visual Studio bez projektów i rozwiązań).](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+> Rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć folder, który zawiera kod, i rozpocząć kodowanie, tworzenie i debugowanie. Na przykład klonowanie repozytorium [GitHub](https://github.com/) może nie zawierać Visual Studio i rozwiązań. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu w Visual Studio [bez projektów i rozwiązań).](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 
 ## <a name="solutions-and-projects"></a>Rozwiązania i projekty
 
@@ -49,21 +55,21 @@ Pomimo swojej nazwy rozwiązanie nie jest "odpowiedzią". Rozwiązanie to po pro
 
 ### <a name="create-a-solution"></a>Tworzenie rozwiązania
 
-Rozpoczniemy eksplorację od utworzenia pustego rozwiązania. Po poznaniu Visual Studio prawdopodobnie nie będziesz tworzyć pustych rozwiązań bardzo często. Podczas tworzenia nowego projektu program Visual Studio automatycznie tworzy rozwiązanie do jego przechowywu, jeśli nie ma jeszcze otwartego rozwiązania.
+Rozpoczniemy eksplorację od utworzenia pustego rozwiązania. Po poznaniu Visual Studio prawdopodobnie nie będziesz często tworzyć pustych rozwiązań. Podczas tworzenia nowego projektu program Visual Studio automatycznie tworzy rozwiązanie do jego domu, jeśli nie ma jeszcze otwartego rozwiązania.
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio.
 
-1. Na górnym pasku menu wybierz pozycję **File** New Project > **(Nowy projekt** > **pliku).**
+1. Na górnym pasku menu wybierz pozycję **File** New Project > **(Plik nowy** > **projekt).**
 
    Zostanie **otwarte okno dialogowe** Nowy projekt.
 
-1. W okienku po lewej stronie **rozwiń pozycję Inne typy projektów,** a następnie **wybierz pozycję Visual Studio Solutions.** W środkowym okienku wybierz szablon **Puste** rozwiązanie. Nazwij **rozwiązanie QuickSolution,** a następnie wybierz **przycisk OK.**
+1. W okienku po lewej stronie **rozwiń pozycję Inne typy projektów,** a następnie **wybierz pozycję Visual Studio Solutions.** W środkowym okienku wybierz szablon **Puste** rozwiązanie. Nadaj **rozwiązaniu nazwę QuickSolution**, a następnie wybierz **przycisk OK.**
 
    ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png "Szablon Puste rozwiązanie w Visual Studio 2017 r.")
 
-   Strona **startowa** zostanie zamykana, a rozwiązanie Eksplorator rozwiązań **wyświetlone** po prawej stronie okna Visual Studio aplikacji. Prawdopodobnie będziesz często używać **Eksplorator rozwiązań,** aby przeglądać zawartość projektów.
+   Strona **startowa** zostanie zamykana, a rozwiązanie zostanie wyświetlone **Eksplorator rozwiązań** po prawej stronie okna Visual Studio aplikacji. Prawdopodobnie będziesz często używać **Eksplorator rozwiązań,** aby przeglądać zawartość projektów.
 
 ::: moniker-end
 
@@ -78,7 +84,7 @@ Rozpoczniemy eksplorację od utworzenia pustego rozwiązania. Po poznaniu Visual
    ![Pusty szablon rozwiązania w Visual Studio 2019 r.](media/vs-2019/tutorial-projects-blank-solution-template.png "Szablon Puste rozwiązanie w Visual Studio 2019 r.")
 
     > [!TIP]
-    > Jeśli masz zainstalowanych kilka obciążeń, szablon **Puste rozwiązanie** może nie być wyświetlany na początku listy wyników wyszukiwania. Spróbuj przewinąć do sekcji Inne wyniki w **oparciu o sekcję** wyszukiwania na liście. Powinien on zostać wyświetlony na tej stronie.
+    > Jeśli masz zainstalowanych kilka obciążeń, szablon **Puste** rozwiązanie może nie być wyświetlany na początku listy wyników wyszukiwania. Spróbuj przewinąć do **strony Inne wyniki w oparciu o sekcję** wyszukiwania na liście. Powinien on zostać wyświetlony w tym miejscu.
 
 4. Nazwij **rozwiązanie QuickSolution**, a następnie wybierz pozycję **Utwórz**.
 
@@ -88,20 +94,20 @@ Rozpoczniemy eksplorację od utworzenia pustego rozwiązania. Po poznaniu Visual
 
 ### <a name="add-a-project"></a>Dodawanie projektu
 
-Teraz dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projektu i dodamy do projektu potrzebne elementy.
+Teraz dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projektu i dodamy elementy, których potrzebujemy do projektu.
 
 ::: moniker range="vs-2017"
 
-1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań prawym przyciskiem myszy wybierz pozycję **Add** New Project  > **(Dodaj nowy projekt).**
+1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań **prawym** przyciskiem myszy wybierz **pozycję Add** New > **Project (Dodaj nowy projekt).**
 
    Zostanie **otwarte okno dialogowe Dodawanie** nowego projektu.
 
-1. W okienku po lewej stronie **rozwiń pozycję Visual C#** i wybierz pozycję **Windows Desktop.** Następnie w środkowym okienku wybierz szablon **Pusty projekt (.NET Framework).** Nadaj **projektowi nazwę QuickDate**, a następnie wybierz przycisk **OK.**
+1. W okienku po lewej stronie rozwiń **pozycję Visual C#** i wybierz pozycję **Windows Desktop.** Następnie w środkowym okienku wybierz szablon **Pusty projekt (.NET Framework).** Nadaj **projektowi nazwę QuickDate,** a następnie wybierz **przycisk OK.**
 
-   Projekt o nazwie QuickDate zostanie wyświetlony poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera pojedynczy plik o nazwie *App.config*.
+   Projekt o nazwie QuickDate zostanie wyświetlony poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera on pojedynczy plik o *nazwieApp.config*.
 
    > [!NOTE]
-   > Jeśli nie widzisz programu **Visual C#** w lewym okienku okna dialogowego, musisz zainstalować pakiet projektowy aplikacji klasycznych dla Visual Studio **.NET.** Visual Studio instalacji opartej na obciążeniach jest używana do instalowania tylko tych składników, które są potrzebne do tego typu pisania. Łatwym sposobem zainstalowania nowego obciążenia jest wybranie linku **Otwórz** Instalator programu Visual Studio w lewym dolnym rogu okna dialogowego **Dodawanie nowego** projektu. Po Instalator programu Visual Studio wybierz obciążenie Tworzenie aplikacji klasycznych dla programu **.NET,** a następnie przycisk **Modyfikuj.**
+   > Jeśli nie widzisz programu **Visual C#** w lewym okienku okna dialogowego, musisz zainstalować pakiet deweloperski aplikacji klasycznych **.NET** Visual Studio obciążenia. Visual Studio instalacji opartej na obciążeniach do instalowania tylko tych składników, które są potrzebne do tego typu pisania. Łatwym sposobem zainstalowania nowego obciążenia jest  wybranie linku Otwórz Instalator programu Visual Studio w lewym dolnym rogu okna **dialogowego Dodawanie nowego** projektu. Po Instalator programu Visual Studio wybierz obciążenie Tworzenie **aplikacji klasycznych dla programu .NET,** a następnie przycisk **Modyfikuj.**
    >
    > ![Otwórz Instalator programu Visual Studio link](media/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio w oknie dialogowym Dodawanie nowego projektu w programie Visual Studio 2017.")
 
@@ -109,22 +115,22 @@ Teraz dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 ::: moniker range=">=vs-2019"
 
-1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań prawym przyciskiem myszy wybierz pozycję **Add** New Project  > **(Dodaj nowy projekt).**
+1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań **prawym** przyciskiem myszy wybierz **pozycję Add** New > **Project (Dodaj nowy projekt).**
 
    Zostanie otwarte okno dialogowe z **komunikatem Dodaj nowy projekt**.
 
 1. Wprowadź pusty tekst **w** polu wyszukiwania u góry, a następnie wybierz pozycję **C#** w obszarze **Język**.
 
-1. Wybierz szablon **Pusty projekt (.NET Framework),** a następnie wybierz pozycję **Dalej.**
+1. Wybierz szablon **Empty Project (.NET Framework), a** następnie wybierz pozycję Next **(Dalej).**
 
 1. Nadaj **projektowi nazwę QuickDate,** a następnie wybierz **pozycję Utwórz**.
 
-   Projekt o nazwie QuickDate zostanie wyświetlony poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera pojedynczy plik o nazwie *App.config*.
+   Projekt o nazwie QuickDate zostanie wyświetlony poniżej rozwiązania w **Eksplorator rozwiązań**. Obecnie zawiera on pojedynczy plik o *nazwieApp.config*.
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Empty Project (.NET Framework),** musisz zainstalować pakiet Visual Studio **.NET.** Visual Studio instalacji opartej na obciążeniach jest używana do instalowania tylko tych składników, które są potrzebne do tego typu pisania.
+   > Jeśli nie widzisz szablonu Pusty projekt **(.NET Framework),** musisz zainstalować pakiet deweloperski aplikacji klasycznych **.NET** Visual Studio obciążenia. Visual Studio instalacji opartej na obciążeniach do instalowania tylko tych składników, które są potrzebne do tego typu pisania.
    >
-   >Łatwym sposobem zainstalowania nowego obciążenia podczas tworzenia nowego projektu jest  wybranie linku Zainstaluj więcej narzędzi i funkcji pod tekstem Nie można znaleźć tego, czego **szukasz?**. Po Instalator programu Visual Studio wybierz obciążenie Tworzenie aplikacji klasycznych dla programu **.NET,** a następnie przycisk **Modyfikuj.**
+   >Łatwym sposobem zainstalowania nowego obciążenia podczas tworzenia nowego projektu jest  wybranie linku Zainstaluj więcej narzędzi i funkcji pod tekstem Nie można znaleźć tego, czego **szukasz?**. Po Instalator programu Visual Studio wybierz obciążenie Tworzenie **aplikacji klasycznych dla programu .NET,** a następnie przycisk **Modyfikuj.**
    >
    > ![Otwórz Instalator programu Visual Studio link](media/vs-2019/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio w oknie dialogowym Tworzenie nowego projektu w Visual Studio.")
 
@@ -134,13 +140,13 @@ Teraz dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
 
 Mamy pusty projekt. Dodajmy plik kodu.
 
-1. W menu kontekstowym lub prawym przyciskiem myszy projektu **QuickDate** w **programie Eksplorator rozwiązań** wybierz **pozycję Dodaj** nowy  >  **element**.
+1. W menu kontekstowym lub prawym przyciskiem myszy projektu **QuickDate** w **programie Eksplorator rozwiązań** wybierz **pozycję Dodaj** nowy  >  **element.**
 
    Zostanie **otwarte okno dialogowe Dodawanie** nowego elementu.
 
 1. Rozwiń **pozycję Elementy Visual C#,** a następnie wybierz **pozycję Kod**. W środkowym okienku wybierz **szablon Element** klasy. Nadaj klasie **nazwę Calendar,** a następnie wybierz **przycisk** Dodaj.
 
-   Do projektu zostanie dodany plik o nazwie *Calendar.cs.* Plik *cs* na końcu jest rozszerzeniem pliku, które jest nadane plikom kodu języka C#. Plik zostanie wyświetlony w hierarchii projektu wizualizacji w **Eksplorator rozwiązań**, a jego zawartość zostanie otwarta w edytorze.
+   Do projektu zostanie dodany plik o nazwie *Calendar.cs.* Plik *cs* na końcu to rozszerzenie pliku, które jest nadane plikom kodu języka C#. Plik zostanie wyświetlony w hierarchii projektu wizualizacji w **Eksplorator rozwiązań**, a jego zawartość zostanie otwarta w edytorze.
 
 1. Zastąp zawartość pliku *Calendar.cs* następującym kodem:
 
@@ -166,7 +172,7 @@ Mamy pusty projekt. Dodajmy plik kodu.
    }
    ```
 
-   Nie musisz rozumieć, jak działa kod, ale jeśli chcesz, możesz uruchomić program, naciskając klawisz **Ctrl** F5 i zobaczyć, że drukuje on dzisiejszą datę w oknie konsoli (lub standardowych danych +  wyjściowych).
+   Nie musisz rozumieć, co robi kod, ale jeśli chcesz, możesz uruchomić program, naciskając klawisz **Ctrl** F5 i zobaczyć, że jest on wydrukowany w oknie konsoli (lub danych wyjściowych +  standardowych).
 
 ## <a name="add-a-second-project"></a>Dodawanie drugiego projektu
 
@@ -174,11 +180,11 @@ Rozwiązania często zawierają więcej niż jeden projekt, a często te projekt
 
 Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy od szablonu projektu, aby nie trzeba było dodawać do projektu dodatkowego pliku kodu.
 
-1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań prawym przyciskiem myszy wybierz pozycję **Add** New Project   >  **(Dodaj nowy projekt).**
+1. W menu kontekstowym rozwiązania **"QuickSolution"** (Szybkie rozwiązanie) w menu Eksplorator rozwiązań **prawym** przyciskiem myszy wybierz **pozycję Add** New  >  **Project (Dodaj nowy projekt).**
 
 ::: moniker range="vs-2017"
 
-2. W okienku po lewej stronie **rozwiń pozycję Visual C#** i wybierz **kategorię Test.** W środkowym okienku wybierz **szablon projektu MSTest Test Project (.NET Core).** Nadaj **projektowi nazwę QuickTest**, a następnie wybierz przycisk **OK.**
+2. W okienku po lewej stronie **rozwiń pozycję Visual C#** i wybierz **kategorię Test.** W środkowym okienku wybierz szablon **projektu MSTest Test Project (.NET Core).** Nadaj **projektowi nazwę QuickTest**, a następnie wybierz **przycisk OK.**
 
    Drugi projekt jest dodawany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs.*
 
@@ -193,11 +199,11 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 3. Wybierz szablon **projektu projektu testów** jednostkowych dla programu .NET Core, a następnie wybierz pozycję **Dalej.**
 
    > [!NOTE]
-   > Począwszy od Visual Studio 2019 r. w wersji 16.9 nazwa szablonu projektu MSTest zmieniła się z **MSTest Unit Test Project (.NET Core)** na **Unit Test Project**. W tej aktualizacji zmieniono kilka kroków tworzenia projektu.
+   > Począwszy od Visual Studio 2019 r. w wersji 16.9, nazwa szablonu projektu MSTest zmieniła się z **MSTest Unit Test Project (.NET Core)** na Projekt testu **jednostkowego**. W tej aktualizacji zmieniono kilka kroków tworzenia projektu.
 
 4. Nadaj **projektowi nazwę QuickTest**, a następnie wybierz pozycję **Dalej.**
 
-5. Wybierz zalecaną platformę docelową (.NET Core 3.1) lub .NET 5, a następnie wybierz pozycję **Utwórz.**
+5. Wybierz zalecaną platformę docelową (.NET Core 3.1) lub .NET 5, a następnie wybierz **pozycję Utwórz.**
 
    Drugi projekt jest dodawany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs.*
 
@@ -223,7 +229,7 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Wybierz węzeł **Zależności w** **projekcie QuickTest,** a następnie z menu kontekstowego lub kliknij prawym przyciskiem myszy pozycję **Dodaj odwołanie do projektu...**.
 
@@ -293,7 +299,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >   na pasku menu. Zostanie otwarte okno **o nazwie Eksplorator** testów. Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
 

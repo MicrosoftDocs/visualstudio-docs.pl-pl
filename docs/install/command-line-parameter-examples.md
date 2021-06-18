@@ -1,72 +1,72 @@
 ---
-title: Przykłady parametrów wiersza polecenia do zainstalowania
-description: Dostosuj te przykłady, aby utworzyć własną instalację z wiersza polecenia programu Visual Studio.
+title: Przykłady parametrów wiersza polecenia do instalacji
+description: Dostosuj te przykłady, aby utworzyć własną instalację wiersza polecenia Visual Studio.
 ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5685de34235dcd9b903cbf5be6371ebf3f1e84c3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868533"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307547"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykłady parametrów wiersza polecenia dla instalacji programu Visual Studio
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykłady parametrów wiersza polecenia Visual Studio instalacji
 
-Aby zilustrować, jak [używać parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować do własnych potrzeb.
+Aby zilustrować sposób używania parametrów wiersza polecenia do instalowania Visual Studio [,](use-command-line-parameters-to-install-visual-studio.md)poniżej przedstawiono kilka przykładów, które można dostosować do swoich potrzeb.
 
-W każdym przykładzie, `vs_enterprise.exe` `vs_professional.exe` i `vs_community.exe` reprezentuje odpowiednią wersję programu inicjującego programu Visual Studio, czyli mały (około 1 MB) plik inicjujący proces pobierania. W przypadku korzystania z innej wersji należy zastąpić odpowiednią nazwę programu inicjującego.
+W każdym przykładzie , i reprezentują odpowiednią wersję programu inicjatora Visual Studio, który jest małym `vs_enterprise.exe` `vs_professional.exe` `vs_community.exe` plikiem (około 1 MB), który inicjuje proces pobierania. Jeśli używasz innej wersji, zastąp odpowiednią nazwę programu inicjjącego.
 
 > [!NOTE]
-> Wszystkie polecenia wymagają podniesienia uprawnień administracyjnych, a monit kontroli konta użytkownika będzie wyświetlany, jeśli proces nie zostanie uruchomiony z wiersza polecenia z podwyższonym poziomem uprawnień.
+> Wszystkie polecenia wymagają podniesienia uprawnień administracyjnych, a jeśli proces nie zostanie uruchomiony z wiersza z podwyższonym poziomem uprawnień, zostanie wyświetlony monit Kontrola konta użytkownika.
 >
 > [!NOTE]
-> Możesz użyć `^` znaku na końcu wiersza polecenia, aby połączyć wiele wierszy w jedno polecenie. Alternatywnie możesz po prostu umieścić te wiersze w pojedynczym wierszu. W programie PowerShell odpowiednik jest znakiem kreski ( `` ` `` ).
+> Można użyć znaku na końcu wiersza polecenia, aby zjednować `^` wiele wierszy w jednym poleceniu. Alternatywnie możesz po prostu umieścić te wiersze razem w jednym wierszu. W programie PowerShell odpowiednikiem jest znak znaku podtypki ( `` ` `` ).
 
-Listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, znajdują się na stronie [obciążenia i identyfikatory składników programu Visual Studio](workload-and-component-ids.md) .
+Aby uzyskać listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, zobacz stronę [Visual Studio obciążenia i identyfikatorów](workload-and-component-ids.md) składników.
 
-## <a name="using---installpath"></a>Używanie--installPath
+## <a name="using---installpath"></a>Korzystanie z --installPath
 
-* Zainstaluj minimalne wystąpienie programu Visual Studio bez interakcyjnych wyświetleń, ale zostanie wyświetlony postęp:
+* Zainstaluj minimalne wystąpienie klasy Visual Studio bez monitów interakcyjnych, ale wyświetlany jest postęp:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
   ```
 
-* Zaktualizuj wystąpienie programu Visual Studio przy użyciu wiersza polecenia bez interaktywnych wierszy, ale jest wyświetlany postęp:
+* Zaktualizuj wystąpienie Visual Studio przy użyciu wiersza polecenia bez monitów interakcyjnych, ale wyświetlany jest postęp:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --update --quiet --wait
    vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
    ```
 
   > [!NOTE]
-  > Oba polecenia są zalecane. Pierwsze polecenie aktualizuje Instalator programu Visual Studio. Drugie polecenie aktualizuje wystąpienie programu Visual Studio. Aby uniknąć okna dialogowego Kontrola konta użytkownika, Uruchom wiersz polecenia jako administrator.
+  > Zaleca się oba polecenia. Pierwsze polecenie aktualizuje Instalator programu Visual Studio. Drugie polecenie aktualizuje Visual Studio wystąpienie. Aby uniknąć okna dialogowego Kontrola konta użytkownika, uruchom wiersz polecenia jako administrator.
 
-* Zainstaluj wystąpienie klasyczne programu Visual Studio w trybie dyskretnym z pakietem języka francuskiego, zwracając się tylko wtedy, gdy produkt jest zainstalowany.
+* Zainstaluj wystąpienie pulpitu usługi Visual Studio w trybie dyskretnym z pakietem języka francuskiego, zwracając tylko wtedy, gdy produkt jest zainstalowany.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
   ```
 
-## <a name="using---wait"></a>Użycie--czekaj
+## <a name="using---wait"></a>Korzystanie z --wait
 
-* Użyj w plikach wsadowych lub w skryptach, aby poczekać na ukończenie Instalatora programu Visual Studio przed wykonaniem następnego polecenia. W przypadku plików wsadowych `%ERRORLEVEL%` zmienna środowiskowa będzie zawierać wartość zwracaną polecenia, zgodnie z opisem w [parametrach wiersza polecenia Użyj, aby zainstalować stronę programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) . Niektóre narzędzia poleceń wymagają dodatkowych parametrów oczekiwania na ukończenie i pobrania wartości zwracanej przez Instalatora. Poniżej znajduje się przykład dodatkowych parametrów używanych z poleceniem skryptu programu PowerShell "Start-Process":
+* Użyj polecenia w plikach wsadowych lub skryptach, aby Visual Studio instalatora przed wykonaniem następnego polecenia. W przypadku plików wsadowych zmienna środowiskowa będzie zawierać wartość zwracaną polecenia zgodnie z dokumentem na stronie Instalowanie aplikacji przy `%ERRORLEVEL%` [użyciu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) wiersza polecenia. Niektóre narzędzia poleceń wymagają dodatkowych parametrów do oczekiwania na ukończenie i uzyskania wartości zwracanej przez instalatora. Poniżej przedstawiono przykład dodatkowych parametrów używanych w poleceniu skryptu programu PowerShell "Start-Process":
 
-   ```cmd
+   ```shell
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
@@ -88,21 +88,21 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
     $process.WaitForExit()
    ```
 
-* Pierwszy "--Wait" jest używany przez Instalator programu Visual Studio, a drugi "-Wait" jest używany przez element "Start-Process", aby poczekać na zakończenie. Parametr "-PassThru" jest używany przez "Start-Process", aby użyć kodu zakończenia Instalatora dla jego wartości zwracanej.
+* Pierwsza opcja "--wait" jest używana przez Instalator programu Visual Studio, a druga "-Wait" jest używana przez proces "Start-Process" do oczekiwania na ukończenie. Parametr "-PassThru" jest używany przez parametr "Start-Process" do użycia kodu zakończenia instalatora dla jego wartości zwracanej.
 
-## <a name="using---layout"></a>Using — układ
+## <a name="using---layout"></a>Korzystanie z --layout
 
-* Pobierz Edytor podstawowy programu Visual Studio (najważniejsza konfiguracja programu Visual Studio). Uwzględnij tylko pakiet języka angielskiego:
+* Pobierz Visual Studio podstawowy edytor (najbardziej minimalna Visual Studio konfiguracji). Uwzględnij tylko pakiet językowy w języku angielskim:
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
   ```
 
-* Pobierz obciążenia sieci Web programu .NET Desktop i .NET wraz ze wszystkimi zalecanymi składnikami i rozszerzeniem usługi GitHub. Uwzględnij tylko pakiet języka angielskiego:
+* Pobierz obciążenia internetowe .NET desktop i .NET wraz ze wszystkimi zalecanymi składnikami i rozszerzeniem Usługi GitHub. Uwzględnij tylko pakiet językowy w języku angielskim:
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
@@ -111,30 +111,30 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
    --includeRecommended
   ```
 
-## <a name="using---all"></a>Użycie — wszystkie
+## <a name="using---all"></a>Korzystanie z --all
 
-* Rozpocznij instalację interaktywną wszystkich obciążeń i składników, które są dostępne w wersji Visual Studio Enterprise:
+* Uruchom interaktywną instalację wszystkich obciążeń i składników, które są dostępne w Visual Studio Enterprise wersji:
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --all
    ```
 
-## <a name="using---includerecommended"></a>Używanie--includeRecommended
+## <a name="using---includerecommended"></a>Używanie --includeRecommended
 
-* Zainstaluj drugie nazwane wystąpienie Visual Studio Professional na komputerze z zainstalowanym już programem Visual Studio Community Edition z obsługą Node.js tworzenia oprogramowania:
+* Zainstaluj drugie, nazwane wystąpienie programu Visual Studio Professional na maszynie z już Visual Studio Community edition z obsługą Node.js tworzenia aplikacji:
 
-   ```cmd
+   ```shell
    vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
 
-## <a name="using---remove"></a>Użycie--Remove
+## <a name="using---remove"></a>Za pomocą --remove
 
 ::: moniker range="vs-2017"
 
-* Usuń składnik narzędzia profilowania z domyślnego zainstalowanego wystąpienia programu Visual Studio:
+* Usuń składnik narzędzia profilowania z domyślnego zainstalowanego Visual Studio wystąpienia:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
@@ -145,9 +145,9 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
 
 ::: moniker range="vs-2019"
 
-* Usuń składnik narzędzia profilowania z domyślnego zainstalowanego wystąpienia programu Visual Studio:
+* Usuń składnik narzędzia profilowania z domyślnego zainstalowanego Visual Studio wystąpienia:
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
@@ -156,15 +156,28 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
 
 ::: moniker-end
 
-## <a name="using---path"></a>Użycie--Path
+::: moniker range=">=vs-2022"
 
-::: moniker range="vs-2017"
+* Usuń składnik narzędzia profilowania z domyślnego zainstalowanego Visual Studio wystąpienia:
 
-Te parametry wiersza polecenia są **nowe w 15,7**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
+  ```shell
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
 
 ::: moniker-end
 
-* Przy użyciu ścieżki instalacji, pamięci podręcznej i udostępnionych:
+## <a name="using---path"></a>Korzystanie z --path
+
+::: moniker range="vs-2017"
+
+Te parametry wiersza polecenia są **nowe w 15.7.** Aby uzyskać więcej informacji na ich temat, zobacz [stronę Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md) (Używanie parametrów wiersza polecenia do Visual Studio wiersza polecenia).
+
+::: moniker-end
+
+* Korzystając ze ścieżek instalacji, pamięci podręcznej i udostępnionych:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
 
@@ -172,11 +185,11 @@ Te parametry wiersza polecenia są **nowe w 15,7**. Aby uzyskać więcej informa
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
 
-* Używane są tylko ścieżki instalacyjne i udostępnione:
+* Używanie tylko ścieżek instalacji i udostępnionych:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
 
-* Używanie tylko ścieżki instalacji:
+* Używając tylko ścieżki instalacji:
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
@@ -184,39 +197,39 @@ Te parametry wiersza polecenia są **nowe w 15,7**. Aby uzyskać więcej informa
 
 ::: moniker range="vs-2017"
 
-To polecenie wiersza polecenia jest **nowe w 15,9**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
+To polecenie wiersza polecenia jest **nowe w 15.9.** Aby uzyskać więcej informacji na ten temat, zobacz stronę Instalowanie za [pomocą parametrów](use-command-line-parameters-to-install-visual-studio.md) wiersza Visual Studio wiersza polecenia.
 
 ::: moniker-end
 
-* Za pomocą eksportu Zapisz zaznaczenie z instalacji:
+* Za pomocą eksportu zapisz wybór z instalacji:
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
-* Za pomocą eksportu Zapisz niestandardowe zaznaczenie od podstaw:
+* Korzystanie z eksportu w celu zapisania wyboru niestandardowego od podstaw:
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
   ```
 
-## <a name="using---config"></a>Użycie--config
+## <a name="using---config"></a>Korzystanie z --config
 
 ::: moniker range="vs-2017"
 
-Ten parametr wiersza polecenia jest **Nowy w 15,9**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
+Ten parametr wiersza polecenia jest **nowy w 15.9.** Aby uzyskać więcej informacji na ten temat, zobacz stronę Instalowanie za [pomocą parametrów](use-command-line-parameters-to-install-visual-studio.md) wiersza Visual Studio wiersza polecenia.
 
 ::: moniker-end
 
-* Użycie polecenia--config w celu zainstalowania obciążeń i składników z wcześniej zapisanego pliku konfiguracji instalacji:
+* Użycie --config do zainstalowania obciążeń i składników z wcześniej zapisanego pliku konfiguracji instalacji:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
   ```
 
-* Użycie--config do dodania obciążeń i składników do istniejącej instalacji:
+* Użycie --config do dodawania obciążeń i składników do istniejącej instalacji:
 
-  ```cmd
+  ```shell
   vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
@@ -224,7 +237,7 @@ Ten parametr wiersza polecenia jest **Nowy w 15,9**. Aby uzyskać więcej inform
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Visual Studio administratora](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

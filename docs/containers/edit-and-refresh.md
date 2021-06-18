@@ -1,6 +1,6 @@
 ---
 title: Debugowanie aplikacji w lokalnym kontenerze platformy Docker | Microsoft Docs
-description: Dowiedz się, jak zmodyfikować aplikację uruchomioną w lokalnym kontenerze platformy Docker, odświeżyć kontener poprzez edycję i odświeżanie, a następnie ustawić punkty przerwania debugowania.
+description: Dowiedz się, jak zmodyfikować aplikację, która jest uruchomiona w lokalnym kontenerze platformy Docker, odświeżyć kontener za pomocą przycisku Edytuj i odśwież, a następnie ustawić punkty przerwania debugowania.
 ms.author: ghogen
 author: ghogen
 manager: jmartens
@@ -9,21 +9,21 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867636"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306387"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
-Program Visual Studio zapewnia spójny sposób opracowywania kontenerów platformy Docker i lokalnego weryfikowania aplikacji.
-Aplikacje można uruchamiać i debugować w kontenerach systemu Linux lub Windows uruchomionych na lokalnym pulpicie systemu Windows z zainstalowanym programem Docker i nie trzeba ponownie uruchamiać kontenera przy każdym wprowadzeniu zmiany w kodzie.
+Visual Studio zapewnia spójny sposób tworzenia kontenerów platformy Docker i lokalnego weryfikowania aplikacji.
+Aplikacje można uruchamiać i debugować w kontenerach systemu Linux lub Windows uruchomionych na lokalnym pulpicie systemu Windows z zainstalowaną platformą Docker i nie trzeba ponownie uruchamiać kontenera za każdym razem, gdy zmieniasz kod.
 
-W tym artykule pokazano, jak uruchomić aplikację w lokalnym kontenerze Docker przy użyciu programu Visual Studio, wprowadzić zmiany, a następnie odświeżyć przeglądarkę, aby zobaczyć zmiany. W tym artykule pokazano również, jak ustawić punkty przerwania na potrzeby debugowania dla aplikacji w kontenerze. Obsługiwane typy projektów to .NET Framework i .NET Core aplikacji internetowych i konsolowych. W tym artykule używamy ASP.NET Core aplikacji sieci Web i .NET Framework aplikacji konsolowych.
+W tym artykule pokazano, jak za pomocą Visual Studio uruchomić aplikację w lokalnym kontenerze platformy Docker, wprowadzić zmiany, a następnie odświeżyć przeglądarkę, aby zobaczyć zmiany. W tym artykule pokazano również, jak ustawić punkty przerwania na potrzeby debugowania dla aplikacji konteneryzowanych. Obsługiwane typy projektów obejmują .NET Framework i aplikacje internetowe i konsolowe .NET Core. W tym artykule używamy aplikacji internetowych ASP.NET Core i .NET Framework konsoli.
 
-Jeśli masz już projekt obsługiwanego typu, program Visual Studio może utworzyć pliku dockerfile i skonfigurować projekt do uruchamiania w kontenerze. Zobacz [Narzędzia kontenera w programie Visual Studio](overview.md).
+Jeśli masz już projekt o obsługiwanym typie, Visual Studio utworzyć plik Dockerfile i skonfigurować projekt do uruchamiania w kontenerze. Zobacz [Narzędzia kontenerów w Visual Studio](overview.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -31,23 +31,29 @@ Aby debugować aplikacje w lokalnym kontenerze platformy Docker, należy zainsta
 
 ::: moniker range="vs-2017"
 
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z zainstalowanym obciążeniem programowaniem w sieci Web
+* [Visual Studio 2017 z](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) zainstalowanym obciążeniem Tworzenie aplikacji internetowych
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowanym obciążeniem programowaniem w sieci Web
+* [Visual Studio 2019 z](https://visualstudio.microsoft.com/downloads) zainstalowanym obciążeniem Tworzenie aplikacji internetowych
 
 ::: moniker-end
 
-Aby uruchomić kontenery platformy Docker lokalnie, musisz mieć lokalnego klienta platformy Docker. Można użyć [Docker for Windows](https://www.docker.com/get-docker), który używa funkcji Hyper-V i wymaga systemu Windows 10.
+::: moniker range="vs-2022"
 
-Kontenery platformy Docker są dostępne dla projektów .NET Framework i .NET Core. Przyjrzyjmy się dwóm przykładom. Najpierw Spójrzmy na aplikację internetową platformy .NET Core. Następnie Przyjrzyjmy się .NET Framework aplikacji konsolowej.
+* [Visual Studio 2022 (wersja zapoznawcza)]() z zainstalowanym obciążeniem Tworzenie aplikacji internetowych
+
+::: moniker-end
+
+Aby uruchomić kontenery platformy Docker lokalnie, musisz mieć lokalnego klienta platformy Docker. Można użyć programu [Docker for Windows](https://www.docker.com/get-docker), który używa funkcji Hyper-V i wymaga Windows 10.
+
+Kontenery platformy Docker są dostępne dla .NET Framework i .NET Core. Przyjrzyjmy się dwóch przykładom. Najpierw przyjrzymy się aplikacji internetowej .NET Core. Następnie przyjrzymy się aplikacji .NET Framework konsoli.
 
 ## <a name="create-a-web-app"></a>Tworzenie aplikacji internetowej
 
-Jeśli masz projekt i dodano obsługę platformy Docker zgodnie z opisem w sekcji [Przegląd](overview.md), Pomiń tę sekcję.
+Jeśli masz projekt i dodano obsługę platformy Docker [](overview.md)zgodnie z opisem w przeglądzie, pomiń tę sekcję.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -56,13 +62,13 @@ Jeśli masz projekt i dodano obsługę platformy Docker zgodnie z opisem w sekcj
 [!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
-### <a name="edit-your-code-and-refresh"></a>Edytuj swój kod i Odśwież
+### <a name="edit-your-code-and-refresh"></a>Edytowanie kodu i odświeżanie
 
-Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze. Następnie Kontynuuj, aby wprowadzić zmiany, wyświetlając je tak jak IIS Express.
+Aby szybko iterować zmiany, możesz uruchomić aplikację w kontenerze. Następnie kontynuuj wprowadzać zmiany, wyświetlając je tak samo, jak w IIS Express.
 
-1. Upewnij się, że platforma Docker została skonfigurowana do korzystania z typu kontenera (Linux lub Windows), którego używasz. Kliknij prawym przyciskiem myszy ikonę platformy Docker na pasku zadań, a następnie wybierz polecenie **Przełącz do kontenerów systemu Linux** lub **Przejdź do kontenerów z systemem Windows** w zależności od potrzeb.
+1. Upewnij się, że aplikacja Docker jest ustawiona do używania typu kontenera (Linux lub Windows), z których korzystasz. Kliknij prawym przyciskiem myszy ikonę platformy Docker na pasku zadań, a następnie wybierz pozycję Przełącz na **kontenery systemu Linux** lub Przełącz na **kontenery systemu Windows** zgodnie z potrzebami.
 
-1. (Tylko program .NET Core 3 i nowsze) Edytowanie kodu i odświeżanie uruchomionej lokacji zgodnie z opisem w tej sekcji nie jest włączone w szablonach domyślnych w programie .NET Core >= 3,0. Aby ją włączyć, Dodaj pakiet NuGet [Microsoft. AspNetCore. MVC. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). W *Startup.cs* Dodaj wywołanie metody Extension `IMvcBuilder.AddRazorRuntimeCompilation` do kodu w `ConfigureServices` metodzie. Ta funkcja jest wymagana tylko w trybie debugowania, dlatego należy ją kod w następujący sposób:
+1. (tylko program .NET Core 3 i nowsze) Edytowanie kodu i odświeżanie uruchomionej witryny zgodnie z opisem w tej sekcji nie jest włączone w domyślnych szablonach w programie .NET Core >= 3.0. Aby ją włączyć, dodaj pakiet NuGet [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). W *pliku Startup.cs* dodaj wywołanie metody rozszerzenia `IMvcBuilder.AddRazorRuntimeCompilation` do kodu w metodzie `ConfigureServices` . Ta opcja musi być włączona tylko w trybie DEBUGOWANIE, więc należy ją zakodować w następujący sposób:
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -82,7 +88,7 @@ Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze.
     }
     ```
 
-    Zmodyfikuj `Startup` metodę w następujący sposób:
+    `Startup`Zmodyfikuj metodę w następujący sposób:
 
     ```csharp
     public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
@@ -92,21 +98,21 @@ Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze.
     }
     ```
 
-   Aby uzyskać więcej informacji, zobacz [kompilacja pliku Razor w ASP.NET Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true).
+   Aby uzyskać więcej informacji, zobacz [Razor file compilation in ASP.NET Core (Kompilacja plików Razor w ASP.NET Core).](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true)
 
-1. Ustaw **konfigurację rozwiązania** na **Debuguj**. Następnie naciśnij klawisz **Ctrl** + **F5** , aby skompilować obraz platformy Docker i uruchomić go lokalnie.
+1. Ustaw **dla opcji Konfiguracja rozwiązania** wartość **Debuguj**. Następnie naciśnij klawisz **Ctrl** + **F5,** aby skompilować obraz platformy Docker i uruchomić go lokalnie.
 
-    Po skompilowaniu i uruchomieniu obrazu kontenera w kontenerze platformy Docker program Visual Studio uruchamia aplikację sieci Web w domyślnej przeglądarce.
+    Po s zbudowaniu i uruchomieniu obrazu kontenera w kontenerze platformy Docker program Visual Studio aplikację internetową w domyślnej przeglądarce.
 
-1. Przejdź do strony *indeks* . Wprowadzimy zmiany na tej stronie.
-1. Wróć do programu Visual Studio i Otwórz *index. cshtml*.
-1. Dodaj następującą zawartość HTML na końcu pliku, a następnie Zapisz zmiany.
+1. Przejdź do *strony Indeks.* Na tej stronie dokonamy zmian.
+1. Wróć do Visual Studio i otwórz *index.cshtml.*
+1. Dodaj następującą zawartość HTML na końcu pliku, a następnie zapisz zmiany.
 
     ```html
     <h1>Hello from a Docker container!</h1>
     ```
 
-1. W oknie dane wyjściowe, gdy kompilacja platformy .NET zostanie zakończona i zobaczysz następujące wiersze, przełącz się z powrotem do przeglądarki i Odśwież stronę:
+1. Po zakończeniu kompilacji .NET w oknie danych wyjściowych i wyświetleniu następujących wierszy wróć do przeglądarki i odśwież stronę:
 
    ```output
    Now listening on: http://*:80
@@ -115,62 +121,62 @@ Aby szybko wykonać iterację zmian, możesz uruchomić aplikację w kontenerze.
 
 Zmiany zostały zastosowane.
 
-### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
+### <a name="debug-with-breakpoints"></a>Debugowanie za pomocą punktów przerwania
 
-Często zmiany wymagają dalszej kontroli. Dla tego zadania można użyć funkcji debugowania programu Visual Studio.
+Często zmiany wymagają dalszej inspekcji. W tym zadaniu można użyć Visual Studio debugowania.
 
-1. W programie Visual Studio Otwórz *index.cshtml.cs*.
+1. W Visual Studio otwórz *pliku Index.cshtml.cs.*
 2. Zastąp zawartość metody `OnGet` następującym kodem:
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
    ```
 
-3. Na lewo od wiersza kodu Ustaw punkt przerwania.
+3. Po lewej stronie wiersza kodu ustaw punkt przerwania.
 4. Aby rozpocząć debugowanie i trafić punkt przerwania, naciśnij klawisz F5.
-5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania. Sprawdź wartości.
+5. Przejdź do Visual Studio, aby wyświetlić punkt przerwania. Sprawdź wartości.
 
-   ![Zrzut ekranu przedstawiający część kodu dla Index.cshtml.cs w programie Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu, który jest wyróżniony kolorem żółtym.](media/edit-and-refresh/breakpoint.png)
+   ![Zrzut ekranu przedstawiający część kodu pliku Index.cshtml.cs w pliku Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu wyróżnione kolorem żółtym.](media/edit-and-refresh/breakpoint.png)
 
-## <a name="create-a-net-framework-console-app"></a>Tworzenie aplikacji konsolowej .NET Framework
+## <a name="create-a-net-framework-console-app&quot;></a>Tworzenie aplikacji .NET Framework konsoli
 
-W przypadku korzystania z projektów aplikacji konsolowych .NET Framework opcja dodawania obsługi platformy Docker bez aranżacji nie jest obsługiwana. Można nadal użyć poniższej procedury, nawet jeśli używany jest tylko jeden projekt platformy Docker.
+W przypadku używania .NET Framework aplikacji konsolowej opcja dodania obsługi platformy Docker bez orkiestracji nie jest obsługiwana. Nadal możesz użyć poniższej procedury, nawet jeśli używasz tylko jednego projektu platformy Docker.
 
-1. Utwórz nowy projekt aplikacji konsoli .NET Framework.
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj**  >  **obsługę aranżacji kontenera**.  W wyświetlonym oknie dialogowym wybierz pozycję **Docker Compose**. Do projektu zostanie dodany pliku dockerfile i zostanie dodany projekt Docker Compose ze skojarzonymi plikami obsługi.
+1. Utwórz nowy projekt aplikacji .NET Framework Console.
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz pozycję **Dodaj**  >  **obsługę orkiestracji kontenerów.**  W wyświetlonym oknie dialogowym wybierz pozycję **Docker Compose**. Do projektu zostanie dodany plik Dockerfile, a Docker Compose zostanie dodany projekt ze skojarzonymi plikami obsługi.
 
-### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
+### <a name=&quot;debug-with-breakpoints&quot;></a>Debugowanie za pomocą punktów przerwania
 
-1. W Eksplorator rozwiązań Otwórz *program.cs*.
+1. W Eksplorator rozwiązań otwórz *program Program.cs.*
 2. Zastąp zawartość metody `Main` następującym kodem:
 
    ```csharp
-       System.Console.WriteLine("Hello, world!");
+       System.Console.WriteLine(&quot;Hello, world!");
    ```
 
 3. Ustaw punkt przerwania z lewej strony wiersza kodu.
-4. Naciśnij klawisz F5, aby rozpocząć debugowanie i kliknij punkt przerwania.
-5. Przełącz się do programu Visual Studio, aby wyświetlić punkt przerwania i sprawdzić wartości.
+4. Naciśnij klawisz F5, aby rozpocząć debugowanie i trafić punkt przerwania.
+5. Przełącz się Visual Studio, aby wyświetlić punkt przerwania i sprawdzić wartości.
 
-   ![Zrzut ekranu okna kod dla Program.cs w programie Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu, który jest wyróżniony kolorem żółtym.](media/edit-and-refresh/breakpoint-console.png)
+   ![Zrzut ekranu przedstawiający okno kodu dla programu Program.cs w Visual Studio z punktem przerwania ustawionym na lewo od wiersza kodu wyróżnione kolorem żółtym.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Ponowne użycie kontenera
 
-W cyklu programowania program Visual Studio ponownie kompiluje tylko obrazy kontenera i sam kontener po zmianie pliku dockerfile. Jeśli nie zmienisz pliku dockerfile, program Visual Studio ponownie używa kontenera z wcześniejszego uruchomienia.
+Podczas cyklu projektowania program Visual Studio tylko obrazy kontenerów i sam kontener po zmianie pliku Dockerfile. Jeśli nie zmienisz pliku Dockerfile, Visual Studio ponownie użyje kontenera z wcześniejszego uruchomienia.
 
-Jeśli ręcznie zmodyfikowano kontener i chcesz uruchomić ponownie za pomocą czystego obrazu kontenera, użyj polecenia **Build**  >  **Clean** w programie Visual Studio, a następnie Skompiluj jako Normal.
+Jeśli kontener został zmodyfikowany ręcznie i chcesz uruchomić go ponownie przy użyciu czystego obrazu kontenera, użyj polecenia **Build** Clean w Visual Studio, a następnie skompilowaj go w zwykły  >   sposób.
 
 ## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
-Dowiedz się, jak [rozwiązywać problemy z programowaniem platformy Docker programu Visual Studio](troubleshooting-docker-errors.md).
+Dowiedz się, jak [rozwiązywać problemy Visual Studio docker.](troubleshooting-docker-errors.md)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji, Przeczytaj, w [jaki sposób program Visual Studio tworzy kontenery aplikacji](container-build.md).
+Aby uzyskać więcej informacji, zobacz How Visual Studio builds containerized apps (Jak [tworzyć konteneryzowane aplikacje).](container-build.md)
 
-## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Więcej informacji na temat platformy Docker z programem Visual Studio, systemem Windows i platformą Azure
+## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Więcej informacji na temat platformy Docker Visual Studio, systemu Windows i platformy Azure
 
-* Dowiedz się więcej o [projektowaniu kontenerów za pomocą programu Visual Studio](./index.yml).
-* Aby skompilować i wdrożyć kontener platformy Docker, zobacz [integracja platformy Docker dla Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
-* Indeks artykułów systemu Windows Server i nano Server można znaleźć w temacie [Informacje o kontenerach systemu Windows](/virtualization/windowscontainers/).
-* Dowiedz się więcej o [usłudze Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) i zapoznaj się z [dokumentacją usługi Azure Kubernetes](/azure/aks).
+* Dowiedz się więcej na [temat tworzenia kontenerów za pomocą Visual Studio](./index.yml).
+* Aby skompilować i wdrożyć kontener platformy Docker, zobacz [Integracja platformy Docker dla Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
+* Aby uzyskać indeks artykułów dotyczących systemów Windows Server i Nano Server, zobacz [informacje o kontenerze systemu Windows](/virtualization/windowscontainers/).
+* Dowiedz się [więcej Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) i zapoznaj się z [Azure Kubernetes Service dokumentacją.](/azure/aks)

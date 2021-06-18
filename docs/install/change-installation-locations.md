@@ -16,16 +16,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9ee5972a0f1acba37a6b6b417df00a925e5558
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e780cca2515118b92b71c406368d29424f7017c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112490"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307625"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Wybierz lokalizacje instalacji w Visual Studio
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Możesz zmniejszyć rozmiar instalacji Visual Studio dysku systemowego, zmieniając lokalizację niektórych plików. W szczególności można użyć innej lokalizacji dla pamięci podręcznej pobierania, składników udostępnionych, zestawów SDK i plików narzędzi.
 
@@ -72,11 +72,11 @@ Możemy zaczynać? Oto jak to zrobić.
 
 1. W sekcji **Udostępnione składniki, narzędzia** i zestawy SDK określ dysk, na którym mają być przechowywane pliki udostępniane obok siebie w Visual Studio instalacji. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
 
-   ![Sekcja Udostępnione składniki, narzędzia i zestawy SDK na karcie Lokalizacje instalacji](media/vs-installation-locations-shared.png "Określ lokalizację, w której mają być przechowywane udostępnione składniki, narzędzia i zestawy SDK.")
+   ![Sekcja Współdzielone składniki, narzędzia i zestawy SDK na karcie Lokalizacje instalacji](media/vs-installation-locations-shared.png "Określ lokalizację, w której mają być przechowywane udostępnione składniki, narzędzia i zestawy SDK.")
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Podczas instalowania Visual Studio wybierz **kartę Lokalizacje** instalacji.
 
@@ -100,7 +100,7 @@ Możemy zaczynać? Oto jak to zrobić.
        > [!IMPORTANT]
        > Ta lokalizacja jest ustawiana przy pierwszej instalacji i nie można jej później zmienić z interfejsu użytkownika instalatora. Zamiast tego należy użyć [parametrów wiersza polecenia, aby](use-command-line-parameters-to-install-visual-studio.md) przenieść pamięć podręczną pobierania.
 
-1. W sekcji **Udostępnione składniki, narzędzia** i zestawy SDK zwróć uwagę, że używa ona tego samego dysku, który został wybrany w sekcji "Pobieranie pamięci podręcznej". Katalog \Microsoft\VisualStudio\Shared Visual Studio pliki, które są współużytkowanie współużytkowany przez współużytkowanie obok siebie Visual Studio instalacji. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
+1. W sekcji **Udostępnione składniki, narzędzia** i zestawy SDK zwróć uwagę, że używa ona tego samego dysku, który został wybrany w sekcji "Pobieranie pamięci podręcznej". Katalog \Microsoft\VisualStudio\Shared to miejsce, w którym Visual Studio pliki udostępniane obok siebie w Visual Studio instalacji. Zestawy SDK i narzędzia są również przechowywane w tym katalogu.
 
 ::: moniker-end
 

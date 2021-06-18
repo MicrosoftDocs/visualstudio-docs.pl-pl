@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8bbd0fe6fdb724c5b3928d430f6ef836f2e49b4c
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 5fd791b035bc99d46f53d499339a9e9f80a42905
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112915"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306946"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
@@ -55,11 +55,11 @@ Czasami instalacja Visual Studio uszkodzona lub uszkodzona. Naprawa jest przydat
    >
 
    > [!TIP]
-   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępna", a nie "Zainstalowano".
+   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Znajdź **Instalator programu Visual Studio** na komputerze.
 
@@ -83,7 +83,7 @@ Czasami instalacja Visual Studio uszkodzona lub uszkodzona. Naprawa jest przydat
    >
 
    > [!TIP]
-   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępna", a nie "Zainstalowano".
+   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
 
 ::: moniker-end
 

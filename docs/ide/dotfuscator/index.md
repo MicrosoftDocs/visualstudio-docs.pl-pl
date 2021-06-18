@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ce0f7cb1b5f970da7b6e47797dd4c59012a46892
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75437af41cec6fd770af9dfcdb399ed51543b7ff
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924778"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308223"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -68,7 +68,7 @@ Aby uzyskać informacje o rozszerzaniu programu Dotfuscator, zobacz [stronę dot
 
 ## <a name="getting-started"></a>Wprowadzenie
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Aby zacząć używać programu Dotfuscator Community z poziomu programu Visual Studio, wpisz `dotfuscator` w **polu wyszukiwania** (Ctrl+Q).
 

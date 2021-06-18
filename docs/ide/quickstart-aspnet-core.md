@@ -1,6 +1,6 @@
 ---
 title: 'Tworzenie aplikacji ASP.NET Core w języku C #'
-description: Dowiedz się, jak utworzyć prostą Hello world internetową w języku Visual Studio c# i ASP.NET Core.
+description: Dowiedz się, jak utworzyć prostą aplikację Hello world internetową w języku Visual Studio c# i ASP.NET Core, krok po kroku.
 ms.custom: acquisition, mvc,seodec18
 ms.date: 11/06/2019
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b361446bb128fcc01ac9a33f3a367b7e60a050c4
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 61fc3f0cf1e23dcf0f9e22ed7e10050fb84c9ba6
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113242"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308067"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: tworzenie pierwszej Visual Studio Core przy użyciu ASP.NET Core
 
@@ -41,6 +41,12 @@ Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://vi
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2022 (wersja zapoznawcza), przejdź do strony pobierania programu [Visual Studio 2022 Preview,](https://visualstudio.microsoft.com/vs/preview/vs2022) aby zainstalować ją bezpłatnie.
+
+::: moniker-end
+
 ### <a name="choose-your-theme-optional"></a>Wybierz motyw (opcjonalnie)
 
 Ten samouczek Szybki start zawiera zrzuty ekranu, które używają ciemnego motywu. Jeśli nie używasz motywu ciemnego, ale chcesz, zobacz stronę Personalizowanie środowiska [IDE](quickstart-personalize-the-ide.md) i edytora Visual Studio, aby dowiedzieć się, jak to zrobić.
@@ -55,7 +61,7 @@ Aby rozpocząć, utworzysz projekt aplikacji ASP.NET Core. Typ projektu zawiera 
 
 1. Na górnym pasku menu wybierz pozycję **File** New Project > **(Plik nowy** > **projekt).**
 
-1. W lewym okienku okna dialogowego **Nowy** projekt rozwiń pozycję **Visual C#,** a następnie wybierz **pozycję .NET Core.** W środkowym okienku wybierz **pozycję ASP.NET Core Web Application.** <br/><br/>Następnie nadaj plikowi nazwę `HelloWorld` i wybierz **przycisk OK.**
+1. W lewym okienku okna **dialogowego Nowy** projekt rozwiń pozycję **Visual C#,** a następnie wybierz **pozycję .NET Core.** W środkowym okienku wybierz **pozycję ASP.NET Core Web Application.** <br/><br/>Następnie nadaj plikowi nazwę `HelloWorld` i wybierz **przycisk OK.**
 
    ![Tworzenie nowego projektu aplikacji ASP.NET Core dla języka C #](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -72,7 +78,7 @@ Aby rozpocząć, utworzysz projekt aplikacji ASP.NET Core. Typ projektu zawiera 
 
 1. W **oknie dialogowym Nowa ASP.NET Core Web Application** wybierz pozycję ASP.NET Core **2.1** z górnego menu rozwijanego. Następnie wybierz pozycję **Aplikacja internetowa,** a następnie wybierz przycisk **OK.**
 
-   ![Okno dialogowe ASP.NET New ASP.NET Core Web Application](../ide/media/aspnet-core-2dot1.png)
+   ![Okno dialogowe ASP.NET New ASP.NET Core Web Application (Nowa podstawowa aplikacja internetowa)](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
    > Jeśli nie widzisz wersji **ASP.NET Core 2.1,** upewnij się, że używasz najnowszej wersji Visual Studio. Aby uzyskać więcej informacji na temat aktualizowania instalacji, zobacz stronę Visual Studio [aktualizacji do najnowszej wersji.](../install/update-visual-studio.md)
@@ -81,7 +87,7 @@ Wkrótce Visual Studio plik projektu.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. W oknie uruchamiania wybierz **pozycję Utwórz nowy projekt.**
 
@@ -94,7 +100,7 @@ Wkrótce Visual Studio plik projektu.
    :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Wybieranie szablonu języka C# dla aplikacji internetowej ASP.NET Core":::
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu aplikacji **internetowej ASP.NET Core,** możesz go zainstalować w oknie **Tworzenie nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj **więcej narzędzi i** funkcji.
+   > Jeśli nie widzisz szablonu aplikacji **internetowej ASP.NET Core,** możesz go zainstalować w oknie **Tworzenie nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj więcej narzędzi **i** funkcji.
    >
    > ![Link "Zainstaluj więcej narzędzi i funkcji" w komunikacie "Nie można znaleźć tego, czego szukasz" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -102,7 +108,7 @@ Wkrótce Visual Studio plik projektu.
    >
    > ![Międzyplatformowe obciążenie programowe platformy .NET Core w chmurze Instalator programu Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Jeśli zostanie wyświetlony monit o zapisanie pracy, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w procedurze["Tworzenie projektu".](#create-a-project)
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Jeśli zostanie wyświetlony monit o zapisanie pracy, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze["Tworzenie projektu".](#create-a-project)
 
 1. W **oknie Configure your new project (Konfigurowanie** nowego projektu) wpisz lub wprowadź *HelloWorld* w **polu Project name (Nazwa** projektu). Następnie wybierz pozycję **Dalej.**
 
@@ -177,7 +183,7 @@ Gratulujemy ukończenia tego przewodnika Szybki start! Mamy nadzieję, że wiesz
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. W **Eksplorator rozwiązań** rozwiń folder **Strony,** a następnie wybierz **plik Index.cshtml.**
 

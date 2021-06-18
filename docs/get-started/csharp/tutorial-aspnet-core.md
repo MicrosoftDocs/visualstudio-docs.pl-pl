@@ -1,7 +1,7 @@
 ---
 title: 'Samouczek: wprowadzenie do języka C# i ASP.NET Core'
 titleSuffix: ''
-description: Dowiedz się, jak utworzyć aplikację internetową ASP.NET Core w programie Visual Studio przy użyciu języka C#, krok po kroku.
+description: Dowiedz się, jak utworzyć aplikację ASP.NET Core w języku Visual Studio c# krok po kroku.
 ms.custom: seodec18, get-started
 ms.date: 02/12/2021
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 58f9604cbecdbe6414e91079a9e0e4691a32b768
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296927"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308548"
 ---
-# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
+# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: rozpoczynanie pracy z językami C# i ASP.NET Core w Visual Studio
 
-W ramach tego samouczka dotyczącego programowania w języku C# ASP.NET Core za pomocą programu Visual Studio utworzysz aplikację internetową w języku C# ASP.NET Core, wprowadzisz w niej zmiany, Dowiedz się więcej o funkcjach środowiska IDE, a następnie uruchom aplikację.
+W tym samouczku na temat tworzenia aplikacji w języku C# za pomocą programu ASP.NET Core przy użyciu programu Visual Studio utworzysz aplikację internetową języka C# ASP.NET Core, dokonasz w nim zmian, poznasz niektóre funkcje środowiska IDE, a następnie uruchomesz aplikację.
 
 ## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
@@ -33,191 +33,197 @@ W ramach tego samouczka dotyczącego programowania w języku C# ASP.NET Core za 
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio, aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/downloads) Visual Studio, aby zainstalować ją bezpłatnie.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2022 (wersja zapoznawcza), przejdź do strony pobierania programu [Visual Studio 2022 Preview,](https://visualstudio.microsoft.com/vs/preview/vs2022) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ### <a name="update-visual-studio"></a>Aktualizowanie programu Visual Studio
 
-Jeśli masz już zainstalowany program Visual Studio, upewnij się, że korzystasz z najnowszej wersji. Aby uzyskać więcej informacji o sposobie aktualizowania instalacji, zobacz sekcję [Aktualizowanie programu Visual Studio do najnowszej wersji](../../install/update-visual-studio.md) .
+Jeśli masz już zainstalowane Visual Studio, upewnij się, że używasz najnowszej wersji. Aby uzyskać więcej informacji na temat aktualizowania instalacji, zobacz stronę Visual Studio [aktualizacji do najnowszej wersji.](../../install/update-visual-studio.md)
 
-### <a name="choose-your-theme-optional"></a>Wybieranie motywu (opcjonalnie)
+### <a name="choose-your-theme-optional"></a>Wybierz motyw (opcjonalnie)
 
-Ten samouczek zawiera zrzuty ekranu używające ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [personalizowanie środowiska IDE i edytora programu Visual Studio](../../ide/quickstart-personalize-the-ide.md) , aby dowiedzieć się, jak.
+Ten samouczek zawiera zrzuty ekranu, które używają ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [Personalizowanie](../../ide/quickstart-personalize-the-ide.md) środowiska IDE i edytora Visual Studio, aby dowiedzieć się, jak to zrobić.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt ASP.NET Core. Typ projektu zawiera wszystkie pliki szablonów, które będą potrzebne dla w pełni funkcjonalnej witryny sieci Web, przed dodaniem nawet wszystkiego.
+Najpierw utworzysz projekt ASP.NET Core. Typ projektu zawiera wszystkie pliki szablonów potrzebne do w pełni funkcjonalnej witryny internetowej przed dodaniu czegokolwiek!
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz pozycję **File** New Project > **(Plik nowy** > **projekt).**
 
-3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń pozycję **Visual C#**, rozwiń węzeł **Sieć Web**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz **ASP.NET Core aplikacji sieci Web**. Następnie Nazwij plik *MyCoreApp* i wybierz **przycisk OK**.
+3. W **oknie dialogowym Nowy** projekt w okienku po lewej stronie rozwiń pozycję **Visual C#,** rozwiń pozycję **Internet,** a następnie wybierz **pozycję .NET Core.** W środkowym okienku wybierz **pozycję ASP.NET Core Web Application**. Następnie nadaj plikowi *nazwę MyCoreApp* i wybierz przycisk **OK.**
 
-   ![Szablon projektu aplikacji sieci Web ASP.NET Core w oknie dialogowym Nowy projekt w programie Visual Studio IDE](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
+   ![ASP.NET projektu Core Web Application w oknie dialogowym Nowy projekt w Visual Studio IDE](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
-### <a name="add-a-workload-optional"></a>Dodaj obciążenie (opcjonalnie)
+### <a name="add-a-workload-optional"></a>Dodawanie obciążenia (opcjonalnie)
 
-Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , możesz uzyskać go, dodając obciążenie **ASP.NET i programowanie dla sieci Web** . Możesz dodać to obciążenie jeden z dwóch poniższych sposobów, w zależności od tego, które aktualizacje programu Visual Studio 2017 są zainstalowane na maszynie.
+Jeśli nie widzisz szablonu projektu **aplikacji internetowej ASP.NET Core,** możesz go uzyskać, dodając obciążenie tworzenie aplikacji internetowych **ASP.NET aplikacji** internetowych. To obciążenie można dodać na jeden z dwóch następujących sposobów, w zależności od tego, Visual Studio zainstalowano aktualizacje programu 2017 na komputerze.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1: korzystanie z okna dialogowego Nowy projekt
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1. Użyj okna dialogowego Nowy projekt
 
-1. Wybierz łącze **otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . (W zależności od ustawień wyświetlania może być konieczne przewinięcie, aby je zobaczyć.)
+1. Wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna **dialogowego Nowy** projekt. (W zależności od ustawień wyświetlania może być konieczne przewinięcie w celu wyświetlenia).
 
-   ![Wybierz łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../media/open-visual-studio-installer-mycoreapp.png)
+   ![Wybierz link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../media/open-visual-studio-installer-mycoreapp.png)
 
-1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
+1. Uruchomienie Instalator programu Visual Studio. Wybierz obciążenie **tworzenie aplikacji ASP.NET sieci Web,** a następnie wybierz pozycję **Modyfikuj.**
 
-   ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../media/tutorial-aspnet-workload.png)
+   ![Międzyplatformowe obciążenie programowe platformy .NET Core w Instalator programu Visual Studio](../media/tutorial-aspnet-workload.png)
 
-   (Przed kontynuowaniem instalacji nowego obciążenia może być konieczne zamknięcie programu Visual Studio).
+   (Może być konieczne zamknięcie Visual Studio, zanim będzie można kontynuować instalowanie nowego obciążenia).
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2. Korzystanie z paska menu narzędzi
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opcja 2. Korzystanie z paska menu Narzędzia
 
-1. Anuluj okno dialogowe **Nowy projekt** . Następnie na górnym pasku menu wybierz kolejno pozycje **Narzędzia**  >  **Pobierz narzędzia i funkcje**.
+1. Anuluj poza **oknie dialogowym Nowy** projekt. Następnie na górnym pasku menu wybierz pozycję **Narzędzia** Pobierz  >  **narzędzia i funkcje.**
 
-1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
+1. Uruchomienie Instalator programu Visual Studio. Wybierz obciążenie **tworzenie aplikacji ASP.NET sieci Web,** a następnie wybierz pozycję **Modyfikuj.**
 
-   (Przed kontynuowaniem instalacji nowego obciążenia może być konieczne zamknięcie programu Visual Studio).
+   (Może być konieczne zamknięcie Visual Studio, zanim będzie można kontynuować instalowanie nowego obciążenia).
 
-### <a name="add-a-project-template"></a>Dodaj szablon projektu
+### <a name="add-a-project-template"></a>Dodawanie szablonu projektu
 
-1. W oknie dialogowym **Nowa aplikacja sieci web ASP.NET Core** wybierz szablon projektu **aplikacji sieci Web** .
+1. W **oknie dialogowym Nowa ASP.NET Core Web Application** wybierz szablon projektu **Aplikacja** internetowa.
 
-1. Sprawdź, czy **ASP.NET Core 2,1** pojawia się w górnym menu rozwijanym. Następnie wybierz przycisk **OK**.
+1. Sprawdź, **ASP.NET Core 2.1** pojawia się w górnym menu rozwijanych. Następnie wybierz przycisk **OK.**
 
-   ![Okno dialogowe Nowa aplikacja sieci Web ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
+   ![Okno dialogowe ASP.NET Core Web Application](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **ASP.NET Core 2,1** z górnego menu rozwijanego, upewnij się, że korzystasz z najnowszej wersji programu Visual Studio. Aby uzyskać więcej informacji o sposobie aktualizowania instalacji, zobacz sekcję [Aktualizowanie programu Visual Studio do najnowszej wersji](../../install/update-visual-studio.md) .
+   > Jeśli nie widzisz aplikacji **ASP.NET Core 2.1** z górnego menu rozwijanego, upewnij się, że używasz najnowszej wersji Visual Studio. Aby uzyskać więcej informacji na temat aktualizowania instalacji, zobacz stronę Visual Studio [aktualizacji do najnowszej wersji.](../../install/update-visual-studio.md)
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt.**
 
-   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Wyświetl okno &quot;Tworzenie nowego projektu&quot;":::
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="Wyświetlanie okna &quot;Tworzenie nowego projektu&quot;":::
 
-1. W oknie **Tworzenie nowego projektu** wybierz pozycję **C#** z listy język. Następnie wybierz pozycję **Windows** z listy platform i **sieci Web** z listy typów projektów.
+1. W **oknie Tworzenie nowego projektu** wybierz pozycję **C#** z listy Język. Następnie wybierz pozycję **Windows** z listy Platforma i pozycję **Internet** z listy typów projektów.
 
-      Po zastosowaniu filtrów języka, platformy i typu projektu wybierz szablon **ASP.NET Core Web App** , a następnie wybierz **dalej**.
+      Po zastosowaniu filtrów języka, platformy i typu projektu wybierz szablon ASP.NET **Core Web App,** a następnie wybierz pozycję **Dalej.**
 
-   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Wybierz szablon C# dla aplikacji sieci Web ASP.NET Core":::
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="Wybieranie szablonu języka C# dla aplikacji internetowej ASP.NET Core":::
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **ASP.NET Core aplikacji sieci Web** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
+   > Jeśli nie widzisz szablonu aplikacji **internetowej ASP.NET Core,** możesz go zainstalować w oknie **Tworzenie nowego** projektu. W **komunikacie Nie można znaleźć tego,** czego szukasz? wybierz link Zainstaluj więcej narzędzi **i** funkcji.
    >
-   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" w komunikacie "Nie można znaleźć tego, czego szukasz" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Następnie w Instalator programu Visual Studio wybierz obciążenie **ASP.NET i programowanie dla sieci Web** .
+   > Następnie w witrynie Instalator programu Visual Studio wybierz obciążenie **tworzenie aplikacji ASP.NET sieci Web.**
    >
-   > ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![Międzyplatformowe obciążenie programowe platformy .NET Core w Instalator programu Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Jeśli zostanie wyświetlony monit o zapisanie pracy, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Jeśli zostanie wyświetlony monit o zapisanie pracy, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze["Tworzenie projektu".](#create-a-project)
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyCoreApp* w polu **Nazwa projektu** . Następnie wybierz przycisk **dalej**.
+1. W **oknie Konfigurowanie nowego** projektu wpisz lub wprowadź *MyCoreApp* w **polu Nazwa** projektu. Następnie wybierz pozycję **Dalej.**
 
-   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="w oknie &quot;Konfigurowanie nowego projektu&quot; nazwij projekt &quot;MyCoreApp&quot;":::
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="W oknie &quot;Konfigurowanie nowego projektu&quot; nadaj projektowi nazwę &quot;MyCoreApp&quot;":::
 
-1. W oknie **Informacje dodatkowe** Sprawdź, czy program **.NET Core 3,1** pojawia się w górnym menu rozwijanym. Pamiętaj, że możesz włączyć obsługę platformy Docker, zaznaczając pole wyboru. Możesz również dodać obsługę uwierzytelniania, klikając przycisk Zmień uwierzytelnianie. Z tego miejsca możesz wybrać jedną z opcji:
+1. W **oknie Dodatkowe informacje** sprawdź, **czy program .NET Core 3.1** jest wyświetlany w górnym menu rozwijanych. Pamiętaj, że możesz włączyć obsługę platformy Docker, zaznaczając to pole wyboru. Możesz również dodać obsługę uwierzytelniania, klikając przycisk Zmień uwierzytelnianie. W tym miejscu można wybrać jedną z opcji:
     - Brak: brak uwierzytelniania.
-    - Pojedyncze konta: są one przechowywane w lokalnej lub opartej na platformie Azure bazie danych.
-    - Platforma tożsamości firmy Microsoft: Ta opcja używa Active Directory, Azure AD lub Microsoft 365 do uwierzytelniania.
+    - Indywidualne konta: są one przechowywane w lokalnej bazie danych lub bazie danych opartej na platformie Azure.
+    - Platforma tożsamości firmy Microsoft: ta opcja używa usługi Active Directory, Azure AD Microsoft 365 do uwierzytelniania.
     - Windows: odpowiednie dla aplikacji intranetowych.
     
-    Pozostaw zaznaczenie pola wyboru **Włącz platformę Docker** i wybierz opcję **Brak** dla opcji Typ uwierzytelniania. Następnie wybierz przycisk **Utwórz**.
+    Pozostaw **pole Włącz platformę Docker** niezaznaczone, a następnie wybierz opcję **Brak w** polu Typ uwierzytelniania. Następnie wybierz przycisk **Utwórz**.
 
-   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="w oknie &quot;dodatkowe informacje&quot; Upewnij się, że wybrano opcję .NET Core 3,1 i pozostaw wszystkie wartości domyślne":::
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="W oknie &quot;Dodatkowe informacje&quot; upewnij się, że wybrano opcję .NET Core 3.1 i pozostaw wszystkie wartości domyślne":::
 
-   Program Visual Studio otworzy nowy projekt.
+   Visual Studio spowoduje otwarcie nowego projektu.
 
 ::: moniker-end
 
 ### <a name="about-your-solution"></a>Informacje o rozwiązaniu
 
-To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to inny niż Wzorzec projektowy [modelu-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) , który jest zoptymalizowany do uwzględnienia kodu modelu i kontrolera na stronie Razor.
+To rozwiązanie jest zgodna ze **wzorcem projektowym strony Razor.** Różni się on od wzorca projektowego [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) tym, że usprawnione jest dołączanie kodu modelu i kontrolera do samej strony Razor.
 
 ::: moniker range="vs-2017"
-## <a name="tour-your-solution"></a>Zapoznaj się z rozwiązaniem
+## <a name="tour-your-solution"></a>Przewodnik po rozwiązaniu
 
- 1. Szablon projektu tworzy rozwiązanie o pojedynczym ASP.NET Core projekcie o nazwie _MyCoreApp_. Wybierz kartę **Eksplorator rozwiązań** , aby wyświetlić jej zawartość.
+ 1. Szablon projektu tworzy rozwiązanie z pojedynczym projektem ASP.NET Core o nazwie _MyCoreApp._ Wybierz **kartę Eksplorator rozwiązań,** aby wyświetlić jej zawartość.
 
-    ![ASP.NET Eksplorator rozwiązań w programie Visual Studio dla Razor Pages rozwiązanie o nazwie MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+    ![ASP.NET Eksplorator rozwiązań w Visual Studio for Razor Pages o nazwie MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Rozwiń folder **strony** , a następnie rozwiń pozycję *about. cshtml*.
+ 1. Rozwiń folder **Strony,** a następnie rozwiń *pozycję About.cshtml.*
 
-     ![Plik about. cshtml w Eksplorator rozwiązań w programie Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
+     ![Plik About.cshtml w Eksplorator rozwiązań w Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
 
- 1. Wyświetl plik **about. cshtml** w edytorze kodu.
+ 1. Wyświetl plik **About.cshtml** w edytorze kodu.
 
-     ![Zrzut ekranu przedstawiający pierwsze dziesięć wierszy pliku about. cshtml w edytorze kodu programu Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Zrzut ekranu przedstawiający pierwsze dziesięć wierszy pliku About.cshtml w Visual Studio edytorze kodu.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
- 1. Wybierz plik **about. cshtml. cs** .
+ 1. Wybierz plik **About.cshtml.cs.**
 
-     ![Wybierz plik about. cshtml. cs w edytorze kodu programu Visual Studio](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
+     ![Wybierz plik About.cshtml.cs w Visual Studio edytorze kodu](media/csharp-aspnet-razor-solution-explorer-aboutcshtmlcs.png)
 
- 1. Wyświetl plik **about. cshtml. cs** w edytorze kodu.
+ 1. Wyświetl plik **About.cshtml.cs** w edytorze kodu.
 
-     ![Zrzut ekranu przedstawiający pierwsze 18 wierszy pliku o. cshtml. cs w edytorze kodu programu Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Zrzut ekranu przedstawiający pierwsze 18 wierszy pliku About.cshtml.cs w Visual Studio edytorze kodu. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
- 1. Projekt zawiera folder **wwwroot** , który jest katalogiem głównym witryny sieci Web. Rozwiń folder, aby wyświetlić jego zawartość.
+ 1. Projekt zawiera folder **wwwroot,** który jest katalogiem głównym witryny internetowej. Rozwiń folder, aby wyświetlić jego zawartość.
 
-     ![folder wwwroot w Eksplorator rozwiązań w programie Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+     ![folder wwwroot w Eksplorator rozwiązań w Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
-    Możesz umieścić statyczną zawartość witryny, &mdash; taką jak CSS, obrazy i biblioteki JavaScript, &mdash; bezpośrednio w ścieżkach, w których chcesz.
+    Zawartość witryny statycznej, taką jak CSS, obrazy i biblioteki Języka JavaScript, można umieszczać bezpośrednio w ścieżkach, &mdash; &mdash; w których mają być.
 
- 1. Projekt zawiera również pliki konfiguracyjne, które zarządzają aplikacją sieci Web w czasie wykonywania. Domyślna [Konfiguracja](/aspnet/core/fundamentals/configuration) aplikacji jest przechowywana w *appsettings.jsna*. Można jednak zastąpić te ustawienia przy użyciu *appsettings.Development.json*. Rozwiń **appsettings.jsna** pliku, aby wyświetlić **appsettings.Development.jsna** pliku.
+ 1. Projekt zawiera również pliki konfiguracji, które zarządzają aplikacją internetową w czasie uruchamiania. Domyślna konfiguracja [aplikacji jest](/aspnet/core/fundamentals/configuration) przechowywana wappsettings.js *na stronie*. Te ustawienia można jednak przesłonić przy użyciu *appsettings.Development.jsna .* Rozwiń **appsettings.jspliku,** aby wyświetlić **appsettings.Development.jspliku.**
 
-     ![Pliki konfiguracji w Eksplorator rozwiązań w programie Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+     ![Pliki konfiguracji w Eksplorator rozwiązań w Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>Uruchamianie, debugowanie i wprowadzanie zmian
 
-1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5** lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
+1. Wybierz przycisk **IIS Express** w idee, aby skompilować i uruchomić aplikację w trybie debugowania. (Ewentualnie naciśnij klawisz **F5** lub wybierz pozycję **Debuguj.**  >  **Rozpocznij debugowanie** na pasku menu).
 
-     ![Wybierz przycisk IIS Express w programie Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+     ![Wybierz przycisk IIS Express w Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że **nie można nawiązać połączenia z serwerem sieci Web "IIS Express"**, Zamknij program Visual Studio, a następnie otwórz go przy użyciu opcji **Uruchom jako administrator** w prawym przyciskiem myszy lub w menu kontekstowym. Następnie ponownie uruchom aplikację.
+     > Jeśli zostanie wyświetlony komunikat o błędzie Nie można nawiązać połączenia z serwerem internetowym **"IIS Express",** zamknij program Visual Studio, a następnie otwórz go przy użyciu opcji Uruchom jako **administrator** z menu kontekstowego lub kliknij prawym przyciskiem myszy. Następnie ponownie uruchom aplikację.
      >
-     > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat Express SSL protokołu IIS. Aby wyświetlić kod w przeglądarce sieci Web, wybierz opcję **tak**, a następnie wybierz opcję **tak** , jeśli zostanie wyświetlony komunikat ostrzegawczy o zabezpieczeniach.
+     > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat SSL Express usług IIS. Aby wyświetlić kod w przeglądarce internetowej, wybierz pozycję **Tak,** a następnie wybierz pozycję **Tak,** jeśli zostanie wyświetlony komunikat z ostrzeżeniem o zabezpieczeniach.
 
-1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna**, **informacje** i **kontakty** . (Jeśli nie, wybierz element menu "Hamburger", aby je wyświetlić).
+1. Visual Studio zostanie otwarte okno przeglądarki. Na pasku menu powinny zostać  **wtedy wyświetlony strony Strona** **główna,** Informacje i Kontakt. (Jeśli nie, wybierz element menu "hamburger", aby je wyświetlić).
 
-    ![Wybierz element menu "Hamburger" z paska menu w aplikacji sieci Web.](media/csharp-aspnet-razor-browser-page.png)
+    ![Wybierz element menu "hamburger" na pasku menu w aplikacji internetowej](media/csharp-aspnet-razor-browser-page.png)
 
-1. Wybierz pozycję **informacje** na pasku menu.
+1. Wybierz **pozycję Informacje** na pasku menu.
 
-   ![Wybierz informacje na pasku menu okna przeglądarki dla aplikacji](media/csharp-aspnet-razor-browser-page-about-menu.png)
+   ![Wybierz pozycję Informacje na pasku menu okna przeglądarki dla aplikacji](media/csharp-aspnet-razor-browser-page-about-menu.png)
 
-   Na stronie **informacje** w przeglądarce jest renderowany tekst ustawiony w pliku *about. cshtml* .
+   Między innymi strona **Informacje** w przeglądarce renderuje tekst ustawiony w pliku *About.cshtml.*
 
-   ![Wyświetlanie tekstu na stronie informacje](media/csharp-aspnet-razor-browser-page-about.png)
+   ![Wyświetlanie tekstu na stronie Informacje](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Wróć do programu Visual Studio, a następnie naciśnij klawisze **Shift + F5** , aby zatrzymać tryb debugowania. Spowoduje to również zamknięcie projektu w oknie przeglądarki.
+1. Wróć do Visual Studio, a następnie naciśnij **klawisze Shift+F5,** aby zatrzymać tryb debugowania. To również zamyka projekt w oknie przeglądarki.
 
-1. W programie Visual Studio wybierz pozycję **about. cshtml**. Następnie Usuń słowo _dodatkowe_ i w tym miejscu Dodaj _plik i katalog_ wyrazów.
+1. W Visual Studio wybierz pozycję **About.cshtml.** Następnie usuń wyraz _additional i_ w jego miejscu dodaj _wyrazy plik i katalog_.
 
-    ![Zmień tekst w pliku about. cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
+    ![Zmienianie tekstu w pliku About.cshtml](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
-1. Wybierz pozycję **about. cshtml. cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
+1. Wybierz **pozycję About.cshtml.cs.** Następnie wyczyść dyrektywy `using` w górnej części pliku przy użyciu następującego skrótu:
 
-   Wybierz dowolną z szarych `using` dyrektyw, a żarówka [Quick Actions](../../ide/quick-actions.md) zostanie wyświetlona tuż pod karetką lub na lewym marginesie. Wybierz żarówkę, a następnie wybierz **Usuń niepotrzebne użycie**.
+   Wybierz dowolną wyszarzone `using` dyrektywy, [](../../ide/quick-actions.md) a żarówka Szybkie akcje pojawi się tuż pod lewą Wybierz żarówkę, a następnie wybierz **pozycję Usuń niepotrzebne usings**.
 
-   ![Usuń niepotrzebne użycie w pliku about. cshtml. cs](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
+   ![Usuń niepotrzebne usings w pliku About.cshtml.cs](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
-     Program Visual Studio usuwa niepotrzebne `using` dyrektywy z pliku.
+     Visual Studio usuwa niepotrzebne dyrektywy `using` z pliku.
 
-1. Następnie w `OnGet()` metodzie Zmień treść na następujący kod:
+1. Następnie w metodzie zmień treść na `OnGet()` następujący kod:
 
      ```csharp
      public void OnGet()
@@ -227,100 +233,100 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
      }
     ```
 
-1. Zauważ, że dwie faliste podkreślenia są wyświetlane w obszarze **środowisko** i **ciąg**. Linie faliste są wyświetlane, ponieważ te typy nie należą do zakresu.
+1. Zwróć uwagę, że dwa podkreślenia faliste są wyświetlane w obszarze **Environment (Środowisko)** i **String (Ciąg).** Zostaną wyświetlone faliste podkreślenia, ponieważ te typy nie są w zakresie.
 
-   ![Błędy oznaczone falistą linią w metodzie OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
+   ![Błędy oznaczone falistym podkreśleniem w metodzie OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
 
-    Otwórz **Lista błędów** pasku narzędzi, aby zobaczyć te same błędy wymienione w tym miejscu. (Jeśli nie widzisz paska narzędzi **Lista błędów** , wybierz pozycję **Widok**  >  **Lista błędów** z górnego paska menu).
+    Otwórz pasek **narzędzi Lista błędów,** aby zobaczyć tam te same błędy. (Jeśli nie widzisz paska narzędzi Lista **błędów,** wybierz pozycję **Widok**  >  **Lista błędów** na górnym pasku menu).
 
-   ![Lista błędów w programie Visual Studio](media/csharp-aspnet-razor-error-list.png)
+   ![Lista błędów w Visual Studio](media/csharp-aspnet-razor-error-list.png)
 
-1. Naprawimy to. W edytorze kodu Umieść kursor w dowolnym wierszu zawierającym błąd, a następnie wybierz żarówkę Quick Actions na lewym marginesie. Następnie z menu rozwijanego wybierz pozycję **using System;** , aby dodać tę dyrektywę na początku pliku i usunąć błędy.
+1. Naprawmy to. W edytorze kodu umieść kursor w każdym wierszu zawierającym błąd, a następnie wybierz żarówkę Szybkie akcje na lewym marginesie. Następnie z menu rozwijanego wybierz pozycję **using System;** aby dodać tę dyrektywę na początku pliku i usunąć błędy.
 
-   ![Dodaj dyrektywę "using System;"](media/csharp-aspnet-razor-add-usings.png)
+   ![Dodawanie dyrektywy "using System;"](media/csharp-aspnet-razor-add-usings.png)
 
-1. Naciśnij **kombinację klawiszy CTRL** + **S** , aby zapisać zmiany, a następnie naciśnij klawisz **F5** , aby otworzyć projekt w przeglądarce sieci Web.
+1. Naciśnij **klawisze Ctrl** + **S,** aby zapisać zmiany, a następnie naciśnij **klawisz F5,** aby otworzyć projekt w przeglądarce internetowej.
 
-1. W górnej części witryny sieci Web wybierz pozycję **informacje** , aby wyświetlić zmiany.
+1. W górnej części witryny internetowej wybierz pozycję Informacje, **aby** wyświetlić zmiany.
 
-   ![Wyświetl zaktualizowane informacje o stronie zawierającej wprowadzone zmiany](media/csharp-aspnet-razor-browser-page-about-changed.png)
+   ![Wyświetl zaktualizowaną stronę Informacje, która zawiera wprowadzone zmiany](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
-1. Zamknij przeglądarkę sieci Web, naciśnij klawisz **SHIFT** + **F5** , aby zatrzymać tryb debugowania, a następnie zamknij program Visual Studio.
+1. Zamknij przeglądarkę internetową, naciśnij klawisz + **Shift F5,** aby zatrzymać tryb debugowania, a następnie zamknij Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-## <a name="tour-your-solution"></a>Zapoznaj się z rozwiązaniem
+## <a name="tour-your-solution"></a>Przewodnik po rozwiązaniu
 
- 1. Szablon projektu tworzy rozwiązanie o pojedynczym ASP.NET Core projekcie o nazwie _MyCoreApp_. Wybierz kartę **Eksplorator rozwiązań** , aby wyświetlić jej zawartość.
+ 1. Szablon projektu tworzy rozwiązanie z pojedynczym projektem ASP.NET Core o nazwie _MyCoreApp._ Wybierz **kartę Eksplorator rozwiązań,** aby wyświetlić jej zawartość.
 
-    ![ASP.NET Eksplorator rozwiązań w programie Visual Studio dla Razor Pages rozwiązanie o nazwie MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+    ![ASP.NET Eksplorator rozwiązań w Visual Studio rozwiązania Razor Pages o nazwie MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. Rozwiń folder **strony** .
+ 1. Rozwiń folder **Strony.**
 
-     ![Folder strony w Eksplorator rozwiązań](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![Folder Strony w Eksplorator rozwiązań](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
- 1. Wyświetl plik **index. cshtml** w edytorze kodu.
+ 1. Wyświetl plik **Index.cshtml** w edytorze kodu.
 
-     ![Wyświetlanie pliku index. cshtml w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
+     ![Wyświetlanie pliku Index.cshtml w edytorze Visual Studio kodu](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
- 1. Każdy plik. cshtml ma skojarzony plik kodu. Aby otworzyć plik kodu w edytorze, rozwiń węzeł **index. cshtml** w Eksplorator rozwiązań i wybierz plik **index. cshtml. cs** .
+ 1. Każdy plik cshtml ma skojarzony plik kodu. Aby otworzyć plik kodu w edytorze, rozwiń węzeł **Index.cshtml** w Eksplorator rozwiązań i wybierz plik **Index.cshtml.cs.**
 
-     ![Wybieranie pliku index. cshtml. cs w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Wybierz plik Index.cshtml.cs w edytorze Visual Studio kodu](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
- 1. Wyświetl plik **index. cshtml. cs** w edytorze kodu.
+ 1. Wyświetl plik **Index.cshtml.cs** w edytorze kodu.
 
-     ![Wyświetlanie pliku about. cshtml w edytorze kodu programu Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+     ![Wyświetlanie pliku About.cshtml w edytorze Visual Studio kodu](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
- 1. Projekt zawiera folder **wwwroot** , który jest katalogiem głównym witryny sieci Web. Rozwiń folder, aby wyświetlić jego zawartość.
+ 1. Projekt zawiera folder **wwwroot,** który jest katalogiem głównym witryny internetowej. Rozwiń folder, aby wyświetlić jego zawartość.
 
-     ![folder wwwroot w Eksplorator rozwiązań w programie Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+     ![folder wwwroot w Eksplorator rozwiązań w Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
-    Możesz umieścić statyczną zawartość witryny, &mdash; taką jak CSS, obrazy i biblioteki JavaScript, &mdash; bezpośrednio w ścieżkach, w których chcesz.
+    Zawartość statyczną witryny, taką jak CSS, obrazy i biblioteki Języka JavaScript, można umieszczać bezpośrednio w ścieżkach, &mdash; &mdash; w których mają być.
 
- 1. Projekt zawiera również pliki konfiguracyjne, które zarządzają aplikacją sieci Web w czasie wykonywania. Domyślna [Konfiguracja](/aspnet/core/fundamentals/configuration) aplikacji jest przechowywana w *appsettings.jsna*. Można jednak zastąpić te ustawienia przy użyciu *appsettings.Development.json*. Rozwiń **appsettings.jsna** pliku, aby wyświetlić **appsettings.Development.jsna** pliku.
+ 1. Projekt zawiera również pliki konfiguracji, które zarządzają aplikacją internetową w czasie uruchamiania. Domyślna konfiguracja [aplikacji jest](/aspnet/core/fundamentals/configuration) przechowywana wappsettings.js *w programie*. Te ustawienia można jednak przesłonić przy użyciuappsettings.Development.js *na .* Rozwiń **appsettings.jspliku,** aby wyświetlić **appsettings.Development.jspliku.**
 
-     ![Pliki konfiguracji w Eksplorator rozwiązań w programie Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+     ![Pliki konfiguracji w Eksplorator rozwiązań w Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>Uruchamianie, debugowanie i wprowadzanie zmian
 
-1. Wybierz przycisk **IIS Express** w IDE, aby skompilować i uruchomić aplikację w trybie debugowania. (Alternatywnie naciśnij klawisz **F5** lub wybierz polecenie **Debuguj**  >  **Rozpocznij debugowanie** z paska menu.
+1. Wybierz przycisk **IIS Express** w idee, aby skompilować i uruchomić aplikację w trybie debugowania. (Ewentualnie naciśnij klawisz **F5** lub wybierz pozycję **Debuguj.**  >  **Rozpocznij debugowanie** na pasku menu).
 
-     ![Wybierz przycisk IIS Express w programie Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+     ![Wybierz przycisk IIS Express w Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że **nie można nawiązać połączenia z serwerem sieci Web "IIS Express"**, Zamknij program Visual Studio, a następnie otwórz go przy użyciu opcji **Uruchom jako administrator** w prawym przyciskiem myszy lub w menu kontekstowym. Następnie ponownie uruchom aplikację.
+     > Jeśli zostanie wyświetlony komunikat o błędzie Nie można nawiązać połączenia z serwerem internetowym **"IIS Express",** zamknij program Visual Studio, a następnie otwórz go przy użyciu opcji Uruchom jako **administrator** z menu kontekstowego lub kliknij prawym przyciskiem myszy. Następnie ponownie uruchom aplikację.
      >
-     > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat Express SSL protokołu IIS. Aby wyświetlić kod w przeglądarce sieci Web, wybierz opcję **tak**, a następnie wybierz opcję **tak** , jeśli zostanie wyświetlony komunikat ostrzegawczy o zabezpieczeniach.
+     > Może również zostać wyświetlony komunikat z pytaniem, czy chcesz zaakceptować certyfikat SSL Express usług IIS. Aby wyświetlić kod w przeglądarce internetowej, wybierz pozycję **Tak,** a następnie wybierz pozycję **Tak,** jeśli zostanie wyświetlony komunikat z ostrzeżeniem o zabezpieczeniach.
 
-1. Program Visual Studio uruchamia okno przeglądarki. Na pasku menu powinna zostać wyświetlona **Strona główna** i **prywatność** .
+1. Visual Studio zostanie otwarte okno przeglądarki. Na pasku menu powinny **zostać** **wtedy wyświetlony** strony Strona główna i Prywatność.
 
-1. Wybierz opcję **prywatność** z paska menu.
+1. Wybierz **pozycję Prywatność** na pasku menu.
 
-   Na stronie **prywatność** w przeglądarce jest renderowany tekst ustawiony w pliku *privacy. cshtml* .
+   Strona **Prywatność** w przeglądarce renderuje tekst ustawiony w pliku *Privacy.cshtml.*
 
-   ![Wyświetlanie tekstu na stronie prywatność](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+   ![Wyświetlanie tekstu na stronie Prywatność](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
 
-1. Wróć do programu Visual Studio, a następnie naciśnij klawisze **Shift + F5** , aby zatrzymać tryb debugowania. Spowoduje to również zamknięcie projektu w oknie przeglądarki.
+1. Wróć do Visual Studio, a następnie naciśnij **klawisze Shift+F5,** aby zatrzymać tryb debugowania. To również zamyka projekt w oknie przeglądarki.
 
-1. W programie Visual Studio Otwórz pozycję **privacy. cshtml** do edycji. Następnie usuń wyrazy _Użyj tej strony, aby zobaczyć szczegóły zasad zachowania poufności informacji w witrynie_ i w ich miejscu Dodaj wyrazy, które _Ta strona jest w przygotowaniu do @ViewData ["timestamp"]_.
+1. W Visual Studio otwórz do edycji **pliku Privacy.cshtml.** Następnie usuń wyrazy Użyj tej strony, aby szczegółowo opisano zasady ochrony prywatności witryny i w jej miejscu dodać wyrazy Ta strona jest w trakcie budowy _@ViewData ["Sygnatura czasowa"]_. 
 
-    ![Zmień tekst w pliku privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+    ![Zmienianie tekstu w pliku Privacy.cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
-1. Teraz Wprowadźmy zmianę kodu. Wybierz pozycję **privacy. cshtml. cs**. Następnie wyczyść `using` dyrektywy w górnej części pliku, używając następującego skrótu:
+1. Teraz dokonajmy zmiany kodu. Wybierz **pozycję Privacy.cshtml.cs.** Następnie wyczyść dyrektywy `using` w górnej części pliku przy użyciu następującego skrótu:
 
-   Wybierz dowolną z szarych `using` dyrektyw, a żarówka [Quick Actions](../../ide/quick-actions.md) zostanie wyświetlona tuż pod karetką lub na lewym marginesie. Wybierz żarówkę, a następnie umieść wskaźnik myszy nad **Usuń niepotrzebne użycie**.
+   Wybierz dowolną wyszarzone `using` dyrektywy, [](../../ide/quick-actions.md) a żarówka Szybkie akcje pojawi się tuż pod lewą Wybierz żarówkę, a następnie najedź kursorem na pozycję **Usuń niepotrzebne usings**.
 
-   ![Usuń niepotrzebne użycie w pliku privacy. cshtml. cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![Usuń niepotrzebne usings w pliku Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
-   Teraz wybierz pozycję **Podgląd zmian** , aby zobaczyć, co zmieni się.
+   Teraz wybierz **pozycję Podgląd zmian,** aby zobaczyć, co się zmieni.
 
    ![Podgląd zmian](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   Wybierz pozycję **Zastosuj**. Program Visual Studio usuwa niepotrzebne `using` dyrektywy z pliku.
+   Wybierz pozycję **Zastosuj**. Visual Studio usuwa niepotrzebne dyrektywy `using` z pliku.
 
-1. Następnie w `OnGet()` metodzie Zmień treść na następujący kod:
+1. Następnie w metodzie zmień treść na `OnGet()` następujący kod:
 
      ```csharp
      public void OnGet()
@@ -330,50 +336,50 @@ To rozwiązanie jest zgodne ze wzorcem projektowania **strony Razor** . Jest to 
      }
     ```
 
-1. Zauważ, że dwie faliste podkreślenia są wyświetlane w obszarze **DateTime**. Linie faliste są wyświetlane, ponieważ ten typ nie znajduje się w zakresie.
+1. Zwróć uwagę, że dwa podkreślenia faliste pojawiają się w obszarze **DateTime**. Zostaną wyświetlone faliste podkreślenia, ponieważ ten typ nie znajduje się w zakresie.
 
-   ![Błędy oznaczone falistą linią w metodzie OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+   ![Błędy oznaczone falistym podkreśleniem w metodzie OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
 
-    Otwórz **Lista błędów** pasku narzędzi, aby zobaczyć te same błędy wymienione w tym miejscu. (Jeśli nie widzisz paska narzędzi **Lista błędów** , wybierz pozycję **Widok**  >  **Lista błędów** z górnego paska menu).
+    Otwórz pasek **narzędzi Lista błędów,** aby zobaczyć tam te same błędy. (Jeśli nie widzisz paska narzędzi Lista **błędów,** wybierz pozycję **Widok**  >  **Lista błędów** na górnym pasku menu).
 
-   ![Lista błędów w programie Visual Studio](media/vs-2019/csharp-aspnet-error-list.png)
+   ![Lista błędów w Visual Studio](media/vs-2019/csharp-aspnet-error-list.png)
 
-1. Naprawimy to. W edytorze kodu Umieść kursor w dowolnym wierszu zawierającym błąd, a następnie wybierz żarówkę Quick Actions na lewym marginesie. Następnie z menu rozwijanego wybierz pozycję **using System;** , aby dodać tę dyrektywę na początku pliku i usunąć błędy.
+1. Naprawmy to. W edytorze kodu umieść kursor w każdym wierszu zawierającym błąd, a następnie wybierz żarówkę Szybkie akcje na lewym marginesie. Następnie z menu rozwijanego wybierz pozycję **using System;** aby dodać tę dyrektywę na początku pliku i usunąć błędy.
 
-   ![Dodaj dyrektywę "using System;"](media/vs-2019/csharp-aspnet-add-usings.png)
+   ![Dodawanie dyrektywy "using System;"](media/vs-2019/csharp-aspnet-add-usings.png)
 
-1. Naciśnij klawisz **F5** , aby otworzyć projekt w przeglądarce sieci Web.
+1. Naciśnij **klawisz F5,** aby otworzyć projekt w przeglądarce internetowej.
 
-1. W górnej części witryny sieci Web wybierz pozycję **Ochrona prywatności** , aby wyświetlić zmiany.
+1. W górnej części witryny internetowej wybierz pozycję **Prywatność,** aby wyświetlić zmiany.
 
-   ![Wyświetlanie zaktualizowanej strony prywatności zawierającej wprowadzone zmiany](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+   ![Wyświetl zaktualizowaną stronę Prywatność, która zawiera wprowadzone zmiany](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
 
-1. Zamknij przeglądarkę sieci Web, naciśnij klawisz **SHIFT** + **F5** , aby zatrzymać tryb debugowania, a następnie zamknij program Visual Studio.
+1. Zamknij przeglądarkę internetową, naciśnij klawisz + **Shift F5,** aby zatrzymać tryb debugowania, a następnie zamknij Visual Studio.
 ::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Szybkie odpowiedzi — często zadawane pytania
 
-Oto krótkie często zadawane pytania, aby wyróżnić niektóre kluczowe pojęcia.
+Poniżej znajdziesz krótkie często zadawane pytania dotyczące niektórych kluczowych pojęć.
 
 ### <a name="what-is-c"></a>Co to jest język C#?
 
-[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) to bezpieczny dla typu język programowania i zorientowany obiektowo, zaprojektowany tak, aby był niezawodny i łatwy w nauce.
+[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) to bezpieczny pod kątem typów i zorientowany obiektowo język programowania zaprojektowany tak, aby był niezawodny i łatwy do nauczenia się.
 
 ### <a name="what-is-aspnet-core"></a>Co to jest ASP.NET Core?
 
-ASP.NET Core to platforma typu "open source" i międzyplatformowa do tworzenia aplikacji połączonych z Internetem, takich jak aplikacje i usługi sieci Web. Aplikacje ASP.NET Core mogą być uruchamiane na platformie .NET Core lub .NET Framework. Możesz tworzyć i uruchamiać aplikacje ASP.NET Core na wielu platformach w systemach Windows, Mac i Linux. ASP.NET Core to Open Source w serwisie [GitHub](https://github.com/aspnet/home).
+ASP.NET Core to międzyplatformowa platforma typu open source do tworzenia aplikacji połączonych z Internetem, takich jak aplikacje i usługi internetowe. ASP.NET Core można uruchamiać na .NET Core lub w .NET Framework. Możesz tworzyć i uruchamiać aplikacje ASP.NET Core na wiele platform w systemach Windows, Mac i Linux. ASP.NET Core jest open source w [witrynie GitHub.](https://github.com/aspnet/home)
 
 ### <a name="what-is-visual-studio"></a>Co to jest Visual Studio?
 
-Program Visual Studio to zintegrowany pakiet programistyczny narzędzi do tworzenia produktywności dla deweloperów. Zastanów się, że program służy do tworzenia programów i aplikacji.
+Visual Studio to zintegrowany pakiet programistów narzędzi zwiększających produktywność dla deweloperów. Pomyśl o nim jak o programie, który umożliwia tworzenie programów i aplikacji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenia tego samouczka. Mamy nadzieję, że uczysz się nieco na temat języka C#, ASP.NET Core i środowiska IDE programu Visual Studio. Aby dowiedzieć się więcej na temat tworzenia aplikacji lub witryny sieci Web za pomocą języka C# i ASP.NET, przejdź do następujących samouczków:
+Gratulujemy ukończenia tego samouczka! Mamy nadzieję, że wiesz już trochę o języku C#, ASP.NET Core i Visual Studio IDE. Aby dowiedzieć się więcej na temat tworzenia aplikacji internetowej lub witryny internetowej w języku C# i ASP.NET, przejdź do następujących samouczków:
 
 > [!div class="nextstepaction"]
-> [Tworzenie aplikacji sieci Web Razor Pages za pomocą ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
+> [Tworzenie aplikacji Razor Pages za pomocą programu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>Zobacz też
 
-[Publikowanie aplikacji sieci Web w Azure App Service przy użyciu programu Visual Studio](../../deployment/quickstart-deploy-to-azure.md)
+[Publikowanie aplikacji internetowej w witrynie Azure App Service przy użyciu Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

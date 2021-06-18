@@ -17,24 +17,24 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 15f54a3de7a0954238388bc5f414aa0cc971e39c
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: eeb2ee162a87b066c853d89e6920dce23a5370e0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565183"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306595"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 
-Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne identyfikatory obciążeń i składników, które należy zainstalować za pomocą wiersza polecenia lub określić jako zależność w manifeście VSIX. Visual Studio
+Kliknij nazwy wersji w poniższej tabeli, aby wyświetlić dostępne identyfikatory obciążeń i składników, które należy zainstalować za pomocą wiersza polecenia Visual Studio lub określić jako zależność w manifeście VSIX.
 
 ::: moniker range="vs-2017"
 
-**Zaktualizowano dla [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
+**Zaktualizowano do [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
 | **Wersja** | **ID (Identyfikator)** | **Opis** |
 | ----------- | ------ | --------------- |
-| [Visual &nbsp; Studio Enterprise &nbsp; 2017](workload-component-id-vs-enterprise.md?view=vs-2017&preserve-view=true) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązanie DevOps firmy Microsoft do zwiększania produktywności i koordynacji zespołów o dowolnym rozmiarze |
+| [Visual &nbsp; Studio Enterprise &nbsp; 2017](workload-component-id-vs-enterprise.md?view=vs-2017&preserve-view=true) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązanie DevOps firmy Microsoft do zwiększania produktywności i koordynacji zespołów dowolnego rozmiaru |
 | [Visual &nbsp; Studio Professional &nbsp; 2017](workload-component-id-vs-professional.md?view=vs-2017&preserve-view=true) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi deweloperskie dla małych zespołów |
 | [Visual &nbsp; Studio Community &nbsp; 2017](workload-component-id-vs-community.md?view=vs-2017&preserve-view=true) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni funkcjonalne środowiska IDE dla uczniów, deweloperów typu open source i poszczególnych deweloperów |
 | [Visual &nbsp; Studio Team Explorer &nbsp; &nbsp; 2017](workload-component-id-vs-team-explorer.md?view=vs-2017&preserve-view=true) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i Azure DevOps Services bez Visual Studio zestawu narzędzi dla deweloperów |
@@ -49,7 +49,7 @@ Aby uzyskać więcej informacji na temat używania tych list, zobacz strony Inst
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 **Zaktualizowano do [wersji 16.8](/visualstudio/releases/2019/release-notes/)**
 
@@ -59,14 +59,14 @@ Aby uzyskać więcej informacji na temat używania tych list, zobacz strony Inst
 | [Visual &nbsp; Studio Professional &nbsp; 2019](workload-component-id-vs-professional.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi deweloperskie dla małych zespołów |
 | [Visual &nbsp; Studio Community &nbsp; 2019](workload-component-id-vs-community.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni funkcjonalne środowiska IDE dla uczniów, deweloperów typu open source i poszczególnych deweloperów |
 | [Visual &nbsp; Studio Team Explorer &nbsp; &nbsp; 2019](workload-component-id-vs-team-explorer.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i Azure DevOps Services bez Visual Studio zestawu narzędzi dla deweloperów |
-| [Visual &nbsp; Studio Build Tools &nbsp; &nbsp; 2019](workload-component-id-vs-build-tools.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.BuildTools | Aplikacja Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności Visual Studio IDE. Dostępne są opcje instalowania kompilatorów Visual C++ i bibliotek, obsługi MFC, ATL i C++/CLI. |
+| [Visual &nbsp; Studio Build Tools &nbsp; &nbsp; 2019](workload-component-id-vs-build-tools.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.BuildTools | Usługa Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na programie MSBuild bez konieczności Visual Studio IDE. Dostępne są opcje instalowania kompilatorów Visual C++ i bibliotek, obsługi MFC, ATL i C++/CLI. |
 | [Visual &nbsp; Studio Test Agent &nbsp; &nbsp; 2019](workload-component-id-vs-test-agent.md?view=vs-2019&preserve-view=true)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie testów automatycznych i testów obciążeniowych |
-| [Visual &nbsp; Studio Load Test Controller &nbsp; &nbsp; 2019](workload-component-id-vs-test-controller.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.TestController | Dystrybuowanie testów automatycznych do wielu maszyn |
+| [Visual &nbsp; Studio Load Test Controller &nbsp; &nbsp; 2019](workload-component-id-vs-test-controller.md?view=vs-2019&preserve-view=true) | Microsoft.VisualStudio.Product.TestController | Dystrybuowanie testów automatycznych na wielu maszynach |
 
-Aby uzyskać więcej informacji na temat sposobu używania tych list, zobacz stronę Instalowanie programu [Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) przy użyciu parametrów wiersza polecenia oraz Stronę [Instalowania:](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019&preserve-view=true) migrowanie projektów rozszerzalności do Visual Studio sieci.
+Aby uzyskać więcej informacji na temat używania tych list, zobacz strony Instalowanie programu [Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) przy użyciu parametrów wiersza polecenia i Jak [migrować](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019&preserve-view=true) projekty rozszerzalności do Visual Studio sieci.
 
 > [!NOTE]
-> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz [Visual Studio 2017](workload-and-component-ids.md?view=vs-2017&preserve-view=true) i identyfikatory składników
+> Aby uzyskać listę identyfikatorów obciążeń i składników dla poprzedniej wersji, zobacz [Visual Studio 2017 i identyfikatory składników](workload-and-component-ids.md?view=vs-2017&preserve-view=true)
 
 ::: moniker-end
 

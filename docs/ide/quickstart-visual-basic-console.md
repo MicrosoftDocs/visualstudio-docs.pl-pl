@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d963762772060296f38a9c9c1ebfce85fbf5f8e
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 7272e02ebfba084bdbe311d10b69d7b41fade0e1
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113148"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307911"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki start: tworzenie pierwszej aplikacji konsolowej w Visual Studio za pomocą Visual Basic
 
@@ -34,6 +34,12 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pob
 ::: moniker range="vs-2019"
 
 Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/downloads) Visual Studio, aby zainstalować ją bezpłatnie.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2022 (wersja zapoznawcza), przejdź do strony pobierania programu [Visual Studio 2022 Preview,](https://visualstudio.microsoft.com/vs/preview/vs2022) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -61,12 +67,12 @@ Najpierw utworzysz projekt aplikacji Visual Basic aplikacji. Typ projektu zawier
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > Niektóre zrzuty ekranu w tym przewodniku Szybki start używają ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [Personalizowanie](quickstart-personalize-the-ide.md) środowiska IDE i edytora Visual Studio, aby dowiedzieć się, jak to zrobić.
 
-1. Otwórz Visual Studio 2019 r.
+1. Otwórz program Visual Studio.
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt.**
 

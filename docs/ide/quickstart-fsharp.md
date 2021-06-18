@@ -12,14 +12,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cbb85c41a01a03461bc1a73bdb58620e8a0c472f
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 5048a92f2a8029a4d4fc1c4c44d14f1630116e83
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113204"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307937"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: tworzenie pierwszej usługi Visual Studio Core w ASP.NET Core w programie F przy użyciu usługi Visual Studio\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Szybki start: tworzenie pierwszej usługi Visual Studio Core w ASP.NET Core w usłudze F przy użyciu usługi Visual Studio\#
 
 W tym 5-10-minutowym wprowadzeniu do języka F# w Visual Studio utworzysz aplikację internetową F# ASP.NET Core.
 
@@ -32,6 +32,12 @@ Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://vi
 ::: moniker range="vs-2019"
 
 Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://visualstudio.microsoft.com/downloads) do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Jeśli jeszcze nie zainstalowano programu Visual Studio 2022 (wersja zapoznawcza), przejdź do strony pobierania programu [Visual Studio 2022 Preview,](https://visualstudio.microsoft.com/vs/preview/vs2022) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -51,7 +57,7 @@ Najpierw utworzysz projekt internetowego interfejsu API ASP.NET Core. Typ projek
 
      ![ASP.NET obciążenia w instalatorze programu VS](../ide/media/quickstart-aspnet-workload.png)
 
-4.In **oknie dialogowym Nowa ASP.NET Core Web Application** wybierz pozycję ASP.NET Core **2.1** z górnego menu rozwijanego. (Jeśli nie widzisz programu **ASP.NET Core 2.1** na liście, zainstaluj  go, korzystając z linku Pobierz, który powinien pojawić się na żółtym pasku w górnej części okna dialogowego). Wybierz **przycisk OK.**
+4.In **oknie dialogowym Nowa ASP.NET Core Web Application** wybierz pozycję ASP.NET Core **2.1** z górnego menu rozwijanego. (Jeśli nie widzisz programu **ASP.NET Core 2.1** na liście, zainstaluj go, klikając **link** Pobierz, który powinien pojawić się na żółtym pasku w górnej części okna dialogowego). Wybierz **przycisk OK.**
 
 ::: moniker-end
 
@@ -65,7 +71,7 @@ Najpierw utworzysz projekt internetowego interfejsu API ASP.NET Core. Typ projek
 
 4. Na **stronie Konfigurowanie nowego projektu** wprowadź nazwę, a następnie wybierz pozycję **Utwórz.**
 
-5. Na stronie **Tworzenie nowej aplikacji ASP.NET Core** wybierz pozycję ASP.NET Core **2.1** z górnego menu rozwijanego, a następnie wybierz pozycję **Utwórz.**
+5. Na stronie **Tworzenie nowej aplikacji internetowej ASP.NET Core** wybierz pozycję ASP.NET Core **2.1** z górnego menu rozwijanego, a następnie wybierz pozycję **Utwórz.**
 
 ::: moniker-end
 
@@ -94,7 +100,7 @@ W edytorze powinien on wyglądać tak:
 
 1. Naciśnij **klawisz Ctrl** + **F5,** aby uruchomić aplikację i otworzyć ją w przeglądarce internetowej.
 
-2. Strona powinna przejść do trasy, ale jeśli tak się nie `/api/values` stanie, wprowadź `https://localhost:44396/api/values` ją w przeglądarce.
+2. Strona powinna przejść do `/api/values` trasy, ale jeśli tak nie jest, wprowadź `https://localhost:44396/api/values` w przeglądarce.
 
 W przeglądarce internetowej będzie teraz wyświetlany tekst JSON zgodny z wpisaną wcześniej wartością.
 

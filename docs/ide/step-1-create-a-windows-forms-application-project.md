@@ -1,6 +1,6 @@
 ---
 title: Krok 1. Tworzenie projektu aplikacji Windows Forms
-description: Dowiedz się, jak utworzyć projekt aplikacji Windows Forms dla przeglądarki obrazów.
+description: Dowiedz się, jak utworzyć Windows Forms aplikacji dla przeglądarki obrazów.
 ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
@@ -12,112 +12,112 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bfba4f3035023a93588d4bc4c6e0f378f6b4eb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: fccce125b66101b05544cba22b3724a8a40dc0f3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296576"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307742"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
-Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie projektu aplikacji Windows Forms.
+Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie projektu aplikacji Windows Forms Aplikacji.
 
 ::: moniker range="vs-2017"
 
-## <a name="open-visual-studio-2017"></a>Otwórz program Visual Studio 2017
+## <a name="open-visual-studio-2017"></a>Open Visual Studio 2017
 
-1. Na pasku menu wybierz pozycję **plik**  >  **Nowy**  >  **projekt**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
+1. Na pasku menu wybierz pozycję **File** New Project  >  **(Plik nowy**  >  **projekt).** Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt** _ _dialog pole *
+     ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt** _ pole _dialog projektowe*
 
-2. Po lewej stronie okna dialogowego **Nowy projekt** wybierz pozycję **Visual C#** lub **Visual Basic**, a następnie wybierz pozycję **Windows Desktop**.
+2. Po lewej stronie okna **dialogowego Nowy** projekt wybierz pozycję **Visual C#** **lub Visual Basic**, a następnie wybierz pozycję **Windows Desktop.**
 
-3. Na liście szablony projektu wybierz pozycję **aplikacja Windows Forms (.NET Framework)**. Nazwij nowy formularz *PictureViewer*, a następnie wybierz przycisk **OK** .
+3. Na liście szablonów projektów wybierz pozycję **Windows Forms App (.NET Framework).** Nadaj noweowi *formularzowi nazwę PictureViewer,* a następnie wybierz **przycisk OK.**
 
     >[!NOTE]
-    >Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![Obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+    >Jeśli nie widzisz szablonu **Windows Forms App (.NET Framework),** użyj szablonu Instalator programu Visual Studio, aby zainstalować obciążenie tworzenie aplikacji klasycznych dla programu **.NET.**<br/><br/>![Obciążenie tworzenia aplikacji klasycznych dla programu .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz [stronę Visual Studio](../install/install-visual-studio.md) instalacji.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-## <a name="open-visual-studio-2019"></a>Otwórz program Visual Studio 2019
+## <a name="open-visual-studio"></a>Otwórz program Visual Studio.
 
-1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt.**
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Wyświetlanie okna "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **pulpit** z listy **Typ projektu** .
+1. W **oknie Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **Desktop** z **listy Typ** projektu.
 
-   Po zastosowaniu filtru **Typ projektu** wybierz szablon **aplikacja Windows Forms (.NET Framework)** dla języka C# lub Visual Basic, a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu **filtru Project type** (Typ projektu) wybierz **szablon Windows Forms App (.NET Framework)** dla języka C# lub Visual Basic, a następnie wybierz pozycję **Next (Dalej).**
 
-   ![Wybierz szablon C# lub Visual Basic dla aplikacji Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Wybierz szablon aplikacji Visual Basic C# lub Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
+   > Jeśli nie widzisz szablonu **aplikacji Windows Forms (.NET Framework),** możesz go zainstalować w oknie **Tworzenie nowego** projektu. W **komunikacie Nie można znaleźć tego,** czego szukasz? wybierz link Zainstaluj więcej narzędzi **i** funkcji.
    >
-   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" w komunikacie "Nie można znaleźć tego, czego szukasz" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
+   > Następnie w Instalator programu Visual Studio wybierz obciążenie Wybierz tworzenie aplikacji **klasycznych dla programu .NET.**
    >
    > ![Obciążenie .NET Core w Instalator programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy. Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie.
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *PictureViewer* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+1. W **oknie Konfigurowanie nowego projektu** wpisz lub wprowadź *PictureViewer* w **polu Nazwa** projektu. Następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
-Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa jako kontener dla wszystkich projektów i plików wymaganych przez aplikację. Te warunki zostaną omówione bardziej szczegółowo w dalszej części tego samouczka.
+Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa jako kontener dla wszystkich projektów i plików wymaganych przez aplikację. Te terminy zostaną bardziej szczegółowo wyjaśnione w dalszej części tego samouczka.
 
-## <a name="about-the-windows-forms-app-project"></a>Informacje o projekcie aplikacji Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>Informacje o projekcie Windows Forms App
 
-1. Środowisko deweloperskie zawiera trzy okna: okno główne, **Eksplorator rozwiązań** i okno **Właściwości** .
+1. Środowisko projektowe zawiera trzy okna: okno główne, **Eksplorator rozwiązań**, i **okno** Właściwości.
 
-     Jeśli brakuje któregoś z tych okienek, możesz przywrócić domyślny układ okna. Na pasku menu wybierz kolejno **okna**  >  **Resetuj układ okna**.
+     Jeśli brakuje dowolnego z tych okien, możesz przywrócić domyślny układ okna. Na pasku menu wybierz pozycję **Układ**  >  **okna resetowania okna.**
 
-     Możesz również wyświetlić okna przy użyciu poleceń menu. Na pasku menu wybierz **Widok**  >  **Właściwości okno** lub **Eksplorator rozwiązań**.
+     Okna można również wyświetlać za pomocą poleceń menu. Na pasku menu wybierz pozycję **Wyświetl** okno właściwości lub wybierz  >   **Eksplorator rozwiązań**.
 
      Jeśli jakiekolwiek inne okna są otwarte, zamknij je, wybierając przycisk **Zamknij** (x) w prawym górnym rogu.
 
     ::: moniker range="vs-2017"
 
-    * **Okno główne** W tym oknie można wykonywać większość prac, takich jak praca z formularzami i edytowanie kodu. Okno wyświetla formularz w **Edytorze formularzy**. W górnej części okna zostanie wyświetlona karta **Strona początkowa** i **formularz Form1. cs [Design]** . (W Visual Basic Nazwa karty zostanie zakończona z *. vb* zamiast *. cs*).
+    * **Okno główne** W tym oknie będziesz wykonać większość pracy, na przykład pracy z formularzami i edytowania kodu. W oknie zostanie pokazany formularz w **Edytorze formularzy.** W górnej części okna zostaną wyświetlone karty **Strona** startowa i **Form1.cs [Design].** (W Visual Basic nazwa karty kończy się *na .vb* zamiast *.cs.*
 
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
 
-    * **Okno główne** W tym oknie można wykonywać większość prac, takich jak praca z formularzami i edytowanie kodu. Okno wyświetla formularz w **Edytorze formularzy**.
+    * **Okno główne** W tym oknie będziesz wykonać większość pracy, na przykład pracy z formularzami i edytowania kodu. W oknie zostanie pokazany formularz w **Edytorze formularzy.**
 
     ::: moniker-end
 
-    * **Okno Eksplorator rozwiązań** W tym oknie można wyświetlać wszystkie elementy w rozwiązaniu i przechodzić do nich.
+    * **Eksplorator rozwiązań okno** W tym oknie można wyświetlać i przechodzić do wszystkich elementów w rozwiązaniu.
 
-    W przypadku wybrania pliku zawartość okna **Właściwości** zostanie zmieniona. Jeśli otworzysz plik kodu (który zostanie zakończony w *. cs* w języku C# i *. vb* w Visual Basic), zostanie wyświetlony plik kodu lub Projektant pliku kodu. Projektant jest powierzchnią wizualną, na której można dodawać kontrolki, takie jak przyciski i listy. W przypadku formularzy programu Visual Studio Projektant jest nazywany **Projektant formularzy systemu Windows**.
+    Jeśli wybierzesz plik, zawartość okna **Właściwości zmieni** się. Jeśli otworzysz plik kodu (który kończy się na *.cs* w języku C# i *.vb* w języku Visual Basic), zostanie wyświetlony plik kodu lub projektant pliku kodu. Projektant to powierzchnia wizualna, na której można dodawać kontrolki, takie jak przyciski i listy. W Visual Studio formularzy projektant jest nazywany Projektant formularzy systemu Windows **.**
 
-    * **Okno właściwości** W tym oknie można zmienić właściwości elementów wybranych w innych oknach. Na przykład po wybraniu formularza Form1 można zmienić jego tytuł przez ustawienie właściwości **Text** i zmienić kolor tła, ustawiając właściwość **BackColor** .
+    * **okno Właściwości** W tym oknie można zmienić właściwości elementów wybieranych w innych oknach. Jeśli na przykład wybierzesz formularz Form1, możesz zmienić jego tytuł, ustawiając właściwość **Text,** a kolor tła można zmienić, ustawiając właściwość **Backcolor.**
 
       > [!NOTE]
-      > W górnym wierszu **Eksplorator rozwiązań** przedstawiono **rozwiązanie "PictureViewer" (1 projekt)**, co oznacza, że program Visual Studio utworzył rozwiązanie. Rozwiązanie może zawierać więcej niż jeden projekt, ale teraz będzie można korzystać z rozwiązań, które zawierają tylko jeden projekt.
+      > W górnym wierszu **Eksplorator rozwiązań** przedstawiono rozwiązanie **"PictureViewer" (1 projekt),** co oznacza, Visual Studio rozwiązanie zostało utworzone automatycznie. Rozwiązanie może zawierać więcej niż jeden projekt, ale na razie będziesz pracować z rozwiązaniami, które zawierają tylko jeden projekt.
 
-1. Na pasku menu wybierz kolejno opcje **plik**  >  **Zapisz wszystko**.
+1. Na pasku menu wybierz pozycję **Plik**  >  **Zapisz wszystko.**
 
-     Alternatywnie wybierz na pasku narzędzi przycisk **Zapisz wszystko** , który zostanie wyświetlony na poniższym obrazie.
+     Alternatywnie wybierz przycisk **Zapisz wszystko** na pasku narzędzi, który przedstawiono na poniższej ilustracji.
 
-     ![Przycisk Zapisz wszystkie paski narzędzi](../ide/media/express_iconsaveall.png)<br/>
-     ***Zapisz wszystko** _ _toolbar przycisk *
+     ![Przycisk Zapisz wszystko na pasku narzędzi](../ide/media/express_iconsaveall.png)<br/>
+     ***Zapisz wszystko** _ _toolbar przycisku*
 
-     Program Visual Studio automatycznie wypełnia nazwę folderu i nazwę projektu, a następnie zapisuje projekt w folderze projektów.
+     Visual Studio automatycznie wypełnia nazwę folderu i nazwę projektu, a następnie zapisuje projekt w folderze projektów.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz **[krok 2. Uruchamianie aplikacji](../ide/step-2-run-your-program.md)**.
+* Aby przejść do następnego kroku samouczka, zobacz **[Krok 2. Uruchamianie aplikacji.](../ide/step-2-run-your-program.md)**
 
-* Aby powrócić do tematu przeglądu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów](../ide/tutorial-1-create-a-picture-viewer.md).
+* Aby wrócić do tematu z omówieniem, zobacz [Samouczek 1: tworzenie przeglądarki obrazów.](../ide/tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
-* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: tworzenie testu matematycznego z czasem](tutorial-2-create-a-timed-math-quiz.md)
+* [Samouczek 3: tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)
