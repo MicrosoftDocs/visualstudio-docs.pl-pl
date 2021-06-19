@@ -1,7 +1,7 @@
 ---
 title: Używanie plików zrzutu w pliku | Microsoft Docs
 description: Plik zrzutu to migawka wykonywanej aplikacji i załadowanych modułów. Rozważ utworzenie pliku zrzutu w sytuacjach, w których nie masz dostępu do debugowania aplikacji.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.openlocfilehash: 1496c50d6a4022083a5cd093a0682ef36c70bbaa
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107941126"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389231"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Pliki zrzutu w Visual Studio debugowania
 
@@ -36,7 +36,7 @@ ms.locfileid: "107941126"
 
 Otwieranie pliku zrzutu ze stertą w Visual Studio przypomina zatrzymywanie w punkcie przerwania w sesji debugowania. Mimo że nie można kontynuować wykonywania, można zbadać stosy, wątki i wartości zmiennych aplikacji w czasie zrzutu.
 
-Zrzuty są najczęściej używane do debugowania problemów z maszynami, do których deweloperzy nie mają dostępu. Pliku zrzutu z komputera klienta można użyć, gdy nie można odtworzyć awarii lub nieosiągalnego programu na własnym komputerze. Testerzy tworzą również zrzuty, aby zapisać dane awarii lub nieopublikcyjnego programu do użycia w celu przeprowadzenia większej liczby testów.
+Zrzuty są najczęściej używane do debugowania problemów z maszynami, do których deweloperzy nie mają dostępu. Pliku zrzutu z komputera klienta można użyć, gdy nie można odtworzyć awarii lub nieosiągalnego programu na własnym komputerze. Testerzy tworzą również zrzuty, aby zapisać dane programu w przypadku awarii lub nieosiągalne do użycia w celu przeprowadzenia większej liczby testów.
 
 Debuger programu Visual Studio może zapisywać pliki zrzutu dla kodu zarządzanego lub natywnego. Może debugować pliki zrzutu utworzone przez Visual Studio lub przez inne aplikacje, które zapisują pliki w *formacie minizrzuci.*
 
@@ -76,7 +76,7 @@ Po włączeniu debugowania [just in time](../debugger/just-in-time-debugging-in-
 
 1. W **oknie dialogowym Zapisywanie** zrzutu jako w obszarze Zapisz jako **typ** wybierz pozycję **Minizrzut** lub **Minidump ze** stertą (ustawienie domyślne).
 
-1. Przejdź do ścieżki i wybierz nazwę pliku zrzutu, a następnie wybierz pozycję **Zapisz.**
+1. Przejdź do ścieżki i wybierz nazwę pliku zrzutu, a następnie wybierz pozycję **Zapisz**.
 
 >[!NOTE]
 >Pliki zrzutu można tworzyć za pomocą dowolnego programu obsługującego format minizrzuca systemu Windows. Na przykład narzędzie wiersza polecenia **Procdump** z systemu [Windows Sysinternals](/sysinternals/) może tworzyć pliki zrzutu awaryjnego procesu na podstawie wyzwalaczy lub na żądanie. Zobacz [Wymagania i ograniczenia, aby](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) uzyskać informacje o używaniu innych narzędzi do tworzenia plików zrzutu.
@@ -85,30 +85,30 @@ Po włączeniu debugowania [just in time](../debugger/just-in-time-debugging-in-
 
 1. W Visual Studio wybierz pozycję **Plik**  >  **Otwórz**  >  **plik.**
 
-1. W **oknie dialogowym Otwieranie** pliku znajdź i wybierz plik zrzutu. Zwykle ma rozszerzenie *dmp.* Wybierz przycisk **OK**.
+1. W **oknie dialogowym Otwieranie** pliku znajdź i wybierz plik zrzutu. Zazwyczaj ma rozszerzenie *dmp.* Wybierz przycisk **OK**.
 
    Okno **Podsumowanie minizrzuca** pliku zawiera podsumowanie i informacje o module dla pliku zrzutu oraz akcje, które można podjąć.
 
-   ![Strona podsumowania minizmika](../debugger/media/dbg_dump_summarypage.png "Strona podsumowania Minidump")
+   ![Strona podsumowania minizmigonia](../debugger/media/dbg_dump_summarypage.png "Strona podsumowania minizmigonia")
 
 1. W **obszarze Akcje:**
-   - Aby ustawić lokalizacje ładowania symboli, wybierz pozycję **Ustaw ścieżki symboli**.
-   - Aby rozpocząć debugowanie, wybierz pozycję **Debuguj** tylko zarządzane, **Debuguj** tylko z natywnym, **Debuguj** z mieszaną pamięcią lub **Debuguj z pamięcią zarządzaną.**
+   - Aby ustawić lokalizacje ładowania symboli, wybierz **pozycję Ustaw ścieżki symboli**.
+   - Aby rozpocząć debugowanie, wybierz pozycję Debuguj tylko **zarządzane,** **Debuguj** tylko natywnie, Debuguj za pomocą **mieszanych** lub **Debuguj za pomocą pamięci zarządzanej.**
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie plików exe, pdb i źródłowych
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie .exe, .pdb i plików źródłowych
 
 Aby korzystać z funkcji pełnego debugowania w pliku zrzutu, Visual Studio potrzeby:
 
-- Plik *exe, dla* których utworzono zrzut, oraz inne pliki binarne (biblioteki DLL itp.), których używa proces zrzutu.
-- Pliki symboli *(.pdb)* dla *pliku exe* i innych plików binarnych.
-- Pliki *exe i* *pdb,* które dokładnie pasują do wersji i kompilacji plików podczas tworzenia zrzutu.
-- Pliki źródłowe dla odpowiednich modułów. Jeśli nie możesz znaleźć plików źródłowych, możesz użyć desemblizy modułów.
+- Plik *.exe,* dla których utworzono zrzut, oraz inne pliki binarne (biblioteki DLL itp.), których używa proces zrzutu.
+- Pliki symboli *(.pdb)* dla *.exe* i innych plików binarnych.
+- Pliki *.exe* *i .pdb,* które dokładnie pasują do wersji i kompilacji plików podczas tworzenia zrzutu.
+- Pliki źródłowe dla odpowiednich modułów. Jeśli nie możesz znaleźć plików źródłowych, możesz użyć desembemblii modułów.
 
 Jeśli zrzut zawiera dane sterty, Visual Studio może poradzić sobie z brakującymi plikami binarnymi dla niektórych modułów, ale musi mieć pliki binarne wystarczające do wygenerowania prawidłowych stosów wywołań przez moduły.
 
-### <a name="search-paths-for-exe-files"></a>Ścieżki wyszukiwania dla plików exe
+### <a name="search-paths-for-exe-files"></a>Ścieżki wyszukiwania .exe plików
 
-Visual Studio automatycznie wyszukuje w tych lokalizacjach pliki *exe,* które nie znajdują się w pliku zrzutu:
+Visual Studio automatycznie wyszukuje pliki *.exe,* które nie znajdują się w pliku zrzutu, w tych lokalizacjach:
 
 1. Folder zawierający plik zrzutu.
 2. Ścieżka modułu określa plik zrzutu, czyli ścieżkę modułu na maszynie, na której zebrano zrzut.

@@ -1,6 +1,6 @@
 ---
 title: Dyrektywy T4 dotyczące szablonu tekstowego
-description: Dowiedz się więcej na temat dyrektyw dotyczących szablonu testu T4 i sposobu dostarczania instrukcji do aparatu transformacji szablonu tekstu.
+description: Dowiedz się więcej o dyrektywach szablonu testowego T4 i o tym, jak zapewniają instrukcje dla aparatu przekształcania szablonu tekstu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba13cbd31d41e656533aa5b13cf2a09503e58e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d9b7ca189ced11eea57e175a06b81161090070b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924592"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388740"
 ---
 # <a name="t4-text-template-directives"></a>Dyrektywy T4 dotyczące szablonu tekstowego
 
@@ -35,7 +35,7 @@ Składnia dyrektyw jest następująca:
 
 Wszystkie wartości atrybutów muszą być ujęte w podwójny cudzysłów. Jeśli sama wartość zawiera znaki cudzysłowu, muszą je poprzedzać znaki ucieczki \.
 
-Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym. Nie należy umieszczać ich wewnątrz bloku kodu `<#...#>` ani po bloku funkcji klasy `<#+...#>` .
+Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym. Nie należy umieszczać ich wewnątrz bloku kodu `<#...#>` ani po bloku cech klasy `<#+...#>` .
 
 [Dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md)
 
@@ -79,4 +79,4 @@ Dyrektywy to zazwyczaj pierwsze elementy w pliku szablonu lub pliku dołączanym
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-Ponadto można tworzyć własne dyrektywy. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów dyrektywy T4](../modeling/creating-custom-t4-text-template-directive-processors.md). Jeśli używasz wizualizacji i modelowania SDK do tworzenia języka specyficznego dla domeny (DSL), procesor dyrektywy zostanie wygenerowany jako część DSL.
+Ponadto można tworzyć własne dyrektywy. Aby uzyskać więcej informacji, zobacz Creating Custom T4 Text Template Directive Processors (Tworzenie niestandardowych procesorów [dyrektyw szablonów tekstowych T4).](../modeling/creating-custom-t4-text-template-directive-processors.md) Jeśli używasz wizualizacji i modelowania SDK do tworzenia języka specyficznego dla domeny (DSL), procesor dyrektywy zostanie wygenerowany jako część DSL.

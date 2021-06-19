@@ -1,6 +1,6 @@
 ---
 title: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
-description: Dowiedz się, jak szablony tekstu T4 w czasie projektowania pozwalają generować kod programu i inne pliki w projekcie programu Visual Studio.
+description: Dowiedz się, jak szablony tekstowe T4 w czasie projektowania umożliwiają generowanie kodu programu i innych plików w Visual Studio projektu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: f8b7bc48a5c409dbecbb313fd277a31ad1cec287
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884151"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389140"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 
-Szablony tekstu T4 w czasie projektowania pozwalają generować kod programu i inne pliki w projekcie programu Visual Studio. Zwykle należy napisać szablony, aby różnicować kod generowany przez nich zgodnie z danymi z *modelu*. Model to plik lub baza danych, która zawiera najważniejsze informacje o wymaganiach aplikacji.
+Szablony tekstowe T4 czasu projektowania umożliwiają generowanie kodu programu i innych plików w Visual Studio projektu. Zazwyczaj szablony są pisane tak, aby zmieniały kod generowany w zależności od danych z *modelu.* Model to plik lub baza danych zawierająca kluczowe informacje o wymaganiach aplikacji.
 
-Na przykład można mieć model, który definiuje przepływ pracy jako tabelę lub diagram. Z modelu można wygenerować oprogramowanie, które wykonuje przepływ pracy. W przypadku zmiany wymagań użytkowników można łatwo omówić nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodne niż ręczne aktualizowanie kodu.
+Na przykład możesz mieć model, który definiuje przepływ pracy jako tabelę lub diagram. Na podstawie modelu można wygenerować oprogramowanie, które wykonuje przepływ pracy. Gdy wymagania użytkowników zmienią się, można łatwo omówić nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodne niż ręczne aktualizowanie kodu.
 
 > [!NOTE]
-> *Model* to źródło danych opisujące konkretny aspekt aplikacji. Może to być dowolny formularz w dowolnym rodzaju pliku lub bazy danych. Nie musi znajdować się w żadnej konkretnej formie, takiej jak model UML lub model języka Domain-Specific. Typowe modele są w postaci tabel lub plików XML.
+> Model *to* źródło danych, które opisuje konkretny aspekt aplikacji. Może to być dowolna forma, w dowolnym rodzaju pliku lub bazy danych. Nie musi mieć określonej formy, takiej jak model UML lub Domain-Specific language. Typowe modele mają postać tabel lub plików XML.
 
-Prawdopodobnie masz już doświadczenie z generowaniem kodu. Podczas definiowania zasobów w pliku **resx** w rozwiązaniu programu Visual Studio zestaw klas i metod jest generowany automatycznie. Plik resources sprawia, że edytowanie zasobów jest znacznie prostsze i bardziej niezawodne niż w przypadku konieczności edytowania klas i metod. Za pomocą szablonów tekstowych można generować kod w taki sam sposób, jak w przypadku źródła własnego projektu.
+Prawdopodobnie znasz już generowanie kodu. Podczas definiowania zasobów w pliku **resx** w rozwiązaniu Visual Studio automatycznie generowany jest zestaw klas i metod. Plik zasobów sprawia, że edycja zasobów jest znacznie łatwiejsza i bardziej niezawodna niż w przypadku edytowania klas i metod. Za pomocą szablonów tekstowych można wygenerować kod w taki sam sposób ze źródła własnego projektu.
 
-Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i kod programu generujący zmienne części tekstu. Kod programu umożliwia powtarzanie lub warunkowe pominięcie części wygenerowanego tekstu. Wygenerowany tekst może być kodem programu, który będzie częścią aplikacji.
+Szablon tekstowy zawiera mieszankę tekstu, który chcesz wygenerować, i kod programu, który generuje zmienne części tekstu. Kod programu umożliwia powtarzanie lub warunkowe pomijanie części wygenerowanego tekstu. Wygenerowany tekst może być kodem programu, który będzie częścią aplikacji.
 
-## <a name="create-a-design-time-t4-text-template"></a>Tworzenie Design-Time szablonu tekstu T4
+## <a name="create-a-design-time-t4-text-template"></a>Tworzenie szablonu Design-Time T4
 
-1. Utwórz nowy projekt programu Visual Studio lub Otwórz istniejący.
+1. Utwórz nowy projekt Visual Studio lub otwórz istniejący.
 
-2. Dodaj plik szablonu tekstu do projektu i nadaj mu nazwę, która ma rozszerzenie **. tt**.
+2. Dodaj plik szablonu tekstowego do projektu i nadaj mu nazwę z rozszerzeniem **.tt**.
 
-    W tym celu w **Eksplorator rozwiązań** w menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element**. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **szablon tekstowy** w środkowym okienku.
+    Aby to zrobić, **w Eksplorator rozwiązań** menu skrótów projektu wybierz pozycję **Dodaj**  >  **nowy element.** W **oknie dialogowym Dodawanie nowego elementu** wybierz pozycję Szablon **tekstowy** w środkowym okienku.
 
-    Zwróć uwagę, że właściwość **niestandardowego narzędzia** pliku to **TextTemplatingFileGenerator**.
+    Zwróć uwagę, **że właściwością narzędzia niestandardowego** pliku jest **TextTemplatingFileGenerator.**
 
-3. Otwórz ten plik. Zawiera już następujące dyrektywy:
+3. Otwórz ten plik. Będzie ona już zawierać następujące dyrektywy:
 
    ```
    <#@ template hostspecific="false" language="C#" #>
    <#@ output extension=".txt" #>
    ```
 
-    Jeśli szablon został dodany do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu, atrybut Language będzie " `VB` ".
+    Jeśli szablon został dodany do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu, atrybut języka będzie miał wartość " `VB` ".
 
 4. Dodaj tekst na końcu pliku. Na przykład:
 
@@ -64,30 +64,30 @@ Szablon tekstowy zawiera kombinację tekstu, który ma zostać wygenerowany, i k
 
 5. Zapisz plik.
 
-    Może zostać wyświetlone okno komunikatu z **ostrzeżeniem o zabezpieczeniach** z prośbą o potwierdzenie, że chcesz uruchomić szablon. Kliknij przycisk **OK**.
+    Może zostać wyświetlony komunikat **Ostrzeżenie o** zabezpieczeniach z prośbą o potwierdzenie uruchomienia szablonu. Kliknij przycisk **OK**.
 
-6. W **Eksplorator rozwiązań** rozwiń węzeł plik szablonu i znajdziesz plik z rozszerzeniem **txt**. Plik zawiera tekst wygenerowany na podstawie szablonu.
+6. W **Eksplorator rozwiązań** rozwiń węzeł pliku szablonu, a znajdziesz plik z rozszerzeniem **.txt**. Plik zawiera tekst wygenerowany na podstawie szablonu.
 
    > [!NOTE]
-   > Jeśli projekt jest projektem Visual Basic, należy kliknąć przycisk **Pokaż wszystkie pliki** , aby wyświetlić plik wyjściowy.
+   > Jeśli projekt jest projektem Visual Basic, musisz kliknąć pozycję **Pokaż** wszystkie pliki, aby wyświetlić plik wyjściowy.
 
-### <a name="regenerate-the-code"></a>Wygeneruj ponownie kod
+### <a name="regenerate-the-code"></a>Ponowne generowanie kodu
 
-Szablon zostanie wykonany, generując plik pomocniczy w jednym z następujących przypadków:
+Szablon zostanie wykonany, generując plik pomocniczy, w dowolnym z następujących przypadków:
 
-- Edytuj szablon, a następnie zmień fokus na inne okno programu Visual Studio.
+- Edytuj szablon, a następnie zmień fokus na inne Visual Studio okna.
 
 - Zapisz szablon.
 
-- Kliknij kolejno pozycje **Przekształć wszystkie szablony** w menu **kompilacja** . Spowoduje to przekształcenie wszystkich szablonów w rozwiązaniu programu Visual Studio.
+- Kliknij **pozycję Przekształć wszystkie** szablony w menu **Kompilacja.** Spowoduje to przekształcenie wszystkich szablonów w Visual Studio rozwiązania.
 
-- W **Eksplorator rozwiązań**, w menu skrótów dowolnego pliku, wybierz **Uruchom narzędzie niestandardowe**. Użyj tej metody, aby przekształcić wybrany podzestaw szablonów.
+- W **Eksplorator rozwiązań** menu skrótów dowolnego pliku wybierz polecenie **Uruchom narzędzie niestandardowe.** Ta metoda służy do przekształcania wybranego podzestawu szablonów.
 
-Możesz również skonfigurować projekt programu Visual Studio tak, aby szablony były wykonywane, gdy pliki danych, które zostały przez nich odczytane, uległy zmianie. Aby uzyskać więcej informacji, zobacz Ponowne [generowanie kodu automatycznie](#Regenerating).
+Można również skonfigurować projekt Visual Studio tak, aby szablony były wykonywane po zmianie odczytywanych plików danych. Aby uzyskać więcej informacji, zobacz [Ponowne generowanie kodu automatycznie.](#Regenerating)
 
-## <a name="generate-variable-text"></a>Generuj tekst zmiennej
+## <a name="generate-variable-text"></a>Generowanie tekstu zmiennej
 
-Szablony tekstowe umożliwiają użycie kodu programu w celu zróżnicowania zawartości wygenerowanego pliku.
+Szablony tekstowe umożliwiają używanie kodu programu do zmieniania zawartości wygenerowanego pliku.
 
 1. Zmień zawartość `.tt` pliku:
 
@@ -115,40 +115,40 @@ Szablony tekstowe umożliwiają użycie kodu programu w celu zróżnicowania zaw
    #>
    ```
 
-2. Zapisz plik. tt i ponownie Zbadaj wygenerowany plik txt. Wyświetla listę kwadratów liczb z przenoszącą od 0 do 10.
+2. Zapisz plik tt i ponownie sprawdź wygenerowany .txt plik. Wyświetla on listę kwadratów liczb z wartości od 0 do 10.
 
-   Zauważ, że instrukcje są ujęte w nawiasy `<#...#>` i w obrębie `<#=...#>` . Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+   Zwróć uwagę, że instrukcje są ujęte w `<#...#>` , i pojedyncze wyrażenia w obrębie `<#=...#>` . Aby uzyskać więcej informacji, zobacz [Writing a T4 Text Template (Pisanie szablonu tekstowego T4).](../modeling/writing-a-t4-text-template.md)
 
-   Jeśli napiszesz kod generujący w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , `template` dyrektywa powinna zawierać `language="VB"` . Wartość domyślna to `"C#"`.
+   Jeśli napiszesz kod generujący w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , dyrektywa powinna zawierać `template` . `language="VB"` Wartość domyślna to `"C#"`.
 
-## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie Design-Time szablonu tekstu T4
+## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie szablonu Design-Time tekstowego T4
 
 Aby debugować szablon tekstowy:
 
-- Wstaw `debug="true"` do `template` dyrektywy. Na przykład:
+- Wstaw `debug="true"` do `template` dyrektywy . Na przykład:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
 - Ustaw punkty przerwania w szablonie w taki sam sposób, jak w przypadku zwykłego kodu.
 
-- Wybierz **Debuguj szablon T4** z menu skrótów pliku szablonu tekstu w Eksplorator rozwiązań.
+- Wybierz **pozycję Debuguj szablon T4** z menu skrótów pliku szablonu tekstowego w Eksplorator rozwiązań.
 
-   Szablon jest uruchamiany i zatrzyma się w punktach przerwania. Można przeanalizować zmienne i krokowo przez kod w zwykły sposób.
+   Szablon jest uruchamiany i zatrzymuje się w punktach przerwania. Możesz badać zmienne i przechodzić przez kod w zwykły sposób.
 
 > [!TIP]
-> `debug="true"` sprawia, że wygenerowany kod mapuje się dokładniej do szablonu tekstu, wstawiając więcej dyrektyw numerowania wierszy do wygenerowanego kodu. Jeśli go opuścisz, punkty przerwania mogą przestać działać w nieprawidłowym stanie.
+> `debug="true"` sprawia, że wygenerowana mapa kodu jest dokładniejsza w szablonie tekstowym przez wstawienie większej liczby dyrektyw numerowania wiersza do wygenerowanego kodu. Jeśli go nie opuścisz, punkty przerwania mogą zatrzymać uruchomienie w niewłaściwym stanie.
 >
-> Ale można pozostawić klauzulę w dyrektywie Template, nawet jeśli nie jest debugowana. Powoduje to, że jest to bardzo mały spadek wydajności.
+> Jednak możesz pozostawić klauzulę w dyrektywie szablonu nawet wtedy, gdy nie debugujesz. Powoduje to tylko niewielki spadek wydajności.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generowanie kodu lub zasobów dla rozwiązania
 
-Istnieje możliwość generowania plików programu, które różnią się w zależności od modelu. Model to dane wejściowe, takie jak baza danych, plik konfiguracji, model UML, model DSL lub inne źródło. Zwykle generowane są kilka plików programów z tego samego modelu. Aby to osiągnąć, należy utworzyć plik szablonu dla każdego wygenerowanego pliku programu i wszystkie szablony odczytywać ten sam model.
+Możesz generować pliki programu, które różnią się w zależności od modelu. Model to dane wejściowe, takie jak baza danych, plik konfiguracji, model UML, model DSL lub inne źródło. Zazwyczaj generujesz kilka plików programu z tego samego modelu. Aby to osiągnąć, należy utworzyć plik szablonu dla każdego wygenerowanego pliku programu i wszystkie szablony odczytać ten sam model.
 
-### <a name="to-generate-program-code-or-resources"></a>Aby wygenerować kod lub zasoby programu
+### <a name="to-generate-program-code-or-resources"></a>Aby wygenerować kod programu lub zasoby
 
-1. Zmień dyrektywę wyjściową, aby wygenerować plik odpowiedniego typu, na przykład CS, VB lub XML.
+1. Zmień dyrektywę output, aby wygenerować plik odpowiedniego typu, taki jak cs, vb, resx lub .xml.
 
-2. Wstaw kod, który będzie generował kod rozwiązania, którego potrzebujesz. Na przykład, jeśli chcesz wygenerować trzy deklaracje pola liczb całkowitych w klasie:
+2. Wstaw kod, który wygeneruje wymagany kod rozwiązania. Jeśli na przykład chcesz wygenerować trzy deklaracje pól liczb całkowitych w klasie:
 
     ```csharp
 
@@ -181,7 +181,7 @@ Istnieje możliwość generowania plików programu, które różnią się w zale
 
     ```
 
-3. Zapisz plik i sprawdź, czy wygenerowany plik zawiera teraz następujący kod:
+3. Zapisz plik i sprawdź wygenerowany plik, który teraz zawiera następujący kod:
 
     ```csharp
     class MyGeneratedClass {
@@ -193,27 +193,27 @@ Istnieje możliwość generowania plików programu, które różnią się w zale
 
 ### <a name="generating-code-and-generated-text"></a>Generowanie kodu i wygenerowanego tekstu
 
-Podczas generowania kodu programu najważniejsze jest, aby uniknąć pomyłki generowanego kodu, który jest wykonywany w szablonie, oraz wygenerowanego kodu, który stał się częścią rozwiązania. Te dwa języki nie muszą być takie same.
+Podczas generowania kodu programu najważniejsze jest uniknięcie mylącego generowania kodu wykonywanego w szablonie i wynikowego wygenerowanego kodu, który staje się częścią rozwiązania. Oba języki nie muszą być takie same.
 
-Poprzedni przykład ma dwie wersje. W jednej wersji kod generujący jest w języku C#. W innej wersji kod generujący jest Visual Basic. Ale tekst wygenerowany przez oba te elementy są takie same i jest klasą języka C#.
+Poprzedni przykład ma dwie wersje. W jednej wersji kod generujący znajduje się w języku C#. W drugiej wersji kod generujący jest Visual Basic. Jednak tekst wygenerowany przez oba te klasy jest taki sam i jest klasą języka C#.
 
-W ten sam sposób można użyć [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu do wygenerowania kodu w dowolnym języku. Wygenerowany tekst nie musi znajdować się w żadnym konkretnym języku i nie musi być kodem programu.
+W ten sam sposób można użyć szablonu do wygenerowania [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kodu w dowolnym języku. Wygenerowany tekst nie musi być w żadnym konkretnym języku i nie musi być kodem programu.
 
-### <a name="structuring-text-templates"></a>Tworzenie struktury szablonów tekstowych
+### <a name="structuring-text-templates"></a>Strukturyzowanie szablonów tekstowych
 
-W przypadku dobrych rozwiązań warto rozdzielić kod szablonu na dwie części:
+Zgodnie z dobrą praktyką kod szablonu dzielimy na dwie części:
 
-- Konfiguracja lub część zbierania danych, która ustawia wartości w zmiennych, ale nie zawiera bloków tekstowych. W poprzednim przykładzie ta część jest inicjowana `properties` .
+- Część konfiguracji lub zbierania danych, która ustawia wartości w zmiennych, ale nie zawiera bloków tekstowych. W poprzednim przykładzie ta część to inicjalizacja `properties` .
 
-   Jest to czasami nazywane sekcją "model", ponieważ konstruuje model w sklepie i zwykle odczytuje plik modelu.
+   Jest to czasami nazywane sekcją "model", ponieważ konstruuje model w magazynie i zwykle odczytuje plik modelu.
 
-- Część służąca do generowania tekstu ( `foreach(...){...}` w przykładzie), która używa wartości zmiennych.
+- Część generowania tekstu `foreach(...){...}` (w przykładzie), która używa wartości zmiennych.
 
-   Nie jest to konieczne separacja, ale jest to styl, który ułatwia odczytywanie szablonu przez zredukowanie złożoności części zawierającej tekst.
+   Nie jest to konieczne oddzielenie, ale jest to styl, który ułatwia odczytywanie szablonu przez zmniejszenie złożoności części, która zawiera tekst.
 
 ## <a name="reading-files-or-other-sources"></a>Odczytywanie plików lub innych źródeł
 
-Aby uzyskać dostęp do pliku modelu lub bazy danych, kod szablonu może używać zestawów, takich jak System.XML. Aby uzyskać dostęp do tych zestawów, należy wstawić dyrektywy takie jak następujące:
+Aby uzyskać dostęp do pliku modelu lub bazy danych, kod szablonu może używać zestawów, takich jak System.XML. Aby uzyskać dostęp do tych zestawów, należy wstawić dyrektywy takie jak:
 
 ```
 <#@ assembly name="System.Xml.dll" #>
@@ -221,7 +221,7 @@ Aby uzyskać dostęp do pliku modelu lub bazy danych, kod szablonu może używa�
 <#@ import namespace="System.IO" #>
 ```
 
-`assembly`Dyrektywa sprawia, że określony zestaw jest dostępny dla kodu szablonu w taki sam sposób jak sekcja References w projekcie programu Visual Studio. Nie trzeba dołączać odwołania do System.dll, które jest przywoływane automatycznie. `import`Dyrektywa pozwala używać typów bez użycia ich w pełni kwalifikowanych nazw w taki sam sposób jak w przypadku `using` dyrektywy w zwykłym pliku programu.
+Dyrektywa udostępnia określony zestaw kodowi szablonu w taki sam sposób, jak sekcja Odwołania Visual Studio `assembly` projektu. Nie trzeba dołączać odwołania do System.dll, które jest przywoływyne automatycznie. Dyrektywa umożliwia używanie typów bez używania ich w pełni kwalifikowanych nazw w taki sam sposób jak dyrektywa `import` `using` w zwykłym pliku programu.
 
 Na przykład po zaimportowaniu **System.IO** można napisać:
 
@@ -239,15 +239,15 @@ Na przykład po zaimportowaniu **System.IO** można napisać:
 #>
 ```
 
-### <a name="opening-a-file-with-a-relative-pathname"></a>Otwieranie pliku z względną ścieżką
+### <a name="opening-a-file-with-a-relative-pathname"></a>Otwieranie pliku ze względną nazwą ścieżki
 
-Aby załadować plik z lokalizacji względem szablonu tekstu, można użyć `this.Host.ResolvePath()` . Do użycia. Host, należy ustawić `hostspecific="true"` w `template` :
+Aby załadować plik z lokalizacji względem szablonu tekstowego, możesz użyć `this.Host.ResolvePath()` . Aby użyć tej funkcji. Hosta, należy ustawić `hostspecific="true"` w `template` :
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
 ```
 
-Następnie można napisać:
+Następnie możesz napisać na przykład:
 
 ```csharp
 <# string filename = this.Host.ResolvePath("filename.txt");
@@ -268,13 +268,13 @@ Następnie można napisać:
 #>
 ```
 
-Można również użyć `this.Host.TemplateFile` , który identyfikuje nazwę bieżącego pliku szablonu.
+Można również użyć `this.Host.TemplateFile` funkcji , która identyfikuje nazwę bieżącego pliku szablonu.
 
-Typ `this.Host` (w języku VB `Me.Host` ) to `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost` .
+Typ `this.Host` (w VB, `Me.Host` ) to `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost` .
 
-### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
+### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z Visual Studio
 
-Aby skorzystać z usług oferowanych w programie Visual Studio, ustaw `hostSpecific` atrybut i Załaduj `EnvDTE` zestaw. Importuj `Microsoft.VisualStudio.TextTemplating` , który zawiera `GetCOMService()` metodę rozszerzenia.  Następnie można użyć IServiceProvider. GetCOMService (), aby uzyskać dostęp do DTE i innych usług. Na przykład:
+Aby korzystać z usług Visual Studio, ustaw `hostSpecific` atrybut i załaduj `EnvDTE` zestaw. `Microsoft.VisualStudio.TextTemplating`Zaimportuj plik , który `GetCOMService()` zawiera metodę rozszerzenia .  Następnie można użyć funkcji IServiceProvider.GetCOMService() w celu uzyskania dostępu do jednostek DTE i innych usług. Na przykład:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -290,18 +290,18 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
-> Szablon tekstowy jest uruchamiany w jego własnej domenie aplikacji, a usługi są dostępne przez kierowanie. W takim przypadku GetCOMService () jest bardziej niezawodny niż GetService ().
+> Szablon tekstowy jest uruchamiany we własnej domenie aplikacji, a dostęp do usług jest uzyskiwany przez marshaling. W takim przypadku getCOMService() jest bardziej niezawodne niż GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Automatyczne generowanie kodu
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Automatyczne ponowne generowanie kodu
 
-Zazwyczaj kilka plików w rozwiązaniu programu Visual Studio jest generowanych z jednym modelem wejściowym. Każdy plik jest generowany na podstawie własnego szablonu, ale wszystkie szablony odwołują się do tego samego modelu.
+Zazwyczaj kilka plików w rozwiązaniu Visual Studio jest generowanych z jednym modelem wejściowym. Każdy plik jest generowany na podstawie własnego szablonu, ale wszystkie szablony odwołują się do tego samego modelu.
 
-Jeśli model źródłowy ulegnie zmianie, należy uruchomić ponowne uruchomienie wszystkich szablonów w rozwiązaniu. Aby to zrobić ręcznie, wybierz pozycję **Przekształć wszystkie szablony** w menu **kompilacja** .
+Jeśli model źródłowy zmieni się, należy ponownie uruchomić wszystkie szablony w rozwiązaniu. Aby to zrobić ręcznie, wybierz pozycję **Przekształć wszystkie szablony** w menu **Kompilacja.**
 
-Jeśli zainstalowano zestaw SDK modelowania programu Visual Studio, wszystkie szablony są przekształcane automatycznie za każdym razem, gdy wykonujesz kompilację. W tym celu należy edytować plik projektu (. csproj lub. vbproj) w edytorze tekstów i dodać następujące wiersze blisko końca pliku po dowolnych innych `<import>` instrukcjach:
+Jeśli zainstalowano zestaw SDK modelowania Visual Studio, wszystkie szablony mogą być przekształcane automatycznie podczas każdej kompilacji. W tym celu edytuj plik projektu (csproj lub vbproj) w edytorze tekstów i dodaj następujące wiersze pod koniec pliku po innych `<import>` instrukcjach:
 
 > [!NOTE]
-> Zestaw SDK transformacji szablonu tekstu i Visual Studio Modeling SDK są instalowane automatycznie podczas instalowania określonych funkcji programu Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Zestaw SDK przekształcania szablonu tekstu i Visual Studio SDK modelowania tekstu są instalowane automatycznie podczas instalowania określonych funkcji Visual Studio. Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -327,11 +327,11 @@ Jeśli zainstalowano zestaw SDK modelowania programu Visual Studio, wszystkie sz
 
 ::: moniker-end
 
-Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md).
+Aby uzyskać więcej informacji, zobacz [Generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Raportowanie błędów
 
-Aby umieścić komunikaty o błędach i ostrzeżeniach w oknie błędu programu Visual Studio, można użyć następujących metod:
+Aby umieścić komunikaty o błędach i ostrzeżeniach w Visual Studio błędu, można użyć tych metod:
 
 ```
 Error("An error message");
@@ -340,21 +340,21 @@ Warning("A warning message");
 
 ## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Konwertowanie istniejącego pliku na szablon
 
-Przydatną funkcją szablonów jest to, że wyglądają bardzo podobnie do generowanych przez nich plików wraz z niektórym wstawionym kodem programu. Sugeruje to przydatną metodę tworzenia szablonu. Najpierw utwórz zwykły plik jako prototyp, taki jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plik, a następnie stopniowo wprowadzaj kod generacji, który zmienia ten plik.
+Przydatną funkcją szablonów jest to, że wyglądają bardzo podobnie do plików, które generują, wraz z wstawionego kodu programu. Sugeruje to przydatną metodę tworzenia szablonu. Najpierw utwórz zwykły plik jako prototyp, taki jak plik, a następnie stopniowo wprowadzaj kod generacji, który [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] zmienia wynikowy plik.
 
-### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Aby skonwertować istniejący plik na szablon czasu projektowania
+### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Aby przekonwertować istniejący plik na szablon czasu projektowania
 
-1. Do projektu programu Visual Studio Dodaj plik typu, który chcesz wygenerować, taki jak `.cs` `.vb` plik, lub `.resx` .
+1. Do Visual Studio dodaj plik typu, który chcesz wygenerować, taki jak `.cs` , `.vb` lub `.resx` .
 
 2. Przetestuj nowy plik, aby upewnić się, że działa.
 
-3. W Eksplorator rozwiązań Zmień rozszerzenie nazwy pliku na **. tt**.
+3. W Eksplorator rozwiązań zmień rozszerzenie nazwy pliku na **.tt**.
 
-4. Sprawdź następujące właściwości pliku **TT** :
+4. Sprawdź następujące właściwości pliku **tt:**
 
    |Właściwość |Ustawienie |
    |-|-|
-   | **Niestandardowe narzędzie =** | **TextTemplatingFileGenerator** |
+   | **Narzędzie niestandardowe =** | **Texttemplatingfilegenerator** |
    | **Akcja kompilacji =** | **Brak** |
 
 5. Wstaw następujące wiersze na początku pliku:
@@ -364,31 +364,31 @@ Przydatną funkcją szablonów jest to, że wyglądają bardzo podobnie do gener
    <#@ output extension=".cs" #>
    ```
 
-    Jeśli chcesz napisać kod generujący szablon w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , ustaw `language` atrybut `"VB"` zamiast `"C#"` .
+    Jeśli chcesz napisać kod generujący szablon w pliku , ustaw atrybut [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] `language` na wartość zamiast `"VB"` `"C#"` .
 
-    Ustaw `extension` atrybut na rozszerzenie nazwy pliku dla typu pliku, który chcesz wygenerować, na przykład, `.cs` `.resx` lub `.xml` .
+    Ustaw atrybut na rozszerzenie nazwy pliku dla typu pliku, który chcesz wygenerować, na przykład `extension` `.cs` , lub `.resx` `.xml` .
 
 6. Zapisz plik.
 
-    Tworzony jest plik pomocniczy z określonym rozszerzeniem. Jego właściwości są poprawne dla typu pliku. Na przykład właściwość **Akcja kompilacji** pliku CS zostanie **skompilowana**.
+    Zostanie utworzony plik podmiotu zależnego z określonym rozszerzeniem. Jego właściwości są poprawne dla typu pliku. Na przykład **właściwością akcja kompilacji** pliku cs będzie **Kompilowanie**.
 
-    Sprawdź, czy wygenerowany plik zawiera tę samą zawartość co oryginalny plik.
+    Sprawdź, czy wygenerowany plik zawiera taką samą zawartość jak oryginalny plik.
 
-7. Zidentyfikuj część pliku, który ma być różny. Na przykład część, która pojawia się tylko pod pewnymi warunkami lub częścią, która jest powtarzana lub która różni się od konkretnych wartości. Wstaw kod generujący. Zapisz plik i sprawdź, czy plik pomocniczy został prawidłowo wygenerowany. Powtórz ten krok.
+7. Zidentyfikuj część pliku, która ma się różnić. Na przykład część, która pojawia się tylko w określonych warunkach, lub część, która jest powtarzana, lub gdzie konkretne wartości się różnią. Wstaw generujący kod. Zapisz plik i sprawdź, czy plik pomocniczy został poprawnie wygenerowany. Powtórz ten krok.
 
-## <a name="guidelines-for-code-generation"></a>Wskazówki dotyczące generowania kodu
+## <a name="guidelines-for-code-generation"></a>Wytyczne dotyczące generowania kodu
 
-Zapoznaj się z instrukcjami dotyczącymi [pisania szablonów tekstowych T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+Zobacz [Wytyczne dotyczące pisania szablonów tekstowych T4.](../modeling/guidelines-for-writing-t4-text-templates.md)
 
 ## <a name="next-steps"></a>Następne kroki
 
 |Następny krok|Temat|
 |-|-|
-|Pisanie i debugowanie bardziej zaawansowanego szablonu tekstu, z kodem korzystającym z funkcji pomocniczych, dołączonych plików i danych zewnętrznych.|[Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)|
-|Generuj dokumenty z szablonów w czasie wykonywania.|[Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|Uruchom Generowanie tekstu poza programem Visual Studio.|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
-|Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Napisz procesory dyrektywy, aby przekształcić własne źródła danych.|[Dopasowanie transformacji tekstu T4](../modeling/customizing-t4-text-transformation.md)|
+|Napisz i debuguj bardziej zaawansowany szablon tekstowy z kodem, który używa funkcji pomocniczych, dołączonych plików i danych zewnętrznych.|[Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)|
+|Generowanie dokumentów na podstawie szablonów w czasie uruchamiania.|[Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
+|Uruchamianie generowania tekstu poza Visual Studio.|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Przekształć dane w język specyficzny dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
+|Pisanie procesorów dyrektyw w celu przekształcania własnych źródeł danych.|[Dopasowanie transformacji tekstu T4](../modeling/customizing-t4-text-transformation.md)|
 
 ## <a name="see-also"></a>Zobacz też
 

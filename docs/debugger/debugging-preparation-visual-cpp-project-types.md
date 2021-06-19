@@ -1,7 +1,7 @@
 ---
-title: Przygotowanie do debugowania projektów C++ | Microsoft Docs
-description: Uzyskaj informacje na temat przygotowania do debugowania podstawowych typów projektów utworzonych przez szablony projektów Visual C++ w programie Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+title: Przygotowanie do debugowania projektów w języku C++ | Microsoft Docs
+description: Uzyskaj informacje na temat przygotowywania do debugowania podstawowych typów projektów utworzonych przez Visual C++ szablonów projektów w Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,83 +17,83 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 258671ca0426cb877d7cdf4bfc0b0f8f6095253c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683045"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387843"
 ---
-# <a name="debugging-preparation-c-project-types"></a>Przygotowanie debugowania: typy projektów C++
-W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Szablony projektu.
+# <a name="debugging-preparation-c-project-types"></a>Przygotowanie debugowania: Typy projektów C++
+W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] szablony projektów.
 
- Należy zauważyć, że te typy projektów, które tworzą biblioteki DLL jako dane wyjściowe, zostały pogrupowane w celu [debugowania projektów DLL](../debugger/debugging-dll-projects.md) ze względu na typowe funkcje, które udostępniają.
+ Należy pamiętać, że te typy projektów, które tworzą biblioteki DLL jako dane wyjściowe, zostały zgrupowane w debugowanie projektów [DLL](../debugger/debugging-dll-projects.md) ze względu na wspólne funkcje, które współdzielą.
 
 ## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> W tym temacie
  [Zalecane ustawienia właściwości](#BKMK_Recommended_Property_Settings)
 
  [Projekty Win32](#BKMK_Win32_Projects)
 
-- [Aby debugować aplikację systemu Win32 w języku C lub C++](#BKMK_To_debug_a_C_or_C___Win32_application)
+- [Aby debugować aplikację Win32 w języku C lub C++](#BKMK_To_debug_a_C_or_C___Win32_application)
 
 - [Aby ręcznie ustawić konfigurację debugowania](#BKMK_To_manually_set_a_Debug_configuration)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Zalecane ustawienia właściwości
- Niektóre właściwości powinny być ustawiane w taki sam sposób dla wszystkich niezarządzanych scenariuszy debugowania. W poniższych tabelach są wyświetlane zalecane ustawienia właściwości. Ustawienia niewymienione w tym miejscu mogą się różnić w różnych niezarządzanych typach projektów. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Niektóre właściwości należy ustawić w taki sam sposób dla wszystkich scenariuszy debugowania nieza pomocą narzędzia do debugowania. W poniższych tabelach przedstawiono zalecane ustawienia właściwości. Ustawienia, których nie wymieniono w tym miejscu, mogą się różnić w zależności od typu projektu nieza zarządzaniem. Aby uzyskać więcej informacji, zobacz Project Settings for a C++ Debug Configuration (Ustawienia [projektu dla konfiguracji debugowania w języku C++).](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości konfiguracji &#124; węźle Optymalizacja &#124; C/C++
-
-|Nazwa właściwości|Ustawienie|
-|-------------------|-------------|
-|**Optymalizacja**|Ustawienie **wyłączone (/0D).** Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio na kod źródłowy. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod wyświetlany w oknie **demontażu** jest generowany na podstawie zoptymalizowanego źródła, które może być niezgodne z danymi wyświetlanymi w oknach źródłowych. Inne funkcje, takie jak Krokowe, mogą nie zachowywać się zgodnie z oczekiwaniami.|
-
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości konfiguracji &#124; węzeł debugowania &#124; konsolidatora
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości konfiguracji &#124; C/C++ &#124; optymalizacji
 
 |Nazwa właściwości|Ustawienie|
 |-------------------|-------------|
-|**Generuj informacje o debugowaniu**|Zawsze należy ustawić tę opcję na **wartość tak (/Debug)** , aby utworzyć symbole debugowania i pliki potrzebne do debugowania. Gdy aplikacja przechodzi do środowiska produkcyjnego, można ustawić ją na off.|
+|**Optymalizacja**|Ustawiono **wartość Wyłączone (/0d).** Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym  kodzie, możesz włączyć to ustawienie, ale pamiętaj, że kod wyświetlany w oknie Dekompełowanie jest generowany ze zoptymalizowanego źródła, które może nie odpowiadać temu, co widzisz w oknach źródłowych. Inne funkcje, takie jak krokowe, mogą nie zachowywać się zgodnie z oczekiwaniami.|
+
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości konfiguracji &#124; w węźle &#124; debugowania
+
+|Nazwa właściwości|Ustawienie|
+|-------------------|-------------|
+|**Generowanie informacji o debugowaniu**|Zawsze należy ustawić tę opcję na **wartość Tak (/DEBUG),** aby tworzyć symbole debugowania i pliki potrzebne do debugowania. Gdy aplikacja przejdzie do produkcji, możesz ją wyłączyć.|
 
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="win32-projects"></a><a name="BKMK_Win32_Projects"></a> Projekty Win32
- Aplikacje Win32 są tradycyjnymi programami systemu Windows, które są zapisywane w języku C lub C++. Debugowanie tego typu aplikacji w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste.
+ Aplikacje Win32 to tradycyjne programy systemu Windows napisane w języku C lub C++. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] programie jest proste.
 
- Aplikacje Win32 zawierają aplikacje MFC i projekty ATL. Korzystają one z interfejsów API systemu Windows i mogą korzystać z MFC lub ATL, ale nie używają środowiska uruchomieniowego języka wspólnego (CLR). Mogą jednak wywołać kod zarządzany, który używa środowiska CLR.
+ Aplikacje Win32 obejmują aplikacje MFC i projekty ATL. Używają interfejsów API systemu Windows i mogą używać MFC lub ATL, ale nie używają środowiska uruchomieniowego języka wspólnego (CLR). Mogą jednak wywołać kod zarządzany, który używa clr.
 
- Poniższa procedura wyjaśnia, jak debugować projekt Win32 z poziomu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Innym sposobem na Debugowanie aplikacji Win32 jest uruchomienie aplikacji poza programem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie do niej. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ W poniższej procedurze wyjaśniono, jak debugować projekt Win32 z poziomu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Innym sposobem debugowania aplikacji Win32 jest uruchomienie aplikacji poza aplikacją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie do jej. Aby uzyskać więcej informacji, zobacz [Attach to Running Processes (Dołączanie do uruchomionych procesów).](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
-### <a name="to-debug-a-c-or-c-win32-application"></a><a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Aby debugować aplikację systemu Win32 w języku C lub C++
+### <a name="to-debug-a-c-or-c-win32-application"></a><a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Aby debugować aplikację Win32 w języku C lub C++
 
 1. Otwórz projekt w programie Visual Studio.
 
-2. W menu **debugowanie** wybierz polecenie **Uruchom**.
+2. W menu **Debugowanie** wybierz pozycję **Uruchom.**
 
-3. Debuguj przy użyciu technik omówionych w [pierwszej kolejności w debugerze](../debugger/debugger-feature-tour.md).
+3. Debuguj przy użyciu technik omówiowanych w [artykule Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
 ### <a name="to-manually-set-a-debug-configuration"></a><a name="BKMK_To_manually_set_a_Debug_configuration"></a> Aby ręcznie ustawić konfigurację debugowania
 
-1. W menu **Widok** kliknij polecenie **strony właściwości**.
+1. W menu **Widok** kliknij pozycję **Strony właściwości.**
 
-2. Kliknij węzeł **Właściwości konfiguracji** , aby go otworzyć, jeśli nie jest jeszcze
+2. Kliknij węzeł **Właściwości konfiguracji,** aby otworzyć go, jeśli jeszcze go nie ma
 
-3. Wybierz pozycję **Ogólne** i ustaw wartość wiersza **danych wyjściowych** na **Debuguj**.
+3. Wybierz **pozycję Ogólne** i ustaw wartość wiersza Danych **wyjściowych** na **Debuguj.**
 
-4. Otwórz węzeł **C/C++** i wybierz pozycję **Ogólne**.
+4. Otwórz węzeł **C/C++** i wybierz pozycję **Ogólne.**
 
-    W wierszu **debugowania** należy określić typ informacji o debugowaniu, które mają być generowane przez kompilator. Wartości, które można wybrać, zawierają **bazę danych programu (/ZI)** lub **bazę danych programu do edycji & Kontynuuj (/ZI)**.
+    W **wierszu** Debugowanie określ typ informacji debugowania, które mają być generowane przez kompilator. Wartości, które można wybrać, to Baza danych **programu (/Zi)** lub Baza danych programu na & **Kontynuuj (/ZI).**
 
-5. Wybierz opcję **Optymalizacja**, a w wierszu **Optymalizacja** wybierz pozycję **wyłączone (/0D)** z listy rozwijanej.
+5. Wybierz **pozycję Optymalizacja** i **w** wierszu Optymalizacja wybierz pozycję **Wyłączone (/0d)** z listy rozwijanej.
 
-    Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio na kod źródłowy. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod wyświetlany w oknie demontażu jest generowany na podstawie zoptymalizowanego źródła, które może nie odpowiadać temu, co widzisz w oknach źródłowych. Funkcje, takie jak Krokowe, mogą pokazywać nieprawidłowe punkty przerwania i punkt wykonania.
+    Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, możesz włączyć to ustawienie, ale pamiętaj, że kod wyświetlany w oknie Dekompełowanie jest generowany ze zoptymalizowanego źródła, które może nie odpowiadać temu, co widzisz w oknach źródłowych. Funkcje, takie jak krokowe, prawdopodobnie będą niepoprawnie pokazywać punkty przerwania i punkt wykonywania.
 
-6. Otwórz węzeł **konsolidatora** i wybierz pozycję **debugowanie**. W pierwszym **wygenerowanym** wierszu wybierz pozycję **tak (/Debug)** z listy rozwijanej. Zawsze ustawiaj ją podczas debugowania.
+6. Otwórz węzeł **Linker** i wybierz pozycję **Debugowanie.** W pierwszym **wierszu Generowanie** wybierz pozycję **Tak (/DEBUGUJ)** z listy rozwijanej. Zawsze ustawiaj tę wartość podczas debugowania.
 
-   Aby uzyskać więcej informacji, zobacz[Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+   Aby uzyskać więcej informacji, zobacz Project Settings for a C++ Debug Configuration (Ustawienia[projektu dla konfiguracji debugowania w języku C++).](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 
    [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Zobacz też
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
-- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Dołączanie do uruchomionego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Konfiguracje debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)

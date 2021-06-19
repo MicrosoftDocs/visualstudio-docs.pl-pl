@@ -1,34 +1,34 @@
 ---
 title: Bloki formantów szablonów tekstowych
-description: Dowiedz się więcej na temat bloków formantów szablonów tekstowych i sposobu, w jaki bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżnicowania danych wyjściowych.
+description: Dowiedz się więcej o blokach sterujących szablonu tekstu i o tym, jak bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zmiany danych wyjściowych.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90a4efea7d37b83d3d5ff7a085abcf3439d99263
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924584"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388727"
 ---
 # <a name="text-template-control-blocks"></a>Bloki formantów szablonów tekstowych
-Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżnicowania danych wyjściowych. Istnieją trzy rodzaje bloków sterowania, które są rozróżniane przez ich nawiasy otwierające:
+Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zmiany danych wyjściowych. Istnieją trzy rodzaje bloków sterujących, które odróżniają nawiasy otwierające:
 
-- `<# Standard control blocks #>` może zawierać instrukcje.
+- `<# Standard control blocks #>` może zawierać instrukcje .
 
 - `<#= Expression control blocks #>` może zawierać wyrażenia.
 
-- `<#+ Class feature control blocks #>` może zawierać metody, pola i właściwości.
+- `<#+ Class feature control blocks #>` Może zawierać metody, pola i właściwości.
 
-## <a name="standard-control-block"></a>Standardowy blok kontrolny
- Standardowe bloki sterujące zawierają instrukcje. Na przykład następujący blok standardowy pobiera nazwy wszystkich atrybutów w dokumencie XML:
+## <a name="standard-control-block"></a>Blok kontrolki standardowej
+ Standardowe bloki sterujące zawierają instrukcje . Na przykład następujący blok standardowy pobiera nazwy wszystkich atrybutów w dokumencie XML:
 
 ```
 <#@ assembly name="System.Xml.dll" #>
@@ -49,7 +49,7 @@ Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżn
 #>
 ```
 
- Możesz osadzić zwykły tekst wewnątrz instrukcji złożonej, takiej jak `if` lub `for` . Na przykład ten fragment generuje linię wyjściową w każdej iteracji pętli:
+ Zwykły tekst można osadzić wewnątrz instrukcji złożonej, takiej jak `if` lub `for` . Na przykład ten fragment generuje wiersz wyjściowy w każdej iteracji pętli:
 
 ```
 <#
@@ -64,11 +64,11 @@ Found another one!
 ```
 
 > [!WARNING]
-> Zawsze używaj {...} Aby rozdzielić zagnieżdżone instrukcje zawierające osadzony zwykły tekst. Następujący przykład może nie funkcjonować prawidłowo:
+> Zawsze używaj {...} do rozdzielania zagnieżdżonych instrukcji zawierających osadzony zwykły tekst. Poniższy przykład może nie działać prawidłowo:
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
-> Zamiast tego należy uwzględnić {nawiasy klamrowe} w następujący sposób:
+> Zamiast tego należy dołączyć nawiasy klamrowe {braces}, w następujący sposób:
 
 ```
 
@@ -82,8 +82,8 @@ Some text.
 #>
 ```
 
-## <a name="expression-control-block"></a>Blok kontroli wyrażenia
- Bloki sterujące wyrażenia są używane w kodzie, który zawiera ciągi do zapisania w pliku wyjściowym. Na przykład, przy użyciu powyższego przykładu, można wydrukować nazwy atrybutów do pliku wyjściowego, modyfikując blok kodu w następujący sposób:
+## <a name="expression-control-block"></a>Blok sterowania wyrażeniami
+ Bloki sterowania wyrażeniami są używane dla kodu, który udostępnia ciągi, które mają być zapisywane w pliku wyjściowym. Na przykład w powyższym przykładzie można wydrukować nazwy atrybutów w pliku wyjściowym, modyfikując blok kodu w następujący sposób:
 
 ```
 <#
@@ -100,8 +100,8 @@ Some text.
 #>
 ```
 
-## <a name="class-feature-control-block"></a>Blok sterowania cechą klasy
- Można użyć bloków kontroli funkcji klasy, aby dodać metody, właściwości, pola, a nawet zagnieżdżone klasy do szablonu tekstu. Najbardziej typowym zastosowaniem bloków funkcji klasy jest dostarczanie funkcji pomocnika dla kodu w innych częściach szablonu tekstu. Na przykład następująca funkcja klasy blokuje pierwszą literę nazwy atrybutu (lub, jeśli nazwa zawiera odstępy, wielką literą każdego wyrazu):
+## <a name="class-feature-control-block"></a>Blok sterowania cechami klas
+ Bloków sterowania cechami klas można używać do dodawania metod, właściwości, pól, a nawet klas zagnieżdżonych do szablonu tekstu. Najpowszechniejszym zastosowaniem bloków cech klasy jest zapewnienie funkcji pomocnika dla kodu w innych częściach szablonu tekstu. Na przykład poniższy blok funkcji klasy zawiera pierwszą literę nazwy atrybutu (lub, jeśli nazwa zawiera odstęp, pierwsza litera każdego wyrazu jest oznaczana literą pierwszą):
 
 ```
 <#@ import namespace="System.Globalization" #>
@@ -117,9 +117,9 @@ Some text.
 ```
 
 > [!NOTE]
-> Po bloku sterowania funkcją klasy nie mogą następować standardowe bloki kontrolne w tym samym pliku szablonu. Jednak to ograniczenie nie dotyczy wyniku stosowania `<#@include#>` dyrektyw. Każdy dołączony plik może mieć bloki standardowe, a następnie bloki funkcji klasy.
+> Po bloku sterowania cechami klas nie mogą znajdować się standardowe bloki sterujące w tym samym pliku szablonu. Jednak to ograniczenie nie ma zastosowania do wyniku dyrektyw `<#@include#>` using. Każdy dołączony plik może mieć standardowe bloki, po których następuje blok funkcji klasy.
 
- Można utworzyć funkcję, która generuje dane wyjściowe przez osadzenie bloków tekstowych i wyrażeń wewnątrz bloku sterowania funkcją klasy. Na przykład:
+ Możesz utworzyć funkcję, która generuje dane wyjściowe, osadzając bloki tekstu i wyrażeń wewnątrz bloku sterowania cechami klasy. Na przykład:
 
 ```
 <#+
@@ -132,7 +132,7 @@ Some text.
 #>
 ```
 
- Możesz wywołać tę funkcję z bloku standardowego lub z innego bloku funkcji klasy:
+ Tę funkcję można wywołać z bloku standardowego lub z innego bloku funkcji klasy:
 
 ```
 <# foreach (Attribute attribute in item.Attributes)
@@ -143,21 +143,21 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Jak używać bloków sterowania
- Cały kod we wszystkich blokach standardowego i wyrażenia kontroli w pojedynczym szablonie (w tym cały kod w dołączonych szablonach) jest połączony z formularzem `TransformText()` metody wygenerowanego kodu. (Aby uzyskać więcej informacji na temat dołączania innych szablonów tekstowych do `include` dyrektywy, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
+ Cały kod we wszystkich standardowych blokach sterujących wyrażeniami i wyrażeniach w jednym szablonie (w tym cały kod w uwzględnionych szablonach) jest połączony w celu tworzenia `TransformText()` metody wygenerowanego kodu. (Aby uzyskać więcej informacji na temat do uwzględnienia innych szablonów tekstowych z `include` dyrektywą , zobacz [dyrektywy T4 dotyczące szablonów tekstowych).](../modeling/t4-text-template-directives.md)
 
- Podczas używania bloków sterowania należy pamiętać o następujących kwestiach:
+ W przypadku używania bloków sterujących należy pamiętać o następujących kwestiach:
 
-- **Językowe.** W szablonie tekstowym można użyć kodu w języku C# lub Visual Basic. Językiem domyślnym jest C#, ale można określić Visual Basic przy użyciu `language` parametru `template` dyrektywy. (Aby uzyskać więcej informacji na temat `template` dyrektywy, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
+- **Język.** W szablonie tekstowym można użyć Visual Basic c# lub kodu. Język domyślny to C#, ale można Visual Basic za pomocą `language` parametru `template` dyrektywy . (Aby uzyskać więcej informacji na temat `template` dyrektywy , zobacz dyrektywy [T4 dotyczące szablonów tekstowych).](../modeling/t4-text-template-directives.md)
 
-     Język używany w blokach kontroli nie ma nic robić z językiem lub formatem tekstu wygenerowanego w szablonie tekstowym. Można wygenerować C# przy użyciu kodu Visual Basic lub odwrotnie.
+     Język używany w blokach sterujących nie ma nic wspólnego z językiem ani formatem tekstu wygenerowanego w szablonie tekstu. Język C# można wygenerować przy użyciu Visual Basic lub odwrotnie.
 
-     W danym szablonie tekstowym można używać tylko jednego języka, w tym wszystkich szablonów tekstowych zawartych w `include` dyrektywie.
+     W danym szablonie tekstowym można używać tylko jednego języka, w tym wszystkich szablonów tekstowych dołączanych do `include` dyrektywy .
 
-- **Zmienne lokalne.** Ponieważ cały kod w blokach Standard i Expression Control w szablonie tekstowym jest generowany jako pojedyncza Metoda, należy upewnić się, że nie występują żadne konflikty z nazwami zmiennych lokalnych. W przypadku dołączania innych szablonów tekstu należy się upewnić, że nazwy zmiennych są unikatowe we wszystkich dołączonych szablonach. Jednym ze sposobów upewnienia się, że jest dodanie ciągu do każdej nazwy zmiennej lokalnej identyfikującej szablon tekstu, w którym został zadeklarowany.
+- **Zmienne lokalne.** Ponieważ cały kod w standardowych blokach sterujących wyrażeniami i w szablonie tekstowym jest generowany jako pojedyncza metoda, należy upewnić się, że nie ma żadnych konfliktów z nazwami zmiennych lokalnych. Jeśli uwzględniasz inne szablony tekstowe, upewnij się, że nazwy zmiennych są unikatowe dla wszystkich dołączonych szablonów. Jednym ze sposobów zapewnienia tego jest dodanie ciągu do każdej nazwy zmiennej lokalnej identyfikującej szablon tekstowy, w którym został zadeklarowany.
 
-     Dobrym pomysłem jest również zainicjowanie zmiennych lokalnych w celu uzyskania rozsądnych wartości podczas ich deklarowania, szczególnie w przypadku dołączania wielu szablonów tekstowych.
+     Dobrym pomysłem jest również zainicjowanie zmiennych lokalnych w celu uwzględnienia sensownych wartości podczas ich deklarowania, szczególnie w przypadku uwzględnienia wielu szablonów tekstowych.
 
-- **Zagnieżdżanie bloków sterujących.** Bloki sterujące nie mogą być zagnieżdżone wewnątrz siebie. Należy zawsze przerwać dany blok kontroli przed otwarciem kolejnego. Na przykład, poniżej pokazano, jak wydrukować jakiś tekst w bloku wyrażenia jako część standardowego bloku sterowania.
+- **Zagnieżdżanie bloków sterujących.** Bloki sterujące mogą nie być zagnieżdżone wewnątrz siebie. Należy zawsze zakończyć dany blok sterujący przed otwarciem kolejnego. Na przykład poniżej przedstawiono sposób drukowania tekstu w bloku wyrażeń jako części standardowego bloku sterującego.
 
     ```
     <#
@@ -169,4 +169,4 @@ Some text.
     <# } #>
     ```
 
-- **Refaktoryzacji.** Aby zachować czytelność szablonów tekstu i ułatwić ich zrozumienie, zdecydowanie zalecamy uniknięcie powtarzania kodu przez umieszczenie kodu wielokrotnego użytku w funkcjach pomocniczych w blokach funkcji klasy lub przez utworzenie własnej klasy szablonu tekstu, która dziedziczy z klasy Microsoft. VisualStudio. TextTemplating. TextTransformation.
+- **Refaktoryzacji.** Aby szablony tekstowe były krótkie i łatwe do zrozumienia, zdecydowanie zaleca się unikanie powtarzalnego kodu przez faktorowanie kodu wielokrotnego użytku w funkcjach pomocnika w blokach cech klasy lub przez utworzenie własnej klasy szablonu tekstu dziedziczonej z klasy Microsoft.VisualStudio.TextTemplating.TextTransformation.

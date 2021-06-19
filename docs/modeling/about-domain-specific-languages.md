@@ -1,66 +1,66 @@
 ---
 title: Języki specyficzne dla domeny — informacje
-description: Dowiedz się, w jaki sposób język specyficzny dla domeny (DSL) jest zaprojektowany do instrukcji ekspresowych w konkretnym obszarze problemu lub w domenie.
+description: Dowiedz się, jak język specyficzny dla domeny (DSL) jest przeznaczony do wyrażania instrukcji w określonej przestrzeni problemu lub domenie.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 144e8f965a456c4763a74daa2cedeb8c571e518f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab56292aafda25efc0b3dfeeb14e93d4502a5567
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908972"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384983"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
-W przeciwieństwie do języka ogólnego przeznaczenia, takiego jak C# lub UML, język specyficzny dla domeny (DSL) jest przeznaczony do ekspresowych instrukcji w konkretnym obszarze problemu lub w domenie.
+W przeciwieństwie do języka ogólnego przeznaczenia, takiego jak C# lub UML, język specyficzny dla domeny (DSL) jest przeznaczony do wyrażania instrukcji w określonej przestrzeni problemu lub domenie.
 
-Dobrze znane językami DSL obejmują wyrażenia regularne i SQL. Każdy DSL jest znacznie lepszy niż język ogólnego przeznaczenia do opisywania operacji na ciągach tekstowych lub w bazie danych, ale znacznie gorszy dla opisywania pomysłów, które są poza własnym zakresem. Poszczególne branże mają także własne językami DSL. Na przykład w branży telekomunikacyjnej Języki opisu wywołań są szeroko używane do określenia sekwencji stanów w wywołaniu telefonicznym, a w branży podróży samolotem standardowa linia DSL jest używana do opisywania ksiąg lotów.
+Dobrze znane listy DSL obejmują wyrażenia regularne i język SQL. Każdy JĘZYK DSL jest znacznie lepszy niż język ogólnego przeznaczenia do opisywania operacji na ciągach tekstowych lub bazie danych, ale znacznie gorszy w przypadku opisywania koncepcji, które znajdują się poza własnym zakresem. Poszczególne branże mają również własne adresy DSL. Na przykład w branży telekomunikacyjnej języki opisu połączeń są powszechnie używane do określania sekwencji stanów w rozmowach telefonicznych, a w branży podróży telekomunikacyjnych standardowy język DSL jest używany do opisywania rezerwacji lotów.
 
-Twoja firma i Twój projekt obejmują również specjalne zestawy koncepcji, które można opisać przy użyciu języka DSL. Na przykład można zdefiniować DSL dla jednej z następujących aplikacji:
+Twoja firma i Twój projekt mają również do czynienia ze specjalnymi zestawami koncepcji, które można opisać za pomocą DSL. Na przykład można zdefiniować DSL dla jednej z tych aplikacji:
 
-- Planowanie ścieżek nawigacji w witrynie sieci Web.
+- Planowanie ścieżek nawigacji w witrynie internetowej.
 
 - Diagramy okablowania dla składników elektronicznych.
 
-- Sieci na taśmach i urządzeniach do obsługi bagażu dla lotniska.
+- Sieci przenośników taśmowych i ładunek do obsługi sprzętu dla lotniska.
 
-Podczas projektowania DSL, należy zdefiniować *klasy domeny* dla każdego z ważnych koncepcji w domenie, takich jak strona sieci Web, Lampa lub telefon rejestracyjny lotniska. Należy zdefiniować *relacje domeny* , takie jak Hyperlink, drut lub taśma przenośnika, aby połączyć koncepcje ze sobą.
+Podczas projektowania DSL, należy  zdefiniować klasę domeny dla każdego z ważnych pojęć w domenie, takich jak strony sieci Web, lamp lub punktu zaewidencji lotniska. Aby połączyć *te koncepcje,* należy zdefiniować relacje domeny, takie jak hiperlink, przewodowy lub przenośnik taśmowy.
 
-Użytkownicy tworzonych *modeli DSL.* Modele to *wystąpienia* DSL. Na przykład opisują konkretną witrynę sieci Web lub okablowanie określonego urządzenia lub systemu obsługi bagażu w konkretnym porcie.
+Użytkownicy DSL utworzyć *modele.* Modele są *wystąpieniami* DSL. Opisują one na przykład określoną witrynę internetową, okablowanie określonego urządzenia lub system obsługi poszczególnych lotniska.
 
-Użytkownicy mogą wyświetlać model jako diagram lub formularz systemu Windows. Modele mogą być również wyświetlane jako XML, które są przechowywane. Podczas definiowania linii DSL definiuje się, jak wystąpienia każdej klasy domeny i relacji pojawiają się na ekranie użytkownika. Typowy DSL jest wyświetlany jako kolekcja ikon lub prostokątów połączonych za pomocą strzałek.
+Użytkownicy mogą wyświetlać model jako diagram lub jako formularz systemu Windows. Modele można również wyświetlać w formacie XML, czyli w jaki sposób są przechowywane. Podczas definiowania DSL, należy zdefiniować sposób wystąpień każdej klasy domeny i relacji na ekranie użytkownika. Typowy DSL jest wyświetlany jako kolekcja ikon lub prostokątów połączonych strzałkami.
 
-Poniższy rysunek przedstawia mały model w diagramowy DSL:
+Na poniższej ilustracji przedstawiono mały model w diagramie DSL:
 
-![Model drzewa rodziny Tudor](../modeling/media/tudor_familytreemodel.png)
+![Tudor Family Tree Model](../modeling/media/tudor_familytreemodel.png)
 
-## <a name="what-you-can-do-with-dsls"></a>Co możesz zrobić z językami DSL
+## <a name="what-you-can-do-with-dsls"></a>Co można zrobić za pomocą plików DSL
 
-Typowa aplikacja DSL polega na wygenerowaniu kodu programu lub innych artefaktów. Podczas definiowania kombinacji DSL można zdefiniować *Szablony tekstowe* , które odczytają model DSL i generują pliki tekstowe.
+Typowym zastosowaniem DSL jest generowanie kodu programu lub innych artefaktów. Podczas definiowania DSL, można zdefiniować szablony *tekstowe,* które odczytują model DSL i generują pliki tekstowe.
 
-Można na przykład napisać szablony, które przenoszą plan lotniska i generować część oprogramowania na potrzeby obsługi bagażu, a także niektóre dokumenty użytkowników opisujące plan.
+Można na przykład napisać szablony, które wygenerują część oprogramowania do obsługi lotniska, a także niektóre dokumenty użytkowników opisujące plan.
 
-Po zdefiniowaniu modemu DSL można go rozpowszechnić do innych użytkowników, którzy będą mogli go zainstalować na swoich komputerach. Użytkownicy programu DSL mogą tworzyć i edytować modele w programie Visual Studio.
+Po zdefiniować DSL, można rozpowszechniać go do innych użytkowników, którzy mogą zainstalować go na własnych komputerach. Użytkownicy DSL można tworzyć i edytować modele w Visual Studio.
 
-Można także definiować polecenia menu i inne narzędzia, które ułatwiają użytkownikom edycję DSL, ograniczenia sprawdzania poprawności w celu zapewnienia prawidłowego użycia DSL oraz szablonów elementów, które ułatwiają użytkownikom tworzenie nowych wystąpień. Możesz otoczyć jeden lub więcej językami DSL z narzędziami i innymi rozszerzeniami programu Visual Studio jako pakietem zintegrowanym.
+Można również zdefiniować polecenia menu i inne narzędzia, które ułatwiają użytkownikom edytowanie DSL, ograniczenia weryfikacji, aby upewnić się, że DSL jest używany prawidłowo i szablony elementów, które ułatwiają użytkownikom tworzenie nowych wystąpień. Można opakowane co najmniej jeden plik DSL za pomocą jego narzędzi i innych rozszerzeń Visual Studio jako zintegrowany pakiet.
 
-Zazwyczaj język specyficzny dla domeny jest tworzony, gdy zespół programistyczny ma pisać podobny kod dla kilku produktów. Na przykład firma wyspecjalizowana w systemach obsługi bagażu może zdefiniować Śledzenie bagażu DSL, z którego mogą generować kod dla każdej instalacji. Korzyści wynikające z używania DSL są zrozumiałe dla klientów, że kod wygenerowany z niego jest niezawodny i że system może być szybko aktualizowany w przypadku zmiany wymagań klientów.
+Zazwyczaj język specyficzny dla domeny jest tworzony, gdy zespół programistów musi napisać podobny kod dla kilku produktów. Na przykład firma, która specjalizuje się w systemach obsługi plików, może zdefiniować ścieżkę DSL, z której może wygenerować część kodu dla każdej instalacji. Zalety DSL są zrozumiałe dla ich klientów, że kod wygenerowany na jego podstawie jest niezawodny i że system może być szybko aktualizowany, jeśli wymagania klientów zmienią się.
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] umożliwia utworzenie języka specyficznego dla domeny z własnym projektantem graficznym i własną notacją diagramu, a następnie użycie tego języka do wygenerowania odpowiedniego kodu źródłowego dla każdego projektu.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Umożliwia utworzenie języka specyficznego dla domeny, który ma własnego projektanta graficznego i własną notację diagramu, a następnie użycie języka do wygenerowania odpowiedniego kodu źródłowego dla każdego projektu.
 
-## <a name="domain-specific-development"></a>Opracowywanie Domain-Specific
+## <a name="domain-specific-development"></a>Domain-Specific tworzenia aplikacji
 
-Programowanie specyficzne dla domeny to proces identyfikowania części aplikacji, które można modelować przy użyciu języka specyficznego dla domeny, a następnie konstruowania języka i wdrażania go dla deweloperów aplikacji. Deweloperzy wykorzystują język specyficzny dla domeny do konstruowania modeli, które są specyficzne dla aplikacji, używają modeli do generowania kodu źródłowego, a następnie używają kodu źródłowego do tworzenia aplikacji.
+Opracowywanie specyficzne dla domeny to proces identyfikowania części aplikacji, które mogą być modelowane przy użyciu języka specyficznego dla domeny, a następnie konstruowania języka i wdrażania go dla deweloperów aplikacji. Deweloperzy używają języka specyficznego dla domeny do konstruowania modeli, które są specyficzne dla ich aplikacji, używają modeli do generowania kodu źródłowego, a następnie używają kodu źródłowego do tworzenia aplikacji.
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty tworzenia Domain-Specific graficznych
+## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekty projektowania graficznego Domain-Specific graficznego
 
 Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
@@ -68,7 +68,7 @@ Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
 - Model domeny
 
-- Generowanie artefaktu
+- Generowanie artefaktów
 
 - Serializacja
 
@@ -76,52 +76,52 @@ Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
 ### <a name="notation"></a>Notacja
 
-Język specyficzny dla domeny musi mieć dostatecznie mały zestaw elementów, który można łatwo definiować i rozszerzać w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy i łączniki, które reprezentują relacje między elementami na graficznym diagramie. W programie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] kształty mogą być rozszerzane i udoskonalane, aby reprezentować elementy języka specyficznego dla domeny.
+Język specyficzny dla domeny musi mieć względnie niewielki zestaw elementów, które można łatwo zdefiniować i rozszerzyć w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy, i łączników, które reprezentują relacje między elementami, na powierzchni diagramu graficznego. W programie kształty można rozszerzać i udoskonalać w celu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] reprezentowania elementów języka specyficznego dla domeny.
 
 ### <a name="domain-model"></a>Model domeny
 
-Język specyficzny dla domeny musi łączyć zestaw elementów i relacje między nimi w spójną gramatykę. Należy również określić, czy kombinacje elementów i relacji są prawidłowe. Na przykład języki programowania zazwyczaj uniemożliwiają Dziedziczenie cykliczne, w którym jedna klasa jest pochodną drugiej klasy, a druga Klasa pochodzi od pierwszej klasy. Ograniczenia mogą również służyć do wyrażenia logiki biznesowej, na przykład jedna osoba nie może być zależna od siebie. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] używa ograniczeń do wyrażania rodzajów ograniczeń, których wymagają większość języków specyficznych dla domeny.
+Język specyficzny dla domeny musi łączyć zestaw elementów i relacje między nimi w spójną gramatykę. Musi również definiować, czy kombinacje elementów i relacji są prawidłowe. Na przykład języki programowania zwykle uniemożliwiają dziedziczenie cykliczne, w którym jedna klasa jest pochodną drugiej klasy, a druga klasa jest pochodną pierwszej klasy. Ograniczenia mogą być również używane do wyrażania logiki biznesowej, na przykład jedna osoba nie może być zależna od siebie. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] używa ograniczeń do wyrażania rodzajów ograniczeń, których wymaga większość języków specyficznych dla domeny.
 
-### <a name="artifact-generation"></a>Generowanie artefaktu
+### <a name="artifact-generation"></a>Generowanie artefaktów
 
-Jednym z głównych zastosowań języka specyficznego dla domeny jest generowanie artefaktu, na przykład kod źródłowy, plik XML lub inne użyteczne dane. Zwykle zmiana w modelu oznacza zmianę w artefaktie. Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] programu można generować artefakty i generować je ponownie po zmianie modelu.
+Jednym z głównych celów języka specyficznego dla domeny jest wygenerowanie artefaktu, na przykład kodu źródłowego, pliku XML lub innych danych, których można użyć. Zazwyczaj zmiana w modelu oznacza zmianę artefaktu. Za pomocą funkcji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] można generować artefakty i generować je ponownie po zmianie modelu.
 
 ### <a name="serialization"></a>Serializacja
 
-Język specyficzny dla domeny musi zostać utrwalony w niektórych formularzach, które można edytować, zapisać, zamknąć i ponownie załadować. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Program korzysta z formatu XML, który pozwala definiować i dostosowywać sposób serializacji lub utrwalania języka specyficznego dla domeny.
+Język specyficzny dla domeny musi być utrwalony w określonej postaci, która może być edytowana, zapisywana, zamykana i ponownie ładowana. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] używa formatu XML, który umożliwia definiowanie i dostosowywanie sposobu serializacji lub utrwalania języka specyficznego dla domeny.
 
 ### <a name="integration-with-visual-studio"></a>Integracja z programem Visual Studio
 
-Ponieważ usługa [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest hostowana w programie Visual Studio, rozszerza wiele okien i kontrolek programu Visual Studio. Umożliwia również dostosowanie zachowania poleceń menu, elementów przybornika i innych elementów interfejsu użytkownika.
+Ponieważ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usługa jest hostowana Visual Studio, rozszerza wiele okien Visual Studio kontrolek. Umożliwia również dostosowywanie zachowania poleceń menu, elementów przybornika i innych elementów interfejsu użytkownika.
 
-Możesz również utworzyć modelową kartę magistrali dla języka specyficznego dla domeny. Ta karta umożliwia odwołuje się do modelu i elementów w ramach modelu i pozwala napisać kod, który może uzyskać dostęp do wystąpienia DSL i zaktualizować go. Korzystając z zaawansowanego mechanizmu magistrali modelu, można napisać rozszerzenia programu Visual Studio, które działają z wieloma modelami. Możesz również pisać aplikacje autonomiczne, które pracują z modelami. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Można również utworzyć adapter magistrali modelu dla języka specyficznego dla domeny. Ta karta pozwala odwoływać się do modelu i elementów w modelu oraz umożliwia pisanie kodu, który może uzyskać dostęp do wystąpienia DSL i zaktualizować je. Za pomocą zaawansowanego mechanizmu magistrali modeli można pisać rozszerzenia Visual Studio, które działają z wieloma modelami. Można również pisać aplikacje autonomiczne, które działają z modelami. Aby uzyskać więcej informacji, zobacz [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)(Integrowanie modeli przy użyciu Visual Studio Modelbus).
 
-## <a name="benefits-of-domain-specific-development"></a>Zalety tworzenia Domain-Specific
+## <a name="benefits-of-domain-specific-development"></a>Zalety Domain-Specific dewelopera
 
-Język specyficzny dla domeny może mieć następujące zalety:
+Język specyficzny dla domeny może zapewnić następujące korzyści:
 
-- Zawiera konstrukcje, które dokładnie pasują do przestrzeni problemu.
+- Zawiera konstrukcje, które dokładnie pasują do obszaru problemu.
 
-     W przeciwieństwie do języków ogólnego przeznaczenia, język specyficzny dla domeny składa się z elementów i relacji, które bezpośrednio reprezentują logikę przestrzeni problemu. Na przykład aplikacja zasad ubezpieczeniowych musi zawierać elementy zasad i oświadczeń. Język specyficzny dla domeny ułatwia projektowanie aplikacji i znajdowanie i poprawianie błędów logiki.
+     W przeciwieństwie do języków ogólnego przeznaczenia język specyficzny dla domeny składa się z elementów i relacji, które bezpośrednio reprezentują logikę obszaru problemów. Na przykład aplikacja ubezpieczenia musi zawierać elementy zasad i roszczeń. Język specyficzny dla domeny ułatwia projektowanie aplikacji oraz znajdowanie i korygowanie błędów logiki.
 
-- Umożliwia deweloperom i osobom, które nie znają domeny, rozumieją cały projekt.
+- Umożliwia użytkownikom niebędącym deweloperami i osobom, które nie znają domeny, zrozumienie ogólnego projektu.
 
-     Korzystając z graficznego języka specyficznego dla domeny, można utworzyć wizualną reprezentację domeny, aby inni deweloperzy mogli łatwo zrozumieć projekt aplikacji.
+     Za pomocą graficznego języka specyficznego dla domeny można utworzyć wizualną reprezentację domeny, aby deweloperzy niebędący deweloperami w stanie łatwo zrozumieć projekt aplikacji.
 
 - Ułatwia tworzenie prototypu końcowej aplikacji.
 
-     Deweloperzy mogą używać kodu, który generuje model, aby utworzyć prototypową aplikację, którą mogą pokazać klientom.
+     Deweloperzy mogą używać kodu generowanego przez model w celu utworzenia prototypowej aplikacji, która może być pokazywana klientom.
 
-## <a name="the-process-of-domain-specific-development"></a>Proces opracowywania Domain-Specific
+## <a name="the-process-of-domain-specific-development"></a>Proces tworzenia Domain-Specific aplikacji
 
-Większość zespołów programistycznych oprogramowania korzystających z języków specyficznych dla domeny wykonaj następujące kroki, aby utworzyć i używać ich modeli:
+Większość zespołów programistów, które używają języków specyficznych dla domeny, wykonaj następujące kroki, aby utworzyć i używać swoich modeli:
 
-- Zespół odróżnia zmienne części domeny od części, które nigdy nie ulegną zmianie.
+- Zespół rozróżnia zmienne części domeny od części, które nigdy się nie zmieniają.
 
-- Deweloperzy piszą kod dla części stałych i opuszczają punkty rozszerzenia dla części zmiennych.
+- Deweloperzy piszą kod dla stałych części i pozostawiają punkty rozszerzenia dla części zmiennych.
 
-- Deweloper oprogramowania dla lidera lub Architekt tworzy język specyficzny dla domeny, który zawiera wzorce projektowe stałych części domeny i punkty rozszerzenia dla części zmiennych.
+- Główny deweloper oprogramowania lub architekt tworzy język specyficzny dla domeny, który zawiera wzorce projektowe stałych części domeny i punktów rozszerzenia dla części zmiennych.
 
-- Deweloper oprogramowania dla lidera lub architekt wdraża język specyficzny dla domeny dla deweloperów różnych aplikacji wytwarzanych przez zespół.
+- Główny deweloper oprogramowania lub architekt wdraża język specyficzny dla domeny dla deweloperów różnych aplikacji, które tworzy zespół.
 
 - Każdy deweloper tworzy model, który ma zastosowanie do określonej aplikacji.

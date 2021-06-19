@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z instalacją lub uaktualnieniem
 description: Czasami coś może pójść nie tak. Jeśli instalacja Visual Studio lub uaktualnienie nie powiedzie się, ta strona może pomóc.
 ms.date: 06/24/2020
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e0bc092663cc0e100598f991ae1b2a18a4b94501
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 802e4cfb78a9302bd24bca55cda1bf9eab79f9ef
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306868"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387830"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie Visual Studio instalacji i uaktualniania
 
@@ -31,7 +31,7 @@ Ten przewodnik rozwiązywania problemów zawiera instrukcje krok po kroku, któr
 
 ## <a name="online-installations"></a>Instalacje online
 
-Poniższe kroki są zoptymalizowane pod kątem typowej instalacji online. W przypadku problemu, który ma wpływ na instalację w trybie offline, zobacz [Jak rozwiązywać problemy z instalacją w trybie offline.](#offline-installations)
+Poniższe kroki są zoptymalizowane pod kątem typowej instalacji online. W przypadku problemu, który ma wpływ na instalację w trybie offline, zobacz Jak rozwiązywać problemy [z instalacją w trybie offline.](#offline-installations)
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Krok 1. Sprawdzanie, czy ten problem jest znany
 
@@ -57,7 +57,7 @@ Wyszukaj komunikat o błędzie za pomocą [Visual Studio Developer Community](ht
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Krok 4 . Usuwanie Instalator programu Visual Studio, aby rozwiązać problemy z uaktualnieniem
 
-Program Instalator programu Visual Studio inicjujący to minimalny lekki plik wykonywalny, który instaluje pozostałą część Instalator programu Visual Studio. Usunięcie Instalator programu Visual Studio plików, a następnie ponowne uruchomienie programu inicjjącego może rozwiązać niektóre błędy aktualizacji.
+Program Instalator programu Visual Studio inicjujący to minimalny lekki plik wykonywalny, który instaluje pozostałą część Instalator programu Visual Studio. Usunięcie Instalator programu Visual Studio plików, a następnie ponowne uruchomienie programu inicjjącego może rozwiązać problemy z aktualizacjami.
 
 > [!NOTE]
 > Wykonanie następujących akcji powoduje ponowne zainstalowanie Instalator programu Visual Studio plików i zresetowanie metadanych instalacji.
@@ -82,15 +82,15 @@ Program Instalator programu Visual Studio inicjujący to minimalny lekki plik wy
 
 ### <a name="step-5---report-a-problem"></a>Krok 5. Zgłaszanie problemu
 
-W niektórych sytuacjach, takich jak te związane z uszkodzonymi plikami, problemy mogą być analizowane wielokrotnie. Aby nam pomóc, wykonaj następujące czynności:
+W niektórych sytuacjach, takich jak te związane z uszkodzonymi plikami, problemy mogą być analizowane dla konkretnych przypadków. Aby nam pomóc, wykonaj następujące czynności:
 
 ::: moniker range="vs-2017"
 
 1. Zbierz dzienniki instalacji. Aby [uzyskać szczegółowe informacje, zobacz Visual Studio dziennika](#installation-logs) instalacji aplikacji.
 2. Otwórz Instalator programu Visual Studio, a następnie kliknij pozycję Zgłoś **problem,** aby otworzyć Visual Studio opinie.
 ![Możesz nacisnąć klawisz Tab na przycisku Udostępnij opinię, aby otworzyć narzędzie do opinii](media/report-a-problem.png)
-3. Nadaj tytuł raportowi problemu i podaj odpowiednie szczegóły. Kliknij **przycisk** Dalej, aby przejść do **sekcji Załączniki,** a następnie dołączyć wygenerowany plik dziennika (zazwyczaj plik znajduje się w pliku `%TEMP%\vslogs.zip` ).
-4. Kliknij **przycisk Dalej,** aby przejrzeć raport o problemie, a następnie kliknij pozycję **Prześlij.**
+3. Nadaj raportowi problemu tytuł i podaj odpowiednie szczegóły. Kliknij **przycisk** Dalej, aby przejść do **sekcji Załączniki,** a następnie dołączyć wygenerowany plik dziennika (zazwyczaj plik znajduje się w pliku `%TEMP%\vslogs.zip` ).
+4. Kliknij **przycisk Dalej,** aby przejrzeć raport o problemie, a następnie kliknij pozycję **Prześlij**.
 
 ::: moniker-end
 
@@ -99,8 +99,8 @@ W niektórych sytuacjach, takich jak te związane z uszkodzonymi plikami, proble
 1. Zbierz dzienniki instalacji. Aby [uzyskać szczegółowe informacje, zobacz Visual Studio dziennika](#installation-logs) instalacji aplikacji.
 2. Otwórz Instalator programu Visual Studio, a następnie kliknij pozycję Zgłoś **problem,** aby otworzyć Visual Studio opinie.
 ![Możesz nacisnąć klawisz Tab na przycisku Udostępnij opinię, aby otworzyć narzędzie do opinii](media/vs-2019/vs-installer-report-problem.png)
-3. Nadaj tytuł raportowi problemu i podaj odpowiednie szczegóły. Kliknij **przycisk** Dalej, aby przejść do **sekcji Załączniki,** a następnie dołączyć wygenerowany plik dziennika (zazwyczaj plik znajduje się w pliku `%TEMP%\vslogs.zip` ).
-4. Kliknij **przycisk Dalej,** aby przejrzeć raport o problemie, a następnie kliknij pozycję **Prześlij.**
+3. Nadaj raportowi problemu tytuł i podaj odpowiednie szczegóły. Kliknij **przycisk** Dalej, aby przejść do **sekcji Załączniki,** a następnie dołączyć wygenerowany plik dziennika (zazwyczaj plik znajduje się w pliku `%TEMP%\vslogs.zip` ).
+4. Kliknij **przycisk Dalej,** aby przejrzeć raport o problemie, a następnie kliknij pozycję **Prześlij**.
 
 ::: moniker-end
 
@@ -131,14 +131,14 @@ Aby uzyskać więcej informacji na temat rozwiązywania problemów z instalacją
 
 Dzienniki instalacji są potrzebne do rozwiązywania większości problemów z instalacją. Po przesłaniu problemu przy użyciu funkcji Zgłoś [problem](../ide/how-to-report-a-problem-with-visual-studio.md) w Instalator programu Visual Studio te dzienniki są automatycznie uwzględniane w raporcie.
 
-Jeśli skontaktujesz się Pomoc techniczna Microsoft, może być konieczne podanie tych dzienników instalacji przy użyciu narzędzia Microsoft Visual Studio .NET Framework [Log Collection Tool.](https://www.microsoft.com/download/details.aspx?id=12493) Narzędzie do zbierania dzienników zbiera dzienniki instalacji ze wszystkich składników zainstalowanych przez program Visual Studio, w tym .NET Framework, Windows SDK i SQL Server. Zbiera również informacje o komputerze, spis Instalator Windows i informacje dziennika zdarzeń systemu Windows dotyczące Instalator programu Visual Studio, Instalator Windows i Przywracanie systemu.
+Jeśli kontaktujesz się Pomoc techniczna Microsoft, może być konieczne podanie tych dzienników instalacji przy użyciu narzędzia Microsoft Visual Studio .NET Framework [Log Collection Tool.](https://www.microsoft.com/download/details.aspx?id=12493) Narzędzie do zbierania dzienników zbiera dzienniki instalacji ze wszystkich składników zainstalowanych przez program Visual Studio, w tym .NET Framework, Windows SDK i SQL Server. Zbiera również informacje o komputerze, spis Instalator Windows i informacje dziennika zdarzeń systemu Windows dotyczące Instalator programu Visual Studio, Instalator Windows i Przywracanie systemu.
 
 Aby zebrać dzienniki:
 
 1. [Pobierz narzędzie](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Otwórz administracyjny wiersz polecenia.
 3. Uruchom `Collect.exe` plik z katalogu, w którym zapisano narzędzie.
-4. Znajdź wynikowy `vslogs.zip` plik w `%TEMP%` katalogu, na przykład `C:\Users\YourName\AppData\Local\Temp\vslogs.zip` .
+4. Znajdź plik `vslogs.zip` wynikowy w `%TEMP%` katalogu, na przykład `C:\Users\YourName\AppData\Local\Temp\vslogs.zip` .
 
 > [!NOTE]
 > Narzędzie musi być uruchamiane na tym samym koncie użytkownika, w ramach których została uruchomione instalacja, która zakończyła się niepowodzeniem. Jeśli używasz narzędzia z innego konta użytkownika, ustaw opcję , aby określić konto użytkownika, na którym została uruchomiona instalacja, która `–user:<name>` zakończyła się niepowodzeniem. Uruchom `Collect.exe -?` polecenie z wiersza polecenia administratora, aby uzyskać dodatkowe opcje i informacje o użyciu.

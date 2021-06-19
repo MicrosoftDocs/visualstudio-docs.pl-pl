@@ -1,41 +1,41 @@
 ---
 title: Rozszerzanie diagramów zależności
-description: Dowiedz się, w jaki sposób można napisać kod, aby tworzyć i aktualizować diagramy zależności oraz jak sprawdzać strukturę kodu programu względem diagramów zależności w programie Visual Studio.
+description: Dowiedz się, jak napisać kod do tworzenia i aktualizowania diagramów zależności oraz jak weryfikować strukturę kodu programu względem diagramów zależności w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935147"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388909"
 ---
 # <a name="extend-dependency-diagrams"></a>Rozszerzanie diagramów zależności
 
-Można napisać kod, aby tworzyć i aktualizować diagramy zależności oraz sprawdzać strukturę kodu programu względem diagramów zależności w programie Visual Studio. Można dodawać polecenia, które pojawiają się w menu skrótów (kontekstu) diagramów, dostosowuje gesty przeciągania i upuszczania oraz uzyskiwać dostęp do modelu warstwy z szablonów tekstowych. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio (VSIX) i przekazać je innym użytkownikom programu Visual Studio.
+Możesz napisać kod, aby tworzyć i aktualizować diagramy zależności oraz weryfikować strukturę kodu programu względem diagramów zależności w Visual Studio. Można dodawać polecenia wyświetlane w menu skrótów (kontekstowych) diagramów, dostosowywać gesty przeciągania i upuszczania oraz uzyskać dostęp do modelu warstwy z szablonów tekstowych. Możesz spakować te rozszerzenia do rozszerzenia Visual Studio Integration Extension (VSIX) i rozpowszechnić je wśród innych Visual Studio użytkowników.
 
 ## <a name="requirements"></a>Wymagania
 
-Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być zainstalowane następujące elementy:
+Na komputerze, na którym chcesz tworzyć rozszerzenia warstw, musisz mieć zainstalowane następujące elementy:
 
 - Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- Modeling SDK dla programu Visual Studio
+- Zestaw SDK modelowania dla Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Na komputerze, na którym chcesz uruchomić rozszerzenia warstwy, musi być zainstalowana odpowiednia wersja programu Visual Studio. Aby sprawdzić, które wersje programu Visual Studio obsługują diagramy zależności, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Na komputerze, na którym chcesz uruchamiać rozszerzenia warstw, Visual Studio mieć zainstalowaną odpowiednią wersję programu . Aby sprawdzić, które wersje aplikacji Visual Studio diagramy zależności, zobacz Obsługa wersji dla architektury [i narzędzi do modelowania.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,88 +1,88 @@
 ---
 title: Sprawdzanie poprawności w języku specyficznym dla domeny
-description: Dowiedz się, jak definiować ograniczenia walidacji, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie.
+description: Dowiedz się, jak zdefiniować ograniczenia weryfikacji, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6de3a8940c845b29d2d0c7454b7c585f4676dba0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924252"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388337"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
-Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie. Jeśli na przykład linia DSL umożliwia użytkownikom rysowanie drzewa rodzin osób i ich przodków, można napisać ograniczenie, które zapewnia, że dzieci mają daty urodzenia po nadrzędnych.
+Jako autor języka specyficznego dla domeny (DSL) możesz zdefiniować ograniczenia weryfikacji, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie. Jeśli na przykład dsl umożliwia użytkownikom rysowanie drzewa rodziny osób i ich nadrzędnych, można napisać ograniczenie, które zapewnia, że dzieci mają daty urodzenia po ich rodziców.
 
- Ograniczenia walidacji można wykonać, gdy model zostanie zapisany, gdy zostanie on otwarty, a użytkownik jawnie uruchamia polecenie **walidacji** menu. Możesz również wykonać walidację w obszarze kontrola programu. Można na przykład wykonać walidację w odpowiedzi na zmianę wartości właściwości lub relacji.
+ Ograniczenia weryfikacji mogą być wykonywane podczas zapisania modelu, jego otwarcia i jawnego wykonania przez użytkownika polecenia menu **Weryfikuj.** Walidację można również wykonać pod kontrolą programu. Na przykład można wykonać walidację w odpowiedzi na zmianę wartości właściwości lub relacji.
 
- Walidacja jest szczególnie ważna w przypadku pisania szablonów tekstowych lub innych narzędzi, które przetwarzają modele użytkowników. Sprawdzanie poprawności zapewnia, że modele spełniają warunki wstępne przyjęte przez te narzędzia.
+ Walidacja jest szczególnie ważna w przypadku pisania szablonów tekstowych lub innych narzędzi, które przetwarzają modele użytkowników. Walidacja zapewnia, że modele spełniają warunki wstępne zakładane przez te narzędzia.
 
 > [!WARNING]
-> Można również zezwolić na definiowanie ograniczeń walidacji w osobnych rozszerzeniach dla DSL oraz poleceń menu rozszerzenia i programów obsługi gestów. Użytkownicy mogą zdecydować się na zainstalowanie tych rozszerzeń oprócz połączenia DSL. Aby uzyskać więcej informacji, zobacz sekcję "Rozpoznaj [swój DSL" przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> Możesz również zezwolić na zdefiniowane ograniczenia weryfikacji w oddzielnych rozszerzeniach dsl, a także polecenia menu rozszerzenia i programy obsługi gestów. Użytkownicy mogą zainstalować te rozszerzenia oprócz DSL. Aby uzyskać więcej informacji, zobacz [Rozszerzanie DSL przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Uruchamianie walidacji
- Gdy użytkownik edytuje model, czyli wystąpienie języka specyficznego dla domeny, można uruchomić weryfikację następujących akcji:
+ Gdy użytkownik edytuje model, czyli wystąpienie języka specyficznego dla domeny, następujące akcje mogą uruchomić walidację:
 
-- Kliknij prawym przyciskiem myszy diagram i wybierz polecenie **Weryfikuj wszystko**.
+- Kliknij prawym przyciskiem myszy diagram i wybierz polecenie **Weryfikuj wszystko.**
 
-- Kliknij prawym przyciskiem myszy górny węzeł w Eksploratorze DSL i wybierz polecenie **Weryfikuj wszystko**
+- Kliknij prawym przyciskiem myszy górny węzeł w Eksploratorze DSL i wybierz polecenie **Sprawdź poprawność wszystkich**
 
 - Zapisz model.
 
 - Otwórz model.
 
-- Ponadto można napisać kod programu, który uruchamia walidację, na przykład w ramach polecenia menu lub w odpowiedzi na zmianę.
+- Ponadto można napisać kod programu, który uruchamia walidację, na przykład jako część polecenia menu lub w odpowiedzi na zmianę.
 
-  Wszystkie błędy walidacji będą wyświetlane w oknie **Lista błędów** . Użytkownik może kliknąć dwukrotnie komunikat o błędzie, aby wybrać elementy modelu, które są przyczyną błędu.
+  Wszelkie błędy walidacji zostaną wyświetlone w **oknie Lista** błędów. Użytkownik może kliknąć dwukrotnie komunikat o błędzie, aby wybrać elementy modelu, które są przyczyną błędu.
 
 ## <a name="defining-validation-constraints"></a>Definiowanie ograniczeń walidacji
- Ograniczenia walidacji definiuje się przez dodanie metod sprawdzania poprawności do klas domen lub relacji DSL. Gdy Walidacja jest uruchamiana przez użytkownika lub w obszarze kontrola programu, niektóre lub wszystkie metody sprawdzania poprawności są wykonywane. Każda metoda jest stosowana do każdego wystąpienia klasy, a w każdej klasie może istnieć kilka metod walidacji.
+ Ograniczenia weryfikacji definiuje się przez dodanie metod walidacji do klas domeny lub relacji DSL. Po uruchomieniu walidacji przez użytkownika lub pod kontrolą programu są wykonywane niektóre lub wszystkie metody weryfikacji. Każda metoda jest stosowana do każdego wystąpienia jej klasy i w każdej klasie może być kilka metod weryfikacji.
 
- Każda metoda sprawdzania poprawności raportuje wszystkie znalezione błędy.
+ Każda metoda walidacji zgłasza wszelkie znalezione błędy.
 
 > [!NOTE]
-> Metody walidacji raportują błędy, ale nie zmieniają modelu. Jeśli chcesz dostosować lub zablokować pewne zmiany, zobacz [alternatywy do walidacji](#alternatives).
+> Metody walidacji zgłaszają błędy, ale nie zmieniają modelu. Jeśli chcesz dostosować lub zapobiec niektórym zmianom, zobacz [Alternatywy dla walidacji](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Aby zdefiniować ograniczenie walidacji
 
-1. Włącz weryfikację w węźle **Editor\Validation** :
+1. Włącz walidację w **węźle Editor\Validation:**
 
-   1. Otwórz **Dsl\DslDefinition.DSL**.
+   1. Otwórz **dsl\DslDefinition.dsl.**
 
-   2. W Eksploratorze DSL rozwiń węzeł **Edytor** i wybierz pozycję **Walidacja**.
+   2. W Eksploratorze DSL rozwiń węzeł **Edytor** i wybierz pozycję **Walidacja.**
 
-   3. W okno Właściwości ustaw wartość właściwości przy **użyciu** `true` . Najlepiej ustawić wszystkie te właściwości.
+   3. W oknie okno Właściwości właściwości **Uses**  (Używa) na wartość `true` . Najdogodniej jest ustawić wszystkie te właściwości.
 
-   4. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań** .
+   4. Kliknij **pozycję Przekształć wszystkie** szablony na **Eksplorator rozwiązań** narzędzi.
 
-2. Napisz częściowe definicje klas dla co najmniej jednej klasy domeny lub relacji domeny. Napisz te definicje w nowym pliku kodu w projekcie **DSL** .
+2. Napisz definicje klas częściowych dla co najmniej jednej klasy domeny lub relacji domeny. Zapisz te definicje w nowym pliku kodu w **projekcie Dsl.**
 
-3. Prefiks każdej klasy z tym atrybutem:
+3. Poprzedaj każdą klasę tym atrybutem:
 
    ```csharp
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   - Domyślnie ten atrybut również włącza walidację dla klas pochodnych. Jeśli chcesz wyłączyć walidację określonej klasy pochodnej, możesz użyć `ValidationState.Disabled` .
+   - Domyślnie ten atrybut umożliwia również weryfikację klas pochodnych. Jeśli chcesz wyłączyć walidację dla określonej klasy pochodnej, możesz użyć metody `ValidationState.Disabled` .
 
-4. Dodaj metody walidacji do klas. Każda metoda sprawdzania poprawności może mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> .
+4. Dodaj metody walidacji do klas. Każda metoda weryfikacji może mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> .
 
-    Musi być poprzedzony prefiksem co najmniej jednego `ValidationMethod` atrybutu:
+    Musi ona być poprzedzona co najmniej jednym `ValidationMethod` atrybutem:
 
    ```csharp
    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
    ```
 
-    ValidationCategories określa, kiedy Metoda jest wykonywana.
+    ValidationCategories określ, kiedy jest wykonywana metoda.
 
    Na przykład:
 
@@ -127,35 +127,35 @@ public partial class ParentsHaveChildren
 
  Zwróć uwagę na następujące kwestie dotyczące tego kodu:
 
-- Metody sprawdzania poprawności można dodać do klas domen lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain \* . cs**.
+- Metody walidacji można dodać do klas domeny lub relacji domeny. Kod dla tych typów znajduje się w **katalogu Dsl\Generated Code\Domain \* .cs**.
 
-- Każda metoda sprawdzania poprawności jest stosowana do każdego wystąpienia klasy i jego podklas. W przypadku relacji domeny każde wystąpienie jest łączem między dwoma elementami modelu.
+- Każda metoda walidacji jest stosowana do każdego wystąpienia jej klasy i jej podklas. W przypadku relacji domeny każde wystąpienie jest łączem między dwoma elementami modelu.
 
-- Metody walidacji nie są stosowane w żadnej określonej kolejności, a każda metoda nie jest stosowana do wystąpień jej klasy w żadnej przewidywalnej kolejności.
+- Metody walidacji nie są stosowane w określonej kolejności, a każda metoda nie jest stosowana do wystąpień jej klasy w dowolnej przewidywalnej kolejności.
 
-- Zwykle jest to niewłaściwe rozwiązanie do aktualizowania zawartości magazynu przez metodę walidacji, ponieważ spowodowałoby to powstanie niespójnych wyników. Zamiast tego Metoda powinna zgłosić dowolny błąd przez wywołanie `context.LogError` `LogWarning` lub `LogInfo` .
+- Zaktualizowanie zawartości sklepu jest zwykle złym rozwiązaniem w przypadku metody weryfikacji, ponieważ może to prowadzić do niespójnych wyników. Zamiast tego metoda powinna zgłosić dowolny błąd, wywołując `context.LogError` metodę lub `LogWarning` `LogInfo` .
 
-- W wywołaniu LogError można podać listę elementów modelu lub linków relacji, które zostaną wybrane, gdy użytkownik kliknie dwukrotnie komunikat o błędzie.
+- W wywołaniu LogError możesz podać listę elementów modelu lub linków relacji, które zostaną wybrane, gdy użytkownik kliknie dwukrotnie komunikat o błędzie.
 
-- Aby uzyskać informacje o sposobie odczytywania modelu w kodzie programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+- Aby uzyskać informacje na temat odczytywania modelu w kodzie programu, zobacz [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)(Nawigowanie i aktualizowanie modelu w kodzie programu).
 
-  Przykład dotyczy poniższego modelu domeny. Relacja ParentsHaveChildren ma role, które mają nazwy podrzędne i nadrzędne.
+  Przykład dotyczy następującego modelu domeny. Relacja ParentHave Nie ma ról o nazwach Child i Parent.
 
-  ![Diagram definicji DSL &#45; Model drzewa genealogicznego](../modeling/media/familyt_person.png)
+  ![Diagram definicji DSL &#45; modelu drzewa rodziny](../modeling/media/familyt_person.png)
 
-## <a name="validation-categories"></a>Kategorie walidacji
- W <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atrybucie należy określić, kiedy ma być wykonywana metoda walidacji.
+## <a name="validation-categories"></a>Kategorie weryfikacji
+ W <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atlicie określasz, kiedy należy wykonać metodę weryfikacji.
 
 |Kategoria|Wykonanie|
 |-|-|
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy użytkownik wywołuje polecenie menu walidacji.|
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy użytkownik wywołuje polecenie menu Weryfikuj.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Po otwarciu pliku modelu.|
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy plik zostanie zapisany. Jeśli występują błędy walidacji, użytkownik otrzyma opcję anulowania operacji zapisywania.|
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy plik zostanie zapisany. W przypadku błędów z metod w tej kategorii użytkownik jest ostrzegany, że może nie być możliwe ponowne otwarcie pliku.<br /><br /> Ta kategoria służy do metod sprawdzania poprawności, które sprawdzają powielone nazwy lub identyfikatory lub inne warunki, które mogą powodować błędy ładowania.|
-|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy wywoływana jest metoda ValidateCustom. Walidacje w tej kategorii mogą być wywoływane tylko z kodu programu.<br /><br /> Aby uzyskać więcej informacji, zobacz [niestandardowe kategorie walidacji](#custom).|
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Po zapisaniu pliku. Jeśli występują błędy walidacji, użytkownik będzie miał możliwość anulowania operacji zapisywania.|
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Po zapisaniu pliku. Jeśli w tej kategorii występują błędy metod, użytkownik jest ostrzegany, że ponowne otwarcie pliku może nie być możliwe.<br /><br /> Użyj tej kategorii dla metod weryfikacji, które testuje zduplikowane nazwy lub identyfikatory albo inne warunki, które mogą powodować błędy ładowania.|
+|<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy wywoływana jest metoda ValidateCustom. Walidacje w tej kategorii mogą być wywoływane tylko z kodu programu.<br /><br /> Aby uzyskać więcej informacji, zobacz [Niestandardowe kategorie weryfikacji](#custom).|
 
-## <a name="where-to-place-validation-methods"></a>Gdzie należy umieścić metody walidacji
- Ten sam efekt można osiągnąć, wprowadzając metodę walidacji innego typu. Na przykład można dodać metodę do klasy Person zamiast relacji ParentsHaveChildren i przeprowadzić iterację przez linki:
+## <a name="where-to-place-validation-methods"></a>Gdzie umieścić metody weryfikacji
+ Ten sam efekt można często osiągnąć, umieszczając metodę weryfikacji na innym typie. Na przykład można dodać metodę do klasy Person zamiast relacji ParentsHave Niezależność i iterować po linkach:
 
 ```
 [ValidationState(ValidationState.Enabled)]
@@ -175,11 +175,11 @@ public partial class Person
         { ...
 ```
 
- **Agregowanie ograniczeń walidacji.** Aby zastosować weryfikację w przewidywalną kolejności, należy zdefiniować pojedynczą metodę sprawdzania poprawności klasy Owner, na przykład element główny modelu. Ta technika umożliwia również agregowanie wielu raportów o błędach do jednej wiadomości.
+ **Agregowanie ograniczeń walidacji.** Aby zastosować walidację w przewidywalnej kolejności, zdefiniuj pojedynczą metodę weryfikacji dla klasy właściciela, taką jak element główny modelu. Ta technika umożliwia również agregowanie wielu raportów o błędach w jeden komunikat.
 
- Wadą jest to, że połączona Metoda jest mniej łatwa w zarządzaniu i że ograniczenia muszą mieć taki sam sposób `ValidationCategories` . Dlatego zalecamy zachowanie każdego ograniczenia w oddzielnym metodzie, jeśli jest to możliwe.
+ Wadą jest to, że połączona metoda jest mniej łatwa do zarządzania i że wszystkie ograniczenia muszą mieć taki sam typ `ValidationCategories` . W związku z tym zalecamy, aby w miarę możliwości zachować każde ograniczenie w oddzielnej metodzie.
 
- **Przekazywanie wartości w pamięci podręcznej kontekstu.** Parametr kontekstowy ma słownik, w którym można umieścić dowolne wartości. Słownik zachowuje się w okresie istnienia przebiegu walidacji. Dana metoda sprawdzania poprawności może na przykład zachować liczbę błędów w kontekście i użyć jej w celu uniknięcia zapełnienia okna błędów powtarzanymi komunikatami. Na przykład:
+ **Przekazywanie wartości w pamięci podręcznej kontekstu.** Parametr kontekstu ma słownik, w którym można umieścić dowolne wartości. Słownik jest trwały przez czas życia uruchomienia walidacji. Określonej metody weryfikacji można na przykład zachować liczbę błędów w kontekście i użyć jej w celu uniknięcia zalewania okna błędu powtórzonymi komunikatami. Na przykład:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -190,15 +190,15 @@ context.SetCacheValue("erroneousLinks", erroneousLinks);
 if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 ```
 
-## <a name="validation-of-multiplicities"></a>Walidacja iloczynów
- Metody sprawdzania poprawności umożliwiające sprawdzanie liczebności minimalnej są generowane automatycznie dla DSL. Kod jest zapisywana w **Dsl\Generated Code\MultiplicityValidation.cs**. Te metody zaczną obowiązywać po włączeniu walidacji w węźle **Editor\Validation** w Eksploratorze DSL.
+## <a name="validation-of-multiplicities"></a>Walidacja mnożenia
+ Metody sprawdzania minimalnej liczebności są generowane automatycznie dla DSL. Kod jest zapisywany w **dsl\Generated Code\MultiplicityValidation.cs.** Te metody są stosowane po włączeniu weryfikacji w węźle **Editor\Validation** w eksploratorze DSL.
 
- Jeśli ustawisz liczebność roli relacji domeny na 1.. * lub 1.. 1, ale użytkownik nie utworzy linku do tej relacji, zostanie wyświetlony komunikat o błędzie walidacji.
+ Jeśli ustawisz liczebność roli relacji domeny na 1..* lub 1..1, ale użytkownik nie utworzy połączenia tej relacji, zostanie wyświetlony komunikat o błędzie weryfikacji.
 
- Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
+ Jeśli na przykład DSL ma klasy Person i Town oraz relację PersonLivesInWiersz z relacją **1.. \\** * w roli miejscowość, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
 
 ## <a name="running-validation-from-program-code"></a>Uruchamianie walidacji z kodu programu
- Można uruchomić walidację, uzyskując dostęp do lub tworząc ValidationController. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj ValidationController, który jest dołączony do DocData diagramu. Na przykład, jeśli piszesz polecenie menu, `CurrentDocData.ValidationController` jest dostępne w klasie zestawu poleceń:
+ Walidację można uruchomić, korzystając z kontrolera ValidationController lub tworząc go. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj kontrolera ValidationController dołączonego do danych DocData diagramu. Jeśli na przykład piszesz polecenie menu, `CurrentDocData.ValidationController` polecenie jest dostępne w klasie zestawu poleceń:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -213,7 +213,7 @@ partial class MyLanguageCommandSet
 ...
 ```
 
- Aby uzyskać więcej informacji, zobacz [jak: Dodawanie polecenia do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Aby uzyskać więcej informacji, [zobacz Jak dodać polecenie do menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Możesz również utworzyć oddzielny kontroler weryfikacji i samodzielnie zarządzać błędami. Na przykład:
 
@@ -232,10 +232,10 @@ if (!validator.Validate(store, ValidationCategories.Save))
 }
 ```
 
-## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie walidacji po wystąpieniu zmiany
- Jeśli chcesz mieć pewność, że użytkownik jest ostrzegany natychmiast, jeśli model stanie się nieprawidłowy, możesz zdefiniować zdarzenie magazynu, które uruchamia walidację. Aby uzyskać więcej informacji na temat zdarzeń ze sklepu, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie walidacji w przypadku wystąpienia zmiany
+ Jeśli chcesz się upewnić, że użytkownik jest natychmiast ostrzegany, jeśli model stanie się nieprawidłowy, możesz zdefiniować zdarzenie magazynu, które uruchamia walidację. Aby uzyskać więcej informacji na temat zdarzeń magazynu, zobacz [Procedury obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Oprócz kodu sprawdzania poprawności Dodaj niestandardowy plik kodu do projektu **DslPackage** , z zawartością podobną do poniższego przykładu. Ten kod używa programu `ValidationController` , który jest dołączony do dokumentu. Ten kontroler wyświetla błędy walidacji na liście błędów programu Visual Studio.
+ Oprócz kodu walidacji dodaj niestandardowy plik kodu do projektu **DslPackage** z zawartością podobną do poniższego przykładu. Ten kod używa kodu `ValidationController` dołączonego do dokumentu. Ten kontroler wyświetla błędy weryfikacji na Visual Studio błędów.
 
 ```csharp
 using System;
@@ -295,14 +295,14 @@ namespace Company.FamilyTree
 }
 ```
 
- Procedury obsługi są również wywoływane po wykonaniu operacji Cofnij lub wykonaj ponownie, które mają wpływ na linki lub elementy.
+ Programy obsługi są również wywoływane po operacjach Cofnij lub Ponownie wywołuj, które mają wpływ na linki lub elementy.
 
-## <a name="custom-validation-categories"></a><a name="custom"></a> Niestandardowe kategorie walidacji
- Oprócz standardowych kategorii walidacji, takich jak menu i otwarte, można definiować własne kategorie. Można wywołać te kategorie z kodu programu. Użytkownik nie może wywoływać ich bezpośrednio.
+## <a name="custom-validation-categories"></a><a name="custom"></a> Niestandardowe kategorie weryfikacji
+ Oprócz standardowych kategorii weryfikacji, takich jak Menu i Otwórz, można zdefiniować własne kategorie. Te kategorie można wywoływać z kodu programu. Użytkownik nie może wywołać ich bezpośrednio.
 
- Typowym zastosowaniem kategorii niestandardowych jest definiowanie kategorii, która sprawdza, czy model spełnia warunki wstępne określonego narzędzia.
+ Typowym zastosowaniem kategorii niestandardowych jest zdefiniowanie kategorii, która sprawdza, czy model spełnia warunki wstępne określonego narzędzia.
 
- Aby dodać metodę walidacji do określonej kategorii, poprzedź ją atrybutem podobnym do tego:
+ Aby dodać metodę weryfikacji do określonej kategorii, poprzedaj ją atrybutem w ten sposób:
 
 ```csharp
 [ValidationMethod(CustomCategory = "PreconditionsForGeneratePartsList")]
@@ -312,9 +312,9 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
-> Można utworzyć prefiks metody z dowolną liczbą `[ValidationMethod()]` atrybutów. Można dodać metodę do kategorii niestandardowych i standardowych.
+> Możesz dodać do metody prefiks o tylu `[ValidationMethod()]` atrybutach, ile chcesz. Metodę można dodać do kategorii niestandardowych i standardowych.
 
- Aby wywołać niestandardowe sprawdzanie poprawności:
+ Aby wywołać weryfikację niestandardową:
 
 ```csharp
 
@@ -324,17 +324,17 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternatywy do walidacji
- Ograniczenia walidacji raportują błędy, ale nie zmieniają modelu. Jeśli zamiast tego chcesz zapobiec nieprawidłowemu modelowi, możesz użyć innych technik.
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternatywy dla walidacji
+ Ograniczenia walidacji zgłaszają błędy, ale nie zmieniają modelu. Jeśli zamiast tego chcesz zapobiec unieważnieniu modelu, możesz użyć innych technik.
 
- Jednak te techniki nie są zalecane. Zwykle lepszym rozwiązaniem jest poinformowanie użytkownika o sposobie poprawienia nieprawidłowego modelu.
+ Jednak te techniki nie są zalecane. Zazwyczaj lepiej jest pozwolić użytkownikowi zdecydować, jak poprawić nieprawidłowy model.
 
- **Dostosuj zmianę, aby przywrócić prawidłowość modelu.** Na przykład jeśli użytkownik ustawi właściwość powyżej dozwolone maksimum, można zresetować właściwość do wartości maksymalnej. Aby to zrobić, zdefiniuj regułę. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+ **Dostosuj zmianę, aby przywrócić poprawność modelu.** Jeśli na przykład użytkownik ustawia właściwość powyżej dozwolonej wartości maksymalnej, można zresetować właściwość do wartości maksymalnej. W tym celu zdefiniuj regułę. Aby uzyskać więcej informacji, zobacz [Reguły propagacji zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Wycofaj transakcję, Jeśli podjęto próbę nieprawidłowej zmiany.** Dla tego celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić procedurę obsługi właściwości **OnValueChanging ()** lub zastąpić metodę, na przykład `OnDeleted().` Aby wycofać transakcję, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().` Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).
+ **Wycofaj transakcję, jeśli podjęto próbę nieprawidłowej zmiany.** W tym celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić program obsługi właściwości **OnValueChanging()** lub przesłonić metodę, taką jak Aby wycofać transakcję. Aby uzyskać więcej informacji, zobacz Obsługa zmian wartości właściwości `OnDeleted().` `this.Store.TransactionManager.CurrentTransaction.Rollback().` [domeny](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
-> Upewnij się, że użytkownik wie, że zmiana została skorygowana lub wycofana. Na przykład użyj `System.Windows.Forms.MessageBox.Show("message").`
+> Upewnij się, że użytkownik wie, że zmiana została dostosowana lub wycofana. Na przykład użyj `System.Windows.Forms.MessageBox.Show("message").`
 
 ## <a name="see-also"></a>Zobacz też
 

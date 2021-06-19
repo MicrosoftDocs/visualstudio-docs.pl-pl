@@ -1,32 +1,32 @@
 ---
 title: Rozszerzanie DSL za pomocą MEF
-description: Dowiedz się, jak można zwiększyć język specyficzny dla domeny (DSL) za pomocą Managed Extensibility Framework (MEF).
+description: Dowiedz się, jak rozszerzyć język specyficzny dla domeny (DSL) przy użyciu Managed Extensibility Framework (MEF).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a4572a7210203d6c7525a278430210c954c3405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935069"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388883"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
-Język specyficzny dla domeny można rozłożyć przy użyciu Managed Extensibility Framework (MEF). Ty lub inni deweloperzy będą mogli pisać rozszerzenia dla DSL bez zmiany definicji DSL i kodu programu. Takie rozszerzenia obejmują polecenia menu, programy obsługi przeciągania i upuszczania oraz sprawdzanie poprawności. Użytkownicy będą mogli instalować Twoje DSL, a następnie opcjonalnie instalować rozszerzenia.
+Język specyficzny dla domeny (DSL) można rozszerzyć przy użyciu Managed Extensibility Framework (MEF). Ty lub inni deweloperzy będziecie mogli pisać rozszerzenia dla DSL bez zmiany definicji DSL i kodu programu. Rozszerzenia te obejmują polecenia menu, programy obsługi przeciągania i upuszczania oraz walidację. Użytkownicy będą mogli zainstalować dsl, a następnie opcjonalnie zainstalować dla niego rozszerzenia.
 
-Ponadto po włączeniu usługi MEF w języku DSL można łatwiej pisać niektóre funkcje Twojego języka DSL, nawet jeśli są one połączone z DSL.
+Ponadto po włączeniu MEF w DSL, może być łatwiejsze do napisania niektórych funkcji DSL, nawet jeśli są one wbudowane razem z DSL.
 
-Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+Aby uzyskać więcej informacji na temat mef, [zobacz Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Aby umożliwić Rozszerzanie DSL przez MEF
+### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Aby włączyć dsl ma być rozszerzony przez MEF
 
-1. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DslPackage** . Dodaj do niego następujące pliki:
+1. Utwórz nowy folder o **nazwie MefExtension** w **projekcie DslPackage.** Dodaj do niego następujące pliki:
 
      Nazwa pliku: `CommandExtensionVSCT.tt`
 
@@ -60,7 +60,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
     Nazwa pliku: `ValidationExtensionRegistrar.tt`
 
-    W przypadku dodania tego pliku należy włączyć walidację w DSL przy użyciu co najmniej jednego z przełączników w **EditorValidation** w Eksploratorze DSL.
+    Jeśli dodasz ten plik, musisz włączyć weryfikację w DSL przy użyciu co najmniej jednego z przełączników w **EdytorzeValidation** w eksploratorze DSL.
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,7 +74,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2. Utwórz nowy folder o nazwie **MefExtension** w projekcie **DSL** . Dodaj do niego następujące pliki:
+2. Utwórz nowy folder o **nazwie MefExtension** wewnątrz **projektu Dsl.** Dodaj do niego następujące pliki:
 
      Nazwa pliku: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -97,7 +97,7 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3. Dodaj następujący wiersz do istniejącego pliku o nazwie **DslPackage\Commands.vsct**:
+3. Dodaj następujący wiersz do istniejącego pliku o nazwie **DslPackage\Commands.vsct:**
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -105,35 +105,35 @@ Aby uzyskać więcej informacji na temat MEF, zobacz [Managed Extensibility Fram
 
     Wstaw wiersz po istniejącej `<Include>` dyrektywie.
 
-4. Otwórz *DslDefinition. DSL*.
+4. Otwórz *dslDefinition.dsl.*
 
-5. W Eksploratorze DSL wybierz pozycję **Editor\Validation**.
+5. W eksploratorze DSL wybierz pozycję **Editor\Validation.**
 
-6. Upewnij się, że w okno Właściwości należy **użyć** co najmniej jednej z właściwości o nazwie `true` .
+6. W okno Właściwości upewnij się, że co najmniej jedna z właściwości o nazwie **Uses ma** nazwę `true` .
 
-7. Na pasku narzędzi **Eksplorator rozwiązań** kliknij pozycję **Przekształć wszystkie szablony**.
+7. Na pasku **Eksplorator rozwiązań** kliknij pozycję **Przekształć wszystkie szablony.**
 
-     Pliki zależne są wyświetlane pod każdym z plików, które zostały dodane.
+     Pliki podmiotu zależnego są wyświetlane pod każdym dodanym plikiem.
 
-8. Kompiluj i uruchamiaj rozwiązanie, aby upewnić się, że nadal działa.
+8. Skompilowanie i uruchomienie rozwiązania w celu sprawdzenia, czy rozwiązanie nadal działa.
 
-Funkcja DSL jest teraz MEF. Można pisać polecenia menu, programy obsługi gestów i ograniczenia sprawdzania poprawności jako rozszerzenia MEF. Te rozszerzenia można napisać w rozwiązaniu DSL wraz z innym kodem niestandardowym. Ponadto ty lub inni deweloperzy mogą pisać oddzielne rozszerzenia programu Visual Studio, które rozszerzają swój DSL.
+Dsl jest teraz z obsługą MEF. Jako rozszerzenia MEF można pisać polecenia menu, programy obsługi gestów i ograniczenia weryfikacji. Możesz napisać te rozszerzenia w rozwiązaniu DSL razem z innym kodem niestandardowym. Ponadto ty lub inni deweloperzy możecie pisać oddzielne rozszerzenia Visual Studio, które rozszerzają dsl.
 
-## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Tworzenie rozszerzenia dla DSL z włączoną obsługą MEF
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Tworzenie rozszerzenia dla DSL z obsługą mef
 
-Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możesz napisać dla niego rozszerzenia. Rozszerzenia mogą służyć do dodawania poleceń menu, programów obsługi gestów lub ograniczeń walidacji. Do tworzenia tych rozszerzeń służy rozwiązanie Visual Studio Extension (VSIX). Rozwiązanie ma dwie części: projekt biblioteki klas, który kompiluje zestaw kodu, oraz projekt VSIX, który jest pakietem zestawu.
+Jeśli masz dostęp do DSL z obsługą mef utworzone przez siebie lub kogoś innego, możesz napisać dla niego rozszerzenia. Rozszerzenia mogą służyć do dodawania poleceń menu, programów obsługi gestów lub ograniczeń walidacji. Do tworzenia tych rozszerzeń należy użyć Visual Studio rozszerzenia (VSIX). Rozwiązanie ma dwie części: projekt biblioteki klas, który tworzy zestaw kodu, i projekt VSIX, który pakuje zestaw.
 
-### <a name="to-create-a-dsl-extension-vsix"></a>Aby utworzyć VSIX rozszerzenia DSL
+### <a name="to-create-a-dsl-extension-vsix"></a>Aby utworzyć rozszerzenie DSL VSIX
 
-1. Utwórz nowy projekt **biblioteki klas** .
+1. Utwórz nowy projekt **Biblioteka** klas.
 
-2. W nowym projekcie Dodaj odwołanie do zestawu DSL.
+2. W nowym projekcie dodaj odwołanie do zestawu DSL.
 
-   - Ten zestaw ma zwykle nazwę kończącą się ciągiem ".Dsl.dll".
+   - Ten zestaw ma zazwyczaj nazwę, która kończy się na ".Dsl.dll".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w **\\ \\ \* koszu katalogu DSL**
+   - Jeśli masz dostęp do projektu DSL, plik zestawu można znaleźć w katalogu **Dsl \\ bin \\ \***
 
-   - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
+   - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ".zip". Zdekompresuj .zip plik.
 
 3. Dodaj odwołania do następujących zestawów .NET:
 
@@ -147,39 +147,39 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - System.Windows.Forms.dll
 
-4. Utwórz nowy projekt **projektu VSIX** .
+4. Utwórz nowy projekt **VSIX.**
 
 5. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt VSIX i wybierz polecenie **Ustaw jako projekt startowy**.
 
-6. W nowym projekcie Otwórz **Źródło. Extension. vsixmanifest**.
+6. W nowym projekcie otwórz plik open **source.extension.vsixmanifest.**
 
-7. Kliknij pozycję **Dodaj zawartość**. W oknie dialogowym Ustaw **Typ zawartości** na **składnik MEF** i **projekt źródłowy** do projektu biblioteki klas.
+7. Kliknij **pozycję Dodaj zawartość.** W oknie dialogowym ustaw dla ustawienia **Typ** zawartości wartość **Składnik MEF,** a w polu **Projekt źródłowy** ustaw projekt biblioteki klas.
 
 8. Dodaj odwołanie VSIX do DSL.
 
-   1. W polu **source. Extension. vsixmanifest** kliknij pozycję **Dodaj odwołanie** .
+   1. W **pliku source.extension.vsixmanifest** kliknij **pozycję Dodaj odwołanie**
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL w **DslPackage \\ bin \\ \***.
+   2. W oknie dialogowym kliknij **pozycję Dodaj ładunek,** a następnie znajdź plik VSIX DSL. Plik VSIX jest wbudowany w rozwiązanie DSL w **pojemniku \\ \\ \* DslPackage**.
 
-       Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
+       Umożliwia to użytkownikom instalowanie DSL i rozszerzenia w tym samym czasie. Jeśli użytkownik zainstalował już DSL, zostanie zainstalowane tylko Twoje rozszerzenie.
 
-9. Przejrzyj i zaktualizuj pozostałe pola **source. Extension. vsixmanifest**. Kliknij pozycję **Wybierz wersje** i sprawdź, czy są ustawione poprawne wersje programu Visual Studio.
+9. Przejrzyj i zaktualizuj inne pola w **pliku source.extension.vsixmanifest**. Kliknij **pozycję Wybierz wersje** i sprawdź, czy ustawiono Visual Studio wersje.
 
 10. Dodaj kod do projektu biblioteki klas. Skorzystaj z przykładów w następnej sekcji jako przewodnika.
 
      Można dodać dowolną liczbę klas poleceń, gestów i walidacji.
 
-11. Aby przetestować rozszerzenie, naciśnij klawisz **F5**. W eksperymentalnym wystąpieniu programu Visual Studio Utwórz lub Otwórz przykładowy plik DSL.
+11. Aby przetestować rozszerzenie, naciśnij **klawisz F5**. W eksperymentalnym wystąpieniu Visual Studio utwórz lub otwórz przykładowy plik DSL.
 
-## <a name="writing-mef-extensions-for-dsls"></a>Pisanie rozszerzeń MEF dla językami DSL
+## <a name="writing-mef-extensions-for-dsls"></a>Pisanie rozszerzeń MEF dla plików DSL
 
-Można pisać rozszerzenia w projekcie kodu zestawu oddzielnego rozwiązania do rozszerzenia DSL. Możesz również użyć MEF w projekcie DslPackage, jako wygodny sposób pisania poleceń, gestów i kodu sprawdzania poprawności jako części DSL.
+Rozszerzenia można pisać w projekcie kodu zestawu oddzielnego rozwiązania rozszerzenia DSL. Możesz również użyć mef w projekcie DslPackage jako wygodnego sposobu pisania poleceń, gestów i kodu weryfikacyjnego w ramach DSL.
 
 ### <a name="menu-commands"></a>Polecenia menu
 
-Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension` . Można napisać więcej niż jedną klasę poleceń menu.
+Aby napisać polecenie menu, zdefiniuj klasę, która implementuje klasę i poprzedza ją atrybutem zdefiniowanym w dsl <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> o nazwie *YourDsl* `CommandExtension` . Można napisać więcej niż jedną klasę poleceń menu.
 
-`QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić, `command.Enabled` Aby wskazać, kiedy polecenie ma zastosowanie.
+`QueryStatus()` Jest wywoływana za każdym razem, gdy użytkownik kliknie diagram prawym przyciskiem myszy. Powinien sprawdzić bieżący wybór i ustawić , `command.Enabled` aby wskazać, kiedy polecenie ma zastosowanie.
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -245,11 +245,11 @@ namespace MyMefExtension
 }
 ```
 
-### <a name="gesture-handlers"></a>Programy obsługi gestu
+### <a name="gesture-handlers"></a>Programy obsługi gestów
 
-Procedura obsługi gestu może obsłużyć obiekty przeciągane na diagram z dowolnego miejsca, wewnątrz lub na zewnątrz programu Visual Studio. Poniższy przykład umożliwia użytkownikowi przeciąganie plików z Eksploratora Windows na diagram. Tworzy elementy, które zawierają nazwy plików.
+Procedura obsługi gestów może radzić sobie z obiektami przeciąganych na diagram z dowolnego miejsca, wewnątrz lub Visual Studio. Poniższy przykład umożliwia użytkownikowi przeciąganie plików z Eksplorator Windows na diagram. Tworzy elementy, które zawierają nazwy plików.
 
-Procedury obsługi można pisać, aby przeciągać z innych modeli DSL i modeli UML. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Można pisać programy obsługi, aby radzić sobie z przeciąganiem z innych modeli DSL i modeli UML. Aby uzyskać więcej informacji, [zobacz How to: Add a Drag-and-Drop Handler (Jak dodać program obsługi przeciągania i upuszczania).](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
 ```csharp
 using System.ComponentModel.Composition;
@@ -323,9 +323,9 @@ namespace MefExtension
 
 ### <a name="validation-constraints"></a>Ograniczenia walidacji
 
-Metody walidacji są oznaczane przez `ValidationExtension` atrybut generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Metoda może pojawić się w dowolnej klasie, która nie jest oznaczona przez atrybut.
+Metody walidacji są oznaczone przez `ValidationExtension` atrybut generowany przez DSL, a także przez <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Metoda może występować w dowolnej klasie, która nie jest oznaczona przez atrybut.
 
-Aby uzyskać więcej informacji, zobacz [Walidacja w języku Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
+Aby uzyskać więcej informacji, zobacz Validation in a Domain-Specific Language (Walidacja [w Domain-Specific Języku ).](../modeling/validation-in-a-domain-specific-language.md)
 
 ```csharp
 using Company.MyDsl;
