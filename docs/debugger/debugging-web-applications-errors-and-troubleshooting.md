@@ -1,7 +1,7 @@
 ---
-title: Debugowanie aplikacji sieci Web — błędy i rozwiązywanie problemów
-description: Znajdź linki do stron referencyjnych, które ułatwiają debugowanie aplikacji sieci Web, takich jak strona rozwiązywania problemów i strony opisujące każdy błąd, który może wystąpić.
-ms.custom: SEO-VS-2020, seodec18
+title: Debugowanie aplikacji internetowych — błędy i rozwiązywanie problemów
+description: Znajdź linki do stron referencyjnych, które ułatwiają debugowanie aplikacji internetowych, takie jak strona rozwiązywania problemów i strony opisujące każdy napotkany błąd.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,33 +28,33 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cce4bcbf946dad69fc3e11a7b54365fc549c699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7b77afecaaadd65e203bda52dfc9cb92bef52ff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872303"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387713"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debugowanie aplikacji internetowych: Błędy i rozwiązywanie problemów
-Podczas próby debugowania aplikacji sieci Web mogą wystąpić następujące błędy.
+Podczas próby debugowania aplikacji internetowych mogą wystąpić następujące błędy.
 
 - [Rozwiązywanie problemów](../debugger/debugging-web-applications-troubleshooting.md)
 
-- [Błąd: witryna używa adresu IP](../debugger/error-site-uses-ip-address.md)
+- [Błąd: Witryna używa adresu IP](../debugger/error-site-uses-ip-address.md)
 
-- [Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ usługa administratora usług IIS nie odpowiadała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [Błąd: Sprawdzanie zabezpieczeń nie powiodło się, ponieważ usługa administracyjna IIS nie odpowiedziała](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
-- [Błąd: nie zainstalowano ASP.NET](../debugger/error-aspnet-not-installed.md)
+- [Błąd: ASP.NET nie zainstalowano](../debugger/error-aspnet-not-installed.md)
 
-- [Błąd: debugowanie nie powiodło się, ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+- [Błąd: Debugowanie nie powiodło się, Integrated Windows Authentication nie jest włączone](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
 - [Błąd: Serwer internetowy nie został poprawnie skonfigurowany](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
-- [Błąd: serwer sieci Web został zablokowany i blokuje czasownik debugowania](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Błąd: Serwer internetowy został zablokowany i blokuje czasownik DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
-- [Błąd: przekroczono limit czasu podczas debugowania usług sieci Web](../debugger/error-timeout-while-debugging-web-services.md)
+- [Błąd: Limit czasu podczas debugowania usług internetowych](../debugger/error-timeout-while-debugging-web-services.md)
 
-- [Błąd: nie można rozpocząć debugowania na serwerze sieci Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Błąd: Nie można rozpocząć debugowania na serwerze sieci Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Zabezpieczenia debugera](../debugger/debugger-security.md)

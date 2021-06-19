@@ -1,7 +1,7 @@
 ---
-description: 'Pełny tekst komunikatu: przekroczono limit czasu obliczania funkcji "Function" i wymaganie zostało przerwane w sposób niebezpieczny.'
-title: Ocenianie &apos; &apos; przekroczenia limitu czasu funkcji funkcji i wymaganie przerwania w sposób niebezpieczny | Microsoft Docs
-ms.date: 11/04/2016
+title: Uchybnił czas oceny funkcji i konieczne było przerwanie jej &apos; &apos; w niebezpieczny sposób | Microsoft Docs
+description: 'Pełny tekst komunikatu: Udano przekreślenie czasu oceny funkcji "function" i konieczne było przerwanie jej w niebezpieczny sposób.'
+ms.date: 06/18/2021
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
@@ -10,43 +10,47 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e928bb0ebae1e644729fcaf4f47b7dd461399be6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147019"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386673"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: szacowanie &#39;funkcji&#39; przekroczony limit czasu i wymaganie przerwania w sposób niebezpieczny
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Błąd: Szacowanie wartości &#39;funkcji&#39; ułożyło się i konieczne było przerwanie jej w niebezpieczny sposób
 
-Pełny tekst komunikatu: przekroczono limit czasu obliczania funkcji "Function" i wymaganie zostało przerwane w sposób niebezpieczny. Może to spowodować uszkodzenie procesu docelowego.
+Pełny tekst komunikatu: Udano przekreślenie czasu oceny funkcji "function" i konieczne było przerwanie jej w niebezpieczny sposób. Może to spowodować uszkodzenie procesu docelowego.
 
-Aby ułatwić sprawdzenie stanu obiektów .NET, debuger automatycznie wymusi w debugowanym procesie uruchomić dodatkowy kod (zazwyczaj metody pobierające właściwości i funkcje ToString). W większości przypadków te funkcje są szybko i ułatwiają debugowanie. Jednak debuger nie uruchamia aplikacji w piaskownicy. W związku z tym metoda pobierająca lub ToString właściwości, która wywołuje funkcję natywną, która przestaje odpowiadać, może prowadzić do długotrwałych limitów czasu, które mogą nie być możliwe do odzyskania. Ten komunikat o błędzie wystąpił.
+Aby ułatwić sprawdzanie stanu obiektów .NET, debuger automatycznie wymusi uruchomienie dodatkowego kodu przez debugowany proces (zazwyczaj metody pobierające właściwości i funkcje ToString). W większości przypadków funkcje te są szybko ukończone i znacznie ułatwiają debugowanie. Jednak debuger nie uruchamia aplikacji w piaskownicy. W rezultacie metoda getter właściwości lub ToString, która wywołuje funkcję natywną, która przestaje odpowiadać, może prowadzić do długich limitów czasu, których odzyskanie może być nie do odzyskania. Jeśli wystąpi ten komunikat o błędzie, wystąpił.
 
-Jednym z typowych przyczyn tego problemu jest to, że gdy debuger szacuje właściwość, umożliwia tylko poddane inspekcji do wykonania. Dlatego jeśli właściwość oczekuje na inne wątki do uruchomienia w debugowanej aplikacji i jeśli oczekuje na to, że środowisko uruchomieniowe platformy .NET nie może przerwać działania, ten problem wystąpi.
+Częstą przyczyną tego problemu jest to, że gdy debuger ocenia właściwość, umożliwia wykonanie tylko sprawdzanych wątków. Jeśli więc właściwość oczekuje na uruchomienie innych wątków wewnątrz debugowanych aplikacji, a jeśli oczekuje w taki sposób, że środowisko uruchomieniowe .NET nie jest w stanie przerwać działania, ten problem się stanie.
 
 ## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
 
-Istnieje kilka możliwych rozwiązań tego problemu.
+W poniższych sekcjach znajduje się kilka możliwych rozwiązań tego problemu.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 rozwiązania: Uniemożliwianie debugerowi wywoływania właściwości pobierającej lub metody ToString
+## <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Rozwiązanie #1: Uniemożliwianie debugerowi wywoływania właściwości getter lub metody ToString
 
-Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Jeśli można zmodyfikować tę funkcję, można uniemożliwić debugerowi wywoływanie metody pobierającej lub ToString właściwości. Wypróbuj jedną z następujących czynności:
+Komunikat o błędzie będzie zawierał nazwę funkcji, która została wywołana przez debuger. Jeśli możesz zmodyfikować tę funkcję, możesz uniemożliwić debugerowi wywoływanie metody getter właściwości lub ToString. Wypróbuj jedną z następujących czynności:
 
-* Zmień metodę na inny typ kodu oprócz metody pobierającej lub ToString właściwości, a problem zostanie wysunięty.
-    -lub-
-* (Dla ToString) Zdefiniuj atrybut DebuggerDisplay w typie, a debuger może oszacować coś innego niż ToString.
-    -lub-
-* (Dla metody pobierającej właściwości) Umieść `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atrybut we właściwości. Może to być przydatne, jeśli masz metodę, która musi pozostać właściwością ze względu na zgodność interfejsu API, ale w rzeczywistości powinna być to metoda.
+* Zmień metodę na inny typ kodu oprócz metody getter właściwości lub Metody ToString, a problem nie będzie już problemem.
+  -lub-
+* (Dla ToString) [Zdefiniuj atrybut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) dla typu i debuger może ocenić coś innego niż ToString.
+  -lub-
+* (W przypadku getter właściwości) Umieść atrybut [System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)](/dotnet/api/system.diagnostics.debuggerbrowsableattribute) we właściwości . Może to być przydatne, jeśli masz metodę, która musi pozostać właściwością ze względu na zgodność interfejsu API, ale tak naprawdę powinna być metodą.
 
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 rozwiązania: czy kod docelowy poprosił debugera o przerwanie oceny
+## <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Rozwiązanie #2: Poproś debuger o przerwanie oceny w kodzie docelowym
 
-Komunikat o błędzie informuje o nazwie funkcji, którą debuger próbował wywołać. Jeśli metoda getter lub ToString właściwości czasami nie działa prawidłowo, szczególnie w sytuacjach, gdy problem polega na tym, że kod wymaga innego wątku do uruchomienia kodu, funkcja implementacji może wywołać, `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` Aby polecić debugerowi przerwanie oceny funkcji. W tym rozwiązaniu nadal można jawnie oszacować te funkcje, ale domyślne zachowanie jest wykonywane, gdy nastąpi wywołanie NotifyOfCrossThreadDependency.
+Komunikat o błędzie będzie zawierał nazwę funkcji, która została wywołana przez debuger. Jeśli metoda getter lub ToString właściwości czasami nie działa prawidłowo, szczególnie w sytuacjach, w których problem polega na tym, że kod wymaga innego wątku do uruchomienia kodu, funkcja implementacji może wywołać [metodę System.Diagnostics.Debugger.NotifyOfCrossThreadDependency,](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency) aby poprosić debuger o przerwanie oceny funkcji. Dzięki temu rozwiązaniu nadal można jawnie ocenić te funkcje, ale zachowanie domyślne jest takie, że wykonywanie zatrzymuje się po wywołaniu NotifyOfCrossThreadDependency.
 
-### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 rozwiązania: Wyłącz wszystkie niejawne oceny
+## <a name="solution-3-disable-all-implicit-evaluation"></a>Rozwiązanie #3: Wyłącz wszystkie niejawne oceny
 
-Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do   >  **opcji** narzędzia, a następnie usuń zaznaczenie pola **Debuguj**  >  **Ogólne**  >  **Włącz Obliczanie właściwości i inne niejawne wywołania funkcji**. Spowoduje to wyłączenie najbardziej niejawnych ocen funkcji i powinno rozwiązać problem.
+Jeśli poprzednie rozwiązania nie rozwiążą problemu, przejdź do pozycji Narzędzia Opcje i usuń zaznaczenie ustawienia Debugowanie Ogólne Włączanie oceny właściwości i innych  >     >    >  **niejawnych wywołań funkcji**. Spowoduje to wyłączenie większości niejawnych ocen funkcji i powinno rozwiązać problem.
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>#4 rozwiązania: Włącz tryb zgodności zarządzanej
+## <a name="solution-4-check-compatibility-with-third-party-developer-tools"></a>Rozwiązanie #4: Sprawdzanie zgodności z narzędziami deweloperskimi innych firm
 
-Jeśli przełączysz się do starszego aparatu debugowania, możesz wyeliminować ten błąd. Przejdź do   >  **opcji** narzędzia, a następnie wybierz ustawienie **debugowanie**  >  **Ogólne**  >  **Użyj zarządzanego trybu zgodności**. Aby uzyskać więcej informacji, zobacz [Ogólne opcje debugowania](../debugger/general-debugging-options-dialog-box.md).
+Jeśli używasz narzędzia Resharper, zobacz ten [problem,](https://youtrack.jetbrains.com/issue/RSRP-476824) aby uzyskać sugestie.
+
+## <a name="solution-5-enable-managed-compatibility-mode"></a>Rozwiązanie #5: Włączanie trybu zgodności zarządzanej
+
+Jeśli przełączysz się na starszy aparat debugowania, możesz wyeliminować ten błąd. Przejdź do **opcji** Narzędzia i wybierz ustawienie Debugowanie  >     >  **Ogólne**  >  **Użyj trybu zgodności zarządzanej.** Aby uzyskać więcej informacji, zobacz [Ogólne opcje debugowania](../debugger/general-debugging-options-dialog-box.md).

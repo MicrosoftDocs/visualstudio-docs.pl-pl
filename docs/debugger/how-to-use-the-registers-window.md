@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie wartości rejestru w debugerze | Microsoft Docs
-description: Wyświetl wartości rejestru w oknie rejestry w programie Visual Studio. Podczas debugowania Zarejestruj wartości Zmień kod w aplikacji.
-ms.custom: SEO-VS-2020, seodec18
+description: Wyświetl wartości rejestru w oknie Rejestry w Visual Studio. Podczas debugowania wartości są rejestrowane podczas wykonywania kodu w aplikacji.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,38 +25,38 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0275a5186b58c9b9a07934b95351b597a816f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2648f74453f51cd8d655ccb0c2344eb1030c1ed
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845012"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385399"
 ---
-# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Wyświetl wartości rejestru w oknie rejestry (C#, C++, Visual Basic, F #)
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Wyświetlanie wartości rejestru w oknie Rejestry (C#, C++, Visual Basic, F#)
 
-W oknie **rejestry** jest wyświetlana zawartość rejestru podczas debugowania programu Visual Studio. Aby uzyskać szczegółowe informacje na temat pojęć związanych z rejestrami i oknem **rejestrów** , zobacz [podstawy debugowania: okno rejestrów](../debugger/debugging-basics-registers-window.md).
+W **oknie Rejestry** jest wyświetlana zawartość rejestru Visual Studio debugowania. Aby uzyskać szczegółowe wprowadzenie do pojęć związanych z rejestrami i okna **Rejestry,** zobacz [Debugging basics: Registers window](../debugger/debugging-basics-registers-window.md)(Podstawy debugowania: rejestry).
 
 > [!NOTE]
-> Informacje dotyczące rejestrowania nie są dostępne dla aplikacji skryptowych i SQL.
+> Informacje o rejestracji nie są dostępne dla skryptów ani aplikacji SQL.
 
-Podczas debugowania Zarejestruj wartości Zmień kod w aplikacji. Ostatnio zmienione wartości są wyświetlane na czerwono w oknie **rejestry** .
+Podczas debugowania wartości są rejestrowane podczas wykonywania kodu w aplikacji. Ostatnio zmienione wartości są wyświetlane na czerwono w **oknie Rejestry.**
 
-Aby zmniejszyć liczbę bałaganów, w oknie **rejestry** są organizowane rejestry w grupach, które różnią się w zależności od typu platformy i procesora. Można wyświetlić lub ukryć grupy rejestrów. Aby uzyskać więcej informacji, zobacz [How to: Display and Hide Groups](../debugger/how-to-display-and-hide-register-groups.md).
+Aby ograniczyć nieład, w **oknie Rejestry** rejestry są organizowane w grupy, które różnią się w zależności od typu platformy i procesora. Grupy rejestrów można wyświetlać lub ukrywać. Aby uzyskać więcej informacji, zobacz [How to: Display and hide register groups (Jak wyświetlać i ukrywać grupy rejestru).](../debugger/how-to-display-and-hide-register-groups.md)
 
-Aby uzyskać informacje na temat flag widocznych w oknie **rejestry** , zobacz [Informacje o oknie rejestrów](../debugger/debugging-basics-registers-window.md)
+Aby uzyskać informacje na temat flag wyświetlonych w **oknie Rejestry,** zobacz [Informacje o oknie Rejestry](../debugger/debugging-basics-registers-window.md)
 
-Można edytować wartości rejestru. Aby uzyskać więcej informacji, zobacz [jak: Edytowanie wartości rejestru](../debugger/how-to-edit-a-register-value.md).
+Wartości rejestru można edytować. Aby uzyskać więcej informacji, [zobacz Jak edytować wartość rejestru](../debugger/how-to-edit-a-register-value.md).
 
-**Aby otworzyć okno rejestry**
+**Aby otworzyć okno Rejestry**
 
-1. Włącz debugowanie na poziomie adresu, wybierając opcję **Włącz debugowanie na poziomie adresu** w **narzędziu** (lub **Debuguj**) >  >  **debugowanie** opcji.
+1. Włącz debugowanie na poziomie adresu, wybierając pozycję Włącz **debugowanie na** poziomie adresu w menu Narzędzia **(lub** Debugowanie **)**>   >  **debugowania.**
 
-1. Gdy debugowanie jest uruchomione lub w punkcie przerwania, wybierz kolejno opcje **Debuguj**  >    >  **rejestry** systemu Windows lub naciśnij klawisze **Alt** + **5**.
+1. Gdy debugowanie jest uruchomione lub w punkcie przerwania, wybierz pozycję **Debuguj** rejestry systemu  >  **Windows**  >  lub naciśnij **klawisze Alt** + **5.**
 
 >[!NOTE]
->Okna dialogowe i polecenia menu mogą się różnić w zależności od wersji lub ustawień programu Visual Studio. Aby zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
+>Okna dialogowe i polecenia menu mogą się różnić w zależności od Visual Studio lub ustawień. Aby zmienić ustawienia, wybierz pozycję **Importuj i** eksportuj ustawienia w menu Visual Studio **Narzędzia.** Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
 ### <a name="see-also"></a>Zobacz też
 
-- [Podstawy debugowania: okno rejestrów](../debugger/debugging-basics-registers-window.md)
+- [Podstawy debugowania: okno Rejestry](../debugger/debugging-basics-registers-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

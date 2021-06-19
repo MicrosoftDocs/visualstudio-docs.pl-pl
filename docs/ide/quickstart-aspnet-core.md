@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie aplikacji ASP.NET Core w języku C #'
 description: Dowiedz się, jak utworzyć prostą aplikację Hello world internetową w języku Visual Studio c# i ASP.NET Core, krok po kroku.
-ms.custom: acquisition, mvc,seodec18
+ms.custom: vs-acquisition
 ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 61fc3f0cf1e23dcf0f9e22ed7e10050fb84c9ba6
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 65ad48bab545d635763a1cabb4e76734431c2a55
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308067"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384840"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki start: tworzenie pierwszej Visual Studio Core przy użyciu ASP.NET Core
 
@@ -195,18 +195,18 @@ Gratulujemy ukończenia tego przewodnika Szybki start! Mamy nadzieję, że wiesz
 
    W edytorze zobaczysz kod HTML dla tekstu wyświetlanego na **stronie głównej.**
 
-   ![Kod HTML w pliku Index.cshtml dla strony głównej w edytorze Visual Studio plików](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+   ![Kod HTML w pliku Index.cshtml dla strony głównej w Visual Studio edytorze plików](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
 1. Zmień tekst "Welcome" (Powitanie) na **"Hello world!**".
 
    ![W edytorze Visual Studio zmień domyślny kod HTML z wartością Witaj, aby zamiast tego Hello world](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
-1. Wybierz **IIS Express** lub naciśnij **klawisz Ctrl** + **F5,** aby uruchomić aplikację i otworzyć ją w przeglądarce internetowej.
+1. Wybierz **IIS Express** naciśnij klawisz **Ctrl** + **F5,** aby uruchomić aplikację i otworzyć ją w przeglądarce internetowej.
 
    ![Wybierz przycisk IIS Express w Visual Studio](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
 
    > [!NOTE]
-   > Jeśli zostanie wyświetlony komunikat o błędzie z komunikatem Nie można nawiązać połączenia z serwerem sieci **Web "IIS Express"** lub komunikat o błędzie informujący o certyfikacie SSL, zamknij Visual Studio. Następnie otwórz Visual Studio przy użyciu opcji Uruchom jako **administrator** z menu kontekstowego dostępnego po kliknięciu prawym przyciskiem myszy. Następnie ponownie uruchom aplikację.
+   > Jeśli zostanie wyświetlony komunikat o błędzie z komunikatem Nie można nawiązać połączenia z serwerem internetowym **"IIS Express"** lub komunikat o błędzie informujący o certyfikacie SSL, zamknij Visual Studio. Następnie otwórz Visual Studio przy użyciu opcji Uruchom jako **administrator** z menu kontekstowego dostępnego po kliknięciu prawym przyciskiem myszy. Następnie ponownie uruchom aplikację.
 
 1. W przeglądarce internetowej sprawdź, czy strona **główna** zawiera zaktualizowany tekst.
 

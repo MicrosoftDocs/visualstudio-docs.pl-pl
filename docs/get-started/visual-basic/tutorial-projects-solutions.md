@@ -4,6 +4,7 @@ description: Dowiedz się, jak utworzyć rozwiązanie i projekt w Visual Studio 
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f27973fcfb76d019cff31787b117f05f8266ad8
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308184"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384736"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Dowiedz się więcej o projektach i rozwiązaniach korzystających z Visual Basic
 
@@ -49,7 +50,7 @@ W tym artykule wprowadzającym dowiesz się, co oznacza utworzenie rozwiązania 
 Skonstru będziemy konstruować rozwiązanie i projekt od podstaw jako ćwiczenie edukacyjne, aby zrozumieć koncepcję projektu. W przypadku ogólnego użycia Visual Studio prawdopodobnie będziesz używać niektórych różnych  szablonów projektów, które Visual Studio oferuje podczas tworzenia nowego projektu.
 
 > [!NOTE]
-> Rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć folder zawierający kod i rozpocząć kodowanie, tworzenie i debugowanie. Na przykład klonowanie repozytorium [GitHub](https://github.com/) może nie zawierać Visual Studio i rozwiązań. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu w [programie Visual Studio bez projektów i rozwiązań).](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+> Rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć folder zawierający kod i rozpocząć kodowanie, tworzenie i debugowanie. Na przykład klonowanie repozytorium [GitHub](https://github.com/) może nie zawierać Visual Studio i rozwiązań. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu [w programie Visual Studio bez projektów i rozwiązań).](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 
 ## <a name="solutions-and-projects"></a>Rozwiązania i projekty
 
@@ -193,7 +194,7 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
 ## <a name="add-a-project-reference"></a>Dodawanie odwołania do projektu
 
-Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w projekcie **QuickDate,** więc musimy dodać odwołanie do tego projektu. Powoduje to utworzenie *zależności kompilacji* między dwoma projektami, co oznacza, że podczas kompilowania rozwiązania funkcja **QuickDate** jest kompilowana przed **quicktestem.**
+Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w projekcie **QuickDate,** dlatego musimy dodać odwołanie do tego projektu. Powoduje to utworzenie *zależności kompilacji* między dwoma projektami, co oznacza, że podczas kompilowania rozwiązania funkcja **QuickDate** jest kompilowana przed szybkim **testem**.
 
 1. Wybierz węzeł **Odwołania** w **projekcie QuickTest,** a następnie z menu kontekstowego lub kliknij prawym przyciskiem myszy pozycję **Dodaj odwołanie.**
 
@@ -201,13 +202,13 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
    Zostanie **otwarte okno dialogowe** Menedżer odwoływać.
 
-1. W okienku po lewej stronie **rozwiń pozycję Projekty** i wybierz **pozycję Rozwiązanie.** W środkowym okienku zaznacz pole wyboru obok opcji **QuickDate (QuickDate),** a następnie wybierz **przycisk OK.**
+1. W okienku po lewej stronie **rozwiń** pozycję Projekty i wybierz **pozycję Rozwiązanie.** W środkowym okienku zaznacz pole wyboru obok opcji **QuickDate (Szybki** start), a następnie wybierz przycisk **OK.**
 
    Zostanie dodane odwołanie do **projektu QuickDate.**
 
 ## <a name="add-test-code"></a>Dodawanie kodu testowego
 
-1. Teraz dodamy kod testowy do Visual Basic kodu. Zastąp zawartość pliku *UnitTest1.vb* poniższym kodem.
+1. Teraz dodamy kod testowy do Visual Basic kodu. Zastąp zawartość pliku *UnitTest1.vb* następującym kodem.
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -219,9 +220,9 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
    End Class
    ```
 
-   Pod niektórymi kodami zostanie wyświetlony czerwony zygieł. Naprawimy ten błąd, czynimy projekt testowy przyjaznym [zestawem](/dotnet/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies) w **projekcie QuickDate.**
+   Pod niektórym kodem zostanie wyświetlony czerwony zygieł. Naprawimy ten błąd, czynimy projekt testowy przyjaznym [zestawem](/dotnet/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies) w **projekcie QuickDate.**
 
-1. Po powrocie do projektu **QuickDate** otwórz plik *Calendar.vb,* jeśli nie został jeszcze otwarty, i dodaj następującą instrukcje [Imports](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) oraz atrybut , aby usunąć błąd w <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> projekcie testowym.
+1. Po powrocie **do projektu QuickDate** otwórz plik *Calendar.vb,* jeśli nie jest jeszcze otwarty, i dodaj następującą instrukcje [Imports](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type) oraz atrybut , aby usunąć błąd w <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> projekcie testowym.
 
    ```vb
    Imports System.Runtime.CompilerServices
@@ -235,24 +236,24 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Wiersz w pliku *Calendar.vb* zawierający atrybut odwołuje się do nazwy <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zestawu (nazwy pliku) projektu **QuickTest.** Nazwa zestawu nie zawsze może być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, otwórz właściwości projektu.
+Wiersz w pliku *Calendar.vb,* który zawiera atrybut, odwołuje się do nazwy <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zestawu (nazwy pliku) projektu **QuickTest.** Nazwa zestawu nie zawsze może być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, otwórz właściwości projektu.
 
-1. W **Eksplorator rozwiązań** wybierz projekt **QuickTest.** W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij **klawisz Alt** + **Enter**. (Możesz również kliknąć dwukrotnie pozycję **Mój projekt w** **Eksplorator rozwiązań**).
+1. W **Eksplorator rozwiązań** wybierz projekt **QuickTest.** W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij **klawisz Alt** + **Enter.** (Możesz również kliknąć dwukrotnie pozycję **Mój projekt w** **Eksplorator rozwiązań**).
 
-   Strony *właściwości projektu* otwarte na **karcie** Aplikacja. Strony właściwości zawierają różne ustawienia projektu. Zwróć uwagę, że nazwa zestawu projektu **QuickTest** to rzeczywiście "QuickTest". Jeśli chcesz ją zmienić, możesz to zrobić w tym miejscu. Następnie podczas kompilowania projektu testowego nazwa wynikowego pliku binarnego zmieni się *zQuickTest.dll* na wybraną przez Ciebie.
+   Strony *właściwości projektu* otwarte na **karcie** Aplikacja. Strony właściwości zawierają różne ustawienia projektu. Zwróć uwagę, że nazwa zestawu projektu **QuickTest** to w rzeczywistości "QuickTest". Jeśli chcesz ją zmienić, możesz to zrobić w tym miejscu. Następnie podczas kompilowania projektu testowego nazwa wynikowego pliku binarnego zmieni się *zQuickTest.dll* na wybraną.
 
    ![Właściwości projektu](../media/tutorial-projects-properties.png)
 
-1. Zapoznaj się z innymi kartami stron właściwości projektu, takimi jak **Compile** (Kompilacja) **i Settings (Ustawienia).** Te karty są różne dla różnych typów projektów.
+1. Zapoznaj się z innymi kartami stron właściwości projektu, takimi jak **Kompiluj** i **Ustawienia.** Te karty są różne dla różnych typów projektów.
 
 ## <a name="optional-run-the-test"></a>(Opcjonalnie) Uruchamianie testu
 
-Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >    >   na pasku menu. Zostanie otwarte okno **Eksplorator testów.** Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
+Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >    >   na pasku menu. Zostanie otwarte okno **o nazwie Eksplorator** testów. Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
 
 ![Eksplorator tekstu w programie Visual Studio z pomyślnie przekazanym testem](../media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję Przetestuj   >    >  **Eksploratora testów** systemu Windows na pasku menu.
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >    >  **Eksploratora testów** systemu Windows na pasku menu.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -264,4 +265,4 @@ Jeśli chcesz bardziej eksplorować Visual Studio, rozważ utworzenie aplikacji,
 - [Zarządzanie właściwościami projektów i rozwiązań](../../ide/managing-project-and-solution-properties.md)
 - [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md)
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [omówienie Visual Studio IDE](../../get-started/visual-studio-ide.md)
+- [Visual Studio IDE — omówienie](../../get-started/visual-studio-ide.md)

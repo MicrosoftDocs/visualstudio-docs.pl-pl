@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie stosu wywołań w debugerze | Microsoft Docs
-description: Użyj okna stosu wywołań, aby wyświetlić wywołania funkcji lub procedur, które obecnie znajdują się na stosie w programie Visual Studio.
-ms.custom: SEO-VS-2020, seodec18
+description: Okno Stos wywołań umożliwia wyświetlenie wywołań funkcji lub procedur, które znajdują się obecnie na stosie w Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -30,118 +30,118 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: adb56ddfa53356c00224082c2460137b3f2b3751
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e905a509443cd5fd30e860a887dd895c5ee21a6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841019"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387479"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetlanie stosu wywołań i korzystanie z okna stosu wywołań w debugerze
 
-Za pomocą okna **stosu wywołań** można wyświetlić wywołania funkcji lub procedur, które są aktualnie na stosie. Okno **stos wywołań** pokazuje kolejność, w której metody i funkcje są wywoływane. Stos wywołań to dobry sposób, aby sprawdzić i zrozumieć przepływ wykonywania aplikacji.
+Za pomocą **okna Stos** wywołań można wyświetlić wywołania funkcji lub procedury, które są obecnie w stosie. Okno **Stos wywołań** pokazuje kolejność wywoływania metod i funkcji. Stos wywołań to dobry sposób na zbadanie i zrozumienie przepływu wykonywania aplikacji.
 
-Gdy [symbole debugowania](#bkmk_symbols) nie są dostępne dla części stosu wywołań, okno **stosu wywołań** może nie być w stanie wyświetlić poprawnych informacji dla tej części stosu wywołań, wyświetlając zamiast tego:
+Gdy [symbole debugowania](#bkmk_symbols) nie są dostępne dla  części stosu wywołań, okno stosu wywołań może nie być w stanie wyświetlić prawidłowych informacji dla tej części stosu wywołań, wyświetlając zamiast tego:
 
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> Okno **stosu wywołań** przypomina perspektywę debugowania w niektórych środowisk IDE, takich jak przezaćmienie.
+> Okno **stosu wywołań jest** podobne do perspektywy debugowania w niektórych środowiskach PROJEKTOWYCH, takich jak Eclipse.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od opisanych tutaj, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz pozycję **Importuj i Eksportuj ustawienia** w menu **Narzędzia** .  Zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
+> Wyświetlane okna dialogowe i polecenia menu mogą różnić się od opisanych tutaj, w zależności od aktywnych ustawień lub wersji. Aby zmienić ustawienia, wybierz pozycję **Importuj i eksportuj ustawienia** **w** menu Narzędzia.  Zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Wyświetlanie stosu wywołań w debugerze
 
-- Podczas debugowania, w menu **Debuguj** wybierz opcję **stos wywołań systemu Windows >**.
+- Podczas debugowania w menu **Debugowanie** wybierz pozycję **Windows > stos wywołań**.
 
   ![Okno stosu wywołań](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Żółta strzałka określa ramkę stosu, w której znajduje się wskaźnik wykonania. Domyślnie informacje o tej ramce stosu są wyświetlane w oknach źródło, **lokalne**, **Autostart**, **Watch** i **demontaż** . Aby zmienić kontekst debugera na inną ramkę na stosie, [Przełącz się do innej ramki stosu](#bkmk_switch).
+Żółta strzałka identyfikuje ramkę stosu, w której znajduje się obecnie wskaźnik wykonywania. Domyślnie informacje o ramce stosu są wyświetlane w oknach źródła, **locals,** **autos,** **watch** **i dezemberaty.** Aby zmienić kontekst debugera na inną ramkę na stosie, [przełącz się na inną ramkę stosu](#bkmk_switch).
 
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Wyświetl kod niebędący użytkownikiem w oknie stosu wywołań
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Wyświetlanie kodu bez użytkownika w oknie stosu wywołań
 
-- Kliknij prawym przyciskiem myszy okno **stos wywołań** i wybierz polecenie **Pokaż kod zewnętrzny**.
+- Kliknij prawym przyciskiem myszy okno **Stos wywołań** i wybierz polecenie **Pokaż kod zewnętrzny**.
 
-Kod niebędący użytkownikiem jest dowolnym kodem, który nie jest wyświetlany, gdy [tylko mój kod](../debugger/just-my-code.md) jest włączona. W kodzie zarządzanym ramki kodu niezwiązane z użytkownikiem są domyślnie ukryte. Poniższy zapis występuje zamiast ramek kodu niebędących użytkownikami:
+Kod niebędący użytkownikiem to dowolny kod, który nie jest wyświetlany [Tylko mój kod](../debugger/just-my-code.md) jest włączony. W kodzie zarządzanym ramki kodu inne niż użytkownika są domyślnie ukryte. W miejsce ramek kodu innych niż ramki kodu użytkownika jest wyświetlana następująca notacja:
 
 `[<External Code>]`
 
-## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Przełącz do innej ramki stosu (Zmień kontekst debugera)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Przełącz się na inną ramkę stosu (zmień kontekst debugera)
 
-1. W oknie **stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, której kod i dane chcesz wyświetlić.
+1. W **oknie Stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, której kod i dane chcesz wyświetlić.
 
-    Można też kliknąć dwukrotnie ramkę w oknie **stosu wywołań** , aby przełączyć się do tej ramki.
+    Możesz też kliknąć dwukrotnie ramkę w oknie **stosu** wywołań, aby przełączyć się do tej ramki.
 
-2. Wybierz pozycję **Przełącz do ramki**.
+2. Wybierz **pozycję Przełącz na ramkę**.
 
-     Zielona strzałka z ogonem klamrowym pojawia się obok wybranej ramki stosu. Wskaźnik wykonywania pozostaje w oryginalnej ramce, która nadal jest oznaczona żółtą strzałką. Jeśli wybierzesz pozycję **krok** lub **Kontynuuj** z menu **Debuguj** , wykonywanie będzie kontynuowane w pierwotnej ramce, a nie w wybranej ramce.
+     Obok wybranej ramki stosu zostanie wyświetlona zielona strzałka ze zwiniętym ogonem. Wskaźnik wykonania pozostaje w oryginalnej ramce, która nadal jest oznaczona żółtą strzałką. Jeśli wybierzesz **pozycję Krok** **lub** Kontynuuj z menu **Debugowanie,** wykonywanie będzie kontynuowane w oryginalnej ramce, a nie w wybranej ramce.
 
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Wyświetlanie kodu źródłowego dla funkcji na stosie wywołań
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Wyświetlanie kodu źródłowego funkcji na stosie wywołań
 
-- W oknie **stos wywołań** kliknij prawym przyciskiem myszy funkcję, której kod źródłowy chcesz zobaczyć, i wybierz polecenie **Przejdź do kodu źródłowego**.
+- W **oknie Stos wywołań** kliknij prawym przyciskiem myszy funkcję, której kod źródłowy chcesz wyświetlić, a następnie wybierz pozycję **Przejdź do kodu źródłowego**.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Uruchom do określonej funkcji w oknie stosu wywołań
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Uruchamianie do określonej funkcji w oknie stosu wywołań
 
-- W oknie **stos wywołań** zaznacz funkcję, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom do kursora**.
+- W **oknie Stos wywołań** wybierz funkcję, kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Uruchom do kursora**.
 
-## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Ustaw punkt przerwania w punkcie wyjścia wywołania funkcji
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Ustawianie punktu przerwania w punkcie wyjścia wywołania funkcji
 
 - Zobacz [Ustawianie punktu przerwania w funkcji stosu wywołań](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Wyświetlanie wywołań do lub z innego wątku
 
-- Kliknij prawym przyciskiem myszy okno **stos wywołań** i wybierz pozycję **Dołącz wywołania do/z innych wątków**.
+- Kliknij prawym przyciskiem myszy okno **Stos wywołań** i wybierz **pozycję Uwzględnij wywołania do/z innych wątków**.
 
 ## <a name="visually-trace-the-call-stack"></a>Wizualne śledzenie stosu wywołań
 
-W Visual Studio Enterprise (tylko) można wyświetlić mapy kodu dla stosu wywołań podczas debugowania.
+W Visual Studio Enterprise (tylko) można wyświetlać mapy kodu dla stosu wywołań podczas debugowania.
 
-- W oknie **stos wywołań** Otwórz menu skrótów. Wybierz pozycję **Pokaż stos wywołań na mapie kodu** (**Ctrl**  +  **SHIFT**  +  **`** ).
+- W **oknie Stos** wywołań otwórz menu skrótów. Wybierz pozycję **Pokaż stos wywołań na mapie kodu** **(Ctrl**  +    +  **`** Shift).
 
-    Aby uzyskać więcej informacji, zobacz [Mapowanie metod w stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+    Aby uzyskać więcej informacji, zobacz [Mapowanie metod na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Pokaż stos wywołań na mapie kodu](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Pokazywanie stosu wywołań na mapie kodu](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Wyświetlanie kodu demontażu dla funkcji na stosie wywołań (C#, C++, Visual Basic, F #)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Wyświetlanie kodu desembedżu dla funkcji w stosie wywołań (C#, C++, Visual Basic, F#)
 
-- W oknie **stos wywołań** kliknij prawym przyciskiem myszy funkcję, której kod demontażu chcesz zobaczyć, i wybierz polecenie **Przejdź do demontażu**.
+- W **oknie Stos wywołań** kliknij prawym przyciskiem myszy funkcję, której kod dezmisji chcesz wyświetlić, i wybierz polecenie **Przejdź do dezembrację**.
 
-## <a name="change-the-optional-information-displayed"></a>Zmień wyświetlane informacje opcjonalne
+## <a name="change-the-optional-information-displayed"></a>Zmienianie wyświetlanych opcjonalnych informacji
 
-- Kliknij prawym przyciskiem myszy w oknie **stos wywołań** i ustaw lub wyczyść opcję **Pokaż \<**_the information that you want_**>**.
+- Kliknij prawym przyciskiem myszy w **oknie Stos wywołań** i ustaw lub wyczyść pole **\<**_the information that you want_**> pokaż**.
 
-## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Załaduj symbole dla modułu (C#, C++, Visual Basic, F #)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Ładowanie symboli dla modułu (C#, C++, Visual Basic, F#)
 
-W oknie **stos wywołań** można załadować symbole debugowania dla kodu, który nie ma obecnie załadowanych symboli. Tymi symbolami mogą być symbole .NET lub systemowe pobrane z publicznych serwerów symboli firmy Microsoft lub symbole w ścieżce symboli na komputerze, który jest debugowany.
+W **oknie Stos** wywołań można załadować symbole debugowania dla kodu, który obecnie nie ma załadowanych symboli. Te symbole mogą być symbolami platformy .NET lub systemami pobranymi z publicznych serwerów symboli firmy Microsoft lub symbolami w ścieżce symboli na komputerze, który jest debugowania.
 
-Zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Zobacz [Temat Specify symbol (.pdb) and source files (Określanie plików symboli (.pdb) i plików źródłowych).](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ### <a name="to-load-symbols"></a>Aby załadować symbole
 
-1. W oknie **stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, dla której symbole nie są ładowane. Ramka będzie wyszarzona.
+1. W **oknie Stos wywołań** kliknij prawym przyciskiem myszy ramkę stosu, dla której symbole nie są ładowane. Ramka będzie wygaszona.
 
-2. Wskaż **Załaduj symbole** , a następnie wybierz pozycję **serwery symboli firmy Microsoft** (jeśli są dostępne) lub przejdź do ścieżki symboli.
+2. Wskaż polecenie **Załaduj** symbole, a następnie wybierz **pozycję Serwery symboli firmy Microsoft** (jeśli są dostępne) lub przejdź do ścieżki symboli.
 
-### <a name="to-set-the-symbol-path"></a>Aby ustawić ścieżkę symbolu
+### <a name="to-set-the-symbol-path"></a>Aby ustawić ścieżkę symboli
 
-1. W oknie **stos wywołań** wybierz pozycję **Ustawienia symboli** z menu skrótów.
+1. W **oknie Stos wywołań** wybierz pozycję **Ustawienia symboli** z menu skrótów.
 
-     Zostanie otwarte okno dialogowe **Opcje** i zostanie wyświetlona strona **symbole** .
+     Zostanie **otwarte** okno dialogowe Opcje i zostanie **wyświetlona** strona Symbole.
 
-2. Wybierz pozycję **Ustawienia symboli**.
+2. Wybierz **pozycję Ustawienia symboli.**
 
-3. W oknie dialogowym **Opcje** kliknij ikonę folderu.
+3. W **oknie dialogowym** Opcje kliknij ikonę Folder.
 
-     W polu **lokalizacje pliku symboli (. pdb)** pojawia się kursor.
+     W **polu Lokalizacje pliku symboli (.pdb)** pojawi się kursor.
 
-4. Wprowadź nazwę ścieżki katalogu do lokalizacji symboli na komputerze, który jest debugowany. W przypadku debugowania lokalnego i zdalnego jest to ścieżka na komputerze lokalnym.
+4. Wprowadź nazwę ścieżki katalogu do lokalizacji symbolu na debugowaniu komputera. W przypadku debugowania lokalnego i zdalnego jest to ścieżka na komputerze lokalnym.
 
-5. Wybierz **przycisk OK** , aby zamknąć okno dialogowe **Opcje** .
+5. Wybierz **przycisk OK,** aby zamknąć **okno** dialogowe Opcje.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
-- [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Korzystanie z punktów przerwania](../debugger/using-breakpoints.md)

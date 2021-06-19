@@ -1,7 +1,7 @@
 ---
-title: Zastosuj edycje w trybie przerwania za pomocą Edytuj i Kontynuuj | Microsoft Docs
-description: Zobacz, jak używać Edytuj i Kontynuuj, aby edytować kod Visual Basic w trybie przerwania. Istnieją różne sposoby wprowadzania trybu przerwania.
-ms.custom: SEO-VS-2020, seodec18
+title: Stosowanie edycji w trybie przerwania za pomocą edytowania i | Microsoft Docs
+description: Zobacz, jak używać funkcji Edytuj i kontynuuj, aby edytować kod Visual Basic w trybie przerwania. Istnieją różne sposoby wprowadzania trybu przerwania.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,42 +24,42 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a9074d992c06c1b7d49f59481bee35345c5199f8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e62c6a7a6e30bac6d054f3e5484498047426d96d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155045"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386803"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Instrukcje: stosowanie edycji w trybie przerwania za pomocą Edytuj i Kontynuuj (Visual Basic)
-Możesz użyć Edytuj i Kontynuuj, aby edytować swój kod w trybie przerwania, a następnie kontynuować bez zatrzymywania i ponownego uruchamiania.
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>How to: Apply Edits in Break Mode with Edit and Continue (Jak zastosować edycje w trybie przerwania przy użyciu edytowania i Visual Basic)
+Możesz użyć funkcji Edytuj i kontynuuj, aby edytować kod w trybie przerwania, a następnie kontynuować bez zatrzymywania i ponownego uruchamiania wykonywania.
 
-Aby uzyskać ograniczenia dotyczące używania funkcji Edytuj i Kontynuuj podczas debugowania, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
+Aby uzyskać informacje o ograniczeniach dotyczących używania funkcji Edytuj i kontynuuj podczas debugowania, zobacz Obsługiwane zmiany kodu [(C# i Visual Basic).](../debugger/supported-code-changes-csharp.md)
 
 ### <a name="to-edit-code-in-break-mode"></a>Aby edytować kod w trybie przerwania
 
-1. Przejdź do trybu przerwania, wykonując jedną z następujących czynności:
+1. Wprowadź tryb przerwania, wykonując jedną z następujących czynności:
 
-    - Ustaw punkt przerwania w kodzie, a następnie wybierz **Rozpocznij debugowanie** z menu **Debuguj** i poczekaj, aż aplikacja osiągnie punkt przerwania.
-
-         -lub-
-
-    - Rozpocznij debugowanie, a następnie wybierz polecenie **Przerwij wszystko** w menu **Debuguj** .
+    - Ustaw punkt przerwania w kodzie, a następnie wybierz pozycję **Rozpocznij** debugowanie z menu **Debugowanie** i poczekaj, aż aplikacja trafi punkt przerwania.
 
          -lub-
 
-    - Gdy wystąpi wyjątek, wybierz pozycję **Włącz edytowanie** w **Asystencie wyjątków**.
+    - Rozpocznij debugowanie, a następnie wybierz **pozycję Przerwij wszystko** z menu **Debugowanie.**
 
-2. Wprowadź odpowiednie i obsługiwane zmiany w kodzie.
+         -lub-
 
-     Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md).
+    - W przypadku wystąpienia wyjątku wybierz pozycję **Włącz edytowanie w** **Asystencie wyjątków.**
+
+2. Wprowadzaj wszelkie żądane i obsługiwane zmiany kodu.
+
+     Aby uzyskać więcej informacji, zobacz [Obsługiwane zmiany kodu (C# i Visual Basic).](../debugger/supported-code-changes-csharp.md)
 
     > [!NOTE]
-    > Jeśli spróbujesz wprowadzić zmianę kodu, która nie jest dozwolona przez edytowanie i kontynuowanie, Edycja zostanie podkreślona purpurową linią falistą i zostanie wyświetlone zadanie w Lista zadań. Nie będzie można kontynuować wykonywania kodu, chyba że zostanie cofnięta niedozwolona zmiana kodu.
+    > Jeśli spróbujesz wprowadzić zmianę kodu, która nie jest dozwolona przez pozycję Edytuj i kontynuuj, edycja zostanie podkreślona fioletową linią falistą, a zadanie pojawi się w Lista zadań. Nie będzie można kontynuować wykonywania kodu, chyba że cofniesz niedozwoloną zmianę kodu.
 
-3. W menu **debugowanie** kliknij pozycję **Kontynuuj** , aby wznowić wykonywanie.
+3. W menu **Debugowanie** kliknij pozycję **Kontynuuj,** aby wznowić wykonywanie.
 
-     Kod jest teraz wykonywany z zastosowaniem zmian wprowadzonych w projekcie.
+     Kod jest teraz wykonywany z zastosowanymi edytować włączonymi do projektu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Obsługiwane zmiany kodu (C# i Visual Basic)](../debugger/supported-code-changes-csharp.md)

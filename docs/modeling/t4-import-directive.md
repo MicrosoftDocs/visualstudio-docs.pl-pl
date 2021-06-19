@@ -1,26 +1,26 @@
 ---
 title: Dyrektywa T4 dotycząca importowania
-description: Dowiedz się, że w szablonie tekstowym programu Visual Studio T4 dyrektywa import umożliwia odwoływanie się do elementów w innej przestrzeni nazw bez podawania w pełni kwalifikowanej nazwy.
+description: Dowiedz się, że w Visual Studio tekstowym T4 dyrektywa import pozwala odwoływać się do elementów w innej przestrzeni nazw bez podaniem w pełni kwalifikowanej nazwy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9eb50261b346d8751a76817d97d59a798d17236
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0d441ec5a62dfa5266a17a06ac8fe33941136c6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899667"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386322"
 ---
 # <a name="t4-import-directive"></a>Dyrektywa T4 dotycząca importowania
 
-W blokach kodu szablonu tekstu T4 programu Visual Studio `import` dyrektywa pozwala odwoływać się do elementów w innej przestrzeni nazw bez podawania w pełni kwalifikowanej nazwy. Jest odpowiednikiem `using` w języku C# lub `imports` w [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] .
+W blokach kodu szablonu Visual Studio T4 dyrektywa pozwala odwoływać się do elementów w innej przestrzeni nazw bez podaniem w `import` pełni kwalifikowanej nazwy. Jest to odpowiednik w `using` języku C# lub `imports` [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] w .
 
-Aby uzyskać ogólne omówienie pisania szablonów tekstowych T4, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+Aby uzyskać ogólne omówienie pisania szablonów tekstowych T4, zobacz [Writing a T4 Text Template (Pisanie szablonu tekstowego T4).](../modeling/writing-a-t4-text-template.md)
 
 ## <a name="using-the-import-directive"></a>Używanie dyrektywy Import
 

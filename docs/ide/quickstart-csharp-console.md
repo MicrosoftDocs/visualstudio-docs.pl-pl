@@ -1,8 +1,8 @@
 ---
-title: Tworzenie pierwszej Visual Studio konsoli w języku C# za pomocą Visual Studio aplikacji
+title: 'Samouczek: tworzenie aplikacji konsolowej w języku C# przy użyciu Visual Studio'
 titleSuffix: ''
 description: Dowiedz się, jak utworzyć prostą Hello world konsolową w języku Visual Studio, korzystając z języka C#, krok po kroku.
-ms.custom: acquisition, seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 21cab6f8fd8f4ff6a86a780774d031e60b03e780
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: bf7a52b6dbf36c25590292c3272f1e63d07156b9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308002"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387622"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: używanie Visual Studio do tworzenia pierwszej aplikacji konsolowej C#
 

@@ -1,65 +1,65 @@
 ---
 title: 'Porady: otwieranie modelu z pliku w kodzie programu'
-description: Dowiedz się, że ModelBus zapewnia standardowy mechanizm odwołujący się do modelu lub elementów w modelu i znajdowania modelu, jeśli został przeniesiony.
+description: Dowiedz się, że modelBus zapewnia standardowy mechanizm odwoływania się do modelu lub elementów w modelu oraz znajdowania modelu, jeśli został przeniesiony.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97de2d7e79dc44ff785663c4d04dc65851430472
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922673"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387063"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
 
 Modele DSL można otwierać w dowolnej aplikacji.
 
-Z rozszerzenia programu Visual Studio można w tym celu użyć ModelBus. ModelBus zapewnia standardowy mechanizm do odwoływania się do modelu lub elementów w modelu oraz do znajdowania modelu, jeśli został przeniesiony. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+W tym Visual Studio można użyć rozszerzenia ModelBus. ModelBus zapewnia standardowy mechanizm odwoływania się do modelu lub elementów w modelu oraz znajdowania modelu, jeśli został przeniesiony. Aby uzyskać więcej informacji, zobacz [Integrowanie modeli przy użyciu Visual Studio Modelbus.](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 
-## <a name="target-framework"></a>Platforma docelowa
+## <a name="target-framework"></a>Docelowa framework
 
-Ustaw **platformę docelową** projektu aplikacji na .NET Framework 4 lub nowszy.
+Ustaw **platformę docelową** projektu aplikacji na .NET Framework 4 lub nowszej.
 
-1. Otwórz projekt programu Visual Studio dla aplikacji, w której ma zostać odczytany model DSL.
+1. Otwórz Visual Studio projektu aplikacji, w której chcesz odczytać model DSL.
 
-2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Właściwości**.
+2. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy projekt, a następnie kliknij polecenie **Właściwości.**
 
-3. W oknie właściwości projektu na karcie **aplikacja** Ustaw pole **platformy docelowej** na **.NET Framework 4** (lub nowsze).
+3. W oknie właściwości projektu na karcie **Aplikacja** ustaw pole Docelowa **framework** na **wartość .NET Framework 4** (lub nowsze).
 
 > [!NOTE]
-> Struktura docelowa nie powinna być **.NET Framework 4 profilu klienta**.
+> Docelową platformą nie powinna być **.NET Framework 4.**
 
 ## <a name="references"></a>Odwołania
 
-Dodaj te odwołania do projektu aplikacji Visual Studio:
+Dodaj następujące odwołania do Visual Studio projektu aplikacji:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Jeśli ta opcja nie jest widoczna na karcie **.NET** w oknie dialogowym **Dodaj odwołania** , kliknij kartę **Przeglądaj** i przejdź do lokalizacji `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
+  - Jeśli nie widzisz tej wartości na karcie  **.NET** w oknie dialogowym Dodawanie odwołań, kliknij **kartę Przeglądaj** i przejdź `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` do .
 
-- Zestaw DSL, który będzie znajdował się w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *YourCompany*. *YourProject* `.Dsl.dll` .
+- Zestaw DSL, który znajduje się w folderze bin projektu DSL. Jego nazwa ma zazwyczaj postać: *TwojaFirma*. *YourProject* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Ważne klasy w DSL
 
-Zanim będzie można napisać kod, który odczytuje dane DSL, należy znać nazwy niektórych klas generowanych przez DSL. W rozwiązaniu DSL Otwórz projekt **DSL** i Znajdź w folderze **GeneratedCode** . Alternatywnie, kliknij dwukrotnie zestaw DSL w **odwołaniach** projektu, a następnie otwórz przestrzeń nazw dsl w **Przeglądarka obiektów**.
+Przed napisanie kodu, który odczytuje DSL, należy znać nazwy niektórych klas generowanych przez DSL. W rozwiązaniu DSL otwórz **projekt Dsl** i poszukaj go w **folderze GeneratedCode.** Alternatywnie kliknij dwukrotnie zestaw DSL w projekcie **Odwołania** i otwórz przestrzeń nazw DSL w **przeglądarce obiektów**.
 
-Oto klasy, które należy zidentyfikować:
+Są to klasy, które należy zidentyfikować:
 
-- *YourDslRootClass* — jest to nazwa klasy głównej w `DslDefinition.dsl` .
+- *YourDslRootClass* — jest to nazwa klasy głównej w klasie `DslDefinition.dsl` .
 
-- *YourDslName* `SerializationHelper` -Ta klasa jest zdefiniowana w `SerializationHelper.cs` projekcie DSL.
+- *YourDslName* `SerializationHelper` - Ta klasa jest zdefiniowana `SerializationHelper.cs` w projekcie DSL.
 
-- *YourDslName* `DomainModel` -Ta klasa jest zdefiniowana w `DomainModel.cs` projekcie DSL.
+- *YourDslName* `DomainModel` - Ta klasa jest zdefiniowana `DomainModel.cs` w projekcie DSL.
 
-## <a name="read-from-a-file"></a>Odczytaj z pliku
+## <a name="read-from-a-file"></a>Odczyt z pliku
 
-Poniższy przykład jest przeznaczony do odczytywania DSL, w których są następujące ważne klasy:
+Poniższy przykład jest przeznaczony do odczytu DSL, w którym są następujące ważne klasy:
 
 - FamilyTreeModel
 
@@ -67,7 +67,7 @@ Poniższy przykład jest przeznaczony do odczytywania DSL, w których są nastę
 
 - FamilyTreeDomainModel
 
-Druga klasa domeny w tym DSL to osoba.
+Inną klasą domeny w tym DSL jest Person.
 
 ```csharp
 using System;
@@ -105,9 +105,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="save-to-a-file"></a>Zapisz w pliku
+## <a name="save-to-a-file"></a>Zapisywanie w pliku
 
-Następujące dodanie do poprzedniego kodu wprowadza zmiany do modelu, a następnie zapisuje je w pliku.
+Poniższy kod wprowadza zmianę w modelu, a następnie zapisuje go w pliku.
 
 ```csharp
 using (Transaction t =

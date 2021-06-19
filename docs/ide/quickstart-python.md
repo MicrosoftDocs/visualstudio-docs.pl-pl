@@ -9,17 +9,17 @@ author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
 ms.custom:
-- acquisition
+- vs-acquisition
 - SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1cefae42025407e0252b5aedc28e979e0d86debc
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: a94d28b6f9cb2aa9ee870dd6c4cc914e09b6efee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113177"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386257"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki start: tworzenie pierwszej aplikacji internetowej w języku Python przy użyciu Visual Studio
 
@@ -100,7 +100,7 @@ W tym miejscu użyjesz poniższych kroków, aby zainstalować bibliotekę Flask 
 
 2. Kliknij prawym przyciskiem myszy środowisko i wybierz polecenie **Zainstaluj pakiet języka Python.** To polecenie otwiera okno **Środowiska języka Python** na karcie **Pakiety.**
 
-3. Wprowadź wartość "flask" w polu wyszukiwania i wybierz **pozycję pip install flask z pakietu PyPI**. Zaakceptuj wszelkie monity o uprawnienia  administratora i obserwuj postęp w oknie dane Visual Studio danych wyjściowych. (Monit o podniesienie uprawnień występuje, gdy folder packages środowiska globalnego znajduje się w chronionym obszarze, takim *jak C:\Program Files).*
+3. Wprowadź "flask" w polu wyszukiwania i wybierz **pozycję pip install flask z pakietu PyPI**. Zaakceptuj wszelkie monity o uprawnienia  administratora i obserwuj postęp w oknie Visual Studio danych wyjściowych. (Monit o podniesienie uprawnień występuje, gdy folder packages dla środowiska globalnego znajduje się w chronionym obszarze, takim *jak C:\Program Files).*
 
     ![Instalowanie biblioteki Flask przy użyciu instalacji narzędzia pip](media/quickstart-python-03-install-package.png)
 ::: moniker-end
@@ -111,7 +111,7 @@ W tym miejscu użyjesz poniższych kroków, aby zainstalować bibliotekę Flask 
 
 2. Kliknij prawym przyciskiem myszy środowisko i wybierz polecenie **Zarządzaj pakietami języka Python...**. To polecenie otwiera okno **Środowiska języka Python** na karcie Pakiety **(PyPI).**
 
-3. Wprowadź "flask" w polu wyszukiwania. Jeśli **pod polem** wyszukiwania pojawi się komunikat Flask, możesz pominąć ten krok. W przeciwnym razie **wybierz polecenie Uruchom: pip install flask**. Zaakceptuj wszelkie monity o uprawnienia  administratora i obserwuj postęp w oknie dane Visual Studio danych wyjściowych. (Monit o podniesienie uprawnień występuje, gdy folder packages środowiska globalnego znajduje się w chronionym obszarze, takim *jak C:\Program Files).*
+3. Wprowadź "flask" w polu wyszukiwania. Jeśli **pod polem** wyszukiwania pojawi się komunikat Flask, możesz pominąć ten krok. W przeciwnym razie **wybierz polecenie Uruchom: pip install flask**. Zaakceptuj wszelkie monity o uprawnienia  administratora i obserwuj postęp w oknie Visual Studio danych wyjściowych. (Monit o podniesienie uprawnień występuje, gdy folder packages dla środowiska globalnego znajduje się w chronionym obszarze, takim *jak C:\Program Files).*
 
     ![Instalowanie biblioteki Flask przy użyciu instalacji narzędzia pip](media/quickstart-python-03-install-package-2019.png)
 ::: moniker-end
@@ -165,7 +165,7 @@ Teraz możesz dodać trochę kodu w języku Python, aby zaimplementować minimal
         app.run('localhost', 4449)
     ```
 
-1. Możesz zauważyć, że w oknie dialogowym Dodawanie nowego elementu w języku **>** jest wyświetlanych wiele innych typów plików, które można dodać do projektu języka Python, w tym klasę języka Python, pakiet języka Python, test jednostkowy języka *Python,* plikiweb.configjęzyka Python i inne. Ogólnie rzecz biorąc, te szablony elementów, jak są wywoływane, są doskonałym sposobem na szybkie tworzenie plików za pomocą przydatnego, standstandatowego kodu.
+1. Możesz zauważyć, że w oknie dialogowym Dodawanie nowego elementu w języku **>** jest wyświetlanych wiele innych typów plików, które można dodać do projektu języka Python, w tym klasę języka Python, pakiet języka Python, test jednostkowy języka *Python,* plikiweb.configi inne. Ogólnie rzecz biorąc, te szablony elementów, jak są wywoływane, to doskonały sposób na szybkie tworzenie plików przy użyciu przydatnego, standawczego kodu.
 
 **Pytanie: Gdzie mogę dowiedzieć się więcej o flaskie?**
 
@@ -198,7 +198,7 @@ Teraz możesz dodać trochę kodu w języku Python, aby zaimplementować minimal
 
 **Pytanie: Jaka jest różnica między poleceniem Rozpocznij bez debugowania i rozpocznij debugowanie?**
 
-**Odpowiedź:** Możesz użyć polecenia **Rozpocznij** debugowanie, aby uruchomić aplikację w kontekście debugera programu [Visual Studio,](../python/debugging-python-in-visual-studio.md)co umożliwia ustawianie punktów przerwania, badanie zmiennych i krok po wierszu kodu. Aplikacje mogą działać wolniej w debugerze ze względu na różne wpięcie, które umożliwia debugowanie. Z kolei polecenie Uruchom bez debugowania uruchamia aplikację bezpośrednio tak, jakby była uruchamiana z wiersza polecenia, bez kontekstu debugowania, a także automatycznie uruchamia przeglądarkę i przechodzi do adresu URL określonego na karcie **Debugowanie** właściwości projektu.
+**Odpowiedź:** Możesz użyć polecenia **Rozpocznij** debugowanie, aby uruchomić aplikację w kontekście debugera programu [Visual Studio,](../python/debugging-python-in-visual-studio.md)co umożliwia ustawianie punktów przerwania, badanie zmiennych i krok po wierszu kodu. Aplikacje mogą działać wolniej w debugerze ze względu na różne zaczepienia, które sprawiają, że debugowanie jest możliwe. Z kolei polecenie Uruchom bez debugowania uruchamia aplikację bezpośrednio tak, jakby była uruchamiana z wiersza polecenia, bez kontekstu debugowania, a także automatycznie uruchamia przeglądarkę i przechodzi do adresu URL określonego na karcie **Debugowanie** właściwości projektu.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -209,10 +209,10 @@ Gratulujemy uruchomienia pierwszej aplikacji w języku Python z Visual Studio, w
 
 Ponieważ kroki, które zostały opisane w tym przewodniku Szybki start, są dość ogólne, prawdopodobnie zgadywano, że mogą i powinny być zautomatyzowane. Taka automatyzacja jest rolą Visual Studio szablonów projektów. Przejdź przez [przewodnik Szybki start —](../python/quickstart-02-python-in-visual-studio-project-from-template.md) tworzenie projektu w języku Python przy użyciu szablonu demonstracyjnego, który tworzy aplikację internetową podobną do tej utworzonej w tym artykule, ale z mniejszą liczbą kroków.
 
-Aby kontynuować pracę z pełniejszego samouczka na temat języka Python w usłudze Visual Studio, w tym korzystania z okna interaktywnego, debugowania, wizualizacji danych i pracy z usługą Git, przejdź do tematu Samouczek: wprowadzenie do języka Python w [usłudze Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
+Aby kontynuować pracę z pełniejszego samouczka na temat języka Python w usłudze Visual Studio, w tym korzystania z okna interaktywnego, debugowania, wizualizacji danych i pracy z usługą Git, przejdź do samouczka: Wprowadzenie do języka Python w [usłudze Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
-Aby dowiedzieć się więcej Visual Studio do zaoferowania, wybierz poniższe linki.
+Aby dowiedzieć się więcej Visual Studio, które ma do zaoferowania, wybierz poniższe linki.
 
-- Dowiedz się więcej [o szablonach aplikacji internetowych w języku Python Visual Studio](../python/python-web-application-project-templates.md).
+- Dowiedz się więcej [o szablonach aplikacji internetowych w języku Python w Visual Studio](../python/python-web-application-project-templates.md).
 - Dowiedz się więcej o [debugowaniu języka Python](../python/debugging-python-in-visual-studio.md)
 - Dowiedz się więcej o [Visual Studio IDE.](../get-started/visual-studio-ide.md)

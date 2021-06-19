@@ -1,7 +1,7 @@
 ---
-title: Debugowanie naruszenia dostępu w języku C++ | Microsoft Docs
-description: Zobacz Porady dotyczące rozwiązywania problemów z naruszeniem dostępu, gdy więcej niż jeden wskaźnik jest kandydatem. Najnowsze wersje programu Visual Studio mają nazwę wskaźnik errant.
-ms.custom: SEO-VS-2020, seodec18
+title: Debugowanie naruszenia zasad dostępu w języku C++ | Microsoft Docs
+description: Zobacz porady dotyczące rozwiązywania problemów z naruszeniem dostępu, gdy kandydatem jest więcej niż jeden wskaźnik. Ostatnie wersje Visual Studio nazwę błędnego wskaźnika.
+ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -20,24 +20,24 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f7e33ff34357dc0aa258f179f55d379bdf05636
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3689942c9db9fde3598590cf30100fc590c50753
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904314"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387037"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>Jak debugować naruszenie zasad dostępu w języku C++?
+# <a name="how-can-i-debug-a-c-access-violation"></a>Jak można debugować naruszenie dostępu w języku C++?
 
 ## <a name="problem-description"></a>Opis problemu
 
-Mój program powoduje naruszenie zasad dostępu. Jak można debugować ten program?
+Mój program powoduje naruszenie zasad dostępu. Jak można to debugować?
 
 ## <a name="solution"></a>Rozwiązanie
 
-W przypadku naruszenia zasad dostępu w wierszu kodu, który odwołuje się do wielu wskaźników, może być trudne, aby dowiedzieć się, który wskaźnik spowodował naruszenie zasad dostępu. Począwszy od programu Visual Studio 2015 Update 1, okno dialogowe wyjątku jawnie odwołuje się do wskaźnika, który spowodował naruszenie zasad dostępu.
+Jeśli w wierszu kodu, który wyłuska wiele wskaźników, zostanie naruszeń dostępu, znalezienie wskaźnika, który spowodował naruszenie dostępu, może być trudne. Począwszy od Visual Studio 2015 Update 1, w oknie dialogowym wyjątku jawnie nadaj wskaźnikowi nazwę, która spowodowała naruszenie dostępu.
 
-Na przykład, uwzględniając Poniższy kod, należy uzyskać naruszenie zasad dostępu:
+Na przykład, biorąc pod uwagę następujący kod, powinno zostać naruszeń dostępu:
 
 ```C++
 #include <iostream>
@@ -74,11 +74,11 @@ int main() {
 }
 ```
 
-W przypadku uruchomienia tego kodu w programie Visual Studio 2015 Update 1 powinno zostać wyświetlone następujące okno dialogowe wyjątku:
+Jeśli ten kod zostanie uruchomiony w wersji Visual Studio 2015 Update 1, powinno zostać wyświetlone następujące okno dialogowe wyjątku:
 
-![Zrzut ekranu przedstawiający okno dialogowe wyjątku Microsoft Visual Studio, w którym podano naruszenie dostępu do odczytu dla elementu "A->B nullptr". Wybrano przycisk Przerwij.](../debugger/media/accessviolationcplus.png)
+![Zrzut ekranu przedstawiający Microsoft Visual Studio wyjątku dostępu do odczytu dla "A->B was nullptr". Przycisk Przerwij jest wybrany.](../debugger/media/accessviolationcplus.png)
 
-Jeśli nie możesz określić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, śledź kod, aby upewnić się, że wskaźnik powodujący problem został poprawnie przypisany.  Jeśli jest ona przenoszona jako parametr, upewnij się, że jest prawidłowo przenoszona i nie utworzysz przypadkowo [kopii płytki](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Następnie sprawdź, czy wartości nie są przypadkowo zmieniane w programie, tworząc punkt przerwania danych dla danego wskaźnika, aby upewnić się, że nie jest on modyfikowany w innym miejscu programu. Aby uzyskać więcej informacji na temat punktów przerwania danych, zobacz sekcję punkt przerwania danych w temacie [Używanie punktów przerwania](../debugger/using-breakpoints.md).
+Jeśli nie możesz ustalić, dlaczego wskaźnik spowodował naruszenie zasad dostępu, prześledzić kod, aby upewnić się, że wskaźnik powodujący problem został prawidłowo przypisany.  Jeśli jest przekazywany jako parametr, upewnij się, że został on przekazany poprawnie [](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)i nie zostanie przypadkowo utworzenie pobie]. Następnie sprawdź, czy wartości nie są niezamierzonie zmieniane w programie, tworząc punkt przerwania danych dla wskaźnika, aby upewnić się, że nie jest on modyfikowany w innym miejscu w programie. Aby uzyskać więcej informacji na temat punktów przerwania danych, zobacz sekcję punkt przerwania danych w [tesłudze.](../debugger/using-breakpoints.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
+- [Debugowanie kodu natywnego : często zadawane pytania](../debugger/debugging-native-code-faqs.md)

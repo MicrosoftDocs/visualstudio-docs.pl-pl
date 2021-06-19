@@ -1,7 +1,7 @@
 ---
-title: Używaj okien debugera podczas debugowania aplikacji pierwszego planu | Microsoft Docs
+title: Używanie okien debugera podczas debugowania aplikacji pierwszego planu | Microsoft Docs
 description: Jeśli debugujesz program, który musi pozostać na pierwszym planie, użyj debugowania zdalnego, aby uniknąć umieszczania go w tle.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,20 +23,20 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a143ee2d04227171895bf2b14dff92545b9952
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fce51a1a28a8e03692faeee3ed723627864f4031
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155097"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386829"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Jak można używać okien debugera przy debugowaniu programu pierwszego planu?
 ## <a name="problem-description"></a>Opis problemu
- Próbuję debugować problem z narysowaniem ekranu. Aby obsłużyć ten problem, muszę zachować mój program na pierwszym planie, co oznacza, że nie ma dostępu do okien debugowania. Co mogę zrobić?
+ Próbuję debugować problem z obrazem ekranu. Aby zaobserwować ten problem, muszę zachować swój program na pierwszym planie, co oznacza, że nie mam dostępu do okien debugowania. Co mogę zrobić?
 
 ## <a name="solution"></a>Rozwiązanie
- Jeśli używasz drugiego komputera, możesz użyć zdalnego debugowania. W przypadku konfiguracji z dwoma komputerami można obejrzeć malowanie ekranu na komputerze zdalnym podczas korzystania z debugera na hoście. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).
+ Jeśli masz drugi komputer, możesz użyć debugowania zdalnego. W przypadku konfiguracji na dwóch komputerach można obejrzeć obraz ekranu na komputerze zdalnym podczas pracy z debugerem na hoście. Aby uzyskać więcej informacji na temat zdalnego debugowania, zobacz [Debugowanie zdalne.](../debugger/remote-debugging.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
+- [Debugowanie kodu natywnego : często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

@@ -1,29 +1,29 @@
 ---
 title: Dyrektywa T4 dotycząca zestawu
-description: Dowiedz się, że w szablonie tekstu czasu projektowania programu Visual Studio Dyrektywa zestawu ładuje zestaw, aby kod szablonu mógł używać jego typów.
+description: Dowiedz się, Visual Studio szablonie tekstowym czasu projektowania dyrektywa zestawu ładuje zestaw, aby kod szablonu może używać jego typów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b5a7fe2308884d4837a068770af67435ada70e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899683"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386361"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 
-W szablonie tekstu czasu projektowania programu Visual Studio `assembly` dyrektywa ładuje zestaw, aby kod szablonu mógł używać jego typów. Efekt jest podobny do dodawania odwołania do zestawu w projekcie programu Visual Studio.
+W Visual Studio tekstowym czasu projektowania dyrektywa ładuje zestaw, aby kod szablonu `assembly` może używać jego typów. Efekt jest podobny do dodawania odwołania do zestawu w Visual Studio projektu.
 
- Ogólne omówienie pisania szablonów tekstowych można znaleźć w artykule [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).
+ Aby uzyskać ogólne omówienie pisania szablonów tekstowych, zobacz [Writing a T4 Text Template (Pisanie szablonu tekstowego T4).](../modeling/writing-a-t4-text-template.md)
 
 > [!NOTE]
-> Dyrektywa nie jest potrzebna `assembly` w szablonie tekstowym czasu wykonywania (wstępnie przetworzonym). Zamiast tego należy dodać niezbędne zestawy do **odwołań** projektu programu Visual Studio.
+> Dyrektywa nie jest potrzebna w szablonie tekstowym czasu uruchomienia `assembly` (wstępnie przetworzonym). Zamiast tego dodaj niezbędne zestawy do **odwołania** do projektu Visual Studio projektu.
 
 ## <a name="using-the-assembly-directive"></a>Używanie dyrektywy Assembly
  Składnia tej dyrektywy jest następująca:
@@ -34,17 +34,17 @@ W szablonie tekstu czasu projektowania programu Visual Studio `assembly` dyrekty
 
  Nazwa zestawu powinna być jedną z następujących:
 
-- Silna nazwa zestawu w globalnej pamięci podręcznej, na przykład `System.Xml.dll` . Możesz również użyć długiej formy, takiej jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"` . Aby uzyskać więcej informacji, zobacz <xref:System.Reflection.AssemblyName>.
+- Silna nazwa zestawu w gace GAC, taka jak `System.Xml.dll` . Można również użyć długiego formularza, takiego jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"` . Aby uzyskać więcej informacji, zobacz <xref:System.Reflection.AssemblyName>.
 
 - Bezwzględna ścieżka zestawu
 
-  Można użyć `$(variableName)` składni, aby odwołać się do zmiennych programu Visual Studio, takich jak `$(SolutionDir)` , i `%VariableName%` odwołań do zmiennych środowiskowych. Na przykład:
+  Składnia umożliwia odwołanie się do Visual Studio zmiennych, takich jak , i do zmiennych `$(variableName)` `$(SolutionDir)` `%VariableName%` środowiskowych odwołania. Na przykład:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Dyrektywa zestawu nie ma wpływu na przetworzony wstępnie szablon tekstowy. Zamiast tego należy uwzględnić wymagane odwołania w sekcji **odwołania** projektu programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dyrektywa zestawu nie ma wpływu na przetworzony wstępnie szablon tekstowy. Zamiast tego uwzględnij niezbędne odwołania w **sekcji Odwołania** w Visual Studio projektu. Aby uzyskać więcej informacji, zobacz Run-Time Text Generation with T4 Text Templates (Generowanie tekstu [w czasie rzeczywistym za pomocą szablonów tekstowych T4).](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 ## <a name="standard-assemblies"></a>Standardowe zestawy
  Następujące zestawy są ładowane automatycznie, aby nie trzeba było pisać dla nich dyrektyw zestawu:
@@ -65,10 +65,10 @@ W szablonie tekstu czasu projektowania programu Visual Studio `assembly` dyrekty
 
 - Zestaw zawierający DSL.
 
-## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Korzystanie z właściwości projektu w MSBuild i Visual Studio
- Makra programu Visual Studio, takie jak $ (SolutionDir), nie działają w programie MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Używanie właściwości projektu w programie MSBuild i Visual Studio
+ Visual Studio makra, takie jak $(SolutionDir), nie działają w programie MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.
 
- Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myLibFolder` :
+ Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. W tym przykładzie zdefiniowano właściwość o nazwie `myLibFolder` :
 
 ```xml
 <!-- Define a project property, myLibFolder: -->

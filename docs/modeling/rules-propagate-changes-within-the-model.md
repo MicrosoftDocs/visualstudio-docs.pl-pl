@@ -1,30 +1,30 @@
 ---
 title: Reguły propagujące zmiany w modelu
-description: Dowiedz się, jak utworzyć regułę magazynu, aby propagować zmianę z jednego elementu do innego w programie wizualizacji i modelowania SDK (VMSDK).
+description: Dowiedz się, jak utworzyć regułę sklepu w celu propagowania zmiany z jednego elementu do innego w zestawie SDK wizualizacji i modelowania (VMSDK).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bde67bd8375e3752370b3b815f8ed155d3123741
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916956"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387596"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
-Można utworzyć regułę sklepu, aby propagować zmianę z jednego elementu do innego w programie Wizualizacja i Modeling SDK (VMSDK). Gdy zmiana dotyczy dowolnego elementu w magazynie, reguły są planowane do wykonania, zazwyczaj gdy zostanie zatwierdzona nietypowa transakcja. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu lub usuwanie go. Można dołączyć reguły do określonych typów elementów, kształtów lub diagramów. Wiele wbudowanych funkcji jest definiowanych przez reguły: na przykład, gdy model zmienia się, należy zaktualizować diagram. Język specyficzny dla domeny można dostosować przez dodanie własnych reguł.
+Możesz utworzyć regułę sklepu, aby propagować zmianę z jednego elementu do innego w zestawie SDK wizualizacji i modelowania (VMSDK). Gdy nastąpi zmiana w dowolnym elemencie w magazynie, zaplanowano wykonanie reguł, zazwyczaj po zatwierdzona najbardziej zewnętrzna transakcja. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak dodawanie elementu lub usuwanie go. Reguły można dołączać do określonych typów elementów, kształtów lub diagramów. Wiele wbudowanych funkcji jest definiowanych przez reguły: na przykład reguły zapewniają, że diagram jest aktualizowany po zmianie modelu. Język specyficzny dla domeny można dostosować, dodając własne reguły.
 
- Reguły sklepu są szczególnie przydatne do propagowania zmian w magazynie, czyli zmian elementów modelu, relacji, kształtów lub łączników oraz ich właściwości domeny. Reguły nie są uruchamiane, gdy użytkownik wywołuje polecenia Cofnij lub wykonaj ponownie. Zamiast tego Menedżer transakcji upewnia się, że zawartość sklepu jest przywracana do odpowiedniego stanu. Jeśli chcesz propagować zmiany do zasobów poza magazynem, użyj zdarzeń ze sklepu. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+ Reguły magazynu są szczególnie przydatne w przypadku propagacji zmian wewnątrz magazynu, czyli zmian elementów modelu, relacji, kształtów lub łączników oraz ich właściwości domeny. Reguły nie są uruchamiane, gdy użytkownik wywołuje polecenia Cofnij lub Wykonaj ponownie. Zamiast tego Menedżer transakcji zapewnia, że zawartość magazynu są przywracane do prawidłowego stanu. Jeśli chcesz propagować zmiany do zasobów poza magazynem, użyj funkcji Store Events. Aby uzyskać więcej informacji, zobacz [Programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Załóżmy na przykład, że chcesz określić, że za każdym razem, gdy użytkownik (lub kod) tworzy nowy element typu ExampleDomainClass, w innej części modelu jest tworzony dodatkowy element innego typu. Można napisać AddRule i skojarzyć ją z ExampleDomainClass. Napisz kod w regule, aby utworzyć dodatkowy element.
+ Załóżmy na przykład, że chcesz określić, że za każdym razem, gdy użytkownik (lub kod) tworzy nowy element typu ExampleDomainClass, dodatkowy element innego typu jest tworzony w innej części modelu. Można napisać addrule i skojarzyć ją z ExampleDomainClass. Należy napisać kod w regułę, aby utworzyć dodatkowy element.
 
 ```csharp
 using System;
@@ -70,21 +70,21 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
-> Kod reguły powinien zmienić stan tylko elementów wewnątrz sklepu; oznacza to, że reguła powinna zmieniać tylko elementy modelu, relacje, kształty, łączniki, diagramy lub ich właściwości. Aby propagować zmiany do zasobów znajdujących się poza magazynem, zdefiniuj zdarzenia ze sklepu. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+> Kod reguły powinien zmieniać tylko stan elementów wewnątrz magazynu; oznacza to, że reguła powinna zmieniać tylko elementy modelu, relacje, kształty, łączniki, diagramy lub ich właściwości. Jeśli chcesz propagować zmiany do zasobów poza magazynem, zdefiniuj zdarzenia magazynu. Aby uzyskać więcej informacji, zobacz [Programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 ### <a name="to-define-a-rule"></a>Aby zdefiniować regułę
 
-1. Zdefiniuj regułę jako klasę poprzedzoną `RuleOn` atrybutem. Ten atrybut kojarzy regułę z jedną z klas domeny, relacji lub elementów diagramu. Reguła zostanie zastosowana do każdego wystąpienia tej klasy, które może być abstrakcyjne.
+1. Zdefiniuj regułę jako klasę poprzedzoną `RuleOn` atrybutem . Atrybut kojarzy regułę z jedną z klas domeny, relacji lub elementów diagramu. Reguła zostanie zastosowana do każdego wystąpienia tej klasy, co może być abstrakcyjne.
 
-2. Zarejestruj regułę, dodając ją do zestawu zwróconego przez `GetCustomDomainModelTypes()` w klasie modelu domeny.
+2. Zarejestruj regułę, dodając ją do zestawu zwróconego przez w `GetCustomDomainModelTypes()` klasie modelu domeny.
 
-3. Utwórz klasę reguły z jednej z klas abstrakcyjnych reguł i napisz kod metody wykonania.
+3. Wyprowadzanie klasy reguł z jednej z abstrakcyjnych klas reguł i pisanie kodu metody wykonywania.
 
    W poniższych sekcjach opisano te kroki bardziej szczegółowo.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Aby zdefiniować regułę w klasie domeny
 
-- W pliku kodu niestandardowego Zdefiniuj klasę i poprzedź ją prefiksem <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> :
+- W pliku kodu niestandardowego zdefiniuj klasę i poprzed ją <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atrybutem :
 
     ```csharp
     [RuleOn(typeof(ExampleElement),
@@ -94,19 +94,19 @@ namespace ExampleNamespace
 
     ```
 
-- Typ podmiotu w pierwszym parametrze może być klasą domeny, relacją domeny, kształtem, łącznikiem lub diagramem. Zwykle reguły są stosowane do klas domen i relacji.
+- Typ podmiotu w pierwszym parametrze może być klasą domeny, relacją domeny, kształtem, łącznikiem lub diagramem. Zazwyczaj reguły są stosowane do klas domen i relacji.
 
-     `FireTime`Zwykle jest to `TopLevelCommit` . Gwarantuje to, że reguła jest wykonywana tylko po wykonaniu wszystkich podstawowych zmian transakcji. Alternatywy są wbudowane, co powoduje wykonanie reguły wkrótce po zmianie; i LocalCommit, która wykonuje regułę na końcu bieżącej transakcji (co może nie być najbardziej zewnętrzne). Możesz również ustawić priorytet reguły, która ma wpływ na jej kolejność w kolejce, ale jest to niezawodna metoda osiągnięcia wymaganego wyniku.
+     Zazwyczaj `FireTime` jest `TopLevelCommit` to . Gwarantuje to, że reguła jest wykonywana tylko po wymusieniu wszystkich podstawowych zmian transakcji. Alternatywami są wbudowane, które wykonują regułę zaraz po zmianie. i LocalCommit, który wykonuje regułę na końcu bieżącej transakcji (która może nie być najbardziej zewnętrzna). Można również ustawić priorytet reguły, aby wpłynąć na jej kolejność w kolejce, ale jest to zawodna metoda osiągnięcia wymaganego wyniku.
 
 - Jako typ podmiotu można określić klasę abstrakcyjną.
 
-- Reguła jest stosowana do wszystkich wystąpień klasy Subject.
+- Reguła ma zastosowanie do wszystkich wystąpień klasy podmiotu.
 
-- Wartość domyślna dla elementu `FireTime` to TimeToFire. TopLevelCommit. Powoduje to, że reguła zostanie wykonana po zatwierdzeniu zewnętrznej transakcji. Alternatywą jest TimeToFire. inline. Powoduje to, że reguła zostanie wykonana wkrótce po zdarzeniu wyzwalającym.
+- Wartość domyślna dla `FireTime` to TimeToFire.TopLevelCommit. Powoduje to wykonanie reguły po zatwierdzona najbardziej zewnętrzna transakcja. Alternatywą jest TimeToFire.Inline. Spowoduje to wykonanie reguły zaraz po zdarzeniu wyzwalania.
 
 ### <a name="to-register-the-rule"></a>Aby zarejestrować regułę
 
-- Dodaj klasę reguły do listy typów zwracanych przez `GetCustomDomainModelTypes` w modelu domeny:
+- Dodaj klasę reguł do listy typów zwracanych przez w `GetCustomDomainModelTypes` modelu domeny:
 
     ```csharp
     public partial class ExampleDomainModel
@@ -122,51 +122,51 @@ namespace ExampleNamespace
 
     ```
 
-- Jeśli nie masz pewności co do nazwy klasy modelu domeny, poszukaj wewnątrz pliku **Dsl\GeneratedCode\DomainModel.cs**
+- Jeśli nie masz pewności co do nazwy klasy modelu domeny, poszukaj w pliku **Dsl\GeneratedCode\DomainModel.cs**
 
 - Napisz ten kod w niestandardowym pliku kodu w projekcie DSL.
 
 ### <a name="to-write-the-code-of-the-rule"></a>Aby napisać kod reguły
 
-- Utwórz klasę reguły z jednej z następujących klas podstawowych:
+- Wyprowadz klasę reguł z jednej z następujących klas bazowych:
 
   | Klasa bazowa | Wyzwalacz |
   |-|-|
-  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Element, link lub kształt są dodawane.<br /><br /> Służy do wykrywania nowych relacji oprócz nowych elementów. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Wartość właściwości domeny jest zmieniana. Argument Method zawiera stare i nowe wartości.<br /><br /> W przypadku kształtów ta reguła jest wyzwalana po `AbsoluteBounds` zmianie właściwości wbudowanej, jeśli kształt jest przenoszony.<br /><br /> W wielu przypadkach bardziej wygodne jest przesłonięcie `OnValueChanged` lub `OnValueChanging` w programie obsługi właściwości. Metody te są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony reguła jest zwykle uruchamiana na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:**  Ta reguła nie jest wyzwalana podczas tworzenia lub usuwania linku. Zamiast tego należy napisać `AddRule` i a `DeleteRule` dla relacji domeny. |
-  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Wyzwalane, gdy element lub łącze ma zostać usunięte. Właściwość ModelElement. isusuwanie jest prawdziwa do końca transakcji. |
-  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Wykonywane po usunięciu elementu lub łącza. Reguła jest wykonywana po wykonaniu wszystkich innych reguł, w tym DeletingRules. ModelElement. isusunięć ma wartość false, a ModelElement. IsDeleted ma wartość true. Aby zezwolić na kolejne cofnięcie, element nie zostanie faktycznie usunięty z pamięci, ale zostanie usunięty z magazynu. ElementDirectory. |
-  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Element jest przenoszony z jednej partycji magazynu do innej.<br /><br /> (Należy zauważyć, że nie jest to związane z położeniem graficznym kształtu). |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Ta reguła ma zastosowanie tylko do relacji domeny. Jest wyzwalany, jeśli jawnie przypiszesz element modelu do dowolnego końca łącza. |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Wyzwalane po zmianie kolejności linków do lub z elementu przy użyciu metod MoveBefore lub MoveToIndex na linku. |
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Dodawany jest element, link lub kształt.<br /><br /> Pozwala to wykrywać nowe relacje, a także nowe elementy. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Wartość właściwości domeny jest zmieniana. Argument metody zawiera stare i nowe wartości.<br /><br /> W przypadku kształtów ta reguła jest wyzwalana po zmianie właściwości `AbsoluteBounds` wbudowanej, jeśli kształt zostanie przeniesiony.<br /><br /> W wielu przypadkach wygodniej jest przesłonić właściwość `OnValueChanged` lub `OnValueChanging` w programie obsługi właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po tej zmianie. Z kolei reguła zwykle jest uruchamiana na końcu transakcji. Aby uzyskać więcej informacji, zobacz Procedury obsługi zmian wartości [właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:**  Ta reguła nie jest wyzwalana po utworzeniu lub usunięciu linku. Zamiast tego należy napisać dla relacji domeny i `AddRule` `DeleteRule` . |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Wyzwalane, gdy element lub link ma zostać usunięty. Właściwość ModelElement.IsDeleting ma wartość true do momentu zakończenia transakcji. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Wykonywane po usunięciu elementu lub linku. Reguła jest wykonywana po wykonaniu wszystkich innych reguł, w tym deletingRules. Element ModelElement.IsDeleting ma wartość false, a element ModelElement.IsDeleted ma wartość true. Aby umożliwić kolejne Cofnij, element nie jest faktycznie usuwany z pamięci, ale jest usuwany z Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Element jest przenoszony z jednej partycji magazynu do innej.<br /><br /> (Zwróć uwagę, że nie jest to związane z położeniem graficznym kształtu). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Ta reguła ma zastosowanie tylko do relacji domeny. Jest on wyzwalany, jeśli jawnie przypiszesz element modelu do każdego końca linku. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Wyzwalany, gdy kolejność linków do lub z elementu zostanie zmieniona przy użyciu metod MoveBefore lub MoveToIndex w linku. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Wykonywane po utworzeniu transakcji. |
-  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Wykonywane, gdy transakcja zostanie zatwierdzona. |
-  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Wykonywane, gdy transakcja zostanie wycofana. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Wykonywane, gdy transakcja ma zostać zatwierdzona. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Wykonywane, gdy transakcja ma zostać wycofana. |
 
-- Każda klasa ma metodę, która została przesłonięta. Wpisz `override` w swojej klasie, aby ją odnaleźć. Parametr tej metody identyfikuje element, który jest zmieniany.
+- Każda klasa ma przesłonięcie metody. Wpisz `override` klasę , aby ją odnaleźć. Parametr tej metody identyfikuje element, który jest zmieniany.
 
   Zwróć uwagę na następujące kwestie dotyczące reguł:
 
-1. Zestaw zmian w transakcji może wyzwolić wiele reguł. Zwykle reguły są wykonywane podczas zatwierdzania transakcji na zewnątrz. Są one wykonywane w nieokreślonej kolejności.
+1. Zestaw zmian w transakcji może wyzwalać wiele reguł. Zazwyczaj reguły są wykonywane po zatwierdzona najbardziej zewnętrzna transakcja. Są one wykonywane w nieokreślonym porządku.
 
-2. Reguła jest zawsze wykonywana wewnątrz transakcji. W związku z tym nie trzeba tworzyć nowej transakcji, aby wprowadzać zmiany.
+2. Reguła jest zawsze wykonywana wewnątrz transakcji. W związku z tym nie trzeba tworzyć nowej transakcji, aby wprowadzić zmiany.
 
-3. Reguły nie są wykonywane w przypadku wycofania transakcji lub wykonywania operacji cofania lub ponawiania. Te operacje resetują całą zawartość sklepu do poprzedniego stanu. W związku z tym, jeśli reguła zmienia stan wszystkich elementów poza sklepem, może nie być w synchronism z zawartością ze sklepu. Aby zaktualizować stan spoza magazynu, lepiej jest używać zdarzeń. Aby uzyskać więcej informacji, zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+3. Reguły nie są wykonywane podczas wycofywania transakcji lub wykonywania operacji Cofnij lub Ponownie. Te operacje resetuje całą zawartość magazynu do poprzedniego stanu. W związku z tym, jeśli reguła zmienia stan czegokolwiek poza Sklepem, może nie być na bieżąco z zawartością sklepu. Aby zaktualizować stan poza magazynem, lepiej użyć zdarzeń. Aby uzyskać więcej informacji, zobacz [Programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-4. Niektóre reguły są wykonywane, gdy model jest ładowany z pliku. Aby określić, czy ładowanie lub zapisywanie jest w toku, użyj `store.TransactionManager.CurrentTransaction.IsSerializing` .
+4. Niektóre reguły są wykonywane po załadowaniu modelu z pliku. Aby określić, czy trwa ładowanie lub zapisywanie, `store.TransactionManager.CurrentTransaction.IsSerializing` użyj .
 
-5. Jeśli kod reguły tworzy więcej wyzwalaczy reguł, zostaną one dodane na końcu listy wyzwalania i zostaną wykonane przed zakończeniem transakcji. DeletedRules są wykonywane po wszystkich innych regułach. Jedną regułę można uruchamiać wiele razy w transakcji, jednorazowo dla każdej zmiany.
+5. Jeśli kod reguły tworzy więcej wyzwalaczy reguły, zostaną one dodane na końcu listy wyzwalania i zostaną wykonane przed zakończeniem transakcji. Elementy DeletedRules są wykonywane po wszystkich innych zasadach. Jedna reguła może być uruchamiana wiele razy w transakcji, jeden raz dla każdej zmiany.
 
-6. Aby przekazać informacje do i z reguł, można przechowywać informacje w `TransactionContext` . Jest to tylko słownik, który jest obsługiwany w trakcie transakcji. Jest ona usuwana po zakończeniu transakcji. Argumenty zdarzeń w każdej regule zapewniają do niej dostęp. Należy pamiętać, że reguły nie są wykonywane w przewidywalnej kolejności.
+6. Aby przekazać informacje do i z reguł, można przechowywać informacje w `TransactionContext` . Jest to tylko słownik, który jest utrzymywany podczas transakcji. Jest on usuwany po zakończeniu transakcji. Argumenty zdarzeń w każdej regułie zapewniają do niego dostęp. Pamiętaj, że reguły nie są wykonywane w przewidywalnej kolejności.
 
-7. Użyj reguł po uwzględnieniu innych alternatyw. Na przykład jeśli chcesz zaktualizować właściwość po zmianie wartości, rozważ użycie właściwości obliczeniowej. Jeśli chcesz ograniczyć rozmiar lub lokalizację kształtu, użyj `BoundsRule` . Jeśli chcesz odpowiedzieć na zmianę wartości właściwości, Dodaj `OnValueChanged` procedurę obsługi do właściwości. Aby uzyskać więcej informacji, zobacz [reagowanie na zmiany i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+7. Użyj reguł po rozważeniu innych alternatyw. Jeśli na przykład chcesz zaktualizować właściwość po zmianie wartości, rozważ użycie właściwości obliczeniowej. Jeśli chcesz ograniczyć rozmiar lub lokalizację kształtu, użyj obiektu `BoundsRule` . Jeśli chcesz odpowiedzieć na zmianę wartości właściwości, dodaj do właściwości `OnValueChanged` program obsługi. Aby uzyskać więcej informacji, zobacz [Odpowiadanie na zmiany i propagowanie ich.](../modeling/responding-to-and-propagating-changes.md)
 
 ## <a name="example"></a>Przykład
- Poniższy przykład aktualizuje właściwość, gdy tworzona jest relacja domeny, aby połączyć dwa elementy. Reguła zostanie wyzwolona nie tylko wtedy, gdy użytkownik tworzy link na diagramie, ale również wtedy, gdy program Code tworzy link.
+ W poniższym przykładzie właściwość jest aktualizowana, gdy relacja domeny jest owana w celu połączenia dwóch elementów. Reguła zostanie wyzwolona nie tylko wtedy, gdy użytkownik utworzy link na diagramie, ale także wtedy, gdy kod programu utworzy link.
 
- Aby przetestować ten przykład, Utwórz DSL przy użyciu szablonu rozwiązania przepływu zadań i Wstaw następujący kod w pliku w projekcie DSL. Kompiluj i uruchamiaj rozwiązanie, a następnie otwórz przykładowy plik w projekcie debugowania. Narysuj link komentarza między kształtem komentarza a elementem przepływu. Tekst w komentarzu zostanie zmieniony na ostatni element, z którym został połączony.
+ Aby przetestować ten przykład, utwórz DSL przy użyciu szablonu rozwiązania przepływu zadań i wstaw następujący kod w pliku w projekcie Dsl. Skompilowanie i uruchomienie rozwiązania oraz otwarcie przykładowego pliku w projekcie Debugowanie. Rysowanie linku komentarza między kształtem Komentarz i elementem przepływu. Tekst w komentarzu zmieni się na raport o najnowszym elemencie, z który został połączony.
 
- W tym przypadku zazwyczaj należy napisać DeleteRule dla każdej AddRule.
+ W praktyce zazwyczaj pisze się reguły DeleteRule dla każdej reguły Dodatku.
 
 ```csharp
 using System;

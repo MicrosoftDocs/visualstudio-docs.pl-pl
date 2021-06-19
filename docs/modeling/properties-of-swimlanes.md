@@ -1,6 +1,6 @@
 ---
 title: Właściwości torów
-description: Dowiedz się, jak Tory dzielą diagram na obszary pionowe lub poziome oraz jak można definiować inne kształty do wyświetlania wewnątrz torów.
+description: Dowiedz się, jak tory dzielą diagram na obszary pionowe lub poziome oraz jak można zdefiniować inne kształty, które mają być wyświetlane wewnątrz torów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,50 +8,50 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61994a25b5fa862a2014e2dd5b57a0c47130e6ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c171bda2670b698297dd876a8a4403a91cd4af7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882989"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386491"
 ---
 # <a name="properties-of-swimlanes"></a>Właściwości torów
-Można dodać tory do diagramu. Tory dzielą diagram na obszary pionowe lub poziome. Można definiować inne kształty, które będą wyświetlane wewnątrz torów. Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Do diagramu można dodać tory. Tory dzielą diagram na obszary pionowe lub poziome. Możesz zdefiniować inne kształty, które mają być wyświetlane wewnątrz torów. Aby uzyskać więcej informacji, [zobacz How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz Dostosowywanie i rozszerzanie [Domain-Specific języku .](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
- Tory mają właściwości, które są wymienione w poniższej tabeli.
+ Tory mają właściwości wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślne|
 |-|-|-|
-|Kolor wypełnienia treści|Kolor wypełnienia dla treści toru.|Biały|
+|Kolor wypełnienia treści|Kolor wypełnienia dla treści torów.|Biały|
 |Kolor wypełnienia nagłówka|Kolor wypełnienia nagłówka toru.|DarkGray|
 |Kolor separatora|Kolor linii separatora.|LightGray|
-|Styl linii separatora|Styl linii separatora ( `Solid` ,,, `Dash` , `Dot` `DashDot` `DashDotDot` lub `Custom` ).|`Dash`|
-|Grubość separatora|Grubość linii separatora w calach.|0,03125|
-|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym torem.|Czarnoskórzy|
+|Styl linii separatora|Styl linii separatora ( `Solid` , , , , , lub `Dash` `Dot` `DashDot` `DashDotDot` `Custom` ).|`Dash`|
+|Grubość separatora|Grubość linii separatora w calach.|0.03125|
+|Kolor tekstu|Kolor używany dla dekoratorów tekstu skojarzonych z tym torysem.|Czarnoskórzy|
 |Modyfikator dostępu|Poziom dostępu klasy ( `public` lub `internal` ).|Publiczne|
-|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu, która jest generowana z tego toru.|\<none>|
-|Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
-|Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana na podstawie toru ( `none` `abstract` lub `sealed` ).|brak|
-|Tor podstawowy|Klasa bazowa tego toru.|(brak)|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu, która jest generowana na podstawie tego toru.|\<none>|
+|Generuje podwójne pochodne|Jeśli zostanie wygenerowana zarówno klasa bazowa, jak i klasa częściowa (w celu obsługi dostosowywania za pomocą `True` zastąpień). Aby uzyskać więcej informacji, zobacz [Zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
+|Ma konstruktor niestandardowy|Jeśli , w kodzie źródłowym `True` zostanie podany konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [Zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
+|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego generowanego na podstawie torów `none` (, `abstract` lub `sealed` ).|brak|
+|Podstawowy tor|Klasa bazowa tego torysu.|(brak)|
 |Nazwa|Nazwa tego toru.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest powiązana z tym torem.|Bieżąca przestrzeń nazw|
-|Typ etykietki narzędzia|Sposób definiowania etykietki narzędzia ( `fixed` , `variable` lub `none` ). Jeśli `fixed` , wówczas `Fixed Tooltip Text` zostanie użyta wartość właściwości; Jeśli `variable` , wówczas etykietka narzędzia jest definiowana w kodzie niestandardowym.|\<none>|
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym torem.|\<none>|
-|Wyrównanie|Wyrównanie w poziomie lub w pionie.|Pionowa|
-|Początkowa wysokość|Początkowa wysokość tego toru, w calach. Dotyczy tylko torów poziomych.|0|
-|Szerokość początkowa|Początkowa Szerokość tego toru, w calach. Dotyczy tylko torów pionowych.|0|
-|Uwidacznia kolor tekstu|Jeśli `True` użytkownik może ustawić kolor toru w wygenerowanym projektancie. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy kształt toru, a następnie kliknij pozycję **Dodaj uwidocznione**.|Fałsz|
-|Opis|Służy do dokumentowania wygenerowanego projektanta.|\<none>|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie do odwoływania się do tej klasy toru.|\<none>|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none>|
-|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego toru.|\<none>|
+|Przestrzeń nazw|Przestrzeń nazw powiązana z tym torysem.|Bieżąca przestrzeń nazw|
+|Typ etykietki narzędzia|Sposób definicji etykietki narzędzia `fixed` (, `variable` , lub `none` ). Jeśli , używana jest wartość właściwości , a jeśli wartość , etykietka narzędzia `fixed` jest `Fixed Tooltip Text` `variable` zdefiniowana w kodzie niestandardowym.|\<none>|
+|Uwagi|Notatki nieformalne skojarzone z tym toryem.|\<none>|
+|Wyrównanie|Wyrównanie w poziomie lub pionie.|Pionowa|
+|Początkowa wysokość|Początkowa wysokość tego toru, w calach. Dotyczy tylko poziomych torów.|0|
+|Szerokość początkowa|Początkowa szerokość tego toru, w calach. Dotyczy tylko pionowych torów.|0|
+|Uwidacznia kolor tekstu|Jeśli ma wartość , użytkownik `True` może ustawić kolor torów w wygenerowanym projektancie. Aby to ustawić, kliknij prawym przyciskiem myszy kształt toru i kliknij polecenie **Dodaj ujawnione .**|Fałsz|
+|Opis|Służy do dokumentować wygenerowanego projektanta.|\<none>|
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie, aby odwoływać się do tej klasy torów.|\<none>|
+|Poprawiono tekst etykietki narzędzia|Tekst używany dla stałej etykietki narzędzia.|\<none>|
+|Słowo kluczowe Pomocy|Słowo kluczowe używane do indeksowania pomocy F1 dla tego torysu.|\<none>|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [narzędzia języka specyficznego dla domeny słownik](/previous-versions/bb126564(v=vs.100))
+- [narzędzia języka specyficznego dla domeny słownika](/previous-versions/bb126564(v=vs.100))

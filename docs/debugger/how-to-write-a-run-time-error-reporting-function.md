@@ -1,7 +1,7 @@
 ---
-title: Napisz funkcję raportowania błędów czasu wykonywania | Microsoft Docs
-description: Zobacz przykłady pisania niestandardowej funkcji raportowania błędów w czasie wykonywania w programie Visual Studio. Ta sama Deklaracja musi być taka sama jak _CrtDbgReportW i zwracać wartość 1.
-ms.custom: SEO-VS-2020, seodec18
+title: Pisanie funkcji raportowania błędów czasu | Microsoft Docs
+description: Zobacz przykłady pisania niestandardowej funkcji raportowania błędów czasu Visual Studio. Musi mieć tę samą deklarację co _CrtDbgReportW i zwracać wartość 1.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f5234cb0184de14f7506fd540004a200a65a4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ff82afdfda8af746533f07f21d330c359a1618c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925352"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385141"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Instrukcje: pisanie funkcji raportowania błędów Run-Time (C++)
-Niestandardowa funkcja raportowania błędów czasu wykonywania musi mieć tę samą deklarację co `_CrtDbgReportW` . Powinien zwrócić wartość 1 do debugera.
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>How to: Write a Run-Time Error Reporting Function (C++)
+Niestandardowa funkcja raportowania dla błędów czasu działania musi mieć taką samą deklarację jak `_CrtDbgReportW` . Powinna zostać zwrócona wartość 1 do debugera.
 
-Poniższy przykład pokazuje, jak zdefiniować funkcję raportowania niestandardowego.
+W poniższym przykładzie pokazano, jak zdefiniować niestandardową funkcję raportowania.
 
 ## <a name="example-1"></a>Przykład 1
 
@@ -63,7 +63,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example-2"></a>Przykład 2
-Poniższy przykład przedstawia bardziej złożoną funkcję raportowania niestandardowego. W tym przykładzie instrukcja SWITCH obsługuje różne typy błędów, zgodnie z definicją `reportType` parametru `_CrtDbgReportW` . Ponieważ zamieniasz `_CrtDbgReportW` , nie możesz używać `_CrtSetReportMode` . Funkcja musi obsługiwać dane wyjściowe. Pierwszy argument zmiennej w tej funkcji przyjmuje numer błędu czasu wykonywania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
+W poniższym przykładzie przedstawiono bardziej złożoną niestandardową funkcję raportowania. W tym przykładzie instrukcja switch obsługuje różne typy błędów, zgodnie z definicją `reportType` parametru `_CrtDbgReportW` . Ponieważ zastępujesz , `_CrtDbgReportW` nie możesz użyć . `_CrtSetReportMode` Funkcja musi obsługiwać dane wyjściowe. Pierwszy argument zmiennej w tej funkcji przyjmuje numer błędu czasu działania. Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
 #include <windows.h>
@@ -108,7 +108,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```
 
 ## <a name="example-3"></a>Przykład 3
-Użyj `_RTC_SetErrorFuncW` , aby zainstalować funkcję niestandardową zamiast `_CrtDbgReportW` . Aby uzyskać więcej informacji, zobacz [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). `_RTC_SetErrorFuncW`Wartość zwracana jest poprzednią funkcją raportowania, którą można zapisać i przywrócić w razie potrzeby.
+Użyj `_RTC_SetErrorFuncW` , aby zainstalować funkcję niestandardową, a nie . `_CrtDbgReportW` Aby uzyskać więcej informacji, [zobacz _RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). Zwracana `_RTC_SetErrorFuncW` wartość to poprzednia funkcja raportowania, którą można zapisać i przywrócić w razie potrzeby.
 
 ```cpp
 #include <rtcapi.h>
@@ -124,4 +124,4 @@ int main()
 ```
 
 ## <a name="see-also"></a>Zobacz też
-[Dostosowywanie kontroli Run-Time natywnych](../debugger/native-run-time-checks-customization.md)
+[Dostosowywanie Run-Time macierzystego sprawdzania](../debugger/native-run-time-checks-customization.md)

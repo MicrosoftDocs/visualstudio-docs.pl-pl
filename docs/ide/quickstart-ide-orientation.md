@@ -1,7 +1,7 @@
 ---
 title: 'Szybki start: przewodnik po Visual Studio IDE'
 description: Dowiedz się więcej o niektórych oknach, menu i innych funkcjach interfejsu użytkownika Visual Studio zintegrowanym środowisku projektowym (IDE).
-ms.custom: acquisition
+ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f10c3fcca5d87f8371d1373314406cf4aa47ec3
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 0e3a0c62c1ec13ba6fec464a2903512b2acf33ad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113225"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386296"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Szybki start: pierwsze spojrzenie na Visual Studio IDE
 
@@ -55,7 +55,7 @@ Pierwszą rzeczą, którą zobaczysz po otwarciu okna Visual Studio jest okno ur
 
 [![Okno uruchamiania w Visual Studio 2019 r.](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
-Jeśli używasz listy Visual Studio po raz pierwszy, lista ostatnich projektów będzie pusta.
+Jeśli używasz aplikacji po raz pierwszy Visual Studio, lista ostatnich projektów będzie pusta.
 
 Jeśli pracujesz z bazami kodu nie opartymi na programie MSBuild, użyjesz opcji Otwórz **folder** lokalny, aby otworzyć kod w Visual Studio. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu w Visual Studio [bez projektów i rozwiązań).](develop-code-in-visual-studio-without-projects-or-solutions.md) W przeciwnym razie możesz utworzyć nowy projekt lub sklonować projekt od dostawcy źródłowego, takiego jak GitHub lub Azure DevOps.
 
@@ -105,7 +105,7 @@ Aby kontynuować eksplorowanie Visual Studio funkcji, utwórzmy nowy projekt.
 
 ::: moniker-end
 
-   Projekt zostanie utworzony, a w oknie edytora zostanie otwarty **plik** o nazwie *Program.cs.* Edytor **pokazuje** zawartość plików i jest to miejsce, w którym większość pracy z kodowaniem będziesz robić w Visual Studio.
+   Projekt zostanie utworzony, a w oknie edytora zostanie otwarty **plik** o nazwie *Program.cs.* Edytor **pokazuje** zawartość plików i jest to miejsce, w którym większość pracy programistyki można wykonać w Visual Studio.
 
    ![Edytor w Visual Studio](media/editor.png)
 
@@ -201,7 +201,7 @@ Jeśli podczas korzystania z usługi Visual Studio wystąpią jakiekolwiek probl
 
 ## <a name="next-steps"></a>Następne kroki
 
-Przyjrzeliśmy się zaledwie kilku funkcji interfejsu Visual Studio, aby zapoznać się z interfejsem użytkownika. Aby poznać więcej informacji:
+Zapoznaliśmy się z kilkoma funkcjami interfejsu Visual Studio zapoznać się z interfejsem użytkownika. Aby poznać więcej informacji:
 
 > [!div class="nextstepaction"]
 > [Dowiedz się więcej o edytorze kodu](../get-started/tutorial-editor.md)
@@ -211,6 +211,6 @@ Przyjrzeliśmy się zaledwie kilku funkcji interfejsu Visual Studio, aby zapozna
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Omówienie środowiska IDE Visual Studio projektowego](../get-started/visual-studio-ide.md)
+- [Omówienie środowiska IDE Visual Studio](../get-started/visual-studio-ide.md)
 - [Więcej funkcji Visual Studio](../ide/advanced-feature-overview.md)
 - [Zmienianie motywu i kolorów czcionek](../ide/quickstart-personalize-the-ide.md)

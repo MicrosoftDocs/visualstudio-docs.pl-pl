@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się, czy moje wskaźniki uszkadzają adres pamięci | Microsoft Docs
-description: Aby określić, czy wskaźnik powoduje uszkodzenie pamięci, można wyszukać uszkodzenie sterty i można ustawić punkt przerwania danych, aby dowiedzieć się, w jaki sposób wartość jest modyfikowana.
-ms.custom: SEO-VS-2020, seodec18
+title: Dowiedz się, czy wskaźniki uszkodzony adres pamięci | Microsoft Docs
+description: Aby ustalić, czy wskaźnik uszkodzonej pamięci, można poszukać uszkodzenia sterty i ustawić punkt przerwania danych, aby dowiedzieć się, jak wartość jest modyfikowana.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -22,29 +22,29 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d95e38c6393d6576f2867aad5d1224940f33cebc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 836cc0363da0e20c45d83e1b2c13081e480fa919
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155203"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386972"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Jak można sprawdzić, czy wskaźniki uszkadzają adresy pamięci?
 ## <a name="problem-description"></a>Opis problemu
- Myślę, że jeden ze wskaźników może spowodować uszkodzenie pamięci pod adresem 0x00408000. Jak mogę się dowiedzieć, co się dzieje?
+ Myślę, że jeden z moich wskaźników może uszkodzić pamięć pod adresem 0x00408000. Jak sprawdzić, co się tam dzieje?
 
 ## <a name="solution"></a>Rozwiązanie
 
-#### <a name="check-for-heap-corruption"></a>Sprawdź uszkodzenie sterty
+#### <a name="check-for-heap-corruption"></a>Sprawdzanie uszkodzeń sterty
 
-- Większość uszkodzeń pamięci jest w rzeczywistości spowodowana uszkodzeniem sterty. Spróbuj użyć narzędzia globalnych flags (gflags.exe) lub pageheap.exe. Zobacz [/Windows-Hardware/Drivers/Debugger/GFlags-and-Pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap).
+- Większość uszkodzeń pamięci jest w rzeczywistości spowodowana uszkodzeniem sterty. Spróbuj użyć narzędzia Global Flags (gflags.exe) lub pageheap.exe. Zobacz [/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap).
 
-#### <a name="to-find-where-the-memory-address-is-modified"></a>Aby znaleźć miejsce modyfikacji adresu pamięci
+#### <a name="to-find-where-the-memory-address-is-modified"></a>Aby dowiedzieć się, gdzie adres pamięci jest modyfikowany
 
-1. Ustaw punkt przerwania danych w 0x00408000. Zobacz [Ustawianie punktu przerwania zmiany danych (tylko natywne C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
+1. Ustaw punkt przerwania danych w 0x00408000. Zobacz [Ustawianie punktu przerwania zmiany danych (tylko natywny język C++).](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)
 
-2. Po trafieniu punktu przerwania Użyj okna **pamięci** , aby wyświetlić zawartość pamięci, zaczynając od 0x00408000. Aby uzyskać więcej informacji, zobacz [pamięć systemu Windows](../debugger/memory-windows.md).
+2. Po trafieniu punktu przerwania użyj okna **Pamięć,** aby wyświetlić zawartość pamięci, zaczynając od 0x00408000. Aby uzyskać więcej informacji, zobacz [Okna pamięci](../debugger/memory-windows.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Debugowanie często zadawanych pytań dotyczących kodu natywnego](../debugger/debugging-native-code-faqs.md)
+- [Debugowanie kodu natywnego : często zadawane pytania](../debugger/debugging-native-code-faqs.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)

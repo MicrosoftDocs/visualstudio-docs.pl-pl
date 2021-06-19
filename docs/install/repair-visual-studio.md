@@ -3,7 +3,7 @@ title: Napraw program Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak naprawić instalację programu Visual Studio 2017
 ms.date: 10/12/2020
-ms.custom: acquisition
+ms.custom: vs-acquisition
 ms.topic: how-to
 author: j-martens
 ms.author: jmartens
@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5fd791b035bc99d46f53d499339a9e9f80a42905
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 55ebb7c44b44a14154cc54f54885455821f9ee68
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306946"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386790"
 ---
 # <a name="repair-visual-studio"></a>Napraw program Visual Studio
 
-Czasami instalacja Visual Studio uszkodzona lub uszkodzona. Naprawa jest przydatna do rozwiązywania problemów z czasem instalacji we wszystkich operacjach instalacji, w tym aktualizacjach.
+Czasami instalacja Visual Studio jest uszkodzona lub uszkodzona. Naprawa jest przydatna do rozwiązywania problemów z czasem instalacji we wszystkich operacjach instalacji, w tym w aktualizacjach.
 
 ## <a name="when-to-use-repair"></a>Kiedy należy używać naprawy
 * Jeśli masz problemy z ładunkiem instalacyjnym. Może się to zdarzyć, gdy zapisywanie pliku na dysku nie powiedzie się i nie można go naprawić przez usunięcie uszkodzonego pliku. Naprawa może ponownie uzyskać potrzebne pliki. 
-* Jeśli masz problemy z pobieraniem po stronie klienta. Jeśli rozwiązano problemy z połączeniem lub serwerem proxy, naprawa może pomóc. 
+* Jeśli masz problemy z pobieraniem po stronie klienta. Zakładając, że rozwiązano problemy z połączeniem lub serwerem proxy, naprawa może pomóc. 
 * Jeśli masz problemy z aktualizowaniem Visual Studio. Naprawa rozwiązuje wiele typowych problemów z aktualizacjami. 
 
 > [!TIP] 
-> Jeśli problem z instalowaniem jest spowodowany przez problem w podstawowej usłudze systemu Windows, na przykład Instalator Windows, naprawa może spowodować ten sam problem. Problemy systemowe mogą obejmować przerwane Instalator Windows niestabilne połączenie internetowe. Aby sprawdzić problem systemowy, użyj raportu o błędzie wygenerowanego podczas operacji instalacji.
+> Jeśli problem z instalowaniem jest spowodowany przez problem w podstawowej usłudze systemu Windows, na przykład Instalator Windows, naprawa może spowodować ten sam problem. Problemy systemowe mogą obejmować przerwane Instalator Windows niestabilne połączenie internetowe. Aby sprawdzić problem systemowy, użyj raportu o błędach wygenerowanego na podstawie operacji instalacji.
 
 > [!NOTE] 
 > Naprawianie Visual Studio resetuje ustawienia użytkownika i ponownie instaluje już posiadane zestawy. Jeśli występuje problem z produktem, utwórz bilet Visual Studio [opinii,](https://aka.ms/feedback/suggest?space=8)ponieważ naprawa może nie rozwiązać problemu.
@@ -46,16 +46,16 @@ Czasami instalacja Visual Studio uszkodzona lub uszkodzona. Naprawa jest przydat
    >
    > Alternatywnie możesz znaleźć Instalator programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Otwórz instalatora, wybierz **pozycję Więcej,** a następnie wybierz pozycję **Napraw.**
+1. Otwórz instalatora, wybierz pozycję **Więcej,** a następnie wybierz pozycję **Napraw.**
 
     ![Napraw Visual Studio z Instalator programu Visual Studio](media/repair-visual-studio.png "Napraw Visual Studio z Instalator programu Visual Studio")
 
    > [!NOTE]
-   > Naprawienie Visual Studio spowoduje zresetowanie środowiska. Dostosowania lokalne, takie jak rozszerzenia dla per-user zainstalowane bez podniesienia uprawnień, ustawień użytkownika i profilów, zostaną usunięte. Zsynchronizowane ustawienia, takie jak motywy, kolory i powiązania kluczy, zostaną przywrócone.
+   > Naprawa Visual Studio spowoduje zresetowanie środowiska. Dostosowania lokalne, takie jak rozszerzenia na użytkownika zainstalowane bez podniesienia uprawnień, ustawień użytkownika i profilów, zostaną usunięte. Zsynchronizowane ustawienia, takie jak motywy, kolory i powiązania kluczy, zostaną przywrócone.
    >
 
    > [!TIP]
-   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
+   > Opcja **Napraw** jest wyświetlana tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji wyświetlanej na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
 
 ::: moniker-end
 
@@ -74,16 +74,16 @@ Czasami instalacja Visual Studio uszkodzona lub uszkodzona. Naprawa jest przydat
 
     Przed kontynuowaniem może być konieczne zaktualizowanie instalatora. Jeśli tak, postępuj zgodnie z monitami.
 
-1. W instalatorze poszukaj zainstalowanej wersji Visual Studio programu . Następnie wybierz pozycję **Więcej,** a następnie wybierz pozycję **Napraw.**
+1. W instalatorze poszukaj zainstalowanej wersji Visual Studio instalatora. Następnie wybierz pozycję **Więcej,** a następnie wybierz pozycję **Napraw.**
 
      ![Repair Visual Studio 2019](media/vs-2019/vs-installer-repair.png "Repair Visual Studio 2019")
 
    > [!NOTE]
-   > Naprawienie Visual Studio spowoduje zresetowanie środowiska. Dostosowania lokalne, takie jak rozszerzenia dla per-user zainstalowane bez podniesienia uprawnień, ustawień użytkownika i profilów, zostaną usunięte. Zsynchronizowane ustawienia, takie jak motywy, kolory i powiązania kluczy, zostaną przywrócone.
+   > Naprawa Visual Studio spowoduje zresetowanie środowiska. Dostosowania lokalne, takie jak rozszerzenia na użytkownika zainstalowane bez podniesienia uprawnień, ustawień użytkownika i profilów, zostaną usunięte. Zsynchronizowane ustawienia, takie jak motywy, kolory i powiązania kluczy, zostaną przywrócone.
    >
 
    > [!TIP]
-   > Opcja **Napraw** jest dostępna tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji, która jest wymieniona na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
+   > Opcja **Napraw** jest wyświetlana tylko dla zainstalowanych wystąpień Visual Studio. Jeśli nie widzisz  opcji Napraw, istnieje prawdopodobieństwo,  że wybrano opcję Więcej w wersji wyświetlanej na liście Instalator programu Visual Studio jako "Dostępne", a nie "Zainstalowane".
 
 ::: moniker-end
 

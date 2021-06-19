@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie z Visual Studio Tools for Unity | Microsoft Docs
 description: Dowiedz się, jak instalować i instalować Visual Studio do budowania aplikacji unity.
-ms.custom: ''
+ms.custom: acquisition
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 8eea998731c4d29e533d1e6bf21d4a2870a81ff5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782611"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386699"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Wprowadzenie do Visual Studio i aparatu Unity
 
@@ -54,39 +54,39 @@ Narzędzia dla aparatu Unity są dołączone do instalacji Visual Studio dla kom
 
 ## <a name="check-for-updates"></a>Sprawdź aktualizacje
 
-Zaleca się, aby zawsze Visual Studio i Visual Studio dla komputerów Mac, aby mieć najnowsze poprawki usterek, funkcje i obsługę aparatu Unity. Nie wymaga to aktualizacji wersji aparatu Unity.
+Zaleca się, aby aktualizacje Visual Studio i Visual Studio dla komputerów Mac były aktualizowane, aby mieć najnowsze poprawki usterek, funkcje i obsługę aparatu Unity. Nie wymaga to aktualizacji wersji aparatu Unity.
 
 :::zone pivot="windows"
 
-1. Kliknij menu **> Sprawdź aktualizacje.**
+1. Kliknij menu **Pomoc > Sprawdź aktualizacje.**
 
-    ![Menu Sprawdź aktualizacje w programie Visual Studio 2019](../media/vs/check-for-updates.png)
+    ![Menu Sprawdzanie aktualizacji w programie Visual Studio 2019](../media/vs/check-for-updates.png)
 
 2. Jeśli jest dostępna aktualizacja, Instalator programu Visual Studio zostanie pokazana nowa wersja. Kliknij przycisk **Aktualizuj.**
 
 :::zone-end
 :::zone pivot="macos"
 
-1. Kliknij menu **Visual Studio dla komputerów Mac > Sprawdź aktualizacje...,** aby otworzyć **okno dialogowe Visual Studio Update.**
-2. Jeśli jest dostępna aktualizacja, kliknij **przycisk** Zainstaluj.
+1. Kliknij menu **Visual Studio dla komputerów Mac > Sprawdź aktualizacje...,** aby otworzyć **okno Visual Studio Aktualizacji.**
+2. Jeśli jest dostępna aktualizacja, kliknij przycisk **Zainstaluj.**
 
 :::zone-end
 
 ## <a name="configure-unity-to-use-visual-studio"></a>Konfigurowanie aparatu Unity do używania Visual Studio
 
-Domyślnie aparatu Unity należy już skonfigurować do używania Visual Studio lub Visual Studio dla komputerów Mac jako edytor skryptów. Możesz to potwierdzić lub zmienić zewnętrzny edytor skryptów na określoną wersję Visual Studio edytorze aparatu Unity.
+Domyślnie aparatu Unity należy już skonfigurować do używania Visual Studio lub Visual Studio dla komputerów Mac jako edytora skryptów. Możesz to potwierdzić lub zmienić zewnętrzny edytor skryptów na określoną wersję Visual Studio edytorze aparatu Unity.
 
 :::zone pivot="windows"
 
 1. W edytorze aparatu Unity wybierz menu **> preferencje.**
 2. Wybierz **kartę Narzędzia zewnętrzne** po lewej stronie.
-3. Lista **rozwijana Edytor** skryptów zewnętrznych umożliwia wybór różnych instalacji Visual Studio. Możesz również kliknąć pozycję **Przeglądaj...** z listy rozwijanej, aby dodać wersję nieznajdową na liście.
+3. Lista **rozwijana Zewnętrzny** edytor skryptów umożliwia wybór różnych instalacji Visual Studio. Możesz również kliknąć pozycję **Przeglądaj...** na liście rozwijanej, aby dodać wersję nieznajdową na liście.
 
     ![Menu preferencji Narzędzia zewnętrzne w edytorze aparatu Unity w systemie Windows](../media/vs/preferences-external-tools.png)
 
-4. Jeśli **wybrano** pozycję Przeglądaj..., przejdź do katalogu **Common7/IDE** w katalogu Visual Studio i wybierz pozycję **devenv.exe**. Następnie kliknij pozycję **Otwórz**.
-5. Po Visual Studio na liście **Edytor** skryptów zewnętrznych upewnij się, **że** pole wyboru Dołączanie edytora jest zaznaczone.
-6. Zamknij okno **dialogowe Preferencje,** aby ukończyć proces konfiguracji.
+4. Jeśli **opcja Przeglądaj...** została wybrana, przejdź do katalogu **Common7/IDE** w katalogu instalacyjnym Visual Studio i wybierz **pozycjędevenv.exe**. Następnie kliknij pozycję **Otwórz**.
+5. Po Visual Studio na liście **Edytor** skryptów zewnętrznych upewnij się, że **pole** wyboru Dołączanie edytora jest zaznaczone.
+6. Zamknij okno **dialogowe** Preferencje, aby zakończyć proces konfiguracji.
 
 :::zone-end
 :::zone pivot="macos"

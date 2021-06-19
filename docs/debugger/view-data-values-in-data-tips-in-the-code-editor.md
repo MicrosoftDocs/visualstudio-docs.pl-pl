@@ -1,7 +1,7 @@
 ---
-title: Wyświetlanie wartości zmiennych w etykietkach danych | Microsoft Docs
-description: Użyj etykiet danych, aby wygodnie wyświetlać informacje dotyczące zmiennych, w tym tablic i struktur, podczas debugowania. Możesz również modyfikować wartości.
-ms.custom: SEO-VS-2020, seodec18
+title: Wyświetlanie wartości zmiennych w etykietkach | Microsoft Docs
+description: Użyj etykietek danych, aby wygodnie wyświetlać informacje o zmiennych, w tym tablice i struktury, podczas debugowania. Można również modyfikować wartości.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,129 +19,129 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904917"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386478"
 ---
-# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Wyświetlanie wartości danych we wskazówkach datapreview w edytorze kodu
+# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Wyświetlanie wartości danych w etykietkach danych w edytorze kodu
 
-Porady datapreview zapewniają wygodny sposób wyświetlania informacji o zmiennych w programie podczas debugowania. Etykietki danych działają tylko w trybie przerwania i są tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
+Etykietki danych zapewniają wygodny sposób wyświetlania informacji o zmiennych w programie podczas debugowania. Etykietki danych działają tylko w trybie przerwania i tylko ze zmiennymi, które znajdują się w bieżącym zakresie wykonywania. Jeśli po raz pierwszy próbujesz debugować kod, przed rozpoczęciem [](../debugger/debugging-absolute-beginners.md) pracy z [](../debugger/write-better-code-with-visual-studio.md) tym artykułem warto przeczytać artykuł Debugowanie dla bezwzględnych początkujących oraz Techniki i narzędzia debugowania.
 
-## <a name="work-with-datatips"></a>Współpraca z etykietami danych
+## <a name="work-with-datatips"></a>Praca z etykietkami danych
 
-Etykietki danych są wyświetlane tylko w trybie przerwania i tylko dla zmiennych, które znajdują się w bieżącym zakresie wykonywania.
+Etykietki danych są wyświetlane tylko w trybie przerwania i tylko w zmiennych, które znajdują się w bieżącym zakresie wykonywania.
 
 ### <a name="display-a-datatip"></a>Wyświetlanie etykietki danych
 
-1. Ustaw punkt przerwania w kodzie i Rozpocznij debugowanie, naciskając klawisz **F5** lub wybierając pozycję **Debuguj**  >  **Rozpocznij debugowanie**.
+1. Ustaw punkt przerwania w kodzie i rozpocznij debugowanie, naciskając **klawisz F5** lub wybierając **pozycję Debuguj**  >  **rozpocznij debugowanie.**
 
-1. Po zatrzymaniu w punkcie przerwania Zatrzymaj wskaźnik myszy nad dowolną zmienną w bieżącym zakresie. Etykietki danych pojawia się, pokazując nazwę i bieżącą wartość zmiennej.
+1. Po wstrzymaniu w punkcie przerwania umieść kursor na dowolnej zmiennej w bieżącym zakresie. Zostanie wyświetlona etykietka danych z nazwą i bieżącą wartością zmiennej.
 
-### <a name="make-a-datatip-transparent"></a>Ustaw etykietki danych jako przezroczysty
+### <a name="make-a-datatip-transparent"></a>Przezroczystość etykietki danych
 
-Aby uczynić etykietki danych przezroczystym w celu wyświetlenia kodu znajdującego się pod nim, w etykietki danych naciśnij klawisz **Ctrl**. Etykietki danych pozostaje przezroczysty, o ile przytrzymasz wciśnięty klawisz **Ctrl** . To nie działa w przypadku przypiętych lub zmiennoprzecinkowych etykiet danych.
-### <a name="pin-a-datatip"></a>Przypinanie elementu etykietki danych
+Aby sprawić, aby etykietka danych była przezroczysta, aby zobaczyć kod, który znajduje się poniżej, w etykietce danych naciśnij **klawisze Ctrl**. Etykietka danych pozostaje niewidoczna, o ile przytrzymasz naciśnięty **klawisz Ctrl.** Nie działa to w przypadku przypiętych lub przestawnych etykietek danych.
+### <a name="pin-a-datatip"></a>Przypinanie etykietki danych
 
-Aby przypiąć etykietki danych w taki sposób, aby pozostawał otwarty, wybierz ikonę Pinezka **do źródła** .
+Aby przypiąć etykietkę danych tak, aby była otwarta, wybierz ikonę pinezki **Przypnij do źródła.**
 
-![Przypinanie elementu etykietki danych](../debugger/media/dbg-tips-data-tips-pinned.png "Przypinanie elementu etykietki danych")
+![Przypinanie etykietki danych](../debugger/media/dbg-tips-data-tips-pinned.png "Przypinanie etykietki danych")
 
-Przypiętą etykietki danych można przenieść, przeciągając ją wokół okna kodu. Ikona pinezki pojawia się na oprawie obok wiersza, do którego jest przypięty etykietki danych.
+Przypiętą etykietkę danych można przenieść, przeciągając ją w oknie kodu. Ikona pinezki jest wyświetlana w rynnie obok wiersza, do których jest przypięta etykietka danych.
 
 >[!NOTE]
->Etykietki danych są zawsze oceniane w kontekście, w którym wykonywanie jest wstrzymane, a nie z bieżącym kursorem lub lokalizacją etykietki danych. Jeśli umieścisz wskaźnik myszy nad zmienną w innej funkcji, która ma taką samą nazwę jak zmienna w bieżącym kontekście, zostanie wyświetlona wartość zmiennej w bieżącym kontekście.
+>Etykietki danych są zawsze oceniane w kontekście, w którym wstrzymano wykonywanie, a nie bieżącego kursora ani lokalizacji etykietki danych. Jeśli najedziesz kursorem na zmienną w innej funkcji, która ma taką samą nazwę jak zmienna w bieżącym kontekście, zostanie wyświetlona wartość zmiennej w bieżącym kontekście.
 
-### <a name="unpin-a-datatip-from-source"></a>Odepnij etykietki danych od źródła
+### <a name="unpin-a-datatip-from-source"></a>Odpinanie etykietki danych od źródła
 
-Aby przestawić przypięty etykietki danych, umieść kursor nad etykietki danych i wybierz ikonę pinezki z menu kontekstowego.
+Aby przesłonić przypiętą etykietkę danych, umieść kursor nad etykietką danych i wybierz ikonę pinezki z menu kontekstowego.
 
-Ikona pinezki zmieni się na przypiętą, a etykietki danych teraz zostanie przeciągnięta lub przeciągnięte nad wszystkie otwarte okna. Przestawne etykietki danych zamyka się po zakończeniu sesji debugowania.
+Ikona pinezki zmienia się na odpiętą pozycję, a etykietka danych jest teraz wyświetlana jako zmiennoprzecinkowa lub można ją przeciągać nad wszystkimi otwartymi oknami. Przestawne etykietki danych są zamykane po zakończeniu sesji debugowania.
 
-### <a name="repin-a-datatip"></a>Przypiąć etykietki danych
+### <a name="repin-a-datatip"></a>Ponowne przypinanie etykietki danych
 
-Aby przypiąć zmiennoprzecinkową etykietki danych do źródła, umieść kursor nad nim w edytorze kodu i wybierz ikonę pinezki. Ikona pinezki zmieni się na przypiętą pozycję, a etykietki danych ponownie przypięto tylko do okna kod.
+Aby odpiąć przestawną etykietkę danych do źródła, umieść kursor nad nim w edytorze kodu i wybierz ikonę pinezki. Ikona pinezki zmieni się na przypiętą pozycję, a etykietka danych zostanie ponownie przypięta tylko do okna kodu.
 
-Jeśli etykietki danych jest przepływa nad oknem kodu nieźródłowym, ikona pinezki jest niedostępna, a etykietki danych nie może zostać przypięty. Aby uzyskać dostęp do ikony pinezki, zwróć etykietki danych do okna edytora kodu, przeciągając je lub dostarczając fokus okna kodu.
+Jeśli etykietka danych jest przestawna w oknie kodu nie źródłowego, ikona pinezki jest niedostępna i nie można ponownie przypiąć etykietki danych. Aby uzyskać dostęp do ikony pinezki, zwróć etykietkę danych do okna edytora kodu, przeciągając ją lub nadając fokus okna kodu.
 
-### <a name="close-a-datatip"></a>Zamknij etykietki danych
+### <a name="close-a-datatip"></a>Zamykanie etykietki danych
 
-Aby zamknąć etykietki danych, umieść kursor nad etykietki danych i wybierz ikonę zamknięcia (**x**) z menu kontekstowego.
+Aby zamknąć etykietkę danych, umieść kursor nad etykietką danych i wybierz ikonę zamknięcia **(x**) z menu kontekstowego.
 
 ### <a name="close-all-datatips"></a>Zamknij wszystkie etykietki danych
 
-Aby zamknąć wszystkie etykietki danych, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie etykietki** danych.
+Aby zamknąć wszystkie etykietki danych, w menu **Debugowanie** wybierz pozycję **Wyczyść wszystkie etykietki danych.**
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Zamknij wszystkie etykietki danych dla określonego pliku
 
-Aby zamknąć wszystkie etykietki danych dla określonego pliku, w menu **Debuguj** wybierz polecenie **Wyczyść wszystkie podpowiedzi danych przypięte \<Filename> do**.
+Aby zamknąć wszystkie etykietki danych dla określonego pliku, w menu **Debugowanie** wybierz pozycję Wyczyść wszystkie **etykietki \<Filename> danych przypięte do elementu**.
 
-## <a name="expand-and-edit-information"></a>Rozwiń i Edytuj informacje
+## <a name="expand-and-edit-information"></a>Rozwijanie i edytowanie informacji
 Możesz użyć etykietek danych, aby rozwinąć tablicę, strukturę lub obiekt, aby wyświetlić jego elementy członkowskie. Możesz również edytować wartość zmiennej z etykietki danych.
 
-### <a name="expand-a-variable"></a>Rozwiń zmienną
+### <a name="expand-a-variable"></a>Rozwijanie zmiennej
 
-Aby rozwinąć obiekt w etykietki danych, aby wyświetlić jego elementy, umieść kursor nad strzałkami rozwiń przed nazwami elementów, aby wyświetlić elementy w formie drzewa. W przypadku przypiętej etykietki danych wybierz pole **+** przed nazwą zmiennej, a następnie rozwiń drzewo.
+Aby rozwinąć obiekt w etykietce danych, aby wyświetlić jego elementy, umieść kursor nad strzałkami rozwijania przed nazwami elementów, aby wyświetlić elementy w postaci drzewa. W przypadku przypiętej etykietki danych wybierz wartość przed nazwą zmiennej, a **+** następnie rozwiń drzewo.
 
-![Rozwiń element etykietki danych](../debugger/media/dbg-tour-data-tips.png "Rozwiń element etykietki danych")
+![Rozwijanie etykietki danych](../debugger/media/dbg-tour-data-tips.png "Rozwijanie etykietki danych")
 
-Możesz użyć myszy lub klawiszy strzałek na klawiaturze, aby przejść w górę i w dół w rozwiniętym widoku.
+Możesz użyć myszy lub klawiszy strzałek na klawiaturze, aby poruszać się w górę i w dół w widoku rozwiniętym.
 
-Możesz również przypiąć rozwinięte elementy do przypiętej etykietki danych, umieszczając nad nimi kursor i wybierając ich ikony pinezki. Elementy są następnie wyświetlane w przypiętej etykietki danych po zwinięciu drzewa.
+Możesz również przypiąć rozwinięte elementy do przypiętej etykietki danych, umieszczając na nich kursor i wybierając ich ikony pinezki. Elementy są następnie wyświetlane w przypiętej etykietce danych po zwiniętym drzewie.
 
 ### <a name="edit-the-value-of-a-variable"></a>Edytowanie wartości zmiennej
 
-Aby edytować wartość zmiennej lub elementu w etykietki danych, wybierz wartość, wpisz nową wartość i naciśnij klawisz **Enter**. Zaznaczenie jest wyłączone dla wartości tylko do odczytu.
+Aby edytować wartość zmiennej lub elementu w etykietce danych, wybierz wartość, wpisz nową wartość i naciśnij **klawisz Enter**. Wybór jest wyłączony dla wartości tylko do odczytu.
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips"></a>Przypnij właściwości w etykietach danych
+## <a name="pin-properties-in-datatips"></a>Przypinanie właściwości w etykietkach danych
 
 > [!NOTE]
-> Ta funkcja jest obsługiwana w przypadku platformy .NET Core 3,0 lub nowszej.
+> Ta funkcja jest obsługiwana w przypadku platform .NET Core 3.0 lub wyższych.
 
-Możesz szybko sprawdzić obiekty według ich właściwości w etykietkach danych za pomocą narzędzia **Pinnable Properties** .  Aby użyć tego narzędzia, umieść kursor nad właściwością i wybierz ikonę pinezki, która jest wyświetlana, lub kliknij prawym przyciskiem myszy i wybierz opcję **Przypnij element członkowski jako ulubiony** w menu kontekstowym.  Powoduje to odfiltrowanie tej właściwości do górnej części listy właściwości obiektu, a nazwa właściwości i wartość są wyświetlane w prawej kolumnie etykietki danych.  Aby odpiąć właściwość, wybierz ponownie ikonę pinezki lub wybierz opcję **Odepnij członka jako ulubioną** w menu kontekstowym.
+Za pomocą narzędzia **Pinnable Properties** można szybko sprawdzać obiekty według ich właściwości w etykietkach danych.  Aby użyć tego narzędzia, umieść kursor nad właściwością i wybierz wyświetloną ikonę pinezki lub kliknij prawym przyciskiem myszy i wybierz opcję Przypnij element **członkowski** jako ulubiony w wynikowym menu kontekstowym.  Ta właściwość jest wyświetlana na początku listy właściwości obiektu, a nazwa i wartość właściwości są wyświetlane w prawej kolumnie etykietki danych.  Aby odpiąć właściwość, ponownie wybierz ikonę pinezki lub wybierz opcję Odepnij element **członkowski** jako ulubiony w menu kontekstowym.
 
-![Przypinanie właściwości w etykietki danych](../debugger/media/basic-pin-datatip.gif "Przypinanie właściwości w etykietki danych")
+![Przypinanie właściwości w etykietce danych](../debugger/media/basic-pin-datatip.gif "Przypinanie właściwości w etykietce danych")
 
-Można również przełączać nazwy właściwości i odfiltrować przypięte właściwości podczas wyświetlania listy właściwości obiektu w etykietki danych.  Możesz uzyskać dostęp do dowolnej opcji, klikając prawym przyciskiem myszy wiersz zawierający właściwość i wybierając pozycję **Pokaż tylko przypiętych członków** lub **Ukryj nazwy przypiętych elementów członkowskich w** opcjach wartości w menu kontekstowym.
+Podczas wyświetlania listy właściwości obiektu w etykietce danych można również przełączać nazwy właściwości i filtrować nie przypięte właściwości.  Dostęp do każdej opcji można uzyskać, klikając prawym  przyciskiem myszy wiersz  zawierający właściwość i wybierając z menu kontekstowego opcję Pokaż tylko przypięte elementy członkowskie lub Ukryj przypięte nazwy elementów członkowskich w wartościach.
 
 ::: moniker-end
 
 ## <a name="visualize-complex-data-types"></a>Wizualizowanie złożonych typów danych
 
-Ikona lupy obok zmiennej lub elementu w etykietki danych oznacza, że co najmniej jeden [wizualizator](../debugger/create-custom-visualizers-of-data.md), taki jak [wizualizator tekstu](../debugger/string-visualizer-dialog-box.md), jest dostępny dla zmiennej. Wizualizatory wyświetlają informacje bardziej zrozumiałe, czasami graficzne, sposób.
+Ikona lupy obok zmiennej lub elementu w etykietce danych [oznacza,](../debugger/create-custom-visualizers-of-data.md)że dla [](../debugger/string-visualizer-dialog-box.md)zmiennej jest dostępny co najmniej jeden wizualizator , taki jak wizualizator tekstu. Wizualizatorzy wyświetlają informacje w bardziej zrozumiały, czasami graficzny sposób.
 
-Aby wyświetlić element przy użyciu domyślnego wizualizatora dla typu danych, wybierz ikonę lupy ikona ![wizualizatora](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora"). Wybierz strzałkę obok ikony lupy, aby wybrać z listy wizualizatorów dla typu danych.
+Aby wyświetlić element przy użyciu domyślnego wizualizatora dla typu danych, wybierz ikonę ![lupy Ikona wizualizatora](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora"). Wybierz strzałkę obok ikony lupy, aby wybrać z listy wizualizatorów dla typu danych.
 
 ## <a name="add-a-variable-to-a-watch-window"></a>Dodawanie zmiennej do okno wyrażeń kontrolnych
 
-Jeśli chcesz kontynuować obserwację zmiennej, możesz dodać ją do okna **czujki** z etykietki danych. Kliknij prawym przyciskiem myszy zmienną w etykietki danych, a następnie wybierz polecenie **Dodaj czujkę**.
+Jeśli chcesz kontynuować obserwowanie zmiennej, możesz dodać ją do okna **Obserwowanie** z etykietki danych. Kliknij prawym przyciskiem myszy zmienną w etykietce danych, a następnie wybierz pozycję **Dodaj czujkę.**
 
-Zmienna pojawia się w oknie **czujka** . Jeśli wersja programu Visual Studio obsługuje więcej niż jedno okno **czujki** , zmienna pojawia się w **zegarku 1**.
+Zmienna zostanie wyświetlona w **oknie Czujka.** Jeśli Twoja Visual Studio obsługuje więcej niż jedno **okno Czujka,** zmienna pojawia się w **zegarku Watch 1.**
 
-## <a name="import-and-export-datatips"></a>Importuj i Eksportuj etykietki danych
+## <a name="import-and-export-datatips"></a>Importowanie i eksportowanie etykietek danych
 
-Można eksportować etykietki danych do pliku XML, który można udostępniać lub edytować za pomocą edytora tekstu. Można również zaimportować plik XML etykietki danych, który został odebrany lub zmodyfikowany.
+Etykietki danych można wyeksportować do pliku XML, który można udostępniać lub edytować za pomocą edytora tekstów. Możesz również zaimportować otrzymany lub edytowany plik XML etykietki danych.
 
 **Aby wyeksportować etykietki danych:**
 
-1. Wybierz kolejno opcje **Debuguj**  >  **eksport** danych.
+1. Wybierz **pozycję**  >  **Debuguj eksportuj etykietki danych.**
 
-1. W oknie dialogowym **Eksportuj etykietki** danych przejdź do lokalizacji, w której ma zostać zapisany plik XML, wpisz nazwę pliku, a następnie wybierz pozycję **Zapisz**.
+1. W **oknie dialogowym Eksportowanie** etykietek danych przejdź do lokalizacji, w którym chcesz zapisać plik XML, wpisz nazwę pliku, a następnie wybierz pozycję **Zapisz.**
 
 **Aby zaimportować etykietki danych:**
 
-1. Wybierz pozycję **Debuguj**  >  **Importuj etykietki** danych.
+1. Wybierz **pozycję**  >  **Debuguj etykietki danych importu.**
 
-1. W oknie dialogowym **Importuj porady dotyczące** danych wybierz plik XML z danymi, które chcesz otworzyć, a następnie wybierz pozycję **Otwórz**.
+1. W **oknie dialogowym Import DataTips** (Importowanie etykietek danych) wybierz plik XML DataTips, który chcesz otworzyć, a następnie wybierz pozycję **Open (Otwórz).**
 
 ## <a name="see-also"></a>Zobacz też
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
 - [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
-- [Najpierw Spójrz na Debugowanie](../debugger/debugger-feature-tour.md)
+- [Pierwsze spojrzenie na debugowanie](../debugger/debugger-feature-tour.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
 - [Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

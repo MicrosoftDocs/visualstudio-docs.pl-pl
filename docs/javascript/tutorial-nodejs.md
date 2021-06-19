@@ -2,6 +2,7 @@
 title: Tworzenie aplikacji platformy Node.js i Express
 description: Z tego samouczka dowiesz się, jak utworzyć prostą aplikację Node.js przy użyciu struktury aplikacji internetowych Express w Visual Studio.
 ms.date: 03/25/2021
+ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,26 +12,26 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2bca688977187071b5530911f9aa975e10ceef99
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: d4ea086d20f5a1000067343ac7571a9a8f8309db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306530"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386816"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: tworzenie aplikacji Node.js Express w programie Visual Studio
 
-W tym samouczku Visual Studio tworzenia aplikacji przy użyciu usług Node.js i Express utworzysz prostą aplikację internetową usługi Node.js, dodasz kod, poznasz niektóre funkcje środowiska IDE i uruchamiasz aplikację. 
+W tym samouczku Visual Studio tworzenia aplikacji przy użyciu usług Node.js i Express utworzysz prostą aplikację internetową usługi Node.js, dodasz kod, poznasz niektóre funkcje środowiska IDE i uruchomemy aplikację. 
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pobierania](https://visualstudio.microsoft.com/downloads) Visual Studio, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano aplikacji Visual Studio, przejdź [](https://visualstudio.microsoft.com/downloads) do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 
 ## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
-Poniżej znajdziesz krótkie często zadawane pytania, w których znajdziesz wprowadzenie do niektórych kluczowych pojęć.
+Oto krótkie często zadawane pytania wprowadzające do niektórych kluczowych pojęć.
 
 ### <a name="what-is-nodejs"></a>Co to jest środowisko Node.js?
 
@@ -58,15 +59,15 @@ Node.js to środowisko uruchomieniowe JavaScript po stronie serwera, które wyko
 
 ### <a name="what-is-npm"></a>Co to jest npm?
 
-Npm jest domyślnym menedżerem pakietów dla Node.js. Menedżer pakietów ułatwia programistom publikowanie i udostępnianie kodu źródłowego bibliotek Node.js oraz upraszcza instalowanie, aktualizowanie i dezinstalację bibliotek.
+Npm jest domyślnym menedżerem pakietów dla Node.js. Menedżer pakietów ułatwia programistom publikowanie i udostępnianie kodu źródłowego bibliotek Node.js oraz upraszcza instalowanie, aktualizowanie i odinstalowywanie bibliotek.
 
 ### <a name="what-is-express"></a>Co to jest express?
 
-Express jest platformą aplikacji internetowych używaną jako struktury serwera dla Node.js do kompilowania aplikacji internetowych. Program Express umożliwia wybranie różnych platform frontonu w celu utworzenia interfejsu użytkownika, takiego jak Pug (dawniej Jade). W tym samouczku jest używany program Pug.
+Express jest platformą aplikacji internetowych używaną jako serwerowa Node.js do kompilowania aplikacji internetowych. Dzięki platformie Express można wybrać różne struktury frontonu, aby utworzyć interfejs użytkownika, na przykład Pug (dawniej Jade). Pug jest używany w tym samouczku.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Musisz mieć Visual Studio i obciążenie Node.js dewelopera.
+* Musisz mieć Visual Studio i obciążenie Node.js tworzenia aplikacji.
 
     ::: moniker range=">=vs-2019"
     Jeśli jeszcze nie zainstalowano programu Visual Studio 2019, [](https://visualstudio.microsoft.com/downloads/) przejdź do strony pobierania Visual Studio, aby zainstalować ją bezpłatnie.
@@ -77,13 +78,13 @@ Express jest platformą aplikacji internetowych używaną jako struktury serwera
 
     Jeśli musisz zainstalować obciążenie, ale masz już Visual Studio, przejdź do tematu Narzędzia Pobierz narzędzia i  >  **funkcje...,** co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **Node.js dewelopera,** a następnie wybierz pozycję **Modyfikuj.**
 
-    ![Node.js obciążenia w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
+    ![Node.js obciążenia w instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Musisz mieć zainstalowane Node.js uruchomieniowe.
 
-    Jeśli nie masz zainstalowanej wersji, zalecamy zainstalowanie wersji LTS z witryny internetowejNode.js, aby uzyskać najlepszą zgodność z zewnętrznymi platformami i bibliotekami. [](https://nodejs.org/en/download/) Node.js jest zbudowana dla architektur 32-bitowych i 64-bitowych. Narzędzia Node.js w Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Wymagany jest tylko jeden z nich, Node.js instalator obsługuje tylko jedną zainstalowaną na raz.
+    Jeśli nie jest on zainstalowany, zalecamy zainstalowanie wersji LTS z witryny internetowej [Node.js, ](https://nodejs.org/en/download/) aby uzyskać najlepszą zgodność z zewnętrznymi platformami i bibliotekami. Node.js jest zbudowana dla architektur 32-bitowych i 64-bitowych. Narzędzia Node.js w Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Wymagana jest tylko jedna Node.js a instalator obsługuje tylko jedną funkcję instalacyjną na raz.
     
-    Ogólnie rzecz biorąc, Visual Studio automatycznie wykrywa zainstalowane środowisko Node.js uruchomieniowe. Jeśli program nie wykryje zainstalowanego środowiska uruchomieniowego, możesz skonfigurować projekt do odwołania się do zainstalowanego środowiska uruchomieniowego na stronie **właściwości**(po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie Właściwości i ustaw ścieżkęNode.exe ). Możesz użyć globalnej instalacji Node.js lub określić ścieżkę do interpretera lokalnego w każdym z Node.js projektów. 
+    Ogólnie rzecz biorąc, Visual Studio automatycznie wykrywa zainstalowane środowisko Node.js uruchomieniowe. Jeśli program nie wykryje zainstalowanego środowiska uruchomieniowego, możesz skonfigurować projekt do odwołania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie Właściwości i ustaw ścieżkę **Node.exe**). Można użyć globalnej instalacji usługi Node.js lub określić ścieżkę do interpretera lokalnego w każdym z Node.js projektów. 
 
     Ten samouczek został przetestowany Node.js 8.10.0.
 
@@ -91,43 +92,43 @@ Express jest platformą aplikacji internetowych używaną jako struktury serwera
 
 Visual Studio zarządza plikami dla jednej aplikacji w *projekcie*. Projekt zawiera kod źródłowy, zasoby i pliki konfiguracji.
 
-W tym samouczku rozpoczniesz od prostego projektu zawierającego kod dla aplikacji Node.js express.
+W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji Node.js express.
 
 1. Otwórz program Visual Studio.
 
 1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij **klawisz Esc,** aby zamknąć okno uruchamiania. Naciśnij **klawisze Ctrl + Q,** aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję Utwórz nową podstawową aplikację platformy Azure Node.js **Express 4** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz.**
+    Naciśnij **klawisz Esc,** aby zamknąć okno uruchamiania. Naciśnij **klawisze Ctrl +Q,** aby otworzyć pole wyszukiwania, wpisz **Node.js**, a następnie wybierz pozycję Utwórz nową podstawową aplikację azure Node.js **Express 4** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz pozycję **File** New Project  >  **(Plik nowy**  >  **projekt).** W lewym okienku okna dialogowego **Nowy** projekt rozwiń pozycję **JavaScript,** a następnie wybierz **pozycjęNode.js**. W środkowym okienku wybierz pozycję **Podstawowa aplikacja azure Node.js Express 4, a** następnie wybierz przycisk **OK.**
+    Na górnym pasku menu wybierz pozycję **File** New Project  >  **(Plik nowy**  >  **projekt).** W lewym okienku okna dialogowego **Nowy** projekt rozwiń pozycję **JavaScript,** a następnie wybierz **pozycjęNode.js**. W środkowym okienku wybierz pozycję **Podstawowa usługa Azure Node.js Express 4,** a następnie wybierz przycisk **OK.**
     ::: moniker-end
-    Jeśli nie widzisz szablonu projektu aplikacji **Podstawowa usługa Azure Node.js Express 4,** musisz dodać **Node.js tworzenia** aplikacji. Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne.](#prerequisites)
+    Jeśli nie widzisz podstawowego szablonu projektu aplikacji **Azure Node.js Express 4,** musisz dodaćNode.js **tworzenia** aplikacji. Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne.](#prerequisites)
 
     Visual Studio tworzy nowe rozwiązanie i otwiera projekt w okienku po prawej stronie. Plik *app.js* projektu zostanie otwarty w edytorze (okienko po lewej stronie).
 
     ![Struktura projektu](../javascript/media/tutorial-project-structure.png)
 
-    (1) Wyróżnione  pogrubioną czcionką jest projekt, używając nazwy nadanych w oknie **dialogowym Nowy** projekt. W systemie plików ten projekt jest reprezentowany przez plik *.njsproj* w folderze projektu. Możesz ustawić właściwości i zmienne środowiskowe skojarzone z projektem, klikając projekt prawym przyciskiem myszy i wybierając polecenie **Właściwości**. Można wykonać rundy z innymi narzędziami programistyki, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle Node.js projektu.
+    (1) Wyróżnione **pogrubioną** czcionką jest twój projekt, używając nazwy nadaowej w **oknie dialogowym Nowy** projekt. W systemie plików ten projekt jest reprezentowany przez plik *.njsproj* w folderze projektu. Możesz ustawić właściwości i zmienne środowiskowe skojarzone z projektem, klikając projekt prawym przyciskiem myszy i wybierając pozycję **Właściwości**. Można wykonać rundy z innymi narzędziami programistyki, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle Node.js projektu.
 
     (2) Na najwyższym poziomie znajduje się rozwiązanie, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
-    (3) Węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w programie *package.js* i kliknąć prawym przyciskiem myszy opcje w węźle npm.
+    (3) Węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w programie *package.js* w węźle npm i kliknąć prawym przyciskiem myszy opcje.
 
-    (4) *package.jsto* plik używany przez program npm do zarządzania zależnościami pakietów i wersjami pakietów dla lokalnie zainstalowanych pakietów. Aby uzyskać więcej informacji, zobacz [Zarządzanie pakietami npm.](../javascript/npm-package-management.md)
+    (4) *package.jsjest* plikiem używanym przez program npm do zarządzania zależnościami pakietów i wersjami pakietów dla lokalnie zainstalowanych pakietów. Aby uzyskać więcej informacji, zobacz [Zarządzanie pakietami npm.](../javascript/npm-package-management.md)
 
-    (5) Pliki projektu, takie *app.js* są wyświetlane w węźle projektu. *app.js* jest plikiem startowym projektu i dlatego jest on pogrubiony.  Możesz ustawić plik startowy, klikając prawym przyciskiem myszy plik w projekcie i wybierając polecenie Ustaw jako **Node.js pliku startowego**.
+    (5) Pliki projektu, takie *app.js* są wyświetlane w węźle projektu. *app.js* to plik startowy projektu i dlatego jest on pogrubiony.  Plik startowy można ustawić, klikając prawym przyciskiem myszy plik w projekcie i wybierając polecenie Ustaw jako **Node.js pliku startowego**.
 
 1. Otwórz węzeł **npm** i upewnij się, że są obecne wszystkie wymagane pakiety npm.
 
-    Jeśli brakuje jakichkolwiek pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy **węzeł npm** i wybrać polecenie **Zainstaluj pakiety npm.**
+    Jeśli brakuje pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy **węzeł npm** i wybrać **polecenie Zainstaluj pakiety npm.**
 
 ## <a name="add-some-code"></a>Dodawanie kodu
 
-Aplikacja używa programu Pug na platformie Języka JavaScript frontonu. Pug używa prostego kodu znaczników, który kompiluje się do kodu HTML. (Pug jest ustawiony jako aparat widoku w *app.js*. Kod, który ustawia aparat widoku w *app.js* to `app.set('view engine', 'pug');` ).
+Aplikacja używa programu Pug na platformie JavaScript frontonu. Pug używa prostego kodu znaczników, który kompiluje się do kodu HTML. (Program Pug jest ustawiany jako aparat widoku *w* app.js. Kod, który ustawia aparat widoku w *app.js* to `app.set('view engine', 'pug');` ).
 
-1. W Eksplorator rozwiązań okienku po prawej stronie otwórz folder views, a następnie otwórz *plik index.pug.*
+1. W Eksplorator rozwiązań (w okienku po prawej stronie) otwórz folder views, a następnie otwórz *plik index.pug.*
 
 1. Zastąp zawartość poniższym kodem.
 
@@ -151,9 +152,9 @@ Aplikacja używa programu Pug na platformie Języka JavaScript frontonu. Pug uż
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    Powyższy kod jest używany do dynamicznego generowania strony HTML z tytułem i komunikatem powitalnym. Strona zawiera również kod do wyświetlania obrazu, który zmienia się po każdym naciśnięciu przycisku.
+    Powyższy kod służy do dynamicznego generowania strony HTML z tytułem i komunikatem powitalnym. Strona zawiera również kod do wyświetlania obrazu, który zmienia się po każdym naciśnięciu przycisku.
 
-1. W folderze routes otwórz *plikindex.js*.
+1. W folderze routes otwórz *folderindex.js*.
 
 1. Dodaj następujący kod przed wywołaniem do `router.get` :
 
@@ -178,9 +179,9 @@ Aplikacja używa programu Pug na platformie Języka JavaScript frontonu. Pug uż
     });
     ```
 
-    Poprzedni kod ustawia bieżącą stronę przy użyciu obiektu routera Express i renderuje stronę, przekazując tytuł i obiekt danych do strony. Plik *index.pug* jest tutaj określony jako strona do załadowania po *index.js.* *index.js* jest konfigurowana jako trasa domyślna w kodzie *app.js* (nie jest wyświetlana).
+    Powyższy kod ustawia bieżącą stronę przy użyciu obiektu routera express i renderuje stronę, przekazując tytuł i obiekt danych do strony. Plik *index.pug* jest tutaj określony jako strona do załadowania po *index.js.* *index.js* jest skonfigurowana jako trasa domyślna w kodzie *app.js* (nie jest wyświetlana).
 
-    Aby zademonstrować kilka Visual Studio, w wierszu kodu zawierającym wartość występuje celowy `res.render` błąd. Należy naprawić błąd przed uruchomieniem aplikacji, co zrobisz w następnej sekcji.
+    Aby zademonstrować kilka Visual Studio, w wierszu kodu zawierającym wartość występuje celowy błąd `res.render` . Należy naprawić błąd przed uruchomieniem aplikacji, co zrobisz w następnej sekcji.
 
 ## <a name="use-intellisense"></a>Korzystanie z funkcji IntelliSense
 
@@ -188,13 +189,13 @@ IntelliSense to Visual Studio, które pomaga podczas pisania kodu.
 
 1. W *index.js* przejdź do wiersza kodu zawierającego `res.render` .
 
-1. Umieść kursor po ciągu, wpisz , a funkcja IntelliSense pokaże funkcję `data` `: get` `getData` zdefiniowaną wcześniej w kodzie. Wybierz pozycję `getData`.
+1. Umieść kursor za ciągiem , wpisz , a funkcja IntelliSense pokaże funkcję `data` `: get` `getData` zdefiniowaną wcześniej w kodzie. Wybierz pozycję `getData`.
 
     ![Korzystanie z funkcji IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
 
-1. Dodaj nawiasy, aby było wywołaniem `getData()` funkcji .
+1. Dodaj nawiasy , aby było wywołaniem funkcji `getData()` .
 
-1. Usuń przecinek ( ) przed i `,` `"data"` zobaczysz zielone wyróżnianie składni w wyrażeniu. Umieść kursor na wyróżnianiu składni.
+1. Usuń przecinek ( ) przed , a w wyrażeniu zostanie `,` `"data"` wyróżniona zielona składnia. Umieść kursor na wyróżnianiu składni.
 
     ![Wyświetlanie błędu składni](../javascript/media/tutorial-nodejs-syntax-checking.png)
 
