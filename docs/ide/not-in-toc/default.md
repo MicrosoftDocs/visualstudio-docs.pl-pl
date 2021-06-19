@@ -1,5 +1,5 @@
 ---
-title: Strona domyślna pomocy F1
+title: Pomoc F1 brak dopasowania rezerwowego
 description: Niestety! Nie znaleziono dopasowania F1.
 ms.prod: visual-studio
 ms.technology: ''
@@ -12,16 +12,16 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 1670b694374c72c641eaedf8a65c5c8b2fa93bb2
-ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
+ms.openlocfilehash: cc15c7ac377899ddb8660782e6015cfc975aa8dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "112365442"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390571"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>Niestety! Nie `F1` znaleziono dopasowania pomocy
 
-Niestety! Wygląda na to, że nie mogliśmy znaleźć tego, czego szukasz. 
+Niestety! Wygląda na to, że nie można znaleźć tego, czego szukasz. 
 
 :::image type="content" source="../media/search-error-page-sm.png" alt-text="Niestety, nie można odnaleźć dopasowania" border="false":::
 
@@ -38,7 +38,7 @@ Niestety! Wygląda na to, że nie mogliśmy znaleźć tego, czego szukasz.
 **Nie chodziło o kliknięcie?** [Ponowne mapowanie lub wyłączanie `F1` klucza pomocy](../not-in-toc/change-f1-help-key.md)
 
 
-## <a name="help-us-serve-you-better"></a>Pomóż nam w lepszym służenia
+## <a name="help-us-serve-you-better"></a>Pomóż nam lepiej Ci pomóc
 
 Poinformuj nas, gdzie jesteś w produkcie i jakiej pomocy potrzebujesz.   
 <br/>Użyj `This Page` przycisku opinii w dolnej części tej strony. 

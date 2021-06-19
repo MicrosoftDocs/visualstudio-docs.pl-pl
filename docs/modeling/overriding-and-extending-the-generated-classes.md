@@ -1,36 +1,36 @@
 ---
 title: Zastępowanie i rozszerzanie wygenerowanych klas
-description: Dowiedz się, w jaki sposób Definicja DSL jest platformą, na której można utworzyć zaawansowany zestaw narzędzi opartych na języku specyficznym dla domeny.
+description: Dowiedz się, jak definicja DSL to platforma, na której można utworzyć zaawansowany zestaw narzędzi opartych na języku specyficznym dla domeny.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b570601ad273a948f46d95105fcd4054419c71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07c44e7ff7a603f339ec268b06bd78cc84cd6be2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897781"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390948"
 ---
-# <a name="override-and-extend-the-generated-classes"></a>Przesłoń i rozwiń wygenerowane klasy
+# <a name="override-and-extend-the-generated-classes"></a>Zastępowanie i rozszerzanie wygenerowanych klas
 
-Definicja DSL jest platformą, na której można utworzyć zaawansowany zestaw narzędzi opartych na języku specyficznym dla domeny. Wiele rozszerzeń i adaptacji można wprowadzać przez zastępowanie i rozszerzanie klas, które są generowane na podstawie definicji DSL. Klasy te zawierają nie tylko klasy domeny, które zostały jawnie zdefiniowane w diagramie definicji DSL, ale również inne klasy, które definiują Przybornik, Eksploratora, serializacji i tak dalej.
+Definicja DSL to platforma, na której można utworzyć zaawansowany zestaw narzędzi opartych na języku specyficznym dla domeny. Wiele rozszerzeń i adaptacji można tworzyć przez zastępowanie i rozszerzanie klas, które są generowane na podstawie definicji DSL. Te klasy obejmują nie tylko klasy domeny, które zostały jawnie zdefiniowane w diagramie definicji DSL, ale także inne klasy, które definiują przybornik, eksploratora, serializacji i tak dalej.
 
 ## <a name="extensibility-mechanisms"></a>Mechanizmy rozszerzalności
 
-Dostępnych jest kilka mechanizmów umożliwiających rozbudowanie wygenerowanego kodu.
+Istnieje kilka mechanizmów, które umożliwiają rozszerzenie wygenerowanego kodu.
 
-### <a name="override-methods-in-a-partial-class"></a>Przesłoń metody w klasie częściowej
+### <a name="override-methods-in-a-partial-class"></a>Zastępowanie metod w klasie częściowej
 
-Częściowe definicje klas umożliwiają zdefiniowanie klasy w więcej niż jednym miejscu. Dzięki temu możesz oddzielić wygenerowany kod od kodu, który napiszesz samodzielnie. W kodzie ręcznym, można przesłonić klasy dziedziczone przez wygenerowany kod.
+Definicje klas częściowych umożliwiają definiowanie klasy w więcej niż jednym miejscu. Dzięki temu można oddzielić wygenerowany kod od kodu, który piszesz samodzielnie. W ręcznie napisanym kodzie można przesłonić klasy dziedziczone przez wygenerowany kod.
 
-Na przykład, jeśli w definicji DSL definiujesz klasę domeny o nazwie `Book` , można napisać niestandardowy kod, który dodaje metody zastąpień:
+Jeśli na przykład w definicji DSL zdefiniujesz klasę domeny o nazwie , możesz napisać kod niestandardowy, który `Book` dodaje metody przesłonięcia:
 
 ```csharp
 public partial class Book
@@ -44,54 +44,54 @@ public partial class Book
 ```
 
 > [!NOTE]
-> Aby przesłonić metody w generowanej klasie, należy zawsze pisać kod w pliku, który jest oddzielony od wygenerowanych plików. Zazwyczaj plik jest zawarty w folderze o nazwie atrybut CustomCode. Jeśli wprowadzisz zmiany w wygenerowanym kodzie, zostaną one utracone w przypadku ponownego wygenerowania kodu z definicji DSL.
+> Aby zastąpić metody w wygenerowanej klasie, zawsze zapisuj kod w pliku oddzielonym od wygenerowanych plików. Zazwyczaj plik znajduje się w folderze o nazwie CustomCode. Jeśli wprowadzasz zmiany w wygenerowanym kodzie, zostaną one utracone podczas ponownego generowania kodu z definicji DSL.
 
-Aby poznać metody, które można przesłonić, wpisz **przesłonięcie** w klasie, po którym następuje spacja. Etykietka narzędzia IntelliSense informuje, jakie metody można przesłaniać.
+Aby dowiedzieć się, jakie metody można przesłonić, wpisz **przesłonięcie** w klasie, a następnie spację. Etykietka narzędzia IntelliSense pokaże, jakie metody można przesłonić.
 
-### <a name="double-derived-classes"></a>Klasy Double-Derived
+### <a name="double-derived-classes"></a>Double-Derived klasy
 
-Większość metod w wygenerowanych klasach jest dziedziczona ze stałego zestawu klas w przestrzeni nazw modelowania. Jednak niektóre metody są zdefiniowane w wygenerowanym kodzie. Zwykle oznacza to, że nie można ich zastąpić; nie można przesłonić w jednej częściowej klasie metod, które są zdefiniowane w innej częściowej definicji tej samej klasy.
+Większość metod w wygenerowanych klasach jest dziedziczona ze stałego zestawu klas w przestrzeniach nazw modelowania. Jednak niektóre metody są zdefiniowane w wygenerowanym kodzie. Zwykle oznacza to, że nie można ich zastąpić; Nie można przesłonić w jednej częściowej klasy metod zdefiniowanych w innej częściowej definicji tej samej klasy.
 
-Niemniej jednak można zastąpić te metody przez ustawienie opcji **Generuj podwójną flagę pochodną** dla klasy domeny. Powoduje to wygenerowanie dwóch klas, jedną z nich jest abstrakcyjną klasą bazową drugiej. Wszystkie definicje metody i właściwości znajdują się w klasie bazowej, a tylko Konstruktor znajduje się w klasie pochodnej.
+Niemniej jednak można przesłonić te metody, ustawiając flagę **Generuje podwójne** pochodne dla klasy domeny. Powoduje to wygenerowanie dwóch klas, z których jedna jest abstrakcyjną klasą bazową drugiej. Wszystkie definicje metod i właściwości znajdują się w klasie bazowej, a tylko konstruktor znajduje się w klasie pochodnej.
 
-Na przykład w bibliotece Sample. DSL `CirculationBook` Klasa domeny ma `Generates``Double Derived` ustawioną właściwość `true` . Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
+Na przykład w przykładowym bibliotece Library.dsl klasa `CirculationBook` domeny ma `Generates``Double Derived` właściwość ustawioną na `true` . Wygenerowany kod dla tej klasy domeny zawiera dwie klasy:
 
-- `CirculationBookBase`, który jest abstrakcyjny i zawiera wszystkie metody i właściwości.
+- `CirculationBookBase`, który jest abstrakcją i który zawiera wszystkie metody i właściwości.
 
-- `CirculationBook`, który pochodzi od `CirculationBookBase` . Jest ona pusta, z wyjątkiem konstruktorów.
+- `CirculationBook`, który pochodzi od klasy `CirculationBookBase` . Jest pusty, z wyjątkiem jego konstruktorów.
 
-Aby zastąpić każdą metodę, należy utworzyć częściową definicję klasy pochodnej, na przykład `CirculationBook` . Można zastąpić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
+Aby zastąpić dowolną metodę, należy utworzyć częściową definicję klasy pochodnej, taką jak `CirculationBook` . Można przesłonić zarówno wygenerowane metody, jak i metody dziedziczone z struktury modelowania.
 
-Tej metody można użyć z wszystkimi typami elementów, w tym elementami modelu, relacjami, kształtami, diagramami i łącznikami. Można również przesłonić metody innych wygenerowanych klas. Niektóre wygenerowane klasy, takie jak ToolboxHelper, są zawsze wyprowadzane podwójnie.
+Tej metody można używać ze wszystkimi typami elementów, w tym elementami modelu, relacjami, kształtami, diagramami i łącznikami. Można również przesłonić metody innych wygenerowanych klas. Niektóre wygenerowane klasy, takie jak PrzybornikHelper, są zawsze dwupozyteczne.
 
 ### <a name="custom-constructors"></a>Konstruktory niestandardowe
 
-Nie można zastąpić konstruktora. Nawet w przypadku klas o podwójnej pochodnej Konstruktor musi znajdować się w klasie pochodnej.
+Nie można przesłonić konstruktora. Nawet w klasach z podwójnymi pochodnymi konstruktor musi znajdować się w klasie pochodnej.
 
-Aby zapewnić własny Konstruktor, można to zrobić przez ustawienie `Has Custom Constructor` klasy domeny w definicji DSL. Po kliknięciu przycisku **Przekształć wszystkie szablony**, wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie zawierać wywołanie brakującego konstruktora. Powoduje to raport o błędach podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby wyświetlić komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
+Jeśli chcesz podać własny konstruktor, możesz to zrobić, ustawiając dla klasy `Has Custom Constructor` domeny w definicji DSL. Po kliknięciu **przycisku Przekształć** wszystkie szablony wygenerowany kod nie będzie zawierać konstruktora dla tej klasy. Będzie on zawierać wywołanie brakującego konstruktora. Spowoduje to zgłoszenie błędu podczas kompilowania rozwiązania. Kliknij dwukrotnie raport o błędach, aby zobaczyć komentarz w wygenerowanym kodzie, który wyjaśnia, co należy podać.
 
-Napisz częściową definicję klasy w pliku, który jest oddzielony od wygenerowanych plików, i podaj konstruktora.
+Zapisz definicję klasy częściowej w pliku, który jest oddzielony od wygenerowanych plików i podaj konstruktor.
 
-### <a name="flagged-extension-points"></a>Oflagowane punkty rozszerzenia
+### <a name="flagged-extension-points"></a>Oflagowane punkty rozszerzeń
 
-Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że zostanie określona metoda niestandardowa. Konstruktory niestandardowe są jednym przykładem. Inne przykłady obejmują ustawienie `Kind` właściwości domeny na obliczeniową lub niestandardową magazyn lub ustawienie flagi **is Custom** w konstruktorze połączenia.
+Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustawić właściwość lub pole wyboru, aby wskazać, że należy podać metodę niestandardową. Konstruktory niestandardowe są jednym z przykładów. Inne przykłady obejmują ustawienie właściwości domeny na Wartość obliczeniowa lub Magazyn niestandardowy albo ustawienie `Kind` flagi **Jest** niestandardowe w konstruktorze połączeń.
 
-W każdym przypadku, gdy ustawisz flagę i wygenerujesz ponownie kod, zostanie zwrócony błąd kompilacji. Kliknij dwukrotnie błąd, aby wyświetlić komentarz wyjaśniający, co należy podać.
+W każdym przypadku, gdy ustawisz flagę i ponownie wygenerujemy kod, zostanie wygenerowany błąd kompilacji. Kliknij dwukrotnie błąd, aby wyświetlić komentarz wyjaśniacy, co należy podać.
 
 ### <a name="rules"></a>Reguły
 
-Menedżer transakcji umożliwia definiowanie reguł, które są uruchamiane przed końcem transakcji, w której wystąpiło określone zdarzenie, takie jak zmiana właściwości. Reguły są zwykle używane do obsługi synchronism między różnymi elementami w sklepie. Na przykład reguły są używane do upewnienia się, że na diagramie jest wyświetlany bieżący stan modelu.
+Menedżer transakcji umożliwia definiowanie reguł uruchamianych przed końcem transakcji, w którym wystąpiło wyznaczone zdarzenie, takie jak zmiana właściwości. Reguły są zwykle używane do utrzymania pomięć między różnymi elementami w magazynie. Na przykład reguły są używane w celu upewninia się, że na diagramie jest wyświetlany bieżący stan modelu.
 
-Reguły są definiowane dla poszczególnych klas, dzięki czemu nie trzeba mieć kodu, który rejestruje regułę dla każdego obiektu. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+Reguły są definiowane dla poszczególnych klas, dzięki czemu nie trzeba mieć kodu, który rejestruje regułę dla każdego obiektu. Aby uzyskać więcej informacji, zobacz [Reguły propagacji zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
-### <a name="store-events"></a>Zdarzenia ze sklepu
+### <a name="store-events"></a>Przechowywanie zdarzeń
 
-Magazyn modelowania udostępnia mechanizm zdarzeń, którego można użyć do nasłuchiwania określonych typów zmian w magazynie, w tym dodawania i usuwania elementów, zmiany wartości właściwości i tak dalej. Procedury obsługi zdarzeń są wywoływane po zamknięciu transakcji, w której zostały wprowadzone zmiany. Zwykle te zdarzenia są używane do aktualizowania zasobów poza magazynem.
+Magazyn modelowania udostępnia mechanizm zdarzeń, który umożliwia nasłuchiwać określonych typów zmian w magazynie, w tym dodawanie i usuwanie elementów, zmiany wartości właściwości i tak dalej. Procedury obsługi zdarzeń są wywoływane po zamknięciu transakcji, w której zostały wprowadzone zmiany. Zazwyczaj te zdarzenia są używane do aktualizowania zasobów poza magazynem.
 
-### <a name="net-events"></a>Zdarzenia platformy .NET
+### <a name="net-events"></a>Zdarzenia .NET
 
-Możesz subskrybować niektóre zdarzenia na kształtach. Na przykład można nasłuchiwać kliknięć myszą na kształcie. Musisz napisać kod, który subskrybuje zdarzenie dla każdego obiektu. Ten kod można napisać w przesłonięciu InitializeInstanceResources ().
+Możesz subskrybować niektóre zdarzenia na kształtach. Na przykład możesz nasłuchiwać kliknięć myszą na kształcie. Musisz napisać kod, który subskrybuje zdarzenie dla każdego obiektu. Ten kod można zapisywać w przesłonięciu metody InitializeInstanceResources().
 
-Niektóre zdarzenia są generowane w ShapeFields, które są używane do rysowania dekoratory na kształcie. Aby zapoznać się z przykładem, zobacz [How to: przechwycenie kliknięcia kształtu lub dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Niektóre zdarzenia są generowane w polach ShapeField, które są używane do rysowania dekoratorów na kształcie. Aby uzyskać przykład, zobacz [How to: Intercept a Click on a Shape (Jak przechwycić kliknięcie) lub Decorator (Dekorator).](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 
-Te zdarzenia zazwyczaj nie występują w obrębie transakcji. Jeśli chcesz wprowadzić zmiany w sklepie, należy utworzyć transakcję.
+Te zdarzenia zwykle nie występują wewnątrz transakcji. Należy utworzyć transakcję, jeśli chcesz wprowadzić zmiany w magazynie.

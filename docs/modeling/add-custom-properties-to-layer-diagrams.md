@@ -1,46 +1,46 @@
 ---
 title: Dodawanie właściwości niestandardowych do diagramów zależności
-description: Dowiedz się, w jaki sposób można przechowywać wartości z dowolnym elementem w diagramie zależności podczas pisania kodu rozszerzenia dla diagramów zależności.
+description: Dowiedz się, jak przechowywać wartości z dowolnym elementem na diagramie zależności podczas pisania kodu rozszerzenia dla diagramów zależności.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70588a2d472a1170b58911eece4fa70831064f72
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946465"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389855"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Dodawanie właściwości niestandardowych do diagramów zależności
 
-Podczas pisania kodu rozszerzenia dla diagramów zależności można przechowywać wartości z dowolnym elementem na diagramie zależności. Wartości będą utrwalane po zapisaniu i ponownym otwarciu diagramu. Możesz również mieć te właściwości, które są wyświetlane w oknie **Właściwości** , aby użytkownicy mogli je zobaczyć i edytować. Na przykład możesz zezwolić użytkownikom na określenie wyrażenia regularnego dla każdej warstwy i napisać kod sprawdzania poprawności, aby sprawdzić, czy nazwy klas w poszczególnych warstwach są zgodne ze wzorcem określonym przez użytkownika.
+Podczas pisania kodu rozszerzenia dla diagramów zależności można przechowywać wartości z dowolnym elementem na diagramie zależności. Wartości zostaną utrwalone, gdy diagram zostanie zapisany i ponownie otwarty. Te właściwości mogą być również wyświetlane w **oknie** Właściwości, dzięki czemu użytkownicy mogą je wyświetlać i edytować. Można na przykład pozwolić użytkownikom na określenie wyrażenia regularnego dla każdej warstwy i napisanie kodu weryfikacji w celu sprawdzenia, czy nazwy klas w każdej warstwie są zgodne ze wzorcem określonym przez użytkownika.
 
-## <a name="non-visible-properties"></a>Niewidoczne właściwości
+## <a name="non-visible-properties"></a>Właściwości niewidoczne
 
-Jeśli chcesz, aby kod dołączył wartości do dowolnego elementu na diagramie zależności, nie musisz definiować składnika MEF. Istnieje słownik o nazwie `Properties` w [ILayerElement](/previous-versions/ff644511(v=vs.140)). Po prostu Dodaj wartości, które można zorganizować do słownika dowolnego elementu warstwy. Zostaną one zapisane w ramach diagramu zależności.
+Jeśli chcesz, aby kod dołączał wartości do dowolnego elementu na diagramie zależności, nie musisz definiować składnika MEF. Istnieje słownik o nazwie w `Properties` [ILayerElement](/previous-versions/ff644511(v=vs.140)). Wystarczy dodać wartości z marshalable do słownika dowolnego elementu warstwy. Zostaną one zapisane w ramach diagramu zależności.
 
 ## <a name="editable-properties"></a>Właściwości edytowalne
 
 **Wstępne przygotowanie**
 
 > [!IMPORTANT]
-> Aby wyświetlić właściwości, wprowadź następujące zmiany na każdym komputerze, na którym właściwości warstwy mają być widoczne:
+> Aby właściwości były wyświetlane, należy wprowadzić następujące zmiany na każdym komputerze, na którym mają być widoczne właściwości warstwy:
 >
-> 1. Uruchom program Notepad przy użyciu polecenia **Uruchom jako administrator**. Otwórz *program%ProgramFiles%\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. W elemencie **Content (zawartość** ) Dodaj:
+> 1. Uruchom Notatnik przy użyciu funkcji **Uruchom jako administrator.** Otwórz *plik %ProgramFiles%\Microsoft Visual Studio [wersja]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest.*
+> 2. W **elemencie Content** dodaj:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. W sekcji **Visual Studio Tools** w menu Start aplikacji Visual Studio otwórz pozycję **wiersz polecenia dla deweloperów**. Wprowadź:
+> 3. W **sekcji Visual Studio Tools** menu Start aplikacji Visual Studio otwórz **wiersz polecenia dla deweloperów**. Wprowadź:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -49,11 +49,11 @@ Jeśli chcesz, aby kod dołączył wartości do dowolnego elementu na diagramie 
 
 **Upewnij się, że kod znajduje się w projekcie VSIX**
 
-Jeśli właściwość jest częścią polecenia, gestu lub projektu walidacji, nie trzeba dodawać żadnych elementów. Kod właściwości niestandardowej powinien być zdefiniowany w projekcie rozszerzalności programu Visual Studio zdefiniowanym jako składnik MEF. Aby uzyskać więcej informacji, zobacz [Dodawanie poleceń i gestów do diagramów zależności](../modeling/add-commands-and-gestures-to-layer-diagrams.md) lub [Dodawanie niestandardowej walidacji architektury do diagramów zależności](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Jeśli właściwość jest częścią projektu polecenia, gestu lub walidacji, nie trzeba niczego dodawać. Kod właściwości niestandardowej powinien być zdefiniowany w projekcie rozszerzalności Visual Studio zdefiniowanym jako składnik MEF. Aby uzyskać więcej informacji, zobacz [Dodawanie poleceń i gestów](../modeling/add-commands-and-gestures-to-layer-diagrams.md) do diagramów zależności lub Dodawanie niestandardowej weryfikacji architektury do [diagramów zależności.](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 
-**Zdefiniuj właściwość niestandardową**
+**Definiowanie właściwości niestandardowej**
 
-Aby utworzyć niestandardową właściwość, zdefiniuj klasę taką jak ta:
+Aby utworzyć właściwość niestandardową, zdefiniuj klasę w ten sposób:
 
 ```csharp
 [Export(typeof(IPropertyExtension))]
@@ -63,13 +63,13 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-Można zdefiniować właściwości [ILayerElement](/previous-versions/ff644511(v=vs.140)) lub dowolnej z klas pochodnych, które obejmują:
+Można zdefiniować właściwości elementu [ILayerElement](/previous-versions/ff644511(v=vs.140)) lub dowolnej z jego klas pochodnych, takich jak:
 
-- `ILayerModel` — Model
+- `ILayerModel` — model
 
-- `ILayer` -Każda warstwa
+- `ILayer` — każda warstwa
 
-- `ILayerDependencyLink` -linki między warstwami
+- `ILayerDependencyLink` — łącza między warstwami
 
 - `ILayerComment`
 
@@ -77,7 +77,7 @@ Można zdefiniować właściwości [ILayerElement](/previous-versions/ff644511(v
 
 ## <a name="example"></a>Przykład
 
-Poniższy kod jest typowym deskryptorem właściwości niestandardowych. Definiuje Właściwość Boolean modelu warstwy ( `ILayerModel` ), która umożliwia użytkownikowi podanie wartości dla niestandardowej metody walidacji.
+Poniższy kod jest typowym deskryptorem właściwości niestandardowych. Definiuje właściwość logiczną w modelu warstwy ( ), która umożliwia użytkownikowi podanie wartości `ILayerModel` dla niestandardowej metody weryfikacji.
 
 ```csharp
 using System;

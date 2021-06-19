@@ -1,6 +1,6 @@
 ---
 title: Właściwości kształtów przedziałów
-description: Dowiedz się, że kształty przedziału są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny.
+description: Dowiedz się, że kształty przedziałów są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,54 +8,54 @@ f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb97f6b218655266afeaeec6198ea52d35c76c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ec84057bfe7d49760a8f95132a30e8c927f60f0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905496"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390831"
 ---
 # <a name="properties-of-compartment-shapes"></a>Właściwości kształtów przedziałów
-Kształty przedziału są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny. Przedziały można rozwijać i zwijać.
+Kształty przedziałów są jednym z kształtów, których można użyć do wyświetlania klasy domeny w języku specyficznym dla domeny. Przedziały można rozwijać i zwijać.
 
- Aby uzyskać więcej informacji, zobacz [How to define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat sposobu korzystania z tych właściwości, zobacz [Dostosowywanie i rozszerzanie języka Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Aby uzyskać więcej informacji, [zobacz How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz Dostosowywanie i [rozszerzanie Domain-Specific języku](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Kształty przedziału mają właściwości, które są wymienione w poniższej tabeli.
+ Kształty przedziałów mają właściwości wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślne|
 |-|-|-|
-|Domyślny stan zwijania rozwiń|Jeśli `Expanded` przedziały są pokazywane podczas tworzenia. Jeśli `Collapsed` nie, to nie.|Rozwinięte|
+|Domyślny stan zwinięcia rozwinięcia|Jeśli `Expanded` , przedziały są wyświetlane podczas tworzenia. W `Collapsed` przypadku , nie są.|Rozwinięte|
 |Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
 |Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Pozioma|
-|Geometria|Geometria tego kształtu (prostokąt lub prostokąt zaokrąglony).|Prostokąt|
-|Ma domyślne punkty połączenia|Jeśli `True` kształt będzie używać górnego, dolnego, lewego i prawego punktu połączenia w wygenerowanym projektancie.|Fałsz|
-|Widoczny nagłówek pojedynczego przedziału|Jeśli `False` i kształt ma jeden przedział, nagłówek przedziału nie jest widoczny.|Prawda|
+|Geometria|Geometria tego kształtu (prostokąt lub zaokrąglony prostokąt).|Prostokąt|
+|Ma domyślne punkty połączenia|W przypadku obiektu kształt będzie używać punktów połączenia `True` górnych, dolnych, lewych i prawych w wygenerowanym projektancie.|Fałsz|
+|Jest widoczny nagłówek pojedynczego przedziału|Jeśli , a kształt ma jeden przedział, nagłówek `False` przedziału nie jest widoczny.|Prawda|
 |Kolor konturu|Kolor konturu tego kształtu.|Czarnoskórzy|
-|Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (pełny, kreska, kropka, DashDot, DashDotDot, niestandardowy).|Ciągła|
-|Grubość konturu|Grubość konturu tego kształtu.|0,03125|
-|Kolor tekstu|Kolor używany dla dekoratory tekstu, które są skojarzone z tym kształtem.|Czarnoskórzy|
+|Styl łącznika konturu|Styl łącznika konturu tego kształtu (Solid, Dash, Dot, DashDot, DashDotDot, Custom).|Ciągła|
+|Grubość konturu|Grubość konturu tego kształtu.|0.03125|
+|Kolor tekstu|Kolor używany dla dekoratorów tekstu skojarzonych z tym kształtem.|Czarnoskórzy|
 |Modyfikator dostępu|Poziom dostępu kształtu przedziału ( `public` lub `internal` ).|Publiczne|
-|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana z tego kształtu przedziału|\<none>|
-|Generuje podwójny pochodny|Jeśli `True` , zostanie wygenerowany zarówno klasę bazową, jak i Klasa częściowa (do obsługi dostosowywania za pomocą przesłonięć). Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
-|Ma Konstruktor niestandardowy|Jeśli `True` w kodzie źródłowym zostanie podany Konstruktor niestandardowy. Aby uzyskać więcej informacji, zobacz [przesłanianie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z kształtu przedziału ( `none` `abstract` lub `sealed` ).|Brak|
-|Podstawowy kształt przedziału|Klasa bazowa tego kształtu.|(brak)|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowana na podstawie tego kształtu przedziału|\<none>|
+|Generuje podwójne pochodne|Jeśli zostanie wygenerowana zarówno klasa bazowa, jak i klasa częściowa (w celu obsługi `True` dostosowywania za pomocą zastąpień). Aby uzyskać więcej informacji, zobacz [Zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
+|Ma niestandardowy konstruktor|Jeśli `True` , niestandardowy konstruktor zostanie podany w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [Zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|Fałsz|
+|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego generowanego na podstawie kształtu przedziału ( `none` `abstract` , lub `sealed` ).|Brak|
+|Kształt przedziału podstawowego|Klasa bazowa tego kształtu.|(brak)|
 |Nazwa|Nazwa tego kształtu.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest powiązana z tym kształtem.|Bieżąca przestrzeń nazw|
-|Typ etykietki narzędzia|Sposób definiowania etykietki narzędzia (stała, zmienna lub brak). Jeśli stała, wartość `Fixed Tooltip Text` właściwości jest używana jako etykietka narzędzia; Jeśli zmienna, a następnie etykietka narzędzia jest definiowana w kodzie niestandardowym.|brak|
-|Uwagi|Nieformalne notatki, które są skojarzone z tym kształtem.|\<none>|
-|Początkowa wysokość|Początkowa wysokość tego kształtu (w calach). W przypadku kształtów przedziału jest to wysokość sekcji tylko nagłówka i nie można zmienić jej rozmiaru.|1|
-|Szerokość początkowa|Początkowa Szerokość tego kształtu (w calach).|1.5|
-|Uwidoczniony kolor wypełnienia jako właściwość<br /><br /> Uwidaczniany tryb gradientu wypełnienia<br /><br /> Uwidoczniony kolor konturu jako właściwość<br /><br /> Uwidoczniony styl kreskowania konturu jako właściwość<br /><br /> Uwidoczniona grubość konturu jako właściwość<br /><br /> Uwidacznia kolor tekstu|Jeśli `True` użytkownik może ustawić właściwość wartość dla kształtu. Aby ustawić tę opcję, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij pozycję **Dodaj uwidocznione**.|Fałsz|
-|Opis|Służy do dokumentowania wygenerowanego projektanta.|\<none>|
+|Przestrzeń nazw|Przestrzeń nazw powiązana z tym kształtem.|Bieżąca przestrzeń nazw|
+|Typ etykietki narzędzia|Jak jest zdefiniowana etykietka narzędzia (stała, zmienna lub brak). Jeśli zmienna jest stała, wartość właściwości jest używana jako etykietka narzędzia. Jeśli zmienna, etykietka narzędzia jest definiowana `Fixed Tooltip Text` w kodzie niestandardowym.|brak|
+|Uwagi|Notatki nieformalne skojarzone z tym kształtem.|\<none>|
+|Wysokość początkowa|Początkowa wysokość tego kształtu, w calach. W przypadku kształtów przedziałów jest to tylko wysokość sekcji nagłówka i nie można zmienić jej rozmiaru.|1|
+|Szerokość początkowa|Początkowa szerokość tego kształtu, w calach.|1.5|
+|Ujawniono właściwość Kolor wypełnienia jako<br /><br /> Ujawniony tryb gradientu wypełnienia<br /><br /> Ujawniono kolor konturu jako właściwość<br /><br /> Ujawniono styl łącznika konturu jako właściwość<br /><br /> Ujawniono grubość konturu jako właściwość<br /><br /> Uwidacznia kolor tekstu|Jeśli `True` , użytkownik może ustawić podaną właściwość kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu i kliknij polecenie **Dodaj ujawnione**.|Fałsz|
+|Opis|Służy do dokumentować wygenerowanego projektanta.|\<none>|
 |Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<none>|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałej etykietki narzędzia.|\<none>|
-|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<none>|
+|Naprawiono tekst etykietki narzędzia|Tekst używany dla stałej etykietki narzędzia.|\<none>|
+|Słowo kluczowe pomocy|Słowo kluczowe używane do indeksowania pomocy F1 dla tego kształtu.|\<none>|
 
 ## <a name="see-also"></a>Zobacz też
 

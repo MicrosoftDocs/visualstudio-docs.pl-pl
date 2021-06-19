@@ -1,32 +1,32 @@
 ---
 title: 'Porady: dodawanie obsługi przeciągania i upuszczania'
-description: Dowiedz się, w jaki sposób można dodać programy obsługi dla zdarzeń przeciągania i upuszczania do DSL, aby umożliwić użytkownikom przeciąganie elementów na diagram z innych diagramów.
+description: Dowiedz się, jak dodać procedury obsługi dla zdarzeń przeciągania i upuszczania do dsl, aby użytkownicy mogą przeciągać elementy na diagram z innych diagramów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79b58ee6ebd4db3ee9727bf59b260f281ba00275
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941440"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390414"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 
-Można dodać programy obsługi dla zdarzeń przeciągania i upuszczania do linii DSL, aby użytkownicy mogli przeciągać elementy na diagram z innych diagramów lub z innych części programu Visual Studio. Możesz również dodać procedury obsługi dla zdarzeń, takich jak podwójne kliknięcia. Jednocześnie programy obsługi przeciągania i upuszczania oraz podwójnego kliknięcia są znane jako *programy obsługi gestów*.
+Do dsl można dodać programy obsługi dla zdarzeń przeciągania i upuszczania, dzięki czemu użytkownicy mogą przeciągać elementy na diagram z innych diagramów lub z innych części Visual Studio. Można również dodać programy obsługi dla zdarzeń, takich jak dwukrotne kliknięcia. Programy obsługi przeciągania i upuszczania oraz dwukrotnego kliknięcia są razem nazywane programami obsługi *gestów*.
 
-W tym temacie omówiono gesty przeciągania i upuszczania, które pochodzą z innych diagramów. Dla zdarzeń przenoszenia i kopiowania w ramach jednego diagramu należy rozważyć alternatywę definiowania podklasy `ElementOperations` . Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md). Możliwe jest również dostosowanie definicji DSL.
+W tym temacie omówiono gesty przeciągania i upuszczania pochodzące z innych diagramów. W przypadku zdarzeń przenoszenia i kopiowania w ramach jednego diagramu rozważ alternatywę definiowania podklasy `ElementOperations` . Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania kopiowania.](../modeling/customizing-copy-behavior.md) Można również dostosować definicję DSL.
 
-## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definiowanie obsługi gestów przez zastąpienie metod ShapeElement
+## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definiowanie programów obsługi gestów przez zastępowanie metod ShapeElement
 
-`OnDragDrop`, `OnDoubleClick` , `OnDragOver` , i inne metody mogą zostać zastąpione.
+`OnDragDrop`Można `OnDoubleClick` przesłonić metody , , i `OnDragOver` inne.
 
-Dodaj nowy plik kodu do projektu DSL. Dla programu obsługi gestu zazwyczaj muszą istnieć co najmniej następujące `using` dyrektywy:
+Dodaj nowy plik kodu do projektu DSL. W przypadku procedury obsługi gestów zwykle trzeba mieć co najmniej następujące `using` dyrektywy:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -34,9 +34,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 using System.Linq;
 ```
 
-W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która powinna reagować na operację przeciągania. Zastąp następujące metody:
+W nowym pliku zdefiniuj klasę częściową dla klasy kształtu lub diagramu, która powinna odpowiadać na operację przeciągania. Zastąp następujące metody:
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Ta metoda jest wywoływana, gdy wskaźnik myszy zostanie przesunięty do kształtu podczas operacji przeciągania. Metoda powinna sprawdzić element, który użytkownik przeciągnieł, i ustawić właściwość efekt, aby wskazać, czy użytkownik może upuścić element w tym kształcie. Właściwość Effect określa wygląd kursora, gdy znajduje się nad tym kształtem, a także określa, czy `OnDragDrop()` będzie wywoływana, gdy użytkownik zwolni przycisk myszy.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Ta metoda jest wywoływana, gdy wskaźnik myszy wchodzi w kształt podczas operacji przeciągania. Metoda powinna zbadać element, który użytkownik przeciąga, i ustawić właściwość Effect, aby wskazać, czy użytkownik może upuścić element na tym kształcie. Właściwość Effect określa wygląd kursora, gdy znajduje się on nad tym kształtem, a także określa, czy zostanie wywołana, gdy użytkownik zwolni `OnDragDrop()` przycisk myszy.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -52,7 +52,7 @@ W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, podczas gdy wskaźnik myszy znajduje się nad tym kształtem lub diagramem, jeśli `OnDragOver(DiagramDragEventArgs e)` wcześniej ustawił `e.Effect` wartość inną niż `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - Ta metoda jest wywoływana, jeśli użytkownik zwolni przycisk myszy, gdy wskaźnik myszy nachyli się nad tym kształtem lub diagramem, jeśli wcześniej został ustawiony na wartość `OnDragOver(DiagramDragEventArgs e)` `e.Effect` inną niż `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -68,23 +68,23 @@ W nowym pliku Zdefiniuj klasę częściową klasy kształtu lub diagramu, która
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana po dwukrotnym kliknięciu kształtu lub diagramu przez użytkownika.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik dwukrotnie kliknie kształt lub diagram.
 
-     Aby uzyskać więcej informacji, zobacz [How to: przechwycenie kliknięcia kształtu lub dekoratora](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Aby uzyskać więcej informacji, [zobacz How to: Intercept a Click on a Shape or Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)(Jak przechwycić kliknięcie na kształcie lub dekorator).
 
-Zdefiniuj `IsAcceptableDropItem(e)` , aby określić, czy przeciągany element jest akceptowalny, i ProcessDragDropItem (e), aby zaktualizować model, gdy element zostanie usunięty. Te metody muszą najpierw wyodrębnić element z argumentów zdarzenia. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak uzyskać odwołanie do przeciąganego elementu](#to-send-an-object-from-a-source-dsl).
+Zdefiniuj element , aby określić, czy przeciągnięty element jest dopuszczalny, oraz `IsAcceptableDropItem(e)` element ProcessDragDropItem(e), aby zaktualizować model po upuszczeniu elementu. Te metody muszą najpierw wyodrębnić element z argumentów zdarzenia. Aby uzyskać informacje o tym, jak to zrobić, zobacz [Jak uzyskać odwołanie do przeciągniętego elementu](#to-send-an-object-from-a-source-dsl).
 
-## <a name="define-gesture-handlers-by-using-mef"></a>Zdefiniuj programy obsługi gestu przy użyciu MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definiowanie programów obsługi gestów przy użyciu mef
 
-Użyj tej metody, jeśli chcesz, aby deweloperzy innych firm mogli definiować własne programy obsługi na potrzeby języka DSL. Użytkownicy mogą zdecydować się na zainstalowanie rozszerzeń innych firm po zainstalowaniu DSL.
+Użyj tej metody, jeśli chcesz, aby deweloperzy innych firm mogli definiować własne programy obsługi dla dsl. Użytkownicy mogą zdecydować się na zainstalowanie rozszerzeń innych firm po zainstalowaniu dsl.
 
-MEF (Managed Extensibility Framework) umożliwia zdefiniowanie składników, które mogą być instalowane z minimalną konfiguracją. Aby uzyskać więcej informacji, zobacz [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+MeF (Managed Extensibility Framework) umożliwia definiowanie składników, które mogą być instalowane przy minimalnej konfiguracji. Aby uzyskać więcej informacji, [zobacz Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-### <a name="to-define-a-mef-gesture-handler"></a>Aby zdefiniować procedurę obsługi gestu MEF
+### <a name="to-define-a-mef-gesture-handler"></a>Aby zdefiniować program obsługi gestów MEF
 
-1. Dodaj do projektów **DSL** i **DslPackage** **, które** są opisane w rozbudowaniu [DSL przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
+1. Dodaj do projektów **Dsl** i **DslPackage** pliki **MefExtension,** które są opisane w rozszerzanie [DSL przy użyciu MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-2. Teraz można zdefiniować procedurę obsługi gestu jako składnik MEF:
+2. Teraz można zdefiniować program obsługi gestów jako składnik MEF:
 
     ```csharp
     // This attribute is defined in the generated file
@@ -114,29 +114,29 @@ MEF (Managed Extensibility Framework) umożliwia zdefiniowanie składników, kt�
      }
     ```
 
-     Można utworzyć więcej niż jeden składnik obsługi gestu, taki jak w przypadku różnych typów przeciąganych obiektów.
+     Można utworzyć więcej niż jeden składnik procedury obsługi gestów, na przykład gdy masz różne typy przeciąganych obiektów.
 
-3. Dodaj definicje klas częściowych dla kształtu docelowego, łącznika lub klasy diagramu, a następnie zdefiniuj metody `IsAcceptableDropItem()` i `ProcessDragDropItem()` . Te metody muszą zaczynać się od wyodrębnienia przeciąganego elementu z argumentów zdarzenia. Aby uzyskać więcej informacji, zobacz [jak uzyskać odwołanie do przeciąganego elementu](#to-send-an-object-from-a-source-dsl).
+3. Dodaj definicje klas częściowych dla kształtu docelowego, łącznika lub klas diagramu oraz zdefiniuj metody `IsAcceptableDropItem()` i `ProcessDragDropItem()` . Te metody muszą zaczynać się od wyodrębnienia przeciągniętego elementu z argumentów zdarzenia. Aby uzyskać więcej informacji, [zobacz Jak uzyskać odwołanie do przeciąganego elementu](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Jak zdekodować przeciągany element
 
-Elementy można przeciągać z dowolnego okna lub z pulpitu, a także z poziomu DSL.
+Elementy można przeciągać z dowolnego okna lub pulpitu, a także z DSL.
 
-Gdy użytkownik przeciągnie element na diagram lub z jednej części diagramu do innego, informacje o przeciąganym elemencie są dostępne w `DiagramDragEventArgs` . Ponieważ operacja przeciągania mogła rozpocząć się w dowolnym obiekcie na ekranie, dane mogą być dostępne w jednym z różnych formatów. Kod musi rozpoznawać formaty, z którymi może się kierować.
+Gdy użytkownik przeciąga element na diagram lub z jednej części diagramu do innej, informacje o przeciąganych elementach są dostępne w `DiagramDragEventArgs` . Ponieważ operacja przeciągania mogła rozpocząć się w dowolnym obiekcie na ekranie, dane mogą być dostępne w dowolnym z różnych formatów. Twój kod musi rozpoznawać formaty, z którymi może sobie radzić.
 
-Aby poznać formaty, w których dostępne są informacje źródłowe przeciągania, uruchom kod w trybie debugowania, ustawiając punkt przerwania w pozycji do `OnDragOver()` lub `CanDragDrop()` . Sprawdź wartości `DiagramDragEventArgs` parametru. Informacje są dostępne w dwóch formach:
+Aby odnaleźć formaty, w których są dostępne informacje źródłowe przeciągania, uruchom kod w trybie debugowania, ustawiając punkt przerwania we wpisie na `OnDragOver()` lub `CanDragDrop()` . Sprawdź wartości `DiagramDragEventArgs` parametru . Informacje są dostępne w dwóch formach:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data` -Ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
+- <xref:System.Windows.Forms.IDataObject>  `Data` - Ta właściwość zawiera serializowane wersje obiektów źródłowych, zazwyczaj w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
 
-  - diagramEventArgs. Data. GetDataFormats () — wyświetla listę formatów, w których można zdekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciągnie plik z pulpitu, dostępne formaty obejmują nazwę pliku (" `FileNameW` ").
+  - diagramEventArgs.Data.GetDataFormats() — lista formatów, w których można zdekodować przeciągany obiekt. Jeśli na przykład użytkownik przeciągnie plik z pulpitu, dostępne formaty będą zawierać nazwę pliku (" `FileNameW` ").
 
-  - `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Rzutowanie obiektu na odpowiedni typ. Na przykład:
+  - `diagramEventArgs.Data.GetData(format)` - Dekoduje przeciągany obiekt w określonym formacie. Rzutuj obiekt na odpowiedni typ. Na przykład:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-    Możesz również przesyłać obiekty takie jak odwołania do magistrali modelu ze źródła we własnym formacie niestandardowym. Aby uzyskać więcej informacji, zobacz [jak wysyłać odwołania do magistrali modelu w przeciąganiu i upuszczaniu](#to-send-an-object-from-a-source-dsl).
+    Można również przesyłać obiekty, takie jak odwołania do magistrali modelu, ze źródła we własnym niestandardowym formacie. Aby uzyskać więcej informacji, zobacz How to Send Model Bus References in a Drag and Drop (Jak wysyłać odwołania do [magistrali modelu za pomocą przeciągania i upuszczania).](#to-send-an-object-from-a-source-dsl)
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`— Użyj tej właściwości, jeśli chcesz, aby użytkownicy przeciągać elementy z modelu języka DSL lub UML. Prototyp grupy elementów zawiera co najmniej jeden obiekt, linki i ich wartości właściwości. Jest również używany w operacjach wklejania i podczas dodawania elementu z przybornika. W prototypie obiekty i ich typy są identyfikowane przez identyfikator GUID. Na przykład ten kod umożliwia użytkownikowi przeciąganie elementów klasy z diagramu UML lub Eksploratora modelu UML:
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype`- Użyj tej właściwości, jeśli chcesz, aby użytkownicy przeciągali elementy z modelu DSL lub UML. Prototyp grupy elementów zawiera co najmniej jeden obiekt, łącza i ich wartości właściwości. Jest on również używany w operacjach wklejania i podczas dodawania elementu z przybornika. W prototypie obiekty i ich typy są identyfikowane przez identyfikator Guid. Na przykład ten kod umożliwia użytkownikowi przeciąganie elementów klasy z diagramu UML lub Eksploratora modeli UML:
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -148,27 +148,27 @@ Aby poznać formaty, w których dostępne są informacje źródłowe przeciągan
     }
     ```
 
-     Aby zaakceptować kształty UML, ustal identyfikatory GUID klas kształtu UML przez eksperyment. Należy pamiętać, że na dowolnym diagramie jest zwykle więcej niż jeden typ elementu. Pamiętaj również, że obiekt przeciągany z diagramu DSL lub UML jest kształtem, a nie elementem modelu.
+     Aby zaakceptować kształty UML, określ identyfikatory GUID klas kształtów UML według eksperymentu. Należy pamiętać, że na każdym diagramie zwykle znajduje się więcej niż jeden typ elementu. Należy również pamiętać, że obiekt przeciągany z diagramu DSL lub UML jest kształtem, a nie elementem modelu.
 
-`DiagramDragEventArgs` ma także właściwości wskazujące bieżącą pozycję wskaźnika myszy i czy naciśnięcie klawisza CTRL, ALT lub SHIFT.
+`DiagramDragEventArgs` Ma również właściwości wskazujące bieżącą pozycję wskaźnika myszy i to, czy użytkownik naciska klawisze CTRL, ALT lub SHIFT.
 
-## <a name="how-to-get-the-original-of-a-dragged-element"></a>Jak uzyskać oryginalny element przeciągany
+## <a name="how-to-get-the-original-of-a-dragged-element"></a>How to get the original of a dragged element (Jak pobrać oryginał przeciąganego elementu)
 
-Jeśli przeciągany element jest elementem DSL, można otworzyć Model źródłowy i uzyskać dostęp do elementu.
+Jeśli przeciągany element jest elementem DSL, można otworzyć model źródłowy i uzyskać dostęp do elementu.
 
-`Data`Właściwości i `Prototype` argumentów zdarzeń zawierają tylko odwołanie do przeciąganego kształtu. Zwykle, jeśli chcesz utworzyć obiekt w docelowym elemencie DSL, który jest wyprowadzany ze prototypu w jakiś sposób, musisz uzyskać dostęp do oryginału, na przykład odczytując zawartość pliku lub przechodząc do elementu modelu reprezentowanego przez kształt. Do tego celu można użyć magistrali modelu programu Visual Studio.
+Właściwości `Data` i `Prototype` argumentów zdarzenia zawierają tylko odwołanie do przeciągniętego kształtu. Zwykle, jeśli chcesz utworzyć obiekt w docelowym DSL, który jest pochodną prototypu w jakiś sposób, należy uzyskać dostęp do oryginalnego, na przykład odczytu zawartości pliku lub przejście do elementu modelu reprezentowanego przez kształt. Możesz użyć Visual Studio Model Bus, aby to ułatwić.
 
-### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Aby przygotować projekt DSL dla magistrali modelu
+### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Aby przygotować projekt DSL dla magistrali modeli
 
-Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual Studio:
+Udostępnij źródłowy DSL za pomocą Visual Studio Model Bus:
 
-1. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
+1. Otwórz plik definicji DSL źródłowego DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektową, a następnie kliknij **pozycję Włącz modelbus.** W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Nowy projekt "ModelBus" jest dodawany do rozwiązania DSL.
 
-2. Kliknij kolejno pozycje **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie.
+2. Kliknij **pozycję Przekształć wszystkie szablony** i ponownie skompilować rozwiązanie.
 
-### <a name="to-send-an-object-from-a-source-dsl"></a>Aby wysłać obiekt z źródłowego DSL
+### <a name="to-send-an-object-from-a-source-dsl"></a>Aby wysłać obiekt ze źródłowego DSL
 
-1. W podklasach ElementOperations Zastąp, `Copy()` aby zakodować odwołanie do magistrali modelu (MBR) do IDataObject. Ta metoda zostanie wywołana, gdy użytkownik rozpocznie przeciąganie z diagramu źródłowego. Zakodowany rekord MBR będzie dostępny w IDataObject, gdy użytkownik pospadnie na diagramie docelowym.
+1. W podklasie ElementOperations przesłoń element tak, aby kodował odwołanie do magistrali modelu `Copy()` (MBR) do IDataObject. Ta metoda zostanie wywołana, gdy użytkownik zacznie przeciągać dane z diagramu źródłowego. Zakodowany obiekt MBR będzie dostępny w obiektach IDataObject, gdy użytkownik spadnie na diagram docelowy.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -206,15 +206,15 @@ Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual St
     ...}
     ```
 
-### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>Aby odebrać odwołanie magistrali modelu z DSL w docelowym projekcie DSL lub UML
+### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>Aby uzyskać odwołanie do magistrali modelu z DSL w docelowym projekcie DSL lub UML
 
-1. W docelowym projekcie DSL Dodaj odwołania do projektu do:
+1. W docelowym projekcie DSL dodaj odwołania do projektu do:
 
-    - Źródłowy projekt DSL.
+    - Źródłowy projekt Dsl.
 
     - Źródłowy projekt ModelBus.
 
-2. W pliku kodu obsługi gestów Dodaj następujące odwołania do przestrzeni nazw:
+2. W pliku kodu procedury obsługi gestów dodaj następujące odwołania do przestrzeni nazw:
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -226,7 +226,7 @@ Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual St
     using SourceDslNamespace.ModelBusAdapters;
     ```
 
-3. Poniższy przykład ilustruje, jak uzyskać dostęp do źródłowego elementu modelu:
+3. Poniższy przykład ilustruje sposób uzyskiwania dostępu do elementu modelu źródłowego:
 
     ```csharp
     partial class MyTargetShape // or diagram or connector
@@ -271,9 +271,9 @@ Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual St
     }
     ```
 
-### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>Aby zaakceptować element pochodzący z modelu UML
+### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>Aby zaakceptować element pozysłowany z modelu UML
 
-- Poniższy przykład kodu akceptuje obiekt porzucony z diagramu UML.
+- Poniższy przykład kodu akceptuje obiekt usunięty z diagramu UML.
 
     ```csharp
     using Microsoft.VisualStudio.ArchitectureTools.Extensibility;
@@ -320,11 +320,11 @@ Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual St
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Korzystanie z akcji myszy: przeciąganie elementów przedziału
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Używanie akcji myszy: przeciąganie elementów przedziału
 
-Można napisać procedurę obsługi, która przechwytuje akcje myszy w polach kształtu. Poniższy przykład umożliwia użytkownikowi zmianę kolejności elementów w przedziale, przeciągając myszą.
+Możesz napisać program obsługi, który przechwytuje akcje myszy na polach kształtu. Poniższy przykład umożliwia użytkownikowi zmianę kolejności elementów w przedziale przez przeciągnięcie za pomocą myszy.
 
-Aby skompilować ten przykład, Utwórz rozwiązanie przy użyciu szablonu rozwiązania **diagramy klas** . Dodaj plik kodu i Dodaj następujący kod. Dostosuj przestrzeń nazw tak, aby była taka sama jak własna.
+Aby skompilować ten przykład, utwórz rozwiązanie przy użyciu szablonu **rozwiązania Diagramy** klas. Dodaj plik kodu i dodaj następujący kod. Dostosuj przestrzeń nazw tak, aby był taka sama jak twoja.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

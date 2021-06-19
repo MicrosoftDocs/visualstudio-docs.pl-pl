@@ -4,7 +4,7 @@ description: Dowiedz się więcej na temat różnic między projektami i rozwią
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
-- acquisition
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f962d9e534262fd12cd0ce5c808c9c604db466b
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308405"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390037"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Wprowadzenie do projektów i rozwiązań
 
@@ -67,7 +67,7 @@ Rozpoczniemy eksplorację od utworzenia pustego rozwiązania. Po poznaniu Visual
 
 1. W okienku po lewej stronie **rozwiń pozycję Inne typy projektów,** a następnie **wybierz pozycję Visual Studio Solutions.** W środkowym okienku wybierz szablon **Puste** rozwiązanie. Nadaj **rozwiązaniu nazwę QuickSolution**, a następnie wybierz **przycisk OK.**
 
-   ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png "Szablon Puste rozwiązanie w Visual Studio 2017 r.")
+   ![Pusty szablon rozwiązania w programie Visual Studio 2017](media/tutorial-projects-new-solution.png "Szablon pustego rozwiązania w Visual Studio 2017 r.")
 
    Strona **startowa** zostanie zamykana, a rozwiązanie zostanie wyświetlone **Eksplorator rozwiązań** po prawej stronie okna Visual Studio aplikacji. Prawdopodobnie będziesz często używać **Eksplorator rozwiązań,** aby przeglądać zawartość projektów.
 
@@ -109,7 +109,7 @@ Teraz dodajmy nasz pierwszy projekt do rozwiązania. Zaczniemy od pustego projek
    > [!NOTE]
    > Jeśli nie widzisz programu **Visual C#** w lewym okienku okna dialogowego, musisz zainstalować pakiet deweloperski aplikacji klasycznych **.NET** Visual Studio obciążenia. Visual Studio instalacji opartej na obciążeniach do instalowania tylko tych składników, które są potrzebne do tego typu pisania. Łatwym sposobem zainstalowania nowego obciążenia jest  wybranie linku Otwórz Instalator programu Visual Studio w lewym dolnym rogu okna **dialogowego Dodawanie nowego** projektu. Po Instalator programu Visual Studio wybierz obciążenie Tworzenie **aplikacji klasycznych dla programu .NET,** a następnie przycisk **Modyfikuj.**
    >
-   > ![Otwórz Instalator programu Visual Studio link](media/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio w oknie dialogowym Dodawanie nowego projektu w programie Visual Studio 2017.")
+   > ![Otwórz Instalator programu Visual Studio link](media/tutorial-projects-open-installer.png "Link Otwórz Instalator programu Visual Studio oknie dialogowym Dodawanie nowego projektu w programie Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +188,7 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
    Drugi projekt jest dodawany do **Eksplorator rozwiązań**, a w edytorze zostanie otwarty plik o nazwie *UnitTest1.cs.*
 
-   ![Visual Studio Eksplorator rozwiązań z dwoma projektami](media/tutorial-projects-solution-explorer.png "Eksplorator rozwiązań z dwoma projektami w Visual Studio 2017 r.")
+   ![Visual Studio Eksplorator rozwiązań z dwoma projektami](media/tutorial-projects-solution-explorer.png "Eksplorator rozwiązań z dwoma projektami w programie Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -213,7 +213,7 @@ Dodajmy projekt testu jednostkowego do naszego rozwiązania. Tym razem zaczniemy
 
 ## <a name="add-a-project-reference"></a>Dodawanie odwołania do projektu
 
-Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w projekcie **QuickDate,** dlatego musimy dodać odwołanie do tego projektu. Powoduje to utworzenie *zależności kompilacji* między dwoma projektami, co oznacza, że podczas kompilowania rozwiązania funkcja **QuickDate** jest kompilowana przed szybkim **testem**.
+Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w projekcie **QuickDate,** więc musimy dodać odwołanie do tego projektu. Powoduje to utworzenie *zależności kompilacji* między dwoma projektami, co oznacza, że podczas kompilowania rozwiązania funkcja **QuickDate** jest kompilowana przed **quicktestem.**
 
 ::: moniker range="vs-2017"
 
@@ -221,17 +221,17 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
    Zostanie **otwarte okno dialogowe** Menedżer odwoływać.
 
-1. W okienku po lewej stronie **rozwiń pozycję Projekty** i wybierz **pozycję Rozwiązanie.** W środkowym okienku zaznacz pole wyboru obok opcji **QuickDate**,a następnie wybierz przycisk **OK.**
+1. W okienku po lewej stronie **rozwiń** pozycję Projekty i wybierz **pozycję Rozwiązanie.** W środkowym okienku zaznacz pole wyboru obok opcji **QuickDate**,a następnie wybierz przycisk **OK.**
 
    Zostanie dodane odwołanie do **projektu QuickDate.**
 
-   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań z odwołaniem do projektu w Visual Studio](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Zrzut ekranu przedstawiający Eksplorator rozwiązań odwołanie do projektu w Visual Studio.")
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań projektu w Visual Studio](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Zrzut ekranu przedstawiający Eksplorator rozwiązań odwołanie do projektu w Visual Studio.")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Wybierz węzeł **Zależności w** **projekcie QuickTest,** a następnie z menu kontekstowego lub kliknij prawym przyciskiem myszy pozycję **Dodaj odwołanie do projektu...**.
+1. Wybierz węzeł **Zależności w** projekcie **QuickTest,** a następnie z menu kontekstowego lub kliknij prawym przyciskiem myszy pozycję **Dodaj odwołanie do projektu...**.
 
    Zostanie **otwarte okno dialogowe** Menedżer odwoływać.
 
@@ -239,7 +239,7 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
    Zostanie dodane odwołanie do **projektu QuickDate.**
 
-   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań odwołanie do projektu w Visual Studio 2019 r.](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań odwołania do projektu w Visual Studio 2019 r.](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
    }
    ```
 
-   Pod niektórym kodem zostanie wyświetlony czerwony zygieł. Naprawimy ten błąd, czynimy projekt testowy przyjaznym [zestawem](/dotnet/standard/assembly/friend-assemblies) w **projekcie QuickDate.**
+   Pod niektórymi kodami zostanie wyświetlony czerwony zygieł. Naprawimy ten błąd, czynimy projekt testowy przyjaznym [zestawem](/dotnet/standard/assembly/friend-assemblies) w **projekcie QuickDate.**
 
 1. Po powrocie do **projektu QuickDate** otwórz plik *Calendar.cs,* jeśli nie został jeszcze otwarty. Dodaj następującą [instrukcje using](/dotnet/csharp/language-reference/keywords/using-statement) i atrybut na początku pliku, aby usunąć <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> błąd w projekcie testowym.
 
@@ -281,27 +281,27 @@ Użyjemy nowego projektu testu jednostkowego do przetestowania naszej metody w p
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Wiersz w pliku *Calendar.cs,* który zawiera atrybut, odwołuje się do nazwy <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zestawu (nazwy pliku) projektu **QuickTest.** Nazwa zestawu nie zawsze może być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, otwórz właściwości projektu.
+Wiersz w pliku *Calendar.cs* zawierający atrybut odwołuje się do nazwy <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zestawu (nazwy pliku) projektu **QuickTest.** Nazwa zestawu nie zawsze może być taka sama jak nazwa projektu. Aby znaleźć nazwę zestawu projektu, otwórz właściwości projektu.
 
-1. W **Eksplorator rozwiązań** wybierz projekt **QuickTest.** W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij **klawisz Alt** + **Enter.**
+1. W **Eksplorator rozwiązań** wybierz projekt **QuickTest.** W menu kontekstowym lub prawym przyciskiem myszy wybierz pozycję **Właściwości** lub po prostu naciśnij **klawisz Alt** + **Enter**.
 
-   Strony *właściwości projektu* otwarte na **karcie** Aplikacja. Strony właściwości zawierają różne ustawienia projektu. Zwróć uwagę, że nazwa zestawu projektu **QuickTest** to w rzeczywistości "QuickTest". Jeśli chcesz ją zmienić, możesz to zrobić w tym miejscu. Następnie podczas kompilowania projektu testowego nazwa wynikowego pliku binarnego zmieni się *zQuickTest.dll* na wybraną.
+   Strony *właściwości projektu* otwarte na **karcie** Aplikacja. Strony właściwości zawierają różne ustawienia projektu. Zwróć uwagę, że nazwa zestawu projektu **QuickTest** to rzeczywiście "QuickTest". Jeśli chcesz ją zmienić, możesz to zrobić w tym miejscu. Następnie podczas kompilowania projektu testowego nazwa wynikowego pliku binarnego zmieni się *zQuickTest.dll* na wybraną przez Ciebie.
 
    ![Właściwości projektu](media/tutorial-projects-netcore-properties.png "Okno dialogowe Właściwości projektu w Visual Studio.")
 
-1. Zapoznaj się z niektórymi innymi kartami stron właściwości projektu, takimi jak **Kompilacja** i **Debugowanie.** Te karty są różne dla różnych typów projektów.
+1. Zapoznaj się z innymi kartami stron właściwości projektu, takimi jak **Build (Kompilacja)** i **Debug (Debugowanie).** Te karty są różne dla różnych typów projektów.
 
 ## <a name="next-steps"></a>Następne kroki
 
 ::: moniker range="vs-2017"
 
-Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >    >   na pasku menu. Zostanie otwarte okno **o nazwie Eksplorator** testów. Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
+Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >    >   na pasku menu. Zostanie otwarte okno **Eksplorator testów.** Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >   na pasku menu. Zostanie otwarte okno **o nazwie Eksplorator** testów. Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
+Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testuj** wszystkie testy  >   na pasku menu. Zostanie otwarte okno **Eksplorator testów.** Powinien zostać wyświetlony test **TestGetCurrentDate** przebiegł pomyślnie.
 
 ::: moniker-end
 
@@ -310,7 +310,7 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję **Testuj**  >    >  **Eksploratora testów** systemu Windows na pasku menu.
+> Jeśli **Eksplorator testów** nie zostanie otwarty automatycznie, otwórz go, wybierając pozycję Przetestuj   >    >  **Eksploratora testów** systemu Windows na pasku menu.
 
 ::: moniker-end
 
@@ -327,4 +327,4 @@ Jeśli chcesz sprawdzić, czy test jednostkowy działa, wybierz pozycję **Testu
 - [Zarządzanie właściwościami projektów i rozwiązań](../ide/managing-project-and-solution-properties.md)
 - [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md)
 - [Tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Visual Studio IDE — omówienie](../get-started/visual-studio-ide.md)
+- [omówienie Visual Studio IDE](../get-started/visual-studio-ide.md)

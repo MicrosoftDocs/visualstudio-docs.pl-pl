@@ -1,7 +1,7 @@
 ---
 title: 'Samouczek: wprowadzenie do Visual Basic'
 description: Dowiedz się, jak Visual Basic konsolowe w Visual Studio, jak tworzyć aplikacje konsolowe w Visual Studio, jak to zrobić krok po kroku.
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8491869f5c0d518b394c0baa6a6da91bfeb6c7a3
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308379"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390714"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: rozpoczynanie pracy z Visual Basic w Visual Studio
 
@@ -59,7 +59,7 @@ Najpierw utworzymy projekt aplikacji Visual Basic aplikacji. Typ projektu zawier
 
 ### <a name="add-a-workload-optional"></a>Dodawanie obciążenia (opcjonalnie)
 
-Jeśli nie widzisz szablonu projektu Aplikacja konsolowa **(.NET Core),** możesz go uzyskać, dodając obciążenie tworzenie aplikacji dla wielu platform na platformie **.NET Core.** To obciążenie można dodać na jeden z dwóch następujących sposobów, w zależności od tego, Visual Studio zainstalowano aktualizacje programu 2017 na maszynie.
+Jeśli nie widzisz szablonu projektu Aplikacja konsolowa **(.NET Core),** możesz go pobrać, dodając obciążenie tworzenie aplikacji dla wielu platform na **platformie .NET Core.** To obciążenie można dodać na jeden z dwóch następujących sposobów, w zależności od tego, Visual Studio zainstalowano aktualizacje programu 2017 na maszynie.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Opcja 1. Korzystanie z okna dialogowego Nowy projekt
 
@@ -97,15 +97,15 @@ Jeśli nie widzisz szablonu projektu Aplikacja konsolowa **(.NET Core),** możes
    :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="Wybieranie Visual Basic szablonu aplikacji konsolowej":::
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Aplikacja konsolowa,** możesz go zainstalować w oknie Tworzenie **nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj więcej narzędzi **i** funkcji.
+   > Jeśli nie widzisz szablonu **Aplikacja konsolowa,** możesz go zainstalować w oknie Tworzenie **nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj **więcej narzędzi i** funkcji.
    >
    > ![Link "Zainstaluj więcej narzędzi i funkcji" w komunikacie "Nie można znaleźć tego, czego szukasz" w oknie "Tworzenie nowego projektu"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > Następnie w chmurze Instalator programu Visual Studio obciążenie Tworzenie aplikacji dla wielu platform na **platformie .NET Core.**
+   > Następnie w chmurze Instalator programu Visual Studio obciążenie Tworzenie aplikacji dla wielu platform dla **platformy .NET Core.**
    >
    > ![Międzyplatformowe obciążenie programowe platformy .NET Core w chmurze Instalator programu Visual Studio](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy. Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze["Tworzenie projektu".](#create-a-project)
+   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy. Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w procedurze["Tworzenie projektu".](#create-a-project)
 
 1. W **oknie Konfigurowanie nowego** projektu wpisz lub wprowadź *WhatIsYourName* w **polu Nazwa** projektu. Następnie wybierz pozycję **Dalej.**
 

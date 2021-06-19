@@ -1,6 +1,6 @@
 ---
 title: Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
-description: Dowiedz się, jak za pomocą zestawu SDK modelowania dla programu Visual Studio można tworzyć zaawansowane narzędzia programistyczne oparte na modelu, które można zintegrować z Visual Studio.
+description: Dowiedz się, że korzystając z zestawu SDK modelowania dla Visual Studio, możesz tworzyć zaawansowane narzędzia deweloperskie oparte na modelu, które można zintegrować z Visual Studio.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -8,23 +8,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85deb6239360fc1c56ceb1ba4d23be02d6dbfd70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b858e193065b5cee66772b6ec98321b505e9a8c3
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950388"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391052"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
 
-Korzystając z zestawu SDK modelowania dla programu Visual Studio, można tworzyć zaawansowane, oparte na modelu narzędzia programistyczne, które można zintegrować z Visual Studio. W ten sam sposób można utworzyć co najmniej jedną definicję modelu i zintegrować ją w zestaw narzędzi.
+Za pomocą zestawu SDK modelowania dla Visual Studio można tworzyć zaawansowane narzędzia deweloperskie oparte na modelu, które można zintegrować z Visual Studio. W ten sam sposób można utworzyć co najmniej jedną definicję modelu i zintegrować ją w zestaw narzędzi.
 
-Centralnym elementem zestawu MSDK jest definicja modelu tworzona w celu przedstawienia koncepcji z obszaru biznesowego. Model można obsłużyć różnymi narzędziami, takimi jak widok diagramowy, możliwość generowania kodu i innych artefaktów, polecenia służące do przekształcania modelu oraz możliwość korzystania z kodu i innych obiektów w programie Visual Studio. Podczas opracowywania modelu można połączyć go z innymi modelami i narzędziami w celu utworzenia zestawu narzędzi o dużych możliwościach, który będzie wspomagał proces projektowania.
+Centralnym elementem zestawu MSDK jest definicja modelu tworzona w celu przedstawienia koncepcji z obszaru biznesowego. Model można otoczyć różnymi narzędziami, takimi jak widok diagramu, możliwość generowania kodu i innych artefaktów, polecenia służące do przekształcania modelu oraz możliwość interakcji z kodem i innymi obiektami w Visual Studio. Podczas opracowywania modelu można połączyć go z innymi modelami i narzędziami w celu utworzenia zestawu narzędzi o dużych możliwościach, który będzie wspomagał proces projektowania.
 
 Zestaw MSDK umożliwia szybkie opracowanie modelu z użyciem języka specyficznego dla domeny (DSL). Należy rozpocząć od użycia specjalnego edytora w celu zdefiniowania schematu lub abstrakcyjnej składni wraz z notacją graficzną. Na podstawie tej definicji zestaw VMSDK generuje następujące elementy:
 

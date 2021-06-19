@@ -1,7 +1,7 @@
 ---
 title: 'Samouczek: debugowanie Visual Basic kodu'
 description: Poznaj funkcje debugera Visual Studio, jak uruchomić debuger, przechodzić przez kod i sprawdzać dane w Visual Basic aplikacji.
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42dd3c6b7301162e239bc87764056fdda2d08413
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 48e6b383b0dfdee3a3cb0cc355ffa5900d4dc428
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308418"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390219"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Samouczek: nauka debugowania kodu Visual Basic użyciu Visual Studio
 
@@ -102,7 +102,7 @@ Najpierw utworzysz projekt aplikacji konsolowej .NET Core. Typ projektu zawiera 
    ![Wybierz szablon Visual Basic aplikacji konsolowej](../visual-basic/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Aplikacja konsoli,** możesz go zainstalować w oknie Tworzenie **nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj **więcej narzędzi i** funkcji. Następnie w chmurze Instalator programu Visual Studio obciążenie Tworzenie aplikacji dla wielu platform dla **platformy .NET Core.**
+   > Jeśli nie widzisz szablonu **Aplikacja konsoli,** możesz go zainstalować w oknie Tworzenie **nowego** projektu. W **komunikacie Nie** można znaleźć tego, czego szukasz? wybierz link Zainstaluj więcej narzędzi **i** funkcji. Następnie w chmurze Instalator programu Visual Studio obciążenie Tworzenie aplikacji dla wielu platform na **platformie .NET Core.**
 
 1. W **oknie Konfigurowanie nowego** projektu wpisz lub wprowadź *get-started-debugging* w **polu Nazwa** projektu. Następnie wybierz pozycję **Dalej.**
 
@@ -228,13 +228,13 @@ W tym miejscu używamy przede wszystkim skrótów klawiaturowych, ponieważ jest
      ![Korzystanie z funkcji Uruchom do kliknięcia](../visual-basic/media/get-started-run-to-click-vb.png "Uruchom do kliknięcia")
 
    > [!NOTE]
-   > Przycisk **Uruchom do kliknięcia** jest nowy w programie [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] . (Jeśli nie widzisz zielonego przycisku strzałki, użyj **klawisza F11** w tym przykładzie, aby przejść debuger w odpowiednie miejsce).
+   > Przycisk **Uruchom do kliknięcia** jest nowy w programie [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)] . (Jeśli nie widzisz przycisku zielonej strzałki, użyj klawisza **F11** w tym przykładzie, aby przejść debuger w odpowiednie miejsce).
 
-2. Kliknij przycisk **Uruchom do kliknięcia,** ![a następnie kliknij przycisk Uruchom, aby kliknąć pozycję](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Kliknij przycisk **Uruchom do kliknięcia** ![Uruchom, aby kliknąć polecenie](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Debuger jest przekierowywowyny do `Console.WriteLine` metody .
 
-    Użycie tego przycisku jest podobne do ustawiania tymczasowego punktu przerwania. **Funkcja Uruchom do kliknięcia** umożliwia szybkie poruszanie się w widocznym regionie kodu aplikacji (możesz kliknąć dowolny otwarty plik).
+    Użycie tego przycisku jest podobne do ustawiania tymczasowego punktu przerwania. **Polecenie Uruchom do kliknięcia** umożliwia szybkie poruszanie się w widocznym regionie kodu aplikacji (możesz kliknąć dowolny otwarty plik).
 
 ## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchamianie aplikacji
 
@@ -242,17 +242,17 @@ Kliknij przycisk **Restart** ![Restart App (Uruchom ponownie](../../debugger/med
 
 Naciśnięcie przycisku **Uruchom ponownie** pozwala zaoszczędzić czas w porównaniu z zatrzymywaniem aplikacji i ponownym uruchamianiem debugera. Debuger jest wstrzymywany w pierwszym punkcie przerwania, który zostanie trafiony przez wykonanie kodu.
 
-Debuger zatrzymuje się ponownie w punkcie przerwania, który został wcześniej ustawiony wewnątrz `For` pętli.
+Debuger zatrzymuje się ponownie w punkcie przerwania wcześniej ustawionym wewnątrz `For` pętli.
 
 ## <a name="inspect-variables-with-data-tips"></a>Sprawdzanie zmiennych za pomocą porad dotyczących danych
 
 Funkcje, które umożliwiają sprawdzanie zmiennych, są jedną z najbardziej przydatnych funkcji debugera i istnieją różne sposoby, aby to zrobić. Często podczas próby debugowania problemu próbujesz dowiedzieć się, czy zmienne przechowują wartości, których oczekujesz w określonym czasie.
 
-1. Po wstrzymaniu instrukcji umieść kursor nad zmienną i zobaczysz, że jest to wartość domyślna, czyli wartość pierwszego `name += letters[i]` `letters` elementu w tablicy `"f"c` .
+1. Po wstrzymaniu instrukcji zatrzymaj wskaźnik myszy na zmiennej i zobaczysz, że jest to wartość domyślna, czyli wartość pierwszego `name += letters[i]` `letters` elementu w tablicy `"f"c` .
 
-1. Następnie umieść kursor nad `name` zmienną i zobaczysz jej bieżącą wartość, czyli pusty ciąg.
+1. Następnie zatrzymaj wskaźnik myszy na zmiennej `name` i zobaczysz jej bieżącą wartość, czyli pusty ciąg.
 
-1. Naciśnij kilka razy klawisz **F5** (lub Kontynuuj debugowanie), aby kilka razy iterować po pętli, wsłuchiwać się ponownie w punkcie przerwania i za każdym razem umieszczać kursor nad zmienną, aby sprawdzić jej  >   `For` `name` wartość.
+1. Naciśnij **klawisz F5** (lub **Kontynuuj** debugowanie ) kilka razy, aby kilka razy iterować po pętli, wsłuchiwać ponownie w punkcie przerwania i za każdym razem umieszczać kursor nad zmienną, aby sprawdzić jej  >   `For` `name` wartość.
 
      ![Wyświetlanie porady dotyczącej danych](../visual-basic/media/get-started-data-tip-vb.png "Wyświetlanie porady dotyczącej danych")
 
@@ -260,65 +260,65 @@ Funkcje, które umożliwiają sprawdzanie zmiennych, są jedną z najbardziej pr
 
      Często podczas debugowania chcesz szybko sprawdzić wartości właściwości zmiennych, aby sprawdzić, czy przechowują one wartości, które powinny być przechowywane, a porady dotyczące danych są dobrym sposobem na to.
 
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych za pomocą okien zmiennych automatycznych i zmiennych lokalnych
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych przy użyciu okien Zmiennych automatycznych i Zmiennych lokalnych
 
 1. Spójrz na **okno Automatyczne** w dolnej części edytora kodu.
 
     Jeśli jest zamknięty, otwórz go po wstrzymaniu w debugerze, wybierając opcję  >  **Debuguj automatyczne**  >  **systemy** Windows.
 
-    W **oknie Automatyczne** zobaczysz zmienne i ich bieżącą wartość. Okno **Automatyczne wyświetla** wszystkie zmienne używane w bieżącym wierszu lub poprzednim wierszu (sprawdź dokumentację pod celu sprawdzenia zachowania specyficznego dla języka).
+    W **oknie Autos** (Automatyczne) zobaczysz zmienne i ich bieżącą wartość. W **oknie Autos** (Automatyczne) są wszystkie zmienne używane w bieżącym wierszu lub poprzednim wierszu (sprawdź dokumentację zachowania specyficznego dla języka).
 
 1. Następnie przyjrzyj się **oknie Locals (Ustawienia** lokalne) na karcie obok **okna Autos (Automatyczne).**
 
 1. Rozwiń `letters` zmienną, aby wyświetlić elementy, które zawiera.
 
-     ![Sprawdzanie zmiennych w oknie Zmiennych lokalnych](../visual-basic/media/get-started-locals-window-vb.png "Okno lokalizacji lokalnych")
+     ![Sprawdzanie zmiennych w oknie Zmiennych lokalnych](../visual-basic/media/get-started-locals-window-vb.png "Okno locals (Okna lokalizacji lokalnych)")
 
-    Okno **Zmienne lokalne** zawiera zmienne, które znajdują się w bieżącym zakresie , czyli bieżącym kontekście wykonywania. [](https://www.wikipedia.org/wiki/Scope_(computer_science))
+    W **oknie Zmienne** lokalne są dostępne zmienne, które znajdują się w bieżącym [zakresie,](https://www.wikipedia.org/wiki/Scope_(computer_science))czyli bieżącym kontekście wykonywania.
 
 ## <a name="set-a-watch"></a>Ustawianie zegarka
 
 1. W głównym oknie edytora kodu kliknij prawym przyciskiem myszy `name` zmienną i wybierz polecenie **Dodaj czujkę.**
 
-    W **dolnej** części edytora kodu zostanie otwarte okno Czujka. W oknie **Wyrażenie czujki** można określić zmienną (lub wyrażenie), którą chcesz śledzić.
+    W **dolnej** części edytora kodu zostanie otwarte okno Czujka. Okno Wyrażenie **czujki** umożliwia określenie zmiennej (lub wyrażenia), którą chcesz śledzić.
 
-    Teraz masz zegarek ustawiony na zmienną i możesz zobaczyć, jak jej wartość zmienia się podczas przechodzenia `name` przez debuger. W przeciwieństwie do innych  okien zmiennych, okno Czujka zawsze pokazuje obserwowane zmienne (są one wyszarowane, gdy są poza zakresem).
+    Teraz masz zegarek ustawiony na zmiennej i możesz zobaczyć jej zmianę wartości podczas przechodzenia `name` przez debuger. W przeciwieństwie do innych  okien zmiennych w oknie Czujka zawsze są wyświetlane zmienne, które obserwujesz (są one wyszarowane, gdy są poza zakresem).
 
 ## <a name="examine-the-call-stack"></a>Badanie stosu wywołań
 
 1. Po wstrzymaniu w pętli kliknij okno Stos wywołań, które jest domyślnie `For` otwarte w prawym dolnym okienku. 
 
-    Jeśli jest zamknięty, otwórz go po wstrzymaniu w debugerze, wybierając **polecenie**  >  **Debuguj stos**  >  **wywołań systemu** Windows .
+    Jeśli jest zamknięty, otwórz go po wstrzymaniu w debugerze, wybierając **polecenie**  >  **Debuguj stos**  >  **wywołań systemu** Windows.
 
-2. Klikaj **klawisz F11** kilka razy, aż w metodzie zostanie wyświetlony debuger wstrzymywany. `SendMessage` Spójrz na **okno Stos wywołań.**
+2. Klikaj **klawisz F11** kilka razy, dopóki debuger nie zostanie wstrzymany w `SendMessage` metodzie . Spójrz na **okno Stos wywołań.**
 
     ![Badanie stosu wywołań](../visual-basic/media/get-started-call-stack-vb.png "ExamineCallStack")
 
     Okno **Stos wywołań** pokazuje kolejność wywoływania metod i funkcji. Górny wiersz pokazuje bieżącą funkcję `SendMessage` (metodę w tej aplikacji). Drugi wiersz pokazuje, że `SendMessage` został wywołany z `Main` metody i tak dalej.
 
    > [!NOTE]
-   > Okno **stosu wywołań jest** podobne do perspektywy debugowania w niektórych środowiskach PROJEKTOWYCH, takich jak Eclipse.
+   > Okno **stosu wywołań** jest podobne do perspektywy debugowania w niektórych środowiskach PROJEKTOWYCH, takich jak Eclipse.
 
     Stos wywołań to dobry sposób na zbadanie i zrozumienie przepływu wykonywania aplikacji.
 
-    Możesz kliknąć dwukrotnie wiersz kodu, aby przejść do tego kodu źródłowego i zmienić bieżący zakres sprawdzany przez debuger. Ta akcja nie powoduje postępu debugera.
+    Możesz kliknąć dwukrotnie wiersz kodu, aby przejść do tego kodu źródłowego i zmienić bieżący zakres, który jest sprawdzany przez debuger. Ta akcja nie powoduje postępu debugera.
 
-    Możesz również użyć menu otwieranych prawym przyciskiem myszy w **oknie stosu wywołań,** aby wykonać inne czynności. Możesz na przykład wstawić punkty przerwania do określonych funkcji, przejść do debugera za pomocą polecenia **Uruchom** do kursora i przejść do kodu źródłowego. Aby uzyskać więcej informacji, [zobacz How to: Examine the Call Stack](../../debugger/how-to-use-the-call-stack-window.md).
+    Możesz również użyć menu otwieranych prawym przyciskiem myszy w **oknie Stosu wywołań,** aby wykonać inne czynności. Możesz na przykład wstawić punkty przerwania do określonych funkcji, przejść do debugera za pomocą polecenia **Uruchom** do kursora i przejść do kodu źródłowego. Aby uzyskać więcej informacji, zobacz [Jak sprawdzić stos wywołań](../../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Zmienianie przepływu wykonywania
 
-1. Naciśnij dwukrotnie klawisz **F11,** aby uruchomić `Console.WriteLine` metodę .
+1. Naciśnij **dwukrotnie klawisz F11,** aby uruchomić `Console.WriteLine` metodę .
 
-1. Po wstrzymaniu debugera w wywołaniu metody użyj myszy, aby chwycić żółtą strzałkę (wskaźnik wykonywania) po lewej stronie i przenieść żółtą strzałkę w górę o jedną linię z powrotem do `SendMessage` `Console.WriteLine` .
+1. Po wstrzymaniu debugera w wywołaniu metody użyj myszy, aby chwycić żółtą strzałkę (wskaźnik wykonywania) po lewej stronie i przenieść żółtą strzałkę w górę o jeden wiersz z powrotem do `SendMessage` `Console.WriteLine` .
 
-1. Naciśnij **klawisz F11**.
+1. Naciśnij **klawisz F11.**
 
-    Debuger ponownie uruchomić metodę `Console.WriteLine` (widać to w danych wyjściowych okna konsoli).
+    Debuger ponownie uruchomić metodę `Console.WriteLine` (zobaczysz to w danych wyjściowych okna konsoli).
 
-    Zmieniając przepływ wykonywania, możesz na przykład przetestować różne ścieżki wykonywania kodu lub ponownie uruchomić kod bez ponownego uruchamiania debugera.
+    Zmieniając przepływ wykonywania, możesz wykonać różne czynności, takie jak testowanie różnych ścieżek wykonywania kodu lub ponowne uruchamianie kodu bez ponownego uruchamiania debugera.
 
     > [!WARNING]
-    > Często należy zachować ostrożność podczas pracy z tą funkcją i w etykietce narzędzia jest wyświetlane ostrzeżenie. Mogą pojawić się również inne ostrzeżenia. Przeniesienie wskaźnika nie może przywrócić wcześniejszego stanu aplikacji.
+    > Często należy zachować ostrożność podczas pracy z tą funkcją, a w etykietce narzędzia jest wyświetlane ostrzeżenie. Mogą pojawić się również inne ostrzeżenia. Przeniesienie wskaźnika nie może przywrócić wcześniejszego stanu aplikacji.
 
 1. Naciśnij **klawisz F5,** aby kontynuować uruchamianie aplikacji.
 
@@ -326,7 +326,7 @@ Funkcje, które umożliwiają sprawdzanie zmiennych, są jedną z najbardziej pr
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku nauczyliśmy się uruchamiać debuger, przechodzić przez kod i sprawdzać zmienne. Możesz chcieć uzyskać szczegółowe informacje na temat funkcji debugera wraz z linkami do dodatkowych informacji.
+W tym samouczku nauczyliśmy się uruchamiać debuger, przechodzić przez kod i sprawdzać zmienne. Możesz chcieć uzyskać szczegółowe spojrzenie na funkcje debugera wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
 > [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)

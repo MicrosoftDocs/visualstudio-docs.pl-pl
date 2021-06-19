@@ -1,7 +1,7 @@
 ---
 title: 'Samouczek: tworzenie prostej aplikacji konsolowej w języku C#'
 description: Dowiedz się, jak utworzyć aplikację konsolową w języku C# Visual Studio, krok po kroku.
-ms.custom: acquisition, seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 14128a6c5b533d1bf2fe573310c174f6b6a7f897
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308535"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390375"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej aplikacji konsolowej W# w języku Visual Studio
 
@@ -263,43 +263,43 @@ Naprawmy kod tak, aby obsługiwali miejsca dziesiętne.
 
    Zwróć uwagę, że aplikacja zwraca teraz liczbę dziesiętną zamiast zera.
 
-    ![Okno konsoli przedstawiające aplikację Calculator, która teraz zwraca w wyniku liczbę dziesiętną](./media/csharp-console-calculator-decimal.png)
+    ![Okno konsoli z wyświetloną aplikacją Kalkulator, która teraz zwraca liczbę dziesiętną](./media/csharp-console-calculator-decimal.png)
 
-Jednak aplikacja generuje tylko wynik dziesiętny. Dokonajmy kilku kolejnych dostrojeń kodu, aby aplikacja również potrafiła obliczać liczby dziesiętne.
+Jednak aplikacja generuje tylko wynik dziesiętny. Dokonajmy kilku kolejnych dostrojeń w kodzie, aby aplikacja również potrafiła obliczać liczby dziesiętne.
 
 1. Użyj **kontrolki Znajdź i zamień** **(Ctrl**  +  **H),** aby zmienić każde wystąpienie zmiennej na , i , aby zmienić każde wystąpienie `float` metody na `double` `Convert.ToInt32` `Convert.ToDouble` .
 
-1. Uruchom aplikację kalkulatora i podziel liczbę **42,5** przez liczbę **119,75.**
+1. Uruchom aplikację kalkulatora i podziel liczbę **42,5** przez **liczbę 119,75.**
 
    Zwróć uwagę, że aplikacja akceptuje teraz wartości dziesiętne i zwraca dłuższą liczbę dziesiętną jako wynik.
 
-    ![Okno konsoli przedstawiające aplikację Calculator, która teraz akceptuje liczby dziesiętne i w wyniku zwraca dłuższą liczbę dziesiętną](./media/csharp-console-calculator-usedecimals.png)
+    ![Okno konsoli przedstawiające aplikację Kalkulator, która teraz akceptuje liczby dziesiętne i w wyniku zwraca dłuższą liczbę dziesiętną](./media/csharp-console-calculator-usedecimals.png)
 
     (Naprawimy liczbę miejsc dziesiętnych w sekcji [Poprawianie](#revise-the-code) kodu).
 
 ## <a name="debug-the-app"></a>Debugowanie aplikacji
 
-Ulepszyliśmy naszą podstawową aplikację kalkulatora, ale nie ma jeszcze bezpiecznych punktów awarii do obsługi wyjątków, takich jak błędy danych wejściowych użytkownika.
+Ulepszyliśmy naszą podstawową aplikację kalkulatora, ale nie ma ona jeszcze bezpiecznych aplikacji do obsługi wyjątków, takich jak błędy danych wejściowych użytkownika.
 
 Jeśli na przykład spróbujesz podzielić liczbę przez zero lub wprowadzić znak alfa, gdy aplikacja oczekuje znaku liczbowego (lub odwrotnie), aplikacja może przestać działać, zwrócić błąd lub zwrócić nieoczekiwany wynik nieliczbowy.
 
 Przejdźmy przez kilka typowych błędów wejściowych użytkownika, znajdźmy je w debugerze, jeśli się tam pojawią, i naprawmy je w kodzie.
 
 > [!TIP]
-> Aby uzyskać więcej informacji na temat debugera i sposobu jego działania, zobacz pierwsze spojrzenie na stronę Visual Studio [debugera.](../../debugger/debugger-feature-tour.md)
+> Aby uzyskać więcej informacji na temat debugera i sposobu jego działania, zobacz pierwsze spojrzenie na Visual Studio [debugera.](../../debugger/debugger-feature-tour.md)
 
 ### <a name="fix-the-divide-by-zero-error"></a>Naprawienie błędu "podziel przez zero"
 
 Próba podzielenia liczby przez zero może spowodować zablokowanie aplikacji konsolowej, a następnie pokazanie, co jest nie tak w edytorze kodu.
 
-   ![Zrzut ekranu przedstawiający Visual Studio kodu przedstawiający wiersz wyróżniony kolorem żółtym i błąd Nieobsługiwany wyjątek dla błędu "Próba podzielenia przez zero".](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Zrzut ekranu przedstawiający Visual Studio kodu pokazujący wiersz wyróżniony kolorem żółtym i błąd Nieobsługiwany wyjątek dla błędu "Próba podzielenia przez zero".](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > Czasami aplikacja nie zawiesza się, a debuger nie wyświetla błędu dzielenia przez zero. Zamiast tego aplikacja może zwrócić nieoczekiwany wynik nieliczbowy, taki jak symbol nieskończoności. Nadal obowiązuje następująca poprawka kodu.
 
 Zmieńmy kod, aby obsłużyć ten błąd.
 
-1. Usuń kod wyświetlany bezpośrednio między i `case "d":` komentarz z komunikatem `// Wait for the user to respond before closing` .
+1. Usuń kod wyświetlany bezpośrednio między i `case "d":` komentarzem z komunikatem `// Wait for the user to respond before closing` .
 
 1. Zastąp go następującym kodem:
 
@@ -317,17 +317,17 @@ Zmieńmy kod, aby obsłużyć ten błąd.
 
    Po dodaniu kodu sekcja z instrukcji powinna `switch` wyglądać podobnie do poniższego zrzutu ekranu:
 
-   ![Poprawiona sekcja "switch" w Visual Studio edytorze kodu](./media/csharp-console-calculator-switch-code.png)
+   ![Poprawiona sekcja "switch" w edytorze Visual Studio kodu](./media/csharp-console-calculator-switch-code.png)
 
 Teraz, gdy podzielisz dowolną liczbę przez zero, aplikacja poprosi o kolejną liczbę. Jeszcze lepiej: nie przestanie pytać, dopóki nie podano liczby innej niż zero.
 
-   ![Zrzut ekranu Visual Studio kodu przedstawiający kod instrukcji switch ze sprawdzeniem wpisu dodanego dzielnia o wartości zerowej.](./media/csharp-console-calculator-dividebyzero.png)
+   ![Zrzut ekranu Visual Studio kodu pokazujący kod dla instrukcji switch z sprawdzeniem wpisu niezerowego dzielnia dodanego.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Naprawienie błędu "format"
 
-Jeśli po wprowadzeniu znaku alfa aplikacja oczekuje znaku liczbowego (lub odwrotnie), aplikacja konsolowa zawiesza się. Visual Studio następnie pokazuje, co jest nie tak w edytorze kodu.
+Jeśli po wprowadzeniu znaku alfa aplikacja oczekuje znaku numerycznego (lub odwrotnie), aplikacja konsolowa zawiesza się. Visual Studio następnie pokazuje, co jest nie tak w edytorze kodu.
 
-   ![W Visual Studio kodu wyświetlany jest błąd formatu](./media/csharp-console-calculator-format-error.png)
+   ![W Visual Studio kodu wyświetlany jest błąd formatowania](./media/csharp-console-calculator-format-error.png)
 
 Aby naprawić ten błąd, musimy refaktoryzować wprowadzony wcześniej kod.
 
@@ -466,19 +466,19 @@ Zaczynajmy.
     }
     ```
 
-1. Wybierz **kalkulator,** aby uruchomić program, lub naciśnij **klawisz F5.**
+1. Wybierz **pozycję Kalkulator,** aby uruchomić program, lub naciśnij **klawisz F5.**
 
 1. Postępuj zgodnie z monitami i podziel liczbę **42** przez liczbę **119**. Aplikacja powinna wyglądać podobnie do poniższego zrzutu ekranu:
 
-    ![Okno konsoli przedstawiające refaktoryzowana aplikację Kalkulator, która zawiera monity o akcje do podjęcia i obsługę błędów w przypadku nieprawidłowych danych wejściowych](./media/csharp-console-calculator-refactored.png)
+    ![Okno konsoli przedstawiające refaktozowana aplikacja Kalkulator, która zawiera monity dotyczące akcji do podjęcia i obsługi błędów w przypadku nieprawidłowych danych wejściowych](./media/csharp-console-calculator-refactored.png)
 
-    Zwróć uwagę, że możesz wprowadzić więcej równań, dopóki nie zdecydujesz się zamknąć aplikacji konsolowej. Zmniejszyliśmy również liczbę miejsc dziesiętnych w wyniku.
+    Zwróć uwagę, że możesz wprowadzać więcej równań, dopóki nie zdecydujesz się zamknąć aplikacji konsolowej. Zmniejszyliśmy również liczbę miejsc dziesiętnych w wyniku.
 
 ## <a name="close-the-app"></a>Zamykanie aplikacji
 
 1. Jeśli jeszcze tego nie zrobiono, zamknij aplikację kalkulatora.
 
-1. Zamknij okienko **Dane** wyjściowe w Visual Studio.
+1. Zamknij okienko **Dane wyjściowe** w Visual Studio.
 
    ![Zamknij okienko Dane wyjściowe w Visual Studio](./media/csharp-calculator-close-output-pane.png)
 
@@ -486,9 +486,9 @@ Zaczynajmy.
 
 1. Zamknij program Visual Studio.
 
-## <a name="code-complete"></a>Ukończony kod
+## <a name="code-complete"></a>Ukończono kod
 
-W tym samouczku w aplikacji kalkulatora wszedliśmy wiele zmian. Aplikacja obsługuje teraz zasoby obliczeniowe wydajniej i obsługuje większość błędów wejściowych użytkownika.
+W tym samouczku w aplikacji kalkulatora wdaliśmy się w wiele zmian. Aplikacja teraz wydajniej obsługuje zasoby obliczeniowe i obsługuje większość błędów wejściowych użytkownika.
 
 Oto kompletny kod w jednym miejscu:
 
@@ -627,7 +627,7 @@ Przejdź do kolejnych samouczków:
 Przejdź do drugiej części tego samouczka:
 
 > [!div class="nextstepaction"]
-> [Kontynuuj pracę z częścią 2](tutorial-console-part-2.md)
+> [Kontynuuj z częścią 2](tutorial-console-part-2.md)
 :::moniker-end
 
 ## <a name="see-also"></a>Zobacz też
