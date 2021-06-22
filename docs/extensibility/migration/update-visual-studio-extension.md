@@ -9,14 +9,19 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514c9654a741e4e1e565f0cb2becdbe3157fab0c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
+ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308798"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112424656"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Aktualizacja rozszerzenia Visual Studio dla programu Visual Studio 2022
+
+> [!IMPORTANT]
+> Porady w tym przewodniku mają pomóc deweloperom w migrowaniu rozszerzeń, które wymagają istotnych zmian do pracy zarówno w programie Visual Studio 2019, jak i 2022. W takich przypadkach zaleca się użycie dwóch projektów VSIX i kompilacji warunkowej.
+> Wiele rozszerzeń będzie w stanie działać zarówno w programie Visual Studio 2019, jak i 2022 z niewielkimi zmianami, które nie będą wymagały zaleceń dotyczących modernizacji rozszerzenia w tym przewodniku.
+> Wypróbuj rozszerzenie w programie Visual Studio 2022 i oceń, która opcja jest najlepsza dla Twojego rozszerzenia.
 
 Możesz zaktualizować rozszerzenie do pracy z programem Visual Studio 2022 (wersja zapoznawcza), korzystając z tego przewodnika. Visual Studio 2022 (wersja zapoznawcza) jest aplikacją 64-bitową i wprowadza pewne istotne zmiany w zestawie VS SDK. Ten przewodnik zawiera instrukcje dotyczące kroków wymaganych do pracy rozszerzenia z bieżącą wersji zapoznawczą programu Visual Studio 2022, dzięki czemu rozszerzenie może być gotowe do zainstalowania przez użytkowników przed Visual Studio 2022 r. osiągnie wersji gachodniej.
 
@@ -205,27 +210,27 @@ Aby dodać obsługę Visual Studio 2022 do rozszerzenia, należy wykonać nastę
 
    | Element | Wartość | Opis |
    | - | - | - |
-   | ProductArchitecture | X86, AMD64 | Platformy obsługiwane przez ten vsix. Wielkość liter nie jest zróżnicowa. Jedna platforma na element i jeden element na InstallTarget. W przypadku wersji produktu starszych niż 17.0 wartość domyślna to x86 i można ją pominąć.  W przypadku produktów w wersji 17.0 i większej ten element jest wymagany i nie ma wartości domyślnej. W Visual Studio 2022 r. jedyną prawidłową zawartością tego elementu jest "amd64". |
+   | ProductArchitecture | X86, AMD64 | Platformy obsługiwane przez ten vsix. Wielkość liter nie jest zróżnicowa. Jedna platforma na element i jeden element na element InstallTarget. W przypadku wersji produktu mniejszej niż 17.0 wartość domyślna to x86 i można ją pominąć.  W przypadku produktów w wersji 17.0 i większej ten element jest wymagany i nie ma wartości domyślnej. W Visual Studio 2022 r. jedyną prawidłową zawartością dla tego elementu jest "amd64". |
 
-1. W pliku source.extension.vsixmanifest należy wprowadzić inne wymagane korekty, aby dopasować je do tego, który Visual Studio 2019 r. (jeśli taki został). Bardzo ważne jest, aby identyfikator VSIX w `Identity` elemencie manifestu był identyczny dla obu rozszerzeń.
+1. W pliku source.extension.vsixmanifest należy wprowadzić inne wymagane korekty, aby dopasować je do tego, które ma być Visual Studio 2019 r. (jeśli takie są). Bardzo ważne jest, aby identyfikator VSIX w `Identity` elemencie manifestu był identyczny dla obu rozszerzeń.
 
-W tym momencie masz rozszerzenie VSIX Visual Studio 2022. Należy skompilować projekt VSIX Visual Studio 2022 i przechodzić przez wszelkie podziały [kompilacji, które są wyświetlane.](#handle-breaking-api-changes) Jeśli nie masz przerw w kompilacji w projekcie VSIX Visual Studio 2022, gratulacje: wszystko jest gotowe do testowania!
+W tym momencie masz rozszerzenie VSIX Visual Studio 2022. Należy skompilować projekt VSIX Visual Studio 2022 i przejść przez wszystkie podziały [kompilacji, które są wyświetlane.](#handle-breaking-api-changes) Jeśli nie masz przerw w kompilacji w docelowym projekcie VSIX Visual Studio 2022, gratulacje: wszystko jest gotowe do testowania!
 
 ## <a name="handle-breaking-api-changes"></a>Obsługa zmian interfejsu API, które są istotne
 
-W wersji 2022 [w](breaking-api-list.md) wersji 2022 Visual Studio api występują istotne zmiany, które mogą wymagać zmian w kodzie od tego, kiedy był on już w poprzednich wersjach. Przejrzyj ten dokument, aby uzyskać porady dotyczące aktualizowania kodu dla każdego z nich.
+W wersji [20222](breaking-api-list.md) Visual Studio api występują istotne zmiany, które mogą wymagać zmian w kodzie od jego wcześniejszego. Zapoznaj się z tym dokumentem, aby uzyskać porady dotyczące aktualizowania kodu dla każdego z nich.
 
-Podczas dostosowywania kodu zalecamy korzystanie [](#use-conditional-compilation-symbols) z kompilacji warunkowej, aby kod nadal obsługi Visual Studio 2022 r. był jeszcze Visual Studio 2022 r.
+Podczas dostosowywania kodu zalecamy korzystanie [](#use-conditional-compilation-symbols) z kompilacji warunkowej, aby kod nadal obsługiwaniu przed Visual Studio 2022 r. podczas dodawania obsługi Visual Studio 2022 r.
 
 Gdy otrzymasz rozszerzenie Visual Studio 2022, przejdź do [testowania](#test-your-extension).
 
 ## <a name="use-conditional-compilation-symbols"></a>Używanie symboli kompilacji warunkowej
 
-Jeśli chcesz użyć tego samego kodu źródłowego, nawet tego samego pliku, dla programu Visual Studio 2022 i wcześniejszych wersji, może być konieczne użycie kompilacji warunkowej, aby można było utworzyć ford kodu w celu dostosowania do zmian przerywania. Kompilacja warunkowa to funkcja języków C#, Visual Basic i C++, która może służyć do współużytkowania większości kodu przy jednoczesnym dostępie do rozbieżnych interfejsów API w określonych miejscach.
+Jeśli chcesz użyć tego samego kodu źródłowego, nawet tego samego pliku, dla programu Visual Studio 2022 i wcześniejszych wersji, może być konieczne użycie kompilacji warunkowej, aby można było utworzyć fordy kodu w celu dostosowania się do zmian przerywania. Kompilacja warunkowa to funkcja języków C#, Visual Basic i C++, która może służyć do współużytkowania większości kodu przy jednoczesnym zachowaniu rozbieżnych interfejsów API w określonych miejscach.
 
-Więcej informacji na temat użycia dyrektyw preprocesora i symboli kompilacji warunkowej można znaleźć w dyrektywie microsoft docs [#if preprocesora](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation).
+Więcej informacji na temat użycia dyrektyw preprocesora i symboli kompilacji warunkowej można znaleźć w dyrektywie [preprocesora](/dotnet/csharp/language-reference/preprocessor-directives#conditional-compilation)microsoft docs #if .
 
-Twoje projekt(y), które mają być Visual Studio wcześniejszych wersjach, będą potrzebować symbolu kompilacji warunkowej, który następnie może służyć do forkowania kodu w celu używania różnych interfejsów API. Symbol kompilacji warunkowej można ustawić na stronie właściwości projektu, jak pokazano na poniższej ilustracji:
+W projektach docelowych wcześniejszych wersji Visual Studio będzie potrzebny symbol kompilacji warunkowej, który następnie może służyć do forkowania kodu w celu używania różnych interfejsów API. Symbol kompilacji warunkowej można ustawić na stronie właściwości projektu, jak pokazano na poniższej ilustracji:
 
 ![Ustawianie symboli kompilacji warunkowej](media/update-visual-studio-extension/conditional-compilation-symbols.png)
 
@@ -246,7 +251,7 @@ Następnie można użyć tego symbolu jako dyrektywy przedprocesowej ( `#if` ), 
 #endif
 ```
 
-W niektórych przypadkach można po prostu użyć funkcji , aby uniknąć nazewnictwa typu, co pozwala `var` uniknąć konieczności stosowania `#if` regionów. Powyższy fragment kodu można również zapisywać w następujący sposób:
+W niektórych przypadkach można po prostu użyć funkcji , aby uniknąć nazewnictwa typu, co pozwala `var` uniknąć konieczności używania `#if` regionów. Powyższy fragment kodu można również zapisywać w następujący sposób:
 
 ```cs
     Guid myGuid = new Guid("{633FBA02-719B-40E7-96BF-0899767CD104}");
@@ -255,15 +260,15 @@ W niektórych przypadkach można po prostu użyć funkcji , aby uniknąć nazewn
     shell.LoadUILibrary(myGuid, myFlags, out var ptrLib);
 ```
 
-Korzystając ze składni, zwróć uwagę na sposób użycia listy rozwijanej kontekstu usługi językowej w dokumencie przedstawionym poniżej, aby zmienić wyróżnianie składni, a druga pomaga usłudze językowej skupić uwagę na jednej docelowej wersji Visual Studio dla naszego rozszerzenia a `#if` drugiej.
+Podczas korzystania ze składni zwróć uwagę na sposób użycia listy rozwijanej kontekstu usługi językowej w dokumencie pokazanym poniżej, aby zmienić wyróżnianie składni, a druga pomaga usłudze językowej skupić uwagę na jednej docelowej wersji Visual Studio dla naszego rozszerzenia lub `#if` innej.
 
 ![Kompilacja warunkowa w udostępnionym projekcie](media/update-visual-studio-extension/conditional-compilation-if-region.png)
 
 ### <a name="xaml-sharing-techniques"></a>Techniki udostępniania XAML
 
-Język XAML nie ma preprocesora umożliwiającego dostosowywanie zawartości na podstawie symboli preprocesora. Może być wymagane kopiowanie i obsługa dwóch stron XAML, gdzie ich zawartość Visual Studio 2022 r. i wcześniejszych wersjach.
+Język XAML nie ma preprocesora umożliwiającego dostosowywanie zawartości na podstawie symboli preprocesora. Może być wymagane kopiowanie i obsługa dwóch stron XAML, w których ich zawartość Visual Studio wersji 2022 i wcześniejszych.
 
-Jednak w niektórych przypadkach odwołanie do typu, który istnieje w odrębnych zestawach w programie Visual Studio 2022 i wcześniejszych wersjach, może być nadal reprezentowane w jednym pliku XAML przez usunięcie przestrzeni nazw odwołującej się do zestawu:
+Jednak w niektórych przypadkach odwołanie do typu, który istnieje w odrębnych zestawach w programie Visual Studio 2022 i wcześniejszych wersjach, może nadal być reprezentowane w jednym pliku XAML przez usunięcie przestrzeni nazw odwołującej się do zestawu:
 
 ```diff
 -xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
@@ -273,10 +278,10 @@ Jednak w niektórych przypadkach odwołanie do typu, który istnieje w odrębnyc
 
 ## <a name="test-your-extension"></a>Testowanie rozszerzenia
 
-Aby przetestować rozszerzenie dla wersji Visual Studio 2022, konieczne będzie Visual Studio wersji zapoznawczej 2022.
-Nie będzie można uruchamiać rozszerzeń 64-bitowych w wersjach programu Visual Studio starszych niż 2022 Visual Studio 2022.
+Aby przetestować rozszerzenie dla wersji Visual Studio 2022, należy zainstalować Visual Studio 2022 (wersja zapoznawcza).
+Nie będzie można uruchamiać rozszerzeń 64-bitowych w wersjach programu Visual Studio starszych niż Visual Studio 2022 (wersja zapoznawcza).
 
-Za pomocą programu Visual Studio 2022 (wersja zapoznawcza) można kompilować i testować rozszerzenia, niezależnie od tego, czy są one Visual Studio 2022 r., czy starszej wersji. Podczas uruchamiania projektu VSIX od Visual Studio 2022 r. zostanie uruchomione eksperymentalne Visual Studio projektu.
+Za pomocą programu Visual Studio 2022 (wersja zapoznawcza) można kompilować i testować rozszerzenia niezależnie od tego, czy są one Visual Studio 2022 r., czy starszej wersji. Podczas uruchamiania projektu VSIX od Visual Studio 2022 r. zostanie uruchomione eksperymentalne Visual Studio projektu.
 
 Zdecydowanie zalecamy przetestowanie z każdą wersją Visual Studio, która ma być wspierana przez rozszerzenie.
 
@@ -288,33 +293,33 @@ Teraz możesz opublikować [rozszerzenie](#publish-your-extension).
 
 ### <a name="visual-studio-marketplace"></a>Witryna Visual Studio Marketplace
 
-Opublikowanie rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to doskonały sposób na nakłonienie nowych użytkowników do znalezienia i zainstalowania rozszerzenia. Niezależnie od tego, czy rozszerzenie jest przeznaczone Visual Studio 2022 r., czy też dotyczy starszych wersji programu VS, w witrynie Marketplace będzie dostępna pomoc techniczna.
+Opublikowanie rozszerzenia w [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to doskonały sposób na znalezienie i zainstalowanie rozszerzenia przez nowych użytkowników. Niezależnie od tego, czy rozszerzenie jest przeznaczone Visual Studio 2022 r., czy też dotyczy starszych wersji programu VS, w witrynie Marketplace będzie dostępna pomoc techniczna.
 
-W przyszłości w witrynie Marketplace będzie można przekazać wiele plików VSIX tylko do jednej oferty w witrynie Marketplace, co umożliwi przekazanie pliku VSIX docelowego dla programu Visual Studio 2022 r. i przedsprzeda Visual Studio 2022 r. VSIX. Podczas korzystania z menedżera rozszerzeń programu VS użytkownicy automatycznie uzyskają właściwy vsix dla zainstalowanej wersji programu VS.
+W przyszłości w witrynie Marketplace będzie można przekazać wiele plików VSIX tylko do jednej oferty w witrynie Marketplace, co umożliwi przekazanie pliku VSIX dla wersji Visual Studio 2022 i vsix z wersji Visual Studio 2022. Podczas korzystania z menedżera rozszerzeń programu VS użytkownicy automatycznie uzyskają właściwy vsix dla zainstalowanej przez nich wersji programu VS.
 
-W przypadku wersji zapoznawczych Visual Studio 2022 r. platforma Marketplace będzie obsługiwać tylko jeden plik VSIX na ofertę w witrynie Marketplace. Chociaż Visual Studio 2022 r. jest w wersji zapoznawczej, zachęcamy do korzystania z oddzielnej oferty Visual Studio Marketplace tylko w 2022 r. dla Twojego rozszerzenia. Dzięki temu można w razie potrzeby iterować rozszerzenie Visual Studio 2022 bez wpływu na klientów we wcześniejszych wersjach Visual Studio. Możesz również oznaczyć rozszerzenie jako "wersja zapoznawcza", aby ustawić oczekiwanie, że prawdopodobnie będzie mniej niezawodne, nawet jeśli źródłem tej zawodności jest Visual Studio 2022 r., niż rozszerzenie główne.
+W przypadku wersji zapoznawczych Visual Studio 2022 r. platforma Marketplace będzie obsługiwać tylko jeden plik VSIX na ofertę w witrynie Marketplace. Chociaż Visual Studio 2022 r. jest w wersji zapoznawczej, zachęcamy do oddzielnego Visual Studio witryny Marketplace tylko dla Twojego rozszerzenia. Dzięki temu możesz w razie potrzeby iterować Visual Studio 2022 bez wpływu na wcześniejsze wersje Visual Studio. Możesz również oznaczyć rozszerzenie jako "wersja zapoznawcza", aby ustawić oczekiwanie, że będzie prawdopodobnie mniej niezawodne, nawet jeśli źródłem tej zawodności jest Visual Studio 2022 r., niż rozszerzenie główne.
 
 ### <a name="custom-installer"></a>Instalator niestandardowy
 
-W przypadku skompilowania pliku MSI/EXE w celu zainstalowania rozszerzenia i zduplikowania pliku vsixinstaller.exe w celu zainstalowania (części) rozszerzenia należy pamiętać, że instalator VSIX w wersji Visual Studio 2022 został zaktualizowany. Deweloperzy będą musieli użyć wersji instalatora VSIX, która jest dostarczany z programem Visual Studio 2022, aby zainstalować rozszerzenia programu Visual Studio 2022. Instalator VSIX w wersji Visual Studio 2022 zainstaluje również odpowiednie rozszerzenia przeznaczone dla poprzednich wersji programu Visual Studio, które są instalowane obok Visual Studio 2022 na tej samej maszynie.
+W przypadku kompilowania pliku MSI/EXE w celu zainstalowania rozszerzenia i vsixinstaller.exe do zainstalowania (części) rozszerzenia należy pamiętać, że instalator VSIX w programie Visual Studio 2022 został zaktualizowany. Deweloperzy będą musieli użyć wersji instalatora VSIX, która jest dostarczany z programem Visual Studio 2022, aby zainstalować rozszerzenia do wersji Visual Studio 2022. Instalator VSIX w wersji Visual Studio 2022 zainstaluje również odpowiednie rozszerzenia przeznaczone dla poprzednich wersji systemu Visual Studio, które są instalowane obok programu Visual Studio 2022 na tym samym komputerze.
 
 ### <a name="network-share"></a>Udział sieciowy
 
-Możesz udostępnić rozszerzenie za pośrednictwem sieci LAN lub w inny sposób. W przypadku wersji docelowych Visual Studio 202 Visual Studio 2 i przed 2022 2022 konieczne będzie udostępnienie wielu plików VSIX pojedynczo i nadaj im nazwy plików (lub umieść je w unikatowych folderach), które ułatwiają użytkownikom informacje o tym, który vsix zainstalować na podstawie zainstalowanej wersji Visual Studio programu .
+Możesz udostępnić rozszerzenie za pośrednictwem sieci LAN lub w inny sposób. W przypadku docelowych wersji Visual Studio 2022 i 2022 w wersjach 2022 i Visual Studio 2022 konieczne będzie udostępnienie wielu plików VSIX i nadaj im nazwy plików (lub umieść je w unikatowych folderach), co pomoże użytkownikom dowiedzieć się, który vsix zainstalować na podstawie zainstalowanej wersji Visual Studio programu .
 
 ### <a name="other-considerations"></a>Inne zagadnienia
 
 #### <a name="dependencies"></a>Zależności
 
-Jeśli w twoim vsix określono inny VSIX jako zależność za pośrednictwem elementu, każdy element VSIX, do których się odwołujesz, musi zostać zainstalowany w tych samych elementach docelowych i architekturach produktów, co `<dependency>` vsix. Jeśli zależny vsix nie obsługuje docelowej instalacji Visual Studio, vsix nie powiedzie się. Zależny vsix może obsługiwać więcej obiektów docelowych i architektur niż Twój, a nie mniej. To ograniczenie oznacza, że podejście do wdrażania i dystrybucji w vsix z zależnościami powinno być duplikatem ich zależności.
+Jeśli w twoim vsix określono inny VSIX jako zależność za pośrednictwem elementu, każdy, do których odwołuje się VSIX, musi zostać zainstalowany w tych samych elementach docelowych i architekturach produktów, co `<dependency>` vsix. Jeśli zależny vsix nie obsługuje docelowej instalacji Visual Studio, vsix nie powiedzie się. Zależny vsix może obsługiwać więcej obiektów docelowych i architektur niż Twoje, a nie mniej. To ograniczenie oznacza, że podejście do wdrażania i dystrybucji w vsix z zależnościami powinno być duplikatem ich zależności.
 
 ## <a name="q--a"></a>Pytania i odpowiedzi
 
-**Pytanie:** Moje rozszerzenie nie wymaga żadnych zmian międzyplatopowych, ponieważ udostępnia tylko dane (na przykład szablony), czy mogę utworzyć jedno rozszerzenie, które obejmuje również program Visual Studio 2022?
+**Pytanie:** Czy moje rozszerzenie nie wymaga żadnych zmian międzyplatopowych, ponieważ udostępnia tylko dane (na przykład szablony), czy można utworzyć jedno rozszerzenie, które obejmuje również Visual Studio 2022 r.?
 
-**Odpowiedź:** Tak!  Aby [uzyskać więcej informacji na ten temat,](#extensions-without-running-code) zobacz Rozszerzenia bez uruchamiania kodu.
+**Odpowiedź:** Tak!  Aby [uzyskać więcej informacji na ten temat,](#extensions-without-running-code) zobacz Extensions without running code (Rozszerzenia bez uruchamiania kodu).
 
-**Pytanie:** Zależność NuGet wprowadza stare zestawy międzyoptykowe i powoduje konflikt klas.
+**Pytanie:** Zależność NuGet powoduje wprowadzenie starych zestawów międzyoptykowych i powoduje konflikt klas.
 
 **A**: Dodaj następujący wiersz do pliku csproj, aby uniknąć duplikowania zestawów:
 
@@ -322,7 +327,7 @@ Jeśli w twoim vsix określono inny VSIX jako zależność za pośrednictwem ele
     <PackageReference Include="<Name of offending assembly>" ExcludeAssets="compile" PrivateAssets="all" />
 ```
 
-Uniemożliwi to importowanie odwołań do pakietu starej wersji zestawu z innych zależności.
+Uniemożliwi to importowanie starej wersji zestawu z innych zależności przez odwołania do pakietu.
 
 **Pytanie:** Moje polecenia i klawisze dostępu nie działają Visual Studio po przełączeniu plików źródłowych na udostępniony projekt.
 
@@ -330,4 +335,4 @@ Uniemożliwi to importowanie odwołań do pakietu starej wersji zestawu z innych
 
 ## <a name="next-steps"></a>Następne kroki
 
-Wykonaj przykład krok po kroku, [ImageOptimizer,](samples.md)z linkami do projektu i zmian kodu dla każdego kroku.
+Skorzystaj z przykładu krok po kroku [ImageOptimizer](samples.md)z linkami do projektu i zmianami kodu dla każdego kroku.
