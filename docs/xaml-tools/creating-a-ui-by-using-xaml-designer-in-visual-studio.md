@@ -1,6 +1,6 @@
 ---
-title: Projektant XAML — omówienie
-description: Dowiedz się więcej o interfejsie użytkownika obszaru roboczego i funkcjach interfejsu projektant XAML platformie Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML.
+title: Tworzenie interfejsów uIs za pomocą Visual Studio projektant XAML
+description: Dowiedz się więcej o interfejsie użytkownika obszaru roboczego i funkcjach projektant XAML platformie Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML.
 ms.date: 03/03/2020
 ms.topic: conceptual
 ms.custom: contperf-fy21q4, SEO-VS-2020
@@ -14,27 +14,27 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565235"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550691"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML
 
-Interfejs projektant XAML w Visual Studio i Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML, takich jak WPF i UWP. Interfejsy użytkownika dla aplikacji można tworzyć, przeciągając kontrolki z okna przybornika (okno Elementy Blend for Visual Studio) i ustawiając właściwości w okno Właściwości. Możesz również edytować kod XAML bezpośrednio w widoku XAML.
+Interfejs projektant XAML w Visual Studio i Blend for Visual Studio udostępnia interfejs wizualny ułatwiający projektowanie aplikacji opartych na języku XAML, takich jak WPF i UWP. Interfejsy użytkownika dla aplikacji można tworzyć, przeciągając kontrolki z okna Przybornik (okno Elementy Blend for Visual Studio) i ustawiając właściwości w okno Właściwości. Język XAML można również edytować bezpośrednio w widoku XAML.
 
-W przypadku zaawansowanych użytkowników można nawet [dostosować projektant XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
+W przypadku użytkowników zaawansowanych można nawet [dostosować projektant XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin.Forms nie obsługuje projektanta XAML. Aby wyświetlić interfejsy użytkownika języka XAML platformy Xamarin.Forms i edytować je, gdy aplikacja jest uruchomiona, użyj Przeładowywanie kodu XAML na gorąco dla platformy Xamarin.Forms. Aby uzyskać więcej informacji, zobacz [stronę Przeładowywanie kodu XAML na gorąco dla platformy Xamarin.Forms (wersja zapoznawcza).](/xamarin/xamarin-forms/xaml/hot-reload/)
+> Xamarin.Forms nie obsługuje projektanta XAML. Aby wyświetlić interfejsy użytkownika języka XAML platformy Xamarin.Forms i edytować je, gdy aplikacja jest uruchomiona, użyj Przeładowywanie kodu XAML na gorąco dla platformy Xamarin.Forms. Aby uzyskać więcej informacji, zobacz [stronę Przeładowywanie kodu XAML na gorąco platformy Xamarin.Forms (wersja zapoznawcza).](/xamarin/xamarin-forms/xaml/hot-reload/)
 
-## <a name="xaml-designer-workspace"></a>projektant XAML roboczy
+## <a name="xaml-designer-workspace"></a>projektant XAML obszaru roboczego
 
-Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualnego. Obejmują one obszar *kompozycji* (czyli powierzchnię projektową wizualizacji), edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno Właściwości. Aby otworzyć plik projektant XAML kliknij prawym przyciskiem myszy plik XAML w Eksplorator rozwiązań **i** wybierz **Projektant widoków**.
+Obszar roboczy w projektant XAML składa się z kilku elementów interfejsu wizualnego. Obejmują one *obszar kompozycji* (czyli powierzchnię projektową wizualizacji), edytor XAML, okno konspektu dokumentu (Obiekty i oś czasu okno Blend for Visual Studio) i okno Właściwości. Aby otworzyć projektant XAML, kliknij prawym przyciskiem myszy plik XAML w Eksplorator rozwiązań **i** wybierz **Projektant widoków**.
 
-projektant XAML widok XAML i zsynchronizowany widok Projekt renderowanych znaczników XAML aplikacji. Po otwarciu pliku XAML w Visual Studio lub Blend for Visual Studio można przełączać się między widok Projekt i widokiem XAML przy użyciu kart Projektowanie **i** **XAML.** Możesz użyć przycisku **Zamień** okienka Przycisk Zamień okienka w projektant XAML, aby przełączyć okno wyświetlane u góry: obszar kompozycji lub ![ ](media/swap-panes.PNG) edytor XAML.
+projektant XAML udostępnia widok XAML i zsynchronizowany widok Projekt renderowanych znaczników XAML aplikacji. Po otwarciu pliku XAML w Visual Studio lub Blend for Visual Studio można przełączać się między widok Projekt i widokiem XAML przy użyciu kart Projektowanie **i** **XAML.** Możesz użyć przycisku **Zamień** okienka Przycisk Zamień okienka w projektant XAML, aby przełączyć okno wyświetlane u góry: obszar kompozycji lub ![ edytor ](media/swap-panes.PNG) XAML.
 
 ### <a name="design-view"></a>widok Projekt
 
@@ -62,19 +62,19 @@ Definiowanie układów siatki służy do kontrolowania szerokości i wysokości 
 
 **Zmienianie rozmiaru uchwytów**
 
-Uchwyty zmiany rozmiaru są wyświetlane na wybranych kontrolkach i umożliwiają zmianę rozmiaru kontrolki. Podczas zmiany rozmiaru kontrolki zwykle wyświetlane są wartości szerokości i wysokości, które ułatwiają jej rozmiar. Aby uzyskać więcej informacji na temat manipulowania kontrolkami w **widoku Projekt,** zobacz [Praca z elementami w projektant XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+Uchwyty zmiany rozmiaru są wyświetlane na wybranych kontrolkach i umożliwiają zmianę rozmiaru kontrolki. Podczas zmiany rozmiaru kontrolki zwykle wyświetlane są wartości szerokości i wysokości, które ułatwiają jej rozmiar. Aby uzyskać więcej informacji na temat manipulowania kontrolkami w **widoku projektu,** zobacz [Praca z elementami w projektant XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 **Marginesy**
 
-Marginesy reprezentują stałą ilość miejsca między krawędzią kontrolki a krawędzią jej kontenera. Marginesy kontrolki można ustawić przy użyciu właściwości [Margines](xref:Windows.UI.Xaml.FrameworkElement.Margin) w obszarze **Układ** w **oknie** Właściwości.
+Marginesy reprezentują stałą przestrzeń między krawędzią kontrolki a krawędzią jej kontenera. Marginesy kontrolki można ustawić przy użyciu właściwości [Margines](xref:Windows.UI.Xaml.FrameworkElement.Margin) w obszarze **Układ** w **oknie** Właściwości.
 
 **Definiowanie układów marginesów**
 
-Użyj funkcji definiowania układu marginesów, aby zmienić marginesy elementu względem jego kontenera układu. Gdy definiowanie układu marginesu jest otwarte, margines nie jest ustawiony, a definiowanie układu marginesu wyświetla przerwany łańcuch. Gdy margines nie jest ustawiony, elementy pozostają na miejscu, gdy rozmiar kontenera układu jest zmieniany w czasie uruchamiania. Po zamknięciu definiowania układu marginesu program definiowania układu marginesu wyświetla odłączony łańcuch, a elementy są przesuwane z marginesem, ponieważ rozmiar kontenera układu jest zmieniany w czasie uruchamiania (margines pozostaje stały).
+Użyj funkcji definiowania układu marginesów, aby zmienić marginesy elementu względem jego kontenera układu. Gdy definiowanie układu marginesu jest otwarte, margines nie jest ustawiany, a definiowanie układu marginesu wyświetla przerwany łańcuch. Gdy margines nie jest ustawiony, elementy pozostają na miejscu, gdy rozmiar kontenera układu jest zmieniany w czasie uruchamiania. Gdy definiowanie układu marginesu jest zamknięte, definiowanie układu marginesu wyświetla nieprzerwany łańcuch, a elementy są przesuwane z marginesem, ponieważ rozmiar kontenera układu jest zmieniany w czasie uruchamiania (margines pozostaje stały).
 
-**Dojścia elementów**
+**Uchwyty elementów**
 
-Element można zmodyfikować przy użyciu uchwytów elementów, które pojawiają się na tablicy kompozycji, gdy przesuwasz wskaźnik na narożniki niebieskiego pola otaczającego element. Te uchwyty umożliwiają obracanie, zmienianie rozmiaru, przerzucanie, przenoszenie lub dodawanie promienia narożnika do elementu. Symbol uchwytu elementu zależy od funkcji i zmian w zależności od dokładnej lokalizacji wskaźnika. Jeśli nie widzisz uchwytów elementu, upewnij się, że element jest zaznaczony.
+Element można zmodyfikować przy użyciu uchwytów elementów, które pojawiają się na tablicy kompozycji podczas przesuwania wskaźnika na narożniki niebieskiego pola otaczającego element. Te uchwyty umożliwiają obracanie, zmienianie rozmiaru, przerzucanie, przenoszenie lub dodawanie promienia rogu do elementu. Symbol uchwytu elementu różni się w zależności od funkcji i zmienia się w zależności od dokładnej lokalizacji wskaźnika. Jeśli nie widzisz uchwytów elementu, upewnij się, że element został wybrany.
 
 W **widoku** Projekt dodatkowe polecenia obszaru kompozycji są dostępne w lewym dolnym obszarze okna, jak pokazano poniżej:
 
@@ -84,9 +84,9 @@ Te polecenia są dostępne na tym pasku narzędzi:
 
 **Powiększenie**
 
-Funkcja Zoom umożliwia rozmiar powierzchni projektowej. Możesz powiększyć z 12,5% do 800% lub wybrać opcje, takie jak Dopasuj **zaznaczenie** i **Dopasuj wszystko.**
+Funkcja Zoom umożliwia rozmiar powierzchni projektowej. Możesz powiększyć z 12,5% do 800% lub wybrać opcje, takie jak **Dopasuj wybór** i **Dopasuj wszystko.**
 
-**Pokaż/Ukryj siatkę przyciągania**
+**Pokaż/ukryj siatkę przyciągania**
 
 Wyświetla lub ukrywa siatkę przyciągania, która pokazuje linie siatki. Linie siatki są używane w przypadku włączenia przyciągania do linii **siatki** lub **przyciągania do linii przyciągania.**
 
@@ -104,7 +104,7 @@ Linie przyciągania ułatwiają wyrównywanie kontrolek względem siebie. Jeśli
 
 **Wyłączanie kodu projektu**
 
-Wyłącza [kod projektu](debugging-or-disabling-project-code-in-xaml-designer.md), na przykład niestandardowe kontrolki i konwertery wartości, a następnie ponownie ładuje projektanta.
+Wyłącza [kod projektu](debugging-or-disabling-project-code-in-xaml-designer.md), na przykład niestandardowe kontrolki i konwertery wartości, a także ponownie ładuje projektanta.
 
 ### <a name="xaml-view"></a>Widok XAML
 
@@ -118,48 +118,48 @@ Okno Konspekt dokumentu w Visual Studio jest podobne do [Obiekty i oś czasu w B
 
 - Wyświetl hierarchiczną strukturę wszystkich elementów w tablicy kompozycji.
 
-- Wybierz elementy, aby można było je modyfikować. Można na przykład poruszać się po hierarchii lub ustawiać ich właściwości w okno Właściwości. Aby uzyskać więcej informacji, zobacz [Praca z elementami w projektant XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Wybierz elementy, aby można je było modyfikować. Można na przykład poruszać się po hierarchii lub ustawiać ich właściwości w okno Właściwości. Aby uzyskać więcej informacji, zobacz [Praca z elementami w projektant XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Tworzenie i modyfikowanie szablonów dla elementów, które są kontrolkami.
 
 - [Tworzenie animacji](animate-objects-in-xaml-designer.md) (tylko Blend for Visual Studio).
 
-Aby wyświetlić okno Konspekt dokumentu w Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **inne konspekt** dokumentu  >  **systemu** Windows.
+Aby wyświetlić okno Konspekt dokumentu Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **inne konspekt** dokumentu  >  **systemu** Windows.
 Aby wyświetlić okno Obiekty i oś czasu w Blend for Visual Studio, na pasku menu wybierz pozycję **Wyświetl**  >  **konspekt dokumentu.**
 
 ![Okno Konspekt dokumentu w Visual Studio](media/document-outline-window.png)
 
-Główny widok w oknie Konspekt/Obiekty i oś czasu dokument zawiera hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspektu dokumentu umożliwia badanie dokumentu na różnych poziomach szczegółowości oraz blokowanie i ukrywanie elementów po jednym lub w grupach. Następujące opcje są dostępne w oknie Konspekt/Obiekty i oś czasu dokumentu:
+Główny widok w oknie Konspekt/Obiekty i oś czasu dokumentu wyświetla hierarchię dokumentu w strukturze drzewa. Można użyć hierarchicznego charakteru konspektu dokumentu, aby zbadać dokument na różnych poziomach szczegółowości oraz zablokować i ukryć elementy w grupach lub w grupach. Następujące opcje są dostępne w oknie Konspekt/Obiekty i oś czasu dokumentu:
 
 **Pokaż/ukryj**
 
-Wyświetla lub ukrywa elementy obszarów kompozycji. Pojawia się jako symbol oka, gdy jest wyświetlany. Możesz również nacisnąć klawisz **Ctrl** + **H,** aby ukryć element, i **shift** + **Ctrl** + **H,** aby go pokazać.
+Wyświetla lub ukrywa elementy obszarów kompozycji. Pojawia się jako symbol oka, gdy jest wyświetlany. Możesz również nacisnąć klawisz **Ctrl** + **H,** aby ukryć element, i **klawisze Shift** + **Ctrl** + **H,** aby go pokazać.
 
 **Blokowanie/odblokowywanie**
 
-Blokuje lub odblokowuje elementy obszarów kompozycji. Zablokowanych elementów nie można modyfikować. Pojawia się jako symbol kłódki po zablokowaniu. Możesz również nacisnąć klawisz **Ctrl** + **L,** aby zablokować element, i **klawisze Shift** + **Ctrl** + **L,** aby go odblokować.
+Blokuje lub odblokowuje elementy obszarów kompozycji. Zablokowanych elementów nie można modyfikować. Pojawia się jako symbol kłódki po zablokowaniu. Możesz również nacisnąć klawisz **Ctrl** + **L,** aby zablokować element, i **nacisnąć klawisz** + **Ctrl** + **L,** aby go odblokować.
 
 **Zwracanie zakresu do pageRoot**
 
-Opcja w górnej części okna Konspekt/Obiekty i oś czasu dokumentu, w którym jest symbol strzałki w górę, przechodzi do poprzedniego zakresu. Określanie zakresu ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
+Opcja w górnej części okna Konspekt/Obiekty i oś czasu dokumentu, w której jest symbol strzałki w górę, przechodzi do poprzedniego zakresu. Określanie zakresu ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
 
 ## <a name="properties-window"></a>Okno właściwości
 
-Okno **Właściwości** umożliwia ustawienie wartości właściwości dla kontrolek. Oto jak wygląda:
+Okno **Właściwości** umożliwia ustawienie wartości właściwości w kontrolkach. Oto jak wygląda:
 
 ![Okno właściwości](media/xaml-designer-properties-window.png)
 
-W górnej części okna Właściwości są dostępne **różne** opcje:
+W górnej części okna Właściwości dostępne są **różne** opcje:
 
 - Zmień nazwę aktualnie wybranego elementu w **polu** Nazwa.
 - W lewym górnym rogu znajduje się ikona reprezentująca aktualnie wybrany element.
-- Aby rozmieścić właściwości według kategorii lub alfabetycznie, kliknij pozycję **Kategoria,** **Nazwa** **lub** Źródło na liście **Rozmieść** według.
+- Aby rozmieścić właściwości według kategorii lub alfabetycznie, kliknij pozycję **Kategoria,** **Nazwa** lub **Źródło** na liście **Rozmieść według.**
 - Aby wyświetlić listę zdarzeń dla kontrolki, kliknij przycisk **Zdarzenia,** który jest wyświetlany jako symbol pioruna.
 - Aby wyszukać właściwość, zacznij wpisywać nazwę właściwości w polu wyszukiwania. W **oknie** Właściwości zostaną wyświetlone właściwości, które pasują do wyszukiwania podczas wpisywania.
 
 Niektóre właściwości umożliwiają ustawianie właściwości zaawansowanych przez wybranie przycisku strzałki w dół.
 
-Po prawej stronie każdej wartości właściwości znajduje się *znacznik właściwości,* który jest wyświetlany jako symbol pola. Wygląd znacznika właściwości wskazuje, czy do właściwości zastosowano powiązanie danych, czy zasób. Na przykład symbol białej skrzynki wskazuje wartość domyślną, symbol czarnej skrzynki zwykle wskazuje, że zastosowano zasób lokalny, a pomarańczowe pole zwykle wskazuje, że zostało zastosowane powiązanie danych. Po kliknięciu znacznika właściwości możesz przejść do definicji stylu, otworzyć konstruktor powiązania danych lub otworzyć s wyboru zasobów.
+Po prawej stronie każdej wartości właściwości znajduje się znacznik *właściwości,* który jest wyświetlany jako symbol pola. Wygląd znacznika właściwości wskazuje, czy do właściwości zastosowano powiązanie danych, czy zasób. Na przykład symbol białej skrzynki wskazuje wartość domyślną, symbol czarnej skrzynki zazwyczaj oznacza, że zastosowano zasób lokalny, a pomarańczowe pole zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznika właściwości możesz przejść do definicji stylu, otworzyć konstruktora powiązań danych lub otworzyć s wyboru zasobów.
 
 Aby uzyskać więcej informacji na temat używania właściwości i obsługi zdarzeń, zobacz [Wprowadzenie do kontrolek i wzorców](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9a45be2c18466754fba5469c59396f7a7791156d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386842"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550704"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: tworzenie aplikacji Node.js React w programie Visual Studio
 
@@ -33,7 +33,7 @@ Ten samouczek zawiera informacje na temat wykonywania następujących czynności
 
 ## <a name="before-you-begin"></a>Zanim rozpoczniesz
 
-Poniżej znajdziesz krótkie często zadawane pytania, w których znajdziesz wprowadzenie do niektórych kluczowych pojęć.
+Oto krótkie często zadawane pytania wprowadzające do niektórych kluczowych pojęć.
 
 ### <a name="what-is-nodejs"></a>Co to jest środowisko Node.js?
 
@@ -49,7 +49,7 @@ React to platforma front end do tworzenia interfejsu użytkownika.
 
 ### <a name="what-is-jsx"></a>Co to jest JSX?
 
-JSX to rozszerzenie składni języka JavaScript, zwykle używane z platformą React do opisywania elementów interfejsu użytkownika. Kod JSX musi zostać transpilowany na zwykły kod JavaScript, zanim będzie można go uruchomić w przeglądarce.
+JSX to rozszerzenie składni języka JavaScript, zwykle używane z platformą React do opisywania elementów interfejsu użytkownika. Kod JSX musi zostać transpilowany do zwykłego kodu JavaScript, zanim będzie można go uruchomić w przeglądarce.
 
 ### <a name="what-is-webpack"></a>Co to jest pakiet webpack?
 
@@ -76,7 +76,7 @@ Pakiet webpack zawiera pliki JavaScript, dzięki czemu można je uruchamiać w p
 
     Jeśli nie masz zainstalowanej wersji, zalecamy zainstalowanie wersji LTS z witryny internetowejNode.js, aby uzyskać najlepszą zgodność z zewnętrznymi platformami i bibliotekami. [](https://nodejs.org/en/download/) Node.js jest zbudowana dla architektur 32-bitowych i 64-bitowych. Narzędzia Node.js w Visual Studio, zawarte w obciążeniu Node.js, obsługują obie wersje. Wymagany jest tylko jeden z nich, Node.js instalator obsługuje tylko jedną zainstalowaną na raz.
 
-    Ogólnie rzecz biorąc, Visual Studio automatycznie wykrywa zainstalowane środowisko Node.js uruchomieniowe. Jeśli program nie wykryje zainstalowanego środowiska uruchomieniowego, możesz skonfigurować projekt do odwołania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz pozycję Właściwości **(lub** naciśnij klawisz **Alt**  +  **Enter**) **i** ustaw ścieżkęNode.exe ). Możesz użyć globalnej instalacji Node.js lub określić ścieżkę do interpretera lokalnego w każdym z Node.js projektów. 
+    Ogólnie rzecz biorąc, Visual Studio automatycznie wykrywa zainstalowane środowisko Node.js uruchomieniowe. Jeśli program nie wykryje zainstalowanego środowiska uruchomieniowego, możesz skonfigurować projekt do odwołania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie Właściwości **(lub** naciśnij klawisz **Alt**  +  **Enter**) **i** ustaw ścieżkęNode.exe ). Możesz użyć globalnej instalacji Node.js lub określić ścieżkę do interpretera lokalnego w każdym z Node.js projektów. 
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -87,20 +87,20 @@ Najpierw utwórz projekt Node.js aplikacji internetowej.
 1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij **klawisz Esc,** aby zamknąć okno uruchamiania. Naciśnij **klawisze Ctrl + Q,** aby otworzyć pole wyszukiwania, wpiszNode.js, **a** następnie wybierz pozycję Pusta Node.js web application **- JavaScript.** (Chociaż w tym samouczku jest używany kompilator języka TypeScript, kroki wymagają rozpoczęcia od szablonu **języka JavaScript).**
+    Naciśnij **klawisz Esc,** aby zamknąć okno uruchamiania. Naciśnij **klawisze Ctrl + Q,** aby otworzyć pole wyszukiwania, wpiszNode.js, **a** następnie wybierz pozycję Pusta Node.js web application **- JavaScript.** (Mimo że w tym samouczku jest używany kompilator języka TypeScript, kroki wymagają rozpoczęcia od szablonu **języka JavaScript).**
     
-    W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz.**
+    W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **File** New Project  >  **(Plik nowy**  >  **projekt).** W lewym okienku okna dialogowego **Nowy** projekt rozwiń pozycję **JavaScript,** a następnie wybierz **pozycjęNode.js**. W środkowym okienku wybierz pozycję **Node.js aplikacji internetowej,** wpisz nazwę **NodejsWebAppBlank,** a następnie wybierz **przycisk OK.**
     ::: moniker-end
-    Jeśli nie widzisz szablonu projektu **Blank Node.js Web Application,** musisz dodaćNode.js **projektowego.** Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne.](#prerequisites)
+    Jeśli nie widzisz szablonu projektu Pusta Node.js **aplikacji** internetowej, musisz dodaćNode.js **projektowego.** Aby uzyskać szczegółowe instrukcje, zobacz [Wymagania wstępne.](#prerequisites)
 
     Visual Studio tworzy nowe rozwiązanie i otwiera projekt.
 
     ![Node.js projektu w programie Eksplorator rozwiązań](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    (1) Wyróżnione  pogrubioną czcionką jest projekt, używając nazwy nadanych w oknie **dialogowym Nowy** projekt. W systemie plików ten projekt jest reprezentowany przez plik *.njsproj* w folderze projektu. Możesz ustawić właściwości i zmienne środowiskowe skojarzone z projektem, klikając projekt prawym przyciskiem myszy i wybierając polecenie **Właściwości** (lub naciśnij **klawisz Alt**  +  **Enter**). Można wykonać rundy z innymi narzędziami programistyki, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle Node.js projektu.
+    (1) Wyróżnione  pogrubioną czcionką jest projekt, używając nazwy nadanych w **oknie dialogowym Nowy** projekt. W systemie plików ten projekt jest reprezentowany przez plik *.njsproj* w folderze projektu. Możesz ustawić właściwości i zmienne środowiskowe skojarzone z projektem, klikając projekt prawym przyciskiem myszy i wybierając polecenie **Właściwości** (lub naciśnij **klawisz Alt**  +  **Enter**). Można wykonać rundy z innymi narzędziami programistyki, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle Node.js projektu.
 
     (2) Na najwyższym poziomie znajduje się rozwiązanie, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
@@ -165,7 +165,7 @@ Ta aplikacja wymaga poprawnego działania kilku modułów npm.
     ![Pakiety npm](../javascript/media/tutorial-nodejs-react-npm-modules-installed.png)
 
     > [!NOTE]
-    > Jeśli wolisz instalować pakiety npm przy użyciu wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj.** Do instalowania pakietów Node.js standardowych poleceń.
+    > Jeśli wolisz instalować pakiety npm przy użyciu wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj.** Użyj standardowych Node.js polecenia do instalowania pakietów.
 
 ## <a name="add-project-files"></a>Dodawanie plików projektu
 
@@ -176,13 +176,13 @@ W tych krokach dodasz cztery nowe pliki do projektu.
 * *index.html*
 * *tsconfig.json*
 
-W przypadku tej prostej aplikacji należy dodać nowe pliki projektu w katalogu głównym projektu. (W większości aplikacji zwykle dodaje się pliki do podfolderów i odpowiednio dostosowuje odwołania do ścieżki względnej).
+W przypadku tej prostej aplikacji należy dodać nowe pliki projektu w katalogu głównym projektu. (W większości aplikacji zwykle dodaje się pliki do podfolderów i odpowiednio dostosowuje się odwołania do ścieżki względnej).
 
 1. W Eksplorator rozwiązań prawym przyciskiem myszy projekt **NodejsWebAppBlank** i wybierz polecenie Dodaj nowy  >  **element** (lub naciśnij **klawisze Ctrl**  +  **SHIFT**  +  **A**).
 
-1. W **oknie dialogowym Dodawanie** nowego elementu wybierz plik **TypeScript JSX,** wpisz nazwę *app.tsx* i wybierz pozycję **Dodaj** lub **OK.**
+1. W **oknie dialogowym Dodawanie** nowego elementu wybierz pozycję **Plik JSX TypeScript,** wpisz nazwę *app.tsx* i wybierz pozycję **Dodaj** lub **OK.**
 
-1. Powtórz te kroki, aby *dodaćwebpack-config.js*. Zamiast pliku TypeScript JSX wybierz pozycję **Plik JavaScript.**
+1. Powtórz te kroki, aby *dodaćwebpack-config.js*. Zamiast pliku JSX TypeScript wybierz pozycję **Plik JavaScript.**
 
 1. Powtórz te same kroki, aby *index.html* do projektu. Zamiast pliku JavaScript wybierz pozycję **Plik HTML.**
 
@@ -210,9 +210,9 @@ W przypadku tej prostej aplikacji należy dodać nowe pliki projektu w katalogu 
     });
     ```
 
-   Powyższy kod używa programu Express do uruchamiania Node.js jako serwera aplikacji internetowej. Ten kod ustawia port na numer portu skonfigurowany we właściwościach projektu (domyślnie we właściwościach port jest skonfigurowany na 1337). Aby otworzyć właściwości projektu, kliknij prawym przyciskiem myszy projekt w oknie Eksplorator rozwiązań wybierz pozycję **Właściwości.**
+   Powyższy kod używa programu Express do uruchamiania Node.js jako serwera aplikacji internetowej. Ten kod ustawia port na numer portu skonfigurowany we właściwościach projektu (domyślnie port jest skonfigurowany we właściwościach na wartość 1337). Aby otworzyć właściwości projektu, kliknij prawym przyciskiem myszy projekt w oknie Eksplorator rozwiązań wybierz pozycję **Właściwości.**
 
-1. Otwórz *aplikację app.tsx* i dodaj następujący kod:
+1. Otwórz *program app.tsx* i dodaj następujący kod:
 
     ```javascript
     declare var require: any
@@ -243,11 +243,11 @@ W przypadku tej prostej aplikacji należy dodać nowe pliki projektu w katalogu 
     </body>
     ```
 
-    Ta strona HTML *ładujeapp-bundle.js*, który zawiera kod JSX i React transpilowany do zwykłego kodu JavaScript. Obecnie *app-bundle.js* jest pustym plikiem. W następnej sekcji skonfigurujesz opcje transpilowania kodu.
+    Ta strona HTML *ładujeapp-bundle.js*, który zawiera transpilowany kod JSX i React na zwykły kod JavaScript. Obecnie *app-bundle.js* jest pustym plikiem. W następnej sekcji skonfigurujesz opcje transpilowania kodu.
 
 ## <a name="configure-webpack-and-typescript-compiler-options"></a>Konfigurowanie opcji kompilatora webpack i TypeScript
 
-W poprzednich krokach dodano *webpack-config.js* projektu. Następnie należy dodać kod konfiguracji pakietów internetowych. Dodasz prostą konfigurację pakietów webpack, która określa plik wejściowy *(app.tsx)* i plik wyjściowy *(app-bundle.js*) na celu kompilowanie i transpilowanie pliku JSX w języku JavaScript. W przypadku transpilowania należy również skonfigurować niektóre opcje kompilatora języka TypeScript. Ten kod jest podstawową konfiguracją, która ma stanowić wprowadzenie do pakietów webpack i kompilatora języka TypeScript.
+W poprzednich krokach dodano *webpack-config.js* projektu. Następnie należy dodać kod konfiguracji pakietów webpack. Dodasz prostą konfigurację pakietów webpack, która określa plik wejściowy *(app.tsx)* i plik wyjściowy *(app-bundle.js*) na celu kompilowanie i transpilowanie kodu JSX w języku JavaScript. W przypadku transkompilowania należy również skonfigurować niektóre opcje kompilatora języka TypeScript. Ten kod jest podstawową konfiguracją, która ma stanowić wprowadzenie do pakietów webpack i kompilatora języka TypeScript.
 
 1. W Eksplorator rozwiązań otwórz *webpack-config.js* i dodaj następujący kod.
 
@@ -276,9 +276,9 @@ W poprzednich krokach dodano *webpack-config.js* projektu. Następnie należy do
     }
     ```
 
-    Kod konfiguracji pakietów webpack nakazuje pakietowi webpack użycie modułu ładującego TypeScript do transpilowania pliku JSX.
+    Kod konfiguracji webpack nakazuje pakietowi webpack użycie modułu ładującego TypeScript do transpilowania pliku JSX.
 
-1. Otwórz *tsconfig.jsi* zastąp kod domyślny następującym kodem, który określa opcje kompilatora języka TypeScript:
+1. Otwórz *tsconfig.jsi* zastąp kod domyślny następującym kodem, który określa opcje kompilatora Języka TypeScript:
 
     ```json
     {
@@ -302,31 +302,31 @@ W poprzednich krokach dodano *webpack-config.js* projektu. Następnie należy do
 
     *Plik app.tsx* jest określony jako plik źródłowy.
 
-## <a name="transpile-the-jsx"></a>Transpilowanie JSX
+## <a name="transpile-the-jsx"></a>Transpile the JSX
 
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj.**
+1. W Eksplorator rozwiązań prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Otwórz wiersz polecenia tutaj.**
 
 1. W wierszu polecenia wpisz następujące polecenie:
 
-    `node_modules\.bin\webpack app.tsx --config webpack-config.js`
+    `node_modules\.bin\webpack ./app.tsx --config webpack-config.js`
 
     W oknie wiersza polecenia zostanie wyświetlony wynik.
 
     ![Uruchamianie pakietów webpack](../javascript/media/tutorial-nodejs-react-run-webpack-cmd.png)
 
-    Jeśli zamiast powyższych danych wyjściowych zostaną wyświetlony jakiekolwiek błędy, należy je rozwiązać, aby aplikacja działała. Jeśli wersje pakietu npm są inne niż wersje pokazane w tym samouczku, może to być źródłem błędów. Jednym ze sposobów na naprawienie błędów jest użycie dokładnych wersji pokazanych we wcześniejszych krokach. Ponadto jeśli co najmniej jedna z tych wersji pakietu jest przestarzała i powoduje błąd, może być konieczne zainstalowanie najnowszej wersji w celu naprawienia błędów. Aby uzyskać informacje na temat *używaniapackage.jsna do* kontrolowania wersji pakietu npm, [ zobaczpackage.jskonfiguracji](../javascript/configure-packages-with-package-json.md).
+    Jeśli zamiast powyższych danych wyjściowych zostaną wyświetlony jakiekolwiek błędy, należy je usunąć, zanim aplikacja będzie działać. Jeśli wersje pakietu npm różnią się od wersji pokazanych w tym samouczku, może to być źródło błędów. Jednym ze sposobów naprawienia błędów jest użycie dokładnych wersji pokazanych we wcześniejszych krokach. Ponadto jeśli co najmniej jedna z tych wersji pakietu jest przestarzała i powoduje błąd, może być konieczne zainstalowanie najnowszej wersji w celu naprawienia błędów. Aby uzyskać informacje na temat *używaniapackage.jsna do* kontrolowania wersji pakietu npm, [ zobaczpackage.jskonfiguracji](../javascript/configure-packages-with-package-json.md).
 
 1. W Eksplorator rozwiązań prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** istniejący  >  **folder,** a następnie wybierz folder *dist* i wybierz **pozycję Wybierz folder**.
 
     Visual Studio dodaje do projektu folder *dist,* który zawiera pliki *app-bundle.js* *iapp-bundle.js.map.*
 
-1. Otwórz *app-bundle.js,* aby wyświetlić przespilowany kod JavaScript.
+1. Otwórz *app-bundle.js,* aby zobaczyć transpilowany kod JavaScript.
 
 1. Jeśli zostanie wyświetlony monit o ponowne załadowanie zewnętrznie zmodyfikowanych plików, wybierz **pozycję Tak na wszystkie.**
 
     ![Ładowanie zmodyfikowanych plików](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Za każdym razem, gdy wprowadzasz zmiany w *programie app.tsx,* musisz ponownie uruchomić polecenie webpack. Aby zautomatyzować ten krok, dodaj skrypt kompilacji do transpilowania JSX.
+Za każdym razem, gdy wprowadzasz zmiany w *programie app.tsx,* musisz ponownie uruchomić polecenie webpack. Aby zautomatyzować ten krok, dodaj skrypt kompilacji w celu transpilowania skryptu JSX.
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>Dodawanie skryptu kompilacji w celu transpilowania JSX
 
@@ -336,13 +336,13 @@ Począwszy od Visual Studio 2019 r., wymagany jest skrypt kompilacji. Zamiast tr
 
    ```json
    "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
 
 ## <a name="run-the-app"></a>Uruchamianie aplikacji
 
-1. Wybierz serwer **internetowy (Google Chrome)** lub **serwer sieci Web (Microsoft Edge)** jako bieżący element docelowy debugowania.
+1. Wybierz serwer **sieci Web (Google Chrome)** lub **serwer internetowy (Microsoft Edge)** jako bieżący element docelowy debugowania.
 
     ::: moniker range=">=vs-2019"
     ![Wybieranie przeglądarki Chrome jako obiektu docelowego debugowania](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -351,11 +351,11 @@ Począwszy od Visual Studio 2019 r., wymagany jest skrypt kompilacji. Zamiast tr
     ![Wybieranie przeglądarki Chrome jako obiektu docelowego debugowania](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Jeśli przeglądarka Chrome jest dostępna na Komputerze, ale nie jest dostępna jako opcja, wybierz pozycję **Przeglądaj** za pomocą z listy rozwijanej debug target i wybierz Chrome jako domyślny element docelowy przeglądarki (wybierz pozycję Ustaw jako **domyślny).**
+    Jeśli przeglądarka Chrome jest dostępna na Twojej maszynie, ale nie jest wyświetlona jako opcja, wybierz pozycję **Przeglądaj** za pomocą z listy rozwijanej miejsca docelowego debugowania, a następnie wybierz chrome jako domyślny element docelowy przeglądarki (wybierz pozycję Ustaw jako **domyślny).**
 
-1. Aby uruchomić aplikację, naciśnij **klawisz F5** **(Debuguj**  >  **rozpocznij debugowanie)** lub zielony przycisk strzałki.
+1. Aby uruchomić aplikację, naciśnij **klawisz F5** **(Debuguj**  >  **rozpocznij debugowanie)** lub przycisk z zieloną strzałką.
 
-    Zostanie Node.js konsoli programu , w którym zostanie otwarty port, na którym debuger nasłuchuje.
+    Zostanie Node.js konsoli z portem, na którym debuger nasłuchuje.
 
     Visual Studio uruchamia aplikację, uruchamiając plik *startowy,* server.js.
 
@@ -367,19 +367,19 @@ Począwszy od Visual Studio 2019 r., wymagany jest skrypt kompilacji. Zamiast tr
 
 ## <a name="set-a-breakpoint-and-run-the-app"></a>Ustawianie punktu przerwania i uruchamianie aplikacji
 
-1. W *server.js* kliknij rynnę z lewej strony deklaracji, aby `staticPath` ustawić punkt przerwania:
+1. W *server.js* kliknij utter z lewej strony deklaracji, `staticPath` aby ustawić punkt przerwania:
 
-    ![Zrzut ekranu przedstawiający okno Visual Studio kodu dla server.js. Czerwona kropka w lewym rynnie wskazuje, że punkt przerwania jest ustawiony dla deklaracji staticPath.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Zrzut ekranu przedstawiający okno Visual Studio kodu dla server.js. Czerwona kropka w lewym śmietku wskazuje, że dla deklaracji staticPath ustawiono punkt przerwania.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Punkty przerwania to najbardziej podstawowa i najważniejsza funkcja niezawodnego debugowania. Punkt przerwania wskazuje, gdzie Visual Studio powinien wstrzymać uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych, zachowaniu pamięci lub temu, czy gałąź kodu jest uruchamiana.
+    Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien wstrzymać uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych, zachowaniu pamięci lub czy jest uruchamiana gałąź kodu.
 
 1. Aby uruchomić aplikację, naciśnij **klawisz F5** **(Debuguj**  >  **rozpocznij debugowanie).**
 
     Debuger jest wstrzymywany w ustawionym punkcie przerwania (bieżąca instrukcja jest oznaczona kolorem żółtym). Teraz możesz sprawdzić stan aplikacji, umieszczając kursor na zmiennych, które znajdują się  obecnie w zakresie, przy użyciu okien debugera, takich jak okna Zmiennych lokalnych **i Czujka.**
 
-1. Naciśnij **klawisz F5,** aby kontynuować aplikację.
+1. Naciśnij **klawisz F5,** aby kontynuować pracę aplikacji.
 
-1. Jeśli chcesz użyć narzędzia Chrome Narzędzia deweloperskie lub F12 Tools for Microsoft Edge, naciśnij **klawisz F12.** Możesz użyć tych narzędzi do zbadania modelu DOM i interakcji z aplikacją przy użyciu konsoli języka JavaScript.
+1. Jeśli chcesz użyć narzędzi Chrome Narzędzia deweloperskie lub F12 Tools for Microsoft Edge naciśnij **klawisz F12.** Możesz użyć tych narzędzi do zbadania modelu DOM i interakcji z aplikacją przy użyciu konsoli języka JavaScript.
 
 1. Zamknij przeglądarkę internetową i konsolę.
 
@@ -390,7 +390,7 @@ W poprzedniej sekcji dołączono debuger do kodu Node.js serwera. Aby dołączy�
 ### <a name="prepare-the-browser-for-debugging"></a>Przygotowywanie przeglądarki do debugowania
 
 ::: moniker range=">=vs-2019"
-W tym scenariuszu użyj nazwy Microsoft Edge (Chromium), obecnie **Microsoft Edge Beta** w ide lub Chrome.
+W tym scenariuszu należy użyć Microsoft Edge (Chromium), obecnie Microsoft Edge Beta **w** ide lub Chrome.
 ::: moniker-end
 ::: moniker range="vs-2017"
 W tym scenariuszu użyj przeglądarki Chrome.
@@ -401,17 +401,17 @@ W tym scenariuszu użyj przeglądarki Chrome.
    Inne wystąpienia przeglądarki mogą uniemożliwić otwieranie przeglądarki z włączonym debugowaniem. (Rozszerzenia przeglądarki mogą być uruchomione i uniemożliwiać pełny tryb debugowania, więc może być konieczne otwarcie okna Menedżer zadań w celu znalezienia nieoczekiwanych wystąpień przeglądarki Chrome).
 
    ::: moniker range=">=vs-2019"
-   W Microsoft Edge (Chromium) zamknij również wszystkie wystąpienia przeglądarki Chrome. Ponieważ obie przeglądarki współdzielą bazę kodu chromium, daje to najlepsze wyniki.
+   Na Microsoft Edge (Chromium) wyłącz również wszystkie wystąpienia przeglądarki Chrome. Ponieważ obie przeglądarki współdzielą kod chromium, daje to najlepsze wyniki.
    ::: moniker-end
 
 2. Uruchom przeglądarkę z włączonym debugowaniem.
 
     ::: moniker range=">=vs-2019"
-    Począwszy od Visual Studio 2019 r., możesz ustawić flagę podczas uruchamiania przeglądarki, wybierając pozycję Przeglądaj za pomocą... > na pasku narzędzi Debugowanie, a następnie wybierając pozycję Dodaj , a następnie ustawiając flagę w polu `--remote-debugging-port=9222`   **Argumenty.**  Użyj innej przyjaznej nazwy przeglądarki, takiej jak **Edge z debugowaniem** lub **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-v16.2).
+    Począwszy od Visual Studio 2019 r., możesz ustawić flagę podczas uruchamiania przeglądarki, wybierając pozycję Przeglądaj za pomocą... > na pasku narzędzi Debugowanie, a następnie wybierając pozycję Dodaj, a następnie ustawiając flagę w polu `--remote-debugging-port=9222` Argumenty.     Użyj innej przyjaznej nazwy przeglądarki, takiej jak **Edge z debugowaniem** lub **Chrome z debugowaniem**. Aby uzyskać szczegółowe informacje, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes-v16.2).
 
-    ![Konfigurowanie otwierania przeglądarki z włączonym debugowaniem](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
+    ![Ustawianie otwierania przeglądarki z włączonym debugowaniem](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
-    Alternatywnie otwórz polecenie **Uruchom za pomocą** przycisku Start **systemu** Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
+    Alternatywnie otwórz polecenie **Uruchom za** pomocą przycisku Start **systemu** Windows (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom),** a następnie wprowadź następujące polecenie:
 
     `msedge --remote-debugging-port=9222`
 
@@ -432,19 +432,19 @@ W tym scenariuszu użyj przeglądarki Chrome.
 
 ### <a name="attach-the-debugger-to-client-side-script"></a>Dołączanie debugera do skryptu po stronie klienta
 
-1. Przejdź do Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, albo *app-bundle.js* *lub app.tsx.*
+1. Przejdź do Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, *app-bundle.js* *lub app.tsx.*
 
-    W *app-bundle.js*, ustaw punkt przerwania w `render()` funkcji , jak pokazano na poniższej ilustracji:
+    W *app-bundle.js*, ustaw punkt przerwania w funkcji, jak `render()` pokazano na poniższej ilustracji:
 
     ![Zrzut ekranu przedstawiający okno Visual Studio kodu dla app-bundle.js. Czerwona kropka w lewym rynnie wskazuje, że punkt przerwania jest ustawiony w funkcji renderowania.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Aby znaleźć funkcję w transpilowanych plikach `render()` *app-bundle.js,* użyj **klawiszy Ctrl** F ( Edytuj znajdowanie i +    >    >  **zastępowanie szybkiego wyszukiwania).**
+    Aby znaleźć funkcję w transpilowanych plikachapp-bundle.js, użyj klawiszy `render()` **Ctrl**  F (Edytuj znajdowanie i +    >    >  **zastępowanie szybkiego wyszukiwania).**
 
-    W *przypadku biblioteki app.tsx* ustaw punkt przerwania wewnątrz `render()` funkcji na instrukcji `return` .
+    W *przypadku funkcji app.tsx* ustaw punkt przerwania wewnątrz `render()` funkcji w instrukcji `return` .
 
-    ![Zrzut ekranu przedstawiający okno Visual Studio kodu dla aplikacji app.tsx. Czerwona kropka w lewym śmietku wskazuje, że punkt przerwania jest ustawiony dla instrukcji return funkcji render.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+    ![Zrzut ekranu przedstawiający okno Visual Studio kodu aplikacji app.tsx. Czerwona kropka w lewym rynnie wskazuje, że punkt przerwania jest ustawiony na instrukcji return funkcji renderowania.](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. Jeśli ustawiasz punkt przerwania w pliku *tsx* (a nie wapp-bundle.js *),* musisz zaktualizować *webpack-config.js*. Zastąp następujący kod:
+2. Jeśli ustawiasz punkt przerwania w pliku *tsx* (zamiastapp-bundle.js *),* musisz zaktualizować *webpack-config.js*. Zastąp następujący kod:
 
     ```javascript
     output: {
@@ -461,20 +461,20 @@ W tym scenariuszu użyj przeglądarki Chrome.
     },
     ```
 
-    Jest to ustawienie tylko do procesów programistyki umożliwiające debugowanie w Visual Studio. To ustawienie umożliwia zastąpienie wygenerowanych odwołań w źródłowym pliku mapy *app-bundle.js.map* podczas budowania aplikacji. Domyślnie odwołania do pakietów webpack w pliku mapy źródłowej zawierają prefiks *webpack:///,* który uniemożliwia Visual Studio wyszukiwania pliku źródłowego *app.tsx.* W szczególności w przypadku zmiany odwołanie do pliku źródłowego *app.tsx* jest zmieniane z *webpack:///./app.tsx* na *./app.tsx,* co umożliwia debugowanie.
+    Jest to ustawienie tylko programowe umożliwiające debugowanie w Visual Studio. To ustawienie umożliwia zastąpienie wygenerowanych odwołań w źródłowym pliku mapy *app-bundle.js.map* podczas tworzenia aplikacji. Domyślnie odwołania do pakietów webpack w pliku mapy źródłowej zawierają prefiks *webpack:///,* który uniemożliwia Visual Studio znalezienie pliku źródłowego *app.tsx.* W szczególności w przypadku tej zmiany odwołanie do pliku źródłowego *app.tsx* jest zmieniane z *webpack:///./app.tsx* na *./app.tsx,* co umożliwia debugowanie.
 
-3. Wybierz przeglądarkę docelową jako miejsce docelowe debugowania w Visual Studio, a następnie naciśnij **klawisze Ctrl** + **F5** (Debugujrozpocznij bez debugowania), aby uruchomić aplikację  >  w przeglądarce.
+3. Wybierz przeglądarkę docelową jako element docelowy debugowania w Visual Studio, a następnie naciśnij klawisze **Ctrl** + **F5** (Rozpocznij debugowanie bez debugowania), aby uruchomić aplikację  >  w przeglądarce.
 
     ::: moniker range=">=vs-2019"
-    Jeśli utworzono konfigurację przeglądarki o przyjaznej nazwie, wybierz tę konfigurację jako miejsce docelowe debugowania.
+    Jeśli utworzono konfigurację przeglądarki o przyjaznej nazwie, wybierz tę konfigurację jako element docelowy debugowania.
     ::: moniker-end
 
-    Aplikacja zostanie otwarta w nowej karcie przeglądarki.
+    Aplikacja zostanie otwarta na nowej karcie przeglądarki.
 
-4. Wybierz pozycję   >  **Debuguj dołączanie do procesu** (lub naciśnij **klawisze Ctrl**  +  **Alt**  +  **P).**
+4. Wybierz **pozycję**  >  **Debuguj dołączanie do procesu** (lub naciśnij klawisze **Ctrl**  +  **Alt**  +  **P).**
 
     > [!TIP]
-    > Począwszy od Visual Studio 2017 r., po dołączeniu do procesu po raz pierwszy przez następujące kroki można szybko ponownie dołączyć do tego samego procesu, wybierając opcję **Debuguj** ponowne dołączanie do procesu (lub naciśnij klawisz  >   **Shift**  +  **Alt**  +  **P).**
+    > Począwszy od Visual Studio 2017 r., po dołączeniu do procesu po raz pierwszy, korzystając z tych kroków, można szybko ponownie dołączyć do tego samego procesu, wybierając opcję   >  **Debuguj** ponowne dołączenie do procesu (lub naciśnij klawisz **Shift**  +  **Alt**  +  **P).**
 
 5. W **oknie dialogowym Dołączanie** do procesu pobierz filtrowaną listę wystąpień przeglądarki, do których można dołączyć.
 
@@ -482,15 +482,15 @@ W tym scenariuszu użyj przeglądarki Chrome.
     W programie Visual Studio 2019 wybierz poprawny debuger dla przeglądarki docelowej, języka **JavaScript (Chrome)** lub  **JavaScript (Microsoft Edge — Chromium)** w polu Dołącz do, wpisz **chrome** lub **edge** w polu filtru, aby przefiltrować wyniki wyszukiwania.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    W Visual Studio 2017 wybierz pozycję Kod zestawu **Webkit** w polu Dołącz do, a następnie wpisz **chrome** w polu filtru, aby przefiltrować wyniki wyszukiwania. 
+    W Visual Studio 2017 r. wybierz pozycję  Kod zestawu **Webkit** w polu Dołącz do, wpisz **chrome** w polu filtru, aby przefiltrować wyniki wyszukiwania.
     ::: moniker-end
 
-6. Wybierz proces przeglądarki z prawidłowym portem hosta (w tym przykładzie localhost), a następnie wybierz pozycję **Dołącz**.
+6. Wybierz proces przeglądarki z poprawnym portem hosta (w tym przykładzie localhost), a następnie wybierz pozycję **Dołącz**.
 
-    Port (1337) może również pojawić się w polu **Tytuł,** aby ułatwić wybranie poprawnego wystąpienia przeglądarki.
+    Port (1337) może również pojawić się w polu **Tytuł,** aby ułatwić wybranie prawidłowego wystąpienia przeglądarki.
 
     ::: moniker range=">=vs-2019"
-    Poniższy przykład pokazuje, jak wygląda to dla przeglądarki Microsoft Edge (Chromium).
+    W poniższym przykładzie pokazano, jak wygląda to w Microsoft Edge (Chromium).
 
     ![Dołączanie do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
@@ -505,18 +505,18 @@ W tym scenariuszu użyj przeglądarki Chrome.
 
 7. Ponieważ kod z już wykonanym punktem przerwania, odśwież stronę przeglądarki, aby trafić do punktu przerwania.
 
-    Po wstrzymaniu w debugerze można sprawdzić stan aplikacji, umieszczając kursor na zmiennych i używając okien debugera. Debuger można przechodzić przez kod krokowy **(F5,** **F10** i **F11).** Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+    Po wstrzymaniu w debugerze można sprawdzić stan aplikacji, umieszczając kursor na zmiennych i używając okien debugera. Debuger można przejść krok po kroku przez kod **(F5,** **F10** i **F11).** Aby uzyskać więcej informacji na temat podstawowych funkcji debugowania, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-    Możesz trafić punkt przerwania w lokalizacji *app-bundle.js* lub jej zamapowanych lokalizacjach w programie *app.tsx,* w zależności od kroków, które zostały wcześniej opisane, wraz ze środowiskiem i stanem przeglądarki. W obu sposób możesz przejść przez kod i przeanalizować zmienne.
+    Możesz trafić punkt przerwania w lokalizacji *app-bundle.js* lub jej zamapowane w programie *app.tsx*, w zależności od kroków, które zostały wcześniej podjęte, wraz ze środowiskiem i stanem przeglądarki. W obu tych krokach możesz przechodzić przez kod i badać zmienne.
 
    * Jeśli musisz włamać się do kodu w programie *app.tsx* i nie możesz tego zrobić, użyj polecenia **Attach to Process** (Dołącz do procesu), jak opisano w poprzednich krokach, aby dołączyć debuger. Upewnij się, że środowisko jest prawidłowo skonfigurowane:
 
       * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia przeglądarki Chrome (przy użyciu Menedżer zadań), aby można było uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka jest uruchamiana w trybie debugowania.
 
-      * Upewnij się, że plik mapy źródłowej zawiera odwołanie do pliku *./app.tsx,* a nie plik *webpack:///./app.tsx*, co uniemożliwia debugerowi Visual Studio lokalizowanie pliku *app.tsx.*
-       Alternatywnie, jeśli musisz włamać się do kodu w programie *app.tsx* i nie możesz tego zrobić, spróbuj zamiast tego użyć instrukcji w forsłudze app.tsx lub ustawić punkty przerwania w narzędziu `debugger;` Chrome Narzędzia deweloperskie (lub F12 Tools for Microsoft Edge). 
+      * Upewnij się, że plik mapy źródłowej zawiera odwołanie do *pliku ./app.tsx,* a nie plik *webpack:///./app.tsx*, co uniemożliwia debugerowi Visual Studio lokalizowanie pliku *app.tsx.*
+       Alternatywnie, jeśli musisz włamać się do kodu w programie *app.tsx* i nie możesz tego zrobić, spróbuj użyć instrukcji w programie app.tsx lub ustawić punkty przerwania w narzędziu `debugger;` Chrome Narzędzia deweloperskie (lub F12 Tools for Microsoft Edge). 
 
-   * Jeśli musisz włamać się do kodu w pliku *app-bundle.js* i nie możesz tego zrobić, usuń źródłowy plik mapy, *app-bundle.js.map.*
+   * Jeśli musisz włamać się do kodu w pliku *app-bundle.js* i nie możesz tego zrobić, usuń źródłowy plik mapy, *app-bundle.js.map*.
 
 ## <a name="next-steps"></a>Następne kroki
 
