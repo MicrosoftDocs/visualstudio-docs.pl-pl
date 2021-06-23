@@ -1,5 +1,5 @@
 ---
-title: Tworzenie &amp; rozwiązań Visual Studio projektów &amp;
+title: Tworzenie & przy użyciu Visual Studio projektów & rozwiązań
 description: Dowiedz się więcej o różnicach między rozwiązaniami i projektami oraz o tym, jak ich używać w Visual Studio.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 06/14/2021
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f253492e5c1b3bf0c27448d59d754260e9e70912
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: 7971226767fe114e3618e9dfc6a161a50d5374ee
+ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066946"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112500906"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Tworzenie, praca z projektami i rozwiązaniami oraz Visual Studio z projektami i rozwiązaniami
 
