@@ -1,7 +1,7 @@
 ---
 title: Integracja z programem Visual Studio (MSBuild)
 titleSuffix: ''
-description: Dowiedz się, w jaki sposób program Visual Studio może hostować projekty w formacie MSBuild, nawet jeśli zostały one utworzone przez różne narzędzia i zostały dostosowane procesy kompilacji.
+description: Dowiedz się, Visual Studio hostować projekty w formacie MSBuild, nawet jeśli zostały one autorstwa różnych narzędzi i miały niestandardowe procesy kompilacji.
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,34 +21,34 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63e78d935d515ccafda461a8f7af77623387940b
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951657"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602147"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja z programem Visual Studio (MSBuild)
 
-Program Visual Studio obsługuje narzędzia MSBuild do ładowania i kompilowania projektów zarządzanych. Ponieważ MSBuild jest odpowiedzialny za projekt, prawie każdy projekt w formacie MSBuild można pomyślnie użyć w programie Visual Studio, nawet jeśli projekt został utworzony przez inne narzędzie i ma dostosowany proces kompilacji.
+Visual Studio msBuild do ładowania i kompilowania zarządzanych projektów. Ponieważ za projekt odpowiada program MSBuild, w programie Visual Studio można pomyślnie używać niemal każdego projektu w formacie MSBuild, nawet jeśli projekt został autorstwa innego narzędzia i ma dostosowany proces kompilacji.
 
- W tym artykule opisano konkretne aspekty hostingu programu MSBuild programu Visual Studio, które należy wziąć pod uwagę podczas dostosowywania projektów i plików *docelowych* , które mają zostać załadowane i skompilowane w programie Visual Studio. Dzięki temu można upewnić się, że funkcje programu Visual Studio, takie jak IntelliSense i debugowanie, są wykonywane w projekcie niestandardowym.
+ W tym artykule opisano konkretne aspekty hostingu msBuild Visual Studio, które należy wziąć pod uwagę podczas dostosowywania projektów i plików *targets,* które chcesz załadować i skompilować w programie Visual Studio. Pomoże to upewnić się, że Visual Studio takie jak IntelliSense i debugowanie działają w przypadku projektu niestandardowego.
 
- Aby uzyskać informacje na temat projektów C++, zobacz [pliki projektu](/cpp/build/reference/project-files).
+ Aby uzyskać informacje o projektach w języku C++, zobacz [Pliki projektu](/cpp/build/reference/project-files).
 
-## <a name="project-file-name-extensions"></a>Rozszerzenia nazwy pliku projektu
+## <a name="project-file-name-extensions"></a>Rozszerzenia nazw plików projektu
 
- *MSBuild.exe* rozpoznaje wszystkie rozszerzenia nazw plików projektu pasujące do wzorca *. \* proj*. Jednak program Visual Studio rozpoznaje tylko podzestaw tych rozszerzeń nazw plików projektu, co określa system projektu specyficzny dla języka, który załaduje projekt. Program Visual Studio nie ma niezależnego od języka systemu projektu opartego na języku MSBuild.
+ *MSBuild.exe* rozpoznaje dowolne rozszerzenie nazwy pliku projektu zgodne ze wzorcem *. \* proj*. Jednak Visual Studio rozpoznaje tylko podzbiór tych rozszerzeń nazw plików projektu, które określają system projektu specyficzny dla języka, który będzie ładować projekt. Visual Studio nie ma neutralnego pod względem języka systemu projektów opartego na programie MSBuild.
 
- Na przykład system projektu C# ładuje pliki *csproj* , ale program Visual Studio nie może załadować pliku *. xxproj* . Plik projektu dla plików źródłowych w dowolnym języku musi używać tego samego rozszerzenia co Visual Basic lub plików projektu C#, które mają być ładowane w programie Visual Studio.
+ Na przykład system projektu C# ładuje pliki *csproj,* ale Visual Studio nie może załadować *pliku xxproj.* Plik projektu dla plików źródłowych w dowolnym języku musi używać tego samego rozszerzenia co pliki projektu Visual Basic lub C# do załadowania w Visual Studio.
 
 ## <a name="well-known-target-names"></a>Dobrze znane nazwy obiektów docelowych
 
- Kliknięcie polecenia **Build** w programie Visual Studio spowoduje wykonanie domyślnego obiektu docelowego w projekcie. Często ta lokalizacja docelowa jest również nazywana `Build` . Wybranie polecenia **Kompiluj ponownie** lub **Wyczyść** spowoduje podjęcie próby wykonania obiektu docelowego o tej samej nazwie w projekcie. Kliknięcie przycisku **Publikuj** spowoduje wykonanie elementu docelowego o nazwie `PublishOnly` w projekcie.
+ Kliknięcie polecenia **Build** (Kompilacja) Visual Studio spowoduje wykonanie domyślnego obiektu docelowego w projekcie. Często ten element docelowy nosi również nazwę `Build` . Wybranie polecenia **Rebuild (Skompilowanie)** **lub Clean** (Wyczyść) spowoduje próbę wykonania obiektu docelowego o tej samej nazwie w projekcie. Kliknięcie **pozycji Publikuj** spowoduje wykonanie obiektu docelowego o nazwie w `PublishOnly` projekcie.
 
 ## <a name="configurations-and-platforms"></a>Konfiguracje i platformy
 
- Konfiguracje są reprezentowane w projektach MSBuild według właściwości pogrupowanych w `PropertyGroup` elemencie, który zawiera `Condition` atrybut. Program Visual Studio analizuje te warunki w celu utworzenia listy konfiguracji projektu i platform do wyświetlenia. Aby pomyślnie wyodrębnić tę listę, warunki muszą mieć format podobny do następującego:
+ Konfiguracje są reprezentowane w projektach MSBuild przez właściwości pogrupowane w `PropertyGroup` elemencie, który zawiera `Condition` atrybut. Visual Studio te warunki w celu utworzenia listy konfiguracji projektu i platform do wyświetlenia. Aby pomyślnie wyodrębnić tę listę, warunki muszą mieć format podobny do następującego:
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
@@ -56,11 +56,11 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
- W tym celu program Visual Studio analizuje warunki dotyczące `PropertyGroup` `ItemGroup` elementów,, `Import` , i.
+ Visual Studio w tym celu wyszukuje warunki dla `PropertyGroup` elementów elementów , , , i `ItemGroup` `Import` item.
 
 ## <a name="additional-build-actions"></a>Dodatkowe akcje kompilacji
 
- Program Visual Studio umożliwia zmianę nazwy typu elementu w projekcie za pomocą właściwości **Akcja kompilacji** okna **właściwości pliku** . Nazwy typów elementów **Kompiluj**, **EmbeddedResource**, **Content** i **none** są zawsze wyświetlane w tym menu, wraz z innymi nazwami typów elementów, które znajdują się już w projekcie. Aby zapewnić, że wszystkie nazwy typów elementów niestandardowych są zawsze dostępne w tym menu, można dodać nazwy do typu elementu o nazwie `AvailableItemName` . Na przykład dodanie następującego elementu do pliku projektu spowoduje dodanie do tego menu typu niestandardowego **JScript** dla wszystkich projektów, które go zaimportują:
+ Visual Studio umożliwia zmianę nazwy typu elementu pliku w projekcie  przy użyciu właściwości Akcja kompilacji **okna Właściwości** pliku. **W** tym menu są zawsze wyświetlane nazwy typów elementów Kompilacja, **EmbeddedResource,** **Content** i **None,** a także wszystkie inne nazwy typów elementów, które już znajdują się w projekcie. Aby upewnić się, że nazwy typów elementów niestandardowych są zawsze dostępne w tym menu, możesz dodać nazwy do typu elementu o nazwie `AvailableItemName` . Na przykład dodanie następującego kodu do pliku projektu spowoduje dodanie niestandardowego typu **JScript** do tego menu dla wszystkich projektów, które go zaimportowały:
 
 ```xml
 <ItemGroup>
@@ -68,50 +68,52 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+Dodanie nazw typów elementów do typu elementu spowoduje, że elementy tego typu pojawią się w `AvailableItemName` **Eksplorator rozwiązań**.
+
 > [!NOTE]
-> Niektóre nazwy typów elementów są specjalne dla programu Visual Studio, ale nie są wymienione na liście rozwijanej.
+> Niektóre nazwy typów elementów są specjalne Visual Studio ale nie są wymienione na tej liście rozwijanej.
 
-## <a name="in-process-compilers"></a>Kompilatory wewnątrzprocesowe
+## <a name="in-process-compilers"></a>Kompilatory w procesie
 
- Jeśli to możliwe, program Visual Studio podejmie próbę użycia w procesie Visual Basic kompilatora w celu zwiększenia wydajności. (Nie dotyczy języka C#). Aby to działanie działało prawidłowo, muszą zostać spełnione następujące warunki:
+ Jeśli to Visual Studio spróbuje użyć wersji w procesie kompilatora Visual Basic w celu zwiększenia wydajności. (Nie dotyczy języka C#). Aby to działało prawidłowo, muszą zostać spełnione następujące warunki:
 
-- W obiekcie docelowym projektu musi istnieć zadanie o nazwie `Vbc` dla projektów Visual Basic.
+- W miejscu docelowym projektu musi znajdować się zadanie o nazwie dla Visual Basic `Vbc` projektu.
 
-- `UseHostCompilerIfAvailable`Parametr zadania musi być ustawiony na wartość true.
+- Parametr `UseHostCompilerIfAvailable` zadania musi mieć wartość true.
 
-## <a name="design-time-intellisense"></a>Technologia IntelliSense czasu projektowania
+## <a name="design-time-intellisense"></a>Funkcja IntelliSense czasu projektowania
 
- Aby uzyskać pomoc techniczną IntelliSense w programie Visual Studio, zanim kompilacja wygenerowała zestaw danych wyjściowych, muszą zostać spełnione następujące warunki:
+ Aby uzyskać obsługę funkcji IntelliSense Visual Studio kompilacji, zanim kompilacja wygeneruje zestaw wyjściowy, muszą zostać spełnione następujące warunki:
 
-- Musi istnieć obiekt docelowy o nazwie `Compile` .
+- Musi być element docelowy o nazwie `Compile` .
 
-- `Compile`Element docelowy lub jedna z jego zależności musi wywoływać zadanie kompilatora dla projektu, takie jak `Csc` lub `Vbc` .
+- Obiekt docelowy lub jedna z jego zależności muszą wywołać zadanie kompilatora dla `Compile` projektu, takie jak `Csc` lub `Vbc` .
 
-- `Compile`Element docelowy lub jedna z jego zależności musi spowodować, że kompilator otrzyma wszystkie niezbędne parametry dla IntelliSense, szczególnie wszystkie odwołania.
+- Obiekt docelowy lub jedna z jego zależności musi spowodować, że kompilator otrzyma wszystkie parametry niezbędne dla `Compile` funkcji IntelliSense, szczególnie wszystkich odwołań.
 
-- Warunki wymienione w sekcji [kompilatory w procesie](#in-process-compilers) muszą zostać spełnione.
+- Warunki wymienione w sekcji [Kompilatory w procesie](#in-process-compilers) muszą być spełnione.
 
 ## <a name="build-solutions"></a>Tworzenie rozwiązań
 
- W ramach programu Visual Studio, plik rozwiązania i kolejność kompilacji projektu są kontrolowane przez program Visual Studio. Podczas kompilowania rozwiązania z *msbuild.exe* w wierszu polecenia, MSBuild analizuje plik rozwiązania i porządkuje kompilacje projektu. W obu przypadkach projekty są kompilowane indywidualnie w kolejności zależności, a odwołania projektu do projektu nie są przenoszone. Natomiast w przypadku kompilowania poszczególnych projektów przy użyciu *msbuild.exe* są przenoszone odwołania projektu do projektu.
+ W Visual Studio kolejność kompilacji pliku rozwiązania i projektu jest kontrolowana Visual Studio samodzielnie. Podczas kompilowania rozwiązania *msbuild.exe* w wierszu polecenia program MSBuild analizuje plik rozwiązania i zamówień kompilacji projektu. W obu przypadkach projekty są budowane indywidualnie w kolejności zależności, a odwołania między projektami nie są przechodzenie. Z kolei w przypadku poszczególnych projektów, które są budowane *msbuild.exe*, przechodzenie odwołań między projektami jest realizowane.
 
- Podczas kompilowania w programie Visual Studio Właściwość `$(BuildingInsideVisualStudio)` jest ustawiona na `true` . Ta wartość może być używana w projekcie lub plików *targets* , aby spowodować, że kompilacja zadziała inaczej.
+ Podczas budowania Visual Studio właściwość jest `$(BuildingInsideVisualStudio)` ustawiona na `true` wartość . Może to być używane w plikach projektu lub *targets,* aby spowodować, że kompilacja będzie zachowywać się inaczej.
 
 ## <a name="display-properties-and-items"></a>Wyświetlanie właściwości i elementów
 
- Program Visual Studio rozpoznaje pewne nazwy i wartości właściwości. Na przykład następująca właściwość w projekcie spowoduje, że **aplikacja systemu Windows** będzie wyświetlana w polu **Typ aplikacji** w **projektancie projektu**.
+ Visual Studio rozpoznaje niektóre nazwy i wartości właściwości. Na przykład następująca właściwość w projekcie spowoduje, że aplikacja systemu **Windows** pojawi się w polu **Typ** aplikacji w **Projektancie projektu**.
 
 ```xml
 <OutputType>WinExe</OutputType>
 ```
 
- Wartość właściwości można edytować w **projektancie projektu** i zapisać w pliku projektu. Jeśli taka właściwość ma nieprawidłową wartość przez ręczną edycję, program Visual Studio wyświetli ostrzeżenie, gdy projekt zostanie załadowany i zastąpi nieprawidłową wartość wartością domyślną.
+ Wartość właściwości można edytować w Projektancie **projektu** i zapisać w pliku projektu. Jeśli taka właściwość ma nadaną nieprawidłową wartość podczas ręcznego edytowania, Visual Studio gdy projekt zostanie załadowany, i zastąpi nieprawidłową wartość wartością domyślną.
 
- Program Visual Studio rozpoznaje wartości domyślne dla niektórych właściwości. Te właściwości nie zostaną utrwalone w pliku projektu, chyba że mają wartości inne niż domyślne.
+ Visual Studio rozumie wartości domyślne dla niektórych właściwości. Te właściwości nie zostaną utrwalone w pliku projektu, chyba że mają wartości inne niż domyślne.
 
- Właściwości z dowolnymi nazwami nie są wyświetlane w programie Visual Studio. Aby zmodyfikować dowolne właściwości w programie Visual Studio, należy otworzyć plik projektu w edytorze XML i ręcznie go edytować. Aby uzyskać więcej informacji, zobacz sekcję [Edycja plików projektu w programie Visual Studio](#edit-project-files-in-visual-studio) w dalszej części tego tematu.
+ Właściwości o dowolnych nazwach nie są wyświetlane w Visual Studio. Aby zmodyfikować dowolne właściwości Visual Studio, należy otworzyć plik projektu w edytorze XML i edytować je ręcznie. Aby uzyskać więcej informacji, zobacz [sekcję Edytowanie](#edit-project-files-in-visual-studio) plików projektu w Visual Studio w dalszej części tego tematu.
 
- Elementy zdefiniowane w projekcie z dowolnymi nazwami typów elementów są domyślnie wyświetlane w **Eksplorator rozwiązań** w węźle projektu. Aby ukryć element z ekranu, ustaw `Visible` metadane na `false` . Na przykład następujący element będzie uczestniczyć w procesie kompilacji, ale nie będzie wyświetlany w **Eksplorator rozwiązań**.
+ Elementy zdefiniowane w projekcie z dowolnymi nazwami typów elementów są domyślnie wyświetlane w Eksplorator rozwiązań **w** węźle projektu. Aby ukryć element przed wyświetleniem, ustaw `Visible` metadane na `false` wartość . Na przykład następujący element będzie uczestniczyć w procesie kompilacji, ale nie będzie wyświetlany w **Eksplorator rozwiązań**.
 
 ```xml
 <ItemGroup>
@@ -122,94 +124,94 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
-> `Visible`Metadane są ignorowane przez **Eksplorator rozwiązań** dla projektów C++. Elementy będą zawsze wyświetlane nawet wtedy `Visible` , gdy jest ustawiony na wartość false.
+> Metadane `Visible` są ignorowane przez Eksplorator rozwiązań dla projektów języka C++.  Elementy będą zawsze wyświetlane, nawet jeśli `Visible` ustawiono wartość false.
 
- Elementy zadeklarowane w plikach zaimportowanych do projektu nie są wyświetlane domyślnie. Elementy utworzone w procesie kompilacji nigdy nie są wyświetlane w **Eksplorator rozwiązań**.
+ Elementy zadeklarowane w plikach zaimportowanych do projektu nie są wyświetlane domyślnie. Elementy utworzone podczas procesu kompilacji nigdy nie są wyświetlane w **Eksplorator rozwiązań**.
 
 ## <a name="conditions-on-items-and-properties"></a>Warunki dotyczące elementów i właściwości
 
- W trakcie kompilacji wszystkie warunki są w pełni przestrzegane.
+ Podczas kompilacji wszystkie warunki są w pełni przestrzegane.
 
- Podczas określania wartości właściwości do wyświetlenia, właściwości, które program Visual Studio traktuje zależne od konfiguracji, są oceniane inaczej niż właściwości, które uważają niezależne od konfiguracji. Dla właściwości, które uzna za zależne od konfiguracji, program Visual Studio ustawia `Configuration` `Platform` odpowiednio właściwości i i instruuje program MSBuild o ponownej ocenie projektu. Dla właściwości, które uzna za niezależne od konfiguracji, nie określono, jak zostaną ocenione warunki.
+ Podczas określania wartości właściwości do wyświetlenia właściwości, które Visual Studio są zależne od konfiguracji, są oceniane inaczej niż właściwości, które uznaje za niezależne od konfiguracji. W przypadku właściwości, które są zależne od konfiguracji, Visual Studio odpowiednio ustawia właściwości i oraz nakazuje programowi `Configuration` `Platform` MSBuild ponowną ocenę projektu. W przypadku właściwości, które uznaje za niezależne od konfiguracji, sposób oceny warunków jest nieokreślony.
 
- Wyrażenia warunkowe dla elementów są zawsze ignorowane na potrzeby decydowania, czy element powinien być wyświetlany w **Eksplorator rozwiązań**.
+ Wyrażenia warunkowe elementów są zawsze ignorowane w celu podjęcia decyzji, czy element powinien być wyświetlany w **Eksplorator rozwiązań**.
 
 ## <a name="debugging"></a>Debugowanie
 
- Aby znaleźć i uruchomić zestaw danych wyjściowych i dołączyć debuger, program Visual Studio potrzebuje właściwości `OutputPath` , `AssemblyName` i `OutputType` poprawnie zdefiniowanych. Debuger nie zostanie dołączony, jeśli proces kompilacji nie spowodował, że kompilator wygenerował plik *. pdb* .
+ Aby znaleźć i uruchomić wyjściowy zestaw oraz dołączyć debuger, Visual Studio właściwości `OutputPath` , i są poprawnie `AssemblyName` `OutputType` zdefiniowane. Dołączanie debugera nie powiedzie się, jeśli proces kompilacji nie spowoduje wygenerowania pliku *pdb* przez kompilator.
 
-## <a name="design-time-target-execution"></a>Wykonanie docelowego czasu projektowania
+## <a name="design-time-target-execution"></a>Wykonanie celu w czasie projektowania
 
- Program Visual Studio próbuje wykonać obiekty docelowe o określonych nazwach podczas ładowania projektu. Te elementy docelowe obejmują,,, `Compile` `ResolveAssemblyReferences` `ResolveCOMReferences` `GetFrameworkPaths` i `CopyRunEnvironmentFiles` . Program Visual Studio uruchamia te elementy docelowe, aby można było zainicjować kompilator w celu udostępnienia funkcji IntelliSense, debuger może być zainicjowany i można rozpoznać odwołania wyświetlane w Eksplorator rozwiązań. Jeśli te elementy docelowe nie są obecne, projekt zostanie załadowany i skompilowany poprawnie, ale środowisko projektowania w programie Visual Studio nie będzie w pełni funkcjonalne.
+ Visual Studio próbuje wykonać obiekty docelowe o określonych nazwach podczas ładowania projektu. Te obiekty docelowe `Compile` to , , , i `ResolveAssemblyReferences` `ResolveCOMReferences` `GetFrameworkPaths` `CopyRunEnvironmentFiles` . Visual Studio uruchamia te obiekty docelowe, aby można było zainicjować kompilator w celu zapewnienia funkcji IntelliSense, można zainicjować debuger i rozpoznać odwołania wyświetlane w Eksplorator rozwiązań. Jeśli te cele nie są obecne, projekt zostanie załadowany i skompilowany poprawnie, ale środowisko czasu projektowania w Visual Studio nie będzie w pełni funkcjonalne.
 
 ## <a name="edit-project-files-in-visual-studio"></a>Edytowanie plików projektu w programie Visual Studio
 
- Aby edytować projekt MSBuild bezpośrednio, można otworzyć plik projektu w edytorze XML programu Visual Studio.
+ Aby bezpośrednio edytować projekt MSBuild, możesz otworzyć plik projektu w edytorze Visual Studio XML.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Aby rozładować i edytować plik projektu w programie Visual Studio
 
-1. W **Eksplorator rozwiązań** Otwórz menu skrótów dla projektu, a następnie wybierz polecenie **Zwolnij projekt**.
+1. W **Eksplorator rozwiązań** otwórz menu skrótów dla projektu, a następnie wybierz pozycję **Unload Project (Zwolnij projekt).**
 
-     Projekt jest oznaczony **(niedostępny)**.
+     Projekt jest oznaczony **(niedostępny).**
 
-2. W **Eksplorator rozwiązań** Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Edytuj \<Project File>**.
+2. W **Eksplorator rozwiązań** otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz pozycję **Edytuj \<Project File>**.
 
-     Plik projektu zostanie otwarty w edytorze XML programu Visual Studio.
+     Plik projektu zostanie otwarty w Visual Studio XML.
 
-3. Edytuj, Zapisz, a następnie zamknij plik projektu.
+3. Edytuj, zapisz, a następnie zamknij plik projektu.
 
-4. W **Eksplorator rozwiązań** Otwórz menu skrótów dla niedostępnego projektu, a następnie wybierz polecenie **Załaduj ponownie projekt**.
+4. W **Eksplorator rozwiązań** otwórz menu skrótów niedostępnego projektu, a następnie wybierz pozycję **Załaduj ponownie projekt**.
 
-## <a name="intellisense-and-validation"></a>Technologia IntelliSense i walidacja
+## <a name="intellisense-and-validation"></a>Funkcja IntelliSense i walidacja
 
- W przypadku edytowania plików projektu przy użyciu edytora XML technologia IntelliSense i sprawdzanie poprawności są oparte na plikach schematu programu MSBuild. Są one instalowane w pamięci podręcznej schematów, które można znaleźć w *\<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild*.
+ W przypadku edytowania plików projektu za pomocą edytora XML funkcja IntelliSense i walidacja są sterowane przez pliki schematu programu MSBuild. Są one instalowane w pamięci podręcznej schematu, którą można znaleźć w *\<Visual Studio installation directory> folderze \Xml\Schemas\1033\MSBuild.*
 
- Podstawowe typy MSBuild są zdefiniowane w *Microsoft. Build. Core. xsd* i wspólne typy używane przez program Visual Studio są zdefiniowane w *Microsoft. Build. CommonTypes. xsd*. Aby dostosować schematy w taki sposób, aby była dostępna funkcja IntelliSense i sprawdzanie poprawności dla niestandardowych typów elementów, właściwości i zadań, można edytować *Microsoft. Build. xsd* lub utworzyć własny schemat zawierający schematy CommonTypes lub Core. Jeśli utworzysz własny schemat, musisz skierować Edytor XML, aby znaleźć go przy użyciu okna **Właściwości** .
+ Podstawowe typy programu MSBuild są zdefiniowane w pliku *Microsoft.Build.Core.xsd,* a typy typowe używane przez program Visual Studio są zdefiniowane w pliku *Microsoft.Build.CommonTypes.xsd.* Aby dostosować schematy w taki sposób, aby funkcja IntelliSense i weryfikacja niestandardowych typów elementów, właściwości i zadań, można edytować plik *Microsoft.Build.xsd* lub utworzyć własny schemat, który zawiera typ CommonTypes lub podstawowe schematy. Jeśli tworzysz własny schemat, musisz skierować edytor XML w celu znalezienia go przy użyciu **okna** Właściwości.
 
-## <a name="edit-loaded-project-files"></a>Edytuj załadowane pliki projektu
+## <a name="edit-loaded-project-files"></a>Edytowanie załadowanych plików projektu
 
- Program Visual Studio buforuje zawartość plików projektu i plików zaimportowanych przez pliki projektu. W przypadku edycji załadowanego pliku projektu program Visual Studio automatycznie wyświetli monit o ponowne załadowanie projektu, aby zmiany zaczęły obowiązywać. Jednak Jeśli edytujesz plik zaimportowany przez załadowany projekt, nie zostanie wyświetlony monit o ponowne załadowanie i musisz ręcznie zwolnić i załadować projekt, aby zmiany zaczęły obowiązywać.
+ Visual Studio buforuje zawartość plików projektu i plików importowanych przez pliki projektu. Jeśli edytujesz załadowany plik projektu, Visual Studio automatycznie wyświetli monit o ponowne załadowanie projektu, aby zmiany weszły w życie. Jednak w przypadku edytowania pliku zaimportowanego przez załadowany projekt nie będzie wyświetlany monit o ponowne załadowanie i należy ręcznie zwolnić i ponownie załadować projekt, aby zmiany weszły w życie.
 
 ## <a name="output-groups"></a>Grupy wyjściowe
 
- Kilka elementów docelowych zdefiniowanych w *Microsoft. Common. targets* ma nazwy kończące się na `OutputGroups` lub `OutputGroupDependencies` . Program Visual Studio wywołuje te elementy docelowe w celu pobrania określonych list danych wyjściowych projektu. Na przykład `SatelliteDllsProjectOutputGroup` obiekt docelowy tworzy listę wszystkich zestawów satelickich, które utworzy kompilacja. Te grupy wyjściowe są używane przez funkcje, takie jak publikowanie, wdrażanie i projekt do odwołań projektu. Projekty, które nie definiują ich, będą ładowane i kompilowane w programie Visual Studio, ale niektóre funkcje mogą nie funkcjonować prawidłowo.
+ Kilka obiektów docelowych zdefiniowanych *w Microsoft.Common.targets* ma nazwy kończące się `OutputGroups` na lub `OutputGroupDependencies` . Visual Studio te obiekty docelowe, aby uzyskać konkretne listy danych wyjściowych projektu. Na przykład obiekt docelowy tworzy listę wszystkich zestawów `SatelliteDllsProjectOutputGroup` satelicie kompilowanych przez kompilację. Te grupy danych wyjściowych są używane przez funkcje takie jak publikowanie, wdrażanie i odwołania projektu do projektu. Projekty, które nie definiują ich, będą ładowane i kompilowane Visual Studio, ale niektóre funkcje mogą nie działać poprawnie.
 
-## <a name="reference-resolution"></a>Rozwiązanie referencyjne
+## <a name="reference-resolution"></a>Rozwiązanie odwołania
 
- Rozpoznawanie odwołań to proces używania elementów odwołania przechowywanych w pliku projektu do lokalizowania rzeczywistych zestawów. Program Visual Studio musi wyzwolić rozpoznawanie odwołań, aby wyświetlić szczegółowe właściwości dla każdego odwołania w oknie **Właściwości** . Na poniższej liście opisano trzy typy odwołań oraz sposób ich rozwiązywania.
+ Rozwiązanie odwołania to proces używania elementów odwołania przechowywanych w pliku projektu do lokalizowania rzeczywistych zestawów. Visual Studio musi wyzwolić rozwiązanie odwołania, aby wyświetlić szczegółowe właściwości dla każdego odwołania w **oknie** Właściwości. Na poniższej liście opisano trzy typy odwołań i sposób ich rozwiązania.
 
 - Odwołania do zestawu:
 
-   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences` . Ten element docelowy powinien generować elementy o nazwie typu elementu `ReferencePath` . Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przenoszone wraz z następującymi nowymi metadanymi:
+   System projektu wywołuje element docelowy o dobrze znanej nazwie `ResolveAssemblyReferences` . Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath` . Każdy z tych elementów powinien mieć specyfikację elementu (wartość atrybutu elementu) zawierającą pełną `Include` ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych poza następującymi nowymi metadanymi:
 
-  - `CopyLocal`, wskazując, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw na wartość true lub false.
+  - `CopyLocal`, wskazując, czy zestaw powinien zostać skopiowany do folderu wyjściowego, ustawiony na wartość true lub false.
 
-  - `OriginalItemSpec`, zawierający specyfikację oryginalnego elementu odwołania.
+  - `OriginalItemSpec`, zawierające oryginalną specyfikację elementu odwołania.
 
-  - `ResolvedFrom`Ustaw na wartość "{TargetFrameworkDirectory}", jeśli został on rozwiązany z katalogu .NET Framework.
+  - `ResolvedFrom`, ustawiony na "{TargetFrameworkDirectory}", jeśli został rozpoznany z .NET Framework katalogu.
 
 - Odwołania COM:
 
-   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveCOMReferences` . Ten element docelowy powinien generować elementy o nazwie typu elementu `ComReferenceWrappers` . Każdy z tych elementów powinien mieć specyfikację elementu zawierającą pełną ścieżkę do zestawu międzyoperacyjnego dla odwołania COM. Elementy powinny mieć wszystkie metadane z elementów wejściowych przeprowadzonych przez program, oprócz nowych metadanych o nazwie `CopyLocal` , wskazujących, czy zestaw powinien być skopiowany do folderu wyjściowego, ustawić na wartość true lub false.
+   System projektu wywołuje element docelowy o dobrze znanej nazwie `ResolveCOMReferences` . Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ComReferenceWrappers` . Każdy z tych elementów powinien mieć specyfikację elementu zawierającą pełną ścieżkę do zestawu międzyoptykowego dla odwołania COM. Elementy powinny mieć wszystkie metadane z przekazanych elementów wejściowych, a także nowe metadane o nazwie , wskazujące, czy zestaw powinien zostać skopiowany do folderu wyjściowego z wartością true czy `CopyLocal` false.
 
 - Odwołania natywne
 
-   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences` . Ten element docelowy powinien generować elementy o nazwie typu elementu `NativeReferenceFile` . Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazaną przez program, a także do nowego fragmentu metadanych o nazwie `OriginalItemSpec` , zawierających pierwotną specyfikację elementu odwołania.
+   System projektu wywołuje element docelowy o dobrze znanej nazwie `ResolveNativeReferences` . Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile` . Elementy powinny mieć wszystkie metadane z przekazanych elementów wejściowych, oprócz nowego elementu metadanych o nazwie , zawierającego oryginalną specyfikację elementu `OriginalItemSpec` odwołania.
 
 ## <a name="performance-shortcuts"></a>Skróty wydajności
 
- Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając **Debuguj**  >  **Rozpocznij debugowanie** na pasku menu) lub aby skompilować projekt (na przykład rozwiązanie **kompilacji kompilacji**  >  ), proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdy niestandardowe kompilacje tworzą pliki, które są zbudowane z kolei, sprawdzanie szybkiej aktualizacji nie identyfikuje poprawnie zmienionych plików. Projekty wymagające dokładniejszych testów aktualizacji mogą wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1` . Alternatywnie projekty można ustawić jako właściwość programu MSBuild w projekcie lub w pliku importowanym przez projekt.
+ Jeśli używasz środowiska IDE programu Visual Studio do rozpoczęcia debugowania (przez wybranie klawisza F5 lub wybranie pozycji Debuguj rozpocznij debugowanie na pasku menu) lub do skompilowania projektu (na przykład kompilacji rozwiązania kompilacji), proces kompilacji używa szybkiego sprawdzania aktualizacji w celu zwiększenia  >     >  wydajności. W niektórych przypadkach, gdy niestandardowe kompilacje tworzą pliki, które są kompilowane po kolei, szybkie sprawdzanie aktualizacji nie identyfikuje poprawnie zmienionych plików. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji, mogą wyłączyć szybkie sprawdzanie, ustawiając zmienną środowiskową `DISABLEFASTUPTODATECHECK=1` . Alternatywnie projekty mogą ustawić tę właściwość jako właściwość MSBuild w projekcie lub w pliku importowanego projektu.
 
- W przypadku regularnych kompilacji w programie Visual Studio sprawdzanie szybkiej aktualizacji nie ma zastosowania, a projekt zostanie skompilowany jako jeśli wywołano kompilację w wierszu polecenia.
+ W przypadku zwykłych kompilacji w Visual Studio szybkie sprawdzanie aktualizacji nie ma zastosowania, a projekt zostanie skompilowany tak, jakby kompilacja została wywołana w wierszu polecenia.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Instrukcje: zwiększanie procesu kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
-- [Rozpocznij kompilację z poziomu środowiska IDE](../msbuild/starting-a-build-from-within-the-ide.md)
+- [Jak rozszerzyć proces Visual Studio kompilacji](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [Rozpoczynanie kompilacji z poziomu środowiska IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Rejestrowanie rozszerzeń .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
-- [Property — element (MSBuild)](../msbuild/property-element-msbuild.md)
-- [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Item, element (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Property, element (MSBuild)](../msbuild/property-element-msbuild.md)
+- [Target, element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Csc — Zadanie](../msbuild/csc-task.md)
 - [Vbc — Zadanie](../msbuild/vbc-task.md)

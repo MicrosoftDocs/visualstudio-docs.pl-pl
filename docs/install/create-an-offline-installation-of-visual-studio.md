@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: eef6a8bbdf5afc3aa5f36b0afdb374fd5beac471
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307495"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602200"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
@@ -184,7 +184,7 @@ Otwórz wiersz polecenia i użyj parametrów programu inicjjącego zgodnie z def
 ::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > Pełny układ Visual Studio wymaga co najmniej 35 GB miejsca na dysku. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe](/visualstudio/releases/2019/system-requirements/).
+   > Pełny układ Visual Studio wymaga co najmniej 41 GB miejsca na dysku. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe](/visualstudio/releases/2019/system-requirements/).
 
 ::: moniker-end
 
@@ -241,6 +241,6 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 - [Tworzenie instalacji sieciowej Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
-- [Instalowanie certyfikatów wymaganych do Visual Studio instalacji w trybie offline](../install/install-certificates-for-visual-studio-offline.md)
+- [Instalowanie certyfikatów wymaganych do instalacji Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md)
 - [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

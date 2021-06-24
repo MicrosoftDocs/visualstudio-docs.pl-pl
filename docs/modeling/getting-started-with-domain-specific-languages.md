@@ -9,12 +9,12 @@ ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2ae488056986afbe35763be1eebb500ff0eab9a8
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386738"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602261"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -45,8 +45,8 @@ Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 | Składnik | Link |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [https://go.microsoft.com/fwlink/?linkid=2166172](../extensibility/visual-studio-sdk.md) |
 | Zestaw SDK modelowania dla Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -291,7 +291,7 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
 
     1. Na diagramie definicji DSL kliknij narzędzie **Osadzanie** relacji, kliknij klasę główną **FamilyTreeModel,** a następnie kliknij pustą część diagramu.
 
-         Zostanie wyświetlona nowa klasa domeny połączona z modelem FamilyTreeModel za pomocą relacji osadzania.
+         Zostanie wyświetlona nowa klasa domeny, która jest połączona z modelem FamilyTreeModel za pomocą relacji osadzania.
 
          Ustaw jego nazwę, na przykład **Miejscowość**.
 
@@ -302,9 +302,9 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
 
 2. Dodaj relację odwołania między osobami i miejscowością.
 
-    1. Kliknij narzędzie **Relacja** referencyjna, kliknij pozycję Osoba, a następnie kliknij pozycję Miejscowość.
+    1. Kliknij narzędzie **Relacja referencyjna,** kliknij pozycję Osoba, a następnie kliknij pozycję Miejscowość.
 
-         ![Fragment definicji DSL: główny drzewo rodziny](../modeling/media/familyt_root.png)
+         ![Fragment definicji DSL: katalog główny drzewa rodziny](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         > Relacje odwołań reprezentują odwołania krzyżowe między częściami drzewa modelu.
@@ -323,7 +323,7 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
 
     2. Na karcie **Decorator Maps (Mapy** dekoratora) w oknie DSL Details (Szczegóły **DSL)** z wybranym łącznikiem mapy zaznacz pole nameDecorator i ustaw właściwość **display na** wartość Name (Nazwa).
 
-5. Utwórz łącznik, aby wyświetlić relację między osobami i cytą.
+5. Utwórz łącznik, aby wyświetlić relację między osobami i osobami.
 
     1. Przeciągnij łącznik z przybornika do diagramu. Zmień jego nazwę i ustaw jej właściwości wyglądu.
 
@@ -333,9 +333,9 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
 
 6. Utwórz narzędzie elementu do tworzenia nowej miejscowości.
 
-    1. W **Eksploratorze DSL rozwiń** pozycję **Edytor,** a następnie **pozycję Karty przybornika**.
+    1. W **Eksploratorze DSL rozwiń** pozycję **Edytor,** a następnie **karty przybornika**.
 
-    2. Kliknij prawym przyciskiem *\<your DSL>* myszy, a następnie kliknij **polecenie Dodaj nowe narzędzie elementu**.
+    2. Kliknij prawym przyciskiem *\<your DSL>* myszy, a następnie kliknij polecenie **Dodaj nowe narzędzie elementu**.
 
     3. Ustaw właściwość **Name** nowego narzędzia i ustaw jej właściwość **Class** na miejscowość.
 
@@ -353,9 +353,9 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
 
 8. Zapisz definicję DSL, kliknij **pozycję Przekształć wszystkie szablony,** a następnie naciśnij **klawisz F5.**
 
-9. W eksperymentalnym wystąpieniu Visual Studio otwórz plik modelu testowego. Nowe narzędzia pozwalają tworzyć łaziki i połączenia między miastami i osobami. Zwróć uwagę, że można tworzyć tylko połączenia między właściwymi typami elementów.
+9. W eksperymentalnym wystąpieniu Visual Studio otwórz plik modelu testowego. Nowe narzędzia pozwalają tworzyć łaziki i połączenia między osobami i osobami. Zwróć uwagę, że można tworzyć tylko połączenia między właściwymi typami elementów.
 
-10. Utwórz kod, który zawiera listę miejscowości, w której znajduje się każda osoba. Szablony tekstowe to jedno z miejsc, w których można uruchomić taki kod. Można na przykład zmodyfikować istniejący plik Sample.tt w rozwiązaniu debugowania, tak aby zawierał następujący kod:
+10. Utwórz kod, który zawiera listę miejscowości, w której znajduje się każda osoba. Szablony tekstowe to jedno z miejsc, w których można uruchomić taki kod. Na przykład możesz zmodyfikować istniejący plik Sample.tt w rozwiązaniu debugowania tak, aby zawierał następujący kod:
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -383,14 +383,14 @@ Zmień nazwy istniejących klas domen i relacji. Na przykład, zaczynając od de
      Zapisanie pliku *.tt spowoduje utworzenie pliku podmiotu zależnego zawierającego listę osób i ich mieszkańców. Aby uzyskać więcej informacji, zobacz [Generowanie kodu z Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ## <a name="validation-and-commands"></a>Walidacja i polecenia
- Możesz dalej rozwijać ten DSL, dodając ograniczenia walidacji. Te ograniczenia to metody, które można zdefiniować, aby upewnić się, że model jest w poprawnym stanie. Można na przykład zdefiniować ograniczenie, aby upewnić się, że data urodzenia dziecka jest późniejsza niż data jego rodziców. Funkcja walidacji wyświetla ostrzeżenie, jeśli użytkownik DSL próbuje zapisać model, który przerywa dowolny z ograniczeń. Aby uzyskać więcej informacji, zobacz Validation in a Domain-Specific Language (Walidacja [w Domain-Specific Języku ).](../modeling/validation-in-a-domain-specific-language.md)
+ Możesz dalej rozwijać ten DSL, dodając ograniczenia walidacji. Te ograniczenia to metody, które można zdefiniować, aby upewnić się, że model jest w poprawnym stanie. Można na przykład zdefiniować ograniczenie, aby upewnić się, że data urodzenia dziecka jest późniejsza niż data jego rodziców. Funkcja walidacji wyświetla ostrzeżenie, jeśli użytkownik DSL próbuje zapisać model, który przerywa dowolny z ograniczeń. Aby uzyskać więcej informacji, zobacz [Validation in a Domain-Specific Language (Walidacja w Domain-Specific języku ).](../modeling/validation-in-a-domain-specific-language.md)
 
- Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia mogą modyfikować model. Mogą również wchodzić w interakcje z innymi modelami w Visual Studio i z zasobami zewnętrznymi. Aby uzyskać więcej informacji, [zobacz How to: Modify a Standard Menu Command](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Można również zdefiniować polecenia menu, które użytkownik może wywołać. Polecenia mogą modyfikować model. Mogą również wchodzić w interakcje z innymi modelami w Visual Studio i z zasobami zewnętrznymi. Aby uzyskać więcej informacji, zobacz How to: Modify a Standard Menu Command ( 2. [3. 3. Aby](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)uzyskać więcej informacji, zobacz Temat How to: Modify a Standard Menu Command ).
 
 ## <a name="deploying-the-dsl"></a>Wdrażanie DSL
  Aby umożliwić innym użytkownikom korzystanie z języka specyficznego dla domeny, należy rozpowszechnić plik Visual Studio Extension (VSIX). Jest on tworzony podczas kompilowania rozwiązania DSL.
 
- Znajdź plik .vsix w folderze bin rozwiązania. Skopiuj go na komputer, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. DSL może być używany we wszystkich wystąpieniach Visual Studio na tym komputerze.
+ Znajdź plik vsix w folderze bin rozwiązania. Skopiuj go na komputer, na którym chcesz go zainstalować. Na tym komputerze kliknij dwukrotnie plik VSIX. DSL może być używany we wszystkich wystąpieniach Visual Studio na tym komputerze.
 
  Tej samej procedury można użyć do zainstalowania DSL na własnym komputerze, dzięki czemu nie trzeba używać eksperymentalnego wystąpienia Visual Studio.
 
