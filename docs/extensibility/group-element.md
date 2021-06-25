@@ -1,9 +1,9 @@
 ---
-title: Element grupy | Microsoft Docs
-description: Element Group definiuje grupę poleceń pakietu VSPackage. W tym artykule opisano atrybuty, elementy podrzędne i elementy nadrzędne.
+title: Group, element | Microsoft Docs
+description: Group element definiuje grupę poleceń VSPackage. W tym artykule opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf0115161963448d47cb6721c92d0f9ffe623a0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 422ff5d3d962198953a24210eaa3ffa30c7fc8a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057588"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898594"
 ---
-# <a name="group-element"></a>Element grupy
-Definiuje grupę poleceń pakietu VSPackage.
+# <a name="group-element"></a>Group, element
+Definiuje grupę poleceń VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,10 +38,10 @@ Definiuje grupę poleceń pakietu VSPackage.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
-|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagane. Identyfikator GUID/ID identyfikatora polecenia.|
+|identyfikator|Wymagane. Identyfikator identyfikatora GUID/ID polecenia.|
+|priority|Opcjonalny. Wartość liczbowa określająca priorytet.|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -54,7 +54,7 @@ Definiuje grupę poleceń pakietu VSPackage.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy, które definiują grupy poleceń elementu pakietu VSPackage.|
+|[Groups, element](../extensibility/groups-element.md)|Zawiera wpisy definiujące grupy poleceń dla pakietów VSPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -65,4 +65,4 @@ Definiuje grupę poleceń pakietu VSPackage.
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

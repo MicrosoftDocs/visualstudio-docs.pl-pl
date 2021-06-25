@@ -1,9 +1,9 @@
 ---
-title: Moduł wyliczający kod polecenia | Microsoft Docs
-description: Moduł wyliczający kod polecenia jest używany w opcjach dla SccGetCommandOptions i SccPopulateListto, aby wskazać polecenie, dla którego są określone opcje.
+title: Moduł wyliczający kod | Microsoft Docs
+description: Moduł wyliczający kod polecenia jest używany w opcjach SccGetCommandOptions i SccPopulateListto, aby wskazać polecenie, dla którego określono opcje.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - command code enumerator
 - source control plug-ins, command code enumeration
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2df7ca11d5e93a3ae43d2a6bd1d7ccf8dfe5aa6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b97d5083c4f262ae2d86aeef5ee2627fdc854bcb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089709"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901386"
 ---
 # <a name="command-code-enumerator"></a>Moduł wyliczający kod polecenia
-Ten moduł wyliczający jest używany w opcjach dla [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList](../extensibility/sccpopulatelist-function.md), aby wskazać polecenie, dla którego są określone opcje.
+Ten moduł wyliczający jest używany w opcjach [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) i [SccPopulateList,](../extensibility/sccpopulatelist-function.md)aby wskazać polecenie, dla którego określono opcje.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,29 +42,29 @@ enum SCCCOMMAND {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
-SCC_COMMAND_GET odnosi się do [SccGet](../extensibility/sccget-function.md).
+SCC_COMMAND_GET odpowiada [sccGet](../extensibility/sccget-function.md).
 
-SCC_COMMAND_CHECKOUT odnosi się do [SccCheckout](../extensibility/scccheckout-function.md).
+SCC_COMMAND_CHECKOUT odpowiada [sccCheckout](../extensibility/scccheckout-function.md).
 
-SCC_COMMAND_CHECKIN odnosi się do [SccCheckin](../extensibility/scccheckin-function.md).
+SCC_COMMAND_CHECKIN odpowiada [sccCheckin](../extensibility/scccheckin-function.md).
 
-SCC_COMMAND_UNCHECKOUT odnosi się do [SccUncheckout](../extensibility/sccuncheckout-function.md).
+SCC_COMMAND_UNCHECKOUT odpowiada [sccUncheckout](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD odnosi się do [SccAdd](../extensibility/sccadd-function.md).
+SCC_COMMAND_ADD odpowiada [sccAdd](../extensibility/sccadd-function.md).
 
-SCC_COMMAND_REMOVE odnosi się do [SccRemove](../extensibility/sccremove-function.md).
+SCC_COMMAND_REMOVE odpowiada [SccRemove](../extensibility/sccremove-function.md).
 
-SCC_COMMAND_DIFF odnosi się do [SccDiff](../extensibility/sccdiff-function.md).
+SCC_COMMAND_DIFF odpowiada [sccDiff](../extensibility/sccdiff-function.md).
 
-SCC_COMMAND_HISTORY odnosi się do [SccHistory](../extensibility/scchistory-function.md).
+SCC_COMMAND_HISTORY odpowiada [sccHistory](../extensibility/scchistory-function.md).
 
-SCC_COMMAND_RENAME odnosi się do [SccRename](../extensibility/sccrename-function.md).
+SCC_COMMAND_RENAME odpowiada nazwie [SccRename.](../extensibility/sccrename-function.md)
 
-SCC_COMMAND_PROPERTIES odnosi się do [SccProperties](../extensibility/sccproperties-function.md).
+SCC_COMMAND_PROPERTIES odpowiada [właściwościom SccProperties.](../extensibility/sccproperties-function.md)
 
-SCC_COMMAND_OPTIONS odnosi się do [SccSetOption](../extensibility/sccsetoption-function.md).
+SCC_COMMAND_OPTIONS odpowiada [sccSetOption](../extensibility/sccsetoption-function.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
+- [Wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)
 - [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

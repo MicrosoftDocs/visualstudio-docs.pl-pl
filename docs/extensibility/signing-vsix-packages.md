@@ -1,9 +1,9 @@
 ---
 title: Podpisywanie pakietów VSIX | Microsoft Docs
-description: Dowiedz się więcej o zestawach rozszerzeń podpisywania. Instalator VSIX wyświetla komunikat informujący o tym, że VSIX jest podpisany i informacje o podpisie.
+description: Dowiedz się więcej o podpisywaniu zestawów rozszerzeń. Instalator VSIX wyświetla komunikat informujący o podpisie VSIX oraz informacje o samym podpisie.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - signature
 - signing
@@ -16,37 +16,37 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2a2c9703eb41c1a3e5baa023d8240b56ccbb13b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d481c75754c7bc49369987d4bf6dc3aa33e96fdc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056366"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899163"
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
-Zestawy rozszerzeń nie muszą być podpisane, zanim będą mogły działać w programie Visual Studio, ale jest to dobre rozwiązanie.
+Zestawy rozszerzeń nie muszą być podpisane przed uruchomieniem w Visual Studio, ale jest to dobrym rozwiązaniem.
 
- Jeśli chcesz zabezpieczyć rozszerzenie i upewnić się, że nie zostało ono naruszone, możesz dodać podpis cyfrowy do pakietu VSIX. Gdy VSIX jest podpisany, Instalator VSIX wyświetli komunikat informujący o tym, że jest podpisany, oraz więcej informacji o podpisie. Jeśli zawartość VSIX została zmodyfikowana, a VSIX nie został jeszcze podpisany, Instalator VSIX pokazuje, że sygnatura jest nieprawidłowa. Instalacja nie została zatrzymana, ale użytkownik jest ostrzegany.
+ Jeśli chcesz zabezpieczyć rozszerzenie i upewnić się, że nie zostało naruszone, możesz dodać podpis cyfrowy do pakietu VSIX. Po podpisaniu VSIX instalator VSIX wyświetli komunikat informujący o podpisie oraz więcej informacji o samym podpisie. Jeśli zawartość pliku VSIX została zmodyfikowana, a plik VSIX nie został podpisany ponownie, instalator VSIX pokaże, że podpis jest nieprawidłowy. Instalacja nie zostanie zatrzymana, ale użytkownik zostanie o tym ostrzec.
 
 > [!IMPORTANT]
-> Począwszy od programu Visual Studio 2015, pakiety VSIX podpisane przy użyciu innych elementów niż szyfrowanie SHA256 będą identyfikowane jako mające nieprawidłową sygnaturę. Instalacja VSIX nie jest blokowana, ale użytkownik zostanie poinformowany.
+> Począwszy od Visual Studio 2015 r., pakiety VSIX podpisane przy użyciu czegokolwiek innego niż szyfrowanie SHA256 będą identyfikowane jako mające nieprawidłowy podpis. Instalacja VSIX nie jest blokowana, ale użytkownik zostanie o tym ostrzec.
 
-## <a name="signing-a-vsix-with-vsixsigntool"></a>Podpisywanie VSIX przy użyciu VSIXSignTool
- Istnieje narzędzie podpisywania SHA256 szyfrowania dostępne z [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) na NuGet.org na [VsixSignTool](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+## <a name="signing-a-vsix-with-vsixsigntool"></a>Podpisywanie VSIX za pomocą narzędzia VSIXSignTool
+ Narzędzie podpisywania szyfrowania SHA256 jest dostępne w programie [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) nuget.org w [narzędziu VsixSignTool.](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)
 
-#### <a name="to-use-the-vsixsigntool"></a>Aby użyć VSIXSignTool
+#### <a name="to-use-the-vsixsigntool"></a>Aby użyć narzędzia VSIXSignTool
 
-1. Dodaj swój VSIX do projektu.
+1. Dodaj vsix do projektu.
 
-2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, a następnie wybierz pozycję **dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji o pakiecie NuGet i dodawaniu pakietów NuGet, zobacz [dokumentację programu NuGet](/NuGet) i tematy dotyczące [interfejsu użytkownika Menedżera pakietów](/NuGet/Tools/Package-Manager-UI) .
+2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksplorator rozwiązań, wybierając pozycję Dodaj &#124; **zarządzaj pakietami NuGet.**  Aby uzyskać więcej informacji na temat pakietów NuGet i dodawania pakietów NuGet, zobacz [dokumentację](/NuGet) i Menedżer pakietów [interfejsu](/NuGet/Tools/Package-Manager-UI) użytkownika.
 
-3. Wyszukaj VSIXSignTool z VisualStudioExtensibility i zainstaluj pakiet NuGet.
+3. Wyszukaj narzędzie VSIXSignTool w programie VisualStudioExtensibility i zainstaluj pakiet NuGet.
 
-4. Teraz można uruchomić VSIXSignTool z lokalizacji lokalnych pakietów projektu. Zapoznaj się z pomocą narzędzia wiersza polecenia dla scenariusza podpisywania (VSIXSignTool.exe/?).
+4. Teraz możesz uruchomić narzędzie VSIXSignTool z lokalizacji pakietów lokalnych projektu. Zapoznaj się z pomocą wiersza polecenia narzędzia dla scenariusza podpisywania (VSIXSignTool.exe /?).
 
-   Na przykład, aby podpisać przy użyciu pliku certyfikatu chronionego hasłem:
+   Aby na przykład zalogować się przy użyciu pliku certyfikatu chronionego hasłem:
 
-   VSIXSignTool.exe podpisywanie/f \<certfile> /p \<password>\<VSIXfile>
+   VSIXSignTool.exe /f \<certfile> /p \<password>\<VSIXfile>
 
 ## <a name="see-also"></a>Zobacz też
 - [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

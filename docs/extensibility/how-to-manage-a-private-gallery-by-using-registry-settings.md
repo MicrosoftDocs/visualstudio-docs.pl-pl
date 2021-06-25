@@ -1,9 +1,9 @@
 ---
 title: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
-description: Dowiedz się, jak kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych.
+description: Dowiedz się, jak kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii Visual Studio, Galerii przykładów lub galerii prywatnych.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - VSIX private galleries, managing
 - managing VSIX private galleries
@@ -13,18 +13,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5981dc4399e09df207b154b900fa163895c344c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9fef1e6447ac07e9c3d4ccfb76a9ee1e06f91e42
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070066"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898838"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Instrukcje: Zarządzanie galerią prywatną przy użyciu ustawień rejestru
-Jeśli jesteś administratorem lub deweloperem rozszerzenia izolowanej powłoki, możesz kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii programu Visual Studio, galerii przykładów lub w galeriach prywatnych. Aby udostępnić galerię lub niedostępny, Utwórz plik *. pkgdef* , który opisuje zmodyfikowane klucze rejestru i ich wartości.
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Samodzielnie: zarządzanie galerią prywatną przy użyciu ustawień rejestru
+Jeśli jesteś administratorem lub deweloperem rozszerzenia programu Isolated Shell, możesz kontrolować dostęp do kontrolek, szablonów i narzędzi w galerii Visual Studio, galerii przykładów lub galerii prywatnych. Aby udostępnić galerię lub jej niedostępność, utwórz plik *pkgdef* opisujący zmodyfikowane klucze rejestru i ich wartości.
 
-## <a name="manage-private-galleries"></a>Zarządzaj prywatnymi galeriami
- Można utworzyć plik *. pkgdef* , aby kontrolować dostęp do galerii na wielu komputerach. Ten plik musi mieć następujący format.
+## <a name="manage-private-galleries"></a>Zarządzanie galeriami prywatnymi
+ Aby kontrolować dostęp do galerii na wielu komputerach, można utworzyć plik *pkgdef.* Ten plik musi mieć następujący format.
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -38,22 +38,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- `Repositories`Klucz odnosi się do galerii, która ma być włączona lub wyłączona. Galeria programu Visual Studio i Galeria przykładów używają następujących identyfikatorów GUID repozytorium:
+ Klucz `Repositories` odwołuje się do galerii, która ma być włączona lub wyłączona. Galeria Visual Studio i Galeria przykładów używają następujących identyfikatorów GUID repozytorium:
 
-- Galeria programu Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9
+- Visual Studio Gallery : 0F45E408-7995-4375-9485-86B8DB553DC9
 
 - Galeria przykładów: AEB9CB40-D8E6-4615-B52C-27E307F8506C
 
-  `Disabled`Wartość jest opcjonalna. Domyślnie Galeria jest włączona.
+  Wartość `Disabled` jest opcjonalna. Galeria jest domyślnie włączona.
 
-  `Priority`Wartość określa kolejność, w jakiej Galerie są wyświetlane w oknie dialogowym **Opcje** . Galeria programu Visual Studio ma priorytet 10, a Galeria przykładów ma priorytet 20. Galerie prywatne zaczynają się od priorytetu 100. Jeśli kilka galerii ma taką samą wartość priorytetu, kolejność, w jakiej są one wyświetlane, zależy od wartości zlokalizowanych `DisplayName` atrybutów.
+  Wartość `Priority` określa kolejność, w jakiej galerie są wyświetlane w **oknie dialogowym** Opcje. Visual Studio Ma priorytet 10, a galeria przykładów ma priorytet 20. Galerie prywatne zaczynają się od priorytetu 100. Jeśli kilka galerii ma taką samą wartość priorytetu, kolejność ich pojawiania się jest określana przez wartości ich `DisplayName` zlokalizowanych atrybutów.
 
-  Ta `Protocol` wartość jest wymagana dla galerii opartych na protokole Atom lub programie SharePoint.
+  Ta `Protocol` wartość jest wymagana w przypadku galerii opartych na atomach lub w programie SharePoint.
 
-  `DisplayName`Należy określić albo oba, `DisplayNameResourceID` jak i `DisplayNamePackageGuid` . Jeśli wszystkie są określone, `DisplayNameResourceID` `DisplayNamePackageGuid` para i jest używana.
+  Należy `DisplayName` określić wartości , lub oba te wartości i `DisplayNameResourceID` `DisplayNamePackageGuid` . Jeśli wszystkie są określone, używana `DisplayNameResourceID` jest para i `DisplayNamePackageGuid` .
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Wyłączenie galerii programu Visual Studio przy użyciu pliku. pkgdef
- Możesz wyłączyć galerię w pliku *. pkgdef* . Następujący wpis wyłącza galerię programu Visual Studio:
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Wyłączanie galerii Visual Studio użyciu pliku pkgdef
+ Galerię można wyłączyć w *pliku pkgdef.* Poniższy wpis wyłącza Visual Studio Galerii:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -61,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- Następujący wpis wyłącza galerię przykładów:
+ Poniższy wpis wyłącza galerię przykładów:
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
