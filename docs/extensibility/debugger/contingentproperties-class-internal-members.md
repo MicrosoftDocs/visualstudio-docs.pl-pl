@@ -1,8 +1,8 @@
 ---
-description: Zawiera dodatkowe właściwości dla obiektu System. Threading. Tasks. Task.
-title: Klasa ContingentProperties — Wewnętrzne elementy członkowskie | Microsoft Docs
+description: Zawiera dodatkowe właściwości obiektu System.Threading.Tasks.Task.
+title: ContingentProperties, klasa — składowe | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ContingentProperties class [.NET Framework debug engines]
 - debug engines, ContingentProperties class [.NET Framework]
@@ -12,21 +12,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295b8c3b33059811e665e362c9894103b47c422d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8fca0bf68de4493d0165f9e66e251945ba6168b2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055001"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905686"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Klasa ContingentProperties — Wewnętrzne elementy członkowskie
-Zawiera dodatkowe właściwości dla <xref:System.Threading.Tasks.Task> obiektu.
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties, klasa — składowe wewnętrzne
+Zawiera dodatkowe właściwości <xref:System.Threading.Tasks.Task> obiektu.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w mscorlib.dll)
 
- Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, następująca składnia jest udostępniana w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ Zawiera dodatkowe właściwości dla <xref:System.Threading.Tasks.Task> obiektu.
 
 |Nazwa|Opis|
 |----------|-----------------|
-|[m_children](../../extensibility/debugger/m-children-field.md)|Lista zadań podrzędnych, które są zarejestrowane w tym zadaniu.|
+|[m_children](../../extensibility/debugger/m-children-field.md)|Lista zadań podrzędnych zarejestrowanych w tym zadaniu.|
 
 ## <a name="remarks"></a>Uwagi
- .NET Framework inicjuje pola tej klasy tylko wtedy, gdy są one zbędne.
+ Klasa .NET Framework inicjuje pola tej klasy tylko wtedy, gdy są potrzebne.
 
 ## <a name="see-also"></a>Zobacz też
-- [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Równoległe wewnętrzne rozszerzenia dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

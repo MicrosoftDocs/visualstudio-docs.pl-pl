@@ -1,9 +1,9 @@
 ---
-title: Element menu | Microsoft Docs
-description: Element menu definiuje wszystkie menu i paski narzędzi, które implementuje pakietu VSPackage. Ten artykuł zawiera przykład.
+title: Menus, element | Microsoft Docs
+description: Element Menus definiuje wszystkie menu i paski narzędzi implementowanych przez pakiet VSPackage. Ten artykuł zawiera przykład.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064010"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905582"
 ---
-# <a name="menus-element"></a>Element menu
-Definiuje wszystkie menu i paski narzędzi, które implementuje pakietu VSPackage.
+# <a name="menus-element"></a>Menus, element
+Definiuje wszystkie menu i paski narzędzi implementowanych przez pakiet VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,20 +39,20 @@ Definiuje wszystkie menu i paski narzędzi, które implementuje pakietu VSPackag
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element menu](../extensibility/menus-element.md)|Definiuje wszystkie menu i paski narzędzi, które implementuje pakietu VSPackage.|
-|[Element menu](../extensibility/menu-element.md)|Reprezentuje pojedyncze menu lub pasek narzędzi.|
+|[Menus, element](../extensibility/menus-element.md)|Definiuje wszystkie menu i paski narzędzi implementowanych przez pakiet VSPackage.|
+|[Element Menu](../extensibility/menu-element.md)|Reprezentuje pojedyncze menu lub pasek narzędzi.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w pakietu VSPackage.|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń w vspackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -80,5 +80,5 @@ Definiuje wszystkie menu i paski narzędzi, które implementuje pakietu VSPackag
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Jak pakiet VSPackages dodaje elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

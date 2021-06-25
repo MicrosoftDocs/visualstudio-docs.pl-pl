@@ -1,101 +1,101 @@
 ---
-title: Odwołanie do schematu manifestu szablonu programu Visual Studio | Microsoft Docs
-description: Ten schemat zawiera opis formatu plików manifestu szablonu programu Visual Studio, które są generowane dla szablonów projektów lub elementów programu Visual Studio.
+title: Visual Studio schematu manifestu szablonu | Microsoft Docs
+description: W tej informacji o schemacie opisano format Visual Studio manifestu szablonu, które są generowane Visual Studio szablonów projektów lub elementów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 259d2dd050f4681053f331bfd4ec39dd7b214059
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062502"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905387"
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>Odwołanie do schematu manifestu szablonu programu Visual Studio
-Ten schemat opisuje format plików manifestu szablonu programu Visual Studio (*. vstman*), które są generowane dla szablonów projektów lub elementów programu Visual Studio. Schemat opisuje również lokalizację i inne istotne informacje dotyczące szablonu.
+# <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio schematu manifestu szablonu
+W tym schemacie opisano format Visual Studio manifestu szablonu *(vstman),* które są generowane Visual Studio szablonów projektów lub elementów. Schemat opisuje również lokalizację i inne istotne informacje o szablonie.
 
- : Ponieważ istnieją osobne katalogi elementów i szablonów projektu, manifest nigdy nie powinien zawierać kombinacji elementów i szablonów projektów.
+ : ponieważ istnieją oddzielne katalogi szablonów elementów i projektów, manifest nigdy nie powinien mieć kombinacji szablonów elementów i projektów.
 
 > [!IMPORTANT]
-> Ten manifest jest dostępny w programie Visual Studio 2017.
+> Ten manifest jest dostępny od Visual Studio 2017 r.
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest, element
  Element główny manifestu.
 
 ### <a name="attributes"></a>Atrybuty
 
-- **Wersja**: ciąg reprezentujący wersję manifestu szablonu. Wymagane.
+- **Wersja:** ciąg reprezentujący wersję manifestu szablonu. Wymagane.
 
-- **Ustawienia regionalne**: ciąg reprezentujący ustawienia regionalne lub wartości lokalne manifestu szablonu. Wartość ustawień regionalnych dotyczy wszystkich szablonów. Należy użyć oddzielnego manifestu dla każdego ustawienia regionalnego. Opcjonalny.
+- **Locale**: ciąg reprezentujący wartości regionalnych lub regionalnych manifestu szablonu. Wartość regionalnych ma zastosowanie do wszystkich szablonów. Należy użyć oddzielnego manifestu dla poszczególnych danych regionalnych. Opcjonalny.
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
-- **VSTemplateContainer** Obowiązkowe.
+- **VSTemplateContainer** Opcjonalne.
 
-- **VSTemplateDir** Obowiązkowe.
+- **VSTemplateDir** Opcjonalne.
 
 ### <a name="parent-element"></a>Element nadrzędny
  Brak.
 
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer
- Kontener elementów manifestu szablonu. Manifest ma jeden kontener szablonu dla każdego zdefiniowanego przez niego szablonu.
+ Kontener elementów manifestu szablonu. Manifest ma jeden kontener szablonów dla każdego szablonu, który definiuje.
 
 ### <a name="attributes"></a>Atrybuty
- **VSTemplateType**: wartość ciągu, która określa typ szablonu ( `"Project"` , `"Item"` lub `"ProjectGroup"` ). Wymagane
+ **VSTemplateType:** wartość ciągu określająca typ szablonu ( `"Project"` , `"Item"` lub `"ProjectGroup"` ). Wymagane
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
-- **RelativePathOnDisk**: ścieżka względna pliku szablonu na dysku. Ta lokalizacja definiuje również położenie szablonu w drzewie szablonów pokazanym w oknie dialogowym **Nowy projekt** lub **nowy element** . W przypadku szablonów wdrożonych jako katalog i pojedyncze pliki ta ścieżka odnosi się do katalogu zawierającego pliki szablonów. W przypadku szablonów wdrożonych jako plik *zip* ścieżka powinna być ścieżką do pliku *. zip* .
+- **RelativePathOnDisk:** ścieżka względna pliku szablonu na dysku. Ta lokalizacja definiuje również umieszczanie szablonu w drzewie szablonów wyświetlanym w oknie dialogowym **Nowy** projekt lub **Nowy** element. W przypadku szablonów wdrożonych jako katalog i poszczególne pliki ta ścieżka odnosi się do katalogu zawierającego pliki szablonu. W przypadku szablonów wdrożonych *.zip* pliku ta ścieżka powinna być ścieżką do *.zip* pliku.
 
-- * * VSTemplateHeader: element [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) , który opisuje nagłówek.
+- **VSTemplateHeader: element [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) opisujący nagłówek.
 
 ### <a name="parent-element"></a>Element nadrzędny
  **VSTemplateManifest**
 
 ## <a name="vstemplatedir"></a>VSTemplateDir
- Opisuje katalog, w którym znajduje się szablon. Manifest może zawierać wiele wpisów **VSTemplateDir** , aby zapewnić zlokalizowaną nazwę i kolejność sortowania dla katalogów kontrolujących ich wygląd w drzewie kategorii szablonów.
+ Opisuje katalog, w którym znajduje się szablon. Manifest może zawierać wiele **wpisów VSTemplateDir** w celu zapewnienia zlokalizowanej nazwy i sortowania katalogów w celu kontrolowania ich wyglądu w drzewie kategorii szablonów.
 
- Ze względu na ich projekt wpisy **VSTemplateDir** powinny być wyświetlane tylko w manifestach określonych poza ustawieniami regionalnymi.
+ Ze względu na projekt wpisy **VSTemplateDir** powinny pojawiać się tylko w manifestach innych niż określone przez zmiany regionalnych.
 
 ### <a name="attributes"></a>Atrybuty
  Brak.
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
-- **RelativePath**: ścieżka szablonu. Może istnieć tylko jeden wpis na ścieżkę, więc pierwszy z nich zostanie wygrany dla wszystkich manifestów.
+- **RelativePath:** ścieżka szablonu. Na ścieżkę może być tylko jeden wpis, więc pierwszy z nich wygra dla wszystkich manifestów.
 
-- Nazwa **zlokalizowana**: element **NameDescriptionIcon** , który określa zlokalizowaną nazwę. Opcjonalny.
+- **LocalizedName:** element **NameDescriptionIcon** określający nazwę zlokalizowanej. Opcjonalny.
 
-- **SortOrder**: ciąg określający porządek sortowania. Opcjonalny.
+- **SortOrder:** ciąg określający kolejność sortowania. Opcjonalny.
 
-- **ParentFolderOverrideName**: zastąpiona nazwa folderu nadrzędnego. Opcjonalny. Ten element ma atrybut **name** , który jest wartością ciągu, która określa nazwę.
+- **ParentFolderOverrideName:** zastąpiona nazwa folderu nadrzędnego. Opcjonalny. Ten element ma **atrybut Name,** który jest wartością ciągu określającą nazwę.
 
 ### <a name="parent-element"></a>Element nadrzędny
  **VSTemplateManifest**
 
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon
- Określa nazwę i opis, prawdopodobnie dla zlokalizowanych szablonów. Zobacz **zlokalizowany** powyżej.
+ Określa nazwę i opis, prawdopodobnie dla zlokalizowanych szablonów. Zobacz **LocalizedName** powyżej.
 
 ### <a name="attributes"></a>Atrybuty
 
-- **Package**: wartość ciągu określająca pakiet. Opcjonalny.
+- **Pakiet:** wartość ciągu określająca pakiet. Opcjonalny.
 
-- **ID**: wartość ciągu określająca identyfikator. Opcjonalny.
+- **ID:** wartość ciągu określająca identyfikator. Opcjonalny.
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
 
 ### <a name="parent-element"></a>Element nadrzędny
- **Zlokalizowana**
+ **Localizedname**
 
 ## <a name="examples"></a>Przykłady
- Poniższy kod jest przykładem pliku szablonu projektu *. vstman* .
+ Poniższy kod jest przykładem pliku *vstman* szablonu projektu.
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
@@ -121,7 +121,7 @@ Ten schemat opisuje format plików manifestu szablonu programu Visual Studio (*.
 
 ```
 
- Poniższy kod stanowi przykład pliku szablonu elementu *. vstman* .
+ Poniższy kod jest przykładem pliku *vstman* szablonu elementu.
 
 ```xml
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">

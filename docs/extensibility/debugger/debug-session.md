@@ -1,9 +1,9 @@
 ---
-title: Sesja debugowania | Microsoft Docs
-description: Dowiedz się więcej o sesji debugowania, która jest wszystkimi procesami, które zostały uruchomione lub dołączone do jednego wystąpienia IDE.
+title: Debugowanie sesji | Microsoft Docs
+description: Dowiedz się więcej na temat sesji debugowania, czyli wszystkich procesów, które zostały uruchomione lub dołączone z pojedynczego wystąpienia środowiska IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], sessions
 ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
@@ -12,19 +12,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67501de3de3b88b9548238705ee8e075f31410e6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 64a7be8c02588e9df5904f37b0a20363a7e77cc2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067897"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905660"
 ---
 # <a name="debug-session"></a>Sesja debugowania
-W odniesieniu do architektury debugera, *sesji*:
+Jeśli chodzi o architekturę debugera, *sesja*:
 
-- Jest zestawem wszystkich procesów, powiązanych lub niepowiązanych, które zostały uruchomione lub dołączone do jednego wystąpienia IDE.
+- Jest zestawem wszystkich procesów, powiązanych lub niepowiązanych, które zostały uruchomione lub dołączone z pojedynczego wystąpienia środowiska IDE.
 
-- Jest zaimplementowany przez Menedżera debugowania sesji (SDM). Aby uzyskać więcej informacji, zobacz [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md).
+- Jest implementowany przez menedżera debugowania sesji (SDM). Aby uzyskać więcej informacji, zobacz [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).
 
 ## <a name="see-also"></a>Zobacz też
 - [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md)

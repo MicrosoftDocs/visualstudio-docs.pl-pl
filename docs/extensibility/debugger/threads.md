@@ -1,9 +1,9 @@
 ---
 title: Wątki | Microsoft Docs
-description: W tym artykule opisano definicje i rolę wątku w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę wątku w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 168d29b8306ec58233f426b48c3ab0adfacb2bd5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dc745a4361c0935896048bbf72a4084f007ecf7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057848"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905738"
 ---
 # <a name="threads"></a>Wątki
-W architekturze debugera, *wątek*:
+W architekturze debugera *wątek*:
 
-- Jest podstawową jednostką obliczeń. Wątek sekwencyjnie wykonuje instrukcje w kontekście pojedynczego stosu wywołań, przechodząc z jednego kontekstu kodu do następnego.
+- Jest podstawową jednostką obliczeniową. Wątek sekwencyjnie wykonuje instrukcje w kontekście jednego stosu wywołań, przenosząc się z jednego kontekstu kodu do następnego.
 
-- Może identyfikować siebie i program, w którym działa. Wątki mogą być nazwane, zawieszone i wznowione. Wątek może również wyliczyć skojarzone ramki stosu, a w pewnych warunkach można przenieść do innej ramki stosu. Z uwzględnieniem kontekstu ramki stosu wątek może zwrócić skojarzony z nim wątek logiczny, jeśli istnieje. Wątek ma właściwości, takie jak liczba wstrzymań, które mogą być wyświetlane w oknie **wątki** IDE.
+- Może identyfikować siebie i program, w ramach który jest uruchomiony. Wątki można nazywać, zawieszać i wznawiać. Wątek może również wyliczyć skojarzone ramki stosu i w pewnych warunkach można go przenieść do innej ramki stosu. Biorąc pod uwagę kontekst ramki stosu, wątek może zwrócić skojarzony wątek logiczny, jeśli jest związany. Wątek ma właściwości, takie jak liczba wstrzymania, które mogą być wyświetlane w oknie **Wątki** środowiska IDE.
 
-- Jest reprezentowany przez interfejs [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) , zwykle tworzony przez aparat debugowania (de) lub maszynę wirtualną w ramach wykonywania programu.
+- Jest reprezentowany przez [interfejs IDebugThread2,](../../extensibility/debugger/reference/idebugthread2.md) zazwyczaj tworzony przez aparat debugowania (DE) lub maszynę wirtualną w wyniku wykonania programu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Programy](../../extensibility/debugger/programs.md)

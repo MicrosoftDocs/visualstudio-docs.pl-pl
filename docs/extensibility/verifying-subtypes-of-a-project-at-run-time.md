@@ -1,9 +1,9 @@
 ---
-title: Weryfikowanie podtypów projektu w czasie wykonywania | Microsoft Docs
-description: Dowiedz się, jak mieć pakietu VSPackage weryfikują obecność określonego niestandardowego podtypu projektu, od którego zależy.
+title: Weryfikowanie podtypów projektu w czasie | Microsoft Docs
+description: Dowiedz się, jak pakiet VSPackage zweryfikować obecność określonego niestandardowego podtypu projektu, od których zależy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project subtypes
 - check subtypes
@@ -13,19 +13,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c52d3297ce4903cb8f8e7cb2f9ab5169d21ac94e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 621a40e1857d7c78ec4c5be08a3b7c3808a0d48b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062606"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905476"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>Weryfikuj podtypy projektu w czasie wykonywania
-Pakietu VSPackage, który zależy od niestandardowego podtypu projektu, powinien zawierać logikę do wyszukania tego podtypu, aby można było bezpiecznie kończyć się niepowodzeniem, jeśli podtyp nie jest obecny. Poniższa procedura pokazuje, jak sprawdzić obecność określonego podtypu.
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Weryfikowanie podtypów projektu w czasie uruchamiania
+Pakiet VSPackage, który jest zależny od niestandardowego podtypu projektu, powinien zawierać logikę wyszukiwania tego podtypu, aby bezpiecznie zakończyło się niepowodzeniem, jeśli podtyp nie istnieje. W poniższej procedurze pokazano, jak sprawdzić obecność określonego podtypu.
 
-### <a name="to-verify-the-presence-of-a-subtype"></a>Aby zweryfikować obecność podtypu
+### <a name="to-verify-the-presence-of-a-subtype"></a>Aby sprawdzić obecność podtypu
 
-1. Pobierz hierarchię projektu z obiektów projektu i rozwiązania jako obiekt, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> dodając następujący kod do pakietu VSPackage.
+1. Pobierz hierarchię projektu z obiektów projektu i rozwiązania jako obiekt, dodając <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> następujący kod do pakietów VSPackage.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -42,7 +42,7 @@ Pakietu VSPackage, który zależy od niestandardowego podtypu projektu, powinien
 
     ```
 
-2. Rzutowanie hierarchii do <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfejsu.
+2. Rzutuj hierarchię na <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfejs.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -50,7 +50,7 @@ Pakietu VSPackage, który zależy od niestandardowego podtypu projektu, powinien
 
     ```
 
-3. Pobierz listę identyfikatorów GUID typu projektu, wywołując <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .
+3. Pobierz listę identyfikatorów GUID typu projektu przez wywołania <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
@@ -71,4 +71,4 @@ Pakietu VSPackage, który zależy od niestandardowego podtypu projektu, powinien
 ## <a name="see-also"></a>Zobacz też
 - [Podtypy projektu](../extensibility/internals/project-subtypes.md)
 - [Projekt podtypów projektu](../extensibility/internals/project-subtypes-design.md)
-- [Właściwości i metody rozszerzane przez podtypy projektów](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+- [Właściwości i metody rozszerzone o podtypy projektu](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

@@ -1,33 +1,33 @@
 ---
-title: 'Instrukcje: Zarządzanie wieloma wątkami w kodzie zarządzanym | Microsoft Docs'
-description: Dowiedz się, jak zarządzać wieloma wątkami w kodzie, jeśli zarządzane rozszerzenie pakietu VSPackage wywołuje metody asynchroniczne lub ma operacje poza wątkiem interfejsu użytkownika programu Visual Studio.
+title: 'How to: Managing Multiple Threads in Managed Code | (Jak zarządzać wieloma wątkami w zarządzanych plikach | Microsoft Docs'
+description: Dowiedz się, jak zarządzać wieloma wątkami w kodzie, jeśli zarządzane rozszerzenie vspackage wywołuje metody asynchroniczne lub ma operacje poza Visual Studio interfejsu użytkownika.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b301770a54baf0416aa9fcc838a9a6633252fbe
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 39319b748dd41c6936e7b70e20243202452fae67
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073134"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903089"
 ---
-# <a name="how-to-manage-multiple-threads-in-managed-code"></a>Instrukcje: Zarządzanie wieloma wątkami w kodzie zarządzanym
-Jeśli masz zarządzane rozszerzenie pakietu VSPackage, które wywołuje metody asynchroniczne lub zawiera operacje wykonywane w wątkach innych niż wątek interfejsu użytkownika programu Visual Studio, należy postępować zgodnie z wytycznymi podanymi poniżej. Wątek interfejsu użytkownika można zachować, ponieważ nie musi czekać na zakończenie pracy w innym wątku. Kod można zwiększyć wydajnie, ponieważ nie masz dodatkowych wątków, które zajmują miejsce na stosie, i możesz być bardziej niezawodny i łatwiejszy do debugowania, ponieważ uniemożliwiasz zakleszczenie i nieodpowiadający kod.
+# <a name="how-to-manage-multiple-threads-in-managed-code"></a>Jak zarządzać wieloma wątkami w kodzie zarządzanym
+Jeśli masz zarządzane rozszerzenie VSPackage, które wywołuje metody asynchroniczne lub wykonuje operacje na wątkach innych niż Visual Studio wątku interfejsu użytkownika, postępuj zgodnie z poniższymi wskazówkami. Wątek interfejsu użytkownika może być dynamiczny, ponieważ nie musi czekać na zakończenie pracy nad innym wątkiem. Możesz sprawić, że kod będzie bardziej wydajny, ponieważ nie masz dodatkowych wątków, które zabrały miejsce na stosie, i sprawić, że będzie bardziej niezawodny i łatwiejszy do debugowania, ponieważ unikniesz zakleszczeń i nieosiągalnego kodu.
 
- Ogólnie rzecz biorąc, można przełączać się z wątku interfejsu użytkownika do innego wątku lub odwrotnie. Gdy metoda zwraca, bieżący wątek jest wątkiem, z którego pierwotnie został wywołany.
+ Ogólnie rzecz biorąc, możesz przełączyć się z wątku interfejsu użytkownika na inny wątek lub na odwrót. Gdy metoda zwraca wartość , bieżący wątek jest wątkiem, z którego pierwotnie został wywołany.
 
 > [!IMPORTANT]
-> Poniższe wskazówki używają interfejsów API w <xref:Microsoft.VisualStudio.Threading> przestrzeni nazw, w szczególności <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> klasy. Interfejsy API w tym obszarze nazw są nowością w programie [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] . Można uzyskać wystąpienie elementu z <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwości `ThreadHelper.JoinableTaskFactory` .
+> Poniższe wskazówki korzystają z interfejsów API w przestrzeni <xref:Microsoft.VisualStudio.Threading> nazw , a w szczególności w klasie <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> . Interfejsy API w tej przestrzeni nazw są nowe w programie [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] . Wystąpienie obiektu można pobrać <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> z <xref:Microsoft.VisualStudio.Shell.ThreadHelper> właściwości `ThreadHelper.JoinableTaskFactory` .
 
-## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Przełączanie z wątku interfejsu użytkownika do wątku w tle
+## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Przełączanie z wątku interfejsu użytkownika na wątek w tle
 
-1. Jeśli jesteś w wątku interfejsu użytkownika i chcesz wykonać asynchroniczne prace w wątku w tle, użyj `Task.Run()` :
+1. Jeśli jesteś w wątku interfejsu użytkownika i chcesz wykonać asynchroniczną pracę w wątku w tle, użyj metody `Task.Run()` :
 
     ```csharp
     await Task.Run(async delegate{
@@ -37,7 +37,7 @@ Jeśli masz zarządzane rozszerzenie pakietu VSPackage, które wywołuje metody 
 
     ```
 
-2. Jeśli jesteś w wątku interfejsu użytkownika i chcesz synchronicznie blokować podczas wykonywania pracy w wątku w tle, użyj <xref:System.Threading.Tasks.TaskScheduler> właściwości `TaskScheduler.Default` wewnątrz <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> :
+2. Jeśli jesteś w wątku interfejsu użytkownika i chcesz synchronicznie blokować podczas wykonywania pracy w wątku w tle, użyj <xref:System.Threading.Tasks.TaskScheduler> właściwości `TaskScheduler.Default` wewnątrz obiektu <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> :
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -51,16 +51,16 @@ Jeśli masz zarządzane rozszerzenie pakietu VSPackage, które wywołuje metody 
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Przełączanie z wątku w tle do wątku interfejsu użytkownika
 
-1. Jeśli jesteś w wątku w tle i chcesz wykonać coś w wątku interfejsu użytkownika, użyj <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> :
+1. Jeśli jesteś w wątku w tle i chcesz coś zrobić w wątku interfejsu użytkownika, użyj funkcji <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> :
 
     ```csharp
     // Switch to main thread
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
     ```
 
-     Możesz użyć metody, <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> Aby przełączyć się do wątku interfejsu użytkownika. Ta metoda wysyła komunikat do wątku interfejsu użytkownika z kontynuacją bieżącej metody asynchronicznej, a także komunikuje się z pozostałą częścią środowiska wątkowego, aby ustawić prawidłowy priorytet i uniknąć zakleszczeń.
+     Możesz użyć metody <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> , aby przełączyć się do wątku interfejsu użytkownika. Ta metoda publikuje komunikat w wątku interfejsu użytkownika z kontynuacją bieżącej metody asynchronicznej, a także komunikuje się z resztą struktury wątkowej w celu ustawienia poprawnego priorytetu i uniknięcia zakleszczeń.
 
-     Jeśli metoda wątku w tle nie jest asynchroniczna i nie można jej asynchronicznie, nadal można użyć `await` składni do przełączenia do wątku interfejsu użytkownika, zawijając swoją służbę <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> , tak jak w poniższym przykładzie:
+     Jeśli metoda wątku w tle nie jest asynchroniczna i nie można jej ustawić jako asynchroniczną, nadal możesz użyć składni , aby przełączyć się do wątku interfejsu użytkownika, opakowując swoją pracę za pomocą funkcji , jak w poniższym `await` <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A> przykładzie:
 
     ```csharp
     ThreadHelper.JoinableTaskFactory.Run(async delegate {

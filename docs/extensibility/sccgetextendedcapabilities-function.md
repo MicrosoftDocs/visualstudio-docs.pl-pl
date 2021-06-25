@@ -1,8 +1,8 @@
 ---
 description: Ta funkcja zwraca dodatkowe możliwości obsługiwane przez wtyczkę kontroli źródła.
-title: Funkcja SccGetExtendedCapabilities | Microsoft Docs
+title: SccGetExtendedCapabilities, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetExtendedCapabilities
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca2f2f77c586c5c71658a8f0cab32385eb3f73d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cc047fee2c92f47c181aef455b8175a4e7998176
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073004"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905595"
 ---
-# <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities, funkcja
+# <a name="sccgetextendedcapabilities-function"></a>Funkcja SccGetExtendedCapabilities
 Ta funkcja zwraca dodatkowe możliwości obsługiwane przez wtyczkę kontroli źródła.
 
 ## <a name="syntax"></a>Składnia
@@ -34,30 +34,30 @@ SCCRTN SccGetExtendedCapabilities(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[in] Wskaźnik kontekstu wtyczki kontroli źródła.
 
  lSccExCaps
 
-podczas Flaga określająca rozszerzoną funkcję, która ma zostać przetestowana (zobacz tabelę kodu możliwości rozszerzonej w [flagach możliwości](../extensibility/capability-flags.md) dla możliwych flag).
+[in] Flaga określająca rozszerzoną możliwość do testowania (zobacz tabelę Extended Capability Code (Kod możliwości rozszerzonych) w [teście Capability flags (Flagi](../extensibility/capability-flags.md) możliwości), aby uzyskać informacje o możliwych flagach.
 
  pbSupported
 
-określoną Zwraca wartość różną od zera ( `TRUE` ), jeśli określona funkcja jest obsługiwana; w przeciwnym razie zwraca wartość zero ( `FALSE` ).
+[out] Zwraca wartość niezerową `TRUE` (), jeśli określona możliwość jest obsługiwana. W przeciwnym razie zwraca wartość zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła dla tej funkcji zwraca jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja pobrania możliwości została ukończona pomyślnie.|
+|SCC_OK|Operacja pobierz możliwość została ukończona pomyślnie.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Wystąpił nieznany lub nieokreślony błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana na żądanie; oznacza to, że w przypadku potrzeby przetestowania możliwości ta metoda jest wywoływana w celu ustalenia, czy ta funkcja jest obsługiwana. Określono tylko jedną flagę w danym czasie.
+ Ta metoda jest wywoływana na żądanie; oznacza to, że gdy trzeba przetestować możliwość, ta metoda jest wywoływana w celu określenia, czy ta możliwość jest obsługiwana. W tym samym czasie jest określona tylko jedna flaga.
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)
 - [Kody błędów](../extensibility/error-codes.md)
 - [Flagi możliwości](../extensibility/capability-flags.md)

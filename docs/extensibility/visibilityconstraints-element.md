@@ -1,9 +1,9 @@
 ---
-title: VisibilityConstraints — Element | Microsoft Docs
+title: VisibilityConstraints, element | Microsoft Docs
 description: Element VisibilityConstraints określa statyczną widoczność grup poleceń i pasków narzędzi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d97f72e7a29f3cbb23c775df8454952f5ffac928
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 160a3950e31567aafc2d675971fd7263adb2ad5b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062567"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905465"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints, element
-Element VisibilityConstraints określa statyczną widoczność grup poleceń i pasków narzędzi. Widoczność jest najpierw kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) bez ładowania pakietu VSPackage.
+Element VisibilityConstraints określa statyczną widoczność grup poleceń i pasków narzędzi. Widoczność jest najpierw kontrolowana przez zintegrowane [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowisko projektowe (IDE) bez ładowania pakietów VSPackage.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,7 +41,7 @@ Element VisibilityConstraints określa statyczną widoczność grup poleceń i p
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -54,7 +54,7 @@ Element VisibilityConstraints określa statyczną widoczność grup poleceń i p
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi), które pakietu VSPackage zapewnia IDE.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy reprezentujące polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi) zapewniane przez pakiet VSPackage dla środowiska IDE.|
 
 ## <a name="example"></a>Przykład
 
@@ -67,4 +67,4 @@ Element VisibilityConstraints określa statyczną widoczność grup poleceń i p
 
 ## <a name="see-also"></a>Zobacz także
 - [VisibilityItem, element](../extensibility/visibilityitem-element.md)
-- [Tabela poleceń programu Visual Studio (. Vsct) — pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabeli poleceń (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
