@@ -1,9 +1,9 @@
 ---
-title: Obiekty kontekstu wyboru | Microsoft Docs
-description: Dowiedz się więcej na temat wewnętrznych informacji o tym, jak środowisko IDE programu Visual Studio używa globalnego obiektu kontekstu wyboru, aby określić, co powinno być wyświetlane w IDE.
+title: Wybór obiektów kontekstu | Microsoft Docs
+description: Dowiedz się więcej na temat wewnętrznych informacji o tym, jak Visual Studio IDE używa obiektu kontekstu wyboru globalnego do określenia, co powinno być wyświetlane w idee.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
@@ -13,33 +13,33 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b0c97108eaba426a4def4c1052d3adc7348eb88b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080843"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898490"
 ---
 # <a name="selection-context-objects"></a>Obiekty kontekstu wyboru
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zintegrowane środowisko programistyczne (IDE) używa obiektu kontekstu globalnego wyboru, aby określić, co powinno być wyświetlane w środowisku IDE. Każde okno w IDE może mieć własny obiekt kontekstu zaznaczenia wypychany do globalnego kontekstu wyboru. IDE aktualizuje kontekst zaznaczenia globalnego z wartościami z okna, gdy to okno ma fokus. Aby uzyskać więcej informacji, zobacz [informacje zwrotne dla użytkownika](../../extensibility/internals/feedback-to-the-user.md).
+Zintegrowane środowisko projektowe (IDE) używa obiektu kontekstu wyboru globalnego, aby określić, co powinno być [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wyświetlane w środowisku IDE. Każde okno w idee może mieć własny obiekt kontekstu wyboru wypychany do kontekstu wyboru globalnego. Ide aktualizuje kontekst wyboru globalnego wartościami z okna, gdy to okno ma fokus. Aby uzyskać więcej informacji, zobacz [Opinia dla użytkownika.](../../extensibility/internals/feedback-to-the-user.md)
 
- Wszystkie ramki okna lub lokacje w IDE mają usługę o nazwie <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Obiekt utworzony przez pakietu VSPackage, który znajduje się w ramce okna, musi wywołać metodę, `QueryService` Aby uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu.
+ Każda ramka okna lub witryna w idee ma usługę o nazwie <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Obiekt utworzony przez pakiet VSPackage, który znajduje się w ramce okna, musi wywołać metodę , aby `QueryService` uzyskać wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu.
 
- Okna ramowe mogą zachować propagowanie części informacji kontekstowych zaznaczenia z globalnego kontekstu wyboru po ich uruchomieniu. Ta możliwość jest przydatna w przypadku okien narzędzi, które mogą być uruchamiane z pustym wyborem.
+ Okna ramowe mogą chronić fragmenty informacji o kontekście wyboru przed propagacjami do globalnego kontekstu wyboru podczas ich rozpoczynania. Ta możliwość jest przydatna w przypadku okien narzędzi, które mogą wymagać pustego zaznaczenia.
 
- Modyfikowanie kontekstu globalnego wyboru wyzwala zdarzenia, które pakietów VSPackage może monitorować. Pakietów VSPackage mogą wykonywać następujące zadania przez implementację `IVsTrackSelectionEx` i <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfejsy:
+ Modyfikowanie kontekstu wyboru globalnego wyzwala zdarzenia, które pakiet VSPackages może monitorować. Pakiet VSPackages może wykonywać następujące zadania, implementując `IVsTrackSelectionEx` <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfejsy i :
 
 - Zaktualizuj aktualnie aktywny plik w hierarchii.
 
-- Monitoruj zmiany w niektórych typach elementów. Na przykład jeśli pakietu VSPackage korzysta z okna **Właściwości** specjalnych, można monitorować zmiany w oknie aktywne **Właściwości** i ponownie uruchamiać w razie potrzeby.
+- Monitoruj zmiany niektórych typów elementów. Jeśli na przykład pakiet VSPackage  używa specjalnego okna Właściwości,  możesz monitorować zmiany w aktywnym oknie Właściwości i w razie potrzeby ponownie uruchamiać pakiet.
 
-  Poniższa sekwencja przedstawia typowy kurs śledzenia wyboru.
+  W poniższej sekwencji przedstawiono typowy przebieg śledzenia wyboru.
 
-1. IDE Pobiera kontekst zaznaczenia z nowo otwartego okna i umieszcza go w globalnym kontekście wyboru. Jeśli kontekst wyboru używa HIERARCHY_DONTPROPAGATE lub SELCONTAINER_DONTPROPAGATE, te informacje nie są propagowane do kontekstu globalnego. Aby uzyskać więcej informacji, zobacz [informacje zwrotne dla użytkownika](../../extensibility/internals/feedback-to-the-user.md).
+1. Ide pobiera kontekst wyboru z nowo otwartego okna i umieszcza go w kontekście wyboru globalnego. Jeśli kontekst wyboru używa HIERARCHY_DONTPROPAGATE lub SELCONTAINER_DONTPROPAGATE, te informacje nie są propagowane do kontekstu globalnego. Aby uzyskać więcej informacji, zobacz [Opinia dla użytkownika.](../../extensibility/internals/feedback-to-the-user.md)
 
-2. Zdarzenia powiadomień są emitowane do dowolnych pakietu VSPackage, które zażądały.
+2. Zdarzenia powiadomień są rozgłaszane do dowolnego pakietu VSPackage, który je zażądał.
 
-3. Pakietu VSPackage działa na zdarzeniach, które otrzymuje, wykonując działania, takie jak aktualizowanie hierarchii, ponowne aktywowanie narzędzia lub inne podobne zadania.
+3. Pakiet VSPackage działa na odbierane zdarzenia przez wykonywanie działań, takich jak aktualizowanie hierarchii, ponowne aktywowanie narzędzia lub inne podobne zadania.
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>

@@ -1,8 +1,8 @@
 ---
-description: Po otrzymaniu listy plików lokalnych ta funkcja określa, które pliki różnią się od odpowiednich wersji w bazie danych kontroli kodu źródłowego.
-title: Funkcja SccEnumChangedFiles | Microsoft Docs
+description: Na podstawie listy plików lokalnych ta funkcja określa, które pliki różnią się od odpowiednich wersji w bazie danych kontroli kodu źródłowego.
+title: SccEnumChangedFiles, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10f14fb915d461255eddbd4a00747dfbdf59cde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2b0707c049013fd3a0272d1f024e4fdbc342bab1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085562"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904542"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles, funkcja
-Po otrzymaniu listy plików lokalnych ta funkcja określa, które pliki różnią się od odpowiednich wersji w bazie danych kontroli kodu źródłowego.
+Na podstawie listy plików lokalnych ta funkcja określa, które pliki różnią się od odpowiednich wersji w bazie danych kontroli kodu źródłowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,33 +36,33 @@ SCCRTN SccEnumChangedFiles(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[in] Wskaźnik kontekstu wtyczki kontroli źródła.
 
- Właściwość
+ Hwnd
 
-podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
+[in] Dojście do okna IDE, które wtyczka kontroli źródła może używać jako elementu nadrzędnego dla wszystkich okien dialogowych, które udostępnia.
 
- cFiles
+ Pliki cFile
 
-podczas Liczba nazw plików określona w `lpFileNames` tablicy. Określa również rozmiar `plIsFileDifferent` tablicy.
+[in] Liczba nazw plików określonych w `lpFileNames` tablicy. Określa również rozmiar `plIsFileDifferent` tablicy.
 
  lpFileNames
 
-podczas Tablica lokalnych nazw plików do sprawdzenia.
+[in] Tablica nazw plików lokalnych do sprawdzenia.
 
- plIsFileDifferent
+ plIsFileSzybki
 
-[in. out] Tablica wartości wskazująca stan różnicy każdego pliku (Tablica musi zawierać co najmniej następującą liczbę `cFiles` wpisów). Różna od zera oznacza, że plik jest inny.
+[in, out] Tablica wartości wskazująca stan różnicy każdego pliku (tablica musi zawierać co najmniej `cFiles` wpisy). Niezerowe oznacza, że plik jest inny.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła dla tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja została ukończona pomyślnie.|
-|SCC_UNSPECIFIEDERROR|Błąd rodzajowy.|
+|SCC_OK|Operacja została zakończona pomyślnie.|
+|SCC_UNSPECIFIEDERROR|Błąd ogólny.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)

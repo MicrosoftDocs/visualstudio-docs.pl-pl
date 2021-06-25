@@ -1,9 +1,9 @@
 ---
-title: QUERYCHANGESFUNC | Microsoft Docs
+title: QueryCHANGESFUNC | Microsoft Docs
 description: Funkcja wywołania zwrotnego QUERYCHANGESFUNC służy do wyliczania kolekcji nazw plików i określania stanu każdego pliku.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc797d68f6df6d9aab93554ba95955a7d9f45eea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b061fbfb6644f77348574020c0a5cb614691ae6b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068625"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899137"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Jest to funkcja wywołania zwrotnego używana przez operację [SccQueryChanges](../extensibility/sccquerychanges-function.md) do wyliczania kolekcji nazw plików i określania stanu każdego pliku.
 
- `SccQueryChanges`Funkcja otrzymuje listę plików i wskaźnik do `QUERYCHANGESFUNC` wywołania zwrotnego. Wtyczka do kontroli źródła wylicza daną listę i zapewnia stan (za pośrednictwem tego wywołania zwrotnego) dla każdego pliku na liście.
+ Funkcja `SccQueryChanges` ma nadaną listę plików i wskaźnik do wywołania `QUERYCHANGESFUNC` zwrotnego. Wtyczka kontroli źródła wylicza dane na danej liście i zapewnia stan (za pośrednictwem tego wywołania zwrotnego) dla każdego pliku na liście.
 
 ## <a name="signature"></a>Podpis
 
@@ -39,23 +39,23 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="parameters"></a>Parametry
  pvCallerData
 
-podczas `pvCallerData` Parametr przesłany przez obiekt wywołujący (IDE) do [SccQueryChanges](../extensibility/sccquerychanges-function.md). Wtyczka do kontroli źródła nie powinna mieć żadnych założeń dotyczących zawartości tej wartości.
+[in] Parametr `pvCallerData` przekazany przez wywołujący (IDE) do [SccQueryChanges](../extensibility/sccquerychanges-function.md). Wtyczka kontroli źródła nie powinna mieć żadnych założeń dotyczących zawartości tej wartości.
 
  pChangesData
 
-podczas Wskaźnik do struktury [struktury QUERYCHANGESDATA](#LinkQUERYCHANGESDATA) opisującej zmiany w pliku.
+[in] Wskaźnik do struktury [QUERYCHANGESDATA](#LinkQUERYCHANGESDATA) opisującej zmiany w pliku.
 
 ## <a name="return-value"></a>Wartość zwracana
- IDE zwraca odpowiedni kod błędu:
+ Ide zwraca odpowiedni kod błędu:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Kontynuuj przetwarzanie.|
 |SCC_I_OPERATIONCANCELED|Zatrzymaj przetwarzanie.|
-|SCC_E_xxx|Każdy odpowiedni błąd SCC powinien przerwać przetwarzanie.|
+|SCC_E_xxx|Wszelkie odpowiednie błędy SCC powinny przestać przetwarzać.|
 
 ## <a name="querychangesdata-structure"></a><a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA, struktura
- Struktura przeniesiona dla każdego pliku wygląda następująco:
+ Struktura przekazywana dla każdego pliku wygląda następująco:
 
 ```cpp
 struct QUERYCHANGESDATA_A
@@ -77,28 +77,28 @@ struct QUERYCHANGESDATA_W
 };
 ```
 
- dwSize rozmiar tej struktury (w bajtach).
+ dwSize Rozmiar tej struktury (w bajtach).
 
- lpFileName oryginalną nazwę pliku dla tego elementu.
+ lpFileName Oryginalna nazwa pliku dla tego elementu.
 
- Kod dwChangeType wskazujący stan pliku:
+ dwChangeType Kod wskazujący stan pliku:
 
 |Kod|Opis|
 |----------|-----------------|
-|`SCC_CHANGE_UNKNOWN`|Nie można ustalić, co zostało zmienione.|
-|`SCC_CHANGE_UNCHANGED`|Brak zmian nazw dla tego pliku.|
-|`SCC_CHANGE_DIFFERENT`|Plik z inną tożsamością, ale w bazie danych istnieje taka sama nazwa.|
-|`SCC_CHANGE_NONEXISTENT`|Plik nie istnieje w bazie danych lub lokalnie.|
-|`SCC_CHANGE_DATABASE_DELETED`|Plik został usunięty z bazy danych.|
-|`SCC_CHANGE_LOCAL_DELETED`|Plik został usunięty lokalnie, ale plik nadal istnieje w bazie danych. Jeśli nie można określić, zwróć `SCC_CHANGE_DATABASE_ADDED` .|
-|`SCC_CHANGE_DATABASE_ADDED`|Plik został dodany do bazy danych, ale nie istnieje lokalnie.|
+|`SCC_CHANGE_UNKNOWN`|Nie można stwierdzić, co się zmieniło.|
+|`SCC_CHANGE_UNCHANGED`|Nazwa tego pliku nie zmienia się.|
+|`SCC_CHANGE_DIFFERENT`|Plik z inną tożsamością, ale taka sama nazwa istnieje w bazie danych.|
+|`SCC_CHANGE_NONEXISTENT`|Plik nie istnieje ani w bazie danych, ani lokalnie.|
+|`SCC_CHANGE_DATABASE_DELETED`|Plik usunięty w bazie danych.|
+|`SCC_CHANGE_LOCAL_DELETED`|Plik został usunięty lokalnie, ale plik nadal istnieje w bazie danych. Jeśli nie można tego ustalić, `SCC_CHANGE_DATABASE_ADDED` zwróć .|
+|`SCC_CHANGE_DATABASE_ADDED`|Plik dodany do bazy danych, ale nie istnieje lokalnie.|
 |`SCC_CHANGE_LOCAL_ADDED`|Plik nie istnieje w bazie danych i jest nowym plikiem lokalnym.|
-|`SCC_CHANGE_RENAMED_TO`|Plik został zmieniony lub przeniesiony do bazy danych jako `lpLatestName` .|
-|`SCC_CHANGE_RENAMED_FROM`|Plik został zmieniony lub przeniesiony do bazy danych z `lpLatestName` ; Jeśli jest zbyt kosztowny do śledzenia, zwróć inną flagę, taką jak `SCC_CHANGE_DATABASE_ADDED` .|
+|`SCC_CHANGE_RENAMED_TO`|Nazwa pliku została zmieniona lub przeniesiona w bazie danych jako `lpLatestName` .|
+|`SCC_CHANGE_RENAMED_FROM`|Nazwa pliku została zmieniona lub przeniesiona w bazie danych z . Jeśli śledzenie jest zbyt kosztowne, zwróć `lpLatestName` inną flagę, taką jak `SCC_CHANGE_DATABASE_ADDED` .|
 
- lpLatestName bieżącą nazwę pliku dla tego elementu.
+ lpLatestName Bieżąca nazwa pliku dla tego elementu.
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Funkcje wywołania zwrotnego implementowane przez ide](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Kody błędów](../extensibility/error-codes.md)

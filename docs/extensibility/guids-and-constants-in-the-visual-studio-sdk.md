@@ -1,9 +1,9 @@
 ---
 title: Identyfikatory GUID i stałe w Visual Studio SDK | Microsoft Docs
-description: Klasa VSConstants zapewnia dostęp do wybranych identyfikatorów GUID i stałych środowisk w zestawie SDK programu Visual Studio.
+description: Klasa VSConstants zapewnia dostęp do wybranych identyfikatorów GUID i stałych środowiska w zestawie Visual Studio SDK.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - constants, Visual Studio SDK
 - GUIDs, Visual Studio SDK
@@ -13,22 +13,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a76c0328581f3060fa77cdbb2bf2b9a72913230
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f82ce9dcc035e3f62e120ed8e8c5871af414e8de
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057562"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902777"
 ---
-# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Identyfikatory GUID i stałe w Visual Studio SDK
-<xref:Microsoft.VisualStudio.VSConstants>Klasa zapewnia dostęp do wybranych identyfikatorów GUID i stałych środowiska.
+# <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Identyfikatory GUID i stałe w zestawie Visual Studio SDK
+Klasa <xref:Microsoft.VisualStudio.VSConstants> zapewnia dostęp do wybranych identyfikatorów GUID i stałych środowiska.
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Identyfikatory GUID IDE](../extensibility/ide-guids.md) Wyświetla listę identyfikatorów GUID dostarczonych przez program <xref:Microsoft.VisualStudio.VSConstants> .
+- [Identyfikatory GUID środowiska IDE](../extensibility/ide-guids.md) Wyświetla listę identyfikatorów GUID dostarczonych przez <xref:Microsoft.VisualStudio.VSConstants> usługę .
 
 - [Stałe IDE](../extensibility/ide-constants.md) Wyświetla listę stałych zestawu SDK dostarczonych przez program <xref:Microsoft.VisualStudio.VSConstants> .
 
-## <a name="related-sections"></a>Sekcje pokrewne
-- [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md) Wyświetla listę standardowych stałych modelu COM dostępnych dla kodu zarządzanego z struktury zarządzanego pakietu (MPF).
+## <a name="related-sections"></a>Powiązane sekcje
+- [Stałe COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md) Wyświetla listę standardowych stałych COM dostępnych dla kodu zarządzanego z poziomu programu Managed Package Framework (MPF).
 
-- [Polecenia zdefiniowane w środowisku IDE służące do rozszerzania systemów projektów](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Wyświetla listę różnych typów elementów poleceń używanych do rozszerzania systemów projektów.
+- [Polecenia zdefiniowane w ideu do rozszerzania systemów projektów](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) Wyświetla listę różnych typów elementów poleceń używanych do rozszerzania systemów projektu.

@@ -1,9 +1,9 @@
 ---
-title: Funkcje wywołania zwrotnego implementowane przez środowisko IDE | Microsoft Docs
-description: Dowiedz się więcej na temat funkcji wywołania zwrotnego, które wtyczka może wywoływać w odpowiednim czasie podczas operacji kontroli źródła w celu przekazania informacji do środowiska IDE.
+title: Funkcje wywołania zwrotnego zaimplementowane przez program IDE | Microsoft Docs
+description: Dowiedz się więcej o funkcjach wywołania zwrotnego, które wtyczka może wywołać w odpowiednim czasie podczas operacji kontroli źródła w celu przekazania informacji do środowiska IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
@@ -13,38 +13,38 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 78ce3a9cdd183cff0518ee3c6da9326c63297a85
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068105"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899150"
 ---
-# <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego zaimplementowane przez IDE
-Aby zapewnić bezproblemową integrację z zintegrowanym środowiskiem programistycznym (IDE) i zapewniać ujednolicone środowisko użytkownika końcowego, wtyczka do kontroli źródła może korzystać z funkcji wywołania zwrotnego, które są implementowane przez IDE. Wtyczka może wywoływać te funkcje w odpowiednim czasie podczas operacji kontroli źródła, aby przekazać informacje do środowiska IDE; IDE może wyświetlić te informacje jako osadzone elementy w macierzystym interfejsie użytkownika. Użytkownik ma mniej pofragmentowane środowisko w tym scenariuszu, niż w przypadku, gdy wtyczka korzysta z własnego interfejsu użytkownika.
+# <a name="callback-functions-implemented-by-the-ide"></a>Funkcje wywołania zwrotnego implementowane przez ide
+Aby zapewnić możliwie bezproblemową integrację ze zintegrowanym środowiskiem projektowym (IDE) i zapewnić ujednolicone środowisko użytkownika końcowego, wtyczka kontroli źródła może używać funkcji wywołania zwrotnego implementowanych przez środowisko IDE. Wtyczka może wywołać te funkcje w odpowiednim czasie podczas operacji kontroli źródła w celu przekazania informacji do środowiska IDE. Ide może następnie wyświetlać te informacje jako osadzone elementy w natywnym interfejsie użytkownika. W tym scenariuszu użytkownik ma mniej pofragmentowane środowisko niż w przypadku, gdy wtyczka korzysta z własnego interfejsu użytkownika.
 
- Wymagany plik nagłówkowy to *SCC. h*. Domyślna lokalizacja to *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\*. Jest również w folderze VSIP, który ma przykład wtyczki kontroli źródła w *folderze \Program Files\VSIP 8.0 \ MSSCCI \\*.
+ Wymagany plik nagłówkowy to *scc.h.* Domyślna lokalizacja to *\Program Files\VSIP 8.0\EnvSDK\common\inc. \\* Znajduje się on również w folderze VSIP, który zawiera przykład wtyczki kontroli źródła w folderze *\Program Files\VSIP 8.0\MSSCCI. \\*
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [LpTextOutProc](../extensibility/lptextoutproc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez [SccOpenProject](../extensibility/sccopenproject-function.md) do wyświetlania komunikatów z wtyczki kontroli źródła za pośrednictwem IDE.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Opisuje funkcję wywołania zwrotnego używaną przez funkcję [SccOpenProject](../extensibility/sccopenproject-function.md) do wyświetlania komunikatów z wtyczki kontroli źródła za pośrednictwem środowiska IDE.
 
-- [POPLISTFUNC](../extensibility/poplistfunc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez [SccPopulateList](../extensibility/sccpopulatelist-function.md) , gdy IDE nie ma pełnego dostępu do informacji, które są dostępne tylko dla wtyczki kontroli źródła, takich jak kompletna lista plików w ramach kontroli wersji.
+- [POPLISTFUNC](../extensibility/poplistfunc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez kontrolkę [SccPopulateList,](../extensibility/sccpopulatelist-function.md) gdy idee nie mają pełnego dostępu do informacji dostępnych tylko dla wtyczki kontroli źródła, takich jak pełna lista plików w ramach kontroli wersji.
 
-- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez operację [SccQueryChanges](../extensibility/sccquerychanges-function.md) .
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) Opisuje funkcję wywołania zwrotnego używaną przez operację [SccQueryChanges.](../extensibility/sccquerychanges-function.md)
 
-- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Opisuje funkcję wywołania zwrotnego, która jest używana przez operację [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) .
+- [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) Opisuje funkcję wywołania zwrotnego używaną przez operację [SccPopulateDirList.](../extensibility/sccpopulatedirlist-function.md)
 
-- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Opisuje funkcję wywołania zwrotnego ustawioną przez wywołanie [SccSetOption](../extensibility/sccsetoption-function.md) , która umożliwia wtyczki kontroli źródła w celu komunikowania się zmian nazw z powrotem do IDE.
+- [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) Opisuje funkcję wywołania zwrotnego ustawioną przez wywołanie [SccSetOption,](../extensibility/sccsetoption-function.md) które umożliwia wtyczce kontroli kodu źródłowego komunikowanie zmian nazw z powrotem do środowiska IDE.
 
-## <a name="related-sections"></a>Sekcje pokrewne
+## <a name="related-sections"></a>Powiązane sekcje
 - [SccOpenProject](../extensibility/sccopenproject-function.md) Otwiera projekt.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Bada listę plików do ich bieżącego stanu. Ponadto program używa `pfnPopulate` funkcji do powiadamiania wywołującego, gdy plik jest niezgodny z kryteriami dla `nCommand` .
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Sprawdza listę plików ich bieżącego stanu. Ponadto funkcja używa funkcji do powiadamiania wywołującego, gdy plik nie spełnia `pfnPopulate` kryteriów dla `nCommand` .
 
-- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Bada listę katalogów i plików w projekcie lub projektach, które znajdują się pod kontrolą źródła. Każdy znaleziony katalog i nazwa pliku są przesyłane do funkcji wywołania zwrotnego.
+- [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Sprawdza listę katalogów i plików w projekcie lub projektach, które są pod kontrolą źródła. Każdy znaleziony katalog i nazwa pliku są przekazywane do funkcji wywołania zwrotnego.
 
-- [SccQueryChanges](../extensibility/sccquerychanges-function.md) Bada zmiany nazw, które zostały wprowadzone do listy plików. Każda nazwa pliku jest przenoszona do funkcji wywołania zwrotnego wraz ze stanem zmiany.
+- [SccQueryChanges](../extensibility/sccquerychanges-function.md) Sprawdza zmiany nazw, które zostały wprowadzone na liście plików. Każda nazwa pliku jest przekazywana do funkcji wywołania zwrotnego wraz z jej stanem zmiany.
 
-- [SccSetOption](../extensibility/sccsetoption-function.md) Ustawia szeroką gamę opcji. Każda opcja rozpoczyna się od `SCC_OPT_xxx` i ma swój własny zdefiniowany zestaw wartości.
+- [SccSetOption](../extensibility/sccsetoption-function.md) Ustawia szeroką gamę opcji. Każda opcja rozpoczyna się `SCC_OPT_xxx` od i ma własny zdefiniowany zestaw wartości.
 
-- [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md) Opisuje zawartość sekcji Reference zestawu SDK wtyczki kontroli źródła.
+- [Wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md) Opisuje zawartość sekcji referencyjnej zestawu SDK wtyczki kontroli kodu źródłowego.

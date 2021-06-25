@@ -1,9 +1,9 @@
 ---
 title: Konteksty debugera | Microsoft Docs
-description: 'Dowiedz się, jak aparat debugowania programu Visual Studio działa w ramach odrębnych kontekstów: kontekstu kodu, kontekstu dokumentacji lub pozycji oraz kontekstu oceny wyrażenia.'
+description: 'Dowiedz się, jak Visual Studio debugowania działa w różnych kontekstach: kontekście kodu, kontekście dokumentacji lub pozycji oraz kontekście oceny wyrażeń.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
@@ -12,34 +12,34 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725123ef8dc2aa67742784fb8c2eb35e242487f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5103561a420c3836f60a22790335522a83798966
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094825"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903674"
 ---
 # <a name="debugger-contexts"></a>Konteksty debugera
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowaniu aparat debugowania (de) działa jednocześnie w kilku odrębnych kontekstach w następujący sposób:
+Podczas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania aparat debugowania (DE) działa jednocześnie w kilku różnych kontekstach w następujący sposób:
 
 - Kontekst kodu, który opisuje bieżącą lokalizację w strumieniu wykonywania programu.
 
-- Kontekst lub pozycja dokumentacji, która opisuje bieżące położenie w dokumencie źródłowym.
+- Kontekst lub pozycja dokumentacji, która opisuje bieżącą pozycję w dokumencie źródłowym.
 
-- Kontekst oceny wyrażenia, który opisuje kontekst, w którym będą wykonywane obliczenia wyrażeń.
+- Kontekst oceny wyrażeń, który opisuje kontekst, w którym będzie odbywać się ocena wyrażeń.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Kontekst kodu](../../extensibility/debugger/code-context.md) Omawia kontekst kodu jako adres w strumieniu instrukcji programu w dzisiejszych architekturach czasu wykonywania i nietradycyjnych językach, gdzie kod nie może być reprezentowany przez instrukcje, ale inne sposoby.
+ [Kontekst kodu](../../extensibility/debugger/code-context.md) Omawia kontekst kodu jako adres w strumieniu instrukcji programu w współczesnych architekturach czasu uruchamiania i językach nietradycyjnych, gdzie kod może nie być reprezentowany przez instrukcje, ale niektóre inne sposoby.
 
- [Położenie dokumentu](../../extensibility/debugger/document-position.md) Definiuje położenie dokumentu w debugowaniu w programie Visual Studio za pomocą abstrakcji pozycji w pliku źródłowym, jak znany IDE.
+ [Położenie dokumentu](../../extensibility/debugger/document-position.md) Definiuje pozycję dokumentu w Visual Studio debugowania za pomocą abstrakcji pozycji w pliku źródłowym, tak jak jest to znane w ide.
 
- [Kontekst dokumentu](../../extensibility/debugger/document-context.md) Omówienie kontekstu dokumentu reprezentowanego w debugowaniu programu Visual Studio w odniesieniu do pliku źródłowego. Omówiono również sposób mapowania kontekstu kodu do kontekstu dokumentacji przez program obsługi symboli.
+ [Kontekst dokumentu](../../extensibility/debugger/document-context.md) Omówienie kontekstu dokumentu w Visual Studio debugowania w odniesieniu do pliku źródłowego. Omówiono również sposób mapowania kontekstu kodu na kontekst dokumentacji przez program obsługi symboli.
 
- [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md) Zawiera informacje o kontekście oceny wyrażenia w programie Visual Studio. Na przykład kontekst oceny wyrażenia skojarzonego z ramką stosu zawiera kontekst do oceny zmiennych lokalnych, parametrów metody i elementów członkowskich klasy.
+ [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md) Zawiera informacje na temat kontekstu oceny wyrażeń w Visual Studio. Na przykład kontekst oceny wyrażeń skojarzony z ramką stosu zapewnia kontekst do oceny zmiennych lokalnych, parametrów metody i składowych klasy.
 
-## <a name="related-sections"></a>Sekcje pokrewne
- [Koncepcje debugowania](../../extensibility/debugger/debugger-concepts.md) Opisuje główne koncepcje dotyczące architektury debugowania.
+## <a name="related-sections"></a>Powiązane sekcje
+ [Pojęcia dotyczące debugowania](../../extensibility/debugger/debugger-concepts.md) Opisuje główne pojęcia dotyczące architektury debugowania.
 
- [Debuguj składniki](../../extensibility/debugger/debugger-components.md) Zawiera omówienie składników debugowania programu Visual Studio, które obejmują aparat debugowania (DE), ewaluatora wyrażeń (EE) i obsługę symboli (SH).
+ [Składniki debugowania](../../extensibility/debugger/debugger-components.md) Zawiera omówienie składników debugowania Visual Studio, w tym aparatu debugowania (DE), ewaluatora wyrażeń (EE) i programu obsługi symboli (SH).
 
- [Debuguj zadania](../../extensibility/debugger/debugging-tasks.md) Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md) Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.

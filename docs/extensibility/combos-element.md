@@ -1,9 +1,9 @@
 ---
-title: Elementy kombi | Microsoft Docs
-description: Element kombi Grupuje elementy kombi, które definiują polecenia, które pojawiają się w polu kombi. Ten artykuł zawiera przykład.
+title: Combos, element | Microsoft Docs
+description: Element Combos grupuje elementy kombi, które definiują polecenia wyświetlane w polu kombi. Ten artykuł zawiera przykład.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9135e2f863f3ab277e6c7408579d7ef8242bce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c293fa827187461c5a6b84333c503a2f5cc231
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089722"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903921"
 ---
-# <a name="combos-element"></a>Elementy kombi
-Grupuje elementy [elementu kombi](../extensibility/combo-element.md) .
+# <a name="combos-element"></a>Combos, element
+Grupuje [elementy elementów](../extensibility/combo-element.md) kombi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -39,20 +39,20 @@ Grupuje elementy [elementu kombi](../extensibility/combo-element.md) .
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Elementy kombi](../extensibility/combos-element.md)|Grupuje elementy kombi.|
-|[Element kombi](../extensibility/combo-element.md)|Definiuje polecenia, które pojawiają się w polu kombi.|
+|[Combos, element](../extensibility/combos-element.md)|Grupuje elementy kombi.|
+|[Combo, element](../extensibility/combo-element.md)|Definiuje polecenia, które są wyświetlane w polu kombi.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi vspackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -79,5 +79,5 @@ Grupuje elementy [elementu kombi](../extensibility/combo-element.md) .
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Jak pakiet VSPackages dodaje elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

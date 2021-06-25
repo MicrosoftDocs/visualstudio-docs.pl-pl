@@ -1,8 +1,8 @@
 ---
-description: Obiekt reprezentujący dane, które będą używane przez tę akcję.
-title: m_stateObject pole | Microsoft Docs
+description: Obiekt reprezentujący dane, które będą wykorzystywane przez akcję.
+title: m_stateObject pola | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2128073f47c76244a18e18005a431f9317686c3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: df510fafbfe3ed6e71e9b5290fb1df0b02ae1d39
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054793"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903960"
 ---
-# <a name="m_stateobject-field"></a>pole m_stateObject
-Obiekt reprezentujący dane, które będą używane przez tę akcję.
+# <a name="m_stateobject-field"></a>m_stateObject pola
+Obiekt reprezentujący dane, które będą wykorzystywane przez akcję.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego członka z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,7 +34,7 @@ Obiekt reprezentujący dane, które będą używane przez tę akcję.
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jest to `state` parametr w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktorze. Jest to również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości.
+ Jest to `state` parametr w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktorze. Jest to również pole zapasowe dla <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> właściwości .
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

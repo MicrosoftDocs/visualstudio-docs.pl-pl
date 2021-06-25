@@ -1,9 +1,9 @@
 ---
 title: Typy projektów | Microsoft Docs
-description: Program Visual Studio zawiera kilka typów projektów dla języków, takich jak Visual C# i Visual Basic. Program Visual Studio umożliwia również tworzenie własnych typów projektów.
+description: Visual Studio zawiera kilka typów projektów dla języków takich jak Visual C# i Visual Basic. Visual Studio umożliwia również tworzenie własnych typów projektów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05db128709fcd0e99b3d0a3a6b26acbc372212c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e7ecf54a9a5aa4b19d5ecc079e0bf5a448561f98
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064279"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903570"
 ---
 # <a name="project-types"></a>Typy projektów
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera kilka typów projektów dla języków, takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pozwala również tworzyć własne typy projektów.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Program zawiera kilka typów projektów dla języków, takich [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] jak i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umożliwia również tworzenie własnych typów projektów.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Essentials](../../extensibility/internals/project-type-essentials.md)
@@ -30,11 +30,11 @@ ms.locfileid: "105064279"
 
 - [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)
 
- Omawia projekt typów projektów.
+ Omówienie projektu typów projektów.
 
 - [Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Szczegóły kroków, które należy wykonać, aby dodać przycisk do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paska narzędzi **Eksplorator rozwiązań** .
+ Szczegóły kroków, które należy wykonać, aby dodać przycisk do Eksplorator rozwiązań [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  narzędzi.
 
 - [Dodawanie szablonów projektów i elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
@@ -42,19 +42,19 @@ ms.locfileid: "105064279"
 
 - [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md)
 
- Zawiera informacje o sposobach zarządzania elementami obsługiwanymi przez typ projektu.
+ Zawiera informacje na temat zarządzania elementami, które obsługuje typ projektu.
 
 - [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)
 
- W tym artykule omówiono sposób, w jaki typy projektów mogą obsługiwać opcje konfiguracji, takie jak debugowanie i wydanie, które kontrolują sposób kompilowania, debugowania i tak dalej projektów.
+ W tym artykule omówiono, jak typy projektów mogą obsługiwać opcje konfiguracji, takie jak Debugowanie i Wydanie, które kontrolują sposób budowania, debugowania i tak dalej projektów.
 
 - [Obsługa kontroli kodu źródłowego](../../extensibility/internals/supporting-source-control.md)
 
- Zawiera informacje o sposobach dodawania obsługi systemów kontroli źródła do typów projektów.
+ Zawiera informacje na temat dodawania obsługi systemów kontroli źródła do typów projektów.
 
 - [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)
 
- Wyjaśnia, jak typy projektów mogą obsługiwać *zagnieżdżanie*, dzięki czemu można grupować projekty w **Eksplorator rozwiązań**.
+ Wyjaśnia, w jaki sposób typy projektów mogą obsługiwać *zagnieżdżanie*, dzięki czemu projekty można grupować w **Eksplorator rozwiązań**.
 
 - [Uaktualnianie projektów](../../extensibility/internals/upgrading-projects.md)
 
@@ -62,17 +62,17 @@ ms.locfileid: "105064279"
 
 - [Architektura](../../extensibility/internals/project-types-architecture.md)
 
- Zawiera szczegółowe informacje techniczne o typach projektów.
+ Zawiera szczegółowe informacje techniczne dotyczące typów projektów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)
 
- Zawiera omówienie sposobu, w jaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE) wyświetla projekt jako hierarchię.
+ Zawiera omówienie sposobu, w jaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko projektowe (IDE) wyświetla projekt jako hierarchię.
 
 - [Podtypy projektów](../../extensibility/internals/project-subtypes.md)
 
- Zawiera łącza do tematów podtypów projektu. Podtypy projektu umożliwiają rozszerzanie większości rodzajów typów projektów, w tym własnych.
+ Zawiera linki do tematów podtypów projektów. Podtypy projektów umożliwiają rozszerzenie większości typów projektów, w tym własnych.
 
 - [Projekty](../../extensibility/internals/projects.md)
 
- Opisuje sposób rozbudowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] systemu projektu.
+ Opisuje sposób rozszerzania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] systemu projektu.

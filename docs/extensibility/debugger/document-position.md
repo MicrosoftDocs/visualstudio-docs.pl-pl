@@ -1,9 +1,9 @@
 ---
-title: Położenie dokumentu | Microsoft Docs
-description: Dowiedz się, w jaki sposób położenie dokumentu w debugowaniu w programie Visual Studio zapewnia abstrakcję pozycji w pliku źródłowym, jak znany IDE.
+title: Położenie | Microsoft Docs
+description: Dowiedz się, jak pozycja dokumentu w Visual Studio debugowania zapewnia abstrakcję pozycji w pliku źródłowym, tak jak jest to znane w idee IDE.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
@@ -12,21 +12,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d14f9619059735aaecabf72adef248c69ed247e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58a3ac3db62619c5d0eaa9e89e09d7d5def06ff1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097256"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898165"
 ---
 # <a name="document-position"></a>Położenie dokumentu
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowaniu *pozycja dokumentu*:
+Podczas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania pozycja *dokumentu:*
 
-- Zapewnia abstrakcję pozycji w pliku źródłowym, jak znany jest IDE. W większości języków dzisiaj pozycja dokumentu może być uważana za pozycję w pliku źródłowym.
+- Zapewnia abstrakcję pozycji w pliku źródłowym, co jest znane w idee. Obecnie w większości języków pozycja dokumentu może być uważana za pozycję w pliku źródłowym.
 
-- Opisuje położenie w dokumencie źródłowym do aparatu debugowania.
+- Opisuje pozycję w dokumencie źródłowym dla aparatu debugowania.
 
-- Jest zaimplementowany przez interfejs [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .
+- Jest implementowany przez [interfejs IDebugDocumentPosition2.](../../extensibility/debugger/reference/idebugdocumentposition2.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Kontekst kodu](../../extensibility/debugger/code-context.md)

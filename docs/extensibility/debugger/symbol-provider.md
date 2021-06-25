@@ -1,9 +1,9 @@
 ---
 title: Dostawca symboli | Microsoft Docs
-description: Zapoznaj się z dostawcami symboli dostarczanymi przez program Visual Studio, aby umożliwić ewaluatora wyrażeń Obliczanie zmiennych i wyrażeń.
+description: Dowiedz się więcej o dostawcach symboli, Visual Studio dostarcza, aby umożliwić ewaluatorowi wyrażeń ocenę zmiennych i wyrażeń.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
@@ -13,22 +13,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 132e3c15eed86c9008e49b74b6da6e5da5a3ce33
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3332bbf705d8e3149d864dbb35418fd4c12c523b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079387"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902920"
 ---
 # <a name="symbol-provider"></a>Dostawca symboli
-Implementacja ewaluatora wyrażeń musi uzyskać dostęp do symbolicznych informacji debugowania generowanych przez kompilator języka w celu obliczenia zmiennych i wyrażeń. Robi to poprzez zużywanie interfejsów dostawcy symboli (SP), nazywanych również obsługą symboli.
+Implementacja ewaluatora wyrażeń musi uzyskać dostęp do symbolicznych informacji debugowania generowanych przez kompilator języka w celu oceny zmiennych i wyrażeń. Robi to przez korzystanie z interfejsów dostawcy symboli (SP), nazywanego również programem obsługi symboli.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza program SPs dla kodu zarządzanego oraz kod natywny przy użyciu formatu pliku symboli bazy danych (PDB). Jeśli program nie ma silnej potrzeby używania symboli przechowywanych w formacie niestandardowym, zaleca się korzystanie z programu SPs dostarczonego przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Dostarcza SPs dla kodu zarządzanego, a także kod natywny przy użyciu formatu pliku symboli Programu DataBase (PDB). Jeśli program nie ma silnej potrzeby używania symboli przechowywanych w niestandardowym formacie, zaleca się użycie opcji SPs dostarczonych przez program [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="implementation-notes"></a>Uwagi o implementacji
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Aparaty debugowania oczekują na rozmowę z programem SPS przy użyciu interfejsów środowiska uruchomieniowego języka wspólnego (CLR). W związku z tym, SP, który będzie pracował z aparatami debugowania programu Visual Studio, musi obsługiwać środowisko CLR. Pełną listę interfejsów debugowania CLR można znaleźć w debugref.doc, która jest częścią [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
+ Aparaty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania oczekują, że będą rozmawiać z programami SPs przy użyciu interfejsów środowiska uruchomieniowego języka wspólnego (CLR). W związku z tym sp, która będzie pracować z aparatami debugowania Visual Studio musi obsługiwać clr. Pełną listę wszystkich interfejsów debugowania CLR można znaleźć w debugref.doc, który jest częścią [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
 
- Jeśli program SP będzie działał tylko z niestandardowym aparatem debugowania, można zaimplementować program SP w zależności od potrzeb aparatu debugowania.
+ Jeśli twój sp z o.o. będzie działać tylko z niestandardowym aparatem debugowania, możesz zaimplementować sp w zależności od potrzeb aparatu debugowania.
 
 ## <a name="see-also"></a>Zobacz też
 - [Składniki debugera](../../extensibility/debugger/debugger-components.md)

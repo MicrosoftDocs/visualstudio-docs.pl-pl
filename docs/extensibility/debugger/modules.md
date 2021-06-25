@@ -1,9 +1,9 @@
 ---
 title: Moduły | Microsoft Docs
-description: W tym artykule opisano definicje i rolę modułu w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę modułu w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - modules
 - debugging [Debugging SDK], modules
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f40cb7d0c65822fcb6ba4d4ca0132147f62d9286
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 03a3ad588b0a2e0f3aa6f04ddeb742ab66064bc9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054767"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902608"
 ---
 # <a name="modules"></a>Moduły
-W odniesieniu do architektury debugera, *modułu*:
+Jeśli chodzi o architekturę debugera, *moduł*:
 
 - Jest fizycznym kontenerem kodu, takim jak plik wykonywalny lub biblioteka DLL.
 
-- Może Załaduj ponownie symbole i opisać siebie. Opisy modułów są wyświetlane w oknie Moduły środowiska IDE.
+- Może ponownie załadować symbole i opisać siebie. Opisy modułów są wyświetlane w oknie Moduły środowiska IDE.
 
-- Jest reprezentowany przez interfejs [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) utworzony przez aparat debugowania do opisywania modułu.
+- Jest reprezentowany przez [interfejs IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) utworzony przez aparat debugowania w celu opisania modułu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)

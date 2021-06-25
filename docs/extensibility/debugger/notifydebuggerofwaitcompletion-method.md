@@ -1,9 +1,9 @@
 ---
-title: NotifyDebuggerOfWaitCompletion — Metoda | Microsoft Docs
-description: Dowiedz się więcej na temat metody NotifyDebuggerOfWaitCompletion, która jest symbolem zastępczym używanym jako docelowy punkt przerwania przez debuger.
+title: NotifyDebuggerOfWaitCompletion, metoda | Microsoft Docs
+description: Dowiedz się więcej o metodzie NotifyDebuggerOfWaitCompletion, która jest symbolem zastępczym używanym jako element docelowy punktu przerwania przez debuger.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d58bb7a5e3a3395b534e5679ec303e5d93d5dc85
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7b9d6b5fbdcb8195709a751117056bcaa0617eff
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054741"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904220"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion, Metoda
-Metoda zastępcza używana jako docelowy punkt przerwania przez debuger. Ta metoda nie może być wbudowana ani zoptymalizowana.
+# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion, metoda
+Metoda symbolu zastępczego używana jako element docelowy punktu przerwania przez debuger. Ta metoda nie może być wsadowa ani zoptymalizowana.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -33,9 +33,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>Uwagi
- Wszystkie operacje Join z zadaniem powinny wywołać tę metodę, jeśli ustawiono bit powiadomień debugera.
+ Wszystkie operacje sprzężenia z zadaniem powinny wywołać tę metodę, jeśli ich bit powiadomień debugera jest ustawiony.
 
 ## <a name="requirements"></a>Wymagania
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

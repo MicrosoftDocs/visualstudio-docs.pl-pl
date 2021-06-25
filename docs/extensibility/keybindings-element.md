@@ -1,9 +1,9 @@
 ---
-title: Element powiązania klawiszy | Microsoft Docs
-description: Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy. Ten artykuł zawiera przykład.
+title: KeyBindings, element | Microsoft Docs
+description: Element KeyBindings grupuje elementy KeyBinding i inne grupowania KeyBindings. Ten artykuł zawiera przykład.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - KeyBindings
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 128b28ff77515ac4b567ecdb8f536851da4d33ce
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074018"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903375"
 ---
-# <a name="keybindings-element"></a>Element powiązań klawiszy
-Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.
+# <a name="keybindings-element"></a>KeyBindings, element
+Element KeyBindings grupuje elementy KeyBinding i inne grupowania KeyBindings.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,20 +41,20 @@ Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupow
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Powiązanie klawiszy, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|
-|[Powiązania klawiszy](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupowania powiązań klawiszy.|
+|[KeyBinding, element](../extensibility/keybinding-element.md)|Określa skróty klawiaturowe dla poleceń.|
+|[Keybindings](../extensibility/keybindings-element.md)|Grupuje elementy KeyBinding i inne grupowania keybindings.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia.|
 
 ## <a name="example"></a>Przykład
 
@@ -68,5 +68,5 @@ Element powiązania klawiszy Grupuje elementy powiązanie klawiszy i inne grupow
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Powiązanie klawiszy, element](../extensibility/keybinding-element.md)
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [KeyBinding, element](../extensibility/keybinding-element.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

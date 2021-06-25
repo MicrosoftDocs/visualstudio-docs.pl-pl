@@ -1,9 +1,9 @@
 ---
 title: Źródła zdarzeń (Visual Studio SDK) | Microsoft Docs
-description: 'Poznaj dwa źródła zdarzeń w debugowaniu programu Visual Studio: aparat debugowania i Menedżer debugowania sesji.'
+description: 'Poznaj dwa źródła zdarzeń w debugowaniu Visual Studio debugowania: aparat debugowania i Menedżer debugowania sesji.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
@@ -12,18 +12,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097009"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898568"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Źródła zdarzeń (Visual Studio SDK)
-Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i Menedżer debugowania sesji (SDM). Zdarzenia wysyłane z niepustego aparatu, podczas gdy zdarzenia wysyłane z modelu SDM mają aparat o wartości NULL.
+Istnieją dwa źródła zdarzeń: aparat debugowania (DE) i menedżer debugowania sesji (SDM). Zdarzenia wysyłane z DE mają aparat o wartości innych niż NULL, natomiast zdarzenia wysyłane z modelu SDM mają aparat o wartości NULL.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak wysłać **IDebugProgramCreateEvent2** od a do modelu SDM.
+W poniższym przykładzie pokazano, jak wysłać **IDebugProgramCreateEvent2** z DE do SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

@@ -1,207 +1,207 @@
 ---
-title: Wzorce aplikacji dla programu Visual Studio | Microsoft Docs
-description: Dowiedz się więcej o różnicach między oknami dokumentów, narzędziami i niemodalnymi oknach dialogowych, w tym wzorcami użycia okien dla nowych funkcji programu Visual Studio.
+title: Wzorce aplikacji dla Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o różnicach między oknami dokumentów, oknami narzędzi i oknami dialogowymi nie modeless, w tym wzorcami użycia okien dla nowych funkcji Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b19d60294431a08fa26f11bf58606893f392cd1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2726c7096bbf4606fbab2c32b01ffd197549e13c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060240"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899189"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 ## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interakcje okna
 
 ### <a name="overview"></a>Omówienie
-Dwa typy główne okna używane w programie Visual Studio to edytory dokumentów i okna narzędzi. Rzadkimi, ale możliwymi, są duże Niemodalne okna dialogowe. Chociaż są one całkowicie niemodalne w powłoce, ich wzorce są zasadniczo różne. W tej sekcji omówiono różnice między oknami dokumentów, narzędziami i niemodalnymi oknach dialogowych. Wzorce dialogu modalnego są omówione w [oknach dialogowych](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
+Dwa główne typy okien używane w Visual Studio to edytory dokumentów i okna narzędzi. Sporadyczne, ale możliwe, są dużymi oknami dialogowymi bez moderowania. Mimo że wszystkie te typy są nie moderowe w powłoki, ich wzorce są zasadniczo różne. Ta sekcja zawiera różnicę między oknami dokumentów, oknami narzędzi i oknami dialogowymi nie modeless. Wzorce modalnych okien dialogowych są uwzględnione w [oknie dialogowym](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
 
-### <a name="comparing-window-usage-patterns"></a>Porównywanie wzorców użycia okna
-**Okna dokumentów** są prawie zawsze wyświetlane w obszarze dokumentu. Dzięki temu Edytor dokumentów jest "etapem centrum", aby rozmieścić uzupełniające okna narzędzi.
+### <a name="comparing-window-usage-patterns"></a>Porównywanie wzorców użycia okien
+**Okna dokumentów** są prawie zawsze wyświetlane w obszarze dokumentu. Daje to edytorowi dokumentów "środkowy etap", który pozwala rozmieścić dodatkowe okna narzędzi.
 
-**Okno narzędzi** jest najczęściej wyświetlane jako oddzielne, mniejsze okno zwinięte z krawędzią IDE. Może to być widoczne, ukryte lub autoukryte. Jednak czasami okna narzędzi są prezentowane w obszarze dokumentu, usuwając zaznaczenie **okna/dokowanie** właściwości w oknie. Powoduje to bardziej rzeczywistą widoczność, ale również wspólną decyzję projektową: przy próbie integracji z Visual Studio należy zdecydować, czy funkcja powinna wyświetlać okno narzędzi czy okno dokumentu.
+Okno **narzędzi jest** najczęściej wyświetlane jako oddzielne, mniejsze okno zwinięte na krawędzi środowiska IDE. Może być widoczna, ukryta lub automatycznie ukryta. Jednak czasami okna narzędzi są prezentowane w obszarze dokumentu przez usunięcie zaznaczenia właściwości **Window/Docking** w oknie. Skutkuje to większą nieruchomością, ale również częstą decyzją projektową: podczas próby integracji z usługą Visual Studio należy zdecydować, czy funkcja powinna wyświetlać okno narzędzi, czy okno dokumentu.
 
-**Niemodalne okna dialogowe** nie są odradzane w programie Visual Studio. Większość niemodalnych okien dialogowych to przez definicję, ruchome okna narzędzi i należy je zaimplementować w ten sposób. Niemodalne okna dialogowe są dozwolone w przypadkach, gdy rozmiar okna standardowego narzędzia zadokowanego po stronie powłoki zostanie zbyt ograniczony. Są one również dozwolone w przypadkach, gdy użytkownik może przenieść okno dialogowe do monitora pomocniczego.
+**Nie jest zalecane tworzenie nie** moderowych okien dialogowych Visual Studio. Większość nie moderowych okien dialogowych to z definicji przestawne okna narzędzi, które powinny być implementowane w ten sposób. Okna dialogowe modeless są dozwolone w przypadkach, gdy rozmiar normalnego okna narzędzi zadokowanych do boku powłoki byłby zbyt ograniczany. Są one również dozwolone w przypadkach, gdy użytkownik prawdopodobnie przeniesie okno dialogowe do monitora pomocniczego.
 
-Uważnie zapoznaj się z żądanym typem kontenera. Typowe zagadnienia dotyczące wzorców użycia dotyczące projektowania interfejsu użytkownika znajdują się w poniższej tabeli.
+Zastanów się dokładnie, jakiego typu kontenera potrzebujesz. W poniższej tabeli przedstawiono typowe zagadnienia dotyczące wzorca użycia dotyczące projektowania interfejsu użytkownika.
 
-||Okno dokumentu|Okno narzędzia|Niemodalne okno dialogowe|
+||Okno dokumentu|Okno narzędzi|Okno dialogowe nie modeless|
 |-|---------------------|-----------------|---------------------|
-| **Pozycja** | Zawsze umieszczaj w dokumencie i nie są zadokowane wokół krawędzi IDE. Może to być "ściągane", tak aby przepływał niezależnie od głównej powłoki. | Na ogół karta jest zadokowana wokół krawędzi IDE, ale można ją dostosować do wartości zmiennoprzecinkowych, autoukrytych (odpiętych) lub zadokowanych w obszarze dokumentu.|Duże przestawne okno oddzielone od IDE. |
-| **Zatwierdź model** | *Opóźnione zatwierdzanie*<br /><br /> W celu zapisania danych w dokumencie użytkownik musi wydać polecenie **&gt; Zapisz**, **Zapisz jako** lub **Zapisz wszystkie** . Okno dokumentu ma koncepcję danych w ramach elementu "'dirtied", następnie została zatwierdzona do jednego z poleceń zapisu. Po zamknięciu okna dokumentu cała zawartość jest zapisywana na dysku lub utracona. | *Natychmiastowe zatwierdzenie*<br /><br /> Nie istnieje model zapisywania. W przypadku okien narzędzi inspektora, które ułatwiają edytowanie pliku, plik musi być otwarty w aktywnym Edytorze lub projektancie, a Edytor lub Projektant jest właścicielem zapisywania. | *Opóźnione lub natychmiastowe zatwierdzenie*<br /><br /> Najczęściej niemodalne okno dialogowe wymaga działania w celu zatwierdzenia zmian i zezwala na operację "Anuluj", co spowoduje wycofanie wszelkich zmian wprowadzonych w sesji okna dialogowego.  To odróżnia niemodalne okno dialogowe z okna narzędzi w tym narzędziu, który zawsze ma bezpośredni model zatwierdzania. |
-| **Widoczność** | *Otwórz/Utwórz (plik) i Zamknij*<br /><br /> Otwieranie okna dokumentu odbywa się za pośrednictwem otwierania istniejącego dokumentu lub przy użyciu szablonu, aby utworzyć nowy dokument. Brak polecenia "Otwórz \<specific editor> ". | *Ukryj i Pokaż*<br /><br /> Okna narzędzi z jednym wystąpieniem mogą być ukryte lub pokazywane. Zawartość i Stany w oknie narzędzi są utrwalane w widoku lub ukrytym. Okna narzędzi z wiele wystąpień można zamknąć, a także ukryć. Po zamknięciu okna narzędzia z obsługą wiele wystąpień zawartość i stan w oknie narzędzia są odrzucane. | *Uruchomiono za pomocą polecenia*<br /><br /> Okna dialogowe są uruchamiane przy użyciu polecenia opartego na zadaniach. |
-| **Wystąpienia** | *Wiele wystąpień*<br /><br /> Kilka edytorów może być otwartych w tym samym czasie i edytować różne pliki, podczas gdy niektóre edytory umożliwiają również otwieranie tego samego pliku w więcej niż jednym edytorze (za pomocą okna polecenie **&gt; New window** ).<br /><br /> Jeden edytor może edytować jeden lub wiele plików jednocześnie (Projektant projektu). | *Pojedyncze lub wiele wystąpień*<br /><br /> Zawartość zmienia się w celu odzwierciedlenia kontekstu (jak w przeglądarce właściwości) lub wypychanie fokusu/kontekstu do innych okien (Lista zadań, Eksplorator rozwiązań).<br /><br /> Zarówno jedno wystąpienie, jak i wiele wystąpień systemu Windows powinno być skojarzone z oknem aktywnego dokumentu, chyba że istnieje uzasadniony powód, aby nie. | *Pojedyncze wystąpienie* |
-| **Przykłady** | **Edytory tekstu**, takie jak edytor kodu<br /><br /> **Powierzchnie projektowe**, takie jak Projektant formularzy lub powierzchnia modelowania<br /><br /> **Układy formantów podobne do okien dialogowych**, takich jak projektant manifestu | **Eksplorator rozwiązań** zawiera rozwiązanie i projekty zawarte w rozwiązaniu<br /><br /> **Eksplorator serwera** zawiera hierarchiczny widok serwerów i połączeń danych, które użytkownik zdecyduje otworzyć w oknie. Otwierając obiekt z hierarchii bazy danych, na przykład zapytanie, otwiera okno dokumentu i zezwala użytkownikowi na edytowanie zapytania.<br /><br /> **Przeglądarka właściwości** wyświetla właściwości obiektu wybranego w oknie dokumentu lub w innym oknie narzędzi. Właściwości są prezentowane w hierarchicznym widoku siatki lub w złożonych kontrolkach, takich jak kontrolki podobne do okna dialogowego i umożliwiają użytkownikowi ustawianie wartości tych właściwości. | |
+| **Pozycja** | Zawsze znajduje się w obszarze dokumentu i nie dokuje krawędzi środowiska IDE. Można go "ściągnąć", aby zmiennoprzecinkowy był zmiennoprzecinkowy niezależnie od powłoki głównej. | Zazwyczaj zadokowane tabulatorami krawędzie środowiska IDE, ale można je dostosować tak, aby były przestawne, automatycznie ukryte (odpięte) lub zadokowane w obszarze dokumentu.|Duże okno zmiennoprzecincze oddzielone od środowiska IDE. |
+| **Zatwierdzanie modelu** | *Opóźnione zatwierdzenie*<br /><br /> Aby zapisać dane w dokumencie, użytkownik musi wydać polecenie Zapisz **plik, &gt;** Zapisz **jako** lub **Zapisz wszystko.** W oknie dokumentu zatwierdzona jest koncepcja danych, które się w nim znajduje, a następnie są one zatwierdzone w jednym z poleceń zapisywania. Podczas zamykania okna dokumentu cała zawartość jest zapisywana na dysku lub utracona. | *Natychmiastowe zatwierdzenie*<br /><br /> Nie ma żadnego modelu zapisywania. W przypadku okien narzędzi inspektora, które pomagają w edytowaniu pliku, plik musi być otwarty w aktywnym edytorze lub projektancie, a edytor lub projektant jest właścicielem zapisu. | *Opóźnione lub natychmiastowe zatwierdzenie*<br /><br /> Najczęściej duże nie moderowe okno dialogowe wymaga akcji w celu zatwierdzenia zmian i umożliwia operację "Anuluj", która wycofuje wszystkie zmiany wprowadzone w sesji okna dialogowego.  Odróżnia to nie modeless okno dialogowe od okna narzędzi w tych oknach narzędzi zawsze ma model natychmiastowego zatwierdzania. |
+| **Widoczność** | *Otwieranie/tworzenie (plik) i zamykanie*<br /><br /> Otwieranie okien dokumentów odbywa się przez otwarcie istniejącego dokumentu lub użycie szablonu do utworzenia nowego dokumentu. Nie ma polecenia \<specific editor> "Otwórz". | *Ukrywanie i pokazywanie*<br /><br /> Okna narzędzi pojedynczego wystąpienia mogą być ukryte lub wyświetlane. Zawartość i stany w oknie narzędzia są utrwalane w widoku lub ukryte. Okna narzędzi o wielu wystąpieniach można zamykać i ukrywać. Po zamknięciu okna narzędzi o wielu wystąpieniach zawartość i stan w tym oknie są odrzucane. | *Uruchomione z polecenia*<br /><br /> Okna dialogowe są wyświetlane z polecenia opartego na zadaniach. |
+| **Wystąpienia** | *Wiele wystąpień*<br /><br /> W tym samym czasie można otworzyć kilka edytorów i edytować różne pliki, podczas gdy niektóre edytory zezwalają również na otwieranie tego samego pliku w więcej niż jednym edytorze (przy użyciu polecenia Nowe okno **okna). &gt;**<br /><br /> Pojedynczy edytor może równocześnie edytować jeden lub wiele plików (Projektant projektu). | *Jedno lub wiele wystąpień*<br /><br /> Zawartość zmienia się w celu odzwierciedlenia kontekstu (jak w przeglądarce właściwości) lub wypychania fokusu/kontekstu do innych okien (Lista zadań, Eksplorator rozwiązań).<br /><br /> Okna narzędzi z jednym wystąpieniem i wieloma wystąpieniami powinny być skojarzone z aktywnym oknem dokumentu, chyba że istnieje ważny powód, aby tego nie wiedzieć. | *Jedno wystąpienie* |
+| **Przykłady** | **Edytory tekstów,** takie jak edytor kodu<br /><br /> **Projektowanie powierzchni,** takich jak projektant formularzy lub powierzchnia modelowania<br /><br /> **Układy kontrolek podobne do okien dialogowych,** takich jak Projektant manifestu | Ten **Eksplorator rozwiązań** rozwiązanie i projekty zawarte w rozwiązaniu<br /><br /> Interfejs **Eksplorator serwera** hierarchiczny widok serwerów i połączeń danych, które użytkownik wybierze do otwarcia w oknie. Otwarcie obiektu z hierarchii bazy danych, takiego jak zapytanie, powoduje otwarcie okna dokumentu i umożliwia użytkownikowi edytowanie zapytania.<br /><br /> Przeglądarka **właściwości wyświetla** właściwości obiektu wybranego w oknie dokumentu lub innym oknie narzędzia. Właściwości są prezentowane w widoku siatki hierarchicznej lub w złożonych kontrolkach podobnych do okien dialogowych i umożliwiają użytkownikowi ustawianie wartości tych właściwości. | |
 
 ## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Okna narzędzi
 
 ### <a name="overview"></a>Omówienie
-Okna narzędzi obsługują działania użytkownika, które są wykonywane w oknach dokumentów. Mogą one służyć do wyświetlania hierarchii reprezentującej podstawowy obiekt główny, który program Visual Studio udostępnia i może manipulować.
+Okna narzędzi obsługują pracę użytkownika, która odbywa się w oknach dokumentów. Mogą służyć do wyświetlania hierarchii, która reprezentuje podstawowy obiekt główny, który Visual Studio udostępnia i może manipulować.
 
-Gdy rozważasz nowe okno narzędzi w IDE, autorzy powinni:
+Podczas rozważania nowego okna narzędzi w idee autorzy powinni:
 
-- Używaj istniejących okien narzędzi, które są odpowiednie dla zadań i nie twórz nowych przy użyciu podobnych funkcji. Nowe okna narzędzi należy tworzyć tylko wtedy, gdy oferują znacznie różne "Narzędzie" lub funkcje, których nie można zintegrować z podobnym oknem lub przez włączenie istniejącego okna do koncentratora przestawiania.
+- Użyj istniejących okien narzędzi odpowiednich dla zadań i nie twórz nowych okien o podobnych funkcjach. Nowe okna narzędzi powinny być tworzone tylko wtedy, gdy oferują znacznie inne "narzędzie" lub funkcje, których nie można zintegrować w podobnym oknie lub przez przekształcenie istniejącego okna w centrum przestawne.
 
-- W razie konieczności Użyj standardowego paska poleceń w górnej części okna narzędzi.
+- W razie potrzeby użyj standardowego paska poleceń w górnej części okna narzędzia.
 
-- Być spójne ze wzorcami już obecnymi w oknach narzędzi do sterowania prezentacją i nawigowaniem po klawiaturze.
+- Należy zapewnić spójność z wzorcami już obecnymi w innych oknach narzędzi do prezentacji sterowania i nawigacji za pomocą klawiatury.
 
-- Być spójne z prezentacją kontrolną w innych oknach narzędzi.
+- Spójna prezentacja kontrolek w innych oknach narzędzi.
 
-- W miarę możliwości ustaw funkcję autowidoczności okien narzędzi specyficznych dla dokumentu, tak aby były wyświetlane tylko wtedy, gdy dokument nadrzędny jest aktywowany.
+- Jeśli to możliwe, okna narzędzi specyficzne dla dokumentu powinny być automatycznie widoczne, tak aby były wyświetlane tylko po aktywowaniu dokumentu nadrzędnego.
 
-- Upewnij się, że zawartość okna jest wyświetlona przez klawiaturę (klawisze strzałek pomocy technicznej).
+- Upewnij się, że nawigacja w zawartości okna jest nawigowalna za pomocą klawiatury (obsługują klawisze strzałek).
 
 #### <a name="tool-window-states"></a>Stany okna narzędzi
-Okna narzędzi programu Visual Studio mają różne stany, a niektóre z nich są aktywowane przez użytkownika (takie jak funkcja Autoukrywanie). Inne Stany, takie jak autovisible, Zezwalaj na wyświetlanie okien narzędzi w prawidłowym kontekście i ukrywanie, gdy nie jest to konieczne. W sumie znajduje się pięć Stanów okna narzędzi.
+Visual Studio narzędzi mają różne stany, z których niektóre są aktywowane przez użytkownika (na przykład funkcja automatycznego ukrywania). Inne stany, takie jak automatycznie widoczne, umożliwiają pojawianie się okien narzędzi w poprawnym kontekście i ukrywanie ich w razie potrzeby. Istnieje łącznie pięć stanów okna narzędzi.
 
-- Okna narzędzi **zadokowanych/przypiętych** mogą być dołączone do dowolnych z czterech boków obszaru dokumentu. Ikona pinezki pojawia się na pasku tytułu okna narzędzi. Okno narzędzi może być zadokowane w poziomie lub w pionie wzdłuż krawędzi powłoki i innych okien narzędzi, a także może być połączone z kartami.
+- **Zadokowane/przypięte** okna narzędzi można dołączyć do dowolnej z czterech stron obszaru dokumentu. Ikona pinezki jest wyświetlana na pasku tytułu okna narzędzi. Okno narzędzi może być zadokowane w poziomie lub w pionie wzdłuż krawędzi powłoki i innych okien narzędzi, a także może być połączone tabulatorami.
 
-- Okna narzędzi **z autoukrywaniem** nie są przypięte. Okno może wysunąć wzrok, pozostawiając kartę (z nazwą okna narzędzia i jego ikoną) na krawędzi obszaru dokumentu. Okno narzędzia prowadzi do slajdu, gdy użytkownik umieści wskaźnik myszy na karcie.
+- **Automatycznie ukryte okna** narzędzi są odpinane. Okno może wysuwać się poza wzrok, pozostawiając kartę (z nazwą okna narzędzia i jego ikoną) na krawędzi obszaru dokumentu. Okno narzędzi wysuwa się, gdy użytkownik najedzie kursorem na kartę.
 
-- **Automatyczne widoczne** okna narzędzi automatycznie pojawiają się, gdy działa inny element interfejsu użytkownika, taki jak edytor, jest uruchamiany lub ma fokus.
+- **Automatycznie widoczne okna** narzędzi są automatycznie wyświetlane, gdy zostanie uruchomiony inny element interfejsu użytkownika, taki jak edytor, lub uzyska fokus.
 
-- **Zmiennoprzecinkowe** okno narzędziowe Umieść kursor poza IDE. Jest to przydatne w przypadku konfiguracji z obsługą kilku monitorów.
+- **Przestawne** okna narzędzi zatrzymają wskaźnik myszy poza ideą IDE. Jest to przydatne w przypadku konfiguracji z wieloma monitorami.
 
-- Okna narzędzi **dokumentu z kartami** mogą być zadokowane w obszarze dokumentu. Jest to przydatne w przypadku dużych okien narzędzi, takich jak Przeglądarka obiektów, które potrzebują bardziej rzeczywistej nieruchomości niż dokowanie do krawędzi ramki.
+- **Okna narzędzi dokumentów** z kartami można zadokować w obszarze dokumentu. Jest to przydatne w przypadku dużych okien narzędzi, takich jak przeglądarka obiektów, które wymagają więcej powierzchni niż umożliwia dokowanie do krawędzi ramki.
 
-![Stany okna narzędzi w programie Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702 — 01_ToolWindowStates")<br />Stany okna narzędzi w programie Visual Studio
+![Stany okna narzędzi w Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702-01_ToolWindowStates")<br />Stany okna narzędzi w Visual Studio
 
-#### <a name="single-instance-and-multi-instance"></a>Pojedyncze wystąpienie i wiele wystąpień
-Okna narzędzi to pojedyncze wystąpienia lub wiele wystąpień. Niektóre okna narzędzi z jednym wystąpieniem mogą być skojarzone z oknem aktywnego dokumentu, natomiast okna narzędzi z obsługą wiele wystąpień mogą nie działać. Okna narzędzi z pojedynczym wystąpieniem odpowiadają na **okno &gt; nowe** okno polecenia, tworząc nowe wystąpienie okna. Na poniższej ilustracji przedstawiono okno narzędzi, w którym jest włączone nowe okno, gdy wystąpienie okna jest aktywne:
+#### <a name="single-instance-and-multi-instance"></a>Jedno wystąpienie i wiele wystąpień
+Okna narzędzi to jedno wystąpienie lub wiele wystąpień. Niektóre okna narzędzi z jednym wystąpieniem mogą być skojarzone z aktywnym oknem dokumentu, podczas gdy okna narzędzi o wielu wystąpieniach mogą nie być. Okna narzędzi o wielu wystąpieniach reagują na polecenie **Nowe &gt; okno okna,** tworząc nowe wystąpienie okna. Na poniższej ilustracji przedstawiono okno narzędzi umożliwiające polecenie Nowe okno, gdy wystąpienie okna jest aktywne:
 
-![Okno narzędzia włączające polecenie "New window", gdy wystąpienie okna jest aktywne](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702 — 02_ToolWindowEnablingCommand")<br />Okno narzędzia włączające polecenie "New window", gdy wystąpienie okna jest aktywne
+![Okno narzędzi umożliwiające polecenie "Nowe okno", gdy wystąpienie okna jest aktywne](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702-02_ToolWindowEnablingCommand")<br />Okno narzędzi umożliwiające polecenie "Nowe okno", gdy wystąpienie okna jest aktywne
 
-Okna narzędzi z jednym wystąpieniem można ukrywać lub pokazywać, natomiast w przypadku okien narzędzi z obsługą wiele wystąpień można zamknąć, a także ukryć. Wszystkie okna narzędzi mogą być zadokowane, połączone z kartami, zmiennoprzecinkowe lub ustawione jako okno potomne interfejsu Multiple-Document (podobnie jak okno dokumentu). Wszystkie okna narzędzi powinny reagować na odpowiednie polecenia zarządzania oknami w menu okno:
+Okna narzędzi z jednym wystąpieniem mogą być ukryte lub wyświetlane, podczas gdy okna narzędzi o wielu wystąpieniach mogą być zamknięte, a także ukryte. Wszystkie okna narzędzi mogą być zadokowane, połączone tabulatorami, przestawne lub ustawiane jako okno podrzędne interfejsu Multiple-Document (MDI) (podobnie jak okno dokumentu). Wszystkie okna narzędzi powinny odpowiadać na odpowiednie polecenia zarządzania oknami w menu Okno:
 
-![Polecenia zarządzania oknem w menu okna programu Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702 — 03_WindowManagementControls")<br />Polecenia zarządzania oknem w menu okna programu Visual Studio
+![Polecenia zarządzania oknami w Visual Studio okna](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702-03_WindowManagementControls")<br />Polecenia zarządzania oknami w Visual Studio okna
 
-#### <a name="document-specific-tool-windows"></a>Okna narzędzi specyficzne dla dokumentu
-Niektóre okna narzędzi są przeznaczone do zmiany w oparciu o dany typ dokumentu. Te okna są ciągle aktualizowane w celu odzwierciedlenia funkcji mających zastosowanie do okna aktywnego dokumentu w IDE.
+#### <a name="document-specific-tool-windows"></a>Okna narzędzi specyficzne dla dokumentów
+Niektóre okna narzędzi są przeznaczone do zmiany na podstawie danego typu dokumentu. Te okna są stale aktualizowane w celu odzwierciedlenia funkcji mających zastosowanie do aktywnego okna dokumentu w idee.
 
-Przykłady okien narzędzi, których zawartość zmienia się w celu odzwierciedlenia wybranego edytora, to Przybornik i Konspekt dokumentu. Te okna pokazują znak wodny, gdy Edytor ma fokus, który nie oferuje kontekstu do okna.
+Przykładami okien narzędzi, których zawartość zmienia się w celu odzwierciedlenia wybranego edytora, są przybornik i konspekt dokumentu. Te okna pokazują znak wodny, gdy edytor ma fokus, który nie oferuje kontekstu okna.
 
 #### <a name="navigable-list-tool-windows"></a>Okna narzędzi listy nawigacji
-Niektóre okna narzędzi wyświetlają listę elementów nawigacji, z którymi użytkownik może korzystać. W tym typie okna powinna być zawsze dostępna opinia dla bieżącego elementu na liście, nawet jeśli okno jest nieaktywne. Lista powinna reagować na polecenia **GoToNextLocation** i **GoToPrevLocation** , zmieniając również aktualnie wybrany element w oknie
+Niektóre okna narzędzi wyświetlają listę elementów nawigacji, z których użytkownik może korzystać. W tym typie okna zawsze powinna być informacja zwrotna dla bieżącego elementu na liście, nawet jeśli okno jest nieaktywne. Lista powinna odpowiadać na polecenia **GoToNextLocation** i **GoToPrevLocation,** zmieniając również aktualnie zaznaczony element w oknie
 
-Przykłady okien narzędzi do nawigacji z listą to Eksplorator rozwiązań i wyszukiwanie wyników.
+Przykładami okien narzędzi listy nawigacji są okna Eksplorator rozwiązań i Znajdź wyniki.
 
 ### <a name="tool-window-types"></a>Typy okien narzędzi
 
 #### <a name="common-tool-windows-and-their-functions"></a>Typowe okna narzędzi i ich funkcje
 
-**Okna narzędzi hierarchicznych**
+**Hierarchiczne okna narzędzi**
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Eksplorator rozwiązań | Hierarchiczne drzewo, które wyświetla listę dokumentów zawartych w projektach, różne pliki i elementy rozwiązania. Wyświetlanie elementów w ramach projektów jest definiowane przez pakiet, który jest właścicielem typu projektu (na przykład typów opartych na odwołaniach, opartych na katalogach lub trybach mieszanych). |
-| Widok klas | Hierarchiczne drzewo klas i różne elementy w zestawie roboczym dokumentów, niezależnie od samych plików. |
-| Eksplorator serwera | Hierarchiczne drzewo, które wyświetla wszystkie serwery i połączenia danych w rozwiązaniu. |
-| Konspekt dokumentu | Hierarchiczna struktura aktywnego dokumentu. |
+| Eksplorator rozwiązań | Drzewo hierarchiczne, które wyświetla listę dokumentów zawartych w projektach, różnych plikach i elementach rozwiązania. Wyświetlanie elementów w projektach jest definiowane przez pakiet, który jest właścicielem typu projektu (na przykład typy oparte na odwołaniach, oparte na katalogach lub w trybie mieszanym). |
+| Widok klas | Drzewo hierarchiczne klas i różnych elementów w zestawie pracy dokumentów, niezależnie od samych plików. |
+| Eksplorator serwera | Drzewo hierarchiczne, które wyświetla wszystkie serwery i połączenia danych w rozwiązaniu. |
+| Konspekt dokumentu | Struktura hierarchiczna aktywnego dokumentu. |
 
 **Okna narzędzi siatki**
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Właściwości | Siatka wyświetlająca listę właściwości dla wybranego obiektu wraz z selektorami wartości, aby edytować te właściwości. |
-| Lista zadań | Siatka umożliwiająca użytkownikowi tworzenie/Edytowanie/usuwanie zadań i komentarzy. |
+| Właściwości | Siatka, która wyświetla listę właściwości wybranego obiektu wraz z selektorami wartości w celu edytowania tych właściwości. |
+| Lista zadań | Siatka, która umożliwia użytkownikowi tworzenie/edytowanie/usuwanie zadań i komentarzy. |
 
 **Okna narzędzi zawartości**
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Help | Okno, które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy, od "jak?" Filmy wideo na forach MSDN. |
-| Dynamiczna pomoc | Okno narzędzi, które wyświetla linki do tematów pomocy mających zastosowanie do bieżącego zaznaczenia. |
-| Przeglądarka obiektów | Dwukolumnowy zestaw ramek z listą hierarchicznych składników obiektów w lewym okienku oraz właściwościami i metodami obiektu w prawej kolumnie. |
+| Help | Okno, które umożliwia użytkownikom dostęp do różnych metod uzyskiwania pomocy w oknie "Jak mogę?" na forach MSDN. |
+| Pomoc dynamiczna | Okno narzędzia, w którym są wyświetlane linki do tematów pomocy dotyczących bieżącego wyboru. |
+| Przeglądarka obiektów | Dwu kolumnowy zestaw ramek z listą składników obiektu hierarchicznego w okienku po lewej stronie oraz właściwościami i metodami obiektu w prawej kolumnie. |
 
-**Okna narzędzi dialogu**
+**Okna narzędzi dialogowych**
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Znajdowanie | Okno dialogowe, które umożliwia użytkownikowi znalezienie lub znalezienie i zastępowanie różnych plików w rozwiązaniu. |
-| Szukanie zaawansowane | Okno dialogowe, które umożliwia użytkownikowi znalezienie lub znalezienie i zastępowanie różnych plików w rozwiązaniu. |
+| Znajdowanie | Okno dialogowe, które umożliwia użytkownikowi znajdowanie lub znajdowanie i zastępowanie w różnych plikach w rozwiązaniu. |
+| Szukanie zaawansowane | Okno dialogowe, które umożliwia użytkownikowi znajdowanie lub znajdowanie i zastępowanie w różnych plikach w rozwiązaniu. |
 
 **Inne okna narzędzi**
 
 ::: moniker range="vs-2017"
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Przybornik | Okno narzędzia służące do przechowywania elementów, które zostaną usunięte na powierzchnie projektowe, zapewniając spójne źródło przeciągania dla wszystkich projektantów. |
-| Strona początkowa | Portal użytkownika do programu Visual Studio, z dostępem do źródeł wiadomości dla deweloperów, pomocy programu Visual Studio i ostatnich projektów. Użytkownicy mogą również tworzyć niestandardowe strony startowe, kopiując plik StartPage. XAML z katalogu "Common7\IDE\StartPages \" Visual Studio Program Files do folderu Restartpages w katalogu dokumenty programu Visual Studio, a następnie edytując kod XAML ręcznie lub otwierając go w programie Visual Studio lub innym edytorze kodu. |
+| Przybornik | Okno narzędzi używane do przechowywania elementów, które zostaną porzucone na powierzchni projektowych, zapewniając spójne źródło przeciągania dla wszystkich projektantów. |
+| Strona początkowa | Portal użytkownika do uzyskiwania dostępu Visual Studio do kanałów informacyjnych wiadomości dla deweloperów, Visual Studio pomocy i ostatnich projektów. Użytkownicy mogą również tworzyć niestandardowe strony startowe, kopiując plik StartPage.xaml z katalogu "Common7\IDE\StartPages Visual Studio program files do folderu StartPages w katalogu dokumentów programu Visual Studio, a następnie ręcznie edytując kod XAML lub otwierając go w programie Visual Studio lub innym edytorze \" kodu. |
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Przybornik | Okno narzędzia służące do przechowywania elementów, które zostaną usunięte na powierzchnie projektowe, zapewniając spójne źródło przeciągania dla wszystkich projektantów. |
+| Przybornik | Okno narzędzi używane do przechowywania elementów, które zostaną porzucone na powierzchni projektowych, zapewniając spójne źródło przeciągania dla wszystkich projektantów. |
 
 ::: moniker-end
 
 **Okna narzędzi debugera**
 
-| Okno narzędzia | Funkcja |
+| Okno narzędzi | Funkcja |
 | --- | --- |
-| Automatyczne ||
-| Bezpośredniego ||
-| Dane wyjściowe | Okno dane wyjściowe może być używane za każdym razem, gdy masz zdarzenia tekstowe lub status do zadeklarowania. |
+| Autos ||
+| Natychmiastowe ||
+| Dane wyjściowe | Okna danych wyjściowych można używać zawsze, gdy masz zdarzenia tekstowe lub stan do zadeklarowania. |
 | Pamięć ||
 | Punkty przerwania ||
 | Uruchomienie ||
 | Dokumenty ||
 | Stos wywołań ||
-| Zmienne lokalne ||
-| Serwuje ||
-| Dezasemblacji ||
-| Liczby ||
+| Mieszkańców ||
+| Zegarki ||
+| Demontażu ||
+| Rejestrów ||
 | Wątki ||
 
 ## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Konwencje edytora dokumentów
 
 ### <a name="document-interactions"></a>Interakcje dokumentów
-"Źródło dokumentu" to największe miejsce w środowisku IDE i polega na tym, że użytkownik ma ogólnie ustawioną uwagę na realizację swoich zadań, wspomagany przez uzupełniające okna narzędzi. Edytory dokumentów reprezentują podstawowe jednostki pracy, które użytkownik otwiera i zapisuje w programie Visual Studio. Zachowują one silny wybór związany z Eksplorator rozwiązańami lub innymi aktywnymi oknami hierarchii. Użytkownik powinien mieć możliwość wskazywania na jednym z tych okien hierarchii i dowiedzieć się, gdzie znajduje się dokument, oraz jego relacji z rozwiązaniem, projektem lub innym obiektem głównym dostarczanym przez pakiet programu Visual Studio.
+"Obszar dokumentu" to największa przestrzeń w obrębie środowiska IDE, w której użytkownik zwykle skupia swoją uwagę w celu wykonywania zadań, wspomagane przez dodatkowe okna narzędzi. Edytory dokumentów reprezentują podstawowe jednostki pracy, które użytkownik otwiera i zapisuje w Visual Studio. Zachowują one silne poczucie wyboru powiązane z Eksplorator rozwiązań lub innymi oknami hierarchii aktywnej. Użytkownik powinien być w stanie wskazać jeden z tych okien hierarchii i wiedzieć, gdzie znajduje się dokument oraz jaka jest jego relacja z rozwiązaniem, projektem lub innym obiektem głównym dostarczonym przez pakiet Visual Studio plików.
 
-Edytowanie dokumentów wymaga spójnego środowiska użytkownika. Aby umożliwić użytkownikowi skoncentrowanie się na zadaniu, a nie na zarządzaniu oknem i znajdowaniu poleceń, wybierz strategię widoku dokumentu, która najlepiej pasuje do zadań użytkownika w celu edytowania tego typu dokumentu.
+Edytowanie dokumentów wymaga spójnego interfejsu użytkownika. Aby umożliwić użytkownikowi skoncentrowanie się na zadaniach, a nie na zarządzaniu oknami i znajdowaniu poleceń, wybierz strategię widoku dokumentu, która najlepiej pasuje do zadań użytkownika do edytowania tego typu dokumentu.
 
-#### <a name="common-interactions-for-the-document-well"></a>Często spotykane interakcje dla dokumentu
+#### <a name="common-interactions-for-the-document-well"></a>Typowe interakcje dotyczące listy dokumentów
 
-- Obsługuj spójny model interakcji w wspólnym **nowym pliku** i otwartych środowiskach **plików** .
+- Zachowanie spójnego modelu interakcji we wspólnych **doświadczeniach z** nowym plikiem **i otwieraniem** pliku.
 
-- Aktualizuj powiązane funkcje w pokrewnych oknach i w menu po otwarciu okna dokumentu.
+- Zaktualizuj powiązane funkcje w powiązanych oknach i menu po otworze okna dokumentu.
 
-- Polecenia menu są odpowiednio zintegrowane z typowymi menu, takimi jak **Edycja**, **Formatowanie** i **Wyświetlanie** menu. Jeśli jest dostępnych znaczna ilość wyspecjalizowanych poleceń, można utworzyć nowe menu. To nowe menu powinno być widoczne tylko wtedy, gdy dokument ma fokus.
+- Polecenia menu są odpowiednio zintegrowane z wspólnymi menu, np. **Menu Edytuj,** **Formatuj** **i** Wyświetl. Jeśli dostępna jest znaczna liczba wyspecjalizowanych poleceń, można utworzyć nowe menu. To nowe menu powinno być widoczne tylko wtedy, gdy dokument ma fokus.
 
-- Osadzony pasek narzędzi może być umieszczony w górnej części edytora. Jest to preferowany pasek narzędzi, który pojawia się poza edytorem.
+- Osadzony pasek narzędzi można umieścić w górnej części edytora. Preferowane jest użycie oddzielnego paska narzędzi wyświetlanego poza edytorem.
 
-- Zawsze zachowuj zaznaczenie w Eksplorator rozwiązań lub podobnej aktywnej hierarchii okna.
+- Zawsze zachowaj zaznaczenie w oknie Eksplorator rozwiązań podobnej aktywnej hierarchii.
 
-- Dwukrotne kliknięcie dokumentu w Eksplorator rozwiązań powinno wykonać tę samą akcję co **otwarty**.
+- Dwukrotne kliknięcie dokumentu w oknie Eksplorator rozwiązań powinno wykonać tę samą akcję co polecenie **Otwórz.**
 
-- Jeśli na typie dokumentu można użyć więcej niż jednego edytora, użytkownik powinien mieć możliwość przesłonięcia lub zresetowania akcji domyślnej dla danego typu dokumentu przy użyciu okna dialogowego **Otwórz za** pomocą, klikając prawym przyciskiem myszy plik, a następnie wybierając polecenie **Otwórz za pomocą** z menu skrótów.
+- Jeśli dla typu dokumentu można użyć więcej niż jednego edytora, użytkownik powinien mieć możliwość przesłonięcia lub zresetowania domyślnej akcji dla danego typu dokumentu przy użyciu okna dialogowego Otwórz za pomocą, klikając plik prawym przyciskiem myszy i wybierając polecenie **Otwórz** za pomocą z menu skrótów. 
 
-- Nie Kompiluj kreatora w źródle dokumentu.
+- Nie należy tworzyć kreatora w dokumencie.
 
-### <a name="user-expectations-for-specific-document-types"></a>Oczekiwania użytkowników na określone typy dokumentów
-Istnieje kilka różnych typów podstawowych edytorów dokumentów, a każdy z nich ma zestaw interakcji, które są spójne z innymi tego samego typu.
+### <a name="user-expectations-for-specific-document-types"></a>Oczekiwania użytkowników dotyczące określonych typów dokumentów
+Istnieje kilka różnych podstawowych typów edytorów dokumentów, a każdy z nich ma zestaw interakcji, które są spójne z innymi tego samego typu.
 
-- **Edytor tekstu:** Edytor kodu, pliki dziennika
+- **Edytor tekstowy: edytor** kodu, pliki dziennika
 
 - **Powierzchnia projektowa:** Projektant formularzy WPF, formularze systemu Windows
 
-- **Edytor stylu okna dialogowego:** Projektant manifestu, właściwości projektu
+- **Edytor w stylu okna dialogowego:** Manifest Designer, właściwości projektu
 
-- **Projektant modeli:** Workflow Designer, codemap, diagram architektury, postęp
+- **Projektant modelu: projektant** przepływu pracy, mapa kodu, diagram architektury, postęp
 
-Istnieje również kilka typów nieedytorów, które używają tego dokumentu. Chociaż nie edytują samych dokumentów, muszą one być zgodne ze standardowymi interakcjami dla okien dokumentów.
+Istnieje również kilka typów innych niż edytora, które używają dobrze dokumentu. Chociaż nie edytują dokumentów samodzielnie, muszą stosować standardowe interakcje dla okien dokumentów.
 
 - **Raporty:** Raport IntelliTrace, raport funkcji Hyper-V, raport profilera
 
@@ -209,211 +209,211 @@ Istnieje również kilka typów nieedytorów, które używają tego dokumentu. C
 
 #### <a name="text-based-editors"></a>Edytory tekstowe
 
-- Dokument jest częścią modelu karty podglądu, umożliwiając Podgląd dokumentu bez jego otwierania.
+- Dokument uczestniczy w modelu karty podglądu, umożliwiając podgląd dokumentu bez jego otwierania.
 
-- Struktura dokumentu może być reprezentowana w oknie narzędzia pomocnika, takim jak Konspekt dokumentu.
+- Struktura dokumentu może być reprezentowana w oknie narzędzi towarzyszących, takim jak konspekt dokumentu.
 
-- Technologia IntelliSense (jeśli to konieczne) będzie spójna z innymi edytorami kodu.
+- Funkcja IntelliSense (w razie potrzeby) będzie działać spójnie z innymi edytorami kodu.
 
-- Okienka wyskakujące lub pomocniczy interfejs użytkownika są zgodne z podobnymi stylami i wzorcami dla istniejącego podobnego interfejsu użytkownika, takiego jak CodeLens.
+- Wyskakujące okienka lub interfejs użytkownika z asystą są zgodne z podobnymi stylami i wzorcami dla istniejącego podobnego interfejsu użytkownika, takiego jak CodeLens.
 
-- Komunikaty o stanie dokumentu zostaną wyświetlone w kontrolce paska narzędzi w górnej części dokumentu lub na pasku stanu.
+- Komunikaty dotyczące stanu dokumentu będą wyświetlane w kontrolce paska informacji w górnej części dokumentu lub na pasku stanu.
 
-- Użytkownik musi mieć możliwość dostosowania wyglądu czcionek i kolorów przy użyciu strony **narzędzi > opcje** , strony udostępnione czcionki i kolory albo jednej specyficznej dla edytora.
+- Użytkownik musi mieć możliwość dostosowania wyglądu czcionek i kolorów przy użyciu strony Narzędzia **> Opcje,** udostępnionej strony Czcionki i kolory lub strony specyficznej dla edytora.
 
 #### <a name="design-surfaces"></a>Powierzchnie projektowe
 
-- Pusty Projektant powinien mieć znak wodny na powierzchni wskazujący, jak zacząć pracę.
+- Pusty projektant powinien mieć na powierzchni znak wodny wskazujący, jak rozpocząć pracę.
 
-- Mechanizmy przełączania widoku będą zgodne z istniejącymi wzorcami, takimi jak dwukrotne kliknięcie, aby otworzyć Edytor kodu lub karty w oknie dokumentu umożliwiające interakcję z obydwoma okienkami.
+- Mechanizmy przełączania widoków będą zgodne z istniejącymi wzorcami, takimi jak dwukrotne kliknięcie, aby otworzyć edytor kodu lub karty w oknie dokumentu umożliwiające interakcję z obu okienek.
 
-- Dodawanie elementów do powierzchni projektowej powinno odbywać się za pośrednictwem przybornika, chyba że wymagane jest okno z wysoce określonymi narzędziami.
+- Dodawanie elementów do powierzchni projektowej powinno odbywać się za pośrednictwem przybornika, chyba że wymagane jest wysoce szczegółowe okno narzędzi.
 
 - Elementy na powierzchni będą zgodne ze spójnym modelem wyboru.
 
-- Osadzone paski narzędzi zawierają tylko polecenia specyficzne dla dokumentu, nie typowe polecenia, takie jak **Zapisywanie**.
+- Osadzone paski narzędzi zawierają tylko polecenia specyficzne dla dokumentu, a nie typowe polecenia, takie jak **Zapisz**.
 
-#### <a name="dialog-style-editors"></a>Edytory stylów okna dialogowego
+#### <a name="dialog-style-editors"></a>Edytory w stylu okna dialogowego
 
-- Układ formantu powinien być zgodny z normalnymi konwencjami układu okna dialogowego.
+- Układ kontrolek powinien być zgodne z normalnymi konwencjami układu okna dialogowego.
 
-- Karty w edytorze nie powinny być zgodne z wyglądem kart dokumentu, powinny być zgodne z jednym z dwóch dozwolonych stylów kart wewnętrznych.
+- Karty w edytorze nie powinny odpowiadać wyglądowi kart dokumentów. Powinny one być zgodne z jednym z dwóch dozwolonych stylów wewnętrznych kart.
 
-- Użytkownicy muszą mieć możliwość korzystania z formantów tylko przy użyciu klawiatury. przez aktywowanie edytora i tabulacji za pośrednictwem kontrolek lub przy użyciu standardowych symboli.
+- Użytkownicy muszą mieć możliwość interakcji z kontrolkami tylko przy użyciu klawiatury; aktywując edytor i tabulatory za pomocą kontrolek lub używając standardowych mnemonik.
 
-- Projektant powinien używać wspólnego modelu zapisu. Na powierzchni nie powinny znajdować się ogólne przyciski Zapisz lub Zatwierdź, chociaż inne przyciski mogą być odpowiednie.
+- Projektant powinien używać typowego modelu Zapisz. Na powierzchni nie powinny być umieszczane żadne ogólne przyciski Zapisz lub Zat zatwierdzanie, chociaż inne przyciski mogą być odpowiednie.
 
 #### <a name="model-designers"></a>Projektanci modeli
 
-- Pusty Projektant powinien mieć znak wodny na powierzchni wskazujący, jak zacząć pracę.
+- Pusty projektant powinien mieć na powierzchni znak wodny wskazujący, jak rozpocząć pracę.
 
 - Dodawanie elementów do powierzchni projektowej powinno odbywać się za pośrednictwem przybornika.
 
 - Elementy na powierzchni będą zgodne ze spójnym modelem wyboru.
 
-- Osadzone paski narzędzi zawierają tylko polecenia specyficzne dla dokumentu, nie typowe polecenia, takie jak **Zapisywanie**.
+- Osadzone paski narzędzi zawierają tylko polecenia specyficzne dla dokumentu, a nie typowe polecenia, takie jak **Zapisz**.
 
-- Legenda może pojawić się na powierzchni, indykatywny lub znak wodny.
+- Na powierzchni może pojawić się legenda z informacjami lub znakiem wodny.
 
-- Użytkownik musi mieć możliwość dostosowania wyglądu czcionek i kolorów przy użyciu strony **narzędzi > opcje** , strony udostępnione czcionki i kolory albo jednej specyficznej dla edytora.
+- Użytkownik musi mieć możliwość dostosowania wyglądu czcionek/kolorów przy użyciu strony Opcje narzędzi **>,** udostępnionej strony Czcionki i kolory lub strony specyficznej dla edytora.
 
 #### <a name="reports"></a>Raporty
 
-- Raporty są zwykle tylko do odczytu i nie uczestniczą w modelu zapisu. Mogą jednak obejmować interakcje, takie jak linki do innych istotnych informacji lub sekcji, które rozszerzają i zwijają.
+- Raporty są zwykle tylko informacjami i nie uczestniczą w zapisywanych modelach. Mogą one jednak obejmować interakcje, takie jak linki do innych istotnych informacji lub sekcji, które rozwijają się i zwijają.
 
-- Większość poleceń na powierzchni powinna być hiperłącze, a nie przyciski.
+- Większość poleceń na powierzchni powinna być hiperlinkami, a nie przyciskami.
 
-- Układ powinien zawierać nagłówek i przestrzegać standardowych wytycznych dotyczących układu raportu.
+- Układ powinien zawierać nagłówek i być zgodne ze standardowymi wytycznymi dotyczącymi układu raportu.
 
 #### <a name="dashboards"></a>Pulpity nawigacyjne
 
-- Pulpity nawigacyjne nie mają samego modelu interakcji, ale stanowią możliwość oferowania różnorodnych narzędzi.
+- Pulpity nawigacyjne nie mają modelu interakcji, ale służą jako środek do zaoferowania różnych innych narzędzi.
 
-- Nie uczestniczą w modelu zapisu.
+- Nie uczestniczą w zapisywanych modelach.
 
-- Użytkownicy muszą być w stanie korzystać z formantów tylko przy użyciu klawiatury, aktywując Edytor i przechodząc do karty za pośrednictwem formantów lub używając standardowych symboli.
+- Użytkownicy muszą mieć możliwość interakcji z kontrolkami tylko przy użyciu klawiatury, aktywując edytor i tabulatory za pomocą kontrolek lub używając standardowych mnemonik.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Oknach dialogowych
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Okien dialogowych
 
 ### <a name="introduction"></a>Wprowadzenie
-Okna dialogowe w programie Visual Studio zwykle obsługują jedną dyskretną jednostkę pracy użytkownika, a następnie są odrzucane.
+Okna dialogowe Visual Studio zwykle obsługiwać jedną odrębną jednostkę pracy użytkownika, a następnie zostać odrzucone.
 
-Jeśli określisz, że potrzebujesz okna dialogowego, masz trzy opcje w kolejności preferencji:
+Jeśli określono, że potrzebujesz okna dialogowego, masz trzy opcje w kolejności preferencji:
 
-1. Zintegruj swoje funkcje w jedno z udostępnionych okien dialogowych w programie Visual Studio.
+1. Integruj funkcje w jednym z udostępnionych okien dialogowych w Visual Studio.
 
 2. Utwórz własne okno dialogowe przy użyciu wzorca znalezionego w istniejącym podobnym oknie dialogowym.
 
-3. Utwórz nowe okno dialogowe, postępując zgodnie z zasadami interakcji i układu.
+3. Utwórz nowe okno dialogowe zgodnie z wytycznymi dotyczącymi interakcji i układu.
 
-W tej sekcji opisano, jak wybrać poprawny wzorzec okna dialogowego w przepływach pracy programu Visual Studio i wspólnych konwencjach dla projektu okna dialogowego.
+W tej sekcji opisano sposób wyboru poprawnego wzorca okna dialogowego w Visual Studio przepływów pracy i typowe konwencje dotyczące projektowania okien dialogowych.
 
 ### <a name="themes"></a>Motywy
-Okna dialogowe w programie Visual Studio mają jeden z dwóch podstawowych stylów:
+Okna dialogowe w Visual Studio są zgodne z jednym z dwóch podstawowych stylów:
 
-#### <a name="standard-unthemed"></a>Standardowa (niemotywnie)
-Większość okien dialogowych to standardowe okna dialogowe, które powinny być odnoszące się do nich. Nie wykonuj ponownie szablonu wspólnych kontrolek ani nie próbuj tworzyć stylizowanych przycisków lub kontrolek "nowoczesny". Kontrolki i wygląd Chrome są zgodne [ze wskazówkami dotyczącymi interakcji z pulpitem systemu Windows dla okien](/windows/desktop/uxguide/win-dialog-box)dialogowych.
+#### <a name="standard-unthemed"></a>Standardowa (bez omięć)
+Większość okien dialogowych to standardowe okna dialogowe narzędzi, które powinny być niezauważone. Nie należy ponownie szablonować typowych kontrolek ani próbować tworzyć stylizowanych "nowoczesnych" przycisków lub kontrolek. Kontrolki i wygląd chrome są zgodne ze [standardowymi wytycznymi dotyczącymi](/windows/desktop/uxguide/win-dialog-box)interakcji z pulpitem systemu Windows dla okien dialogowych .
 
 #### <a name="themed"></a>Tematyczne
-Mogą być należeć specjalne okna dialogowe "podpis". Okna dialogowe z motywami mają różne elementy wyglądu, które również mają specjalne wzorce interakcji skojarzone ze stylem. Motyw okna dialogowego, tylko wtedy, gdy spełnia następujące wymagania:
+Specjalne okna dialogowe "podpisu" mogą mieć temat. Okna dialogowe z tematami mają odrębny wygląd, który również ma pewne specjalne wzorce interakcji skojarzone ze stylem. Motywowanie okna dialogowego tylko wtedy, gdy spełnia następujące wymagania:
 
-- To okno dialogowe jest typowym doświadczeniem, który będzie widoczny i używany często lub przez wielu użytkowników (na przykład okno dialogowe **Nowy projekt** .
+- Okno dialogowe to typowe środowisko, które będzie często lub często używane przez wielu użytkowników (na przykład okno **dialogowe Nowy** projekt.
 
-- Okno dialogowe zawiera widoczne elementy marki produktu (na przykład okno dialogowe **Ustawienia konta** ).
+- Okno dialogowe zawiera ważne elementy marki produktu (na przykład **okno dialogowe Ustawienia** konta).
 
-- To okno dialogowe jest wyświetlane jako integralna część większego przepływu, który obejmuje inne okna dialogowe, na przykład okno dialogowe **Dodawanie połączonej usługi** .
+- Okno dialogowe jest wyświetlane jako integralna część większego przepływu, który zawiera inne okna dialogowe z tematami (na przykład okno dialogowe Dodawanie usługi **połączonej).**
 
-- To okno dialogowe jest ważną częścią środowiska, które odgrywa strategiczną rolę w promocji lub rozróżniania wersji produktu.
+- Okno dialogowe jest ważną częścią doświadczenia, które odgrywa strategiczną rolę w podsycaniu lub rozróżnić wersję produktu.
 
-Podczas tworzenia okna dialogowego z motywem Użyj odpowiednich kolorów środowiska i postępuj zgodnie z prawidłowymi wzorcami interakcji i układu. (Zobacz [układ programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)).
+Podczas tworzenia okna dialogowego z tematami użyj odpowiednich kolorów środowiska i postępuj zgodnie z prawidłowymi wzorcami układu i interakcji. (Zobacz [Układ dla Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)).
 
 ### <a name="dialog-design"></a>Projekt okna dialogowego
-Dobrze zaprojektowane okna dialogowe uwzględniają następujące zagadnienia:
+Dobrze zaprojektowane okna dialogowe biorą pod uwagę następujące elementy:
 
 - Obsługiwane zadanie użytkownika
 
-- Styl tekstu, język i terminologia okna dialogowego
+- Styl, język i terminologia tekstu okna dialogowego
 
-- Wybór kontroli i konwencje interfejsu użytkownika
+- Kontrola wyboru i konwencje interfejsu użytkownika
 
-- Specyfikacja układu wizualizacji i wyrównanie formantów
+- Specyfikacja układu wizualizacji i wyrównanie kontrolki
 
 - Dostęp za pomocą klawiatury
 
 #### <a name="content-organization"></a>Organizacja zawartości
-Należy wziąć pod uwagę różnice między tymi podstawowymi typami okien dialogowych:
+Weź pod uwagę różnice między tymi podstawowymi typami okien dialogowych:
 
-- [Proste okna dialogowe](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) prezentowanie kontrolek w jednym modalnym oknie. Prezentacja może zawierać różne wzorce kontrolek złożonych, w tym selektor pól lub pasek ikon.
+- [Proste okna dialogowe prezentują](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) kontrolki w jednym oknie modalnego. Prezentacja może zawierać odmiany złożonych wzorców kontrolek, w tym s wyboru pola lub paska ikon.
 
-- [Okna dialogowe z warstwami](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) służą do optymalnego wypełniania ekranu, gdy pojedynczy element interfejsu użytkownika obejmuje wiele grup kontrolek. Grupowania okna dialogowego są "warstwowymi" za pomocą kontrolek karty, kontrolek listy nawigacji lub przycisków, aby użytkownik mógł wybrać grupowanie, które ma być widoczne w danym momencie.
+- [Warstwy okien dialogowych](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) są używane do jak największego korzystania z powierzchni ekranu, gdy pojedynczy element interfejsu użytkownika składa się z wielu grup kontrolek. Grupowania w oknie dialogowym są "warstwowe" za pomocą kontrolek kart, kontrolek listy nawigacji lub przycisków, dzięki czemu użytkownik może wybrać grupowanie do zobaczenia w dowolnym momencie.
 
-- [Kreatory](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) są przydatne do kierowania użytkownika za pośrednictwem logicznej sekwencji kroków w kierunku ukończenia zadania. Serie wyborów są oferowane w kolejnych panelach, czasami wprowadzając różne przepływy pracy ("gałęzie") zależnie od wyboru dokonanego w poprzednim panelu.
+- [Kreatory](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) są przydatne do kierowania użytkownika przez logiczną sekwencję kroków w kierunku ukończenia zadania. W panelach sekwencyjnych oferowanych jest szereg opcji, które czasami wprowadzają różne przepływy pracy ("gałęzie") w zależności od wyboru dokonanego w poprzednim panelu.
 
 #### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Proste okna dialogowe
-Proste okno dialogowe jest prezentacją formantów w jednym modalnym oknie. Ta prezentacja może obejmować wahania wzorców kontrolek złożonych, takich jak selektor pól. W przypadku prostych okien dialogowych postępuj zgodnie ze standardowym układem ogólnym, a także dowolnym określonym układem wymaganym dla złożonych grup formantów.
+Proste okno dialogowe to prezentacja kontrolek w jednym oknie modalnego. Ta prezentacja może zawierać odmiany złożonych wzorców kontrolek, takich jak s wyboru pól. W przypadku prostych okien dialogowych należy przestrzegać standardowego układu ogólnego, a także dowolnego określonego układu wymaganego dla złożonych grup kontrolek.
 
-![>tworzenia klucza silnej nazwy jest przykładem prostego okna dialogowego w programie Visual Studio.](../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 — 01_CreateStrongNameKey")<br />Tworzenie klucza silnej nazwy jest przykładem prostego okna dialogowego w programie Visual Studio.
+![>Tworzenie klucza silnej nazwy jest przykładem prostego okna dialogowego w Visual Studio.](../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704-01_CreateStrongNameKey")<br />Tworzenie klucza silnej nazwy jest przykładem prostego okna dialogowego w Visual Studio.
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Okna dialogowe z warstwami
-Okna dialogowe z warstwami obejmują karty, pulpity nawigacyjne i osadzone drzewa. Są one używane do maksymalizowania nieruchomości, gdy istnieje wiele grup kontrolek oferowanych w pojedynczym interfejsie użytkownika. Grupowanie odbywa się w warstwach, dzięki czemu użytkownik może wybrać grupowanie, które ma być widoczne w dowolnym momencie.
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Okna dialogowe warstwowe
+Okna dialogowe warstwowe obejmują karty, pulpity nawigacyjne i osadzone drzewa. Są one używane do maksymalizowania nieruchomości, gdy w jednym interfejsie użytkownika jest oferowanych wiele grup kontrolek. Grupowania są warstwowe, dzięki czemu użytkownik może wybrać grupowanie do zobaczenia w dowolnym momencie.
 
-W najbardziej prostym przypadku mechanizm przełączania między grupami jest formantem tabulacji. Dostępne są różne alternatywy. Zobacz ustalanie priorytetów i warstwowe, aby wybrać najbardziej odpowiedni styl.
+W najprostszym przypadku mechanizmem przełączania się między grupowaniami jest kontrolka karty. Dostępnych jest kilka alternatyw. Zobacz Określanie priorytetów i warstw, aby dowiedzieć się, jak wybrać najbardziej odpowiedni styl.
 
-Okno **dialogowe &gt; Opcje narzędzi** to przykład okna dialogowego z warstwą przy użyciu osadzonego drzewa:
+Okno **dialogowe &gt; Opcje narzędzi** jest przykładem okna dialogowego warstwowego z osadzonym drzewem:
 
-![Narzędzia > opcje są przykładem okna dialogowego z warstwą w programie Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 — 02_ToolsOptions")<br />Narzędzia > opcje są przykładem okna dialogowego z warstwą w programie Visual Studio.
+![Narzędzia > Opcje to przykład warstwowego okna dialogowego w Visual Studio.](../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704-02_ToolsOptions")<br />Narzędzia > Opcje to przykład warstwowego okna dialogowego w Visual Studio.
 
 #### <a name="wizards"></a><a name="BKMK_Wizards"></a> Kreatorów
-Kreatory są przydatne do kierowania użytkownika za pośrednictwem logicznej sekwencji kroków w celu wykonania zadania. Seria opcji jest oferowana w kolejnych panelach, a użytkownik musi przejść przez każdy krok przed przejściem do następnego. Gdy dostępne są wystarczające wartości domyślne, przycisk **Zakończ** jest włączony.
+Kreatory są przydatne do kierowania użytkownika przez logiczną sekwencję kroków w ukończeniu zadania. Szereg opcji jest oferowanych w panelach sekwencyjnych, a użytkownik musi przejść przez każdy krok przed kontynuowaniem do następnego. Gdy są dostępne wystarczające wartości domyślne, przycisk **Zakończ** jest włączony.
 
  Kreatory modalne są używane do zadań, które:
 
-- Zawiera rozgałęzienie, w którym są oferowane różne ścieżki w zależności od opcji wybranych przez użytkownika
+- Zawierają rozgałęzienia, w których są oferowane różne ścieżki w zależności od wyborów użytkownika
 
-- Zawiera zależności między krokami, w których kolejne kroki zależą od danych wprowadzonych przez użytkownika z powyższych kroków
+- Zawiera zależności między krokami, gdzie kolejne kroki zależą od danych wejściowych użytkownika z poprzednich kroków
 
-- Są wystarczająco skomplikowane, aby interfejs użytkownika był używany do wyjaśnienia oferowanych opcji i możliwych wyników w każdym kroku
+- Są wystarczająco złożone, aby interfejs użytkownika był używany do wyjaśnienia oferowanych opcji i możliwych wyników w każdym kroku
 
-- Są transakcyjne, wymagając zestawu kroków do wykonania w całości przed zatwierdzeniem jakichkolwiek zmian
+- Są transakcyjne i wymagają, aby zestaw czynności został ukończony w całości, zanim zostaną zatwierdzone jakiekolwiek zmiany
 
-### <a name="common-conventions"></a>Wspólne konwencje
-Aby osiągnąć optymalny projekt i funkcjonalność przy użyciu okien dialogowych, postępuj zgodnie z tymi konwencjami w oparciu o rozmiar okna dialogowego, pozycję, standardy, konfigurację kontroli i wyrównanie, tekst interfejsu użytkownika, paski tytułu, przyciski sterowania i klucze dostępu.
+### <a name="common-conventions"></a>Typowe konwencje
+Aby uzyskać optymalny projekt i funkcjonalność okien dialogowych, postępuj zgodnie z tymi konwencjami dotyczącymi rozmiaru okna dialogowego, położenia, standardów, konfiguracji i wyrównania kontrolek, tekstu interfejsu użytkownika, pasków tytułu, przycisków sterowania i kluczy dostępu.
 
-Aby uzyskać wytyczne dotyczące poszczególnych układów, zobacz [układ dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
+Aby uzyskać wskazówki dotyczące układu, zobacz [Układ dla Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
 #### <a name="size"></a>Rozmiar
-Okna dialogowe powinny pasować do minimalnej rozdzielczości ekranu 1024x768, a początkowy rozmiar okna dialogowego nie powinien przekraczać 900x700 pikseli. Okna dialogowe mogą mieć zmienny rozmiar, ale nie jest to wymagane.
+Okna dialogowe powinny mieścić się w rozdzielczości co najmniej 1024 x 768 pikseli, a początkowy rozmiar okna dialogowego nie powinien przekraczać 900 x 700 pikseli. Okna dialogowe mogą być zmieniane, ale nie jest to wymagane.
 
-Istnieją dwa zalecenia dotyczące okien dialogowych o zmiennym rozmiarze:
+Istnieją dwa zalecenia dotyczące okien dialogowych o zmienianym rozmiaru:
 
-1. Minimalny rozmiar jest zdefiniowany dla okna dialogowego, które zostanie zoptymalizowane dla zestawu kontrolek bez obcinania, i dostosowanie w celu uwzględnienia rozsądnego wzrostu lokalizacji.
+1. Minimalny rozmiar jest zdefiniowany dla okna dialogowego, które zostanie zoptymalizowane pod kątem zestawu kontrolek bez przycinania i dostosowane do odpowiedniego wzrostu lokalizacji.
 
-2. Że rozmiar skalowany przez użytkownika jest zachowywany z sesji na sesję. Na przykład jeśli użytkownik skaluje okno dialogowe do 150%, kolejne uruchomienie okna dialogowego zostanie wyświetlone o 150%.
+2. Rozmiar skalowany przez użytkownika będzie się powtarzać z sesji na sesję. Jeśli na przykład użytkownik skaluje okno dialogowe do 150%, kolejne uruchomienie okna dialogowego będzie wyświetlane w 150%.
 
 #### <a name="position"></a>Położenie
-Okna dialogowe muszą pojawić się w środku IDE podczas pierwszego uruchomienia. Ostatnia pozycja okien dialogowych bez zmiany rozmiaru nie musi być utrwalona, więc będą one wyświetlane na wyśrodkowane w kolejnych uruchomieniach.
+Przy pierwszym uruchomieniu okna dialogowe muszą być wyśrodkowane w obrębie środowiska IDE. Nie trzeba utrwalać ostatniej pozycji okien dialogowych, których nie można zmieniać, więc będą one wyświetlane wyśrodkowanie przy kolejnych startach.
 
-W przypadku okien dialogowych o zmiennym rozmiarze rozmiar powinien być utrwalany przy kolejnych uruchomieniach. W przypadku modalnych okien dialogowych o zmiennym rozmiarze nie trzeba utrwalać pozycji. Wyświetlanie ich w centrum IDE zapobiega możliwości wyświetlania okna dialogowego w nieprzewidywalnym lub niezdatnym do użycia w przypadku zmiany konfiguracji wyświetlania użytkownika.
+W przypadku okien dialogowych, które można zmieniać, rozmiar powinien być utrwalany przy kolejnych startach. W przypadku modalnych okien dialogowych, które można zmieniać, pozycja nie musi być utrwalana. Ich wyśrodkowanie w idee zapobiega sytuacji, w których okno dialogowe jest wyświetlane w nieprzewidywalnej lub nienadajnej sytuacji, gdy konfiguracja wyświetlania użytkownika została zmieniona.
 
-W przypadku niemodalnych okien dialogowych, które mogą być zmieniane, pozycja użytkownika powinna być utrzymywana przy kolejnych uruchomieniach, ponieważ okno dialogowe może być używane często jako integralna część większego przepływu pracy.
+W przypadku nie moderowanych okien dialogowych, które można zmienić, pozycja użytkownika powinna być zachowywana przy kolejnych uruchomieniach, ponieważ okno dialogowe może być często używane jako integralna część większego przepływu pracy.
 
-Gdy okna dialogowe muszą być zduplikowane w innych oknach dialogowych, okno dialogowe powinno być kaskadowo z prawej strony i w dół od elementu nadrzędnego, aby było oczywiste dla użytkownika, który przeszedł do nowego miejsca.
+Gdy okna dialogowe muszą dużeć inne okna dialogowe, najwyższe okno dialogowe powinno być kaskadowo po prawej stronie i w dół od elementu nadrzędnego, aby dla użytkownika było oczywiste, że użytkownik nawigował do nowego miejsca.
 
-#### <a name="modality"></a>Modaln
-Modalne oznacza, że użytkownicy są zobowiązani do ukończenia lub anulowania okna dialogowego przed kontynuowaniem. Ponieważ modalne okna dialogowe blokują możliwość współdziałania z innymi częściami środowiska, przepływ zadań funkcji powinien korzystać z nich tak, jak to możliwe. Gdy konieczna jest operacja modalna, program Visual Studio zawiera wiele udostępnionych okien dialogowych, które można zintegrować z usługą. Jeśli musisz utworzyć nowe okno dialogowe, postępuj zgodnie ze wzorcem interakcji istniejącego okna dialogowego z podobnymi funkcjami.
+#### <a name="modality"></a>Modalności
+Tryb oznacza, że użytkownicy muszą ukończyć lub anulować okno dialogowe przed kontynuowaniem. Ponieważ modalne okna dialogowe blokują interakcję użytkownika z innymi częściami środowiska, przepływ zadań funkcji powinien używać ich tak oszczędnie, jak to możliwe. Gdy operacja modalna jest konieczna, Visual Studio ma wiele udostępnionych okien dialogowych, z których można zintegrować funkcje. Jeśli musisz utworzyć nowe okno dialogowe, postępuj zgodnie ze wzorcem interakcji istniejącego okna dialogowego o podobnej funkcjonalności.
 
-Gdy użytkownicy muszą wykonywać dwa działania jednocześnie, takie jak **Znajdowanie** i **zamienianie** podczas pisania nowego kodu, okno dialogowe powinno być niemodalne, aby użytkownik mógł łatwo przełączać się między nimi. Program Visual Studio ogólnie używa okien narzędzi dla tego rodzaju zadania połączonego z edytorem.
+Gdy podczas pisania nowego kodu  użytkownicy  muszą wykonywać dwa działania naraz, takie jak Znajdź i Zamień, okno dialogowe powinno być nie moderowe, aby użytkownik może łatwo się między nimi przełączać. Visual Studio używa okien narzędzi do tego rodzaju zadania połączonego z obsługą edytora.
 
-#### <a name="control-configuration"></a>Konfiguracja kontroli
-Być spójne z istniejącymi konfiguracjami kontrolek, które mają tę samą wartość w programie Visual Studio.
+#### <a name="control-configuration"></a>Konfiguracja kontrolki
+Należy zapewnić spójność z istniejącymi konfiguracjami kontrolek, które osiągną ten sam Visual Studio.
 
 #### <a name="title-bars"></a>Paski tytułu
 
-- Tekst na pasku tytułu musi odzwierciedlać nazwę polecenia, które je uruchomiło.
+- Tekst na pasku tytułu musi odzwierciedlać nazwę polecenia, które go uruchomiło.
 
-- Ikona nie powinna być używana w paskach tytułu okna dialogowego. W przypadkach, gdy system wymaga jednego z nich, użyj logo programu Visual Studio.
+- Na paski tytułu okna dialogowego nie należy używać żadnej ikony. W przypadkach, gdy system go wymaga, użyj Visual Studio logo.
 
-- Okna dialogowe nie powinny mieć przycisków Minimalizuj lub Maksymalizuj.
+- Okna dialogowe nie powinny mieć przycisków minimalizowania ani maksymalizowania.
 
-- Przyciski pomocy na pasku tytułu zostały wycofane. Nie należy dodawać ich do nowych okien dialogowych. Jeśli istnieją, powinny uruchamiać temat pomocy, który jest koncepcyjnie istotny dla zadania.
+- Przyciski Pomocy na pasku tytułu zostały wycofane. Nie należy dodawać ich do nowych okien dialogowych. Gdy już istnieją, powinni uruchomić temat pomocy, który jest koncepcyjnie istotny dla zadania.
 
-  ![Specyfikacje wytycznych dla pasków tytułu w oknach dialogowych programu Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704 — 03_TitleBarSpecs")<br />Specyfikacje wytycznych dla pasków tytułu w oknach dialogowych programu Visual Studio
+  ![Specyfikacje wytycznych dotyczące pasków tytułu w oknach Visual Studio dialogowych](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704-03_TitleBarSpecs")<br />Specyfikacje wytycznych dotyczące pasków tytułu w oknach Visual Studio dialogowych
 
-#### <a name="control-buttons"></a>Przyciski sterujące
-W obszarze Ogólne przyciski **OK**, **Anuluj** i **Pomoc** powinny być ułożone poziomo w prawym dolnym rogu okna dialogowego. Alternatywny stos pionowy jest dozwolony, jeśli okno dialogowe zawiera kilka innych przycisków w dolnej części okna dialogowego, które zaprezentowanie wizualnej pomyłek przy użyciu przycisków sterowania.
+#### <a name="control-buttons"></a>Przyciski sterowania
+Ogólnie rzecz biorąc, przyciski  **OK,** **Anuluj** i Pomoc powinny być ułożone w poziomie w prawym dolnym rogu okna dialogowego. Alternatywny pionowy stos jest dozwolony, jeśli w dolnej części okna dialogowego znajduje się kilka innych przycisków, które mogą pomylić wizualizację z przyciskami sterowania.
 
-![Dopuszczalne konfiguracje przycisków sterowania w oknach dialogowych programu Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704 — 04_ControlButtonConfig")<br />Dopuszczalne konfiguracje przycisków sterowania w oknach dialogowych programu Visual Studio
+![Dopuszczalne konfiguracje przycisków sterowania w Visual Studio oknach dialogowych](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704-04_ControlButtonConfig")<br />Dopuszczalne konfiguracje przycisków sterowania w Visual Studio oknach dialogowych
 
-Okno dialogowe musi zawierać domyślny przycisk kontrolki. Aby określić najlepsze polecenie, które ma być używane jako domyślne, wybierz jedną z następujących opcji (zgodnie z kolejnością pierwszeństwa):
+Okno dialogowe musi zawierać domyślny przycisk sterowania. Aby określić najlepsze polecenie do użycia jako domyślne, wybierz jedną z następujących opcji (wymienione w kolejności pierwszeństwa):
 
-- Wybierz najbezpieczniejsze i najbezpieczniejsze polecenie jako domyślne. Oznacza to, że wybranie polecenia najprawdopodobniej uniemożliwi utratę danych i uniknięcie niezamierzonego dostępu do systemu.
+- Wybierz najbezpieczniejsze i najbezpieczniejsze polecenie jako domyślne. Oznacza to, że wybranie polecenia najprawdopodobniej zapobiegnie utracie danych i zapobiegnie niezamierzonemu dostępowi do systemu.
 
-- Jeśli utrata danych i zabezpieczenia nie są czynnikami, wybierz polecenie domyślne w zależności od wygody. Włączenie najbardziej najprawdopodobniej polecenia jako domyślnego spowoduje poprawienie przepływu pracy użytkownika, gdy okno dialogowe obsługuje częste lub powtarzające się zadania.
+- Jeśli utrata danych i bezpieczeństwo nie są czynnikami, wybierz polecenie domyślne na podstawie wygody. Ustawienie najbardziej prawdopodobnego polecenia jako domyślnego usprawni przepływ pracy użytkownika, gdy okno dialogowe obsługuje częste lub powtarzalne zadania.
 
-Unikaj wyboru trwałej destrukcyjnej akcji dla polecenia domyślnego. Jeśli takie polecenie jest obecne, wybierz bezpieczniejsze polecenie jako domyślne.
+Unikaj wybierania akcji trwale destrukcyjnej dla polecenia domyślnego. Jeśli takie polecenie jest obecne, zamiast tego wybierz bezpieczniejsze polecenie jako domyślne.
 
 #### <a name="access-keys"></a>Klawisze dostępu
-Nie używaj kluczy dostępu dla przycisków **OK**, **Anuluj** lub **Pomoc** . Te przyciski są domyślnie mapowane na klawisze skrótów:
+Nie używaj kluczy dostępu dla przycisków **OK,** **Anuluj** **ani Pomocy.** Te przyciski są domyślnie mapowane na klawisze skrótów:
 
 | Nazwa przycisku | Skrót klawiaturowy |
 | --- | --- |
@@ -421,50 +421,50 @@ Nie używaj kluczy dostępu dla przycisków **OK**, **Anuluj** lub **Pomoc** . T
 | Anuluj | Esc |
 | Help | F1 |
 
-#### <a name="imagery"></a>Obrazach
-Oszczędne używanie obrazów w oknach dialogowych. Nie używaj dużych ikon w oknach dialogowych tylko do wykorzystania miejsca. Używaj obrazów tylko wtedy, gdy są ważną częścią przekazywania wiadomości do użytkownika, takich jak ikony ostrzeżeń lub animacje stanu.
+#### <a name="imagery"></a>Zdjęć
+Używaj obrazów oszczędnie w oknach dialogowych. Nie używaj dużych ikon w oknach dialogowych tylko w celu wykorzystania miejsca. Obrazów należy używać tylko wtedy, gdy są one ważną częścią przekazywania komunikatu do użytkownika, na przykład ikon ostrzeżeń lub animacji stanu.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Ustalanie priorytetów i warstwowe
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Określanie priorytetów i warstw
 
 #### <a name="prioritizing-your-ui"></a>Określanie priorytetów interfejsu użytkownika
-Może być konieczne przekazanie pewnych elementów interfejsu użytkownika do programu Forefront i umieszczenie bardziej zaawansowanych zachowań i opcji (w tym przesłanianie poleceń) do okien dialogowych. Przenosząc powszechnie używane funkcje do programu Forefront, tworząc w ten sposób pomieszczenie, i przez udostępnienie go domyślnie w interfejsie użytkownika z etykietą tekstową, gdy okno dialogowe jest wyświetlane.
+Może być konieczne wymuś pewne elementy interfejsu użytkownika na pierwszy plan i umieść bardziej zaawansowane zachowanie i opcje (w tym przesłanianie poleceń) w oknach dialogowych. Przywniosz na pierwszy plan często używane funkcje, robiąc miejsce na nie i przez ustawienie jej jako widocznej domyślnie w interfejsie użytkownika z etykietą tekstową, gdy zostanie wyświetlone okno dialogowe.
 
-#### <a name="layering-your-ui"></a>Warstwowy interfejs użytkownika
-Jeśli określono, że okno dialogowe jest niezbędne, ale powiązane funkcje, które mają być obecne dla użytkownika wykraczają poza to, co można wyświetlić w prostym oknie dialogowym, należy utworzyć warstwę interfejsu użytkownika. Najpopularniejsze metody warstw są używane przez program Visual Studio to karty i korytarzach lub pulpity nawigacyjne. W niektórych przypadkach mogą być odpowiednie regiony, które można rozwijać i zwijać. W programie Visual Studio zazwyczaj nie zaleca się stosowania adaptacyjnego interfejsu użytkownika.
+#### <a name="layering-your-ui"></a>Warstwowanie interfejsu użytkownika
+Jeśli określono, że okno dialogowe jest niezbędne, ale powiązane funkcje, które chcesz przedstawić użytkownikowi, wykraczają poza to, co można wyświetlić w prostym oknie dialogowym, musisz utworzyć warstwę interfejsu użytkownika. Najczęściej używane metody Visual Studio to karty i holi lub pulpity nawigacyjne. W niektórych przypadkach regiony, które można rozwinąć i zwinąć, mogą być odpowiednie. Adaptacyjny interfejs użytkownika zazwyczaj nie jest zalecany w Visual Studio.
 
-Istnieją zalety i wady różnych metod korzystania z warstwowego interfejsu użytkownika za poorednictwem kontrolek przypominających karty. Zapoznaj się z listą poniżej, aby upewnić się, że wybierasz technikę warstwową, która jest odpowiednia dla danej sytuacji.
+Istnieją zalety i wady różnych metod warstw interfejsu użytkownika za pomocą kontrolek podobnych do kart. Przejrzyj listę poniżej, aby upewnić się, że wybierasz technikę warstwową, która jest odpowiednia dla Twojej sytuacji.
 
-##### <a name="tabbing"></a>Klawisza Tab
+##### <a name="tabbing"></a>Tabulatorem
 
-| Mechanizm przełączania | Zalety i odpowiednie użycie | Wady i nieodpowiednie użycie |
+| Mechanizm przełączania | Zalety i odpowiednie użycie | Wady i niewłaściwe użycie |
 | --- | --- | --- |
-| Kontrolka karta | Logicznie Grupuj strony okna dialogowego w powiązane zestawy<br /><br />Przydatne w przypadku mniej niż pięciu (lub liczby kart, które mieszczą się w jednym wierszu okna dialogowego) stron powiązanych kontrolek w oknie dialogowym<br /><br />Etykiety kart muszą być krótkie: jedno lub dwa wyrazy, które mogą łatwo identyfikować zawartość<br /><br />Typowy styl okna dialogowego systemu<br /><br />Przykład: **&gt; właściwości elementu Eksploratora plików** | Wykonywanie krótkich etykiet z opisami może być trudne<br /><br />Zwykle nie skaluje ostatnich pięciu kart w jednym oknie dialogowym<br /><br />Nieodpowiedni, jeśli masz zbyt wiele kart dla jednego wiersza (Użyj alternatywnej techniki warstwowej)<br /><br />Nie rozszerzalny |
-| Nawigacja po pasku bocznym | Proste przełączanie urządzenia, które może obsługiwać więcej kategorii niż karty<br /><br />Płaska lista kategorii (bez hierarchii)<br /><br />Extensible<br /><br />Przykład: **Dostosuj... &gt; Dodaj polecenie** | Nie jest dobrym miejscem w poziomie, jeśli istnieje mniej niż trzy grupy<br /><br />Zadanie może być lepiej dopasowane do listy rozwijanej |
-| Kontrolka drzewa | Zezwala na nieograniczoną kategorię<br /><br />Zezwala na grupowanie i/lub hierarchię kategorii<br /><br />Extensible<br /><br />Przykład: **narzędzia &gt; Opcje** | Silnie zagnieżdżone hierarchie mogą spowodować nadmierne przewijanie w poziomie<br /><br />Program Visual Studio ma zbyt dużej ilości widoków drzewa |
-| Kreatora | Pomaga w wykonywaniu zadania przez identyfikator GUID użytkownika w ramach zadań, sekwencyjnych kroków: Kreator reprezentuje zadanie wysokiego poziomu, a poszczególne panele reprezentują podzadania wymagane do wykonania ogólnego zadania<br /><br />Przydatne, gdy zadanie przekroczy granice interfejsu użytkownika, tak jak w przypadku, gdy użytkownik będzie musiał użyć wielu edytorów i okien narzędzi do wykonania zadania<br /><br />Przydatne, gdy zadanie wymaga rozgałęziania<br /><br />Przydatne, gdy zadanie zawiera zależności między krokami<br /><br />Przydatne, gdy kilka podobnych zadań z jednym rozwidleniem decyzji można przedstawić w jednym oknie dialogowym, aby zmniejszyć liczbę różnych podobnych okien dialogowych | Nieodpowiednie dla każdego zadania, które nie wymaga sekwencyjnego przepływu pracy<br /><br />Użytkownicy mogą zostać przeciążni i pomylić kreatora ze zbyt dużą liczbą kroków<br /><br />Kreatorzy mają nieodłączną nieruchomość ekranu |
+| Tab, kontrolka | Logiczne grupowanie stron okna dialogowego w powiązane zestawy<br /><br />Przydatne w przypadku mniej niż pięciu (lub liczby kart, które mieszczą się w jednym wierszu w oknie dialogowym) stron powiązanych kontrolek w oknie dialogowym<br /><br />Etykiety kart muszą być krótkie: jeden lub dwa wyrazy, które mogą łatwo zidentyfikować zawartość<br /><br />Wspólny styl okna dialogowego systemu<br /><br />Przykład: **Eksplorator plików &gt; właściwości elementu** | Tworzenie opisowych krótkich etykiet może być trudne<br /><br />Zwykle nie skaluje ostatnich pięciu kart w jednym oknie dialogowym<br /><br />Nieodpowiednie, jeśli masz zbyt wiele kart dla jednego wiersza (użyj alternatywnej techniki warstw)<br /><br />Nie rozszerzalne |
+| Nawigacja na pasku bocznym | Proste urządzenie przełączające, które może pomieścić więcej kategorii niż karty<br /><br />Płaska lista kategorii (bez hierarchii)<br /><br />Extensible<br /><br />Przykład: **Dostosowywanie... &gt; Dodaj polecenie** | Użycie przestrzeni poziomej nie jest dobrym rozwiązaniem, jeśli istnieje mniej niż trzy grupy<br /><br />Zadanie może być lepiej dopasowane do listy rozwijanej |
+| Kontrolka drzewa | Zezwala na nieograniczoną liczbę kategorii<br /><br />Umożliwia grupowanie i/lub hierarchię kategorii<br /><br />Extensible<br /><br />Przykład: **Opcje &gt; narzędzi** | Silnie zagnieżdżone hierarchie mogą powodować nadmierne przewijanie w poziomie<br /><br />Visual Studio zbyt wiele widoków drzewa |
+| Kreatora | Ułatwia ukończenie zadań przez prowadzenie użytkownika przez kroki sekwencyjne oparte na zadaniach: kreator reprezentuje zadanie wysokiego poziomu, a poszczególne grupy reprezentują podzadań wymagane do wykonania całego zadania<br /><br />Przydatne, gdy zadanie przekracza granice interfejsu użytkownika, tak jak wtedy, gdy użytkownik musiałby użyć wielu edytorów i okien narzędzi w celu ukończenia zadania<br /><br />Przydatne, gdy zadanie wymaga rozgałęzienia<br /><br />Przydatne, gdy zadanie zawiera zależności między krokami<br /><br />Przydatne, gdy w jednym oknie dialogowym można zaprezentować kilka podobnych zadań z jednym forkem decyzyjnym w celu zmniejszenia liczby różnych podobnych okien dialogowych | Nieodpowiednie dla każdego zadania, które nie wymaga sekwencyjnego przepływu pracy<br /><br />Użytkownicy mogą stać się przytłoczeni i pomyleni przez kreatora ze zbyt wieloma krokami<br /><br />Kreatorzy mają z założenia ograniczoną ilość dostępnego ekranu |
 
-##### <a name="hallways-or-dashboards"></a>Korytarzach lub pulpity nawigacyjne
-Korytarzach i pulpity nawigacyjne to okna dialogowe lub panele służące jako uruchamianie punktów w innych oknach dialogowych i oknach. Dobrze zaprojektowane polecenie "holu" natychmiast wyświetla tylko najbardziej typowe opcje, polecenia i ustawienia, umożliwiając użytkownikowi łatwe wykonywanie typowych zadań. Podobnie jak w przypadku rzeczywistych holu, zapewnia Doorways do uzyskiwania dostępu do pomieszczeń za nimi. w tym przypadku mniej typowy interfejs użytkownika jest zbierany do oddzielnych "pokojów" (często innych okien dialogowych) powiązanych funkcji, do których można uzyskać dostęp z głównego holu.
+##### <a name="hallways-or-dashboards"></a>Sale lub pulpity nawigacyjne
+Saly i pulpity nawigacyjne to okna dialogowe lub panele, które służą jako punkty uruchamiania do innych okien i okien dialogowych. Dobrze zaprojektowany "hol" natychmiast zapewnia dostęp tylko do najbardziej typowych opcji, poleceń i ustawień, dzięki czemu użytkownik może łatwo wykonywać typowe zadania. Podobnie jak w rzeczywistym holu zapewnia drzwi dostępu do pomieszczeń za nimi, w tym miejscu rzadziej używany interfejs użytkownika jest zbierany w oddzielnych "pomieszczeniach" (często innych oknach dialogowych) powiązanych funkcji, do których można uzyskać dostęp z głównego pokoju.
 
-Alternatywnie, interfejs użytkownika, który oferuje wszystkie dostępne funkcje w pojedynczej kolekcji, a nie refaktoryzację mniej typowych funkcji w oddzielnych lokalizacjach, jest po prostu pulpitem nawigacyjnym.
+Alternatywnie interfejs użytkownika, który oferuje wszystkie dostępne funkcje w jednej kolekcji, zamiast refaktoryzacji rzadziej występujących funkcji w oddzielnych lokalizacjach jest po prostu pulpitem nawigacyjnym.
 
-![Holu koncepcji w celu udostępnienia dodatkowego interfejsu użytkownika w programie Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704 — 08_Hallway")<br />Holu koncepcji w celu udostępnienia dodatkowego interfejsu użytkownika w programie Outlook
+![Koncepcja hallwaya do uwsłaniania dodatkowego interfejsu użytkownika w programie Outlook](../../extensibility/ux-guidelines/media/0704-08_hallway.png "0704-08_Hallway")<br />Koncepcja hallwaya do uwsłaniania dodatkowego interfejsu użytkownika w programie Outlook
 
 ##### <a name="adaptive-ui"></a>Adaptacyjny interfejs użytkownika
-Wyświetlanie lub ukrywanie interfejsu użytkownika w oparciu o użycie lub samodzielne środowisko użytkownika jest innym sposobem przedprezentowania niezbędnego interfejsu użytkownika podczas ukrywania innych części. Nie jest to zalecane w programie Visual Studio, ponieważ algorytmy decydujące o pokazywania lub ukrywania interfejsu użytkownika mogą być trudne, a reguły będą zawsze błędne dla niektórych zestawów przypadków.
+Pokazywanie lub ukrywanie interfejsu użytkownika na podstawie użycia lub własnego doświadczenia użytkownika to inny sposób prezentowania niezbędnego interfejsu użytkownika przy ukrywaniu innych części. Nie jest to zalecane w Visual Studio, ponieważ algorytmy podejmowania decyzji o tym, kiedy pokazać lub ukryć interfejs użytkownika, mogą być trudne, a reguły zawsze będą nieprawidłowe w niektórych przypadkach.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a> Projektami
+## <a name="projects"></a><a name="BKMK_Projects"></a> Projektów
 
 ### <a name="projects-in-the-solution-explorer"></a>Projekty w Eksplorator rozwiązań
-Większość projektów jest klasyfikowana jako oparty na odwołaniach, opartych na katalogach lub mieszanych. Wszystkie trzy typy projektów są obsługiwane jednocześnie w Eksplorator rozwiązań. Katalog główny środowiska użytkownika w pracy z projektami odbywa się w tym oknie. Chociaż różne węzły projektu są projektami referencyjnymi, katalogowymi lub w trybie mieszanym, istnieje typowy wzorzec interakcji, który powinien zostać zastosowany jako punkt wyjścia przed rozbieżnością wzorców użytkownika specyficznych dla projektu.
+Większość projektów jest klasyfikowana jako projekty oparte na odwołaniach, oparte na katalogach lub mieszane. Wszystkie trzy typy projektów są obsługiwane jednocześnie w Eksplorator rozwiązań. W tym oknie znajduje się katalog główny środowiska użytkownika podczas pracy z projektami. Mimo że różne węzły projektu są projektami referencyjnymi, katalogami lub projektami w trybie mieszanym, istnieje wspólny wzorzec interakcji, który należy zastosować jako punkt początkowy przed rozbiciem na wzorce użytkownika specyficzne dla projektu.
 
-Projekty powinny zawsze:
+Projekty powinny być zawsze:
 
-- Obsługa możliwości dodawania folderów projektu do organizowania zawartości projektu
+- Obsługa możliwości dodawania folderów projektu w celu organizowania zawartości projektu
 
-- Utrzymywanie spójnego modelu na potrzeby trwałości projektu
+- Utrzymywanie spójnego modelu trwałości projektu
 
-Projekty powinny również obsługiwać spójne modele interakcji dla:
+Projekty powinny również utrzymywać spójne modele interakcji dla:
 
 - Usuwanie elementów projektu
 
@@ -476,150 +476,150 @@ Projekty powinny również obsługiwać spójne modele interakcji dla:
 
 - Operacje przeciągania i upuszczania
 
-### <a name="drag-and-drop-interaction-model"></a>Model interakcji przeciągnij i upuść
-Projekty zwykle klasyfikują się jako oparte na odwołaniach (w celu utrwalenia tylko odwołań do elementów projektu w magazynie), oparte na katalogach (z możliwością utrwalania tylko elementów projektu fizycznie przechowywanych w hierarchii projektu) lub mieszanego (z możliwością utrwalania odwołań lub elementów fizycznych). IDE uwzględnia wszystkie trzy typy projektów jednocześnie w **Eksplorator rozwiązań**.
+### <a name="drag-and-drop-interaction-model"></a>Model interakcji przeciągania i upuszczania
+Projekty zwykle klasyfikują się jako oparte na odwołaniach (mogą utrwalać tylko odwołania do elementów projektu w magazynie), oparte na katalogach (mogą utrwalać tylko elementy projektu fizycznie przechowywane w hierarchii projektu) lub mieszane (mogą utrwalać odwołania lub elementy fizyczne). Ide uwzględnia wszystkie trzy typy projektów jednocześnie w Eksplorator rozwiązań **.**
 
-W perspektywie typu "przeciągnij i upuść" należy zastosować następujące cechy do poszczególnych typów projektów w **Eksplorator rozwiązań**:
+Z perspektywy przeciągania i upuszczania następujące cechy powinny mieć zastosowanie do każdego typu projektu w **Eksplorator rozwiązań**:
 
-- **Projekt oparty na odwołaniach:** Najważniejszym punktem jest to, że projekt jest przeciągany wokół odwołania do elementu w magazynie. Gdy projekt oparty na odwołaniach działa jako źródło dla operacji przenoszenia, należy usunąć tylko odwołanie do tego elementu z projektu. Element nie powinien faktycznie zostać usunięty z dysku twardego. Gdy projekt oparty na odwołaniach działa jako element docelowy dla operacji przenoszenia (lub kopiowania), powinien dodać odwołanie do oryginalnego elementu źródłowego bez tworzenia prywatnej kopii elementu.
+- **Projekt oparty na odwołaniach:** Kluczowym punktem jest to, że projekt przeciąga odwołanie do elementu w magazynie. Gdy projekt oparty na odwołaniach działa jako źródło dla operacji przenoszenia, powinien usuwać tylko odwołanie do elementu z projektu. Element nie powinien być w rzeczywistości usunięty z dysku twardego. Gdy projekt oparty na odwołaniach działa jako element docelowy operacji przenoszenia (lub kopiowania), należy dodać odwołanie do oryginalnego elementu źródłowego bez tworzenia prywatnej kopii elementu.
 
-- **Projekt oparty na katalogu:** W punkcie przeciągania i upuszczania projekt jest przeciągany wokół elementu fizycznego, a nie do odwołania. Gdy projekt oparty na katalogu działa jako źródło dla operacji przenoszenia, powinien on zakończyć usuwanie elementu fizycznego z dysku twardego, a także usunąć go z projektu. Gdy projekt oparty na katalogu działa jako element docelowy dla operacji przenoszenia (lub kopiowania), powinien wykonać kopię elementu źródłowego w lokalizacji docelowej.
+- **Projekt oparty na katalogu:** Z punktu widzenia przeciągania i upuszczania projekt przeciąga element fizyczny, a nie odwołanie. Gdy projekt oparty na katalogu działa jako źródło dla operacji przenoszenia, powinien usuwać element fizyczny z dysku twardego, a także usuwać go z projektu. Gdy projekt oparty na katalogu działa jako element docelowy operacji przenoszenia (lub kopiowania), powinien wykonać kopię elementu źródłowego w swojej lokalizacji docelowej.
 
-- **Projekt mieszany:** W przypadku przeciągania i upuszczania punktu widzenia zachowanie tego typu projektu jest zależne od charakteru przeciąganego elementu (odwołanie do elementu w magazynie lub samego elementu). Powyższym zachowaniem dotyczącym odwołań i elementów fizycznych opisano powyżej.
+- **Projekt mieszany::** Z punktu widzenia przeciągania i upuszczania zachowanie tego typu projektu zależy od charakteru przeciąganego elementu (odwołania do elementu w magazynie lub samego elementu). Poprawne zachowanie odwołań i elementów fizycznych opisano powyżej.
 
-Jeśli w **Eksplorator rozwiązań** istniał tylko jeden typ projektu, operacje przeciągania i upuszczania byłyby proste. Ponieważ każdy system projektu ma możliwość zdefiniowania własnego zachowania przeciągania i upuszczania, należy przestrzegać pewnych wytycznych (w oparciu o zachowanie przy przeciąganiu i upuszczaniu w Eksploratorze Windows), aby zapewnić przewidywalne środowisko użytkownika:
+Gdyby w pliku był tylko jeden typ projektu **Eksplorator rozwiązań**, operacje przeciągania i upuszczania byłyby proste. Ponieważ każdy system projektu ma możliwość definiowania własnego zachowania przeciągania i upuszczania, należy przestrzegać pewnych wytycznych (na podstawie zachowania przeciągania i upuszczania w systemie Eksplorator Windows), aby zapewnić przewidywalne środowisko użytkownika:
 
-- Niezmodyfikowana operacja przeciągania w **Eksplorator rozwiązań** (gdy nie są wciśnięte klawisze CTRL ani Shift), należy wykonać operację przenoszenia.
+- Niezmodyfikowana operacja przeciągania w Eksplorator rozwiązań **(gdy** nie są wstrzymujące się klawisze Ctrl ani Shift) powinna spowodować operację przenoszenia.
 
-- Operacja Shift-przeciągnij również powinna powodować operację przenoszenia.
+- Operacja przeciągania na przesunięciach powinna również spowodować operację przenoszenia.
 
-- Operacja przeciągania Ctrl-przeciągnij powinna spowodować operację kopiowania.
+- Operacja przeciągania z naciśniętym klawiszem Ctrl powinna spowodować operację kopiowania.
 
-- Systemy projektów oparte na odwołaniach i mieszanych obsługują pojęcie dodawania linku (lub odwołania) do elementu źródłowego. Gdy te projekty są elementem docelowym operacji przeciągania i upuszczania (naciśnięcie **klawiszy Ctrl + Shift** jest wyłączone), powinno to skutkować odwołaniem do elementu dodawanego do projektu.
+- Systemy projektów opartych na odwołaniach i projektach mieszanych obsługują sposób dodawania linku (lub odwołania) do elementu źródłowego. Gdy te projekty są obiektem docelowym operacji przeciągania i upuszczania (gdy wciśnięty jest klawisz **Ctrl +Shift),** powinno to spowodować odwołanie do elementu dodawanego do projektu
 
-Nie wszystkie operacje przeciągania i upuszczania są rozsądne dla różnych kombinacji projektów opartych na odwołaniach, opartych na katalogach i mieszanych. W szczególności jest to problematyczne poudawać, aby zezwolić na operację przenoszenia między projektem źródłowym opartym na katalogu i projektem docelowym opartym na odwołaniach, ponieważ źródłowy projekt oparty na katalogu będzie musiał usunąć element źródłowy po zakończeniu przenoszenia. Docelowy projekt oparty na odwołaniach będzie następnie kończyć się odwołaniem do usuniętego elementu.
+Nie wszystkie operacje przeciągania i upuszczania są sensowne w przypadku kombinacji projektów opartych na odwołaniach, opartych na katalogach i mieszanych. W szczególności problematyczne jest udanie, że zezwala na operację przenoszenia między projektem źródłowym opartym na katalogu i projektem docelowym opartym na odwołaniach, ponieważ projekt źródłowy oparty na katalogu będzie musiał usunąć element źródłowy po zakończeniu przenoszenia. Następnie docelowy projekt oparty na odwołaniach będzie miał odwołanie do usuniętego elementu.
 
-Jest to również mylące poudawać, aby zezwolić na operację kopiowania między tymi typami projektów, ponieważ docelowy projekt oparty na odwołaniach nie powinien tworzyć niezależnej kopii elementu źródłowego. Podobnie naciśnięcie klawiszy Ctrl + Shift w projekcie docelowym opartym na katalogu nie powinno być dozwolone, ponieważ projekt oparty na katalogu nie może utrwalać odwołań. W przypadkach, gdy operacja przeciągania i upuszczania nie jest obsługiwana, IDE powinien nie zezwalać na upuszczanie i wyświetlanie przez użytkownika kursora No-Drop (pokazanego w tabeli wskaźnik poniżej).
+Mylące jest również udawanie, że zezwala na operację kopiowania między tymi typami projektów, ponieważ docelowy projekt oparty na odwołaniach nie powinien dawać niezależnej kopii elementu źródłowego. Podobnie przeciąganie Ctrl +Shift do projektu docelowego opartego na katalogu nie powinno być dozwolone, ponieważ projekt oparty na katalogu nie może utrwalić odwołań. W przypadkach, gdy operacja przeciągania i upuszczania nie jest obsługiwana, idee powinny nie zezwalać na upuszczanie i pokazywać użytkownikowi kursor bez upuszczania (pokazany w tabeli wskaźników poniżej).
 
-Aby poprawnie zaimplementować zachowanie przeciągania i upuszczania, projekt źródłowy przeciągnięcia musi przekazywać swój charakter do projektu docelowego. (Na przykład czy jest on oparty na odwołaniach lub w katalogu?) Te informacje są wskazywane przez format schowka oferowany przez źródło. Jako źródło operacji przeciągania (lub kopiowania schowka) projekt powinien oferować wartość `CF_VSREFPROJECTITEMS` lub `CF_VSSTGPROJECTITEMS` odpowiednio, w zależności od tego, czy projekt jest oparty na odwołaniach czy w katalogu. Oba te formaty mają tę samą zawartość danych, która jest podobna do formatu systemu Windows, `CF_HDROP` z wyjątkiem tych, które nie są nazwami plików, są podwójnie `NULL` zakończonymi listami `Projref` ciągów (jak to zostało zwrócone `IVsSolution::GetProjrefOfItem` lub w zależności od `::GetProjrefOfProject` potrzeb).
+Aby prawidłowo zaimplementować zachowanie przeciągania i upuszczania, projekt źródłowy przeciągania musi przekazać charakter do projektu docelowego. (Na przykład, czy jest on oparty na odwołaniach lub katalogach?) Te informacje są wskazywane przez format schowka, który jest oferowany przez źródło. Jako źródło operacji przeciągania (lub kopiowania schowka) projekt powinien oferować odpowiednio lub w zależności od tego, czy projekt jest oparty na odwołaniach, czy na `CF_VSREFPROJECTITEMS` `CF_VSSTGPROJECTITEMS` katalogach. Oba te formaty mają taką samą zawartość danych, co jest podobne do formatu systemu Windows z tą różnicą, że listy ciągów, zamiast nazw plików, są podwójnie zakończoną listą ciągów (zwracaną z lub zgodnie z `CF_HDROP` `NULL` `Projref` `IVsSolution::GetProjrefOfItem` `::GetProjrefOfProject` potrzebami).
 
-Jako obiekt docelowy operacji usuwania (lub wklejania schowka), projekt powinien akceptować zarówno, jak `CF_VSREFPROJECTITEMS` i `CF_VSSTGPROJECTITEMS` , choć dokładna obsługa operacji przeciągania i upuszczania różni się w zależności od charakteru projektu docelowego i projektu źródłowego. Projekt źródłowy deklaruje swój charakter, jeśli oferuje `CF_VSREFPROJECTITEMS` lub `CF_VSSTGPROJECTITEMS` . Obiekt docelowy porzucania rozumie swój własny charakter i w związku z tym ma wystarczające informacje, aby podejmować decyzje dotyczące tego, czy przeniesienie, kopiowanie lub łączenie ma zostać wykonane. Użytkownik modyfikuje także, które operacje przeciągania i upuszczania należy wykonać przez naciśnięcie klawiszy CTRL, Shift lub CTRL i Shift. Ważne jest, aby miejsce docelowe upuszczania prawidłowo wskazywało, która operacja zostanie wykonana z wyprzedzeniem w `DragEnter` `DragOver` metodzie i. **Eksplorator rozwiązań** automatycznie wie, czy projekt źródłowy i projekt docelowy są tego samego projektu.
+Jako element docelowy operacji upuszczania (lub wklejania schowka) projekt powinien akceptować zarówno opcje , jak i , chociaż dokładna obsługa operacji przeciągania i upuszczania różni się w zależności od charakteru projektu docelowego i projektu `CF_VSREFPROJECTITEMS` `CF_VSSTGPROJECTITEMS` źródłowego. Projekt źródłowy deklaruje swój charakter przez to, czy oferuje `CF_VSREFPROJECTITEMS` lub `CF_VSSTGPROJECTITEMS` . Cel dropu rozumie swój własny charakter i dlatego ma wystarczająco dużo informacji, aby podjąć decyzje dotyczące tego, czy należy wykonać przeniesienie, kopię lub link. Użytkownik modyfikuje również operację przeciągania i upuszczania, naciskając klawisze Ctrl, Shift lub Ctrl oraz Shift. Ważne jest, aby miejsce docelowe upuszczania prawidłowo wskazywało, która operacja zostanie wykonana z wyprzedzeniem w jej `DragEnter` metodach `DragOver` i . Projekt **Eksplorator rozwiązań** automatycznie wie, czy projekt źródłowy i projekt docelowy są tym samym projektem.
 
-Przeciąganie elementów projektu między wystąpieniami programu Visual Studio (na przykład z jednego wystąpienia devenv.exe na inny) nie jest obsługiwane. **Eksplorator rozwiązań** również wyłącza je bezpośrednio.
+Przeciąganie elementów projektu między wystąpieniami Visual Studio (na przykład z jednego wystąpienia devenv.exe do innego) nie jest obsługiwane. Ta **Eksplorator rozwiązań** również bezpośrednio to wyłącza.
 
-Użytkownik powinien zawsze być w stanie określić efekt operacji przeciągania i upuszczania, zaznaczając element, przeciągając go do lokalizacji docelowej i obserwując następujące wskaźniki myszy pojawiające się przed porzuceniem elementu:
+Użytkownik powinien zawsze mieć możliwość określenia wpływu operacji przeciągania i upuszczania, zaznaczając element, przeciągając go do lokalizacji docelowej i obserwując, który z następujących wskaźników myszy pojawia się przed usunięciem elementu:
 
 | Wskaźnik myszy | Polecenie | Opis |
 | :---: | --- | --- |
-| ![Ikona "Brak" myszy](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706 — 01_MouseNoDrop") | Brak porzucenia | Nie można porzucić elementu w określonej lokalizacji. |
-| ![Ikona "Copy" myszy](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706 — 02_MouseCopy") | Kopiuj | Element zostanie skopiowany do lokalizacji docelowej. |
-| ![Ikona "Przenieś" myszy](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 — 03_MouseMove") | Move | Element zostanie przeniesiony do lokalizacji docelowej. |
-| ![Ikona myszy "Dodaj odwołanie"](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 — 04_MouseAddRef") | Dodawanie odwołania | Odwołanie do wybranego elementu zostanie dodane do lokalizacji docelowej. |
+| ![Ikona myszy "brak upuszczania"](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706-01_MouseNoDrop") | Brak spadku | Nie można usunąć elementu do określonej lokalizacji. |
+| ![Ikona "kopiuj" myszy](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706-02_MouseCopy") | Kopiuj | Element zostanie skopiowany do lokalizacji docelowej. |
+| ![Ikona "przenieś" myszy](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706-03_MouseMove") | Move | Element zostanie przeniesiony do lokalizacji docelowej. |
+| ![Ikona "Dodaj odwołanie" myszy](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706-04_MouseAddRef") | Dodawanie odwołania | Odwołanie do wybranego elementu zostanie dodane do lokalizacji docelowej. |
 
 #### <a name="reference-based-projects"></a>Projekty oparte na odwołaniach
- Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów docelowych opartych na odwołaniach:
+ W poniższej tabeli podsumowano operacje przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane na podstawie charakteru elementu źródłowego i klawiszy modyfikujące naciśniętych dla projektów docelowych opartych na odwołaniach:
 
-| Modyfikator | Kategoria | Element źródłowy: odwołanie/łącze | Element źródłowy: fizyczny element lub system plików ( `CF_HDROP` ) |
+| Modyfikator | Kategoria | Element źródłowy: odwołanie/link | Element źródłowy: element fizyczny lub system plików ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
 | Brak modyfikatora | Akcja | Move | Link |
 | Brak modyfikatora | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
 | Brak modyfikatora | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
-| Brak modyfikatora | Wynik | `DROPEFFECT_MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Shift + przeciągnij | Akcja | Move | Brak porzucenia |
-| Shift + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Brak porzucenia |
-| Shift + przeciągnij | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Brak porzucenia |
-| Shift + przeciągnij | Wynik | `DROPEFFECT_MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Brak porzucenia |
-| Ctrl + przeciągnij | Akcja | Kopiuj | Brak porzucenia |
-| Ctrl + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Brak porzucenia |
-| Ctrl + przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Brak porzucenia |
-| Ctrl + przeciągnij | Wynik | `DROPEFFECT_COPY` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | Brak porzucenia |
-| Ctrl + Shift + przeciągnij | Akcja | Link | Link |
-| Ctrl + Shift + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
-| Ctrl + Shift + przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
-| Ctrl + Shift + przeciągnij | Wynik | `DROPEFFECT_LINK` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Ctrl + Shift + przeciągnij | Uwaga | Analogicznie jak zachowanie metodą "przeciągnij i upuść" dla skrótów w Eksploratorze Windows. ||
-| Wytnij/Wklej | Akcja | Move | Link |
-| Wytnij/Wklej | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
-| Wytnij/Wklej | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu|Zachowuje oryginalny element |
-| Wytnij/Wklej | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w oryginalnej lokalizacji w magazynie |
+| Brak modyfikatora | Wynik | `DROPEFFECT_MOVE` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie |
+| Shift + przeciąganie | Akcja | Move | Brak spadku |
+| Shift + przeciąganie | Cel | Dodaje odwołanie do oryginalnego elementu | Brak spadku |
+| Shift + przeciąganie | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Brak spadku |
+| Shift + przeciąganie | Wynik | `DROPEFFECT_MOVE` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | Brak spadku |
+| Ctrl+Przeciągnij | Akcja | Kopiuj | Brak spadku |
+| Ctrl+Przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Brak spadku |
+| Ctrl+Przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Brak spadku |
+| Ctrl+Przeciągnij | Wynik | `DROPEFFECT_COPY` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | Brak spadku |
+| Ctrl+Shift+Przeciągnij | Akcja | Link | Link |
+| Ctrl+Shift+Przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
+| Ctrl+Shift+Przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
+| Ctrl+Shift+Przeciągnij | Wynik | `DROPEFFECT_LINK` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_LINK` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie |
+| Ctrl+Shift+Przeciągnij | Uwaga | Takie samo jak zachowanie przeciągania i upuszczania dla skrótów w Eksplorator Windows. ||
+| Wycinanie/wklejanie | Akcja | Move | Link |
+| Wycinanie/wklejanie | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
+| Wycinanie/wklejanie | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu|Zachowuje oryginalny element |
+| Wycinanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w oryginalnej lokalizacji w magazynie |
 | Kopiowanie/wklejanie | Akcja | Kopiuj | Link |
 | Kopiowanie/wklejanie | Element źródłowy | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu |
 | Kopiowanie/wklejanie | Wynik | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
 | Kopiowanie/wklejanie | Akcja | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w oryginalnej lokalizacji w magazynie |
 
-#### <a name="directory-based-projects"></a>Projekty oparte na katalogu
-Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów docelowych opartych na katalogu:
+#### <a name="directory-based-projects"></a>Projekty oparte na katalogach
+W poniższej tabeli podsumowano operacje przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane na podstawie charakteru elementu źródłowego i naciśniętych klawiszy modyfikujące dla projektów docelowych opartych na katalogu:
 
-| Modyfikator | Kategoria | Element źródłowy: odwołanie/łącze | Element źródłowy: fizyczny element lub system plików ( `CF_HDROP` ) |
+| Modyfikator | Kategoria | Element źródłowy: odwołanie/link | Element źródłowy: element fizyczny lub system plików ( `CF_HDROP` ) |
 |-----------------|----------| - | - |
 | Brak modyfikatora | Akcja | Move | Move |
 | Brak modyfikatora | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
 | Brak modyfikatora | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa odwołanie do oryginalnego elementu |
-| Shift + przeciągnij | Akcja | Move | Move |
-| Shift + przeciągnij | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
-| Shift + przeciągnij | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
-| Shift + przeciągnij | Wynik | `DROPEFFECT_MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Ctrl + przeciągnij | Akcja | Kopiuj | Kopiuj |
-| Ctrl + przeciągnij | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
-| Ctrl + przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje odwołanie do oryginalnego elementu |
-| Ctrl + przeciągnij | Wynik | `DROPEFFECT_COPY` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_COPY` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Ctrl + Shift + przeciągnij | | Brak porzucenia | Brak porzucenia |
-| Wytnij/Wklej | Akcja | Move | Move |
-| Wytnij/Wklej | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
-| Wytnij/Wklej | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
-| Wytnij/Wklej | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element został usunięty z oryginalnej lokalizacji w magazynie |
+| Shift + przeciąganie | Akcja | Move | Move |
+| Shift + przeciąganie | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
+| Shift + przeciąganie | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
+| Shift + przeciąganie | Wynik | `DROPEFFECT_MOVE` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_MOVE` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie |
+| Ctrl+Przeciąganie | Akcja | Kopiuj | Kopiuj |
+| Ctrl+Przeciąganie | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
+| Ctrl+Przeciąganie | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje odwołanie do oryginalnego elementu |
+| Ctrl+Przeciąganie | Wynik | `DROPEFFECT_COPY` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_COPY` element jest zwracany jako akcja z elementu , a element `::Drop` pozostaje w oryginalnej lokalizacji w magazynie |
+| Ctrl+Shift+Przeciągnij | | Brak spadku | Brak spadku |
+| Wycinanie/wklejanie | Akcja | Move | Move |
+| Wycinanie/wklejanie | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
+| Wycinanie/wklejanie | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
+| Wycinanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element został usunięty z oryginalnej lokalizacji w magazynie |
 | Kopiowanie/wklejanie | Akcja | Kopiuj | Kopiuj |
 | Kopiowanie/wklejanie | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
 | Kopiowanie/wklejanie | Element źródłowy | Zachowuje oryginalny element | Zachowuje oryginalny element |
-| Kopiowanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w pierwotnej lokalizacji w magazynie |
+| Kopiowanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w oryginalnej lokalizacji w magazynie ins |
 
-#### <a name="mixed-target-projects"></a>Projekty mieszane dla obiektów docelowych
-Poniższa tabela zawiera podsumowanie operacji przeciągania i upuszczania (jak również Wycinanie/kopiowanie/wklejanie), które powinny być wykonywane na podstawie rodzaju elementu źródłowego i klawiszy modyfikujących naciśniętych dla projektów mieszanych:
+#### <a name="mixed-target-projects"></a>Mieszane projekty docelowe
+W poniższej tabeli podsumowano operacje przeciągania i upuszczania (a także wycinania/kopiowania/wklejania), które powinny być wykonywane na podstawie charakteru elementu źródłowego i klawiszy modyfikujące naciśniętych dla projektów mieszanych elementów docelowych:
 
-| Modyfikator | Kategoria | Element źródłowy: odwołanie/łącze | Element źródłowy: fizyczny element lub system plików ( `CF_HDROP` ) |
+| Modyfikator | Kategoria | Element źródłowy: odwołanie/link | Element źródłowy: element fizyczny lub system plików ( `CF_HDROP` ) |
 | --- | --- | --- | --- |
 | Brak modyfikatora | Akcja | Move | Move |
 | Brak modyfikatora | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
 | Brak modyfikatora | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa odwołanie do oryginalnego elementu |
-| Brak modyfikatora | Wynik | `DROPEFFECT_ MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracany jako akcja z `::Drop` i element zostanie usunięty z oryginalnej lokalizacji w magazynie |
-| Shift + przeciągnij | Akcja | Move | Move |
-| Shift + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
-| Shift + przeciągnij | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
-| Shift + przeciągnij | Wynik | `DROPEFFECT_ MOVE` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracany jako akcja z `::Drop` i element zostanie usunięty z oryginalnej lokalizacji w magazynie |
-| Ctrl + przeciągnij | Akcja | Kopiuj | Kopiuj |
-| Ctrl + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
-| Ctrl + przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
-| Ctrl + przeciągnij | Wynik | `DROPEFFECT_ COPY` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ COPY` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Ctrl + Shift + przeciągnij | Akcja | Link | Link |
-| Ctrl + Shift + przeciągnij | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu źródłowego |
-| Ctrl + Shift + przeciągnij | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
-| Ctrl + Shift + przeciągnij | Wynik | `DROPEFFECT_ LINK` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ LINK` jest zwracany jako akcja z `::Drop` i element pozostaje w oryginalnej lokalizacji w magazynie |
-| Wytnij/Wklej | Akcja | Move | Move |
-| Wytnij/Wklej | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
-| Wytnij/Wklej | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
-| Wytnij/Wklej | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element został usunięty z oryginalnej lokalizacji w magazynie |
+| Brak modyfikatora | Wynik | `DROPEFFECT_ MOVE` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracany jako akcja z , `::Drop` a element jest usuwany z oryginalnej lokalizacji w magazynie |
+| Shift + przeciąganie | Akcja | Move | Move |
+| Shift + przeciąganie | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
+| Shift + przeciąganie | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
+| Shift + przeciąganie | Wynik | `DROPEFFECT_ MOVE` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ MOVE` jest zwracany jako akcja z , `::Drop` a element jest usuwany z oryginalnej lokalizacji w magazynie |
+| Ctrl+Przeciągnięcie | Akcja | Kopiuj | Kopiuj |
+| Ctrl+Przeciągnięcie | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
+| Ctrl+Przeciągnięcie | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
+| Ctrl+Przeciągnięcie | Wynik | `DROPEFFECT_ COPY` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ COPY` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie |
+| Ctrl+Shift+Przeciąganie | Akcja | Link | Link |
+| Ctrl+Shift+Przeciąganie | Cel | Dodaje odwołanie do oryginalnego elementu | Dodaje odwołanie do oryginalnego elementu źródłowego |
+| Ctrl+Shift+Przeciąganie | Element źródłowy | Zachowuje odwołanie do oryginalnego elementu | Zachowuje oryginalny element |
+| Ctrl+Shift+Przeciąganie | Wynik | `DROPEFFECT_ LINK` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie | `DROPEFFECT_ LINK` element jest zwracany jako akcja z elementu `::Drop` , a element pozostaje w oryginalnej lokalizacji w magazynie |
+| Wycinanie/wklejanie | Akcja | Move | Move |
+| Wycinanie/wklejanie | Cel | Kopiuje element do lokalizacji docelowej | Kopiuje element do lokalizacji docelowej |
+| Wycinanie/wklejanie | Element źródłowy | Usuwa odwołanie do oryginalnego elementu | Usuwa element z oryginalnej lokalizacji |
+| Wycinanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element został usunięty z oryginalnej lokalizacji w magazynie |
 | Kopiowanie/wklejanie | Akcja | Kopiuj | Kopiuj |
 | Kopiowanie/wklejanie | Cel | Dodaje odwołanie do oryginalnego elementu | Kopiuje element do lokalizacji docelowej |
 | Kopiowanie/wklejanie | Element źródłowy | Zachowuje oryginalny element | Zachowuje oryginalny element |
 | Kopiowanie/wklejanie | Wynik | Element pozostaje w oryginalnej lokalizacji w magazynie | Element pozostaje w oryginalnej lokalizacji w magazynie |
 
-Te szczegóły należy wziąć pod uwagę podczas implementowania przeciągania w **Eksplorator rozwiązań**:
+Te szczegóły należy wziąć pod uwagę podczas implementowania przeciągania w Eksplorator rozwiązań **:**
 
-- Projektuj dla scenariuszy z wieloma wyborami.
+- Projektuj dla scenariuszy wielokrotnego wyboru.
 
-- Nazwy plików (Pełna ścieżka) muszą być unikatowe w projekcie docelowym lub upuszczenie nie powinno być dozwolone.
+- Nazwy plików (pełna ścieżka) muszą być unikatowe w projekcie docelowym. W przypadku tego typu upuszczanie nie powinno być dozwolone.
 
-- Nazwy folderów muszą być unikatowe (bez uwzględniania wielkości liter) na poziomie, w którym są usuwane.
+- Nazwy folderów muszą być unikatowe (bez uwzględniania liter) na poziomie, na którym są porzucane.
 
-- Istnieją różnice między plikami, które są otwarte lub zamknięte w czasie przeciągania (nie zostały wymienione w scenariuszach powyżej).
+- Istnieją różnice zachowania między plikami, które są otwarte lub zamknięte podczas przeciągania (nie o których wspomniano w powyższych scenariuszach).
 
-- Pliki najwyższego poziomu działają nieco inaczej niż pliki w folderach.
+- Pliki najwyższego poziomu zachowują się nieco inaczej niż pliki w folderach.
 
-Innym problemem należy wiedzieć, jak obsługiwać operacje przenoszenia na elementach, które mają otwarte projektanci lub redaktorzy. Oczekiwane zachowanie jest następujące (dotyczy wszystkich typów projektów):
+Innym problemem, o który należy pamiętać, jest sposób obsługi operacji przenoszenia elementów, które mają otwartych projektantów lub edytorów. Oczekiwane zachowanie jest następujące (dotyczy wszystkich typów projektów):
 
-1. Jeśli otwarty Edytor/projektant nie ma niezapisanych zmian, wówczas okno Edytor/Projektant powinno być zamknięte w trybie dyskretnym.
+1. Jeśli otwarty edytor/projektant nie ma żadnych niezapisanych zmian, okno edytora/projektanta powinno zostać zamknięte w trybie dyskretnym.
 
-2. Jeśli otwarty Edytor/Projektant ma niezapisane zmiany, Źródło przeciągania powinno oczekiwać na wystąpienie, a następnie poprosi użytkownika o zapisanie niezatwierdzonych zmian w otwartych dokumentach przed zamknięciem okna z monitem podobnym do poniższego:
+2. Jeśli otwarty edytor/projektant zawiera niezapisane zmiany, źródło przeciągania powinno czekać na upuszczenie, a następnie poprosić użytkownika o zapisanie niezatwierdzonych zmian w otwartych dokumentach przed zamknięciem okna z monitem podobnym do następującego:
 
     ```
     ==========================================================
@@ -629,8 +629,8 @@ Innym problemem należy wiedzieć, jak obsługiwać operacje przenoszenia na ele
     ==========================================================
     ```
 
-Umożliwia to użytkownikowi zapisanie pracy w toku przed wykonaniem kopii przez element docelowy. Dodano nową metodę `IVsHierarchyDropDataSource2::OnBeforeDropNotify` w celu włączenia tej obsługi.
+Daje to użytkownikowi możliwość zapisania pracy w toku, zanim obiekt docelowy tworzy jego kopie. Dodano `IVsHierarchyDropDataSource2::OnBeforeDropNotify` nową metodę w celu włączenia tej obsługi.
 
-Następnie obiekt docelowy skopiuje stan elementu w postaci magazynu (bez uwzględnienia niezapisanych zmian w edytorze, jeśli użytkownik wybrał opcję **nie**). Po ukończeniu kopiowania (w) dla elementu docelowego `IVsHierarchyDropDataSource::Drop` Źródło otrzymuje szansę wykonania operacji usuwania (w programie `IVsHierarchyDropDataSource::OnDropNotify` ).
+Element docelowy skopiuje stan elementu w stanie, w którym znajduje się w magazynie (bez niezapisanych zmian w edytorze, jeśli użytkownik wybrał **pozycję Nie).** Po zakończeniu kopiowania obiektu docelowego (w pliku ) źródło ma możliwość ukończenia części usuwania operacji `IVsHierarchyDropDataSource::Drop` przenoszenia (w `IVsHierarchyDropDataSource::OnDropNotify` pliku ).
 
-Wszystkie redaktorzy z niezapisanymi zmianami powinny pozostać otwarte. W przypadku dokumentów z niezapisanymi zmianami oznacza to, że część kopiowania operacji przenoszenia zostanie wykonana, ale część usuwania zostanie przerwana. W scenariuszu z wieloma wyborami, gdy użytkownik wybierze **nie**, te dokumenty z niezapisanymi zmianami nie powinny być zamykane ani usuwane, ale te bez niezapisanych zmian powinny być zamknięte i usunięte.
+Wszystkie edytory z niezapisanych zmian powinny być otwarte. W przypadku dokumentów z niezapisanych zmian oznacza to, że część kopiowania operacji przenoszenia zostanie wykonana, ale część usuwania zostanie przerwana. W scenariuszu wielokrotnego wyboru, gdy użytkownik wybierze pozycję **Nie,** dokumenty z niezapisaną zmianą nie powinny być zamykane ani usuwane, ale dokumenty bez niezapisanych zmian powinny być zamykane i usuwane.

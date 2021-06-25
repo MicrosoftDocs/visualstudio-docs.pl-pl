@@ -1,41 +1,41 @@
 ---
 title: Uruchamianie programu Visual Studio przy użyciu DTE
-description: Dowiedz się, jak uruchomić program Visual Studio przy użyciu DTE, aby zapewnić obsługę równoległych instalacji wersji głównych. Ten artykuł zawiera przykład kodu.
+description: Dowiedz się, jak uruchamiać Visual Studio dte w celu obsługi instalacji side-by-side wydań głównych. Ten artykuł zawiera przykładowy kod.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 253c7f106f1d139f694fea3d469385f200c84029
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060582"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903115"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Uruchamianie programu Visual Studio przy użyciu DTE
 
-Począwszy od programu Visual Studio 2017, mechanizm uruchamiania programu Visual Studio przy użyciu DTE jest inny do uruchamiania poprzednich wersji programu Visual Studio. Ta zmiana jest konieczna, ponieważ program Visual Studio 2017 lub nowszy obsługuje bezpośrednie instalacje głównych wersji (na przykład możesz mieć zainstalowaną wersję zapoznawczą i wydanie).
+Począwszy od Visual Studio 2017 r., mechanizm uruchamiania Visual Studio dte różni się od uruchamiania poprzednich wersji Visual Studio. Ta zmiana jest konieczna, ponieważ program Visual Studio 2017 i nowsze wersje obsługują instalacje obok siebie wydań głównych (na przykład obok siebie można zainstalować wersję zapoznawczą i wersję wydania).
 
-W pozostałej części tego artykułu przedstawiono kod, którego można użyć do uruchomienia programu Visual Studio 2019 przy użyciu DTE.
+W pozostałej części tego artykułu przedstawiono kod, który umożliwia uruchomienie programu Visual Studio 2019 r. przy użyciu dte.
 
 ## <a name="set-up-the-project"></a>Konfigurowanie projektu
 
-Aby wyświetlić kod uruchamiania w akcji, Utwórz projekt, wykonując następujące kroki.
+Aby zobaczyć, jak kod uruchamia się w akcji, utwórz projekt, korzystając z poniższych kroków.
 
-1. Utwórz nowy projekt **aplikacji konsoli** dla .NET Framework.
+1. Utwórz nowy projekt **aplikacji konsolowej** dla .NET Framework.
 
-2. Zainstaluj [Microsoft.VisualStudio.Setup.Configwersja. Pakiet NuGet międzyoperacyjności](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) i Dodaj odwołanie do zestawu.
+2. Zainstaluj [Microsoft.VisualStudio.Setup.Configadres URL. Przeplataj](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) pakiet NuGet i dodaj odwołanie do zestawu.
 
-3. Dodaj odwołanie do EnvDTE.
+3. Dodaj odwołanie do envDTE.
 
-4. Wklej [przykładowy kod](#example-code) znajdujący się poniżej w pliku *program. cs* .
+4. Wklej [przykładowy kod](#example-code) do pliku *Program.cs.*
 
-5. Naciśnij klawisz **F5** , aby uruchomić program. Przed zakończeniem działania programu powinien zostać otwarty program Visual Studio 2019.
+5. Naciśnij **klawisz F5,** aby uruchomić program. Przed zamknięciem Visual Studio 2019 r. powinna zostać otwarta.
 
 ## <a name="example-code"></a>Przykładowy kod
 

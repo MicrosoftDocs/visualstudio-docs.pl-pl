@@ -1,8 +1,8 @@
 ---
 description: Zadanie zostało ukończone z powodu nieobsługiwanego wyjątku.
-title: TASK_STATE_FAULTED pole | Microsoft Docs
+title: TASK_STATE_FAULTED pola | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01c222686ab2c03acc05dcd08beabd305119300
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0a3e1bf4fe6a95bd55cf366d1f5b8f56d7ea9c05
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079257"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902842"
 ---
-# <a name="task_state_faulted-field"></a>Pole TASK_STATE_FAULTED
+# <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED pola
 Zadanie zostało ukończone z powodu nieobsługiwanego wyjątku.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego członka z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,7 +34,7 @@ Zadanie zostało ukończone z powodu nieobsługiwanego wyjątku.
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca wartość <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,9 +1,9 @@
 ---
-title: Stałe modelu COM w kodzie zarządzanym | Microsoft Docs
-description: Dowiedz się więcej na temat zarządzanej struktury pakietów, co sprawia, że niektóre standardowe stałe modelu COM są dostępne dla kodu zarządzanego.
+title: Stałe COM w kodzie zarządzanym | Microsoft Docs
+description: Dowiedz się więcej na temat struktury pakietów zarządzanych, która udostępnia niektóre standardowe stałe COM kodowi zarządzanemu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
@@ -12,17 +12,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089735"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904324"
 ---
-# <a name="com-constants-in-managed-code"></a>Stałe modelu COM w kodzie zarządzanym
-Struktura pakietu zarządzanego (MPF) udostępnia kilka standardowych stałych modelu COM dostępnych w kodzie zarządzanym. Te stałe są wymienione poniżej jako odwołanie.
+# <a name="com-constants-in-managed-code"></a>Stałe COM w kodzie zarządzanym
+Program Managed Package Framework (MPF) udostępnia niektóre standardowe stałe COM dla kodu zarządzanego. Te stałe są wymienione poniżej, aby się do nich odwoływać.
 
-## <a name="boolean-hresult-values"></a>Logiczne wartości HRESULT
+## <a name="boolean-hresult-values"></a>Wartości logiczne HRESULT
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>

@@ -1,9 +1,9 @@
 ---
 title: Składniki debugera | Microsoft Docs
-description: Dowiedz się więcej o elementach, które tworzą sesję debugowania, zarządzaną przez debuger programu Visual Studio, zaimplementowaną jako pakietu VSPackage.
+description: Dowiedz się więcej o elementach, które są sesją debugowania, która jest zarządzana przez debuger Visual Studio wdrożony jako pakiet VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Visual Studio], components
 - components [Visual Studio SDK], debugging
@@ -14,55 +14,55 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c558d20d24acd65ece4c4df43eb8f474c20447
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c246bc00ee4f6fcead8404b3174da39f7b5ca2d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094955"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903986"
 ---
 # <a name="debugger-components"></a>Składniki debugera
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuger jest zaimplementowany jako pakietu VSPackage i zarządza całą sesją debugowania. Sesja debugowania obejmuje następujące elementy:
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuger jest implementowana jako pakiet VSPackage i zarządza całą sesją debugowania. Sesja debugowania składa się z następujących elementów:
 
-- **Pakiet debugowania:** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuger zapewnia ten sam interfejs użytkownika niezależnie od tego, co jest debugowane.
+- **Pakiet debugowania:** Debuger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia ten sam interfejs użytkownika niezależnie od tego, co jest debugowane.
 
-- **Menedżer debugowania sesji (SDM):** Zapewnia spójny interfejs programistyczny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugera służący do zarządzania różnymi aparatami debugowania. Jest zaimplementowany przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+- **Menedżer debugowania sesji (SDM):** Zapewnia spójny interfejs programowy debugera do zarządzania różnymi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aparatami debugowania. Jest on implementowany [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez .
 
-- **Menedżer debugowania procesów (PDM):** Zarządza, dla wszystkich uruchomionych wystąpień programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , listę wszystkich programów, które mogą być lub są debugowane. Jest zaimplementowany przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+- **Menedżer debugowania procesów (PDM):** Zarządza dla wszystkich uruchomionych wystąpień programu listą wszystkich programów, które mogą być lub [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są debugowane. Jest on implementowany [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez .
 
-- **Aparat debugowania (de):** Jest odpowiedzialny za monitorowanie debugowanego programu, komunikowanie się stanu uruchomionego programu z modelem SDM i PDM oraz współdziałanie z programem Expression ewaluatora i dostawcą symboli w celu zapewnienia analiz w czasie rzeczywistym stanu pamięci i zmiennych programu. Jest ona implementowana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program (dla obsługiwanych języków) i dostawców innych firm, którzy chcą obsługiwać własny czas wykonywania.
+- **Aparat debugowania (DE):** Odpowiada za monitorowanie debugowanych programów, przekazywanie informacji o stanie uruchomionego programu do programu SDM i pdm oraz interakcję z ewaluatorem wyrażeń i dostawcą symboli w celu zapewnienia analizy stanu pamięci i zmiennych programu w czasie rzeczywistym. Jest on implementowany przez (w przypadku języków, które obsługuje) i innych dostawców, którzy chcą obsługiwać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] własny czas działania.
 
-- **Ewaluatora wyrażeń (EE):** Zapewnia obsługę dynamicznego oceniania zmiennych i wyrażeń dostarczonych przez użytkownika, gdy program został zatrzymany w określonym punkcie. Jest ona implementowana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program (dla obsługiwanych języków) i dostawców innych firm, którzy chcą obsługiwać własne języki.
+- **Ewaluator wyrażeń (EE):** Zapewnia obsługę dynamicznego oceniania zmiennych i wyrażeń dostarczonych przez użytkownika, gdy program został zatrzymany w określonym punkcie. Jest on implementowany przez (w przypadku języków, które obsługuje) i innych dostawców, którzy chcą obsługiwać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] własne języki.
 
-- **Dostawca symboli (SP):** Nazywana również obsługą symboli, mapuje symbole debugowania programu do uruchomionego wystąpienia programu, aby można było uzyskać zrozumiałe informacje (takie jak debugowanie na poziomie kodu i obliczanie wyrażeń). Jest implementowana przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] program (dla symboli środowiska uruchomieniowego języka wspólnego [CLR] i format pliku symboli programu [PDB]) oraz dostawców innych firm, którzy posiadają zastrzeżoną metodę przechowywania informacji o debugowaniu.
+- **Dostawca symboli:** Nazywany również programem obsługi symboli mapuje symbole debugowania programu na uruchomione wystąpienie programu, aby można było uzyskać istotne informacje (takie jak debugowanie na poziomie kodu źródłowego i ocena wyrażeń). Jest implementowany przez program (dla symboli środowiska uruchomieniowego języka wspólnego [CLR] i format pliku symboli DataBase programu [PDB]) oraz przez innych dostawców, którzy mają własną zastrzeżoną metodę przechowywania informacji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania.
 
-  Na poniższym diagramie przedstawiono relację między tymi elementami debugera programu Visual Studio.
+  Na poniższym diagramie przedstawiono relację między tymi elementami Visual Studio debugowania.
 
-  ![Debugowanie składników — przegląd](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
+  ![Omówienie składników debugowania](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Debuguj pakiet](../../extensibility/debugger/debug-package.md) Omawia pakiet debugowania, który działa w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoce i obsługuje cały interfejs użytkownika.
+ [Pakiet debugowania](../../extensibility/debugger/debug-package.md) W tym artykule omówiono pakiet debugowania, który jest uruchamiany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] powłoki i obsługuje cały interfejs użytkownika.
 
- [Menedżer debugowania procesów](../../extensibility/debugger/process-debug-manager.md) Zawiera omówienie funkcji PDM, które jest menedżerem procesów, które mogą być debugowane.
+ [Menedżer debugowania procesów](../../extensibility/debugger/process-debug-manager.md) Zawiera omówienie funkcji pdm, który jest menedżerem procesów, które można debugować.
 
- [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md) Definiuje model SDM, który zapewnia ujednolicony widok sesji debugowania do IDE. Model SDM zarządza DE.
+ [Menedżer debugowania sesji](../../extensibility/debugger/session-debug-manager.md) Definiuje SDM, który zapewnia ujednolicony widok sesji debugowania środowiska IDE. SdM zarządza DE.
 
- [Aparat debugowania](../../extensibility/debugger/debug-engine.md) Dokumentuje usługi debugowania, które zawiera.
+ [Aparat debugowania](../../extensibility/debugger/debug-engine.md) Dokumentuje usługi debugowania, które de zapewnia.
 
- [Tryby operacyjne](../../extensibility/debugger/operational-modes.md) Zawiera omówienie trzech trybów, w których środowisko IDE może działać: tryb projektowania, tryb uruchamiania i tryb przerwania. Omówiono również mechanizmy przejściowe.
+ [Tryby operacyjne](../../extensibility/debugger/operational-modes.md) Zawiera omówienie trzech trybów, w których może działać środowiska IDE: tryb projektowania, tryb uruchamiania i tryb przerwania. Omówiono również mechanizmy przejścia.
 
- [Ewaluatora wyrażeń](../../extensibility/debugger/expression-evaluator.md) Wyjaśnia przeznaczenie EE w czasie wykonywania.
+ [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md) Wyjaśnia cel EE w czasie rzeczywistym.
 
- [Dostawca symboli](../../extensibility/debugger/symbol-provider.md) W tym artykule omówiono, w jaki sposób, w trakcie implementacji, dostawca symboli oblicza zmienne i wyrażenia.
+ [Dostawca symboli](../../extensibility/debugger/symbol-provider.md) W tym artykule omówiono, jak podczas implementacji dostawca symboli ocenia zmienne i wyrażenia.
 
- [Wizualizator typów i Podgląd niestandardowy](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) W tym artykule omówiono wizualizację typu i Podgląd niestandardową, a także rolę, jaką ewaluatora wyrażeń odgrywa w obsłudze obu tych elementów.
+ [Wizualizator typów i przeglądarka niestandardowa](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Omówienie wizualizatora typów i przeglądarki niestandardowej oraz roli, jaką odgrywa ewaluator wyrażeń w wspieraniu obu typów.
 
-## <a name="related-sections"></a>Sekcje pokrewne
- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md) Opisuje główne koncepcje dotyczące architektury debugowania.
+## <a name="related-sections"></a>Powiązane sekcje
+ [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md) Opisuje główne pojęcia dotyczące architektury debugowania.
 
- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśnia, jak działa w ramach kodu, dokumentacji i kontekstów oceny wyrażenia. Opisuje dla każdego z trzech kontekstów, lokalizację, pozycję lub ocenę, która jest dla niego odpowiednia.
+ [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśnia, jak de działa jednocześnie w kodzie, dokumentacji i kontekstach oceny wyrażeń. Opisuje dla każdego z trzech kontekstów odpowiednią lokalizację, pozycję lub ocenę.
 
- [Debuguj zadania](../../extensibility/debugger/debugging-tasks.md) Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md) Zawiera linki do różnych zadań debugowania, takich jak uruchamianie programu i ocenianie wyrażeń.
 
 ## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

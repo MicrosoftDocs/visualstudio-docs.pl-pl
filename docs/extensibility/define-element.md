@@ -1,9 +1,9 @@
 ---
-title: Zdefiniuj element | Microsoft Docs
-description: Element define definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe.
+title: Definiowanie elementu | Microsoft Docs
+description: Zdefiniuj element definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a8ee40205cafcaff29399ead4036374f798abf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 409621410db727f933e41bae894f125dc877b4c2
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082273"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898048"
 ---
-# <a name="define-element"></a>Zdefiniuj element
-Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz również [element Symbols](../extensibility/symbols-element.md).
+# <a name="define-element"></a>Define, element
+Definiuje parę nazwa symbolu i wartość. Ten symbol może być oceniany przez atrybuty warunkowe. Aby uzyskać więcej informacji, zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md). Zobacz też [element Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,9 +36,9 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|name|Wymagane. Nazwa symbolu:<br /><br /> Nazwa = "tryb"|
-|wartość|Wymagane. Wartość symbolu:<br /><br /> wartość = "Standardowa"|
-|Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Wymagane. Nazwa symbolu:<br /><br /> name="Mode"|
+|wartość|Wymagane. Wartość symbolu:<br /><br /> value="Standardowa"|
+|Warunek|Opcjonalny. Aby uzyskać więcej informacji, zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -47,7 +47,7 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia, które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy reprezentujące polecenia, które pakiet VSPackage zapewnia zintegrowanemu środowisku projektowemu (IDE). Na przykład elementy menu, menu, paski narzędzi i pola kombi.|
 
 ## <a name="example"></a>Przykład
 
@@ -57,4 +57,4 @@ Definiuje nazwę symbolu i parę wartości. Ten symbol może być oceniany przez
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

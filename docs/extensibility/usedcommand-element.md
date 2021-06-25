@@ -1,9 +1,9 @@
 ---
-title: UsedCommand — element | Microsoft Docs
-description: Element UsedCommand umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w innym pliku. vsct.
+title: UsedCommand, element | Microsoft Docs
+description: Element UsedCommand umożliwia pakietowi VSPackage dostęp do polecenia zdefiniowanego w innym pliku vsct.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9d120353b9d6191bfcaae38151eb970ab1071b99
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060227"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903050"
 ---
 # <a name="usedcommand-element"></a>UsedCommand, element
-Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w innym pliku. vsct. Na przykład jeśli pakietu VSPackage używa polecenia **kopiowania** standardowego, które jest zdefiniowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powłokę, można dodać polecenie do menu lub paska narzędzi bez jego ponownego wdrożenia.
+Umożliwia pakietowi VSPackage dostęp do polecenia zdefiniowanego w innym pliku vsct. Jeśli na przykład pakiet VSPackage używa standardowego polecenia **Kopiowania** zdefiniowanego przez powłokę, możesz dodać polecenie do menu lub paska narzędzi bez jego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ponownego implementowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,9 +36,9 @@ Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w in
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagane. Identyfikator GUID pary identyfikatora identyfikatora GUID, który identyfikuje polecenie.|
-|identyfikator|Wymagane. Identyfikator pary identyfikatorów identyfikatora GUID, który identyfikuje polecenie.|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagane. Identyfikator GUID pary identyfikatorów GUID, który identyfikuje polecenie.|
+|identyfikator|Wymagane. Identyfikator pary identyfikatorów GUID, który identyfikuje polecenie.|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -50,10 +50,10 @@ Umożliwia pakietu VSPackage dostęp do polecenia, które jest zdefiniowane w in
 
 |Element|Opis|
 |-------------|-----------------|
-|[UsedCommands, element](../extensibility/usedcommands-element.md)|Grupuje elementy UsedCommand i inne grupy UsedCommands.|
+|[UsedCommands, element](../extensibility/usedcommands-element.md)|Grupy UżywaneGrupygrupy i inne używaneGrupy używanegrupy.|
 
 ## <a name="remarks"></a>Uwagi
- Dodając polecenie do `<UsedCommands>` elementu, pakietu VSPackage informuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] środowisko, że pakietu VSPackage wymaga polecenia. Należy dodać `<UsedCommand>` element dla każdego polecenia wymaganego przez pakiet, które mogą nie być dołączone do wszystkich wersji i konfiguracji programu Visual Studio. Na przykład jeśli pakiet wywołuje polecenie, które jest specyficzne dla Visual C++, polecenie nie będzie dostępne dla użytkowników programu Visual Web Developer, chyba że zostanie dołączony `<UsedCommand>` element dla polecenia.
+ Dodając polecenie do `<UsedCommands>` elementu , pakiet VSPackage informuje środowisko, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pakiet VSPackage wymaga polecenia . Należy dodać element dla dowolnego polecenia wymaganego przez pakiet, który może nie być uwzględniony we wszystkich wersjach i konfiguracjach `<UsedCommand>` Visual Studio. Na przykład jeśli pakiet wywołuje polecenie specyficzne dla Visual C++, polecenie nie będzie dostępne dla użytkowników programu Visual Web Developer, chyba że dołączyć `<UsedCommand>` element dla polecenia.
 
 ## <a name="example"></a>Przykład
 

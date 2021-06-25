@@ -1,9 +1,9 @@
 ---
-title: IntelliSenseHostFlags | Microsoft Docs
-description: Wyliczenie IntelliSenseHostFlags określa flagi hosta IntelliSense. W tym artykule opisano wartości wyliczeniowe.
+title: IntelliSenseHostFlags — | Microsoft Docs
+description: Wyliczenie IntelliSenseHostFlags określa flagi hosta IntelliSense. W tym artykule opisano wartości wyli roku.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IntellisenseHostFlags
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a3911670a10710ad6ae5cd6496fb76af6c27bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 33345f86c69d0faeaa5863534e21eca5ecc176cc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079140"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902621"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Określa flagi hosta IntelliSense.
@@ -42,14 +42,14 @@ enum IntellisenseHostFlags
 
 |Elementy członkowskie|Opis|
 |-------------|-----------------|
-|`IHF_READONLYCONTEXT`|Bufor kontekstu jest tylko do odczytu.|
-|`IHF_NOSEPARATESUBJECT`|Brak tekstu podmiotu. Bufor kontekstu zawiera funkcję IntelliSense-Target (oznacza `!IHF_READONLYCONTEXT` ).|
-|`IHF_SINGLELINESUBJECT`|Tekst tematu nie jest obsługiwany przez wiele wierszy.|
-|`IHF_FORCECOMMITTOCONTEXT`|Analogicznie jak `CanCommitIntoReadOnlyBuffer` .|
+|`IHF_READONLYCONTEXT`|Bufor kontekstowy jest tylko do odczytu.|
+|`IHF_NOSEPARATESUBJECT`|Brak tekstu tematu. Bufor kontekstowy zawiera element docelowy IntelliSense (oznacza `!IHF_READONLYCONTEXT` ).|
+|`IHF_SINGLELINESUBJECT`|Tekst tematu nie jest w stanie wielu wierszach.|
+|`IHF_FORCECOMMITTOCONTEXT`|Tak samo jak w przypadku . `CanCommitIntoReadOnlyBuffer`|
 |`IHF_OVERTYPE`|Edytowanie (w temacie lub kontekście) powinno odbywać się w trybie zastępowania.|
 
 ## <a name="requirements"></a>Wymagania
- SingleFileeditor. idl
+ SingleFileeditor.idl
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

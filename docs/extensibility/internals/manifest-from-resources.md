@@ -1,73 +1,73 @@
 ---
 title: Manifest from Resources | Microsoft Docs
-description: Dowiedz się, jak za pomocą narzędzia Manifest from Resources dodawać pliki PNG lub XAML do pliku imagemanifest do użycia z usługą obrazów programu Visual Studio.
+description: Dowiedz się, jak używać narzędzia Manifest from Resources do dodawania plików .png lub XAML do pliku imagemanifest do użycia z usługą Visual Studio Image Service.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f69a46362b3076025a63625adb1ee4a478622259
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095176"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903181"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
-Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę zasobów obrazów (plików PNG lub XAML) i generuje plik. imagemanifest, który umożliwia korzystanie z tych obrazów w usłudze obrazów programu Visual Studio. Ponadto to narzędzie może służyć do dodawania obrazów do istniejącej imagemanifest. To narzędzie jest przydatne do dodawania obsługi dużych rozdzielczości DPI i dla obrazów do rozszerzenia programu Visual Studio. Wygenerowany plik imagemanifest powinien być dołączony do programu i wdrożony jako część rozszerzenia programu Visual Studio (VSIX).
+Narzędzie Manifest from Resources to aplikacja konsolowa, która pobiera listę zasobów obrazu (pliki .png lub xaml) i generuje plik .imagemanifest, który umożliwia korzystanie z tych obrazów w usłudze Visual Studio Image Service. Ponadto to narzędzie może służyć do dodawania obrazów do istniejącego pliku imagemanifest. To narzędzie jest przydatne do dodawania obsługi wysokiej rozdzielczości DPI i obsługi Visual Studio obrazów. Wygenerowany plik .imagemanifest powinien zostać uwzględniony i wdrożony w ramach rozszerzenia Visual Studio (vsix).
 
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia
  **Składnia**
 
- ManifestFromResources/Resources: \<Dir1> ; \<Img1> /Assembly: \<AssemblyName>\<Optional Args>
+ ManifestFromResources /resources: \<Dir1> ; \<Img1> /assembly: \<AssemblyName>\<Optional Args>
 
  **Argumenty**
 
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|
 |-|-|-|
-|/resources|Rozdzielana średnikami lista obrazów lub katalogów. Ta lista powinna zawsze zawierać pełną listę obrazów, które będą znajdować się w manifeście. Jeśli podano tylko częściową listę, wpisy, które nie zostały uwzględnione, zostaną utracone.<br /><br /> Jeśli dany plik zasobów jest paskiem obrazu, narzędzie podzieli je na osobne obrazy przed dodaniem każdego podobrazu do manifestu.<br /><br /> Jeśli obraz jest plikiem PNG, zalecamy formatowanie nazwy podobnej do tego, aby narzędzie mogło wypełnić odpowiednie atrybuty obrazu: \<Name> .. \<Width> \<Height> . Format.|Wymagane|
-|/Assembly|Nazwa zarządzanego zestawu (bez rozszerzenia) lub ścieżka środowiska uruchomieniowego zestawu natywnego, który hostuje zasoby (względem lokalizacji środowiska uruchomieniowego manifestu).|Wymagane|
-|/manifest|Nazwa, która ma zostać nadana wygenerowanemu plikowi. imagemanifest. Może również zawierać ścieżkę bezwzględną lub względną, aby utworzyć plik w innej lokalizacji. Nazwa domyślna jest zgodna z nazwą zestawu.<br /><br /> Wartość domyślna: \<Current Directory> \\<Assembly \> . imagemanifest|Opcjonalne|
-|/guidName|Nazwa, która ma zostać nadana symbolowi GUID dla wszystkich obrazów w wygenerowanym manifeście.<br /><br /> Wartość domyślna: AssetsGuid|Opcjonalne|
-|/rootPath|Ścieżka katalogu głównego, która musi zostać usunięta przed utworzeniem zarządzanych identyfikatorów URI zasobów. (Ta flaga ma pomóc w przypadkach, w których narzędzie pobiera względną ścieżkę identyfikatora URI, powodując niepowodzenie ładowania zasobów).<br /><br /> Wartooć \<Current Directory>|Opcjonalne|
-|/recursive|Ustawienie tej flagi nakazuje narzędziu cykliczne przeszukiwanie wszelkich katalogów w argumencie/Resources. Pominięcie tej flagi spowoduje przeszukanie katalogów tylko na najwyższym poziomie.|Opcjonalne|
-|/isNative|Ustaw tę flagę, gdy argument zestawu jest ścieżką dla natywnego zestawu. Pomiń tę flagę, gdy argument zestawu jest nazwą zarządzanego zestawu. (Zobacz sekcję Uwagi, aby uzyskać dodatkowe informacje na temat tej flagi).|Opcjonalne|
-|/newGuids|Ustawienie tej flagi nakazuje narzędziu utworzenie nowej wartości symbolu GUID obrazów zamiast scalanie jednego z istniejących manifestów.|Opcjonalne|
-|/newIds|Ustawienie tej flagi nakazuje narzędziu tworzenie nowych wartości symboli identyfikatora dla każdego obrazu zamiast scalać wartości z istniejącego manifestu.|Opcjonalne|
-|/noLogo|Ustawienie tej flagi uniemożliwia drukowanie informacji o produkcie i prawach autorskich.|Opcjonalne|
-|/?|Drukuj informacje pomocy.|Opcjonalne|
-|/help|Drukuj informacje pomocy.|Opcjonalne|
+|/resources|Rozdzielana średnikami lista obrazów lub katalogów. Ta lista powinna zawsze zawierać pełną listę obrazów, które będą się znajdowały w manifeście. Jeśli zostanie podana tylko część listy, wpisy, które nie zostaną uwzględnione, zostaną utracone.<br /><br /> Jeśli dany plik zasobu jest paskiem obrazu, narzędzie podzieli go na oddzielne obrazy przed dodaniem każdego obrazu podrzędnego do manifestu.<br /><br /> Jeśli obraz jest plikiem .png, zalecamy sformatowanie nazwy w ten sposób, aby narzędzie wypełniało odpowiednie atrybuty obrazu: \<Name> . \<Width> . \<Height>.png.|Wymagane|
+|/assembly|Nazwa zarządzanego zestawu (bez rozszerzenia) lub ścieżka środowiska uruchomieniowego zestawu natywnego, który hostuje zasoby (względem lokalizacji środowiska uruchomieniowego manifestu).|Wymagane|
+|/manifest|Nazwa, która ma być nadana wygenerowanemu plikowi .imagemanifest. Może to również zawierać ścieżkę bezwzględną lub względną, aby utworzyć plik w innej lokalizacji. Nazwa domyślna odpowiada nazwie zestawu.<br /><br /> Ustawienie domyślne: \<Current Directory> \\<assembly \> .imagemanifest|Opcjonalne|
+|/guidName|Nazwa, która ma być nadaj symbolowi identyfikatora GUID dla wszystkich obrazów w wygenerowanym manifeście.<br /><br /> Ustawienie domyślne: AssetsGuid|Opcjonalne|
+|/rootPath|Ścieżka główna, którą należy wyłączyć przed utworzeniem zarządzanych URI zasobów. (Ta flaga ma na celu pomoc w przypadkach, w których narzędzie pobiera nieprawidłową ścieżkę względnego URI, powodując niepowodzenie ładowania zasobów).<br /><br /> Domyślny: \<Current Directory>|Opcjonalne|
+|/rekursywny|Ustawienie tej flagi nakazuje narzędziu cykliczne przeszukiwanie wszystkich katalogów w argumentze /resources. Pominięcie tej flagi spowoduje wyszukiwanie katalogów tylko na najwyższym poziomie.|Opcjonalne|
+|/isNative|Ustaw tę flagę, gdy argument zestawu jest ścieżką dla zestawu natywnego. Pomiń tę flagę, gdy argument zestawu jest nazwą zarządzanego zestawu. (Aby uzyskać dodatkowe informacje na temat tej flagi, zobacz sekcję Uwagi).|Opcjonalne|
+|/newGuids|Ustawienie tej flagi nakazuje narzędziu utworzenie nowej wartości dla symbolu identyfikatora GUID obrazów zamiast scalania tej wartości z istniejącego manifestu.|Opcjonalne|
+|/newIds|Ustawienie tej flagi nakazuje narzędziu utworzenie nowych wartości symboli identyfikatora dla każdego obrazu zamiast scalania wartości z istniejącego manifestu.|Opcjonalne|
+|/noLogo|Ustawienie tej flagi zatrzymuje drukowanie informacji o produkcie i prawach autorskich.|Opcjonalne|
+|/?|Wydrukuj informacje o Pomocy.|Opcjonalne|
+|/help|Wydrukuj informacje o Pomocy.|Opcjonalne|
 
  **Przykłady**
 
-- ManifestFromResources/Resources: D:\Images/Assembly: My. Assembly. Name/isNative
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
 
-- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/Assembly: My. Assembly. Name/manifest: MyImageManifest. imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest
 
-- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/Assembly: My. Assembly. Name/guidName: Moje obrazy/newGuids/newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Uwagi
 
-- Narzędzie obsługuje tylko pliki PNG i XAML. Wszystkie inne typy obrazów lub plików zostaną zignorowane. Jest generowane ostrzeżenie dla wszystkich nieobsługiwanych typów podczas analizowania zasobów. Jeśli nie zostaną znalezione żadne obsługiwane obrazy, gdy narzędzie zakończy Analizowanie zasobów, zostanie wygenerowany błąd
+- Narzędzie obsługuje tylko pliki .png i xaml. Wszystkie inne typy plików lub obrazów zostaną zignorowane. Ostrzeżenie jest generowane dla wszystkich nieobsługiwanych typów napotkanych podczas analizowania zasobów. Jeśli po zakończeniu analizowania zasobów przez narzędzie nie zostaną znalezione żadne obsługiwane obrazy, zostanie wygenerowany błąd
 
-- Zgodnie z proponowanym formatem obrazów PNG narzędzie ustawi rozmiar/wartość wymiaru dla pliku PNG na rozmiar określony w formacie, nawet jeśli różni się od rzeczywistego rozmiaru obrazu.
+- Zgodnie z sugerowanym formatem obrazów .png narzędzie ustawi wartość rozmiaru/wymiaru dla obrazu .png na rozmiar określony w formacie, nawet jeśli różni się od rzeczywistego rozmiaru obrazu.
 
-- Format szerokość/wysokość można pominąć dla obrazów PNG, ale narzędzie odczytaje rzeczywistą szerokość/wysokość obrazu i użyje ich dla rozmiaru/wartości obrazu.
+- Format szerokości/wysokości można pominąć w przypadku obrazów .png, ale narzędzie odczyta rzeczywistą szerokość/wysokość obrazu i użyje ich dla wartości rozmiaru/wymiaru obrazu.
 
-- Uruchomienie tego narzędzia na tym samym pasku obrazu wiele razy dla tego samego pliku. imagemanifest spowoduje powstanie zduplikowanych wpisów manifestu, ponieważ narzędzie próbuje podzielić obraz na obrazy autonomiczne i dodać je do istniejącego manifestu.
+- Wielokrotne uruchomienie tego narzędzia na tym samym pasku obrazu dla tego samego pliku imagemanifest spowoduje zduplikowanie wpisów manifestu, ponieważ narzędzie próbuje podzielić pasek obrazu na obrazy autonomiczne i dodać je do istniejącego manifestu.
 
-- Scalanie (Pomijanie/newGuids lub/newIds) powinno być wykonywane tylko w przypadku manifestów generowanych przez narzędzie. Manifesty dostosowane lub wygenerowane za pośrednictwem innych metod mogą nie zostać poprawnie scalone.
+- Scalanie (pomijanie /newGuids lub /newIds) powinno odbywać się tylko dla manifestów generowanych przez narzędzie. Manifesty, które zostały dostosowane lub wygenerowane za pomocą innych środków, mogą nie zostać poprawnie scalone.
 
-- Manifesty, które są generowane dla zestawów natywnych, mogą wymagać ręcznego edytowania po wygenerowaniu, aby symbole identyfikatorów były zgodne z identyfikatorami zasobów z pliku. RC zestawu natywnego.
+- Manifesty generowane dla zestawów natywnych mogą wymagać ręcznej edycji po generacji, aby symbole identyfikatorów dopasować identyfikatory zasobów z pliku RC zestawu macierzystego.
 
 ## <a name="sample-output"></a>Przykładowe dane wyjściowe
  **Prosty manifest obrazu**
 
- Manifest obrazu będzie podobny do tego pliku XML:
+ Manifest obrazu będzie podobny do tego .xml pliku:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,7 +93,7 @@ Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę
 
  **Manifest obrazu dla paska obrazu**
 
- Manifest obrazu dla paska obrazu będzie podobny do tego pliku XML:
+ Manifest obrazu dla paska obrazu będzie podobny do tego .xml pliku:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,9 +128,9 @@ Narzędzie Manifest from Resources to Aplikacja konsolowa, która pobiera listę
 </ImageManifest>
 ```
 
- **Manifest obrazu dla zasobów obrazu zestawu natywnego**
+ **Manifest obrazu dla zasobów natywnego obrazu zestawu**
 
- Manifest obrazu dla obrazów natywnych będzie podobny do tego pliku XML:
+ Manifest obrazu dla obrazów natywnych będzie podobny do tego .xml pliku:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

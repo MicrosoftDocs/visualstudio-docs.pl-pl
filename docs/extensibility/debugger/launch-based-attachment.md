@@ -1,9 +1,9 @@
 ---
-title: Załącznik z systemem | Microsoft Docs
-description: Zapoznaj się z załącznikiem uruchamiania do programu, który jest automatyczny, i postępuj zgodnie z ścieżką, taką jak w przypadku załączników ręcznych.
+title: Oparte na uruchomieniu załączniki | Microsoft Docs
+description: Dowiedz się więcej na temat automatycznego załącznika do programu opartego na uruchomieniu, który jest zgodny ze ścieżką, jak w załączniku ręcznym.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
@@ -13,27 +13,27 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe698d8d1b29f02ae3971fc95a66c4823f7252c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 97bbc098e766a1025c372ff35c5849bfe652649f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059720"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904337"
 ---
-# <a name="launch-based-attachment"></a>Załącznik z systemem
-Przymocowanie na podstawie uruchamiania do programu jest automatyczne. Gdy proces hostujący program jest uruchamiany przez model SDM, przystawka na podstawie uruchamiania następuje po ścieżce podobnej do metody ręcznego załączników. Aby uzyskać więcej informacji, zobacz [dołączanie do programu](../../extensibility/debugger/attaching-to-the-program.md).
+# <a name="launch-based-attachment"></a>Załącznik oparty na uruchomieniu
+Załącznik do programu oparty na uruchomieniu jest automatyczny. Gdy proces hostowania programu jest uruchamiany przez program SDM, załącznik oparty na uruchomieniu jest zgodny ze ścieżką podobną do metody ręcznego załącznika. Aby uzyskać więcej informacji, [zobacz Dołączanie do programu](../../extensibility/debugger/attaching-to-the-program.md).
 
 ## <a name="the-attaching-process"></a>Proces dołączania
- Główną różnicą jest sekwencja zdarzeń po wywołaniu **Attach** w następujący sposób:
+ Główna różnica polega na sekwencji zdarzeń następujących po **wywołaniu attach** w następujący sposób:
 
-1. Wyślij obiekt zdarzenia **IDebugEngineCreateEvent2** do modelu SDM. Aby uzyskać szczegółowe informacje, zobacz [wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).
+1. Wyślij **obiekt zdarzenia IDebugEngineCreateEvent2** do modelu SDM. Aby uzyskać szczegółowe informacje, zobacz [Wysyłanie zdarzeń](../../extensibility/debugger/sending-events.md).
 
-2. Wywołaj `IDebugProgram2::GetProgramId` metodę w interfejsie **IDebugProgram2** przekazaną do metody **Attach** .
+2. Wywołaj `IDebugProgram2::GetProgramId` metodę w **interfejsie IDebugProgram2** przekazanym do **metody Attach.**
 
-3. Wyślij obiekt zdarzenia **IDebugProgramCreateEvent2** , aby powiadomić model SDM, że lokalny obiekt **IDebugProgram2** został utworzony, aby reprezentować program do de.
+3. Wyślij **obiekt zdarzenia IDebugProgramCreateEvent2,** aby powiadomić program SDM o utworzeniu lokalnego obiektu **IDebugProgram2** reprezentującego program de.
 
-4. Wyślij obiekt zdarzenia [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) , aby powiadomić model SDM o utworzeniu nowego wątku dla uruchomionego procesu.
+4. Wyślij [obiekt zdarzenia IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) w celu powiadomienia modelu SDM o utworzeniu nowego wątku dla uruchomionego procesu.
 
 ## <a name="see-also"></a>Zobacz też
-- [Wyślij wymagane zdarzenia](../../extensibility/debugger/sending-the-required-events.md)
-- [Włącz debugowanie programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Wysyłanie wymaganych zdarzeń](../../extensibility/debugger/sending-the-required-events.md)
+- [Włączanie debugowania programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

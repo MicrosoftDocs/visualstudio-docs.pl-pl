@@ -1,9 +1,9 @@
 ---
-title: Podtypy projektu | Microsoft Docs
-description: Dowiedz się, jak podtypy projektów pozwalają dostosować zachowanie systemów projektu programu Visual Studio. Pakietów VSPackage Implementuj podtypy projektu przy użyciu agregacji COM.
+title: Typy podtypów | Microsoft Docs
+description: Dowiedz się, jak podtypy projektów umożliwiają dostosowywanie zachowania systemów projektu Visual Studio. Pakiet VSPackages implementuje podtypy projektów przy użyciu agregacji COM.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
@@ -13,28 +13,28 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1695bc79e38c7a9ebbda7736e57116123343f30
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cd0f959d300fdc797d9e42d581a163b8b0892591
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064335"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903596"
 ---
 # <a name="project-subtypes"></a>Podtypy projektów
-Podtypy projektu pozwalają dostosować lub określić zachowanie systemów projektowych programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dostosowania obejmują zapisywanie dodatkowych danych w pliku projektu, Dodawanie lub Filtrowanie elementów w oknie dialogowym **Dodaj nowy element** , kontrolowanie sposobu debugowania i wdrażania zestawów oraz rozszerzanie okna dialogowego **strony właściwości** projektu. Pakietów VSPackage Implementuj podtypy projektu przy użyciu agregacji COM.
+Podtypy projektu umożliwiają dostosowanie lub dopasowanie zachowania systemów projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Dostosowania obejmują zapisywanie dodatkowych danych w pliku projektu, dodawanie  lub filtrowanie elementów w oknie dialogowym Dodawanie nowego elementu, kontrolowanie sposobu debugowania i wdrażania zestawów oraz rozszerzanie okna dialogowego **Strony** właściwości projektu. Pakiet VSPackages implementuje podtypy projektów przy użyciu agregacji COM.
 
 > [!NOTE]
-> System projektu Visual C++ nie obsługuje podtypów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sam używa podtypów projektu do implementowania SQL Server i inteligentnych projektów urządzeń.
+> System Visual C++ projektu nie obsługuje podtypów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sama używa podtypów projektu do implement SQL Server i projektów urządzeń inteligentnych.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 - [Projektowanie podtypów projektów](../../extensibility/internals/project-subtypes-design.md)
 
-  Opisuje koncepcję podtypów projektu.
+  Opisuje koncepcję podtypów projektów.
 
 - [Sekwencja inicjowania podtypów projektów](../../extensibility/internals/initialization-sequence-of-project-subtypes.md)
 
-  Opisuje sekwencję inicjowania podtypu projektu programistycznego według [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.
+  Opisuje sekwencję inicjowania podtypu projektu programowego według [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.
 
 - [Właściwości i metody rozszerzane przez podtypy projektów](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
 
@@ -42,34 +42,34 @@ Podtypy projektu pozwalają dostosować lub określić zachowanie systemów proj
 
 - [Utrwalanie danych w pliku projektu programu MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
 
-  Opisuje, jak utrwalać dane w pliku projektu i jak używać <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> do przechowywania danych w pliku projektu na poziomach agregacji podtypów projektu.
+  Opisuje sposób utrwalania danych w pliku projektu i sposób użycia do obsługi danych w pliku projektu na różnych poziomach <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> agregacji podtypu projektu.
 
 - [Interfejs użytkownika właściwości projektu](../../extensibility/internals/project-property-user-interface.md)
 
-  Opisuje, w jaki sposób podtypy projektu mogą modyfikować okno dialogowe **strony właściwości** projektu.
+  Opisuje, jak podtypy projektów mogą modyfikować okno dialogowe **Strony właściwości** projektu.
 
 - [Rozszerzanie modelu obiektu projektu podstawowego](../../extensibility/internals/extending-the-object-model-of-the-base-project.md)
 
-  Zawiera informacje dotyczące sposobu, w jaki podtypy projektu mogą używać rozszerzeń automatyzacji do rozbudowania modelu obiektów automatyzacji.
+  Zawiera informacje na temat sposobu, w jaki podtypy projektów mogą używać rozszerzenia automatyzacji do rozszerzania modelu obiektów automatyzacji.
 
 - [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/contributing-to-the-add-new-item-dialog-box.md)
 
-  Opisuje sposób dodawania elementów do okna dialogowego **Dodaj nowy element** .
+  Opisuje sposób dodawania elementów do **okna dialogowego Dodawanie** nowego elementu.
 
 - [Zapisywanie danych w plikach projektu](../../extensibility/saving-data-in-project-files.md)
 
-  Wyjaśnia, w jaki sposób podtyp projektu może zapisywać i pobierać dane specyficzne dla określonego typu w pliku projektu przy użyciu struktury pakietu zarządzanego (MPF).
+  Wyjaśnia, jak podtyp projektu może zapisywać i pobierać dane specyficzne dla podtypu w pliku projektu przy użyciu struktury pakietów zarządzanych (MPF).
 
 - [Obsługa wdrożeń specjalistycznych](../../extensibility/internals/handling-specialized-deployment.md)
 
-  Wyjaśnia, w jaki sposób podtypy projektu mogą dostarczać wyspecjalizowane zachowanie wdrażania przez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu.
+  Wyjaśnia, w jaki sposób podtypy projektów mogą dostarczać wyspecjalizowane zachowanie wdrażania przez zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu.
 
 - [Dodawanie i usuwanie stron właściwości](../../extensibility/adding-and-removing-property-pages.md)
 
-  Opisuje Dodawanie i usuwanie stron właściwości w projektancie projektu.
+  Opisuje dodawanie i usuwanie stron właściwości w projektancie projektów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 
 - [Typy projektów](../../extensibility/internals/project-types.md)
 
-  Zawiera łącza do tematów zawierających szczegółowe informacje o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektach.
+  Zawiera linki do tematów szczegółowo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opisjących projekty.

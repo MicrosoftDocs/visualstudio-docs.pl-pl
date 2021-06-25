@@ -1,9 +1,9 @@
 ---
-title: UsedCommands — element | Microsoft Docs
-description: Element UsedCommands Grupuje elementy UsedCommand i inne grupowania UsedCommands. Element UsedCommands jest opcjonalny.
+title: UsedCommands, element | Microsoft Docs
+description: Element UsedCommands grupuje UsedCommand elementy i inne UsedCommands grupowania. UsedCommands element jest opcjonalny.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - UsedCommands
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21233527c9fcfb97fd45a8eeed60c04927df8ba1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060214"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903037"
 ---
 # <a name="usedcommands-element"></a>UsedCommands, element
-Element UsedCommands Grupuje elementy UsedCommand i inne grupowania UsedCommands.
+Element UsedCommands grupuje UsedCommand elementy i inne UsedCommands grupowania.
 
- Element UsedCommands jest opcjonalny. Jeśli nie wywołasz poleceń zdefiniowanych poza pakietem, nie musisz uwzględniać tej sekcji w pliku. vsct.
+ UsedCommands element jest opcjonalny. Jeśli nie wywołasz poleceń zdefiniowanych poza pakietem, nie musisz uwzględniać tej sekcji w pliku vsct.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,19 +42,19 @@ Element UsedCommands Grupuje elementy UsedCommand i inne grupowania UsedCommands
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie, które jest implementowane przez inny kod.|
+|[UsedCommand, element](../extensibility/usedcommand-element.md)|Polecenie implementowane przez inny kod.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi), które pakietu VSPackage zapewnia zintegrowane środowisko programistyczne (IDE).|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia (na przykład elementy menu, menu, paski narzędzi i pola kombi), które pakiet VSPackage zapewnia zintegrowanemu środowisku projektowemu (IDE).|
 
 ## <a name="example"></a>Przykład
 

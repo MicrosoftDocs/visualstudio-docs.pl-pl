@@ -1,9 +1,9 @@
 ---
-title: Właściwości i metody rozszerzone przez podtypy projektu | Microsoft Docs
-description: Dowiedz się więcej o funkcjach, które podtypy projektu można zwiększyć lub zmodyfikować, co pozwala dostosować zachowanie systemów projektu programu Visual Studio.
+title: Właściwości i metody rozszerzone przez podtypy projektów | Microsoft Docs
+description: Dowiedz się więcej o funkcjach, które można ulepszać lub modyfikować podtypy projektów, co pozwala dostosować zachowanie systemów projektu Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
@@ -13,42 +13,42 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32c489ba2907cabff47b916039f96754d403455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ddcf020cf0b3e3e4f0f4a7c61ff1f15ce9ded5e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064244"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903544"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Właściwości i metody rozszerzane przez podtypy projektów
-Podtyp projektu ma wiele mocy do wpływu na zachowanie projektu, ponieważ jest skonstruowany jako agregator projektu podstawowego. Ta sekcja zawiera podsumowanie niektórych funkcji, które można rozszerzyć lub zmodyfikować według podtypów projektu.
+Podtyp projektu ma dużą moc, aby wpłynąć na zachowanie projektu, ponieważ jest konstruowany jako agregator projektu podstawowego. Ta sekcja zawiera podsumowanie niektórych funkcji, które można ulepszyć lub zmodyfikować za pomocą podtypów projektów.
 
 ## <a name="features-gained-by-aggregation"></a>Funkcje uzyskane przez agregację
- Poniższa tabela zawiera podsumowanie wielu metod, które agregacji umożliwiają przesłonięcie podtypów projektów w projektach podstawowych.
+ W poniższej tabeli podsumowano wiele metod, które agregacja umożliwia zastępowanie podtypów projektów w projektach podstawowych.
 
 |Metody zastąpione przez agregację|Podtyp projektu|
 |---------------------------------------|---------------------|
-|Z <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> :<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Włącza podtyp projektu do<br /><br /> -Zmień podpis i ikonę węzła projektu.<br />— Całkowicie Przesłoń `Browse` obiekt projektu.<br />— Określ, czy można zmienić nazwę projektu.<br />— Określ kolejność sortowania.<br />-Kontrola kontekstu użytkownika w celu zapewnienia dynamicznej pomocy.|
-|Z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> :<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|Włącza podtyp projektu do kontrolowania, jakie usługi kontekstowe są udostępniane projektantom i edytorom.|
-|Z <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> :<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Włącza podtyp projektu do<br /><br /> — Uczestnictwo w kierowaniu poleceń dla poleceń projektu.<br />-Dodawanie, usuwanie lub wyłączanie obu poleceń otoczenia projektu i Eksplorator rozwiązań aktywnych poleceń.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|Włącza podtype projektu do filtrowania zawartości widocznej dla użytkownika w oknie dialogowym **Dodaj nowy element** .|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|Włącza podtyp projektu do<br /><br /> -Określ domyślny Generator przyznany przez rozszerzenie pliku.<br />-Mapuje nazwę generatora czytelnego przez człowieka na obiekt COM.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>Z:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetGuidProperty%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetGuidProperty%2A>|Włącza podtyp projektu na<br /><br /> — Zmień podpis i ikonę węzła projektu.<br />— Całkowicie zastąp obiekt `Browse` projektu.<br />— Kontroluj, czy można zmienić nazwę projektu.<br />- Kontroluj kolejność sortowania.<br />— Kontrolowanie kontekstu użytkownika w celu korzystania z pomocy dynamicznej.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>Z:<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetItemContext%2A>|Umożliwia podtyp projektu w celu kontrolowania, jakie usługi kontekstowe są udostępniane projektantom i edytorom.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>Z:<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>|Włącza podtyp projektu na<br /><br /> - Uczestniczyć w routingu poleceń dla poleceń projektu.<br />- Dodaj, usuń lub wyłącz oba polecenia otoczenia projektu i Eksplorator rozwiązań aktywnych poleceń.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>|Umożliwia podtypowi projektu filtrowanie tego, co użytkownik widzi w **oknie dialogowym Dodawanie nowego** elementu.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGeneratorFactory>|Włącza podtyp projektu na<br /><br /> - Określ generator domyślny na podstawie rozszerzenia pliku.<br />- Mapowanie nazwy generatora czytelnej dla człowieka na obiekt COM.|
 
-## <a name="properties-used-by-project-subtypes"></a>Właściwości używane przez podtypy projektu
- Środowisko i system projektu podstawowego mogą używać właściwości z <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID> i <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> wyliczenia szczegółowo opisanych w poniższej tabeli, aby umożliwić podtype projektu sterowanie różnymi funkcjami systemu projektu.
+## <a name="properties-used-by-project-subtypes"></a>Właściwości używane przez podtypy projektów
+ Środowisko i system projektu podstawowego mogą używać właściwości z wyliczeń i szczegółowo wymienionych w poniższej tabeli, aby umożliwić podtyp projektu w celu kontrolowania <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID> <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> różnych funkcji systemu projektu.
 
-|Właściwość VSHPROPID|Podtyp projektu|
+|VSHPROPID, właściwość|Podtyp projektu|
 |------------------------|---------------------|
-|`AddItemTemplatesGuid`|Umożliwia podtype projektu kontrolowanie zawartości okna dialogowego **Dodawanie elementu** . Podtyp projektu może zapewnić nową specyfikację katalogów szablonów, dodać nowe rodzaje elementów, usunąć istniejące elementy i ponownie zorganizować podzestaw elementów w oknie dialogowym **Dodaj element** projektu podstawowego.|
-|`PropertyPagesCLSIDList`|Umożliwia podtype projektu Dodawanie lub usuwanie stron właściwości niezależnych od konfiguracji.|
-|`CfgPropertyPagesCLSIDList`|Umożliwia podtype projektu Dodawanie lub usuwanie stron właściwości zależnych od konfiguracji.|
-|`ExtObjectCATID`|Umożliwia podtype projektu, aby zapewnić rozszerzenie automatyzacji dla obiektów projektu lub elementu projektu, wiedząc, że rozszerza CATID. Na przykład podtyp projektu może dostarczyć `Project.Extender("<subtype>")` obiekt niestandardowy.|
-|`BrowseObjectCATID`|Umożliwia podtype projektu, aby zapewnić rozszerzenie automatyzacji dla `Browse` obiektu, wiedząc, że rozszerza CATID. Na przykład podtyp projektu może dodać do kolekcji dodatkowe właściwości <xref:EnvDTE.Project.Properties%2A> .|
-|`CfgBrowseObjectCATID`|Umożliwia podtype projektu, aby zapewnić rozszerzenie automatyzacji dla obiektu przeglądania konfiguracji projektu. Na przykład podtyp projektu może dodać do kolekcji dodatkowe właściwości <xref:EnvDTE.Configuration.Properties%2A> .|
-|`CfgExtObjectCATID`|Umożliwia podtype projektu, aby zapewnić rozszerzenie automatyzacji dla obiektu konfiguracji.|
-|`DefaultPlatformName`|Umożliwia podtype projektu określenie nazwy platformy dla obiektów konfiguracji projektu.|
+|`AddItemTemplatesGuid`|Umożliwia podtypowi projektu kontrolowanie zawartości okna **dialogowego Dodawanie** elementu. Podtyp projektu może dostarczyć nową specyfikację katalogów szablonów, dodać nowe rodzaje elementów, usunąć istniejące elementy i zreorganizować podzbiór elementów w oknie dialogowym Dodawanie elementu projektu **podstawowego.**|
+|`PropertyPagesCLSIDList`|Umożliwia podtypowi projektu dodawanie lub usuwanie stron właściwości niezależnych od konfiguracji.|
+|`CfgPropertyPagesCLSIDList`|Umożliwia podtypowi projektu dodawanie lub usuwanie stron właściwości zależnych od konfiguracji.|
+|`ExtObjectCATID`|Umożliwia podtyp projektu w celu zapewnienia rozszerzenia automatyzacji dla obiektów projektu lub elementu projektu, znając rozszerzenie CATID. Na przykład podtyp projektu może zapewnić obiekt `Project.Extender("<subtype>")` niestandardowy.|
+|`BrowseObjectCATID`|Umożliwia podtyp projektu, aby zapewnić rozszerzenie automatyzacji dla `Browse` obiektu, znając identyfikator CATID rozszerzenia. Na przykład podtyp projektu może dodać dodatkowe właściwości do <xref:EnvDTE.Project.Properties%2A> kolekcji.|
+|`CfgBrowseObjectCATID`|Umożliwia podtypowi projektu zapewnienie rozszerzenia automatyzacji dla obiektu przeglądania konfiguracji projektu. Na przykład podtyp projektu może dodać dodatkowe właściwości do <xref:EnvDTE.Configuration.Properties%2A> kolekcji.|
+|`CfgExtObjectCATID`|Umożliwia podtypowi projektu zapewnienie rozszerzenia automatyzacji dla obiektu konfiguracji.|
+|`DefaultPlatformName`|Umożliwia określenie nazwy platformy dla obiektów konfiguracji projektu podtypu projektu.|
 
- Projekt podstawowy zawiera domyślną implementację powyższych właściwości. Projekt podstawowy pobiera te metody, wywołując `QueryInterface` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> zewnętrznego podtypu projektu, co umożliwia przesłonięcie implementacji właściwości przez podtyp projektu.
+ Projekt podstawowy udostępnia domyślną implementację powyższych właściwości. Projekt podstawowy pobiera je, wywołując metodę dla najbardziej zewnętrznego podtypu projektu, dzięki czemu podtyp projektu może przesłonić `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> implementację właściwości.
 
 ## <a name="see-also"></a>Zobacz też
 - [Projektowanie podtypów projektów](../../extensibility/internals/project-subtypes-design.md)
