@@ -1,9 +1,9 @@
 ---
-title: IDSymbol — element | Microsoft Docs
-description: 'Element IDSymbol zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie.'
+title: IDSymbol, element | Microsoft Docs
+description: IdSymbol element zawiera identyfikator pary IDENTYFIKATOR GUID:ID, który reprezentuje menu, grupy lub polecenia.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59089ab981bc97100386b3e1907ef903ede3bd0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5158b16fb2d12a7d1a93c0296126e915a138269
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069845"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904945"
 ---
 # <a name="idsymbol-element"></a>IDSymbol, element
-`IDSymbol`Element zawiera identyfikator pary GUID: ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi z elementu nadrzędnego `GuidSymbol` . `IDSymbol`Element ma `name` atrybut, który zawiera przyjazną nazwę dla identyfikatora, który jest zawarty w `value` atrybucie.
+Element `IDSymbol` zawiera identyfikator pary GUID:ID reprezentujący menu, grupę lub polecenie. Identyfikator GUID pochodzi z elementu `GuidSymbol` nadrzędnego. Element `IDSymbol` ma `name` atrybut, który zapewnia przyjazną nazwę identyfikatora, który jest zawarty w `value` atrybut.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,7 +37,7 @@ ms.locfileid: "105069845"
 |Atrybut|Opis|
 |---------------|-----------------|
 |name|Wymagane. Nazwa symbolu identyfikatora.|
-|wartość|Wymagane. Wartość identyfikatora numerycznego symbolu identyfikatora.|
+|wartość|Wymagane. Wartość identyfikatora liczbowego symbolu id.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -46,10 +46,10 @@ ms.locfileid: "105069845"
 
 |Element|Opis|
 |-------------|-----------------|
-|[GuidSymbol, element](../extensibility/guidsymbol-element.md)|Zawiera identyfikator GUID pary identyfikatora GUID:, która reprezentuje menu, grupę lub polecenie. Grupuje `IDSymbol` elementy.|
+|[GuidSymbol, element](../extensibility/guidsymbol-element.md)|Zawiera identyfikator GUID pary GUID:ID reprezentującej menu, grupę lub polecenie. Grupuje `IDSymbol` elementy.|
 
 ## <a name="remarks"></a>Uwagi
- Każdy `IDSymbol` element w danym `GuidSymbol` elemencie musi mieć unikatową wartość `value` . Jednak `IDSymbol` elementy mające identyczne wartości mogą istnieć w pakiecie, o ile mają różne obiekty nadrzędne.
+ Każdy `IDSymbol` element w danym `GuidSymbol` elemencie musi mieć unikatowy element `value` . Jednak `IDSymbol` elementy, które mają identyczne wartości, mogą istnieć w pakiecie, o ile mają różne elementy główne.
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabeli poleceń (pliki vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

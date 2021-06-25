@@ -1,8 +1,8 @@
 ---
-description: Ta funkcja określa, czy wtyczka do kontroli źródła obsługuje tworzenie MSSCCPRJ. Plik SCC dla każdego z określonych plików.
-title: Funkcja SccWillCreateSccFile | Microsoft Docs
+description: Ta funkcja określa, czy wtyczka kontroli źródła obsługuje tworzenie pliku MSSCCPRJ. Plik SCC dla każdego z podanych plików.
+title: SccWillCreateSccFile, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063724"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900450"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile, funkcja
-Ta funkcja określa, czy wtyczka do kontroli źródła obsługuje tworzenie MSSCCPRJ. Plik SCC dla każdego z określonych plików.
+Ta funkcja określa, czy wtyczka kontroli źródła obsługuje tworzenie pliku MSSCCPRJ. Plik SCC dla każdego z podanych plików.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,24 +35,24 @@ SCCRTN SccWillCreateSccFile(
 ```
 
 #### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[in] Wskaźnik kontekstu wtyczki kontroli źródła.
 
  nFiles
 
-podczas Liczba nazw plików zawartych w `lpFileNames` tablicy, a także długość `pbSccFiles` tablicy.
+[in] Liczba nazw plików zawartych w `lpFileNames` tablicy, a także długość `pbSccFiles` tablicy.
 
  lpFileNames
 
-podczas Tablica w pełni kwalifikowanych nazw plików do sprawdzenia (Tablica musi być przydzielone przez obiekt wywołujący).
+[in] Tablica w pełni kwalifikowanych nazw plików do sprawdzenia (tablica musi zostać przydzielona przez element wywołujący).
 
  pbSccFiles
 
-[in. out] Tablica, w której mają być przechowywane wyniki.
+[in, out] Tablica, w której mają być przechowywane wyniki.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła dla tej funkcji zwraca jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
@@ -61,7 +61,7 @@ podczas Tablica w pełni kwalifikowanych nazw plików do sprawdzenia (Tablica mu
 |SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja jest wywoływana z listą plików, aby określić, czy wtyczka do kontroli źródła zapewnia obsługę w MSSCCPRJ. Plik SCC dla każdego z podanych plików (Aby uzyskać więcej informacji na temat MSSCCPRJ. Plik SCC, zobacz [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md)). Wtyczki kontroli źródła mogą zadeklarować, czy mają możliwość tworzenia MSSCCPRJ. Pliki SCC przez zadeklarowanie `SCC_CAP_SCCFILE` podczas inicjalizacji. Wtyczka zwraca `TRUE` lub `FALSE` na plik w `pbSccFiles` tablicy, aby wskazać, które z tych plików mają MSSCCPRJ. Obsługa SCC. Jeśli wtyczka zwraca kod sukcesu z funkcji, wartości w tablicy zwracanej są honorowane. W przypadku niepowodzenia tablica jest ignorowana.
+ Ta funkcja jest wywoływana z listą plików, aby określić, czy wtyczka kontroli źródła zapewnia obsługę w mssccprj. Plik SCC dla każdego z podanych plików (aby uzyskać więcej informacji na temat msSCCPRJ. SCC, zobacz [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md)). Wtyczki kontroli źródła mogą deklarować, czy mogą tworzyć pliki MSSCCPRJ. Pliki SCC przez deklarowanie `SCC_CAP_SCCFILE` podczas inicjowania. Wtyczka zwraca wartość lub dla każdego pliku w tablicy, aby wskazać, które `TRUE` z danych plików mają wartość `FALSE` `pbSccFiles` MSSCCPRJ. Obsługa SCC. Jeśli wtyczka zwraca kod powodzenia z funkcji , wartości w tablicy zwracanych wartości są honorowane. W przypadku awarii tablica jest ignorowana.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

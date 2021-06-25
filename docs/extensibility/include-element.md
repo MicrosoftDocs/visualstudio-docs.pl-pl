@@ -1,9 +1,9 @@
 ---
-title: Include — element | Microsoft Docs
-description: Element include określa plik, który może znajdować się w podanej ścieżce include do wstawienia do bieżącego pliku.
+title: Include, element | Microsoft Docs
+description: Include element określa plik, który może się znaleźć w podanej ścieżce dołączania do wstawienia do bieżącego pliku.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Include
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0005626c7fbb276775661a7cfb73d17f5e20d62
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082104"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899359"
 ---
-# <a name="include-element"></a>Include — element
-Element include określa plik, który może znajdować się w podanej ścieżce include do wstawienia do bieżącego pliku.  Wszystkie zdefiniowane symbole i typy staną się częścią skompilowanego wyniku.
+# <a name="include-element"></a>Include, element
+Include element określa plik, który może się znaleźć w podanej ścieżce dołączania do wstawienia do bieżącego pliku.  Wszystkie zdefiniowane symbole i typy staną się częścią skompilowanego wyniku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,8 +38,8 @@ Element include określa plik, który może znajdować się w podanej ścieżce 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Tag|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Href|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href="stdidcmd.h"|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -51,7 +51,7 @@ Element include określa plik, który może znajdować się w podanej ścieżce 
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi, które pakietu VSPackage zapewnia IDE.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy reprezentujące polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi — które pakiet VSPackage udostępnia ideom IDE.|
 
 ## <a name="example"></a>Przykład
 
@@ -60,4 +60,4 @@ Element include określa plik, który może znajdować się w podanej ścieżce 
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

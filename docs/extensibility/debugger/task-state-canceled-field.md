@@ -1,8 +1,8 @@
 ---
-description: Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdzenie jego anulowania i ukończone bez wyjątku.
-title: TASK_STATE_CANCELED pole | Microsoft Docs
+description: Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub zostało potwierdzone i ukończone bez wyjątku.
+title: TASK_STATE_CANCELED pola | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02bd5c81fea58e49eca0909d53d2fe68269b72d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 90b3c048edb4e52a426a2fd40d8bfd31168fea7d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079270"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900177"
 ---
-# <a name="task_state_canceled-field"></a>Pole TASK_STATE_CANCELED
-Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdzenie jego anulowania i ukończone bez wyjątku.
+# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED pola
+Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub zostało potwierdzone i ukończone bez wyjątku.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w mscorlib.dll)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego członka z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,7 +34,7 @@ Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdz
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca wartość <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

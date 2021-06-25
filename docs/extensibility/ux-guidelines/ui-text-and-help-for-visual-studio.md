@@ -1,326 +1,326 @@
 ---
-title: Tekst interfejsu użytkownika i pomoc dla programu Visual Studio | Microsoft Docs
-description: Dowiedz się więcej na temat tekstu interfejsu użytkownika i terminologii używanej w informacjach pomocy dla programu Visual Studio.
+title: Tekst interfejsu użytkownika i pomoc Visual Studio | Microsoft Docs
+description: Dowiedz się więcej o tekście interfejsu użytkownika i terminologii używanej w informacjach pomocy dla Visual Studio.
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8635907b5c0190165855378fa692fb9abca4b0ec
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 40b128c5e95c70457d92843e620b4aa072c409ba
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052661"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899436"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dla programu Visual Studio
-## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Tekst i terminologia interfejsu użytkownika
- Zrozumiały tekst jest decydujący dla efektywnego interfejsu użytkownika. Użytkownicy oprogramowania mają najpierw odczytywać etykiety, a mianowicie te, które są najbardziej istotne do ukończenia zadania. Tekst statyczny jest odczytywany z mniejszą częstotliwością. Zaplanuj użytkownikom możliwość uruchamiania ich sesji pracy przy użyciu szybkiego skanowania całego okna, a następnie odczytu interfejsu użytkownika w tej przybliżonej kolejności:
+## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Tekst interfejsu użytkownika i terminologia
+ Zrozumiały tekst ma kluczowe znaczenie dla efektywnego interfejsu użytkownika. Użytkownicy oprogramowania zwykle najpierw odczytują etykiety, czyli te, które są najbardziej istotne do wykonania danego zadania. Tekst statyczny jest odczytywany z mniejszą częstotliwością. Zaplanuj, aby użytkownicy rozpoczynali sesje służbowe od szybkiego skanowania całego okna, a następnie odczytania interfejsu użytkownika w tej przybliżonej kolejności:
 
-1. Formanty interaktywne w środku
+1. Kontrolki interaktywne w środku
 
 2. Przyciski zatwierdzania
 
-3. Formanty interaktywne znalazły się w innym miejscu
+3. Kontrolki interaktywne znalezione w innym miejscu
 
-4. Główne instrukcje
+4. Instrukcje główne
 
-5. Wyjaśnienia uzupełniające
+5. Dodatkowe wyjaśnienia
 
 6. Tytuł okna
 
-7. Inny tekst statyczny w treści głównej
+7. Inny tekst statyczny w głównej treści
 
-### <a name="usage-patterns-for-ui-text"></a>Wzorce użycia dla tekstu interfejsu użytkownika
+### <a name="usage-patterns-for-ui-text"></a>Wzorce użycia tekstu interfejsu użytkownika
 
 #### <a name="title-bar-text"></a>Tekst paska tytułu
- Tekst paska tytułu musi być zgodny z poleceniem, które zostało zduplikowane w interfejsie użytkownika.
+ Tekst paska tytułu musi odpowiadać poleceniu, które zduplikowało interfejs użytkownika.
 
 #### <a name="instructional-text-helper-text"></a>Tekst instruktażowy (tekst pomocnika)
- W niektórych oknach dialogowych warto przedstawić widoczne główne instrukcje wyjaśniające, co należy zrobić w oknie lub na stronie. Jest to czasami określane jako "tekst pomocnika".
+ W niektórych oknach dialogowych warto podać najważniejsze instrukcje główne, aby wyjaśnić, co należy zrobić w oknie lub na stronie. Jest to czasami określane jako "tekst pomocnika".
 
 ##### <a name="writing-style-rules-for-helper-text"></a>Pisanie reguł stylu dla tekstu pomocnika
 
-- Nie Wyjaśnij oczywiste. O ile nie jest to absolutnie konieczne, nie należy uwzględniać tekstu instruktażowego.
+- Nie wyjaśniaj oczywistych. Jeśli nie jest to absolutnie konieczne, nie należy dołączać tekstu instruktażowego.
 
-- Tekst instruktażowy jest zawsze umieszczony u góry okna dialogowego i powinien odnosić się do wykonywanego zadania.
+- Tekst instruktażowy jest zawsze umieszczany w górnej części okna dialogowego i powinien odwoływać się do wykonywanego zadania.
 
-- Dokładnie Wyjaśnij użytkownikom, czego potrzebują. Unikaj nadmiernej komunikacji i nadmiarowości.
+- Dokładnie wyjaśnij użytkownikom, co muszą zrobić. Unikaj nadmiernej komunikacji i nadmiarowości.
 
-- Przejrzyj wszystkie okna i eliminowanie zduplikowanych słów i instrukcji.
+- Przejrzyj każde okno i wyeliminuj zduplikowane słowa i instrukcje.
 
-- Przechowuj tekst instruktażowy jako krótki. Jeśli niektóre użytkownicy lub scenariusze są niezbędne do uzyskania dodatkowych informacji, podaj link do szczegółowego tematu w trybie online.
+- Zachowaj krótki tekst instruktażowy. Jeśli w przypadku niektórych użytkowników lub scenariuszy jest potrzebnych więcej informacji, podaj link do szczegółowego koncepcyjnego tematu online.
 
-- Napisz tekst tak, aby każdy wyraz miał wagę i jest wymagany.
+- Napisz tekst tak, aby każde słowo zawierało wagę i było konieczne.
 
-- Postępuj zgodnie z istniejącymi wskazówkami firmy Microsoft dotyczącymi tekstu i [stylu i dźwięku](/windows/desktop/uxguide/text-style-tone) [interfejsu użytkownika](/windows/desktop/uxguide/text-ui) .
+- Postępuj zgodnie z istniejącymi wskazówkami firmy Microsoft [Interfejs użytkownika tekst i](/windows/desktop/uxguide/text-ui) styl oraz [ton.](/windows/desktop/uxguide/text-style-tone)
 
 #### <a name="supplemental-instructions"></a>Instrukcje uzupełniające
- Instrukcje uzupełniające zawierają dodatkowe informacje, które ułatwiają użytkownikowi zrozumienie formantów lub grup kontroli. Może to również obejmować tekst wskazówki, który jest niezbędny do zrozumienia formatu, który jest oczekiwany przez kontrolkę wejściową. Korzystaj z dodatkowych instrukcji. Zarezerwuj je w przypadkach, gdy użytkownik jest w stanie w pełni zrozumieć konsekwencje wyboru przez nie.
+ Instrukcje uzupełniające zawierają dodatkowe informacje, które pomagają użytkownikowi zrozumieć kontrolki lub grupowania kontrolek. Może to również zawierać tekst wskazówki niezbędny do zrozumienia, jakiego formatu oczekuje kontrolka wejściowa. Instrukcje uzupełniające należy stosować oszczędnie. Rezerwuj je na przypadki, w których prawdopodobnie użytkownik nie będzie w pełni rozumieć konsekwencji wybranego wyboru.
 
- ![Zrzut ekranu przedstawiający przycisk Opcje programu Internet Explorer z tekstem uzupełniającym poniżej, który opisuje wpływ zmiany ustawień opcji.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601 — b_SupplementalText1")
+ ![Zrzut ekranu przedstawiający Internet Explorer Opcje z tekstem uzupełniającym poniżej, który opisuje wpływ zmiany ustawień opcji.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
- **Tekst uzupełniający w programie Visual Studio**
+ **Tekst uzupełniający w Visual Studio**
 
- ![Zrzut ekranu przedstawiający okno dialogowe Wybieranie kontroli źródła w programie Visual Studio z tekstem uzupełniającym opisującym każdą z opcji systemu kontroli źródła.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601 — c_SupplementalText2")
+ ![Zrzut ekranu przedstawiający okno dialogowe Wybieranie kontroli źródła w Visual Studio tekst uzupełniający opisujący poszczególne opcje systemu kontroli źródła.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
- **Tekst uzupełniający w programie Visual Studio**
+ **Tekst uzupełniający w Visual Studio**
 
-#### <a name="infotips"></a>InfoTips
- Często tekst instrukcji może być zbyt długi, aby można było pomieścić miejsce w interfejsie użytkownika lub może być przydatny tylko dla nowych użytkowników, mało więcej, tak jak bałagane dla doświadczonych użytkowników. W takim przypadku tekst instruktażowy/informacyjny powinien zostać umieszczony jako etykietka narzędzia w obszarze porady.
+#### <a name="infotips"></a>Etykietki informacyjne
+ Często tekst instruktażowy może być zbyt długi, aby umieścić go w miejscu w interfejsie użytkownika, lub może być przydatny tylko dla nowych użytkowników, czując się jak zaśmiecony dla doświadczonych użytkowników. W takim przypadku tekst instruktażowy/informacyjny należy umieścić jako etykietkę narzędzia w obszarze Etykietka informacyjna.
 
- InfoTips powinny być umieszczone blisko formantów, z którymi są one powiązane, i powinny korzystać z określonej ikony porady, która nie jest jeszcze zauważalna.
+ Etykietki informacyjne powinny być umieszczone w pobliżu kontrolek, z którymi są powiązane, i powinny używać określonej ikony Etykietki informacji, która jest dyskretna, ale zauważalna.
 
- ![Porada w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601 — d_InfoTip")
+ ![Etykietka informacyjna w Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601-d_InfoTip")
 
- **Przykład porady w programie Visual Studio**
+ **Przykład etykietki informacyjnej w Visual Studio**
 
-##### <a name="writing-style-rules-for-infotips"></a>Pisanie reguł stylu dla InfoTips
+##### <a name="writing-style-rules-for-infotips"></a>Pisanie reguł stylu dla etykietek informacji
 
-- Napisz InfoTips jako kompletne zdania. Wymagają one określonych czasowników, przypadku zdania i końcowej interpunkcji.
+- Pisz etykietki informacyjne jako pełne zdania. Wymagają one określonych czasowników, liter zdań i końcowej interpunkcji.
 
-- Użyj InfoTips, aby uzupełnić główną instrukcję lub informacje. Jeśli tylko używasz innych słów do przestanania głównego pomysłu, nie potrzebujesz porady.
+- Użyj etykietek informacyjnych, aby uzupełnić instrukcje główne lub informacje. Jeśli używasz tylko różnych wyrazów do przekierowynia głównego pomysłu, nie potrzebujesz etykietki informacyjnej.
 
-- Zachowaj InfoTips krótkie i słodkie. Używaj małych słów i zwykłych, codziennych języków, które obsługują i zachęca użytkownika.
+- Zachowaj krótką i krótką etykietkę informacyjną. Używaj małych słów i zwykłego, codziennego języka, który obsługuje i zachęca użytkownika.
 
-- Postępuj zgodnie z istniejącymi wskazówkami firmy Microsoft dotyczącymi tekstu i [stylu i dźwięku](/windows/desktop/uxguide/text-style-tone) [interfejsu użytkownika](/windows/desktop/uxguide/text-ui) .
+- Postępuj zgodnie z istniejącymi wskazówkami firmy Microsoft [Interfejs użytkownika tekst i](/windows/desktop/uxguide/text-ui) styl oraz [ton.](/windows/desktop/uxguide/text-style-tone)
 
-#### <a name="control-labels"></a>Etykiety kontrolki
- Etykiety kontrolki powinny być krótkie, zwięzłe i zgodne ze [wskazówkami dotyczącymi pulpitu systemu Windows](/windows/desktop/uxguide/controls).
+#### <a name="control-labels"></a>Etykiety kontrolek
+ Etykiety kontrolek powinny być krótkie, zwięzłe i zgodne ze wskazówkami programu [Windows Desktop dla kontrolek](/windows/desktop/uxguide/controls).
 
- Aby uzyskać więcej informacji na temat formatowania i położenia etykiet kontrolek w interfejsie użytkownika, zobacz [układ programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
+ Aby uzyskać więcej informacji na temat formatowania i umieszczania etykiet kontrolek w interfejsie użytkownika, zapoznaj się z tematem [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
 #### <a name="help-links"></a>Linki pomocy
- Linki pomocy można umieścić w tekście instrukcji lub w treści interfejsu użytkownika. Mogą to być linki do pomocy lub uruchamiania wewnętrznych okien dialogowych.
+ Linki pomocy można umieścić w tekście instruktażowym lub w treści interfejsu użytkownika. Mogą to być linki do pomocy lub uruchamiania wewnętrznych okien dialogowych.
 
-##### <a name="visual-style-rules-for-help-links"></a>Reguły stylu wizualnego dla linków pomocy
+##### <a name="visual-style-rules-for-help-links"></a>Reguły stylu wizualizacji dla linków Pomocy
 
-- Użyj poprawnych kolorów środowiska dla hiperłączy. W przypadku kliknięcia prawidłowo oznaczonego stylem hiperłącze nie będzie miało na chwilę lampę błyskową. Jeśli widzisz to, oznacza to, że kolory środowiska nie są używane.
+- Użyj odpowiednich kolorów środowiska dla hiperlinków. Hiperlink o prawidłowym stylu nie będzie krótko pulsował na czerwono po kliknięciu. Jeśli to widzisz, oznacza to, że kolory środowiska nie są używane.
 
-- Podkreślenia powinny być używane tylko po aktywowaniu lub po osadzeniu łącza w akapicie.
+- Podkreśleń należy używać tylko po umieszczeniu wskaźnika myszy lub po osadzona linku w akapicie.
 
-- Aby uzyskać bardziej szczegółowe informacje na temat stylów wizualizacji i interakcji dla hiperłączy, zobacz przyciski i hiperlinki.
+- Aby uzyskać bardziej szczegółowe informacje na temat stylów wizualizacji i interakcji dla hiperlinków, zobacz Przyciski i hiperlinki.
 
 ##### <a name="writing-style-rules-for-help-links"></a>Pisanie reguł stylu dla linków pomocy
 
-- W przypadku uruchamiania okien dialogowych należy zachować standardy dla wielokropka: brak wielokropek dla nawigacji, elipsy, jeśli zadanie wymaga dodatkowego interfejsu użytkownika.
+- Podczas uruchamiania okien dialogowych należy zachować standardy wielokropka: brak wielokropka na potrzeby nawigacji, wielokropek, jeśli zadanie wymaga dodatkowego interfejsu użytkownika.
 
-     ![Link pomocy w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601 — e_HelpLink")
+     ![Link Pomocy w Visual Studio](../../extensibility/ux-guidelines/media/0601-e_helplink.png "0601-e_HelpLink")
 
-     **Wielokropek (...) w linku pomocy wskazuje, że zadanie będzie wymagało dodatkowego interfejsu użytkownika.**
+     **Wielokropek (...) w linku Pomoc wskazuje, że zadanie będzie wymagało dodatkowego interfejsu użytkownika.**
 
-- Linki nie powinny rozpoczynać się od "uczenia się", ponieważ nie jest to intencja użytkownika. Użytkownik chce odpowiedzieć na określone pytanie, nie otrzymuje ogólnego wykształcenia.
+- Linki nie powinny zaczynać się od "Learn", ponieważ nie jest to intencja użytkownika. Użytkownik chce odpowiedzieć na konkretne pytanie, a nie uzyskać ogólną edukację.
 
-- Linki pomocy frazy, dzięki czemu zwracają pytania dotyczące odpowiedzi w temacie.
+- Linki pomocy dotyczącej fraz, aby zadać pytanie, na które będzie odpowiadać temat.
 
-     Nieprawidłowe: "Dowiedz się więcej na temat cennika usługi Windows Azure Mobile Services"
+     Niepoprawne: "Dowiedz się więcej o cenach usługi Windows Azure Mobile Services"
 
-     Poprawne: "Jakie opcje cenowe są dostępne dla systemu Windows Azure Mobile Services?".
+     Odpowiedź prawidłowa: "Jakie opcje cenowe są dostępne dla usługi Windows Azure Mobile Services?"
 
-- Nigdy nie używaj *przycisku...* do tekstu łącza.
+- Nigdy nie *używaj funkcji Click...* w tekście linku.
 
-- Nigdy nie łącz tylko tego słowa "tutaj". Jest to problematyczne w przypadku niektórych czytników ekranu, które będą głosować tylko w przypadku wyrazów z hiperłączem.
+- Nigdy nie łącz tylko słowa "tutaj". Jest to problematyczne w przypadku niektórych czytników zawartości ekranu, które będą głosić tylko słowo z hiperlinkiem.
 
-     Nieprawidłowe: "Znajdź informacje o platformie Microsoft Azure Mobile Services **tutaj**"
+     Niepoprawne: "Znajdź informacje o platformie Windows Azure Mobile Services **tutaj**"
 
-     Poprawne: "Jakie opcje cenowe są dostępne dla systemu Windows Azure Mobile Services?".
+     Odpowiedź prawidłowa: "Jakie opcje cenowe są dostępne dla usługi Windows Azure Mobile Services?"
 
-- Aby uzyskać więcej informacji na temat poprawnego stylu pisania dla linków pomocy, zobacz [wskazówki dotyczące pulpitu systemu Windows](/windows/desktop/uxguide/winenv-help).
+- Aby uzyskać więcej informacji na temat poprawnego stylu pisania linków pomocy, zobacz Wskazówki dotyczące programu [Windows Desktop dla pomocy](/windows/desktop/uxguide/winenv-help).
 
 #### <a name="hint-text"></a>Tekst wskazówki
- Tekst wskazówki pojawia się jako znak wodny wewnątrz kontrolki lub pod kontrolką. Poprawne formatowanie zostanie zastosowane przy użyciu odpowiedniego tokenu VSColors `Environment.GrayText` .
+ Tekst wskazówki jest wyświetlany jako znak wodny w obrębie kontrolki lub poniżej kontrolki. Poprawne formatowanie zostanie zastosowane przy użyciu odpowiedniego tokenu VSColors, `Environment.GrayText` .
 
- Może być wyświetlana w kilku formularzach.
+ Może występować w wielu formularzach.
 
-- Zamiast etykiety kontrolki:
+- W miejsce etykiety kontrolki:
 
-     ![Zrzut ekranu przedstawiający kontrolkę rozwijaną z tekstem wskazówki zamiast etykiety kontrolki, która odczytuje "Eksplorator rozwiązań wyszukiwania (Ctrl +;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 — f_HintText1")
+     ![Zrzut ekranu przedstawiający kontrolkę listy rozwijanej z tekstem wskazówki w miejscu etykiety kontrolki z tekstem "Wyszukaj Eksplorator rozwiązań (Ctrl+;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
-- Z czasownikiem, podając instrukcje:
+- Za pomocą czasownika, który daje instrukcje:
 
-     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce, która odczytuje "Wprowadź swoją nazwę".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 — g_HintText2")
+     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce z tekstem "Wprowadź swoje imię".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Z tekstem wskazującym wymagany wpis:
 
-     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce, która odczytuje " \< wymagane \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 — h_HintText3")
+     ![Zrzut ekranu przedstawiający pole tekstowe z tekstem wskazówki w kontrolce z tekstem \< \> "Wymagane".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
-#### <a name="watermark-text"></a>Tekst znaku wodnego
- Na pustej powierzchni projektowej tekst powinien wskazywać, co należy zrobić, a także udostępniać linki do otwierania innych powiązanych okien, jeśli jest to konieczne:
+#### <a name="watermark-text"></a>Tekst limitu
+ Na pustej powierzchni projektowej tekst powinien wskazywać, co należy zrobić, a także udostępnić linki do otwierania innych powiązanych okien, jeśli jest to konieczne:
 
- ![Tekst znaku wodnego w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601 — i_WatermarkText")
+ ![Tekst znaku wodnego w Visual Studio](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601-i_WatermarkText")
 
- **Przykład tekstu wodnego w programie Visual Studio**
+ **Przykładowy tekst limitu w Visual Studio**
 
-### <a name="common-terminology"></a>Powszechna terminologia
+### <a name="common-terminology"></a>Wspólna terminologia
 
 |Okres|Wyjaśnienie|Komentarz|
 |----------|-----------------|-------------|
-|Logowanie/wylogowywanie|Czasowniki użyły synonimu w sieci Web do reprezentowania uwierzytelniania we właściwości sieci Web. W ramach klientów używamy tego raz jako koncepcji najwyższego poziomu do logowania się i z połączenia użytkownika IDE, które reprezentuje tożsamość najwyższego poziomu, która zapewnia funkcje wyższego poziomu, takie jak roaming i Licencjonowanie, które nie są dostępne ze wszystkimi innymi połączeniami.|Użytkownik IDE jest jedyną funkcją, która powinna reprezentować czasownik logowania/wylogowywania, ponieważ reprezentuje użytkownika IDE najwyższego poziomu.|
-|Połącz/Rozłącz|Użyj w miejscach, w których funkcja utrzymuje pojedyncze połączenie z usługą online.|Eksplorator serwera, w którym można mieć tylko jedno aktywne połączenie platformy Azure, to przykład połączenia/rozłączenia.|
-|Dodaj/Usuń|Nieniszczące. Używany podczas dodawania lub usuwania elementu z listy.|W oknie dialogowym Lista serwerów Menedżera połączeń TFS jest przykładem dodawania/usuwania.|
-|Usuń|Destrukcyj. Używane tylko wtedy, gdy usuwany element zostanie trwale odrzucony lub usunięty z dysku.|"Usuń" zwykle wymaga monitu, jeśli wynikiem jest usunięcie pliku z dysku.|
+|Logowanie/wyloguj się|Czasowniki używane w sposób synonimicznie z siecią Web do reprezentowania uwierzytelniania we właściwości sieci Web. W obrębie klientów używamy tego raz jako informacji najwyższego poziomu do logowania się i wyczyniania połączenia użytkownika środowiska IDE, która reprezentuje tożsamość najwyższego poziomu, która zapewnia możliwości wyższego poziomu, takie jak roaming i licencjonowanie, które nie są dostępne dla wszystkich innych połączeń.|Użytkownik IDE jest jedyną funkcją, która powinna reprezentować czasownik logowania/wylogowania, ponieważ reprezentuje użytkownika ide najwyższego poziomu.|
+|Łączenie/rozłączanie|Należy używać w miejscach, w których funkcja utrzymuje jedno połączenie z usługą online.|Eksplorator serwera, w którym można mieć tylko jedno aktywne połączenie platformy Azure na raz, jest to przykład połączenia/rozłączenia.|
+|Dodawanie/usuwanie|Nieniszczący. Użyj podczas dodawania lub usuwania elementów z listy.|Przykładem dodawania/usuwania jest okno dialogowe listy serwerów Menedżer połączeń TFS.|
+|Usuń|Destrukcyjne. Należy używać tylko wtedy, gdy usuwany element zostanie trwale odrzucony lub usunięty z dysku.|"Usuń" zwykle wymaga monitu, jeśli wynik jest usuwanie pliku z dysku.|
 
 ## <a name="error-messages"></a>Komunikaty o błędach
 
 ### <a name="overview"></a>Omówienie
- Występują błędy. Ustawienie ograniczeń dotyczących tego, co użytkownik może zrobić, to rozsądny pierwszy krok w zapobieganiu unikaniu komunikatów o błędach. Jednak w przypadku wystąpienia błędu dobrze zapisany komunikat o błędzie może być długi w kierunku zmniejszenia problemu. Komunikaty o błędach są raczej jednym z najważniejszych typów powiadomień, które widzi użytkownik, ponieważ są synchroniczne i wskazują problem, który należy rozwiązać. Komunikaty o błędach zostały zapisywane przez użytkowników w celu określenia przyczyn błędów i ewentualnych rozwiązań.
+ Występują błędy. Ustawianie ograniczeń dotyczących czynności, które użytkownik może wykonać, jest rozsądnym pierwszym krokiem w zapobieganiu komunikatom o błędach, których można uniknąć. Jednak w przypadku wystąpienia błędu dobrze napisany komunikat o błędzie może pójść daleko w kierunku rozwiązania problemu. Komunikaty o błędach są prawdopodobnie jednym z najważniejszych typów powiadomień wyświetlanych przez użytkownika, ponieważ są one synchroniczne i wskazują problem, który należy rozwiązać. Źle napisane komunikaty o błędach pozostawiają użytkowników samodzielnie, aby decydować o ich przyczynach i wszelkich możliwych rozwiązaniach.
 
- Użytkownicy mogą zrezygnować z uwagi na nadużywane lub mylące komunikaty o błędach, dlatego należy zapisywać tylko niezbędne komunikaty, które dodają wartość do środowiska użytkownika. Jeśli komunikat jest po prostu powiadomieniem, użyj alternatywnej prezentacji.
+ Użytkownicy mogą przestać zwracać uwagę na zbytnie lub mylące komunikaty o błędach, więc piszą tylko niezbędne komunikaty, które dodają wartość do obsługi użytkownika. Jeśli komunikat jest po prostu powiadomieniem, użyj prezentacji alternatywnej.
 
 ### <a name="rules-for-creating-an-error-message"></a>Reguły tworzenia komunikatu o błędzie
 
-- Podczas konstruowania komunikatów o błędach wybierz odpowiedni poziom błędów dla odbiorców. Zapoznaj się z prostymi podsumowaniami, które zapewniają akcję, którą użytkownik może podjąć, jeśli ma to zastosowanie. Nie należy wprowadzać żadnych informacji o tym, że użytkownik nie musi wiedzieć.
+- Podczas tworzenia komunikatów o błędach wybierz odpowiedni poziom błędu dla odbiorców. Staraj się uzyskać proste podsumowania, które zapewniają akcję, które użytkownik może podjąć, jeśli ma to zastosowanie. Nie oznaczaj niczego, czego użytkownik nie musi wiedzieć.
 
-- Zapewnij konstruktywną pomoc. Jest to łatwiejsze do odczytania i działania na komunikat o błędzie zawierający instrukcje.
+- Zapewnianie pomocy konstruktywnej. Łatwiej jest odczytać komunikat o błędzie zawierający instrukcję i działać na nim.
 
 - Nie używaj podwójnych wartości ujemnych.
 
-- Wykonaj zarówno automatyczne, jak i ręczne sprawdzanie pisowni podczas pisania.
+- Wykonaj automatyczne i ręczne sprawdzanie gramatyki i pisowni dla każdego pisanych komunikatów o błędzie.
 
-- W przypadku złożonych komunikatów o błędach należy unikać komunikacji sekwencyjnej. Nie należy nigdy używać podłączenie F1 dla komunikatu o błędzie. Wiadomość powinna być wystarczająca.
+- W przypadku złożonych komunikatów o błędach unikaj komunikacji sekwencyjnej. Nigdy nie używaj podłączania klawisza F1 dla komunikatu o błędzie. Sam komunikat powinien być wystarczający.
 
 - Użyj poprawnej ikony.
 
-- Zapoznaj się z prostymi pytaniami i korzystaj z przycisków, które mają jasne opcje, takie jak "Usuń" i "Anuluj".
+- Ułatwiaj zrozumienie pytań i używaj przycisków, które mają czytelne opcje, takie jak "Usuń" i "Anuluj".
 
-- W przypadku ostrzeżeń należy wyczyścić informacje o tym, co będzie miało skutek. Przyciski powinny wskazywać na sekwencję.
+- W przypadku ostrzeżeń należy wyraźnie wyjaśnić, jakie będą konsekwencje tego postępowania. Przyciski powinny wskazywać konsekwencje.
 
-- W przypadku błędów opisz, co użytkownik może zrobić, aby rozwiązać ten problem. Przyciski powinny być akcjami lub powiedzieć "Close" (Zamknij). Nie używaj przycisku "OK", aby uzyskać komunikat o błędzie.
+- W przypadku błędów opisz, co użytkownik może zrobić, aby rozwiązać problem. Przyciski powinny być akcjami lub powiedz "Zamknij". Nie używaj przycisku "OK" dla komunikatu o błędzie.
 
 - Niektóre pytania, które należy zadać sobie podczas konstruowania komunikatu o błędzie:
 
-  - Czy użytkownik może ustalić, jak rozwiązać problem z tym błędem?
+  - Czy użytkownik może samodzielnie ustalić, jak rozwiązać problem z tym błędem?
 
-  - Czy użytkownik używa tego samego słownika co ten błąd?
+  - Czy użytkownik używa tego samego słownictwa co ten błąd?
 
-  - Czy ten błąd ambigious czy jest udostępniany w wielu sytuacjach? Jeśli tak, jak poprowadzisz użytkowników do rozwiązania, których potrzebują?
+  - Czy ten błąd jest nieuprawniany, czy współużytkował go w wielu sytuacjach? Jeśli tak, jak kierować użytkowników do rozwiązania, które są im potrzebne?
 
 #### <a name="build-errors"></a>Błędy kompilacji
- Ponieważ program Visual Studio jest narzędziem do tworzenia oprogramowania, wiele z jego składników zawiera kompilację, konwertowanie lub krok kodowania w celu przekonwertowania pracy dewelopera na postać binarną. Te konwersje mogą spowodować błędy, gdy kompilator nie może przetwarzać nieprawidłowo utworzonych plików lub gdy opcje kompilatora nie zostały prawidłowo ustawione.
+ Ponieważ Visual Studio to narzędzie do tworzenia oprogramowania, wiele jego składników ma krok kompilacji, konwersji lub kodowania w celu przekonwertowania pracy dewelopera na postać binarną. Te konwersje mogą powodować błędy, gdy kompilator nie może przetworzyć nieprawidłowo tworzyć plików lub gdy opcje kompilatora nie zostały prawidłowo ustawione.
 
- Użytkownicy programu Visual Studio mogą poświęcać olbrzymią liczbę godzin deweloperskich, rozwiązując błędy kompilacji. Ten czas rozpoznawania zwiększa się, gdy błędy mają zależności lub gdy komunikaty o błędach są źle zapisywane, co może utrudnić odzyskanie źródła błędu.
+ Visual Studio użytkownicy mogą poświęcać ogromną liczbę godzin programistów na rozwiązywanie błędów kompilacji. Ten czas rozwiązania wydłuża się, gdy błędy mają zależności lub gdy komunikaty o błędach są źle napisane, co może utrudnić odkrycie źródła błędu.
 
- Najlepsze błędy kompilacji to te, które nie występują w pierwszym miejscu, co oznacza, że program Visual Studio udostępnia Autouzupełnianie i funkcję IntelliSense. Moduły sprawdzania poprawności schematu i podobne narzędzia zapewniają ten sam rodzaj informacji zwrotnych. Te mechanizmy aktywnie przeprowadzą użytkownika do skonstruowania dobrze uformowanego kodu, co zmniejsza prawdopodobieństwo wystąpienia błędów kompilacji.
+ Najlepsze błędy kompilacji to te, które nie występują w pierwszej kolejności, dlatego usługa Visual Studio udostępnia zygieł funkcji Autouzupełnianie i IntelliSense. Narzędzia do sprawdzania poprawności schematów i podobne narzędzia zapewniają ten sam rodzaj opinii. Te mechanizmy proaktywnie przekierują użytkownika do konstruowania dobrze utworzonego kodu, co zwiększa prawdopodobieństwo błędów kompilacji.
 
- Program Visual Studio udostępnia okno narzędzi, w którym użytkownicy mogą odczytywać błędy, które wystąpiły w swoich oknach dokumentów i poruszać się z nimi. Skróty klawiaturowe są dostępne, aby użytkownik mógł szybko nawigować do dużych ilości kodu i przejść bezpośrednio do lokalizacji problemu. Program Visual Studio umożliwia również każdemu błędowi kompilacji powiązana z określonym słowem kluczowym pomocy/IDENTYFIKATORem kontekstu, aby użytkownik mógł przejść bezpośrednio do tematu pomocy, który zawiera bardziej szczegółowe informacje o błędzie.
+ Visual Studio udostępnia okno narzędzi, w którym użytkownicy mogą odczytywać błędy, które wystąpiły w oknach dokumentów, i przechodzić przez nie. Dostępne są skróty klawiaturowe, dzięki którym użytkownik może szybko nawigować po dużych ilościach kodu i przechodzić bezpośrednio do lokalizacji problemu. Visual Studio każdy błąd kompilacji może być powiązany z konkretnym identyfikatorem słowa kluczowego/kontekstu pomocy, dzięki czemu użytkownik może przejść bezpośrednio do tematu pomocy, który zawiera bardziej szczegółowe informacje o błędzie.
 
- Napisz jasne, zwięzłe błędy kompilacji:
+ Pisz czytelne, zwięzłe błędy kompilacji:
 
-- **Używaj zwykłego języka** , który wyjaśnia problem niewielkim lub bez żargon kompilatora. Tekst błędu kompilacji nie powinien być poza technicznym.
+- **Użyj zwykłego języka,** który wyjaśnia problem przy użyciu niewielkiego lub żadnego żargonu kompilatora. Tekst błędu kompilacji nie powinien być zbyt techniczny.
 
-- **Konspekt możliwych przyczyn.** Na przykład "Brak dwukropka między właściwością i wartością w deklaracji" (Właściwość): (wartość) ".
+- **Konspektuj możliwe przyczyny.** Na przykład "Brak dwukropka między właściwością i wartością w deklaracji '(property) : (value)".
 
-- Podaj szczegółowe informacje o potencjalnych poprawkach. Jeśli nie ma wystarczającej ilości miejsca, dodatkowe szczegóły mogą zostać wprowadzone do odpowiedniego tematu pomocy.
+- Podaj szczegółowe informacje o potencjalnych poprawkach. Jeśli nie ma wystarczającej ilości miejsca, dodatkowe szczegóły można umieścić w odpowiednim temacie pomocy.
 
-### <a name="components-of-a-well-written-error-message"></a>Składniki dobrze zarejestrowanego komunikatu o błędzie
+### <a name="components-of-a-well-written-error-message"></a>Składniki dobrze napisanego komunikatu o błędzie
 
 #### <a name="use-the-shell-dialog-service-for-error-messages"></a>Użyj usługi okna dialogowego powłoki dla komunikatów o błędach.
- Za pomocą usługi okna dialogowego powłoki można kontrolować wygląd wiadomości, w szczególności czcionki, bez konieczności wprowadzania istotnych zmian do poszczególnych elementów. Użyj mechanizmów **IErrorInfo** i zgłoś je za pomocą **IVsUIShell:: SetErrorInfo/ReportErrorInfo**.
+ Usługa okna dialogowego powłoki umożliwia kontrolowanie wyglądu komunikatu, w szczególności czcionek, bez istotnych zmian poszczególnych elementów. Użyj mechanizmów **IErrorInfo** i zgłoś je przy użyciu interfejsu **IVsUIShell::SetErrorInfo/ReportErrorInfo.**
 
-#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>Wybierz skuteczną i odpowiednią prezentację powiadomienia.
- Użyj modalnego okna dialogowego z ostrzeżeniem krytycznym, jeśli wymagana jest natychmiastowa akcja, aby uniknąć utraty danych (powiadomienia synchronicznego). Ikony krytyczne są zarezerwowane dla sytuacji, w których zamknięcie komunikatu bez odczytywania może prowadzić do negatywnego wpływu. Utrata danych jest krytyczną sytuacją, która wymaga reakcji na poziomie alarmu. Zbyt duże użycie ikony krytycznej desensitizes użytkownikom. Jeśli komunikat o błędzie ma charakter informacyjny, należy rozważyć alternatywy dla modalnego okna dialogowego (powiadomienie asynchroniczne).
+#### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>Wybierz skuteczną i odpowiednią prezentację powiadomień.
+ Użyj modalnego okna dialogowego z ostrzeżeniem krytycznym, jeśli jest wymagane natychmiastowe działanie w celu uniknięcia utraty danych (powiadomienie synchroniczne). Ikony krytyczne są zarezerwowane w sytuacjach, w których zamknięcie komunikatu bez jego odczytania może prowadzić do negatywnych konsekwencji. Utrata danych jest krytyczną sytuacją, która wymaga reakcji na poziomie alarmu. Overuse of the critical icon desensizes users to its importance. Jeśli komunikat o błędzie ma charakter informacyjny, rozważ alternatywę dla modalnego okna dialogowego (powiadomienie asynchroniczne).
 
-#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>Podaj czyste, zwięzłe wyjaśnienie przyczyny wystąpienia problemu, a nie wyjaśnień technicznych.
- Przeciążanie użytkowników ze szczegółami technicznymi w wyjaśnieniu spowoduje, że będą one lepiej ignorować komunikaty o błędach. Przykłady dobrego przesyłania komunikatów:
+#### <a name="provide-a-clean-succinct-explanation-of-why-the-problem-occurred-rather-than-a-technical-explanation"></a>Podaj czyste, zwięzłe wyjaśnienie przyczyny problemu, a nie wyjaśnienie techniczne.
+ Przeciążenie użytkowników ze szczegółami technicznymi w objaśnieniu sprawi, że będą bardziej skłonni do ignorowania komunikatów o błędach. Przykłady dobrych wiadomości:
 
 - "Nie można otworzyć żądanego pliku".
 
 - "Nie można nawiązać połączenia z Internetem".
 
-#### <a name="provide-information-about-how-to-fix-the-problem"></a>Podaj informacje o sposobach rozwiązania problemu.
- Zaproponuj użytkownikowi sugestie dotyczące sposobu rozwiązania problemu. Jeśli nie ma żadnych sugestii, być uczciwym użytkownikom. Udostępniaj bezpośrednie linki do alternatywnych źródeł online, takich jak pomoc techniczna lub społeczność techniczna. Spróbuj wskazać użytkownikom konkretne informacje online dotyczące problemu. Aby uzyskać identyfikator błędu, należy rozważyć Łączenie użytkowników z wątkiem dyskusji o tym konkretnym błędzie. Przykłady dobrego przesyłania komunikatów:
+#### <a name="provide-information-about-how-to-fix-the-problem"></a>Podaj informacje na temat sposobu rozwiązania problemu.
+ Zaoferuj użytkownikom sugestie dotyczące sposobu rozwiązania problemu. Jeśli nie ma sugestii, należy być uczciwym wobec użytkownika. Udostępnij bezpośrednie linki do alternatywnych źródeł online, takich jak pomoc techniczna lub pomoc społecznościowa. Spróbuj wskazać użytkownikom konkretne informacje online dotyczące problemu. W przypadku identyfikatora błędu rozważ połączenie użytkowników z wątkiem dyskusji na temat tego konkretnego błędu. Przykłady dobrych wiadomości:
 
-- "Upewnij się, że nawiązano połączenie z Internetem, a następnie spróbuj ponownie wykonać tę operację".
+- "Upewnij się, że masz połączenie z Internetem i spróbuj ponownie wykonać tę operację".
 
-- "Upewnij się, że plik istnieje i że masz uprawnienia do jego otwierania".
+- "Upewnij się, że plik istnieje i że masz uprawnienia do jego otwarcia".
 
-#### <a name="write-a-message-that-is-short-and-to-the-point"></a>Napisz komunikat, który jest krótki i do punktu.
- Komunikat o błędzie może powiadomić, wyjaśnić i zaoferować rozwiązanie, ale nadal będzie ignorowany, jeśli jest zbyt Word. Jednym z rozwiązań jest używanie ujawniania progresywnego za pomocą przycisku Szczegóły. Na przykład Podaj krótki opis/rozwiązanie, a następnie wprowadź więcej szczegółów w obszarze przycisku Szczegóły. Jeśli użytkownik zdecyduje się uzyskać więcej informacji o błędzie, może to zrobić.
+#### <a name="write-a-message-that-is-short-and-to-the-point"></a>Napisz wiadomość, która jest krótka i do punktu.
+ Komunikat o błędzie może powiadamiać, wyjaśniać i oferować rozwiązanie, ale nadal można je zignorować, jeśli jest ono zbyt wyrazowe. Jednym z rozwiązań jest użycie stopniowego ujawnienia z przyciskiem szczegółów. Na przykład podaj krótki opis/rozwiązanie, a następnie umieść więcej szczegółów pod przyciskiem szczegółów. Jeśli użytkownik zdecyduje się przeczytać więcej informacji na temat błędu, może to zrobić.
 
- Język w komunikacie powinien:
+ Język w komunikacie powinien być:
 
-- **Odpowiednie dla domeny.** Użyj języka, który użytkownik będzie zrozumieć. Mimo że nasi klienci to deweloperzy, często nie mają kontekstu i terminologii.
+- **Odpowiednie dla domeny.** Użyj języka, który będzie zrozumiały dla użytkownika. Mimo że nasi klienci są deweloperami, często nie mają używanego kontekstu i terminologii.
 
-- **Specjalne.** Unikaj niejasnych wyrazów i podaj określone nazwy i lokalizacje obiektów. Na przykład komunikat o błędzie, taki jak "znak jest nieprawidłowy", nie jest użyteczny. Który znak? "Nie znaleziono pliku". Który plik?
+- **Określonych.** Unikaj niejasnych słów i nadawaj konkretne nazwy i lokalizacje obiektów, których dotyczy ten konflikt. Na przykład komunikat o błędzie, taki jak "znak jest nieprawidłowy", nie jest przydatny. Który znak? "Nie znaleziono pliku". Który plik?
 
-- **Courteous.** Nie polecenia Blame użytkownika ani nie należy ich Stupid. Unikaj nieszkodliwości lub wulgarnego języka (Kill, wykonaj, Przerwij, krytyczne, niedozwolone). Unikaj wielkich liter, które często są postrzegane jako Shouting i nie są odczytywane. Nie używaj humor.
+- **Uprzejmy.** Nie należy obwiniać użytkownika ani sprawić, aby czuli się od siebie odimówieni. Unikaj wulgarnego lub obraźliwego języka (kill, execute, terminate, fatal, illegal). Unikaj wielkich liter, który jest często postrzegany jako przechyłanie i nie jest tak czytelny. Nie używaj ich do tego celu.
 
-- **Odpowiedź poprawna.** Używaj poprawnej pisowni i gramatyki (nawet w przypadku alfa). Literówki są nieprofesjonalne i gorzej.
+- **Poprawne.** Używaj poprawnej pisowni i gramatyki (nawet w alfasach). Literówki są nieprofesjonalne i kłopotliwe.
 
-- **Odpowiednio odpowiednie.** Użyj odpowiedniego tekstu przycisku. Należy unikać przycisku "OK" i zamiast tego użyć "Continue" lub "yes/no".
+- **Odpowiednie kontekstowo.** Użyj odpowiedniego tekstu przycisku. Unikaj przycisku "OK", a zamiast tego użyj opcji "Kontynuuj" lub "Tak/Nie".
 
 ### <a name="error-message-examples"></a>Przykłady komunikatów o błędach
 
 |Dobrze|Zła|
 |----------|---------|
-|"Numer wybrany przez Ciebie nie jest już w trakcie obsługi. Sprawdź numer i ponownie nawiąż połączenie lub wybierz 0 dla operatora.|-"Błąd (449): niedozwolony numer"<br />-"Ten nieobsługiwany błąd wyjątku wskazuje, że operacja została ukończona pomyślnie".<br /><br /> ![Zły komunikat o błędzie w programie Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 — a_ErrorDialog")|
+|"Wybrany numer nie jest już w usłudze. Sprawdź numer i wybierz ponownie lub wybierz 0 dla operatora".|- "Błąd (449): Liczba niedozwolona"<br />- "Ten nieobsługiwany błąd wyjątku wskazuje, że operacja została zakończona pomyślnie".<br /><br /> ![Zły komunikat o błędzie w Visual Studio](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
 ## <a name="accessing-help"></a>Uzyskiwanie dostępu do pomocy
 
 ### <a name="overview"></a>Omówienie
- Oprócz dokumentacji w witrynie MSDN użytkownik programu Visual Studio ma kilka punktów dostępu, które ułatwiają użytkownikowi pomoc w INTERFEJSie użytkownika. Aby zapewnić, że te punkty dostępu są stale dostępne, zespoły funkcji muszą korzystać z systemu pomocy oferowanego przez środowisko. Te punkty dostępu są następujące:
+ Oprócz dokumentacji w witrynie MSDN użytkownik Visual Studio kilka punktów dostępu, które pomagają użytkownikowi w interfejsie użytkownika. Aby zapewnić stałą dostęp do tych punktów dostępu, zespoły ds. funkcji muszą korzystać z systemu pomocy oferowanego przez środowisko. Te punkty dostępu to:
 
-- **Instruktażowe i uzupełniające tekst w oknach dialogowych.** Tekst statyczny, który daje kierunek lub wyjaśnienie, na powierzchni interfejsu użytkownika lub dostępne na umieszczeniu wskaźnika myszy nad ikoną porady.
+- **Tekst instruktażowy i uzupełniający w oknach dialogowych.** Tekst statyczny, który podaje kierunek lub wyjaśnienie, na powierzchni interfejsu użytkownika lub dostępny po najechaniu kursorem na ikonę InfoTip.
 
-- **F1 — Pomoc** (tylko Edytor). W edytorze programu Visual Studio użytkownik może ufać, że w dowolnym momencie naciśnięcie klawisza F1 spowoduje wyświetlenie tematu pomocy specyficznego dla bieżącego zaznaczenia. Upewnij się, że tematy skojarzone z klawiszem F1 są odpowiednie i informacyjne.
+- **Pomoc F1** (tylko edytor). W edytorze Visual Studio użytkownik może mieć zaufanie, że w dowolnym momencie naciśnięcie klawisza F1 spowoduje, że pojawi się temat Pomocy specyficzny dla bieżącego zaznaczenia. Upewnij się, że tematy skojarzone z F1 są odpowiednie i informacyjne.
 
-- **Hiperłącza do tematów pomocy.** Hiperłącze w oknie dialogowym, oknie narzędzi lub na powierzchni projektowej, w którym jest uruchamiany temat, aby pomóc użytkownikowi w nauce dodatkowych informacji na temat technologii, możliwości lub informacji o sposobach wykonywania zadania.
+- **Hiperlinki do tematów Pomocy.** Hiperlink w oknie dialogowym, oknie narzędzi lub powierzchni projektowej, który uruchamia temat, aby pomóc użytkownikowi dowiedzieć się więcej na temat technologii, możliwości lub informacji na temat sposobu wykonania zadania.
 
-- **Mechanizmy interfejsu użytkownika pomocnika, takie jak Tagi inteligentne i okna dialogowe tworzenia.** Te mechanizmy ułatwiają użytkownikowi zrozumienie elementu interfejsu użytkownika lub ułatwiają wykonywanie zadań, takich jak Tagi inteligentne lub okna dialogowe konstruktorów.
+- **Mechanizmy interfejsu użytkownika pomocnika, takie jak tagi inteligentne i okna dialogowe tworzenia.** Te mechanizmy pomagają użytkownikowi w zrozumieniu elementu interfejsu użytkownika lub ułatwiają zadanie, takie jak inteligentne tagi lub okna dialogowe konstruktora.
 
 - **Przyciski pomocy interfejsu użytkownika** (przestarzałe). Widoczny wskaźnik na pasku tytułu, który zapewnia dostęp do powiązanego tematu pomocy F1.
 
 ### <a name="text"></a>Tekst
 
-#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Instruktażowe i uzupełniające tekst w oknach dialogowych
- W oknach dialogowych, które obsługują złożone zadania, może być konieczne wydawanie tekstu instruktażowego w interfejsie użytkownika, często w górnej części okna dialogowego lub blisko złożonych kontrolek. Aby uzyskać szczegółowe informacje na temat stylu pisania [, zobacz tekst i terminologia interfejsu użytkownika](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) .
+#### <a name="instructional-and-supplemental-text-in-dialogs"></a>Tekst instruktażowy i uzupełniający w oknach dialogowych
+ W oknach dialogowych, które obsługują złożone zadania, może być konieczne nadaj tekst instruktażowy w interfejsie użytkownika, często w górnej części okna dialogowego lub w pobliżu złożonych kontrolek. Zobacz [tekst interfejsu użytkownika i terminologię,](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) aby uzyskać szczegółowe informacje na temat stylu pisania.
 
-#### <a name="infotips"></a>InfoTips
- Często tekst instrukcji może być zbyt długi, aby można było pomieścić w interfejsie użytkownika lub może być przydatny tylko dla nowych użytkowników, mało więcej, jak bałagany dla doświadczonych użytkowników. W takim przypadku tekst instruktażowy/informacyjny powinien zostać umieszczony jako etykietka narzędzia w obszarze porady.
+#### <a name="infotips"></a>Etykietki informacji
+ Często tekst instruktażowy może być zbyt długi, aby można go było umieścić w interfejsie użytkownika, lub może być przydatny tylko dla nowych użytkowników, poczuw się jak zaśmiecony dla doświadczonych użytkowników. W takim przypadku tekst instruktażowy/informacyjny należy umieścić jako etykietkę narzędzia w obszarze Etykietka informacyjna.
 
- InfoTips powinny być umieszczone blisko formantów, z którymi są one powiązane, i powinny korzystać z określonej ikony porady, która nie jest jeszcze zauważalna.
+ Etykietki informacyjne powinny być umieszczone w pobliżu kontrolek, z którymi są powiązane, i powinny używać określonej ikony Etykietki informacji, która jest dyskretna, ale zauważalna.
 
- ![Porada w programie Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601 — d_InfoTip")
+ ![Etykietka informacyjna w Visual Studio](../../extensibility/ux-guidelines/media/0601-d_infotip.png "0601-d_InfoTip")
 
- **Przykład porady w programie Visual Studio**
+ **Przykład etykietki informacyjnej w Visual Studio**
 
-### <a name="interactive-help-mechanisms"></a>Interaktywne mechanizmy pomocy
+### <a name="interactive-help-mechanisms"></a>Mechanizmy interaktywnej pomocy
 
 #### <a name="f1-help"></a>Pomoc F1
- Pomoc F1 jest wymagana w edytorze lub na powierzchni projektowej, ale nie w innym miejscu w środowisku programu Visual Studio.
+ Pomoc F1 jest wymagana w obrębie edytora lub powierzchni projektowej, ale nie w innym Visual Studio środowisku.
 
-#### <a name="hyperlinks-to-help-topics"></a>Hiperlinki do tematów pomocy
- Hiperłącza mogą służyć do wykonywania akcji, nawigowania w środowisku IDE lub uruchamiania pomocy w przeglądarce. Aby uzyskać szczegółowe informacje na temat języka i przycisków 07.10.01 oraz hiperlinków dla wytycznych dotyczących wizualizacji i układu, zobacz [tekst i terminologia interfejsu użytkownika](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) .
+#### <a name="hyperlinks-to-help-topics"></a>Hiperlinki do tematów Pomocy
+ Hiperlinki mogą służyć do wykonywania akcji, nawigowania w obrębie środowiska IDE lub uruchamiania Pomocy w przeglądarce. Zobacz [tekst interfejsu użytkownika](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) i terminologię, aby uzyskać szczegółowe informacje na temat języka oraz przyciski i hiperlinki 07.10.01, aby uzyskać wskazówki dotyczące wizualizacji i układu.
 
-#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>Przyciski pomocy [?] w paskach tytułu okna dialogowego (przestarzałe)
- W większości, przyciski pomocy [?] na pasku tytułu okien dialogowych są przestarzałe. Tematy interfejsu użytkownika nie są już częścią naszego modelu doc i dlatego mogą nie być odpowiednim tematem do powiązania. Zasadniczo przycisk paska tytułu był taki sam jak Pomoc F1 i nie jest już wymagany w oknach dialogowych. W niektórych przypadkach może być nadal używany jako wskaźnik informujący o tym, że dostępne są więcej informacji koncepcyjnych lub proceduralnych, chociaż hiperłącza są najczęściej używane w nowszych interfejsie użytkownika.
+#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>Przyciski Pomocy [?] na paskach tytułu okna dialogowego (przestarzałe)
+ W większości przypadków przyciski Pomoc [?] na pasku tytułu okien dialogowych są przestarzałe. Tematy interfejsu użytkownika nie są już częścią naszego modelu dokumentacji i w związku z tym może nie być odpowiednim tematem, z który należy utworzyć link. Zasadniczo przycisk paska tytułu był taki sam jak przycisk Pomoc F1 i nie jest już wymagany w oknach dialogowych. W niektórych przypadkach nadal można tego użyć jako wskaźnika, że dostępnych jest więcej informacji koncepcyjnych lub proceduralnych, chociaż hiperlinki są częściej używane w nowszej wersji interfejsu użytkownika.
 
-##### <a name="dialogs-created-through-the-environment"></a>Okna dialogowe utworzone za pomocą środowiska
- Wiele okien dialogowych powłoki jest tworzonych za pomocą funkcji **VBDialogBoxParam** . Ta funkcja udostępniona została zaktualizowana, aby pomóc w przenoszeniu przycisku **pomocy** z okna dialogowego do **?** przycisk przy zachowaniu architektury zgodnej z poprzednimi wersjami i rozszerzalnością.
+##### <a name="dialogs-created-through-the-environment"></a>Okna dialogowe utworzone za pośrednictwem środowiska
+ Wiele okien dialogowych powłoki jest tworzona za pomocą **funkcji VBDialogBoxParam.** Ta funkcja udostępniona została zaktualizowana, aby ułatwić przenoszenie **przycisku Pomoc** z okna dialogowego do **?** z zachowaniem architektury zgodnej z poprzednimi wersjami i rozszerzalnej.
 
- W odniesieniu do **VBDialogBoxParam** funkcja przegląda szablon okna dialogowego dla przycisku, którego identyfikator jest **IDHELP** (9) lub etykieta jest **pomocna** lub **&**. Jeśli zostanie znaleziony przycisk pomocy, jest on ukryty, a **WS_EX_CONTEXTHELP** stylu zostanie dodany do okna dialogowego, które umieszcza **?** na pasku tytułu okna dialogowego.
+ W szczególności funkcja **VBDialogBoxParam** wyszukuje w szablonie okna dialogowego przycisk o identyfikatorze **IDHELP** (9) lub etykietę Help **or**&Help ( **Pomoc).** Jeśli przycisk Pomoc zostanie znaleziony, zostanie ukryty, a styl WS_EX_CONTEXTHELP **zostanie** dodany do okna dialogowego, w którym znajduje się **?** na pasku tytułu okna dialogowego.
 
- Po utworzeniu okna dialogowego wypycha proces okna dialogowego do stosu i wywołuje okno dialogowe z procesem okna dialogowego przetwarzania wstępnego o nazwie **DialogPreProc**. Kiedy **?** kliknięto przycisk powoduje wysłanie **WM_SYSCOMMAND** **SC_CONTEXTHELP** do okna dialogowego. **DialogPreProc** przechwytuje to polecenie i zmienia go na komunikat **WM_HELP** , który jest przesyłany do oryginalnego procesu dialogu.
+ Po utworzeniu okna dialogowego wypycha ono okno dialogowe do stosu i wywołuje okno dialogowe z przetwarzaniem wstępnym o nazwie **DialogPreProc**. Kiedy **?** kliknięcie przycisku powoduje wysłanie **WM_SYSCOMMAND** **SC_CONTEXTHELP** do okna dialogowego. **DialogPreProc** przechwytuje to polecenie  i zmienia je na komunikat WM_HELP, który jest przekazywany do oryginalnego proc okna dialogowego.
 
- Większość okien dialogowych utworzonych w środowisku ma przycisk Pomoc w oknie dialogowym. Po wyświetleniu okna dialogowego przycisk Pomoc jest ukryty i tylko **?** przycisk działa. Jeśli **?** przycisk jest kiedykolwiek usunięty lub zmieniony w systemie Windows, to rozwiązanie umożliwia szybkie przejście do oryginalnych przycisków pomocy.
+ Większość okien dialogowych utworzonych w środowisku ma przycisk Pomoc w oknie dialogowym. Gdy zostanie wyświetlone okno dialogowe, przycisk Pomoc zostanie automatycznie ukryty i będzie widoczny tylko **przycisk ?** Przycisk działa. Jeśli **?** przycisk jest kiedykolwiek usuwany lub zmieniany w systemie Windows. Dzięki temu rozwiązaniu można szybko wrócić do oryginalnych przycisków Pomoc.
 
- To rozwiązanie udostępnia cztery założenia, które mogą spowodować błędy:
+ To rozwiązanie wprowadza cztery założenia, które mogą powodować błędy:
 
-- Przycisk Pomoc okna dialogowego to **IDHELP** (9).
+- Przycisk pomocy w oknie dialogowym to **IDHELP** (9).
 
-- Okno dialogowe jest wyświetlane prawidłowo, gdy przycisk Pomoc jest ukryty.
+- Okno dialogowe wygląda poprawnie, gdy przycisk Pomoc jest ukryty.
 
 - Okno dialogowe nie zastępuje jego winproc.
 
-- Okno dialogowe nie jest osadzone w innym oknie dialogowym.
+- Okno dialogowe nie jest osadzone wewnątrz innego okna dialogowego.
 
-  Jeśli Twoje okno dialogowe znajduje się w msenv i nie korzysta z **VBDialogBoxParam**, zbadaj użycie **VBDialogBoxParam** przed wdrożeniem własnego programu obsługi.
+  Jeśli okno dialogowe znajduje się w programie msenv i nie używa narzędzia **VBDialogBoxParam,** przed zaimplementowaniem własnej procedury obsługi zbadaj użycie właściwości **VBDialogBoxParam.**
 
-##### <a name="dialogs-created-through-other-packages"></a>Okna dialogowe utworzone za poorednictwem innych pakietów
- Własne rozwiązanie można zaimplementować dla okien dialogowych, które znajdują się poza msenv. W przypadku udostępnionej klasy okna dialogowego w pakietu VSPackage Rozważ przeniesienie przycisku do paska tytułu lub wdrożenie procedury obsługi w każdym oknie dialogowym. Poniższy kod stanowi szkielet implementacji, aby ułatwić rozpoczęcie pracy:
+##### <a name="dialogs-created-through-other-packages"></a>Okna dialogowe utworzone za pomocą innych pakietów
+ Możesz zaimplementować własne rozwiązanie dla okien dialogowych, które znajdują się poza msenv. W przypadku klasy udostępnionego okna dialogowego w pakietach VSPackage rozważ przeniesienie przycisku na pasek tytułu lub zaimplementowanie procedury obsługi w każdym oknie dialogowym. Poniższy kod jest szkieletem implementacji, który pomoże Ci rozpocząć pracę:
 
 ```
 struct DLGPROCITEM
@@ -376,8 +376,8 @@ INT_PTR CALLBACK DialogPreProc(HWND hwndDlg, UINT uMsg,
 }
 ```
 
-##### <a name="help-buttons-in-managed-code"></a>Przyciski pomocy w kodzie zarządzanym
- Zastępowanie domyślnego zachowania przycisku pomoc paska tytułu jest łatwe w kodzie zarządzanym. Poniżej znajduje się kompletna aplikacja demonstracyjna, która demonstruje to zachowanie. W zasadzie należy przesłonić metodę **WndProc** formularza, a następnie wyłączyć żądania pomocy F1 w przypadku przechwycenia komunikatu **SC_CONTEXTHELP** .
+##### <a name="help-buttons-in-managed-code"></a>Przyciski Pomocy w kodzie zarządzanym
+ Zastępowanie domyślnego zachowania przycisku Pomoc na pasku tytułu okna jest łatwe w kodzie zarządzanym. Poniżej znajduje się kompletna aplikacja demonstracyjna, która demonstruje to zachowanie. W zasadzie należy zastąpić metodę **WndProc** formularza, **a** następnie wyłączyć żądania pomocy F1 po przechwyceniu komunikatu SC_CONTEXTHELP formularza.
 
 ```
 using System;

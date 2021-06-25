@@ -1,8 +1,8 @@
 ---
-description: Ta funkcja wylicza daną listę plików, dostarczając informacje o zmianach nazw poszczególnych plików za pośrednictwem funkcji wywołania zwrotnego.
-title: Funkcja SccQueryChanges | Microsoft Docs
+description: Ta funkcja wylicza podaną listę plików, dostarczając informacje o zmianach nazw dla każdego pliku za pośrednictwem funkcji wywołania zwrotnego.
+title: SccQueryChanges, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryChanges
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c821453642a3632c98fac153a367e8ba41495adc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f93ed14671995502356ae4a19664b14bbd32ce7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073940"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900476"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges, funkcja
-Ta funkcja wylicza daną listę plików, dostarczając informacje o zmianach nazw poszczególnych plików za pośrednictwem funkcji wywołania zwrotnego.
+Ta funkcja wylicza podaną listę plików, dostarczając informacje o zmianach nazw dla każdego pliku za pośrednictwem funkcji wywołania zwrotnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,38 +36,38 @@ SCCRTN SccQueryChanges(
 ```
 
 #### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[in] Wskaźnik kontekstu wtyczki kontroli źródła.
 
  nFiles
 
-podczas Liczba plików w `lpFileNames` tablicy.
+[in] Liczba plików w `lpFileNames` tablicy.
 
  lpFileNames
 
-podczas Tablica nazw plików, dla których mają zostać wyświetlone informacje.
+[in] Tablica nazw plików, o których można uzyskać informacje.
 
  pfnCallback
 
-podczas Funkcja wywołania zwrotnego do wywołania dla każdej nazwy pliku na liście (zobacz [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) , aby uzyskać szczegółowe informacje).
+[in] Funkcja wywołania zwrotnego do wywołania dla każdej nazwy pliku na liście (zobacz [QUERYCHANGESFUNC,](../extensibility/querychangesfunc.md) aby uzyskać szczegółowe informacje).
 
  pvCallerData
 
-podczas Wartość, która zostanie przeniesiona bez zmian do funkcji wywołania zwrotnego.
+[in] Wartość, która zostanie przekazana bez zmian do funkcji wywołania zwrotnego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła dla tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Proces zapytania został ukończony pomyślnie.|
 |SCC_E_PROJNOTOPEN|Projekt nie został otwarty w kontroli źródła.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
-|SCC_E_NONSPECIFICERROR|Wystąpił błąd nieokreślony lub ogólny.|
+|SCC_E_ACCESSFAILURE|Występuje problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub zdyskusją.|
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony lub ogólny błąd.|
 
 ## <a name="remarks"></a>Uwagi
- Zmiany, których dotyczy zapytanie, są w przestrzeni nazw: w przypadku, zmiana nazwy, dodanie i usunięcie pliku.
+ Zmiany, których dotyczy zapytanie, dotyczą przestrzeni nazw : w szczególności zmiany nazwy, dodawania i usuwania pliku.
 
 ## <a name="see-also"></a>Zobacz też
 - [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

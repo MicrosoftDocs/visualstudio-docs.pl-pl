@@ -1,8 +1,8 @@
 ---
-description: Ta funkcja pobiera zdarzenie stanu z kolejki.
-title: Funkcja SccGetEvents | Microsoft Docs
+description: Ta funkcja pobiera zdarzenie stanu w kolejce.
+title: SccGetEvents, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072991"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901061"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents, funkcja
-Ta funkcja pobiera zdarzenie stanu z kolejki.
+Ta funkcja pobiera zdarzenie stanu w kolejce.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,34 +37,34 @@ SCCRTN SccGetEvents (
 ### <a name="parameters"></a>Parametry
  pvContext
 
-podczas Struktura kontekstu wtyczki kontroli źródła.
+[in] Struktura kontekstu wtyczki kontroli źródła.
 
  lpFileName
 
-[in. out] Bufor, w którym wtyczka do kontroli źródła umieszcza zwracaną nazwę pliku (do _MAX_PATH znaków).
+[in, out] Bufor, w którym wtyczka kontroli kodu źródłowego umieszcza zwróconą nazwę pliku (do _MAX_PATH znaków).
 
  lpStatus
 
-[in. out] Zwraca kod stanu (zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md) dla możliwych wartości).
+[in, out] Zwraca kod stanu (zobacz [Kod stanu pliku,](../extensibility/file-status-code-enumerator.md) aby uzyskać możliwe wartości).
 
  pnEventsRemaining
 
-[in. out] Zwraca liczbę wpisów pozostałych w kolejce po tym wywołaniu. Jeśli ta liczba jest duża, obiekt wywołujący może zdecydować się na wywołanie [SccQueryInfo](../extensibility/sccqueryinfo-function.md) , aby uzyskać wszystkie informacje jednocześnie.
+[in, out] Zwraca liczbę wpisów pozostawionych w kolejce po tym wywołaniu. Jeśli ta liczba jest duża, wywołujący może zdecydować się na wywołanie [SccQueryInfo](../extensibility/sccqueryinfo-function.md) w celu uzyskania wszystkich informacji jednocześnie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła dla tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Pobieranie zdarzeń zakończyło się pomyślnie.|
+|SCC_OK|Pobierz zdarzenia zakończyły się pomyślnie.|
 |SCC_E_OPNOTSUPPORTED|Ta funkcja nie jest obsługiwana.|
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd.|
+|SCC_E_NONSPECIFICERROR|Nieokreślona awaria.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja jest wywoływana podczas przetwarzania bezczynności, aby sprawdzić, czy istnieją jakiekolwiek aktualizacje stanu dla plików objętych kontrolą źródła. Wtyczka do kontroli źródła utrzymuje stan wszystkich plików, o których wie, i zawsze, gdy zmiana stanu jest zapisywana przez wtyczkę, stan i skojarzony plik są przechowywane w kolejce. Gdy `SccGetEvents` jest wywoływana, zostanie pobrany i zwrócony górny element kolejki. Ta funkcja jest ograniczona do zwrócenia tylko wcześniej buforowanych informacji i musi mieć bardzo szybki szybkością oferowaną (czyli brak odczytywania dysku lub do systemu kontroli źródła dla stanu); w przeciwnym razie wydajność IDE może ulec obniżeniu.
+ Ta funkcja jest wywoływana podczas przetwarzania bezczynnego, aby sprawdzić, czy w plikach z kontrolą źródła były dostępne jakiekolwiek aktualizacje stanu. Wtyczka kontroli źródła zachowuje stan wszystkich plików, które zna, i za każdym razem, gdy wtyczka zanotuje zmianę stanu, stan i skojarzony plik są przechowywane w kolejce. Gdy `SccGetEvents` jest wywoływana, górny element kolejki jest pobierany i zwracany. Ta funkcja jest ograniczona do zwracania tylko wcześniej buforowanych informacji i musi mieć bardzo szybkie obracanie (to oznacza, że nie odczytuje dysku ani nie pyta o stan systemu kontroli źródła); w przeciwnym razie wydajność środowiska IDE może zacząć się pogarszać.
 
- Jeśli nie ma aktualizacji stanu do raportu, wtyczka do kontroli źródła przechowuje pusty ciąg w buforze wskazywanym przez `lpFileName` . W przeciwnym razie wtyczka przechowuje pełną nazwę ścieżki pliku, dla którego informacje o stanie uległy zmianie i zwraca odpowiedni kod stanu (jedna z wartości szczegółowych w [kodzie stanu pliku](../extensibility/file-status-code-enumerator.md)).
+ Jeśli nie ma aktualizacji stanu raportu, wtyczka kontroli źródła przechowuje pusty ciąg w buforze wskazywanym przez element `lpFileName` . W przeciwnym razie wtyczka przechowuje pełną nazwę ścieżki pliku, dla którego informacje o stanie uległy zmianie, i zwraca odpowiedni kod stanu (jedną z wartości szczegółowych w [pliku kod stanu](../extensibility/file-status-code-enumerator.md)).
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)
 - [Kod stanu pliku](../extensibility/file-status-code-enumerator.md)

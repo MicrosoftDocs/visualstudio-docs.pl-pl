@@ -1,9 +1,9 @@
 ---
 title: Rozszerzanie modelu obiektów projektu podstawowego | Microsoft Docs
-description: Dowiedz się, jak zwiększyć model obiektów automatyzacji projektu podstawowego w programie Visual Studio przy użyciu podtypu projektu.
+description: Dowiedz się, jak rozszerzyć model obiektów automatyzacji projektu podstawowego w programie Visual Studio przy użyciu podtypu projektu.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - automation object model, extending
 - project subtypes, extending automation object model
@@ -14,24 +14,24 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f220d1e0c97647162c621bc565147bc74f40103
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 175571b374c6a54999b212b316301f3f775891ff
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069624"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899345"
 ---
-# <a name="extend-the-object-model-of-the-base-project"></a>Rozwiń model obiektów projektu podstawowego
+# <a name="extend-the-object-model-of-the-base-project"></a>Rozszerzanie modelu obiektów projektu podstawowego
 
-Podtyp projektu może zwiększyć model obiektów automatyzacji projektu podstawowego w następujących miejscach:
+Podtyp projektu może rozszerzyć model obiektów automatyzacji projektu podstawowego w następujących miejscach:
 
-- Project. Extender (" \<ProjectSubtypeName> "): umożliwia to podtype projektu zaoferowanie obiektu z metodami niestandardowymi z <xref:EnvDTE.Project> obiektu. Podtyp projektu może użyć rozszerzeń automatyzacji, aby uwidocznić `Project` obiekt. <xref:EnvDTE80.IInternalExtenderProvider>Interfejs zaimplementowany w głównym agregatorze podtypu projektu powinien oferować jego obiekt dla elementu `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> (odpowiadającego `itemid` wartości [VSITEMID. Katalog główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project.Extender(" "): umożliwia podtypowi projektu zaoferowania \<ProjectSubtypeName> obiektu z metodami niestandardowymi z <xref:EnvDTE.Project> obiektu . Podtyp projektu może uwidaczniać obiekt za pomocą rozszerzenia `Project` automatyzacji. Interfejs zaimplementowany w agregatonie podtypu głównego projektu powinien oferować obiekt dla obiektu z (odpowiadającego wartości <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> `itemid` [VSITEMID. Główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
 
-- ProjectItem. Extender (" \<ProjectSubtypeName> "): umożliwia to podtype projektu zaoferowanie obiektu z metodami niestandardowymi z określonego <xref:EnvDTE.ProjectItem> obiektu w projekcie. Podtyp projektu może użyć rozszerzeń automatyzacji, aby uwidocznić ten obiekt. <xref:EnvDTE80.IInternalExtenderProvider>Interfejs zaimplementowany w głównym agregatorze podtypu projektu musi oferować obiekt dla elementu `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (odpowiadającego pożądanemu <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> ) CATID.
+- ProjectItem.Extender(" "): umożliwia podtypowi projektu zaoferowania obiektu z metodami niestandardowymi \<ProjectSubtypeName> z określonego obiektu w <xref:EnvDTE.ProjectItem> projekcie. Podtyp projektu może uwidaczniać ten obiekt za pomocą rozszerzenia automatyzacji. Interfejs zaimplementowany w agregatonie głównego podtypu projektu musi oferować obiekt dla obiektu <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` z <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (odpowiadające żądanemu <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> identyfikatorowi CATID).
 
-- Project. Properties: w tej kolekcji są ujawniane niezależne od konfiguracji właściwości `Project` obiektu. Aby uzyskać więcej informacji na temat `Project` właściwości, zobacz <xref:EnvDTE.Project.Properties%2A> . Podtyp projektu może użyć rozszerzeń automatyzacji, aby dodać jego właściwości do tej kolekcji. <xref:EnvDTE80.IInternalExtenderProvider>Interfejs zaimplementowany w głównym agregatorze podtypu projektu musi oferować obiekt dla elementu `VSHPROPID_BrowseObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> (odpowiadającego `itemid` wartości [VSITEMID. Katalog główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
+- Project.Properties: ta kolekcja uwidacznia właściwości obiektu niezależne od `Project` konfiguracji. Aby uzyskać więcej informacji na `Project` temat właściwości, zobacz <xref:EnvDTE.Project.Properties%2A> . Podtyp projektu może używać rozszerzenia automatyzacji, aby dodać jego właściwości do tej kolekcji. Interfejs zaimplementowany w agregatonie głównego podtypu projektu musi oferować swój obiekt dla obiektu z (odpowiadający wartości <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_BrowseObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> `itemid` [VSITEMID. Główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID.
 
-- Configuration. Properties: Ta kolekcja uwidacznia właściwości zależne od konfiguracji projektu dla określonej konfiguracji (na przykład debugowania). Aby uzyskać więcej informacji, zobacz <xref:EnvDTE.Configuration>. Podtyp projektu może użyć rozszerzeń automatyzacji, aby dodać jego właściwości do tej kolekcji. <xref:EnvDTE80.IInternalExtenderProvider>Interfejs zaimplementowany w głównym agregatorze podtypu projektu oferuje swój obiekt dla CATID `VSHPROPID_CfgBrowseObjectCATID` (odpowiadający `itemid` wartości [VSITEMID. Katalog główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>Interfejs jest używany do rozróżnienia jednego obiektu przeglądania konfiguracji od innego.
+- Configuration.Properties: ta kolekcja uwidacznia zależne od konfiguracji właściwości projektu dla określonej konfiguracji (na przykład Debugowanie). Aby uzyskać więcej informacji, zobacz <xref:EnvDTE.Configuration>. Podtyp projektu może używać rozszerzenia automatyzacji, aby dodać jego właściwości do tej kolekcji. Interfejs zaimplementowany w agregatonie podtypu głównego projektu oferuje swój obiekt dla <xref:EnvDTE80.IInternalExtenderProvider> identyfikatorów CATID (odpowiadających wartości `VSHPROPID_CfgBrowseObjectCATID` `itemid` [VSITEMID. Katalog główny](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)). Interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject> służy do odróżnienia jednego obiektu przeglądania konfiguracji od innego.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,24 +1,24 @@
 ---
-title: Kompilator kolorów VSIX | Microsoft Docs
-description: Dowiedz się więcej Visual Studio kompilatora kolorów rozszerzenia rozszerzenia, czyli aplikacji konsolowej, która zakrywa kolory Visual Studio motywach do pliku pkgdef.
+title: VsIX Color Compiler | Microsoft Docs
+description: Dowiedz się więcej Visual Studio kompilatora kolorów rozszerzenia, czyli aplikacji konsolowej, która zakrywa kolory Visual Studio motywach do pliku pkgdef.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92914703ea4b293ac054c841251b37886bbc1d5a
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: 2f7277299d3cedd2ea0db49a44109d8a0441ebd0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588465"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901763"
 ---
 # <a name="vsix-color-compiler"></a>Kompilator kolorów VSIX
-Narzędzie kompilatora kolorów rozszerzenia Visual Studio to aplikacja konsolowa, która pobiera plik .xml reprezentujący kolory istniejących motywów programu Visual Studio i zakrywa go do pliku pkgdef, aby można było używać tych kolorów w Visual Studio. Ponieważ można łatwo porównać różnice między plikami .xml, to narzędzie jest przydatne do zarządzania kolorami niestandardowymi w kontroli źródła. Można go również podłączyć do środowisk kompilacji, aby dane wyjściowe kompilacji było prawidłowym plikiem pkgdef.
+Narzędzie Visual Studio Extension Color Compiler to aplikacja konsolowa, która pobiera plik .xml reprezentujący kolory istniejących motywów Visual Studio i zakrywa go do pliku pkgdef, dzięki czemu te kolory mogą być używane w Visual Studio. Ponieważ można łatwo porównać różnice między plikami .xml, to narzędzie jest przydatne do zarządzania kolorami niestandardowymi w kontroli źródła. Można go również podłączyć do środowisk kompilacji, tak aby dane wyjściowe kompilacji było prawidłowym plikiem pkgdef.
 
  **Schemat XML motywu**
 
@@ -79,11 +79,11 @@ Narzędzie kompilatora kolorów rozszerzenia Visual Studio to aplikacja konsolow
 |**Atrybut**|**Definicja**|
 |-|-|
 |Nazwa|[Wymagane] Nazwa kategorii|
-|GUID|[Wymagane] Identyfikator GUID kategorii (musi odpowiadać formatowaniu identyfikatora GUID)|
+|GUID|[Wymagane] Identyfikator GUID kategorii (musi być zgodne z formatowaniem identyfikatora GUID)|
 
  **Kolor**
 
- Element definiuje kolor składnika lub stanu \<Color> interfejsu użytkownika. Preferowany schemat nazewnictwa koloru to [typ interfejsu użytkownika] [State]. Nie używaj słowa "color", ponieważ jest ono nadmiarowe. Kolor powinien wyraźnie wskazywać typ elementu i sytuacje, czyli "stan", dla którego zostanie zastosowany kolor. Kolor nie może być pusty i musi zawierać jeden lub oba elementy \<Background> \<Foreground> i . Elementy koloru są zdefiniowane w ten sposób:
+ Element definiuje kolor składnika lub stanu \<Color> interfejsu użytkownika. Preferowany schemat nazewnictwa koloru to [typ interfejsu użytkownika] [Stan]. Nie używaj słowa "color", ponieważ jest ono nadmiarowe. Kolor powinien wyraźnie wskazywać typ elementu i sytuacje, czyli "stan", dla którego zostanie zastosowany kolor. Kolor nie może być pusty i musi zawierać jeden lub oba elementy \<Background> \<Foreground> i . Elementy koloru są zdefiniowane w ten sposób:
 
 ```xml
 <Color Name="name">
@@ -98,7 +98,7 @@ Narzędzie kompilatora kolorów rozszerzenia Visual Studio to aplikacja konsolow
 
  **Tło i/lub pierwszy plan**
 
- Elementy i definiują wartość i typ koloru dla tła lub pierwszego planu \<Background> \<Foreground> elementu interfejsu użytkownika. Te elementy nie mają elementów kluczowych.
+ Elementy i definiują wartość i typ koloru dla tła lub pierwszego planu \<Background> \<Foreground> elementu interfejsu użytkownika. Te elementy nie mają elementów children.
 
 ```xml
 <Background Type="type" Source="int" />
@@ -107,10 +107,10 @@ Narzędzie kompilatora kolorów rozszerzenia Visual Studio to aplikacja konsolow
 
 |**Atrybut**|**Definicja**|
 |-|-|
-|Typ|[Wymagane] Typ koloru. Może to być jedna z następujących opcji:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie został ustawiony.<br /><br /> *CT_RAW:* Nieprzetworzone wartości ARGB.<br /><br /> *CT_COLORINDEX:* NIE UŻYWAJ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z syscolor.<br /><br /> *CT_VSCOLOR:* Kolor Visual Studio z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolor automatyczny.<br /><br /> *CT_TRACK_FOREGROUND:* NIE UŻYWAJ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE UŻYWAJ.|
-|Element źródłowy|[Wymagane] Wartość koloru reprezentowanego w szesnastkowym|
+|Typ|[Wymagane] Typ koloru. Może to być jedna z następujących opcji:<br /><br /> *CT_INVALID:* Kolor jest nieprawidłowy lub nie został ustawiony.<br /><br /> *CT_RAW:* Nieprzetworzone wartości ARGB.<br /><br /> *CT_COLORINDEX:* NIE UŻYWAJ.<br /><br /> *CT_SYSCOLOR:* Kolor systemu Windows z SysColor.<br /><br /> *CT_VSCOLOR:* Kolor Visual Studio z __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Kolor automatyczny.<br /><br /> *CT_TRACK_FOREGROUND:* NIE UŻYWAJ.<br /><br /> *CT_TRACK_BACKGROUND:* NIE UŻYWAJ.|
+|Element źródłowy|[Wymagane] Wartość koloru reprezentowanego w wartości szesnastkowej|
 
- Wszystkie wartości obsługiwane przez __VSCOLORTYPE są obsługiwane przez schemat w typ atrybutu. Zalecamy jednak używanie tylko tych CT_RAW i CT_SYSCOLOR.
+ Wszystkie wartości obsługiwane przez __VSCOLORTYPE są obsługiwane przez schemat w atrybutze Type. Zalecamy jednak używanie tylko tych CT_RAW i CT_SYSCOLOR.
 
  **Wszystkie razem**
 
@@ -137,11 +137,11 @@ Narzędzie kompilatora kolorów rozszerzenia Visual Studio to aplikacja konsolow
 
 |**Nazwa przełącznika**|**Uwagi**|**Wymagane lub opcjonalne**|
 |-|-|-|
-|Nienazwane (.xml plik)|Jest to pierwszy parametr bez nazwy i jest ścieżką do pliku XML do konwersji.|Wymagane|
-|Nienazwane (plik pkgdef)|Jest to drugi parametr bez nazwy, który jest ścieżką wyjściową wygenerowanego pliku pkgdef.<br /><br /> Ustawienie domyślne: \<XML Filename> .pkgdef|Opcjonalne|
+|Nienazwane (.xml pliku)|Jest to pierwszy parametr bez nazwy i jest ścieżką do pliku XML do przekonwertowania.|Wymagane|
+|Bez nazwy (plik pkgdef)|Jest to drugi parametr bez nazwy i jest ścieżką wyjściową wygenerowanego pliku pkgdef.<br /><br /> Ustawienie domyślne: \<XML Filename> .pkgdef|Opcjonalne|
 |/noLogo|Ustawienie tej flagi zatrzymuje drukowanie informacji o produkcie i prawach autorskich.|Opcjonalne|
-|/?|Wydrukuj informacje pomocy.|Opcjonalne|
-|/help|Wydrukuj informacje pomocy.|Opcjonalne|
+|/?|Wydrukuj informacje o Pomocy.|Opcjonalne|
+|/help|Wydrukuj informacje o Pomocy.|Opcjonalne|
 
  **Przykłady**
 

@@ -1,9 +1,9 @@
 ---
-title: Identyfikatory GUID IDE | Microsoft Docs
-description: Klasa VSConstants publikuje zestaw identyfikatorów GUID niektórych części IDE. Ten artykuł zawiera listę identyfikatorów GUID.
+title: Identyfikatory GUID środowiska IDE | Microsoft Docs
+description: Klasa VSConstants publikuje zestaw identyfikatorów GUID niektórych części środowiska IDE. W tym artykule wymieniono identyfikatory GUID.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
@@ -13,16 +13,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6351ea576c8976bd12fe206d8c4dbbe5f34a72d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069858"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904932"
 ---
 # <a name="ide-guids"></a>Identyfikatory GUID środowiska IDE
 
-<xref:Microsoft.VisualStudio.VSConstants>Klasa publikuje identyfikatory GUID niektórych części zintegrowanego środowiska programistycznego (IDE), jak wymieniono w poniższej tabeli.
+Klasa publikuje identyfikatory GUID niektórych części zintegrowanego środowiska projektowego <xref:Microsoft.VisualStudio.VSConstants> (IDE), jak podano w poniższej tabeli.
 
 ## <a name="core-systems"></a>Systemy podstawowe
 
@@ -46,7 +46,7 @@ ms.locfileid: "105069858"
 |Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Pliki, wirtualne i fizyczne foldery i podprojekty
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Pliki, foldery wirtualne i fizyczne oraz podprojekty
 
 |Stała|GUID|
 |--------------|----------|
@@ -67,7 +67,7 @@ ms.locfileid: "105069858"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-df150da82|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
@@ -100,13 +100,13 @@ ms.locfileid: "105069858"
 |Stała|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.HTMLTasks>|36ac1c0d-fe86-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
@@ -125,10 +125,10 @@ ms.locfileid: "105069858"
 |---------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
-|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11D0-8c46-00c04fc2aae2|
+|Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)
+- [Stałe COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)
 - [Stałe IDE](../extensibility/ide-constants.md)
-- [Polecenia zdefiniowane w środowisku IDE służące do rozszerzania projektu s ystems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Polecenia zdefiniowane w ideu do rozszerzania narzędzi projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

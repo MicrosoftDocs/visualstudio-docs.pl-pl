@@ -1,8 +1,8 @@
 ---
-description: Ta funkcja pobiera z kontroli źródła każdego z określonych plików bez interakcji z użytkownikiem.
-title: Funkcja SccBackgroundGet | Microsoft Docs
+description: Ta funkcja pobiera z kontroli źródła każdy z określonych plików bez interakcji z użytkownikiem.
+title: SccBackgroundGet, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccBackgroundGet
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d850b1f8493f3118cb4d3e49915361daa1e4837
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 316a02e84b4d51f309aecdd98d0409c85ccbdbef
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060461"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901243"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet, funkcja
-Ta funkcja pobiera z kontroli źródła każdego z określonych plików bez interakcji z użytkownikiem.
+Ta funkcja pobiera z kontroli źródła każdy z określonych plików bez interakcji z użytkownikiem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,43 +36,43 @@ SCCRTN SccBackgroundGet(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[in] Wskaźnik kontekstu wtyczki kontroli źródła.
 
  nFiles
 
-podczas Liczba plików określona w `lpFileNames` tablicy.
+[in] Liczba plików określona w `lpFileNames` tablicy.
 
  lpFileNames
 
-[in. out] Tablica nazw plików do pobrania.
+[in, out] Tablica nazw plików do pobrania.
 
 > [!NOTE]
-> Nazwy muszą być w pełni kwalifikowanymi nazwami plików lokalnych.
+> Nazwy muszą być w pełni kwalifikowane lokalne nazwy plików.
 
- flagiDW
+ Dwflags
 
-podczas Flagi poleceń ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
+[in] Flagi poleceń ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
  dwBackgroundOperationID
 
-podczas Unikatowa wartość skojarzona z tą operacją.
+[in] Unikatowa wartość skojarzona z tą operacją.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła dla tej funkcji zwraca jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja została ukończona pomyślnie.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Trwa już pobieranie w tle (wtyczka do kontroli źródła powinna zwrócić tę wartość tylko wtedy, gdy nie obsługuje równoczesnych operacji wsadowych).|
+|SCC_OK|Operacja została zakończona pomyślnie.|
+|SCC_E_BACKGROUNDGETINPROGRESS|Pobieranie w tle jest już w toku (wtyczka kontroli źródła powinna zwracać ją tylko wtedy, gdy nie obsługuje równoczesnych operacji wsadowych).|
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja jest zawsze wywoływana na wątku innym niż ten, który załadował wtyczkę kontroli źródła. Ta funkcja nie powinna zostać zwrócona, dopóki nie zostanie ukończona; może jednak być wywoływana wielokrotnie z wieloma listami plików.
+ Ta funkcja jest zawsze wywoływana w wątku innym niż ten, który załadował wtyczkę kontroli źródła. Ta funkcja nie zostanie zwrócona, dopóki nie zostanie wykonana. Jednak może być wywoływana wiele razy z wieloma listami plików, a wszystko to w tym samym czasie.
 
- Użycie `dwFlags` argumentu jest takie samo jak [SccGet](../extensibility/sccget-function.md).
+ Użycie argumentu `dwFlags` jest takie samo jak [SccGet](../extensibility/sccget-function.md).
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

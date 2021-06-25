@@ -1,9 +1,9 @@
 ---
-title: Klasa TaskScheduler — wewnętrzne elementy członkowskie | Microsoft Docs
-description: Dowiedz się więcej o wewnętrznych elementach członkowskich klasy System. Threading. Tasks. TaskScheduler, które ułatwiają implementację niestandardowego debugera.
+title: TaskScheduler, klasa — składowe | Microsoft Docs
+description: Dowiedz się więcej o wewnętrznych składowych klasy System.Threading.Tasks.TaskScheduler, które ułatwiają implementowanie debugera niestandardowego.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45e2aff7d16826a631bb5126447d60b8b2468455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58b370a6742387f7493e4c6357cffd05f2bd88a5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057874"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900151"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Klasa TaskScheduler — wewnętrzne elementy członkowskie
-W tym artykule opisano wewnętrzne elementy członkowskie <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> klasy, które ułatwiają zaimplementowanie niestandardowego debugera. Aby uzyskać ogólne informacje o tej klasie, zobacz <xref:System.Threading.Tasks.TaskScheduler> artykuł referencyjny.
+# <a name="taskscheduler-class---internal-members"></a>TaskScheduler, klasa — składowe wewnętrzne
+W tym artykule opisano wewnętrzne składowe klasy, które ułatwiają <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> implementowanie debugera niestandardowego. Aby uzyskać ogólne informacje o tej klasie, zobacz <xref:System.Threading.Tasks.TaskScheduler> artykuł referencyjny.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, następująca składnia jest udostępniana w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tych wewnętrznych elementów członkowskich z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,4 +49,4 @@ W tym artykule opisano wewnętrzne elementy członkowskie <xref:System.Threading
 
 ## <a name="see-also"></a>Zobacz też
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Równoległe wewnętrzne rozszerzenia dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

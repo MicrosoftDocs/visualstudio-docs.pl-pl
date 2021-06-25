@@ -1,8 +1,8 @@
 ---
 description: Ta funkcja dodaje nowe pliki do systemu kontroli źródła.
-title: Funkcja SccAdd | Microsoft Docs
+title: SccAdd, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c577bd865a7534a5c4e13253e921ef188e7f0ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f73a91f7f801ca89a633f1722e0c4d1183fb3dc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085692"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904854"
 ---
 # <a name="sccadd-function"></a>SccAdd, funkcja
 Ta funkcja dodaje nowe pliki do systemu kontroli źródła.
@@ -40,66 +40,66 @@ SCCRTN SccAdd(
 ### <a name="parameters"></a>Parametry
  pvContext
 
-podczas Struktura kontekstu wtyczki kontroli źródła.
+[in] Struktura kontekstu wtyczki kontroli źródła.
 
- Właściwość
+ Hwnd
 
-podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
+[in] Dojście do okna IDE, które wtyczka kontroli źródła może używać jako elementu nadrzędnego dla wszystkich okien dialogowych, które udostępnia.
 
  nFiles
 
-podczas Liczba plików, które zostały wybrane do dodania do bieżącego projektu, zgodnie z podanym w `lpFileNames` tablicy.
+[in] Liczba plików wybranych do dodania do bieżącego projektu, jak podano w `lpFileNames` tablicy.
 
  lpFileNames
 
-podczas Tablica w pełni kwalifikowanych lokalnych nazw plików do dodania.
+[in] Tablica w pełni kwalifikowanych nazw lokalnych plików do dodania.
 
  lpComment
 
-podczas Komentarz, który ma zostać zastosowany do wszystkich dodawanych plików.
+[in] Komentarz do zastosowania do wszystkich dodawanych plików.
 
  pfOptions
 
-podczas Tablica flag poleceń dostarczonych dla poszczególnych plików.
+[in] Tablica flag poleceń, dostarczanych dla każdego pliku.
 
  pvOptions
 
-podczas Opcje dotyczące wtyczki kontroli źródła.
+[in] Opcje specyficzne dla wtyczki kontroli źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła dla tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja dodawania zakończyła się pomyślnie.|
-|SCC_E_FILEALREADYEXISTS|Wybrany plik znajduje się już pod kontrolą źródła.|
-|SCC_E_TYPENOTSUPPORTED|Typ pliku (na przykład Binary) nie jest obsługiwany przez system kontroli źródła.|
+|SCC_OK|Operacja dodawania powiodła się.|
+|SCC_E_FILEALREADYEXISTS|Wybrany plik jest już pod kontrolą źródła.|
+|SCC_E_TYPENOTSUPPORTED|Typ pliku (na przykład binarny) nie jest obsługiwany przez system kontroli źródła.|
 |SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|
+|SCC_E_ACCESSFAILURE|Występuje problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub zdyskusją. Zaleca się ponawianie próby.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; nie wykonano operacji dodawania.|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
-|SCC_I_RELOADFILE|Plik lub projekt musi zostać ponownie załadowany.|
+|SCC_E_NONSPECIFICERROR|Nieokreślona awaria; dodawanie nie jest wykonywane.|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
+|SCC_I_RELOADFILE|Należy ponownie załadować plik lub projekt.|
 |SCC_E_FILENOTEXIST|Nie znaleziono pliku lokalnego.|
 
 ## <a name="remarks"></a>Uwagi
- Zazwyczaj `fOptions` są one zastępowane przez tablicę, `pfOptions` z jedną `LONG` specyfikacją opcji na plik. Wynika to z faktu, że typ pliku może się różnić od pliku do pliku.
+ Typy `fOptions` zwykle są tutaj zastępowane tablicą , z jedną `pfOptions` `LONG` specyfikacją opcji na plik. Jest to spowodowane tym, że typ pliku może się różnić w zależności od pliku.
 
 > [!NOTE]
-> Nie można określić obu `SCC_FILETYPE_TEXT` `SCC_FILETYPE_BINARY` opcji i dla tego samego pliku, ale jest on prawidłowy do określenia żadnego z nich. Ustawienie nie jest takie samo jak ustawienie `SCC_FILETYPE_AUTO` , a w takim przypadku Wtyczka kontroli źródła automatycznie wykrywa typ pliku.
+> Określenie opcji i dla tego samego pliku jest nieprawidłowe, ale prawidłowe jest `SCC_FILETYPE_TEXT` określenie żadnej z tych `SCC_FILETYPE_BINARY` opcji. Ustawienie nie jest takie samo jak ustawienie , w którym to przypadku wtyczka kontroli źródła automatycznie określa `SCC_FILETYPE_AUTO` typ pliku.
 
- Poniżej znajduje się lista flag użytych w `pfOptions` tablicy:
+ Poniżej znajduje się lista flag używanych w `pfOptions` tablicy:
 
 |Opcja|Wartość|Znaczenie|
 |------------|-----------|-------------|
-|SCC_FILETYPE_AUTO|0x00|Wtyczka do kontroli źródła powinna wykryć typ pliku.|
+|SCC_FILETYPE_AUTO|0x00|Wtyczka kontroli źródła powinna wykryć typ pliku.|
 |SCC_FILETYPE_TEXT|0x01|Wskazuje plik tekstowy ASCII.|
 |SCC_FILETYPE_BINARY|0x02|Wskazuje typ pliku inny niż tekst ASCII.|
-|SCC_ADD_STORELATEST|0x04|Przechowuje tylko najnowszą kopię pliku, bez różnic.|
+|SCC_ADD_STORELATEST|0x04|Przechowuje tylko najnowszą kopię pliku bez różnic.|
 |SCC_FILETYPE_TEXT_ANSI|0x08|Traktuje plik jako tekst ANSI.|
 |SCC_FILETYPE_UTF8|0x10|Traktuje plik jako tekst Unicode w formacie UTF8.|
-|SCC_FILETYPE_UTF16LE|0x20|Traktuje plik jako tekst w formacie Unicode w UTF16 little endian.|
-|SCC_FILETYPE_UTF16BE|0x40|Traktuje plik jako tekst Unicode w formacie UTF16 big endian.|
+|SCC_FILETYPE_UTF16LE|0x20|Traktuje plik jako tekst Unicode w formacie UTF16 Little Endian.|
+|SCC_FILETYPE_UTF16BE|0x40|Traktuje plik jako tekst Unicode w formacie UTF16 Big Endian.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)

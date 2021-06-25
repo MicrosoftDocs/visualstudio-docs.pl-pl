@@ -1,8 +1,8 @@
 ---
-description: Zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na ukończenie dołączonych zadań podrzędnych.
-title: TASK_STATE_WAITING_ON_CHILDREN pole | Microsoft Docs
+description: Zadanie zakończyło wykonywanie delegata i niejawnie oczekuje na ukończenie dołączonych zadań podrzędnych.
+title: TASK_STATE_WAITING_ON_CHILDREN pola | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 955523b58703023add8b4bf312a98df8f792d3ef
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b795a20ba19b1309b3f3bf972beed70549d72d88
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075292"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900164"
 ---
-# <a name="task_state_waiting_on_children-field"></a>Pole TASK_STATE_WAITING_ON_CHILDREN
-Zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na ukończenie dołączonych zadań podrzędnych.
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN pola
+Zadanie zakończyło wykonywanie delegata i niejawnie oczekuje na ukończenie dołączonych zadań podrzędnych.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Zestaw:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego członka z .NET Framework, w języku CIL (Common Intermediate Language) znajduje się następująca składnia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,7 +34,7 @@ Zadanie zakończyło wykonywanie delegata i nieoczekiwanie oczekuje na ukończen
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> Właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, właściwość <xref:System.Threading.Tasks.Task.Status%2A> zwraca wartość <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

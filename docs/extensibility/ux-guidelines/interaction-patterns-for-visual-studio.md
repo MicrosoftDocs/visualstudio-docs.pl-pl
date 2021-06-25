@@ -1,40 +1,40 @@
 ---
-title: Wzorce interakcji dla programu Visual Studio | Microsoft Docs
-description: Zapoznaj się z biblioteką typowych wzorców interakcji, których można użyć podczas tworzenia nowych funkcji dla programu Visual Studio.
+title: Wzorce interakcji dla Visual Studio | Microsoft Docs
+description: Poznaj bibliotekę typowych wzorców interakcji, których można używać podczas tworzenia nowych funkcji dla Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215fa0145a342820320980f629bb35678ce09680
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 13a2ec4332cf8010dc5d214dfd61936725ac2063
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072939"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900554"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Wzorce interakcji dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
- Wzorzec projektowy, ogólnie rzecz biorąc, stanowi rdzeń projektu, który może być stosowany w określonych sytuacjach w celu rozwiązywania problemów z podobnymi zestawami ograniczeń. Projektanci funkcji i systemów używają tych wzorców projektowych jako punktów początkowych, które można następnie dostosować do ich konkretnej sytuacji.
+ Ogólnie rzecz biorąc, wzorzec projektowy jest podstawą projektu, który można zastosować w określonych sytuacjach w celu rozwiązywania problemów z podobnymi zestawami ograniczeń. Projektanci funkcji i systemów używają tych wzorców projektowych jako punktów początkowych, które następnie można dostosować do ich określonej sytuacji.
 
- Program Visual Studio ma bibliotekę wspólnych wzorców interakcji, które należy wziąć pod uwagę podczas tworzenia nowych funkcji. Istnieją dwa podstawowe konteksty dla naszych wzorców projektowych: Visual Studio Client (devenv) i GitHub Codespaces (dawniej Visual Studio Online). W przypadku niektórych problemów z projektowaniem istnieje powszechny wzorzec, który działa dobrze we wszystkich sytuacjach. W wielu przypadkach rozwiązanie może być inne dla interfejsu użytkownika, który jest prezentowany w przeglądarce i który jest hostowany w aplikacji klienckiej.
+ Visual Studio zawiera bibliotekę typowych wzorców interakcji, które należy wziąć pod uwagę podczas tworzenia nowych funkcji. Istnieją dwa podstawowe konteksty naszych wzorców projektowych: Visual Studio Client (devenv) i GitHub Codespaces (wcześniej Visual Studio Online). W przypadku niektórych problemów projektowych istnieje powszechny wzorzec, który dobrze sprawdza się we wszystkich sytuacjach. Jednak w wielu przypadkach rozwiązanie może różnić się w przypadku interfejsu użytkownika, który jest prezentowany w przeglądarce, i tego, który jest hostowany w aplikacji klienckiej.
 
-### <a name="visual-studio-client-pattern-types"></a>Typy wzorców klienta programu Visual Studio
+### <a name="visual-studio-client-pattern-types"></a>Visual Studio wzorców klienta
 
 |Typ wzorca|Opis|Przykłady|
 |------------------|-----------------|--------------|
-|**Wzorce na poziomie aplikacji**|Wzorce wysokiego poziomu wspólne dla aplikacji, określanie lub wyświetlanie kontekstu aplikacji oraz zawierające złożone i kontrolne wzorce w nich|-Okna narzędzi<br />— Okna dokumentów|
-|**Wzorce złożone**|Typowe wzorce, które mogą obejmować między wzorcami aplikacji lub rozpoznany wzorzec składający się z kilku kontrolek w konfiguracji odrębnej|— Przełączanie widoku<br />-Lista konstruktorów<br />— Wyświetlanie danych<br />— Powiadomienia<br />-Walidacja<br />-Wybór modeli|
-|**Wzorce kontrolek**|Szczegóły dotyczące sposobu zachowania formantów niskiego poziomu|-Widoki drzewa<br />-Edycja w kontrolce siatki|
+|**Wzorce na poziomie aplikacji**|Wzorce wysokiego poziomu wspólne dla aplikacji, określanie lub wyświetlanie kontekstu aplikacji oraz zawierające w nich wzorce złożone i kontrolne|- Okna narzędzi<br />- Okna dokumentów|
+|**Wzorce złożone**|Typowe wzorce, które mogą obejmować różne wzorce aplikacji, lub rozpoznany wzorzec, który składa się z kilku kontrolek w odrębnej konfiguracji|- Przełączanie widoku<br />- Konstruktorzy list<br />— Wyświetlanie danych<br />- Powiadomienia<br />— Walidacja<br />- Modele wyboru|
+|**Wzorce kontrolek**|Szczegółowe informacje na temat oczekiwanego zachowania kontrolek niskiego poziomu|— Widoki drzewa<br />- Edytowanie w kontrolce siatki|
 
 ## <a name="application-patterns"></a>Wzorce aplikacji
- Na wysokim poziomie interfejs programu Visual Studio zawiera wiele okien, okien dialogowych, poleceń i pasków narzędzi w ramach jednego środowiska IDE. Hierarchia programu Visual Studio określa menu kontekstowe i dyski. Kluczowe punkty integracji w interfejsie użytkownika IDE to okna dokumentów, okna narzędzi, projekty, struktura poleceń, Edytor tekstu, Przybornik, okno Właściwości i narzędzia > opcje.
+ Na wysokim poziomie interfejs Visual Studio składa się z wielu okien, okien dialogowych, poleceń i pasków narzędzi w ramach jednego środowiska IDE. Hierarchia Visual Studio określa menu kontekstowe i menu dysków. Kluczowe punkty integracji w interfejsie użytkownika środowiska IDE to okna dokumentów, okna narzędzi, projekty, struktura poleceń, edytor tekstu, przybornik, okno Właściwości i narzędzia > opcje.
 
- Dla każdego z kluczowych punktów integracji w interfejsie użytkownika IDE istnieją podstawowe wzorce użycia:
+ Istnieją podstawowe wzorce użycia dla każdego z kluczowych punktów integracji w interfejsie użytkownika środowiska IDE:
 
 - [Menu i polecenia dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)
 
@@ -50,10 +50,10 @@ ms.locfileid: "105072939"
 
   - [Projekty](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
-## <a name="common-control-patterns"></a>Wzorce wspólnych kontrolek
- Wzorce formantów mają głównie wpływ na zachowanie poszczególnych kontrolek. Jest to jeden obszar, w którym spójność jest najbardziej krytyczna.
+## <a name="common-control-patterns"></a>Typowe wzorce kontrolek
+ Wzorce kontrolek dotyczą głównie zachowania poszczególnych kontrolek. Jest to jeden z obszarów, w którym spójność jest najbardziej krytyczna.
 
- Większość typowych kontrolek w programie Visual Studio powinna być zgodna z zaleceniami systemu Windows dla komputerów stacjonarnych. Nasze wytyczne obejmują tylko obszary, w których musimy rozszerzyć wspólne konwencje o interakcje specyficzne dla programu Visual Studio lub miejsca, w których zastępują wskazówki w całości w celu dostosowywania programu Visual Studio, aby zaspokoić potrzeby naszych zaawansowanych użytkowników.
+ Najbardziej typowe kontrolki w Visual Studio powinny być zgodne z wytycznymi systemu Windows dla komputerów stacjonarnych. Nasze wytyczne obejmują tylko obszary, w których musimy rozszerzyć typowe konwencje o interakcje specyficzne dla Visual Studio, lub miejsca, w których całkowicie je przesłoniliśmy, aby dostosować Visual Studio do potrzeb naszych zaawansowanych użytkowników.
 
 - [Typowe wzorce kontrolek dla programu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
@@ -64,16 +64,16 @@ ms.locfileid: "105072939"
   - [Przyciski i hiperlinki](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
 ## <a name="composite-patterns"></a>Wzorce złożone
- Istnieją różne sposoby wykonywania zadań przez użytkowników. Wszędzie tam, gdzie to możliwe, funkcje powinny być zaprojektowane tak, aby używać tych wzorców zarówno do interakcji, jak i do projektowania wizualnego.
+ Istnieje wiele sposobów, na które użytkownicy oczekują wykonania zadań. Wszędzie tam, gdzie to możliwe, funkcje powinny być zaprojektowane tak, aby używać tych wzorców zarówno do interakcji, jak i projektowania wizualnego.
 
- Chociaż w programie Visual Studio istnieje wiele wzorców złożonych, niektóre z najważniejszych w odniesieniu do spójności są następujące:
+ Chociaż istnieje wiele wzorców złożonych w Visual Studio, najważniejsze z nich są:
 
 - [Wzorce złożone dla programu Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-  - [Interfejs użytkownika i wgląd w obiekt](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [Interfejs użytkownika obiektu on-object i podgląd](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
   - [Modele wyboru](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-  - [Trwałość i zapisywanie ustawień](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+  - [Ustawienia trwałości i zapisywania](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
   - [Wprowadzanie dotykowe](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)

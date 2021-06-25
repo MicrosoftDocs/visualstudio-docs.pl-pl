@@ -1,9 +1,9 @@
 ---
-title: Konfiguracja projektu do kompilowania | Microsoft Docs
-description: Dowiedz się, w jaki sposób lista konfiguracji rozwiązań dla danego rozwiązania jest zarządzana przez okno dialogowe Konfiguracje rozwiązań w nowym typie projektu.
+title: Konfiguracja projektu na | Microsoft Docs
+description: Dowiedz się, jak lista konfiguracji rozwiązań dla określonego rozwiązania jest zarządzana przez okno dialogowe Konfiguracje rozwiązań w nowym typie projektu.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
@@ -13,49 +13,49 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b817607f765626a6b63693e681306309512fdb7d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf98698d3527220c4bc25cdf36132f0088ae4ea7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074447"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899930"
 ---
 # <a name="project-configuration-for-building"></a>Konfigurowanie projektu do kompilowania
 Lista konfiguracji rozwiązań dla danego rozwiązania jest zarządzana przez okno dialogowe Konfiguracje rozwiązań.
 
- Użytkownik może tworzyć dodatkowe konfiguracje rozwiązań z własną unikatową nazwą. Gdy użytkownik tworzy nową konfigurację rozwiązania, IDE domyślnie odpowiada odpowiedniej nazwie konfiguracji w projektach lub Debuguj, jeśli nie istnieje odpowiednia nazwa. Użytkownik może zmienić zaznaczenie w razie potrzeby w celu spełnienia określonych wymagań. Jedyny wyjątek od tego zachowania polega na tym, że projekt obsługuje konfigurację zgodną z nazwą nowej konfiguracji rozwiązania. Załóżmy na przykład, że rozwiązanie zawiera Project1 i Project2. Project1 zawiera konfiguracje projektu Debug, detaliczne i MyConfig1. Project2 zawiera konfiguracje projektu Debug, detaliczne i MyConfig2.
+ Użytkownik może tworzyć dodatkowe konfiguracje rozwiązań, z których każda ma własną unikatową nazwę. Gdy użytkownik tworzy nową konfigurację rozwiązania, w środowiskach IDE jest domyślnie domyślną nazwą odpowiedniej konfiguracji w projektach lub Debuguj, jeśli nie istnieje żadna odpowiadająca nazwa. Użytkownik może zmienić wybór, aby w razie potrzeby spełniał określone wymagania. Jedynym wyjątkiem od tego zachowania jest sytuacja, gdy projekt obsługuje konfigurację, która jest taka sama jak nazwa nowej konfiguracji rozwiązania. Załóżmy na przykład, że rozwiązanie zawiera elementy Project1 i Project2. Projekt Project1 ma konfiguracje projektów Debug, Retail i MyConfig1. Projekt Project2 ma konfiguracje projektów Debug, Retail i MyConfig2.
 
- Jeśli użytkownik utworzy nową konfigurację rozwiązania o nazwie MyConfig2, Project1 domyślnie powiąże swoją konfigurację debugowania z konfiguracją rozwiązania. Program Project2 również domyślnie wiąże konfigurację MyConfig2 z konfiguracją rozwiązania.
+ Jeśli użytkownik tworzy nową konfigurację rozwiązania o nazwie MyConfig2, projekt Project1 domyślnie wiąże konfigurację debugowania z konfiguracją rozwiązania. Projekt Project2 domyślnie wiąże również konfigurację myConfig2 z konfiguracją rozwiązania.
 
 > [!NOTE]
-> W powiązaniu nie jest rozróżniana wielkość liter.
+> W powiązaniu nie jest uwzględniania litera.
 
- Gdy użytkownik wybierze pozycję **wybór wielokrotny** na liście rozwijanej konfiguracja, środowisko wyświetli okno dialogowe z listą dostępnych konfiguracji.
+ Gdy użytkownik wybierze **element** Wybór wielokrotny na liście rozwijanej konfiguracji, środowisko wyświetli okno dialogowe z listą dostępnych konfiguracji.
 
  ![Wiele konfiguracji](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs") Wiele konfiguracji
 
- W tym oknie dialogowym użytkownik może wybrać jedną lub wiele konfiguracji. Po wybraniu wartości właściwości wyświetlane w oknie dialogowym strony właściwości odzwierciedlają przecięcie wartości dla wybranych konfiguracji.
+ W tym oknie dialogowym użytkownik może wybrać jedną lub wiele konfiguracji. Po wybraniu wartości właściwości wyświetlane na stronach właściwości w oknie dialogowym odzwierciedlają części wspólne wartości dla wybranych konfiguracji.
 
- Aby uzyskać informacje dotyczące dodawania i zmieniania nazw konfiguracji dla rozwiązań i projektów, zobacz temat [Konfiguracja rozwiązania](../../extensibility/internals/solution-configuration.md) .
+ Zobacz [Konfiguracja rozwiązania,](../../extensibility/internals/solution-configuration.md) aby uzyskać informacje dotyczące dodawania i zmieniania nazw konfiguracji dla rozwiązań i projektów.
 
- Zależności projektu i kolejność kompilacji to konfiguracja rozwiązania niezależna: oznacza to, że można skonfigurować tylko jedno drzewo zależności dla wszystkich projektów w rozwiązaniu. Kliknięcie prawym przyciskiem myszy rozwiązania lub projektu i wybranie opcji **zależności projektu** lub **kolejność kompilacji projektu** powoduje otwarcie okna dialogowego **zależności projektu** . Można go również otworzyć z menu **projekt** .
+ Zależności projektu i kolejność kompilacji są niezależne od konfiguracji rozwiązania: oznacza to, że można skonfigurować tylko jedno drzewo zależności dla wszystkich projektów w rozwiązaniu. Kliknięcie prawym przyciskiem myszy rozwiązania lub projektu i  wybranie opcji **Zależności** projektu lub Kolejność kompilacji projektu powoduje otwarcie okna **dialogowego** Zależności projektu. Można go również otworzyć z menu **Projekt.**
 
  ![Zależności projektu](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies") Zależności projektu
 
- Zależności projektu określają kolejność, w której projekty są kompilowane. Karta kolejność kompilacji w oknie dialogowym umożliwia wyświetlenie dokładnej kolejności, w której zostaną skompilowane projekty w ramach rozwiązania, a następnie użyj karty zależności, aby zmodyfikować kolejność kompilacji.
+ Zależności projektu określają kolejność kompilowania projektów. Karta Kolejność kompilacji w oknie dialogowym umożliwia wyświetlenie dokładnej kolejności kompilowania projektów w ramach rozwiązania, a następnie użycie karty Zależności w celu zmodyfikowania kolejności kompilacji.
 
 > [!NOTE]
-> Projekty na liście, które mają zaznaczone pola wyboru, ale są wygaszone, zostały dodane przez środowisko ze względu na jawne zależności określone przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsy i nie można ich zmienić. Na przykład dodanie odwołania do projektu z [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu do innego projektu powoduje automatyczne dodanie zależności kompilacji, która może zostać usunięta tylko przez usunięcie odwołania. Projekty, których pola wyboru są wyczyszczone i są wyświetlane jako wygaszone, nie mogą być wybierane, ponieważ spowodowałoby to utworzenie pętli zależności (na przykład Project1 może być zależna od Project2, a Project2 będzie zależna od Project1), co mogłoby zawiesić kompilację.
+> Projekty na liście, które mają zaznaczone pola wyboru, ale są wygaszone, zostały dodane przez środowisko z powodu jawnych zależności określonych przez interfejsy lub i nie można <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> ich zmienić. Na przykład dodanie odwołania do projektu z projektu do innego projektu powoduje automatyczne dodanie zależności kompilacji, która może zostać usunięta tylko [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] przez usunięcie odwołania. Nie można wybrać projektów, których pola wyboru są jasne i są wyświetlane jako wygaszone, ponieważ w ten sposób utworzy się pętla zależności (na przykład projekt Project1 będzie zależny od project2, a projekt Project2 będzie zależny od project1), co wsadowałoby kompilację.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] procesy kompilacji obejmują Typowe operacje kompilowania i łączenia, które są wywoływane za pomocą pojedynczego polecenia kompilacji. Obsługiwane są również dwa inne procesy kompilacji: czysta operacja usuwania wszystkich elementów wyjściowych z poprzedniej kompilacji oraz aktualna kontrola w celu ustalenia, czy element wyjściowy w konfiguracji został zmieniony.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Procesy kompilacji obejmują typowe operacje kompilacji i łączenia wywoływane za pomocą jednego polecenia kompilacji. Obsługiwane mogą być również dwa inne procesy kompilacji: czysta operacja usuwania wszystkich elementów wyjściowych z poprzedniej kompilacji oraz aktualne sprawdzanie w celu określenia, czy element wyjściowy w konfiguracji uległ zmianie.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> obiekty zwracają odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (zwrócone z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> ), aby zarządzać procesami kompilacji. Aby zgłosić stan operacji kompilacji w trakcie jej występowania, konfiguracje przeprowadzają wywołania do <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> , interfejs zaimplementowany przez środowisko i inny obiekt, który interesuje kompilacje zdarzeń stanu.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Obiekty zwracają odpowiedni <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> ) do zarządzania procesami kompilacji. Aby zgłosić stan operacji kompilacji podczas jej wystąpienia, konfiguracje wywołuje , interfejs zaimplementowany przez środowisko i dowolny inny obiekt zainteresowany <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> zdarzeniami stanu kompilacji.
 
- Po skompilowaniu ustawienia konfiguracji mogą służyć do określenia, czy mogą być uruchamiane w ramach kontroli debugera. Konfiguracje implementują <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> obsługę debugowania.
+ Po s zbudowaniu ustawień konfiguracji można określić, czy można je uruchamiać pod kontrolą debugera. Konfiguracje <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> implementują obsługę debugowania.
 
- Po wdrożeniu zależności projektu można programowo manipulować zależności za pomocą modelu automatyzacji. Wywołujesz <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> model automatyzacji. Nie ma dostępnych interfejsów poziomu API VSIP, które umożliwiają bezpośrednie manipulowanie konfiguracjami Menedżera kompilacji rozwiązań i ich właściwościami.
+ Po zaimplementowaniu zależności projektu można programowo manipulować zależnościami za pomocą modelu automatyzacji. Wywołanie jest <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> w modelu automatyzacji. Nie ma dostępnych interfejsów API programu VSIP, które umożliwiają bezpośrednie manipulowanie konfiguracjami menedżera kompilacji rozwiązań i ich właściwościami.
 
- Ponadto możesz udostępnić siatkę w oknie zależności projektu. Aby uzyskać więcej informacji, zobacz [właściwości wyświetlania siatki](../../extensibility/internals/properties-display-grid.md).
+ Ponadto można udostępnić siatkę w oknie zależności projektu. Aby uzyskać więcej informacji, zobacz [Properties Display Grid (Siatka wyświetlana właściwości).](../../extensibility/internals/properties-display-grid.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)

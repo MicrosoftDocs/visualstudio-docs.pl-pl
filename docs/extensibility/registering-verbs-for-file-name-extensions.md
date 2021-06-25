@@ -1,9 +1,9 @@
 ---
-title: Rejestrowanie czasowników dla rozszerzeń nazw plików | Microsoft Docs
-description: Dowiedz się, jak zarejestrować zlecenie, które jest skojarzone z identyfikatorem programowym dla rozszerzenia nazwy pliku przy użyciu klucza powłoki.
+title: Rejestrowanie zleceń dla rozszerzeń nazw plików | Microsoft Docs
+description: Dowiedz się, jak zarejestrować zlecenie skojarzone z identyfikatorem programowym rozszerzenia nazwy pliku przy użyciu klucza powłoki.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
@@ -12,20 +12,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c223dea7e265d8d040d502c99ded09380e89690f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068482"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901230"
 ---
-# <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie czasowników dla rozszerzeń nazw plików
-Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję, która występuje, gdy użytkownik kliknie dwukrotnie plik. Ta preferowana akcja jest połączona z czasownikiem, na przykład Otwórz, który odpowiada akcji.
+# <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
+Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowaną akcję, która występuje, gdy użytkownik dwukrotnie kliknie plik. Ta preferowana akcja jest połączona z czasownikiem, na przykład otwartym, który odpowiada akcji.
 
- Można zarejestrować zlecenia, które są skojarzone z identyfikatorem programowym (ProgID) dla rozszerzenia przy użyciu klucza powłoki znajdującego się w **HKEY_CLASSES_ROOT \{ ProgID} \shell**. Aby uzyskać więcej informacji, zobacz [typy plików](/windows/desktop/shell/fa-file-types).
+ Czasowniki skojarzone z identyfikatorem programowym (ProgID) rozszerzenia można zarejestrować przy użyciu klucza powłoki znajdującego się HKEY_CLASSES_ROOT **\{ progid}\shell.** Aby uzyskać więcej informacji, zobacz [Typy plików](/windows/desktop/shell/fa-file-types).
 
-## <a name="register-standard-verbs"></a>Zarejestruj czasowniki standardowe
- System operacyjny rozpoznaje następujące czasowniki standardowe:
+## <a name="register-standard-verbs"></a>Rejestrowanie standardowych zleceń
+ System operacyjny rozpoznaje następujące standardowe czasowniki:
 
 - Otwórz
 
@@ -37,12 +37,12 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję,
 
 - Wersja zapoznawcza
 
-  Jeśli to możliwe, zarejestruj czasownik standardowy. Najbardziej typowym wyborem jest otwarty czasownik. Użyj zlecenia edycji tylko wtedy, gdy istnieje wyraźna różnica między otwieraniem pliku i edytowaniem pliku. Na przykład otwarcie pliku *. htm* powoduje wyświetlenie go w przeglądarce, podczas gdy Edycja pliku *. htm* powoduje uruchomienie edytora HTML. Czasowniki standardowe są zlokalizowane przy użyciu ustawień regionalnych systemu operacyjnego.
+  Jeśli to możliwe, zarejestruj standardowe zlecenie. Najpopularniejszym wyborem jest czasownik Otwórz. Zlecenia Edytuj należy używać tylko wtedy, gdy istnieje jasna różnica między otwieraniem pliku a edytowaniem pliku. Na przykład otwarcie pliku *.htm* wyświetla go w przeglądarce, podczas gdy edytowanie pliku *.htm* uruchamia edytor HTML. Standardowe czasowniki są zlokalizowane przy użyciu opcji regionalnych systemu operacyjnego.
 
 > [!NOTE]
-> Podczas rejestrowania czasowników standardowych nie należy ustawiać wartości domyślnej dla otwartego klucza. Wartość domyślna zawiera ciąg wyświetlania w menu. System operacyjny dostarcza ten ciąg dla czasowników standardowych.
+> Podczas rejestrowania standardowych zleceń nie należy ustawiać wartości domyślnej dla klucza Otwórz. Wartość domyślna zawiera ciąg wyświetlany w menu. System operacyjny dostarcza ten ciąg dla standardowych czasowników.
 
- Pliki projektu należy zarejestrować, aby uruchomić nowe wystąpienie, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gdy użytkownik otworzy plik. Poniższy przykład ilustruje standardowe rejestrację czasowników dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu.
+ Pliki projektu należy zarejestrować, aby uruchomić nowe wystąpienie klasy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , gdy użytkownik otworzy plik. Poniższy przykład ilustruje standardową rejestrację czasownika dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu.
 
 ```
 [HKEY_CLASSES_ROOT\.csproj]
@@ -73,7 +73,7 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję,
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- Aby otworzyć plik w istniejącym wystąpieniu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , zarejestruj klucz ddeexec. Poniższy przykład ilustruje standardową rejestrację czasownikową dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pliku *. cs* .
+ Aby otworzyć plik w istniejącym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , zarejestruj klucz DDEEXEC. Poniższy przykład ilustruje standardową rejestrację czasownika dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *pliku cs.*
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -107,11 +107,11 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zwykle ma preferowaną akcję,
 @="system"
 ```
 
-## <a name="set-the-default-verb"></a>Ustawianie domyślnego zlecenia
- Domyślne zlecenie jest akcją wykonywaną, gdy użytkownik kliknie dwukrotnie plik w Eksploratorze Windows. Domyślne zlecenie to zlecenie określone jako wartość domyślna HKEY_CLASSES_ROOT dla klucza **\\ \Shell *ProgID*** . Jeśli żadna wartość nie zostanie określona, zlecenie domyślne to pierwsze zlecenie określone HKEY_CLASSES_ROOT na liście **kluczy \\ \Shell *ProgID*** .
+## <a name="set-the-default-verb"></a>Ustawianie czasownika domyślnego
+ Czasownik domyślny to akcja wykonywana, gdy użytkownik kliknie dwukrotnie plik w Eksplorator Windows. Czasownik domyślny to czasownik określony jako wartość domyślna dla HKEY_CLASSES_ROOT **\\ *progid*\Shell** key. Jeśli żadna wartość nie zostanie określona, czasownik domyślny jest pierwszym czasownikiem określonym w **HKEY_CLASSES_ROOT \\ *progid*\Shell** key list.
 
 > [!NOTE]
-> Jeśli planujesz zmienić domyślne zlecenie rozszerzenia w ramach wdrożenia równoległego, weź pod uwagę wpływ instalacji i usuwania. Podczas instalacji oryginalna wartość domyślna jest zastępowana.
+> Jeśli planujesz zmienić domyślne zlecenie dla rozszerzenia we wdrożeniu side-by-side, należy wziąć pod uwagę wpływ na instalację i usuwanie. Podczas instalacji oryginalna wartość domyślna jest zastępowana.
 
 ## <a name="see-also"></a>Zobacz też
-- [Zarządzaj skojarzeniami plików obok siebie](../extensibility/managing-side-by-side-file-associations.md)
+- [Zarządzanie skojarzeniami plików obok siebie](../extensibility/managing-side-by-side-file-associations.md)

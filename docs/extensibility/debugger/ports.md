@@ -1,9 +1,9 @@
 ---
 title: Porty | Microsoft Docs
-description: W tym artykule opisano definicje i rolę portu w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę portu w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ports
 - debugging [Debugging SDK], ports
@@ -13,25 +13,25 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9629a27931fad9e0a7f753caad1c21893700d42
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e53b2b804433f7e9450f34dac5b21e45710cd71c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067780"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900775"
 ---
 # <a name="ports"></a>Porty
 W architekturze debugera *port*:
 
-- Jest kontenerem zestawu procesów uruchomionych na serwerze. Na przykład port może reprezentować połączenie z urządzeniem opartym na Windows CE przez kabel szeregowy lub komputer sieciowy niebędący modelem DCOM. Jeden port specjalny, zwany portem lokalnym, zawiera wszystkie procesy uruchomione na komputerze lokalnym.
+- Jest kontenerem dla zestawu procesów uruchomionych na serwerze. Na przykład port może reprezentować połączenie z urządzeniem opartym na Windows CE za pomocą kabla szeregowego lub z sieciowym urządzeniem niepowiązywistym z systemem DCOM. Jeden specjalny port, nazywany portem lokalnym, zawiera wszystkie procesy uruchomione na maszynie lokalnej.
 
-- Może identyfikować siebie według nazwy lub identyfikatora.
+- Może identyfikować się według nazwy lub identyfikatora.
 
-- Program może wyliczyć wszystkie procesy działające na porcie i uruchamiać i kończyć te procesy.
+- Może wyliczać wszystkie procesy uruchomione na porcie oraz uruchamiać i kończyć te procesy.
 
-- Jest reprezentowany przez interfejs [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , który jest tworzony przez przekazanie argumentu [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) do [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).
+- Jest reprezentowany przez [interfejs IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) który jest tworzony przez przekazanie argumentu [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) do [funkcji AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza domyślny port obsługujący wszystkie procesy oparte na systemie Windows, zarówno natywne, jak i zarządzane. Port niestandardowy musi być skonfigurowany do połączeń z urządzeniami zewnętrznymi, które nie są oparte na systemie Windows. Aby określić takie porty niestandardowe, należy również skonfigurować niestandardowego dostawcę portu.
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dostarcza domyślny port obsługujący wszystkie procesy oparte na systemie Windows, zarówno natywne, jak i zarządzane. Dla połączeń z urządzeniami zewnętrznymi, które nie są oparte na systemie Windows, należy skonfigurować port niestandardowy. Aby dostarczyć takie porty niestandardowe, należy również skonfigurować niestandardowego dostawcę portów.
 
 ## <a name="see-also"></a>Zobacz też
 - [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)

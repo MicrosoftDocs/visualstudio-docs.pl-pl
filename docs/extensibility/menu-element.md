@@ -1,9 +1,9 @@
 ---
-title: Element menu | Microsoft Docs
-description: Element menu definiuje jeden element menu. Rodzaje menu to kontekst, menu, MenuController, MenuControllerLatched, Toolbar i ToolWindowToolbar.
+title: Menu, element | Microsoft Docs
+description: 'Element Menu definiuje jeden element menu. Rodzaje menu to: Context (Kontekst), Menu (Menu), MenuController (MenuController), MenuControllerLatched (MenuControllerLatched), Toolbar (Pasek narzędzi) i ToolWindowToolbar (NarzędzieWindowToolbar).'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7427b826249bd29c73c928630eed0941c57b997d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a2ffa029dd05e7fe3d32a9df4a1d06c90c8b9c6b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064049"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901542"
 ---
-# <a name="menu-element"></a>Element menu
-Definiuje jeden element menu. Oto sześć rodzajów menu: Context, menu, MenuController, MenuControllerLatched, Toolbar i ToolWindowToolbar.
+# <a name="menu-element"></a>Menu, element
+Definiuje jeden element menu. Są to sześć rodzajów menu: Kontekst, Menu, MenuController, MenuControllerLatched, Pasek narzędzi i NarzędzieWindowToolbar.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,27 +40,27 @@ Definiuje jeden element menu. Oto sześć rodzajów menu: Context, menu, MenuCon
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
-|priority|Opcjonalny. Wartość liczbowa, która określa względne położenie menu w grupie menu.|
-|ToolbarPriorityInBand|Opcjonalny. Wartość liczbowa określająca względną pozycję paska narzędzi w paśmie, gdy okno jest zadokowane.|
-|typ|Opcjonalny. Wartość wyliczana, która określa rodzaj elementu.<br /><br /> Jeśli nie istnieje, domyślny typ to menu.<br /><br /> Kontekst<br /> Menu skrótów, które jest wyświetlane, gdy użytkownik kliknie okno prawym przyciskiem myszy. Menu skrótów ma następującą charakterystykę:<br /><br /> -Nie używa pól **nadrzędnych** i **priorytetowych** , gdy menu ma być wyświetlane jako menu skrótów.<br />— Może służyć jako podmenu, a także jako menu skrótów. W takim przypadku przestrzegane są pola **Identyfikator grupy** i **priorytet** .<br />-Nie zawsze jest dostępna.<br /><br /> Menu skrótów jest wyświetlane tylko wtedy, gdy są spełnione następujące warunki:<br /><br /> -Zostanie wyświetlone okno obsługujące tę wartość.<br />-Procedura obsługi myszy w pakietu VSPackage wykrywa kliknięcie prawym przyciskiem myszy okna, a następnie wywołuje metodę, która obsługuje polecenie.<br />— Menu skrótów jest wyświetlane przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> metody (zalecane podejście) lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> metodę.<br /><br /> Menu<br /> Udostępnia menu rozwijane. Menu rozwijane ma następującą charakterystykę:<br /><br /> — Szanuje element nadrzędny w jego definicji.<br />-Musi mieć grupę nadrzędną lub CommandPlacement do grupy.<br />-Może być podmenu w dowolnym innym rodzaju menu.<br />-Jest automatycznie wyświetlana za każdym razem, gdy zostanie wyświetlone menu nadrzędne.<br />-Nie wymaga implementacji żadnego kodu pakietu VSPackage, aby był wyświetlany.<br /><br /> MenuController<br /> Udostępnia menu rozwijane przycisk z podziałem, które jest zwykle używane w paskach narzędzi. Menu MenuController ma następującą charakterystykę:<br /><br /> -Musi być zawarte w innym menu za poorednictwem elementu Parent lub CommandPlacement.<br />— Szanuje element nadrzędny w jego definicji.<br />— Może mieć dowolny rodzaj menu jako element nadrzędny.<br />-Jest automatycznie udostępniana za każdym razem, gdy zostanie wyświetlone menu nadrzędne.<br />-Nie wymaga wsparcia programistycznego, aby wyświetlić menu.<br /><br /> Polecenie z menu podzielonego przycisku jest wyświetlane na przycisku menu. Wyświetlane polecenie ma jedną z następujących cech:<br /><br /> -Ostatnie polecenie, które było używane, jeśli polecenie jest nadal wyświetlane i włączone.<br />— Jest to pierwsze wyświetlane polecenie.<br /><br /> MenuControllerLatched<br /> Udostępnia menu rozwijane przycisk z podziałem, dla którego można określić polecenie jako domyślne zaznaczenie, zaznaczając polecenie jako zatrzask.<br /><br /> Zatrzask polecenia to polecenie, które jest oznaczone w menu jako wybrane, zazwyczaj przez wyświetlenie znacznika wyboru. Polecenie może być oznaczone jako zatrzaskowe, jeśli ma ustawioną flagę OLECMDF_LATCHED w implementacji `QueryStatus` metody <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Menu MenuControllerLatched ma następującą charakterystykę:<br /><br /> -Musi być zawarte w innym menu za pomocą grupy nadrzędnej lub CommandPlacement.<br />— Szanuje element nadrzędny w jego definicji.<br />— Może mieć dowolny rodzaj menu jako element nadrzędny.<br />— Jest udostępniana za każdym razem, gdy zostanie wyświetlone menu nadrzędne.<br />-Nie wymaga wsparcia programistycznego, aby wyświetlić menu.<br /><br /> Polecenie z menu podzielonego przycisku jest wyświetlane na przycisku menu. Wyświetlane polecenie ma jedną z następujących cech:<br /><br /> — Jest to pierwsze wyświetlane polecenie, które jest zatrzask.<br />— Jest to pierwsze wyświetlane polecenie.<br /><br /> Pasek narzędzi<br /> Udostępnia pasek narzędzi. Pasek narzędzi ma następującą charakterystykę:<br /><br /> -Ignoruje element nadrzędny w jego definicji.<br />-Nie można nawiązać podmenu żadnej grupy, a nie za pomocą CommandPlacement.<br />-Zawsze można je wyświetlić, klikając pozycję **paski narzędzi** w menu **Widok** .<br />— Może być wyświetlana przy użyciu [VisibilityItem](../extensibility/visibilityitem-element.md).<br />-Nie wymaga żadnego kodu, aby go utworzyć. Aby zapoznać się z przykładem dotyczącym tworzenia paska narzędzi, zobacz [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md).<br /><br /> ToolWindowToolbar<br /> Udostępnia pasek narzędzi, który jest dołączony do określonego okna narzędzi, tak jak pasek narzędzi jest dołączony do środowiska deweloperskiego.<br /><br /> -Ignoruje element nadrzędny w jego definicji.<br />-Nie można nawiązać podmenu żadnej grupy, a nie za pomocą CommandPlacement.<br />-Jest wyświetlana tylko wtedy, gdy jest wyświetlany okno narzędzia, które obsługuje pasek narzędzi, a pakietu VSPackage jawnie dodaje pasek narzędzi do okna narzędzi. Jest to zazwyczaj wykonywane po utworzeniu okna narzędzia przez uzyskanie właściwości hosta Toolbar (reprezentowanej przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> interfejs) z ramki okna narzędzi, a następnie wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> metody.|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagane. Identyfikator GUID/ID identyfikatora polecenia.|
+|identyfikator|Wymagane. Identyfikator identyfikatora GUID/ID polecenia.|
+|priority|Opcjonalny. Wartość liczbowa określająca względną pozycję menu w grupie menu.|
+|ToolbarPriorityInBand|Opcjonalny. Wartość liczbowa określająca względną pozycję paska narzędzi w pasmie, gdy okno jest zadokowane.|
+|typ|Opcjonalny. Wartość wyliczana określająca rodzaj elementu.<br /><br /> Jeśli nie ma, domyślnym typem jest Menu.<br /><br /> Kontekst<br /> Menu skrótów, które jest wyświetlane, gdy użytkownik kliknie okno prawym przyciskiem myszy. Menu skrótów ma następujące cechy:<br /><br /> - Nie używa pola **Nadrzędne i** **Priorytet,** gdy menu ma być wyświetlane jako menu skrótów.<br />- Może służyć jako podmenu, a także jako menu skrótów. W takim przypadku są przestrzegane zarówno **pola Identyfikator** **grupy, jak i** Priorytet.<br />— Nie zawsze jest dostępna.<br /><br /> Menu skrótów jest wyświetlane tylko wtedy, gdy spełnione są następujące warunki:<br /><br /> — Zostanie wyświetlone okno, które go hostuje.<br />- Program obsługi myszy w pakietach VSPackage wykrywa kliknięcie prawym przyciskiem myszy w oknie, a następnie wywołuje metodę, która obsługuje polecenie .<br />- Menu skrótów jest wyświetlane przez wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager.ShowContextMenu%2A> metody (zalecane podejście) lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowContextMenu%2A> metody .<br /><br /> Menu<br /> Udostępnia menu rozwijane. Menu rozwijane ma następujące cechy:<br /><br /> - Respektuje element nadrzędny w swojej definicji.<br />- Musi mieć grupę nadrzędną lub CommandPlacement do grupy.<br />- Może być podmenu w dowolnym innym rodzaju menu.<br />— jest automatycznie wyświetlany za każdym razem, gdy zostanie wyświetlone jego menu nadrzędne.<br />- Nie wymaga implementacji żadnego kodu VSPackage, aby go wyświetlić.<br /><br /> MenuController<br /> Udostępnia menu rozwijane z podzielonym przyciskiem, które jest zwykle używane na paskach narzędzi. Menu MenuController ma następujące cechy:<br /><br /> - Musi znajdować się w innym menu za pośrednictwem elementu nadrzędnego lub CommandPlacement.<br />- Respektuje element nadrzędny w swojej definicji.<br />- Może mieć menu dowolnego rodzaju jako jego element nadrzędny.<br />— jest automatycznie udostępniane za każdym razem, gdy zostanie wyświetlone jego menu nadrzędne.<br />- Nie wymaga obsługi programowej do wyświetlania menu.<br /><br /> Polecenie z menu przycisku podziału jest wyświetlane na przycisku menu. Wyświetlone polecenie ma jedną z następujących cech:<br /><br /> - Jest to ostatnie polecenie, które zostało użyte, jeśli polecenie jest nadal wyświetlane i włączone.<br />- Jest to pierwsze wyświetlone polecenie.<br /><br /> MenuControllerLatched<br /> Udostępnia menu rozwijane z podzielonym przyciskiem, dla którego można określić polecenie jako wybór domyślny, oznaczając polecenie jako zatrzaśowane.<br /><br /> Zatrzaśczone polecenie jest poleceniem, które jest oznaczone w menu jako wybrane, zwykle wyświetlając znacznik wyboru. Polecenie może być oznaczone jako zatrzaśowane, jeśli ma OLECMDF_LATCHED flagę ustawioną na nim w implementacji `QueryStatus` metody <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu. Menu MenuControllerLatched ma następujące cechy:<br /><br /> - Musi znajdować się w innym menu za pośrednictwem grupy nadrzędnej lub CommandPlacement.<br />- Respektuje element nadrzędny w swojej definicji.<br />- Może mieć menu dowolnego rodzaju jako jego element nadrzędny.<br />— jest udostępniane za każdym razem, gdy zostanie wyświetlone jego menu nadrzędne.<br />- Nie wymaga obsługi programowej do wyświetlania menu.<br /><br /> Polecenie z menu przycisku podziału jest wyświetlane na przycisku menu. Wyświetlone polecenie ma jedną z następujących cech:<br /><br /> - Jest to pierwsze wyświetlone polecenie, które jest zatrzaśne.<br />- Jest to pierwsze wyświetlone polecenie.<br /><br /> Pasek narzędzi<br /> Udostępnia pasek narzędzi. Pasek narzędzi ma następujące cechy:<br /><br /> - Ignoruje element nadrzędny w swojej definicji.<br />- Nie można stać się podmenu żadnej grupy, nawet przy użyciu CommandPlacement.<br />— Zawsze można wyświetlić, klikając pozycję **Paski narzędzi** w menu **Widok.**<br />- Można wyświetlić za pomocą [VisibilityItem](../extensibility/visibilityitem-element.md).<br />- Nie wymaga żadnego kodu, aby go utworzyć. Aby uzyskać przykład sposobu tworzenia paska narzędzi, zobacz [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md).<br /><br /> ToolWindowToolbar<br /> Udostępnia pasek narzędzi dołączony do określonego okna narzędzi, tak jak pasek narzędzi jest dołączony do środowiska programowego.<br /><br /> - Ignoruje element nadrzędny w swojej definicji.<br />- Nie można stać się podmenu żadnej grupy, nawet przy użyciu CommandPlacement.<br />- Jest wyświetlana tylko wtedy, gdy zostanie wyświetlone okno narzędzi, które hostuje pasek narzędzi, a pakiet VSPackage jawnie doda pasek narzędzi do okna narzędzi. Zwykle jest to wykonywane, gdy okno narzędzia jest tworzone przez uzyskanie właściwości hosta paska narzędzi (reprezentowanej przez interfejs) z ramki okna narzędzia, a następnie wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost> <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolWindowToolbarHost.AddToolbar%2A> metody .|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |Nadrzędny|Opcjonalny. Element nadrzędny elementu menu.|
-|CommandFlag|Wymagane. Zobacz [element flagi polecenia](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla menu są następujące:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** — ta flaga nie ma wpływu na wyświetlanie pasków narzędzi.<br />-   **DontCache**<br />-   **DynamicVisibility** — ta flaga nie ma wpływu na wyświetlanie pasków narzędzi.<br />-   **IconAndText**<br />-   **Nie dostosowywać**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|
-|Ciągi|Wymagane. Zobacz [element Strings](../extensibility/strings-element.md). Element podrzędny `ButtonText` musi być zdefiniowany.|
+|CommandFlag|Wymagane. Zobacz [element flagi polecenia](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag menu są następujące:<br /><br /> -   **Zawsze tworzeć**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** — ta flaga nie ma wpływu na wyświetlanie pasków narzędzi.<br />-   **DontCache**<br />-   **DynamicVisibility** — ta flaga nie ma wpływu na wyświetlanie pasków narzędzi.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|
+|Ciągi|Wymagane. Zobacz [ciągi, element](../extensibility/strings-element.md). Element `ButtonText` podrzędny musi być zdefiniowany.|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element menu](../extensibility/menus-element.md)|Definiuje wszystkie menu, które implementuje pakietu VSPackage.|
+|[Menus, element](../extensibility/menus-element.md)|Definiuje wszystkie menu implementowanych przez pakiet VSPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -76,4 +76,4 @@ Definiuje jeden element menu. Oto sześć rodzajów menu: Context, menu, MenuCon
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio polecenia tabeli (pliki vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

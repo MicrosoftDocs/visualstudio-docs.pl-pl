@@ -1,9 +1,9 @@
 ---
 title: Programy | Microsoft Docs
-description: W tym artykule opisano definicje i rolę programu w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę programu w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], programs
 - programs, debugging
@@ -13,25 +13,25 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0769d2abc650305095115d1c645e3037096974de
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 07b23fbafd9342b555e2578c4bc0401371e30785
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094617"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901282"
 ---
 # <a name="programs"></a>Programy
-W architekturze debugera, *program*:
+W architekturze debugera *program*:
 
-- Jest kontenerem dla zestawu wątków i zestawu modułów. Program nie ma pojedynczej analogu w systemie operacyjnym Windows.
+- Jest kontenerem dla zestawu wątków i zestawu modułów. Program nie ma jednej analogii w systemie operacyjnym Windows.
 
-     Program jest rodzajem podprocesu. Na przykład podczas debugowania witryny sieci Web skrypt może być traktowany jako program. Skrypt jest uruchamiany w procesie aparatu skryptów, niezależnie od innych skryptów, również ma swój własny zestaw wątków. Aparat debugowania (DE) dołącza do programu, a nie do procesu lub wątku.
+     Program jest rodzajem podprocesu. Na przykład podczas debugowania witryny internetowej skrypt może być widoczny jako program. Skrypt jest uruchamiany w procesie aparatu obsługi skryptów, niezależnie od innych skryptów, ale ma również własny zestaw wątków. Aparat debugowania (DE) jest dołączany do programu, a nie do procesu lub wątku.
 
-- Może identyfikować siebie i proces, w którym jest uruchomiona. Program może zostać dołączony do, zostać odłączony od i opisany dla DE, który go utworzył. Program może również wykonywać, zatrzymywać, kontynuować i być zakończony.
+- Może identyfikować siebie i proces, w jaki jest uruchomiony. Program można dołączyć, odłączyć od i opisać DE, który go utworzył, jeśli jest. Program może również wykonywać, zatrzymywać, kontynuować i kończyć.
 
-- Może wyliczyć wszystkie jej wątki. Program może również dostarczyć swój własny strumień demontażu i może wyliczyć wszystkie konteksty kodu danego położenia dokumentu.
+- Może wyliczyć wszystkie swoje wątki. Program może również dostarczać własny strumień dezmisembmu i może wyliczać wszystkie konteksty kodu dla danego położenia dokumentu.
 
-- Jest reprezentowany przez interfejs [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , utworzony przed dołączeniem programu lub jako część procesu dołączania, w zależności od implementacji. Gdy port wylicza programy, każdy program jest tworzony zgodnie z odpowiednim interfejsem [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) przekazaną jako argument do [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Chociaż aparaty debugowania również tworzą `IDebugProgram2` interfejsy do reprezentowania programów, te programy nie są tworzone zgodnie z węzłem programu. `IDebugProgramNode2`Interfejsy utworzone przez de są używane do rzeczywistego debugowania, podczas gdy te utworzone przez port są używane tylko do odnajdywania programów uruchomionych w procesie.
+- Jest reprezentowany przez [interfejs IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) utworzony przed dołączeniu programu lub w ramach procesu dołączania, w zależności od implementacji. Gdy port wylicza programy procesu, każdy program jest tworzony zgodnie z odpowiednim interfejsem [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) przekazywanym jako argument do [addProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Aparaty debugowania również tworzą interfejsy do reprezentowania programów, ale nie są tworzone `IDebugProgram2` zgodnie z węzłem programu. Interfejsy utworzone przez de są używane do rzeczywistego debugowania, podczas gdy te utworzone przez port są używane tylko do odnajdywania programów uruchomionych `IDebugProgramNode2` w procesie.
 
 ## <a name="see-also"></a>Zobacz też
 - [Procesy](../../extensibility/debugger/processes.md)

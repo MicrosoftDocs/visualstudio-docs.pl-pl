@@ -1,9 +1,9 @@
 ---
-title: Element kombi | Microsoft Docs
-description: 'Element kombi definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodzaje: DropDownCombo, DynamicCombo, IndexCombo i MRUCombo.'
+title: Combo, element | Microsoft Docs
+description: 'Combo element definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodzaje: DropDownCombo, DynamicCombo, IndexCombo i MRUCombo.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e4a4895997e5c7511c694511000f7a0ac671db2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 431d68b6e545506f5fc90cc5a98a52dd4f1c33ad
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089748"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904958"
 ---
-# <a name="combo-element"></a>Element kombi
-Definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodzaje pól kombi w następujący sposób: DropDownCombo, DynamicCombo, IndexCombo i MRUCombo.
+# <a name="combo-element"></a>Combo, element
+Definiuje polecenia wyświetlane w polu kombi. Istnieją cztery rodzaje pól kombi w następujący sposób: DropDownCombo, DynamicCombo, IndexCombo i MRUCombo.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,28 +40,28 @@ Definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodza
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
-|defaultWidth|Wymagane. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|
-|idCommandList|Wymagane. Identyfikator, który jest wysyłany do aktywnego elementu docelowego polecenia, aby pobrać listę elementów, które mają być wyświetlane w polu kombi. Identyfikator będzie mieć ten sam zakres identyfikatorów GUID co formant.|
-|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
-|typ|Opcjonalny. Wartość wyliczana, która określa typ przycisku.<br /><br /> Jeśli nie zostanie określona, używa przycisku.<br /><br /> DropDownCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnienie zawartości dla tego pola kombi. Użytkownik nie może wpisać niczego w polu tekstowym tego listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnienie zawartości tego pola kombi. Użytkownik może edytować to pole kombi, a także wybrać elementy.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z tą różnicą, że wywołuje indeks elementu, a nie jego tekst.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowane środowisko programistyczne (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. Środowisko IDE zapamiętuje do ostatnich 16 wpisów na pole kombi.<br /><br /> Gdy użytkownik wybierze coś w polu kombi lub wprowadzi coś nowego, środowisko IDE powiadamia odpowiednie pakietu VSPackage.|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagane. Identyfikator GUID/ID identyfikatora polecenia.|
+|identyfikator|Wymagane. Identyfikator identyfikatora GUID/ID polecenia.|
+|defaultWidth|Wymagane. Liczba całkowita określająca szerokość pikseli dla pola kombi.|
+|idCommandList|Wymagane. Identyfikator wysyłany do aktywnego obiektu docelowego polecenia w celu pobrania listy elementów do wyświetlania w polu kombi. Identyfikator będzie w tym samym zakresie identyfikatora GUID co kontrolka.|
+|priority|Opcjonalny. Wartość liczbowa określająca priorytet.|
+|typ|Opcjonalny. Wyliczeniowa wartość określająca typ przycisku.<br /><br /> Jeśli nie zostanie podany, użyj przycisku.<br /><br /> DropDownCombo<br /> Pakiet VSPackage jest odpowiedzialny za wypełnienie zawartości tego pola kombi. Użytkownik nie może wpisać niczego w polu tekstowym tej listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakiet VSPackage jest odpowiedzialny za wypełnienie zawartości tego pola kombi. Użytkownik może edytować to kombi, a także wybierać w nim elementy.<br /><br /> IndexCombo<br /> Taki sam jak DynamicCombo, z tą różnicą, że wywołuje indeks elementu, a nie jego tekst.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowane środowisko projektowe (IDE) w imieniu vspackage.  Użytkownik może edytować w tym polu kombi. Ide zapamiętuje maksymalnie 16 ostatnich wpisów na pole kombi.<br /><br /> Gdy użytkownik wybierze coś w polu kombi lub wprowadzi coś nowego, idee powiadomią odpowiedni pakiet VSPackage.|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |Nadrzędny|Opcjonalny. Element nadrzędny przycisku.|
-|CommandFlag|Wymagane. Zobacz [element flagi polecenia](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility<br /><br /> -KlawiszeFiltru<br /><br /> - IconAndText<br /><br /> -Noautouzupełnianie<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
-|Ciągi|Wymagane. Zobacz [element Strings](../extensibility/strings-element.md). Element podrzędny ButtonText musi być zdefiniowany.|
+|CommandFlag|Wymagane. Zobacz [element flagi polecenia](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag przycisku są następujące.<br /><br /> — Bez uwzględniania przypadku<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DynamicVisibility (DynamicVisibility)<br /><br /> - FilterKeys<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> — Nie dojrzej<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
+|Ciągi|Wymagane. Zobacz [ciągi, element](../extensibility/strings-element.md). Należy zdefiniować podrzędny element ButtonText.|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
+|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi vsPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -86,4 +86,4 @@ Definiuje polecenia, które pojawiają się w polu kombi. Istnieją cztery rodza
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

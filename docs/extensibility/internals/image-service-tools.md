@@ -1,27 +1,27 @@
 ---
 title: Narzędzia usługi obrazów | Microsoft Docs
-description: Dowiedz się więcej o narzędziach dostępnych w zestawie SDK programu Visual Studio, które ułatwiają tworzenie rozszerzeń przy użyciu usługi obrazów programu Visual Studio.
+description: Dowiedz się więcej o narzędziach dostępnych w zestawie SDK Visual Studio, które mogą ułatwić tworzenie rozszerzeń przy użyciu usługi Visual Studio obrazów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3a90719742d19a05701d4a6db1f4325596fee0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f51a00d10a1348a899f81f9c9a6ef9f3c050cdd3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085939"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901100"
 ---
 # <a name="image-service-tools"></a>Narzędzia usługi obrazów
-Zestaw SDK programu VS zawiera kilka narzędzi, które ułatwiają konstruktorom rozszerzeń korzystanie z usługi obrazów programu Visual Studio.
+Zestaw VS SDK zawiera kilka narzędzi, które ułatwiają konstruktorom rozszerzeń korzystanie Visual Studio usługi obrazów.
 
-- Narzędzie [manifest from Resources](../../extensibility/internals/manifest-from-resources.md) pobiera listę zasobów obrazów (plików PNG lub XAML) i generuje plik manifestu obrazu.
+- Narzędzie [Manifest from Resources](../../extensibility/internals/manifest-from-resources.md) pobiera listę zasobów obrazu (pliki .png lub xaml) i generuje plik manifestu obrazu.
 
-- Narzędzie [Manifest to Code](../../extensibility/internals/manifest-to-code.md) pobiera plik manifestu obrazu i generuje plik otoki do użycia w plikach języka C++, C#, VB lub vsct.
+- Narzędzie [Manifest to Code](../../extensibility/internals/manifest-to-code.md) pobiera plik manifestu obrazu i generuje plik otoki do użycia w plikach C++, C#, VB lub .vsct.
 
-- [Podgląd biblioteki obrazów](../../extensibility/internals/image-library-viewer.md) może ładować, edytować i przeszukiwać manifesty obrazu.
+- Przeglądarka [bibliotek obrazów może](../../extensibility/internals/image-library-viewer.md) ładować, edytować i wyszukiwać manifesty obrazów.

@@ -1,9 +1,9 @@
 ---
-title: Kontekst projektu | Microsoft Docs
-description: Dowiedz się, w jaki sposób środowisko IDE programu Visual Studio używa kontekstu projektu, aby określić sposób wykonywania operacji, gdy użytkownik dodaje lub współpracuje z projektami i elementami projektu.
+title: Kontekst | Microsoft Docs
+description: Dowiedz się, Visual Studio IDE używa kontekstu projektu, aby określić sposób wykonywania operacji, gdy użytkownik dodaje projekty i elementy projektu lub pracuje z nim.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
@@ -12,21 +12,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38571b51c31b20bd38e50dd32644be4c262e0702
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 73e3c8a94607e7e0b31bacddac8e7f19b6139328
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062866"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899826"
 ---
 # <a name="project-context"></a>Kontekst projektu
-Gdy użytkownik dodaje lub współpracuje z projektami i elementami projektu, IDE używa koncepcji kontekstu projektu, aby określić, jak należy wykonać różne operacje.
+Gdy użytkownik dodaje projekty i elementy projektu lub pracuje z nim, w idee używane jest określenie kontekstu projektu w celu określenia sposobu wykonania różnych operacji.
 
- Zazwyczaj pliki są obiektami standardowych projektów, które użytkownik jawnie tworzy, wybierając polecenie **Nowy projekt** lub Udostępnij, wybierając polecenie **Otwórz projekt** w menu **plik** . W takich przypadkach pliki są tworzone i otwierane w kontekście projektu, a typ projektu definiuje kontekst do edycji dokumentu.
+ Zazwyczaj pliki są standardowymi obiektami projektu, które użytkownik jawnie tworzy, wybierając polecenie **Nowy** projekt lub udostępniając je, wybierając polecenie **Otwórz** projekt w menu **Plik.** W takich przypadkach pliki są tworzone i otwierane w kontekście projektu, a typ projektu definiuje kontekst edycji dokumentu.
 
- Niektóre projekty oferują bardzo rozbudowany kontekst. Na przykład projekt zarządza obszarem programu programistycznego, przestrzenią nazw programu lub połączeniem z bazą danych projektu dla powiązania danych. Użytkownik może często otwierać pliki lub połączenia bazy danych bezpośrednio przy użyciu określonego obiektu projektu, takiego jak element projektu wyświetlany w Eksplorator rozwiązań.
+ Niektóre projekty zapewniają bardzo rozbudowane konteksty. Na przykład projekt zarządza połączeniem bazy danych o zakresie projektu, programową przestrzenią nazw lub bazą danych w zakresie projektu w celu powiązania danych. Użytkownik może często otwierać pliki lub połączenia z bazą danych bezpośrednio przy użyciu określonego obiektu projektu, takiego jak element projektu wyświetlany w Eksplorator rozwiązań.
 
- W innych przypadkach kontekst projektu elementu nie jest jawnie określony. Na przykład kontekst elementu nie jest dostępny, gdy użytkownik otwiera plik, wybierając polecenie **Otwórz istniejący plik** w menu **plik** , gdy debuger działa na pliku lub gdy użytkownik kliknie polecenie **Znajdź w plikach** w oknie dialogowym **Znajdowanie i zamienianie** . Aby obsłużyć te sytuacje, środowisko IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> do zarządzania procesem wyszukiwania najlepszego projektu w celu otwarcia dokumentu.
+ W innych momentach kontekst projektu elementu nie jest jawnie określony. Na przykład **kontekst** elementu nie jest dostępny, gdy użytkownik otwiera  plik, wybierając polecenie Otwórz istniejący plik w menu Plik, gdy debuger  działa na pliku, lub gdy użytkownik kliknie polecenie Znajdź w plikach w oknie dialogowym Znajdź i zamień.  Aby obsłużyć takie sytuacje, środowiska IDE wywołuje w celu zarządzania procesem znajdowania najlepszego <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> projektu w celu otwarcia dokumentu.
 
 ## <a name="see-also"></a>Zobacz też
 - [Priorytet projektu](../../extensibility/internals/project-priority.md)

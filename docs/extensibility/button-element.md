@@ -1,9 +1,9 @@
 ---
-title: Button — element | Microsoft Docs
-description: 'Element Button definiuje element, z którym użytkownik może korzystać. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.'
+title: Button, element | Microsoft Docs
+description: 'Element Button definiuje element, z który użytkownik może wchodzić w interakcje. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec0640313195d6a15599d1a765081557c0c1a75a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 630d848c40b13a929c3dd91b47e1c35529efaa50
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068148"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901750"
 ---
-# <a name="button-element"></a>Button — element
-Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.
+# <a name="button-element"></a>Button, element
+Definiuje element, z który użytkownik może wchodzić w interakcje. Przyciski mogą być różnego rodzaju: Button, MenuButton i SplitDropDown.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,30 +41,30 @@ Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|guid|Wymagane. Identyfikator GUID identyfikatora polecenia GUID/ID.|
-|identyfikator|Wymagane. Identyfikator identyfikatora polecenia GUID/ID.|
-|priority|Opcjonalny. Wartość liczbowa, która określa priorytet.|
-|typ|Opcjonalny. Wartość wyliczana, która określa rodzaj przycisku.<br /><br /> Jeśli nie zostanie określona, używa przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które pojawia się na paskach narzędzi (zazwyczaj jako przycisk ikony), menu i menu kontekstowe.<br /><br /> MenuButton<br /> Element menu, który nie wykonuje polecenia, ale tworzy inne menu.<br /><br /> SplitDropDown<br /> Kontrolki, takie jak przyciski Cofnij i wykonaj ponownie na standardowym pasku narzędzi w programie Microsoft Word.|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Wymagane. Identyfikator GUID/ID identyfikatora polecenia.|
+|identyfikator|Wymagane. Identyfikator identyfikatora GUID/ID polecenia.|
+|priority|Opcjonalny. Wartość liczbowa określająca priorytet.|
+|typ|Opcjonalny. Wyliczeniowa wartość określająca rodzaj przycisku.<br /><br /> Jeśli nie zostanie podana, użyje przycisku.<br /><br /> Przycisk<br /> Standardowe polecenie, które jest wyświetlane na paskach narzędzi (zazwyczaj jako przycisk ikony), menu i menu kontekstowych.<br /><br /> MenuButton<br /> Element menu, który nie wykonuje polecenia, ale tworzy inne menu.<br /><br /> SplitDropDown<br /> Kontrolki, takie jak przyciski Cofnij i Ponownie wywłaszczaj na standardowym pasku narzędzi w programie Microsoft Word.|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |[Element nadrzędny](../extensibility/parent-element.md)|Opcjonalny. Element nadrzędny przycisku.|
-|[Icon — element](../extensibility/icon-element.md)|Opcjonalny. Ikona skojarzona z przyciskiem.|
-|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagane. Prawidłowe wartości CommandFlag dla przycisku są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nodostosowywanie<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> — PICT<br /><br /> - PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
-|[Strings, element](../extensibility/strings-element.md)|Wymagane. Element podrzędny [ButtonText](../extensibility/buttontext-element.md) musi być zdefiniowany.|
+|[Icon, element](../extensibility/icon-element.md)|Opcjonalny. Ikona skojarzona z przyciskiem .|
+|[Element flagi polecenia](../extensibility/command-flag-element.md)|Wymagane. Prawidłowe wartości CommandFlag przycisku są następujące.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> - DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility (DynamicVisibility)<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> - NoCustomize<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> — Pict<br /><br /> — PostExec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> - TextChanges (Zmiany tekstu)<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly (Tylko tekst)|
+|[Strings, element](../extensibility/strings-element.md)|Wymagane. Należy zdefiniować [podrzędny element ButtonText.](../extensibility/buttontext-element.md)|
 |Adnotacja|Opcjonalny komentarz.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Buttons](../extensibility/buttons-element.md)|Elementy przycisków grup.|
+|[Buttons, element](../extensibility/buttons-element.md)|Grupuj elementy przycisku.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład definiuje przycisk w pliku *. vsct* .
+ W poniższym przykładzie zdefiniowano przycisk w *pliku vsct.*
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,4 +79,4 @@ Definiuje element, z którym użytkownik może korzystać. Przyciski mogą być 
  ```
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

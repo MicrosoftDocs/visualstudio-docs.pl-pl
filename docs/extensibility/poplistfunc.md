@@ -1,9 +1,9 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
-description: Dowiedz się więcej na temat funkcji wywołania zwrotnego POPLISTFUNC, która jest używana przez wtyczkę kontroli źródła w celu zaktualizowania listy plików lub katalogów.
+description: Dowiedz się więcej o funkcji wywołania zwrotnego POPLISTFUNC, która jest używana przez wtyczkę kontroli źródła do aktualizowania listy plików lub katalogów.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b52ed40397793b44f8a9c7ed9c36aa5996ae0176
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090242"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900385"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-To wywołanie zwrotne jest dostarczane do [SccPopulateList](../extensibility/sccpopulatelist-function.md) przez IDE i używane przez wtyczkę kontroli źródła w celu zaktualizowania listy plików lub katalogów (również dostarczonych do `SccPopulateList` funkcji).
+To wywołanie zwrotne jest dostarczane do [listy SccPopulateList](../extensibility/sccpopulatelist-function.md) przez ideę i jest używane przez wtyczkę kontroli źródła do aktualizowania listy plików lub katalogów (dostarczanych również do `SccPopulateList` funkcji).
 
- Gdy użytkownik wybierze polecenie **Get** w IDE, IDE Wyświetla pole listy wszystkich plików, które użytkownik może uzyskać. Niestety, IDE nie zna dokładnej listy wszystkich plików, które użytkownik może uzyskać; tylko wtyczka ma tę listę. Jeśli inni użytkownicy dodali pliki do projektu kontroli kodu źródłowego, te pliki powinny pojawić się na liście, ale środowisko IDE nie wie o nich. Środowisko IDE tworzy listę plików, które mogą zostać pobrane przez użytkownika. Zanim wyświetli tę listę dla użytkownika, wywoła [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` nadający wtyczki kontroli źródła Dodawanie i usuwanie plików z listy.
+ Gdy użytkownik wybierze polecenie **Get** w idee IDE, zostanie wyświetlone pole listy wszystkich plików, które użytkownik może pobrać. Niestety, idee nie znają dokładnej listy wszystkich plików, które użytkownik może pobrać; Tylko wtyczka ma tę listę. Jeśli inni użytkownicy dodali pliki do projektu kontroli kodu źródłowego, te pliki powinny pojawić się na liście, ale środowiska IDE o nich nie wiedzą. Ide tworzy listę plików, które użytkownik może uzyskać. Przed wyświetleniem tej listy użytkownikowi wywołuje ona kontrolkę [SccPopulateList,](../extensibility/sccpopulatelist-function.md) co daje wtyczce kontroli źródła możliwość dodawania i usuwania plików `,` z listy.
 
 ## <a name="signature"></a>Podpis
- Wtyczka do kontroli źródła modyfikuje listę, wywołując funkcję implementowaną przez środowisko IDE o następującym prototypie:
+ Wtyczka kontroli źródła modyfikuje listę, wywołując funkcję zaimplementowaną w ideach przy użyciu następującego prototypu:
 
 ```cpp
 typedef BOOL (*POPLISTFUNC) (
@@ -39,29 +39,29 @@ typedef BOOL (*POPLISTFUNC) (
 ```
 
 ## <a name="parameters"></a>Parametry
- pvCallerData parametr, który został `pvCallerData` przesłany przez obiekt wywołujący (IDE) do [SccPopulateList](../extensibility/sccpopulatelist-function.md). Wtyczka do kontroli źródła nie powinna zajmować niczego o zawartości tego parametru.
+ pvCallerData `pvCallerData` Parametr przekazany przez wywołujący (IDE) do [listy SccPopulateList](../extensibility/sccpopulatelist-function.md). Wtyczka kontroli źródła nie powinna zakładać niczego na temat zawartości tego parametru.
 
- fAddRemove if `TRUE` , `lpFileName` jest plikiem, który powinien zostać dodany do listy plików. Jeśli `FALSE` , `lpFileName` jest plikiem, który powinien zostać usunięty z listy plików.
+ fAddUsove Jeśli `TRUE` , `lpFileName` to plik, który należy dodać do listy plików. Jeśli `FALSE` , `lpFileName` to plik, który powinien zostać usunięty z listy plików.
 
- Stan nStatus `lpFileName` (kombinacja `SCC_STATUS` bitów; zobacz [kod stanu pliku](../extensibility/file-status-code-enumerator.md) , aby uzyskać szczegółowe informacje).
+ nStatus Status of `lpFileName` (kombinacja `SCC_STATUS` bitów; zobacz [Kod stanu pliku,](../extensibility/file-status-code-enumerator.md) aby uzyskać szczegółowe informacje).
 
- lpFileName pełną ścieżkę katalogu nazwy pliku, aby dodać lub usunąć z listy.
+ lpFileName Pełna ścieżka katalogu nazwy pliku do dodania lub usunięcia z listy.
 
 ## <a name="return-value"></a>Wartość zwracana
 
 |Wartość|Opis|
 |-----------|-----------------|
 |`TRUE`|Wtyczka może kontynuować wywoływanie tej funkcji.|
-|`FALSE`|Wystąpił problem ze stroną IDE (na przykład z powodu braku pamięci). Wtyczka powinna zatrzymać operację.|
+|`FALSE`|Po stronie środowiska IDE występuje problem (na przykład brak pamięci). Wtyczka powinna zatrzymać działanie.|
 
 ## <a name="remarks"></a>Uwagi
- Dla każdego pliku, który wtyczka do kontroli źródła chce dodać lub usunąć z listy plików, wywołuje tę funkcję, przekazując w `lpFileName` . `fAddRemove`Flaga wskazuje nowy plik do dodania do listy lub starego pliku do usunięcia. `nStatus`Parametr przekazuje stan pliku. Gdy wtyczka SCC zakończyła Dodawanie i usuwanie plików, zwraca z wywołania [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
+ Dla każdego pliku, który wtyczka kontroli kodu źródłowego chce dodać do listy plików lub usunąć z listy plików, wywołuje ona tę funkcję, przekazując w pliku `lpFileName` . Flaga `fAddRemove` wskazuje nowy plik do dodania do listy lub stary plik do usunięcia. Parametr `nStatus` podaje stan pliku. Po zakończeniu dodawania i usuwania plików przez wtyczkę SCC jest ona zwracana z wywołania [SccPopulateList.](../extensibility/sccpopulatelist-function.md)
 
 > [!NOTE]
-> `SCC_CAP_POPULATELIST`Bit możliwości jest wymagany dla programu Visual Studio.
+> Bit `SCC_CAP_POPULATELIST` możliwości jest wymagany dla Visual Studio.
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
-- [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
+- [Funkcje wywołania zwrotnego implementowane przez ide](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)
 - [Kod stanu pliku](../extensibility/file-status-code-enumerator.md)

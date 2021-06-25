@@ -1,9 +1,9 @@
 ---
-title: Element extern | Microsoft Docs
-description: Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (. h) do scalenia z plikiem. vsct w czasie kompilacji.
+title: Extern, element | Microsoft Docs
+description: Extern element odwołuje się do wszystkich zewnętrznych plików nagłówka (h) w celu scalenia z plikiem vsct w czasie kompilacji.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Extern
 helpviewer_keywords:
@@ -15,19 +15,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 502b93f18aacfed26d3ea440c017e6de5281a35d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074993"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900190"
 ---
-# <a name="extern-element"></a>Element extern
-Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*. h*) do scalenia z plikiem *. vsct* w czasie kompilacji. Pliki, które mają zostać scalone, muszą znajdować się na ścieżce dołączania do kompilatora VSCT lub odwołania do [elementu include](../extensibility/include-element.md). Pliki mogą być innymi plikami *. vsct* lub plikami nagłówkowe języka C++.
+# <a name="extern-element"></a>Extern, element
+Extern element odwołuje się do wszystkich zewnętrznych plików nagłówka *(.h)* w celu scalenia z *plikiem .vsct* w czasie kompilacji. Pliki, które mają zostać scalone, muszą znajdować się w ścieżce Dołączania nadanej kompilatorowi VSCT lub przywołynej przez [element Include](../extensibility/include-element.md). Pliki mogą być innymi *plikami vsct* lub plikami nagłówków C++.
 
- Definicje w plikach nagłówkowych muszą mieć postać "#define [symbol] [Value]" wartość może być innym symbolem, jeśli jest wcześniej zdefiniowana. Definicje mogą być używane w instrukcjach warunkowych elementów poleceń. Wszelkie symbole, które nie są faktycznie używane, zostaną odrzucone.
+ Definicje w plikach nagłówkowych muszą mieć postać "#define [Symbol] [Wartość]" Wartość może być innym symbolem, jeśli została wcześniej zdefiniowana. Definicje mogą być używane w instrukcjach warunkowych elementów poleceń. Każdy symbol, który nie jest faktycznie używany, zostanie odrzucony.
 
- Element extern elementu
+ CommandTable, element Extern, element
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,9 +42,9 @@ Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Tag|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href = "Stdidcmd. h"|
-|Warunek|Opcjonalny. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|language|Opcjonalny. Język domyślny wszystkich [\<Strings>](../extensibility/strings-element.md) elementów w tabeli poleceń:<br /><br /> Language = "pl-US"|
+|Href|Wymagane. Ścieżka do pliku nagłówkowego:<br /><br /> href="stdidcmd.h"|
+|Warunek|Opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|language|Opcjonalny. Domyślny język wszystkich elementów [\<Strings>](../extensibility/strings-element.md) w tabeli poleceń:<br /><br /> language="en-us"|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -56,7 +56,7 @@ Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element polecenia](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy, które reprezentują polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi, które pakietu VSPackage zapewnia IDE.|
+|[CommandTable, element](../extensibility/commandtable-element.md)|Definiuje wszystkie elementy reprezentujące polecenia — czyli elementy menu, menu, paski narzędzi i pola kombi — które pakiet VSPackage udostępnia ideom IDE.|
 
 ## <a name="example"></a>Przykład
 
@@ -71,6 +71,6 @@ Element extern odwołuje się do wszystkich plików zewnętrznego nagłówka (*.
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Jak pakietów VSPackage Dodawanie elementów interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Visual Studio plików tabeli poleceń (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Jak pakiet VSPackages dodaje elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

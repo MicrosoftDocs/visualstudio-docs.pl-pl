@@ -1,9 +1,9 @@
 ---
 title: Procesy | Microsoft Docs
-description: W tym artykule opisano definicje i rolę procesu w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę procesu w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
@@ -12,35 +12,35 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e25ddfbe60e1b9ee456e586c6f424fc489f626
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f3cadf314b189c72320da3f54488af8560cf3fd8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067715"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901256"
 ---
 # <a name="processes"></a>Procesy
-W architekturze debugera, *proces*:
+W architekturze debugera *proces*:
 
-- Jest kontenerem dla zestawu programów. Jest to ściśle analogiczne do procesu systemu Windows, który jest kontenerem dla zestawu wątków.
+- Jest kontenerem dla zestawu programów. Jest ona ściśle analogiczna do procesu systemu Windows, który jest kontenerem dla zestawu wątków.
 
-- Może identyfikować siebie według nazwy, identyfikatora lub identyfikatora fizycznego.
+- Może identyfikować się według nazwy, identyfikatora lub identyfikatora fizycznego.
 
-- Może wyliczyć wszystkie uruchomione programy (i ich wątki).
+- Może wyliczać wszystkie uruchomione programy (i ich wątki).
 
-- Może opisywać siebie, port, na którym działa program, oraz maszynę, która ją zawiera.
+- Może opisywać samą siebie, port, na których działa, i maszynę, która go zawiera.
 
-- Program może utworzyć jeden lub więcej programów, zakończyć każdy z tworzonych przez niego programów lub spowodować zatrzymanie programu.
+- Może tworzyć co najmniej jeden program, kończyć wszystkie programy, które tworzy, lub powodować zatrzymanie programu.
 
-- Jest reprezentowany przez interfejs [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) , który jest tworzony podczas uruchamiania procesu. Proces jest uruchamiany przez Menedżera debugowania sesji (SDM) lub [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
+- Jest reprezentowany przez [interfejs IDebugProcess2,](../../extensibility/debugger/reference/idebugprocess2.md) który jest tworzony podczas uruchomiania procesu. Proces jest uruchamiany przez menedżera debugowania sesji (SDM) lub [LaunchSuspended.](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 
-  Pakiet debugowania może dołączyć aparat debugowania (Anuluj) do procesu przez wywołanie metody [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), co oznacza, że wszystkie możliwe programy działają w procesie, który może obsłużyć. Na przykład jeśli środowisko uruchomieniowe języka wspólnego nie dołącza do procesu, dołącza tylko do programów, które są uruchomione w kodzie zarządzanym.
+  Pakiet debugowania może dołączyć aparat debugowania (DE) do procesu przez wywołanie attach [,](../../extensibility/debugger/reference/idebugprocess2-attach.md)co oznacza, że DE dołącza do wszystkich możliwych programów uruchomionych w procesie, który może obsłużyć. Na przykład, jeśli środowisko uruchomieniowe języka wspólnego DE dołącza się do procesu, dołącza tylko do programów, które są uruchomione kodu zarządzanego.
 
 ## <a name="see-also"></a>Zobacz też
 - [Programy](../../extensibility/debugger/programs.md)
 - [Wątki](../../extensibility/debugger/threads.md)
 - [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
-- [Debuguj pakiet](../../extensibility/debugger/debug-package.md)
+- [Pakiet debugowania](../../extensibility/debugger/debug-package.md)
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

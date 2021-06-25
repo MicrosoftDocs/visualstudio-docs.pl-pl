@@ -1,9 +1,9 @@
 ---
-title: Kreator (. Vsz) | Microsoft Docs
-description: Dowiedz się więcej na temat plików. vsz używanych przez środowisko IDE do uruchamiania kreatorów. Pliki zawierają informacje o tym, który Kreator jest wywoływany i co należy przekazać do kreatora.
+title: Kreator (. Vsz) Plik | Microsoft Docs
+description: Dowiedz się więcej o plikach vsz, których idee używa do uruchamiania kreatorów. Pliki zawierają informacje o kreatorze do wywołania i o tym, co należy przekazać do kreatora.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -14,20 +14,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de687dae79fa1613090fb400f73ab658ee5d66cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074239"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900658"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (plik Vsz)
 
-Zintegrowane środowisko programistyczne (IDE) używa plików. vsz do uruchamiania kreatorów. Te pliki. vsz zawierają informacje używane przez środowisko IDE do określenia kreatora do wywołania i informacji, które należy przekazać do kreatora.
+Zintegrowane środowisko projektowe (IDE) używa plików vsz do uruchamiania kreatorów. Te pliki .vsz zawierają informacje używane przez ideę do określenia, który kreator ma wywołać i jakie informacje przekazać do kreatora.
 
-Plik. vsz jest wersją pliku tekstowego w formacie. ini, który nie zawiera żadnych sekcji. Informacje znane do IDE są przechowywane na początku pliku. Zapewnia to połączenie między kreatorem, który jest wywoływany przez środowisko IDE, i parametry, które znajdują się w pliku. vsz do przesłania do IDE. Pozostała część pliku zawiera parametry, które są specyficzne dla kreatora i które mają być zbierane przez środowisko IDE i przesyłane do określonego kreatora.
+Plik vsz to wersja pliku tekstowego .ini formatem, który nie zawiera sekcji. Informacje znane ideom są przechowywane na początku pliku. Zapewnia to połączenie między kreatorem, który wywołuje ide, a parametrami, które znajdują się w pliku vsz, które mają zostać przekazane do środowiska IDE. Pozostała część pliku zawiera parametry specyficzne dla kreatora, które mają być zbierane przez ideę IDE i przekazywane do określonego kreatora.
 
-Poniższy przykład pokazuje zawartość pliku. vsz.
+W poniższym przykładzie pokazano zawartość pliku vsz.
 
 ```
 VSWizard 8.0
@@ -36,17 +36,17 @@ Param="WIZARDNAME = Wizard One"
 Param="WIZARDUI = FALSE"
 ```
 
-Poniżej przedstawiono części w pliku. vsz.
+Poniżej przedstawiono części w pliku vsz.
 
 |Część|Opis|
 |----------|-----------------|
-|VSWizard|Pierwszy parametr w pliku jest numerem wersji formatu pliku szablonu. Ten numer wersji musi być 6,0, 7,0, 7,1 lub 8,0. Nie można uruchomić innych liczb i spowodować błąd nieprawidłowego formatu.|
-|Kreatora|To pole zawiera obiekt OLE ProgID kreatora lub alternatywnie reprezentacja identyfikatora GUID kreatora, który jest współtworzony przez IDE.|
-|Param|Te części są opcjonalne. W razie konieczności można dodać dowolną liczbę.|
+|VsWizard|Pierwszym parametrem w pliku jest numer wersji formatu pliku szablonu. Ten numer wersji musi mieć wersję 6.0, 7.0, 7.1 lub 8.0. Nie można rozpocząć innych liczb i spowodować błędu Nieprawidłowy format.|
+|Kreatora|To pole zawiera identyfikator OLE ProgID kreatora lub alternatywnie ciąg identyfikatora GUID reprezentacji identyfikatora CLSID kreatora, który jest współtworzyny przez ideę.|
+|Param|Te części są opcjonalne. Możesz dodać tyle, ile potrzebujesz.|
 
-Parametry umożliwiają plikowi. vsz przekazywanie dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przenoszona jako element String w tablicy wariantów do kreatora. Aby uzyskać więcej informacji, zobacz [parametry niestandardowe](../../extensibility/internals/custom-parameters.md).
+Parametry umożliwiają plikowi vsz przekazania dodatkowych parametrów niestandardowych do kreatora. Każda wartość jest przekazywana do kreatora jako element ciągu w tablicy wariantów. Aby uzyskać więcej informacji, zobacz [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md).
 
-Aby dodać domyślny identyfikator ustawień regionalnych do pliku. vsz, określ `FALLBACK_LCID` = xxxx, gdzie xxxx jest identyfikatorem ustawień regionalnych, na przykład 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` parametr jest zdefiniowany, Kreator używa podanego identyfikatora ustawień regionalnych w przypadku nieznalezienia bieżącego identyfikatora.
+Aby dodać domyślny identyfikator ustawień regionalnych do pliku vsz, określ wartość =xxxx, gdzie xxxx to identyfikator ustawień regionalnych, na przykład `FALLBACK_LCID` 1033 dla języka angielskiego. Gdy `FALLBACK_LCID` parametr jest zdefiniowany, kreator używa podanego identyfikatora rezerwowych ustawień regionalnych, jeśli bieżący identyfikator nie zostanie znaleziony.
 
 ## <a name="see-also"></a>Zobacz też
 

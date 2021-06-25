@@ -1,9 +1,9 @@
 ---
-title: SetNotificationForWaitCompletion — Metoda | Microsoft Docs
-description: Dowiedz się, jak debuger używa bitu stanu, aby ułatwić wyjście z metody asynchronicznej do zadań w stylu obietnicy.
+title: SetNotificationForWaitCompletion, metoda | Microsoft Docs
+description: Dowiedz się, jak debuger używa bitu stanu, aby pomóc wyjść z treści metody asynchronicznej dla zadań w stylu obietnic.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e189a2c12e262b81f93f7f8de5e58ea22b1277c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ec469ed4f9c4fa2e503b2350235299a81a94bf9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079439"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902114"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion, metoda
-Ustawia lub czyści bit stanu TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
+Ustawia lub czyszczy bit TASK_STATE_WAIT_COMPLETION_NOTIFICATION stanu.
 
  **Przestrzeń nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -35,14 +35,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Parametry
  `enabled`
 
- `true` Aby ustawić bit; `false` w celu nieustawienia bitu.
+ `true` w celu ustawienia bitu; `false` , aby unset bit.
 
 ## <a name="exceptions"></a>Wyjątki
 
 ## <a name="remarks"></a>Uwagi
- Debuger ustawia ten bit, aby ułatwić wyjście z metody asynchronicznej. Jeśli `enabled` jest `true` , ta metoda musi być wywoływana tylko w zadaniu, które nie zostało jeszcze ukończone. Gdy `enabled` tak jest `false` , ta metoda może być wywoływana dla ukończonych zadań. W każdym z tych zdarzeń powinien być używany tylko w przypadku zadań w stylu obietnicy.
+ Debuger ustawia ten bit, aby pomóc w wywrzeniu części treści metody asynchronicznej. Jeśli `enabled` to , ta metoda musi być `true` wywoływana tylko dla zadania, które nie zostało jeszcze ukończone. Gdy `enabled` to , ta metoda może być `false` wywoływana dla ukończonych zadań. W każdym przypadku powinna być używana tylko do zadań w stylu obietnic.
 
 ## <a name="requirements"></a>Wymagania
 
 ## <a name="see-also"></a>Zobacz też
-- [Klasa zadania](../../extensibility/debugger/task-class-internal-members.md)
+- [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)

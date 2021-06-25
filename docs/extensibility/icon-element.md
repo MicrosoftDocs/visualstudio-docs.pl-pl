@@ -1,9 +1,9 @@
 ---
-title: Ikona — element | Microsoft Docs
-description: Zapoznaj się z ikoną elementu, który reprezentuje ikony używane w rozszerzeniach środowiska IDE programu Visual Studio, w tym atrybuty używanej mapy bitowej i miejsca na pasku mapy bitowej.
+title: Ikona, element | Microsoft Docs
+description: Dowiedz się więcej o elemencie Icon, który reprezentuje ikony używane w rozszerzeniach ide Visual Studio, w tym atrybuty używanej mapy bitowej i miejsce w pasku mapy bitowej.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7ad5bfdf000232ef92a9e9a27b12152df36a4335
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082143"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900827"
 ---
-# <a name="icon-element"></a>Icon — element
-Atrybut GUID tagu Icon jest identyfikatorem GUID zdefiniowanej mapy bitowej. Ten `id` atrybut wybiera miejsce na pasku mapy bitowej. Ten element jest opcjonalny. Jeśli ten element nie jest uwzględniony w wartości **guidOfficeIcon: msotcidNoIcon** zostanie implikowany.
+# <a name="icon-element"></a>Icon, element
+Atrybut guid tagu Icon jest identyfikatorem GUID zdefiniowanej mapy bitowej. Atrybut `id` wybiera miejsce na pasku mapy bitowej. Ten element jest opcjonalny. Jeśli ten element nie zostanie uwzględniony, zostanie **implikowana wartość guidOfficeIcon:msotcidNoIcon.**
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,7 +49,7 @@ Atrybut GUID tagu Icon jest identyfikatorem GUID zdefiniowanej mapy bitowej. Ten
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element Buttons](../extensibility/buttons-element.md)||
+|[Buttons, element](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>Zobacz też
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio tabeli poleceń (pliki vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

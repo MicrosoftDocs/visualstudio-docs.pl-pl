@@ -1,9 +1,9 @@
 ---
-title: POPDIRLISTFUNC | Microsoft Docs
-description: Dowiedz się więcej na temat funkcji wywołania zwrotnego POPDIRLISTFUNC, która jest przenoszona do katalogów aktualizacji, aby dowiedzieć się, które znajdują się pod kontrolą źródła.
+title: POPDIRLISTFUNC, | Microsoft Docs
+description: Dowiedz się więcej o funkcji wywołania zwrotnego POPDIRLISTFUNC, która jest przekazywana do katalogów aktualizacji, aby dowiedzieć się, które są pod kontrolą źródła.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -14,17 +14,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090255"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900398"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-Jest to funkcja wywołania zwrotnego nadana funkcji [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w celu zaktualizowania kolekcji katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które znajdują się pod kontrolą źródła.
+Jest to funkcja wywołania zwrotnego nadana funkcji [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) w celu zaktualizowania kolekcji katalogów i (opcjonalnie) nazw plików, aby dowiedzieć się, które są pod kontrolą źródła.
 
- `POPDIRLISTFUNC`Wywołanie zwrotne powinno być wywoływane tylko dla tych katalogów i nazw plików (znajdujących się na liście `SccPopulateDirList` funkcji), które faktycznie podlegają kontroli źródła.
+ Wywołanie zwrotne powinno być wywoływane tylko dla katalogów i nazw plików (na liście danej funkcji), które są faktycznie pod `POPDIRLISTFUNC` `SccPopulateDirList` kontrolą źródła.
 
 ## <a name="signature"></a>Podpis
 
@@ -39,29 +39,29 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="parameters"></a>Parametry
  pvCallerData
 
-podczas Wartość użytkownika nadana [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
+[in] Wartość użytkownika nadana [właściwości SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).
 
  bFolder
 
-[w] `TRUE` Jeśli nazwa w `lpDirectoryOrFileName` jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.
+[in] `TRUE` Jeśli nazwa w `lpDirectoryOrFileName` jest katalogiem; w przeciwnym razie nazwa jest nazwą pliku.
 
  lpDirectoryOrFileName
 
-podczas Pełna ścieżka lokalna do katalogu lub nazwy pliku, który znajduje się pod kontrolą kodu źródłowego.
+[in] Pełna ścieżka lokalna do katalogu lub nazwy pliku, który jest pod kontrolą kodu źródłowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- IDE zwraca odpowiedni kod błędu:
+ Ide zwraca odpowiedni kod błędu:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Kontynuuj przetwarzanie.|
 |SCC_I_OPERATIONCANCELED|Zatrzymaj przetwarzanie.|
-|SCC_E_xxx|Każdy odpowiedni błąd kontroli źródła powinien zatrzymać przetwarzanie.|
+|SCC_E_xxx|Wszelkie odpowiednie błędy kontroli źródła powinny przestać przetwarzać.|
 
 ## <a name="remarks"></a>Uwagi
- Jeśli `fOptions` parametr `SccPopulateDirList` funkcji zawiera `SCC_PDL_INCLUDEFILES` flagę, lista będzie prawdopodobnie zawierać nazwy plików, a także nazwy katalogów.
+ Jeśli parametr funkcji zawiera flagę , lista prawdopodobnie będzie zawierać nazwy `fOptions` `SccPopulateDirList` `SCC_PDL_INCLUDEFILES` plików, a także nazwy katalogów.
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Funkcje wywołania zwrotnego implementowane przez ide](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Kody błędów](../extensibility/error-codes.md)

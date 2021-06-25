@@ -1,9 +1,9 @@
 ---
 title: Serwery (Visual Studio SDK) | Microsoft Docs
-description: W tym artykule opisano definicje i rolę serwera w architekturze debugera w programie Visual Studio.
+description: W tym artykule opisano definicję i rolę serwera w architekturze debugera w Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - servers, debugging
 - debugging [Debugging SDK], servers
@@ -13,21 +13,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7bb19262d4ce5fd1b3139f05cd9bbc57131db1c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 99f6c634053df9191ac419c8ee450dc99cf62c7c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070365"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902127"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serwery (zestaw SDK programu Visual Studio)
-W architekturze debugera *serwer* programu:
+W architekturze debugera *serwer*:
 
-- Jest kontenerem portów i dostawców portów, który komunikuje porty i dostawcy portów z menedżerem debugowania sesji (SDM) i aparatami debugowania.
+- Jest kontenerem portów i dostawców portów oraz komunikuje porty i dostawców portów z menedżerem debugowania sesji (SDM) i aparatami debugowania.
 
-- Może identyfikować siebie według nazwy i wyliczać jej porty i dostawców portów.
+- Może identyfikować się według nazwy oraz wyliczać porty i dostawców portów.
 
-- Jest reprezentowany przez interfejs [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , który jest implementowany tylko przez program Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia programu Visual Studio uruchomionego).
+- Jest reprezentowany przez [interfejs IDebugCoreServer2,](../../extensibility/debugger/reference/idebugcoreserver2.md) który jest implementowany tylko przez Visual Studio (jedno wystąpienie serwera dla każdego wystąpienia Visual Studio uruchomionego).
 
 ## <a name="see-also"></a>Zobacz też
 - [Porty](../../extensibility/debugger/ports.md)

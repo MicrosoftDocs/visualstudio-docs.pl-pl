@@ -1,8 +1,8 @@
 ---
-description: Ta funkcja wyświetla (lub opcjonalnie sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowania w systemie kontroli źródła.
-title: Funkcja SccDiff | Microsoft Docs
+description: Ta funkcja wyświetla (lub opcjonalnie po prostu sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowaną w systemie kontroli źródła.
+title: SccDiff, funkcja | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 484d8b5e988ede9b50099e3c0376f2c3afce8317
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073992"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904659"
 ---
-# <a name="sccdiff-function"></a>SccDiff, funkcja
-Ta funkcja wyświetla (lub opcjonalnie sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowania w systemie kontroli źródła.
+# <a name="sccdiff-function"></a>Funkcja SccDiff
+Ta funkcja wyświetla (lub opcjonalnie po prostu sprawdza) różnice między bieżącym plikiem (na dysku lokalnym) i jego ostatnią wersją zaewidencjonowaną w systemie kontroli źródła.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,55 +38,55 @@ SCCRTN SccDiff(
 ### <a name="parameters"></a>Parametry
  pvContext
 
-podczas Struktura kontekstu wtyczki kontroli źródła.
+[in] Struktura kontekstu wtyczki kontroli źródła.
 
- Właściwość
+ Hwnd
 
-podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
+[in] Dojście do okna IDE, które wtyczka kontroli źródła może używać jako elementu nadrzędnego dla wszystkich okien dialogowych, które zawiera.
 
  lpFileName
 
-podczas Nazwa pliku, dla którego wymagana jest różnica.
+[in] Nazwa pliku, dla którego żądana jest różnica.
 
- fOptions
+ Foptions
 
-podczas Flagi poleceń. Aby uzyskać szczegółowe informacje, zobacz uwagi.
+[in] Flagi poleceń. Zobacz uwagi, aby uzyskać szczegółowe informacje.
 
  pvOptions
 
-podczas Opcje dotyczące wtyczki kontroli źródła.
+[in] Opcje specyficzne dla wtyczki kontroli źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Implementacja wtyczki kontroli źródła dla tej funkcji zwraca jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Kopia robocza i wersja serwera są identyczne.|
-|SCC_I_FILESDIFFERS|Kopia robocza różni się od wersji pod kontrolą źródła.|
-|SCC_I_RELOADFILE|Plik lub projekt musi zostać ponownie załadowany.|
-|SCC_E_FILENOTCONTROLLED|Plik nie znajduje się pod kontrolą źródła.|
+|SCC_I_FILESDIFFERS|Kopia robocza różni się od wersji w ramach kontroli źródła.|
+|SCC_I_RELOADFILE|Należy ponownie załadować plik lub projekt.|
+|SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zalecana jest ponowna próba.|
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; nie uzyskano różnicy plików.|
+|SCC_E_ACCESSFAILURE|Występuje problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub zdyskulacji. Zaleca się ponawianie próby.|
+|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; nie uzyskano różnicy pliku.|
 |SCC_E_FILENOTEXIST|Nie znaleziono pliku lokalnego.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja służy do dwóch różnych celów. Domyślnie zostanie wyświetlona lista zmian w pliku. Wtyczka do kontroli źródła otwiera własne okno w dowolnym formacie, aby wyświetlić różnice między plikiem użytkownika na dysku a najnowszą wersją pliku pod kontrolą źródła.
+ Ta funkcja służy do dwóch różnych celów. Domyślnie wyświetla listę zmian w pliku. Wtyczka kontroli źródła otwiera własne okno w formacie, który wybierze, aby wyświetlić różnice między plikiem użytkownika na dysku a najnowszą wersją pliku w ramach kontroli źródła.
 
- Alternatywnie środowisko IDE może po prostu określić, czy plik został zmieniony. Na przykład środowisko IDE może wymagać określenia, czy jest bezpiecznie do wyewidencjonowania pliku bez poinformowania użytkownika. W takim przypadku IDE przekazuje `SCC_DIFF_CONTENTS` flagę. Wtyczka do kontroli źródła musi sprawdzać plik na dysku, bajty w bajtach, w odniesieniu do pliku kontrolowanego przez źródło i zwracać wartość wskazującą, czy te dwa pliki są inne, bez wyświetlania niczego dla użytkownika.
+ Alternatywnie może być konieczne po prostu określenie, czy plik został zmieniony. Na przykład w środowisku IDE może być konieczne ustalenie, czy można bezpiecznie wyewidencjonować plik bez informowania użytkownika. W takim przypadku idee przekazuje `SCC_DIFF_CONTENTS` flagę . Wtyczka kontroli źródła musi sprawdzać plik na dysku (bajt po bajtach) względem pliku kontrolowanego przez źródło i zwracać wartość wskazującą, czy dwa pliki różnią się bez wyświetlania czegokolwiek użytkownikowi.
 
- W ramach optymalizacji wydajności wtyczka do kontroli źródła może użyć alternatywy opartej na sumie kontrolnej lub sygnatury czasowej, a nie w porównaniu typu Byte-to-Byte wywoływanej przez `SCC_DIFF_CONTENTS` : te formy porównania są oczywiście szybsze, ale mniej niezawodne. Nie wszystkie systemy kontroli źródła mogą obsługiwać te alternatywne metody porównywania, a wtyczka może być powracać do porównania zawartości. Wszystkie wtyczki kontroli źródła muszą być co najmniej obsługiwane w porównaniu z zawartością.
+ Jako optymalizację wydajności wtyczka kontroli źródła może używać alternatywnej metody opartej na sumy kontrolnej lub znaczniku czasu zamiast porównania bajt po bajtach wywoływanego przez element : te formy porównywania są oczywiście szybsze, ale mniej `SCC_DIFF_CONTENTS` niezawodne. Nie wszystkie systemy kontroli źródła mogą obsługiwać te alternatywne metody porównania, a wtyczka może wymagać powrotu do porównania zawartości. Wszystkie wtyczki kontroli źródła muszą co najmniej obsługiwać porównanie zawartości.
 
 > [!NOTE]
-> Flagi szybkiej różnicy wykluczają się wzajemnie. Nie można przekazać żadnych flag, ale nie może być jednocześnie przekazana więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską, która łączy wszystkie flagi, może służyć do testowania, ale nigdy nie powinna być przenoszona jako parametr.
+> Flagi szybkiej różnicy wzajemnie się wykluczają. Prawidłowe jest, aby przekazać żadnych flag, ale nie jest prawidłowa jednocześnie przekazać więcej niż jeden. `SCC_DIFF_QUICK_DIFF`, która jest maską łączącą wszystkie flagi, może służyć do testowania, ale nigdy nie powinna być przekazywana jako parametr.
 
 |`fOption`|Znaczenie|
 |---------------|-------------|
-|SCC_DIFF_IGNORECASE|Porównanie bez uwzględniania wielkości liter (może być używane w przypadku różnic krótkich lub wizualnych).|
-|SCC_DIFF_IGNORESPACE|Ignoruje biały znak (może być używany dla różnicy krótkiej lub wizualnej).|
-|SCC_DIFF_QD_CONTENTS|Dyskretnie porównuje plik, bajt według bajtu.|
-|SCC_DIFF_QD_CHECKSUM|Jeśli jest obsługiwana, dyskretnie porównuje plik przez sumę kontrolną. Jeśli nie jest obsługiwana, powraca do porównania zawartości.|
-|SCC_DIFF_QD_TIME|W trybie dyskretnym porównuje plik za pośrednictwem sygnatury czasowej, jeśli jest obsługiwany. Jeśli nie jest obsługiwana, powraca do porównania zawartości.|
+|SCC_DIFF_IGNORECASE|Porównanie bez uwzględniania liter (może być używane do szybkiej lub wizualnej różnicy).|
+|SCC_DIFF_IGNORESPACE|Ignoruje odstępy (może służyć do szybkiej lub wizualnej różnicy).|
+|SCC_DIFF_QD_CONTENTS|Dyskretnie porównuje plik w bajtach.|
+|SCC_DIFF_QD_CHECKSUM|Dyskretnie porównuje plik za pośrednictwem sumy kontrolnej, jeśli jest obsługiwana. Jeśli nie jest obsługiwana, powrót do porównania zawartości.|
+|SCC_DIFF_QD_TIME|Dyskretnie porównuje plik za pośrednictwem znacznika czasu, jeśli jest obsługiwany. Jeśli nie jest obsługiwana, powrót do porównania zawartości.|
 
 ## <a name="see-also"></a>Zobacz też
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+- [Funkcje interfejsu API wtyczki kontroli kodu źródłowego](../extensibility/source-control-plug-in-api-functions.md)

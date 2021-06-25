@@ -1,9 +1,9 @@
 ---
-title: Moduł wyliczający kod stanu pliku | Microsoft Docs
-description: Moduł wyliczający SccStatus zawiera wartości stałe, które określają stan pliku w systemie kontroli źródła i jest używany przez SccQueryInfo i POPLISTFUNC.
+title: Moduł wyliczający kod stanu | Microsoft Docs
+description: Moduł wyliczający SccStatus zawiera wartości stałe, które określają stan pliku w systemie kontroli źródła i są używane przez SccQueryInfo i POPLISTFUNC.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074954"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900970"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
-`SccStatus`Moduł wyliczający zawiera nazwane wartości stałe, które określają stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcję wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) , aby uzyskać szczegółowe informacje).
+Moduł `SccStatus` wyliczający zawiera nazwane wartości stałe, które określają stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [funkcję SccQueryInfo](../extensibility/sccqueryinfo-function.md) i funkcję `POPLISTFUNC` wywołania zwrotnego (zobacz [POPLISTFUNC,](../extensibility/poplistfunc.md) aby uzyskać szczegółowe informacje).
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,37 +51,37 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- Nie można uzyskać stanu SCC_STATUS_INVALID; nie należy polegać na nim.
+ SCC_STATUS_INVALID nie można uzyskać stanu; Nie należy polegać na tym.
 
- Plik SCC_STATUS_NOTCONTROLLED nie znajduje się pod kontrolą źródła.
+ SCC_STATUS_NOTCONTROLLED nie jest pod kontrolą źródła.
 
- Plik SCC_STATUS_CONTROLLED jest pod kontrolą źródła.
+ SCC_STATUS_CONTROLLED znajduje się pod kontrolą źródła.
 
- SCC_STATUS_CHECKEDOUT wyewidencjonowany przez bieżącego użytkownika na dysku lokalnym.
+ SCC_STATUS_CHECKEDOUT wyewidencjonowane przez bieżącego użytkownika na dysku lokalnym.
 
- Plik SCC_STATUS_OUTOTHER został wyewidencjonowany przez innego użytkownika.
+ SCC_STATUS_OUTOTHER jest wyewidencjonowany przez innego użytkownika.
 
- Plik SCC_STATUS_OUTEXCLUSIVE jest wyewidencjonowany na wyłączność.
+ SCC_STATUS_OUTEXCLUSIVE plik jest wyewidencjonowany wyłącznie.
 
- Plik SCC_STATUS_OUTMULTIPLE został wyewidencjonowany przez więcej niż jednego użytkownika.
+ SCC_STATUS_OUTMULTIPLE jest wyewidencjonowany przez więcej niż jednego użytkownika.
 
- SCC_STATUS_OUTOFDATE plik nie jest najnowszy.
+ SCC_STATUS_OUTOFDATE Plik nie jest najnowszy.
 
- Plik SCC_STATUS_DELETED został usunięty z projektu.
+ SCC_STATUS_DELETED plik został usunięty z projektu.
 
- Plik SCC_STATUS_LOCKED jest zablokowany; nie ma więcej wersji.
+ SCC_STATUS_LOCKED jest zablokowany; nie są dozwolone żadne kolejne wersje.
 
- Plik SCC_STATUS_MERGED został scalony, ale nie został jeszcze ustalony/zweryfikowany.
+ SCC_STATUS_MERGED plik został scalony, ale nie został jeszcze naprawiony/zweryfikowany.
 
- Plik SCC_STATUS_SHARED jest współużytkowany między projektami.
+ SCC_STATUS_SHARED plik jest współużytkowywny między projektami.
 
- Plik SCC_STATUS_PINNED jest udostępniany w wersji jawnej.
+ SCC_STATUS_PINNED plik jest udostępniany jawnie w wersji.
 
- Plik SCC_STATUS_MODIFIED został zmodyfikowany/złamany/naruszony.
+ SCC_STATUS_MODIFIED plik został zmodyfikowany/uszkodzony/naruszony.
 
- Plik SCC_STATUS_OUTBYUSER został wyewidencjonowany przez bieżącego użytkownika.
+ SCC_STATUS_OUTBYUSER jest wyewidencjonowany przez bieżącego użytkownika.
 
- Plik SCC_STATUS_NOMERGE nigdy nie może zostać scalony z i nie musi być zapisany przed GET.
+ SCC_STATUS_NOMERGE nigdy nie można scalić z plikiem i nie trzeba go zapisywać przed get.
 
  SCC_STATUS_RESERVED_1 zarezerwowane do użytku wewnętrznego.
 
