@@ -5,14 +5,11 @@ ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cc760eb34df7f643bbdc16607f2316e92785bf
-ms.sourcegitcommit: 40646cd90ca0701c034311931f026cf67edb74de
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112500893"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924971"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Co to są rozwiązania i projekty w Visual Studio?
 
@@ -105,16 +102,16 @@ Wiele poleceń menu jest dostępnych w menu kontekstowym dostępnym po kliknięc
 W ASP.NET Core można dostosować sposób zagnieżdżanie plików w **programie Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zagnieżdżania plików w Eksplorator rozwiązań](file-nesting-solution-explorer.md).
 
 > [!TIP]
-> Jeśli zamknięto okno Eksplorator rozwiązań otworzyć go ponownie, wybierz pozycję **Wyświetl** Eksplorator rozwiązań na pasku menu lub naciśnij  >   klawisze **Ctrl** + **Alt** + **L**. Jeśli karty boczne zostały zamknięte i chcesz przywrócić je do domyślnych lokalizacji, wybierz pozycję Układ okna   >  **Resetowanie** okna na pasku menu.
+> Jeśli zamknięto okno Eksplorator rozwiązań otworzyć go ponownie, wybierz pozycję **Wyświetl** Eksplorator rozwiązań na pasku menu lub naciśnij  >   klawisze **Ctrl** + **Alt** + **L**. Jeśli karty boczne zostały zamknięte i chcesz przywrócić je do domyślnych lokalizacji, wybierz pozycję Układ okna Resetowanie okna   >   na pasku menu.
 
 > [!NOTE]
-> Aby wyświetlić obrazy i ikony aplikacji wyświetlane w Visual Studio, pobierz Visual Studio [**Image Library**](https://www.microsoft.com/download/details.aspx?id=35825).
+> Aby wyświetlić obrazy aplikacji i ikony, które są Visual Studio, pobierz Visual Studio [**Image Library.**](https://www.microsoft.com/download/details.aspx?id=35825)
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Wprowadzenie do projektów i rozwiązań](../get-started/tutorial-projects-solutions.md)
 - [Zarządzanie właściwościami projektów i rozwiązań](managing-project-and-solution-properties.md)
-- [Odfiltrowane rozwiązania w Visual Studio](filtered-solutions.md)
+- [Filtrowane rozwiązania w Visual Studio](filtered-solutions.md)
 - [Przenoszenie, migrowanie i uaktualnianie projektów](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
-- [Zasoby dotyczące rozwiązywania problemów Visual Studio IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
+- [Zasoby dotyczące rozwiązywania problemów z Visual Studio IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)

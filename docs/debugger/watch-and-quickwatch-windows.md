@@ -4,8 +4,6 @@ description: Podczas debugowania zobacz zmienne i wyrażenia w wyrażeniach Watc
 ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: how-to
-f1_keywords:
-- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 192a11a028c297dc2c642e65982a978f7b5596a7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 246f82b2d55e8e15bb5a56afba846a8b5dc8f245
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385022"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924906"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwowanie zmiennych w oknach watch i QuickWatch
 
@@ -60,7 +58,7 @@ int main()
 
 ```
 
-1. Ustaw punkt przerwania w wierszu, klikając lewy margines, wybierając pozycję `c = a + b;`   >  **Debuguj Przełącz punkt przerwania** lub naciskając **klawisz F9**.
+1. Ustaw punkt przerwania w wierszu, klikając lewy margines, wybierając `c = a + b;` pozycję   >  **Debuguj Przełącz** punkt przerwania lub naciskając **klawisz F9**.
 
 1. Rozpocznij debugowanie, wybierając zieloną **strzałkę Start** lub **pozycję Debuguj** rozpocznij  >  **debugowanie** lub naciśnij klawisz **F5.** Wykonywanie jest wstrzymywane w punkcie przerwania.
 
@@ -72,7 +70,7 @@ int main()
 
    ![Wyrażenia kontrolne zmiennych](../debugger/media/watchvariables.png "WatchVariables")
 
-1. Kontynuuj debugowanie, wybierając pozycję   >  **Debuguj krok do** lub naciskając **klawisz F11 w** razie potrzeby, aby przejść dalej. Wartości zmiennych w oknie **Czujka** zmieniają się podczas iterować po `for` pętli.
+1. Kontynuuj debugowanie, wybierając pozycję   >  **Debuguj krok do** lub naciskając **klawisz F11 w** razie potrzeby, aby przejść dalej. Wartości zmiennych w oknie **Czujka** zmieniają się podczas iteru w `for` pętli.
 
 >[!NOTE]
 >Tylko w przypadku języka C++
@@ -82,7 +80,7 @@ int main()
 
 ## <a name="use-expressions-in-a-watch-window"></a>Używanie wyrażeń w okno wyrażeń kontrolnych
 
-Możesz obserwować dowolne prawidłowe wyrażenie rozpoznawane przez debuger w **oknie Wyrażenie** czujki.
+W oknie Wyrażenie czujki można obserwować dowolne prawidłowe wyrażenie rozpoznawane przez **debuger.**
 
 Na przykład dla kodu w poprzedniej sekcji można uzyskać średnią z trzech wartości, wprowadzając `(a + b + c) / 3` w oknie **Czujka:**
 
@@ -114,7 +112,7 @@ Możesz szybko sprawdzić obiekty według ich właściwości w okno wyrażeń ko
 
 ![Przypinanie właściwości w okno wyrażeń kontrolnych](../debugger/media/basic-pin-watch.gif "Przypinanie właściwości w okno wyrażeń kontrolnych")
 
-Można również przełączać nazwy właściwości i filtrować niepięte właściwości podczas wyświetlania listy właściwości obiektu w okno wyrażeń kontrolnych.  Dostęp do obu opcji można uzyskać, wybierając przyciski na pasku narzędzi nad oknem zegarka.
+Można również przełączać nazwy właściwości i filtrować nie przypięte właściwości podczas wyświetlania listy właściwości obiektu w okno wyrażeń kontrolnych.  Dostęp do obu opcji można uzyskać, wybierając przyciski na pasku narzędzi nad oknem zegarka.
 
 ::: moniker-end
 
@@ -167,7 +165,7 @@ Ten kod może powodować [efekt uboczny](https://en.wikipedia.org/wiki/Side_effe
 
 Wyrażenie z efektami ubocznymi jest oceniane tylko raz, przy pierwszym wprowadzeniu. Po tym wyrażeniu w oknie  wyrażenie będzie wyszarowane, a dalsze oceny będą wyłączone. Etykietka narzędzia lub **kolumna Value** wyjaśnia, że wyrażenie powoduje efekt uboczny. Możesz wymusić ponowną wartość, wybierając ikonę odświeżania wyświetlaną obok wartości.
 
-Jednym ze sposobów zapobiegania oznaczeniu efektów ubocznych jest wyłączenie automatycznej oceny funkcji. Na **stronie Opcje** narzędzi  >    >    >  **Debugowanie Ogólne** usuń zaznaczenie opcji **Włącz ocenę właściwości i innych niejawnych wywołań funkcji**.
+Jednym ze sposobów zapobiegania oznaczeniu efektów ubocznych jest wyłączenie automatycznej oceny funkcji. W **menu Opcje** narzędzi  >    >    >  **Debugowanie ogólne** usuń zaznaczenie **opcji Włącz ocenę właściwości i innych niejawnych wywołań funkcji**.
 
 Tylko w przypadku języka C#, gdy ocena właściwości lub niejawnych wywołań funkcji jest wyłączona, można wymusić ocenę, dodając modyfikator formatu **ac** do zmiennej **Name** w oknie **Czujka.** Zobacz [Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md).
 
@@ -229,7 +227,7 @@ Aby dowiedzieć się, jaka jest nazwa obiektu w metodzie , możesz dodać odwoł
 
 1. Ustaw inny punkt przerwania w `DoSomething()` metodzie .
 
-1. Kontynuuj debugowanie. Gdy wykonywanie zostanie wstrzymane w `DoSomething()` metodzie , w **oknie Czujka** zostanie wyświetlony `Person` obiekt .
+1. Kontynuuj debugowanie. Po wstrzymaniu wykonywania `DoSomething()` w metodzie w **oknie Czujka** zostanie wyświetlony `Person` obiekt .
 
    > [!NOTE]
    > Jeśli chcesz wyświetlić właściwości obiektu, takie jak , musisz włączyć ocenę właściwości, wybierając pozycję Narzędzia Opcje Debugowanie Ogólne Włącz ocenę właściwości i inne `Person.Name`   >    >    >    >  **niejawne wywołania funkcji**.
@@ -242,10 +240,10 @@ W **oknie** Czujka te obiekty są wyświetlane jako obiekty dynamiczne, które s
 
 Aby **odświeżyć wartości widoku** dynamicznego, wybierz ikonę [odświeżania](#bkmk_refreshWatch) obok węzła obiektu dynamicznego.
 
-Aby wyświetlić tylko **widok dynamiczny** dla obiektu, dodaj specyfikator **formatu** dynamicznego po nazwie obiektu dynamicznego w **oknie Czujka:**
+Aby wyświetlić tylko **widok dynamiczny** dla  obiektu, dodaj specyfikator formatu dynamicznego po nazwie obiektu dynamicznego w **oknie Czujka:**
 
-- Dla języka C#: `ObjectName, dynamic`
-- W Visual Basic: `$dynamic, ObjectName`
+- W przypadku języka C#: `ObjectName, dynamic`
+- Na Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Debuger języka C# nie automatycznie ponownie ceni wartości  w widoku dynamicznym podczas kroku do następnego wiersza kodu.
@@ -255,7 +253,7 @@ Aby wyświetlić tylko **widok dynamiczny** dla obiektu, dodaj specyfikator **fo
 **Aby wstawić nową zmienną czujki rzutowania obiektu na obiekt dynamiczny:**
 
 1. Kliknij prawym przyciskiem myszy dowolny podrzędny widok **dynamiczny.**
-1. Wybierz pozycję **Dodaj zegarek.** Staje `object.name` się i pojawia się w nowym `((dynamic) object).name` **oknie Czujka.**
+1. Wybierz pozycję **Dodaj zegarek.** Zostanie `object.name` on wyświetlony w nowym `((dynamic) object).name` **oknie Czujka.**
 
 Debuger dodaje również **węzeł podrzędny widoku** dynamicznego obiektu do okna **Automatyczne.** Aby otworzyć okno **Automatyczne,** podczas debugowania wybierz pozycję **Debuguj**  >  **automatyczne systemy Windows.**  >  
 
@@ -294,11 +292,11 @@ Aby obserwować `a` zmienną,
 
    ![Zmienna QuickWatch](../debugger/media/quickwatchvariable.png "Zmienna QuickWatch")
 
-1. Aby oszacować wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak w polu Wyrażenie, a następnie wybierz pozycję `a + b` **Ponownie oceń**. 
+1. Aby oszacować wyrażenie przy użyciu zmiennej, wpisz wyrażenie, takie jak w polu Wyrażenie, i wybierz pozycję `a + b` **Ponownie oceń**. 
 
    ![Wyrażenie QuickWatch](../debugger/media/quickwatchexpression.png "Wyrażenie QuickWatch")
 
-1. Aby dodać zmienną lub wyrażenie z **aplikacji QuickWatch** do okna **Wyrażenie** czujki, wybierz **pozycję Dodaj wyrażenie wyrażenia.**
+1. Aby dodać zmienną lub wyrażenie z **aplikacji QuickWatch** do okna **Wyrażenie** czujki, wybierz pozycję **Dodaj wyrażenie czujki**.
 
 1. Wybierz **pozycję Zamknij,** aby zamknąć **okno QuickWatch.** **(QuickWatch** to modalne okno dialogowe, więc nie można kontynuować debugowania, dopóki jest otwarte).
 

@@ -1,12 +1,10 @@
 ---
 title: Instalowanie programu Visual Studio
 titleSuffix: ''
-description: Dowiedz się, Visual Studio zainstalować aplikację krok po kroku.
+description: Dowiedz się, jak Visual Studio, krok po kroku.
 ms.date: 12/13/2019
 ms.custom: vs-acquisition
 ms.topic: conceptual
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - install Visual Studio
 - dev15
@@ -20,55 +18,55 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 692989d5bf8979752757fb5630a78d55426f85b9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7bf44f9333a65ea821c0cd9936ee1f3fa051d4fe
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387076"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925088"
 ---
 # <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
 
 ::: moniker range="vs-2019"
 
-Witamy Visual Studio 2019! W tej wersji można łatwo wybrać i zainstalować tylko potrzebne funkcje. Ze względu na ograniczoną minimalną ilość miejsca jest ona instalowana szybko i z mniejszym wpływem na system.
+Witamy w Visual Studio 2019! W tej wersji można łatwo wybrać i zainstalować tylko potrzebne funkcje. Ze względu na ograniczoną minimalną ilość miejsca jest ona instalowana szybko i przy mniejszym wpływie na system.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-Witamy w Visual Studio 2022 r.! W tej wersji można łatwo wybrać i zainstalować tylko potrzebne funkcje. Ze względu na ograniczoną minimalną ilość miejsca jest ona instalowana szybko i z mniejszym wpływem na system.
+Witamy w Visual Studio 2022 r.! W tej wersji można łatwo wybrać i zainstalować tylko potrzebne funkcje. Ze względu na ograniczoną minimalną ilość miejsca jest ona instalowana szybko i przy mniejszym wpływie na system.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Witamy w nowym instalowania aplikacji Visual Studio! W tej wersji ułatwiliśmy wybieranie i instalowanie tylko potrzebnych funkcji. Zmniejszyliśmy również minimalną ilość pamięci Visual Studio, aby była instalowana szybciej i mniej wpływów na system niż kiedykolwiek wcześniej.
+Witamy w nowym Visual Studio! W tej wersji ułatwiliśmy ci wybór i zainstalowanie tylko potrzebnych funkcji. Zmniejszyliśmy również minimalny rozmiar pamięci Visual Studio dzięki czemu instalacja jest szybciej i mniej wpływów na system niż kiedykolwiek wcześniej.
 
 ::: moniker-end
 
 > [!NOTE]
-> Ten temat dotyczy Visual Studio w systemie Windows. Aby Visual Studio dla komputerów Mac więcej informacji, zobacz [Instalowanie Visual Studio dla komputerów Mac](/visualstudio/mac/installation/).
+> Ten temat dotyczy Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Instalowanie Visual Studio dla komputerów Mac](/visualstudio/mac/installation/).
 
 ::: moniker range="vs-2019"
 
-Chcesz dowiedzieć się więcej o tym, co jeszcze jest nowego w tej wersji? Zobacz nasze [informacje o wersji.](/visualstudio/releases/2019/release-notes/)
+Chcesz dowiedzieć się więcej o tym, co jeszcze nowego w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-Chcesz dowiedzieć się więcej o tym, co jeszcze jest nowego w tej wersji? Zobacz nasze [informacje o wersji.](/visualstudio/releases/2022/release-notes/)
+Chcesz dowiedzieć się więcej o tym, co jeszcze nowego w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releases/2022/release-notes/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Chcesz dowiedzieć się więcej o tym, co jeszcze jest nowego w tej wersji? Zobacz nasze [informacje o wersji.](/visualstudio/releasenotes/vs2017-relnotes)
+Chcesz dowiedzieć się więcej o tym, co jeszcze nowego w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes).
 
 ::: moniker-end
 
-Chcesz zainstalować? W tym przewodniku krok po kroku.
+Chcesz zainstalować? Krok po kroku przejedzemy Cię przez ten proces.
 
 ## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>Krok 1. Upewnij się, że komputer jest gotowy do Visual Studio
 
@@ -80,33 +78,33 @@ Przed rozpoczęciem instalowania Visual Studio:
 
 1. Zastosuj najnowsze aktualizacje systemu Windows. Te aktualizacje zapewniają, że na komputerze są dostępne zarówno najnowsze aktualizacje zabezpieczeń, jak i składniki systemu wymagane do Visual Studio.
 
-1. Ponownie obuwać. Ponowne uruchomienie gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
+1. Ponownie obuwać. Ponowny rozruch gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
 
-1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład uruchamiając aplikację Oczyszczanie dysku.
+1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład przez uruchomienie aplikacji Oczyszczanie dysku.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Sprawdź [wymagania systemowe](/visualstudio/releases/2019/system-requirements). Te wymagania ułatwiają określenie, czy komputer obsługuje program Visual Studio 2019.
+1. Sprawdź [wymagania systemowe](/visualstudio/releases/2019/system-requirements). Te wymagania ułatwiają określenie, czy komputer obsługuje Visual Studio 2019 r.
 
 1. Zastosuj najnowsze aktualizacje systemu Windows. Te aktualizacje zapewniają, że na komputerze są dostępne zarówno najnowsze aktualizacje zabezpieczeń, jak i składniki systemu wymagane do Visual Studio.
 
-1. Ponownie obuwać. Ponowne uruchomienie gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
+1. Ponownie obuwać. Ponowny rozruch gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
 
-1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład uruchamiając aplikację Oczyszczanie dysku.
+1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład przez uruchomienie aplikacji Oczyszczanie dysku.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-1. Sprawdź [wymagania systemowe](/visualstudio/releases/2022/system-requirements). Te wymagania ułatwiają określenie, czy komputer obsługuje program Visual Studio 2022.
+1. Sprawdź [wymagania systemowe](/visualstudio/releases/2022/system-requirements). Te wymagania ułatwiają określenie, czy komputer obsługuje Visual Studio 2022 r.
 
 1. Zastosuj najnowsze aktualizacje systemu Windows. Te aktualizacje zapewniają, że na komputerze są dostępne zarówno najnowsze aktualizacje zabezpieczeń, jak i składniki systemu wymagane do Visual Studio.
 
-1. Ponownie obuwać. Ponowne uruchomienie gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
+1. Ponownie obuwać. Ponowny rozruch gwarantuje, że wszelkie oczekujące instalacje lub aktualizacje nie będą zakłócać Visual Studio instalacji.
 
-1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład uruchamiając aplikację Oczyszczanie dysku.
+1. Wolne miejsce. Usuń niepotrzebnych plików i aplikacji z %SystemDrive%, na przykład przez uruchomienie aplikacji Oczyszczanie dysku.
 
 ::: moniker-end
 
@@ -118,13 +116,13 @@ Aby uzyskać pytania dotyczące uruchamiania poprzednich wersji programu Visual 
 
 ::: moniker range="vs-2019"
 
-Aby uzyskać pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio razem z programem Visual Studio 2019, zobacz stronę Platform Targeting and Compatibility (Cel platformy i zgodność programu [Visual Studio 2019).](/visualstudio/releases/2019/compatibility/)
+Aby uzyskać pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio razem z programem Visual Studio 2019, zobacz stronę Określania wartości docelowej i zgodności platformy programu [Visual Studio 2019.](/visualstudio/releases/2019/compatibility/)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-Aby uzyskać pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio razem z programem Visual Studio 2022, zobacz stronę Określania wartości docelowej platformy i zgodności programu [Visual Studio 2022.](/visualstudio/releases/2019/compatibility/)
+Pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio razem z programem Visual Studio 2022 można znaleźć na stronie Określania wartości docelowej platformy i zgodności programu [Visual Studio 2022.](/visualstudio/releases/2019/compatibility/)
 
 ::: moniker-end
 
@@ -134,7 +132,7 @@ Następnie pobierz plik Visual Studio inicjujący.
 
 ::: moniker range="vs-2017"
 
-Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz Visual Studio [pobierania](https://visualstudio.microsoft.com/vs/older-downloads/) poprzednich wersji, aby uzyskać szczegółowe informacje na ten temat.
+Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania Visual Studio poprzednich wersji, aby uzyskać szczegółowe informacje na ten temat. [](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 ::: moniker-end
 
@@ -147,19 +145,19 @@ Aby to zrobić, wybierz następujący przycisk, wybierz wersję Visual Studio, w
 
 ::: moniker-end
 
-## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3. Instalowanie Visual Studio instalatora
+## <a name="step-3---install-the-visual-studio-installer"></a>Krok 3. Instalowanie instalatora Visual Studio instalacji
 
-Uruchom plik programu inicjujący, aby zainstalować Instalator programu Visual Studio. Ten nowy lekki instalator zawiera wszystko, czego potrzebujesz, aby zainstalować i dostosować Visual Studio.
+Uruchom plik programu inicjujący, aby zainstalować Instalator programu Visual Studio. Ten nowy, lekki instalator zawiera wszystko, czego potrzebujesz, aby zainstalować i dostosować Visual Studio.
 
 1. W **folderze Pobrane** kliknij dwukrotnie program inicjujący, który jest podobny do jednego z następujących plików:
 
    * **vs_community.exe** dla Visual Studio Community
    * **vs_professional.exe** for Visual Studio Professional
-   * **vs_enterprise.exe** dla Visual Studio Enterprise
+   * **vs_enterprise.exe** for Visual Studio Enterprise
 
    Jeśli otrzymasz powiadomienie Kontrola konta użytkownika, wybierz pozycję **Tak.**
 
-2. Poprosimy Cię o potwierdzenie postanowień licencyjnych [firmy](https://visualstudio.microsoft.com/license-terms/) Microsoft i zasad zachowania [poufności informacji firmy Microsoft.](https://privacy.microsoft.com/privacystatement) Wybierz pozycję **Kontynuuj**.
+2. Poprosimy Cię o potwierdzenie postanowień licencyjnych [firmy](https://visualstudio.microsoft.com/license-terms/) Microsoft i zasad zachowania poufności [informacji firmy Microsoft.](https://privacy.microsoft.com/privacystatement) Wybierz pozycję **Kontynuuj**.
 
    ![Postanowienia licencyjne i zasady zachowania poufności informacji](media/privacy-and-license-terms.png "Postanowienia licencyjne i zasady zachowania poufności informacji firmy Microsoft")
 
@@ -173,9 +171,9 @@ Po zainstalowaniu instalatora można go użyć do dostosowania instalacji, wybie
 
    ![Visual Studio 2017: Instalowanie obciążenia](../install/media/vs-installer-installing-workloads.png)
 
-     Na przykład wybierz obciążenie "Tworzenie aplikacji klasycznych na platformie .NET". Jest dostarczany z domyślnym edytorem podstawowym, który obejmuje podstawową obsługę edycji kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu oraz zintegrowaną kontrolę kodu źródłowego.
+     Na przykład wybierz obciążenie "Tworzenie aplikacji klasycznych na platformie .NET". Jest on dostarczany z domyślnym edytorem podstawowym, który obejmuje podstawową obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu oraz zintegrowaną kontrolę kodu źródłowego.
 
-1. Po wybraniu obciążeń wybierz pozycję **Zainstaluj.**
+1. Po wybraniu obciążeń wybierz pozycję **Zainstaluj**.
 
     Następnie zostaną wyświetlone ekrany stanu, które pokazują postęp Visual Studio instalacji.
 
@@ -187,20 +185,20 @@ Po zainstalowaniu instalatora można go użyć do dostosowania instalacji, wybie
 
    ![Visual Studio 2019: Instalowanie obciążenia](../install/media/vs-2019/vs-installer-workloads.png)
 
-     Na przykład wybierz obciążenie "Tworzenie aplikacji ASP.NET sieci Web". Jest dostarczany z domyślnym edytorem podstawowym, który obejmuje podstawową obsługę edycji kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu oraz zintegrowaną kontrolę kodu źródłowego.
+     Na przykład wybierz obciążenie "Tworzenie aplikacji ASP.NET sieci Web". Jest on dostarczany z domyślnym edytorem podstawowym, który obejmuje podstawową obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu oraz zintegrowaną kontrolę kodu źródłowego.
 
-1. Po wybraniu obciążeń wybierz pozycję **Zainstaluj.**
+1. Po wybraniu obciążeń wybierz pozycję **Zainstaluj**.
 
     Następnie zostaną wyświetlone ekrany stanu, które pokazują postęp Visual Studio instalacji.
 
  ::: moniker-end
 
 > [!TIP]
-> W dowolnym momencie po instalacji można zainstalować obciążenia lub składniki, które nie są zainstalowane początkowo. Jeśli masz otwarty Visual Studio, przejdź do tematu **Narzędzia** Pobierz narzędzia  >  **i funkcje..., co** spowoduje otwarcie Instalator programu Visual Studio. Możesz też otworzyć **Instalator programu Visual Studio** z menu Start. W tym miejscu możesz wybrać obciążenia lub składniki, które chcesz zainstalować. Następnie wybierz pozycję **Modyfikuj.**
+> W dowolnym momencie po instalacji można zainstalować obciążenia lub składniki, które nie są zainstalowane początkowo. Jeśli masz otwarty Visual Studio, przejdź do tematu **Narzędzia** Pobierz narzędzia i  >  **funkcje..., co** spowoduje otwarcie Instalator programu Visual Studio. Możesz też **otworzyć Instalator programu Visual Studio** z menu Start. W tym miejscu możesz wybrać obciążenia lub składniki, które chcesz zainstalować. Następnie wybierz pozycję **Modyfikuj.**
 
 ## <a name="step-5---choose-individual-components-optional"></a>Krok 5. Wybieranie poszczególnych składników (opcjonalnie)
 
-Jeśli nie chcesz używać funkcji Obciążenia do dostosowywania instalacji programu Visual Studio lub chcesz dodać więcej składników niż instaluje obciążenie, możesz to zrobić, instalując lub dodając poszczególne składniki na karcie Poszczególne **składniki.** Wybierz, co chcesz, a następnie postępuj zgodnie z monitami.
+Jeśli nie chcesz używać funkcji Obciążenia do dostosowywania instalacji programu Visual Studio lub chcesz dodać więcej składników niż instaluje obciążenie, możesz to zrobić,  instalując lub dodając poszczególne składniki na karcie Poszczególne składniki. Wybierz, co chcesz, a następnie postępuj zgodnie z monitami.
 
 ::: moniker range="vs-2017"
 
@@ -214,7 +212,7 @@ Jeśli nie chcesz używać funkcji Obciążenia do dostosowywania instalacji pro
 
 ::: moniker-end
 
-## <a name="step-6---install-language-packs-optional"></a>Krok 6 . Instalowanie pakietów językowych (opcjonalnie)
+## <a name="step-6---install-language-packs-optional"></a>Krok 6. Instalowanie pakietów językowych (opcjonalnie)
 
 Domyślnie program instalatora próbuje dopasować język systemu operacyjnego podczas jego pierwszego działania. Aby zainstalować Visual Studio w języku, wybierz kartę **Pakiety** językowe z Instalator programu Visual Studio, a następnie postępuj zgodnie z monitami.
 
@@ -232,7 +230,7 @@ Domyślnie program instalatora próbuje dopasować język systemu operacyjnego p
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Zmienianie języka instalatora z wiersza polecenia
 
-Innym sposobem zmiany języka domyślnego jest uruchomienie instalatora z wiersza polecenia. Na przykład możesz wymusić uruchomienie instalatora w języku angielskim za pomocą następującego polecenia: `vs_installer.exe --locale en-US` . Instalator zapamięta to ustawienie, gdy zostanie uruchomione następnym razem. Instalator obsługuje następujące tokeny językowe: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
+Innym sposobem zmiany języka domyślnego jest uruchomienie instalatora z wiersza polecenia. Na przykład można wymusić uruchomienie instalatora w języku angielskim za pomocą następującego polecenia: `vs_installer.exe --locale en-US` . Instalator zapamięta to ustawienie, gdy zostanie uruchomione przy następnym uruchomieniu. Instalator obsługuje następujące tokeny językowe: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
 
 ## <a name="step-7---select-the-installation-location-optional"></a>Krok 7. Wybieranie lokalizacji instalacji (opcjonalnie)
 
