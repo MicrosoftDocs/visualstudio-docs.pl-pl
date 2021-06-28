@@ -1,7 +1,10 @@
 ---
-title: Powłoki wiersza polecenia & Monituj dla deweloperów
-description: Zacznij od narzędzi > menu wiersz polecenia. Visual Studio wiersz polecenia dla deweloperów, Developer PowerShell i Terminal umożliwiają łatwiejsze korzystanie z narzędzi .NET i C++.
-ms.date: 04/11/2021
+title: Powłoki wiersza polecenia są & wiersza polecenia dla deweloperów
+description: Zacznij od menu > wiersza polecenia. Visual Studio wiersz polecenia dla deweloperów, program PowerShell dla deweloperów i terminal umożliwiają łatwe korzystanie z narzędzi .NET i C++.
+author: TerryGLee
+ms.author: tglee
+ms.date: 06/11/2021
+ms.topic: reference
 ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
@@ -11,130 +14,130 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
-ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
+ms.openlocfilehash: 858845ca5629f64e282e3864daa0201935316062
+ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107221734"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112990522"
 ---
-# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio wiersz polecenia dla deweloperów i deweloper programu PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio wiersz polecenia dla deweloperów i program PowerShell dla deweloperów
 
-Program Visual Studio 2019 zawiera dwie powłoki wiersza polecenia dla deweloperów:
+Visual Studio 2019 zawiera dwie powłoki wiersza polecenia dla deweloperów:
 
-- **Visual Studio wiersz polecenia dla deweloperów** — standardowy wiersz polecenia z pewnymi zmiennymi środowiskowymi ustawionymi przy użyciu narzędzi deweloperskich wiersza polecenia. Dostępne od programu Visual Studio 2015.
+- **Visual Studio wiersz polecenia dla deweloperów** — standardowy wiersz polecenia z pewnymi zmiennymi środowiskowym ustawionymi w celu ułatwienia korzystania z narzędzi deweloperskiej wiersza polecenia. Dostępne od Visual Studio 2015 r.
 
-- **Visual Studio Developer PowerShell** — bardziej wydajny niż wiersz polecenia. Na przykład można przekazać dane wyjściowe jednego polecenia (znanego jako a *cmdlet* ) do innego cmdlet . Ta powłoka ma te same zmienne środowiskowe ustawione jako wiersz polecenia dla deweloperów. Dostępne od programu Visual Studio 2019.
+- **Visual Studio PowerShell** dla deweloperów — bardziej zaawansowane niż wiersz polecenia. Na przykład można przekazać dane wyjściowe jednego polecenia (nazywanego *cmdlet* ) do innego cmdlet . Ta powłoka ma te same zmienne środowiskowe ustawione jako wiersz polecenia dla deweloperów. Dostępne od Visual Studio 2019 r.
 
 
-:::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="wiersz polecenia dla deweloperów dla programu Visual Studio z pokazywaniem narzędzia Clrver":::
+:::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="wiersz polecenia dla deweloperów dla Visual Studio narzędzie clrver":::
 
-Począwszy od programu Visual Studio 2019 w wersji 16,5, program Visual Studio zawiera zintegrowany **Terminal** , który może hostować jedną z tych powłok (wiersz polecenia dla deweloperów i deweloper programu PowerShell). Można również otworzyć wiele kart każdej powłoki. Terminal programu Visual Studio jest oparty na [terminalu systemu Windows](/windows/terminal/). Aby otworzyć Terminal w programie Visual Studio, wybierz pozycję **Wyświetl**  >  **Terminal**.
+Począwszy od Visual Studio 2019 r. w wersji 16.5, program Visual Studio zawiera **zintegrowany terminal,** który może hostuje jedną z tych powłok (wiersz polecenia dla deweloperów i program PowerShell dla deweloperów). Można również otworzyć wiele kart każdej powłoki. Terminal Visual Studio jest zbudowany na Terminal Windows [.](/windows/terminal/) Aby otworzyć terminal w Visual Studio, wybierz **pozycję Wyświetl**  >  **terminal.**
 
-:::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Terminal programu Visual Studio pokazujący wiele kart":::
+:::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="Visual Studio terminal z wieloma kartami":::
 
-Po otwarciu jednej z powłok dla deweloperów w programie Visual Studio jako osobna aplikacja lub w oknie terminalu zostanie otwarta w katalogu bieżącego rozwiązania (Jeśli masz załadowane rozwiązanie). Takie zachowanie ułatwia uruchamianie poleceń względem rozwiązania lub jego projektów.
+Po otwarciu jednej z powłok dewelopera z programu Visual Studio jako oddzielna aplikacja lub w oknie Terminal zostanie otwarty katalog bieżącego rozwiązania (jeśli masz załadowane rozwiązanie). To zachowanie ułatwia uruchamianie poleceń dla rozwiązania lub jego projektów.
 
-Obie powłoki mają określone zmienne środowiskowe, które umożliwiają łatwiejsze korzystanie z narzędzi deweloperskich wiersza polecenia. Po otwarciu jednej z tych powłok można wprowadzić polecenia dla różnych narzędzi, bez konieczności wiedzieć, gdzie się znajdują. 
+Obie powłoki mają określone zmienne środowiskowe, które umożliwiają łatwe korzystanie z narzędzi deweloperskiej wiersza polecenia. Po otwarciu jednej z tych powłok możesz wprowadzić polecenia dla różnych narzędzi bez konieczności wiedzieć, gdzie się znajdują. 
 
 |Popularne polecenia|Opis|
 |--|--|
-|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Kompilowanie projektu lub rozwiązania|
-|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| [Narzędzia .NET Framework](/dotnet/framework/tools/index) dla środowiska CLR.|
-|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|[Narzędzie .NET Framework](/dotnet/framework/tools/index) dla dezasembler.|
-|[`dotnet`](/dotnet/core/tools/dotnet)|[Polecenie interfejsu wiersza polecenia platformy .NET](/dotnet/core/tools/index)|
-|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[Polecenie interfejsu wiersza polecenia platformy .NET](/dotnet/core/tools/index)|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|Tworzenie projektu lub rozwiązania|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| Zestaw [.NET Framework narzędzi dla](/dotnet/framework/tools/index) clr.|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|Narzędzie [.NET Framework dekompasera.](/dotnet/framework/tools/index)|
+|[`dotnet`](/dotnet/core/tools/dotnet)|Polecenie [interfejsu wiersza polecenia .NET](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|Polecenie [interfejsu wiersza polecenia .NET](/dotnet/core/tools/index)|
 |[`CL`](/cpp/build/reference/compiler-command-line-syntax)|Narzędzie kompilacji C/C++|
 |[`NMAKE`](/cpp/build/reference/running-nmake)|Narzędzie kompilacji C/C++|
 |[`LIB`](/cpp/build/reference/lib-reference)| Narzędzie kompilacji C/C++|
 |[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| Narzędzie kompilacji C/C++|
 
 
-## <a name="start-in-visual-studio"></a>Rozpocznij w programie Visual Studio
+## <a name="start-in-visual-studio"></a>Rozpocznij w Visual Studio
 
-Wykonaj następujące kroki, aby otworzyć wiersz polecenia dla deweloperów lub deweloper programu PowerShell z poziomu programu Visual Studio:
+Wykonaj następujące kroki, aby otworzyć wiersz polecenia dla deweloperów program PowerShell dla deweloperów z poziomu Visual Studio:
 
 1. Otwórz program Visual Studio.
 
-1. Na pasku menu wybierz **Narzędzia**  >  **wiersz polecenia**  >  **wiersz polecenia dla deweloperów** lub **deweloper programu PowerShell**.
+1. Na pasku menu wybierz pozycję **Narzędzia** Wiersz polecenia lub wiersz polecenia dla deweloperów  >    >   **program PowerShell dla deweloperów.**
 
-   ![Element menu wiersza polecenia w programie Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
+   ![Element menu wiersza polecenia w Visual Studio](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="start-from-windows-menu"></a>Uruchom z menu systemu Windows
+## <a name="start-from-windows-menu"></a>Menu Start z systemu Windows
 
-Innym sposobem uruchamiania powłoki jest z menu Start. W zależności od wersji programu Visual Studio i wszelkich dodatkowych zestawów SDK i obciążeń, które zostały zainstalowane, może być wiele wierszy poleceń. 
+Innym sposobem uruchamiania powłok jest uruchomienie menu Start. W zależności od wersji pakietu Visual Studio oraz zainstalowanych dodatkowych zestawów SDK i obciążeń może być wyświetlanych wiele poleceń. 
 
 ### <a name="windows-10"></a>Windows 10
 
-1. Wybierz pozycję **Uruchom** ![ klucz logo systemu Windows na klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) i przewiń do litery **V**.
+1. Wybierz **pozycję Uruchom** klawisz logo systemu Windows na ![ klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) i przewiń do litery **V**.
 
-1. Rozwiń folder **programu Visual Studio 2019** .
+1. Rozwiń **folder Visual Studio 2019.**
 
-1. Wybierz **wiersz polecenia dla deweloperów dla programu vs 2019** lub **dewelopera POWERSHELL dla programu vs 2019**.
+1. Wybierz **wiersz polecenia dla deweloperów vs 2019** lub program PowerShell dla deweloperów **dla programu VS 2019.**
 
-   Alternatywnie możesz zacząć wpisywać nazwę powłoki w polu wyszukiwania na pasku zadań, a następnie wybrać wynik, który zostanie wyświetlony na liście wyników wyszukiwania.
+   Alternatywnie możesz rozpocząć wpisywanie nazwy powłoki w polu wyszukiwania na pasku zadań i wybrać wynik, ponieważ na liście wyników zaczynają być wyświetlane dopasowania wyszukiwania.
 
-   ![Animowany plik GIF pokazujący zachowanie wyszukiwania w systemie Windows 10](./media/developer-command-prompt-for-vs/windows-10-search.gif)
+   ![Animowany plik GIF przedstawiający zachowanie wyszukiwania na Windows 10](./media/developer-command-prompt-for-vs/windows-10-search.gif)
 
 ### <a name="windows-81"></a>Windows 8.1
 
-1. Przejdź do ekranu **startowego** , naciskając klawisz logo systemu Windows ![ na klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) na przykład na klawiaturze.
+1. Przejdź do ekranu **startowego,** naciskając klawisz logo systemu Windows ![ klawisz logo systemu Windows na klawiaturze.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) na przykład na klawiaturze.
 
-1. Na ekranie **startowym** naciśnij klawisz **Ctrl**, +  aby otworzyć listę **aplikacje** , a następnie naciśnij klawisz **V**. Spowoduje to wyświetlenie listy zawierającej wszystkie zainstalowane polecenia programu Visual Studio.
+1. Na **ekranie startowym** naciśnij klawisz **Ctrl** + **Tab,** aby otworzyć **listę Aplikacje,** a następnie naciśnij **klawisz V**. Zostanie wyświetlona lista, która zawiera wszystkie zainstalowane Visual Studio wiersza polecenia.
 
-1. Wybierz **wiersz polecenia dla deweloperów dla programu vs 2019** lub **dewelopera POWERSHELL dla programu vs 2019**.
+1. Wybierz **wiersz polecenia dla deweloperów vs 2019** lub program PowerShell dla deweloperów **dla programu VS 2019.**
 
 ### <a name="windows-7"></a>Windows 7
 
-1. Wybierz przycisk **Start** , a następnie rozwiń pozycję **Wszystkie programy**.
+1. Wybierz **pozycję Start,** a następnie **rozwiń pozycję Wszystkie programy.**
 
-1. Wybierz pozycję **Visual Studio 2019**  >  **Visual Studio Tools**  >  **wiersz polecenia dla deweloperów dla programu vs 2019** lub **Developer PowerShell dla programu vs 2019**.
+1. Wybierz **Visual Studio 2019** Visual Studio Tools wiersz polecenia dla deweloperów vs 2019 lub program PowerShell dla deweloperów dla programu  >    >   **VS 2019.**
 
-   ![Menu Start systemu Windows 7 z wyróżnionym wierszem polecenia](./media/developer-command-prompt-for-vs/windows-7-menu.png)
+   ![System Windows 7 menu Start z wyróżnionym wierszem polecenia](./media/developer-command-prompt-for-vs/windows-7-menu.png)
 
-Jeśli zainstalowano inne zestawy SDK, takie jak [zestaw SDK systemu Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) lub [poprzednie wersje](https://developer.microsoft.com/windows/downloads/sdk-archive), mogą pojawić się dodatkowe polecenia. W dokumentacji poszczególnych narzędzi można sprawdzić, której wersji wiersza polecenia należy użyć.
+Jeśli masz zainstalowane inne zestawy [SDK,](https://developer.microsoft.com/windows/downloads/windows-10-sdk) takie jak Windows 10 SDK lub [poprzednie](https://developer.microsoft.com/windows/downloads/sdk-archive)wersje, mogą pojawić się dodatkowe monity o polecenia. W dokumentacji poszczególnych narzędzi można sprawdzić, której wersji wiersza polecenia należy użyć.
 
-## <a name="start-from-file-browser"></a>Rozpocznij od przeglądarki plików 
+## <a name="start-from-file-browser"></a>Rozpoczynanie pracy z przeglądarką plików 
 
-Zazwyczaj skróty zainstalowanych powłok są umieszczane w folderze **menu Start** dla programu Visual Studio, na przykład w programie *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*. Jeśli jednak wyszukiwanie w wierszu polecenia nie daje oczekiwanych wyników, możesz spróbować ręcznie zlokalizować pliki na komputerze.
+Zazwyczaj skróty dla zainstalowanych powłok są umieszczane w folderze **Menu Start** dla programu Visual Studio, na przykład w folderze *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. Jeśli jednak wyszukiwanie w wierszu polecenia nie da oczekiwanych wyników, możesz spróbować ręcznie zlokalizować pliki na maszynie.
 
 ### <a name="developer-command-prompt"></a>Wiersz polecenia dla deweloperów
 
-Wyszukaj nazwę pliku wiersza polecenia, który jest *VsDevCmd.bat* lub przejdź do folderu Tools dla programu Visual Studio, takiego jak *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools* (zmiany ścieżki według wersji programu Visual Studio, wersji i lokalizacji instalacji).
+Wyszukaj nazwę pliku wiersza polecenia, *VsDevCmd.bat, lub* przejdź do folderu Tools dla programu Visual Studio, takiego jak *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (ścieżka zmienia się w zależności od wersji, edycji i lokalizacji instalacji programu Visual Studio).
 
-Po zlokalizowaniu pliku wiersza polecenia Otwórz go, wprowadzając następujące polecenie w zwykłym oknie wiersza polecenia:
+Po zlokalizowaniu pliku wiersza polecenia otwórz go, wprowadzając następujące polecenie w regularnym oknie wiersza polecenia:
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
 ```
 
-Lub wprowadź następujące polecenie w oknie dialogowym **Uruchamianie** systemu Windows:
+Lub wprowadź następujące polecenie w oknie **dialogowym Uruchamianie** systemu Windows:
 
 ```cmd
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
 ```
 
 > [!TIP]
-> Musisz edytować ścieżkę, aby dopasować ją do instalacji programu Visual Studio.
+> Musisz edytować ścieżkę, aby dopasować się do Visual Studio instalacji.
 
 ### <a name="developer-powershell"></a>Program PowerShell dla deweloperów
 
-Wyszukaj plik skryptu programu PowerShell o nazwie *Launch-VsDevShell.ps1* lub przejdź do folderu Tools dla programu Visual Studio, takiego jak *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\Tools*. (Ścieżka zmienia się w zależności od wersji programu Visual Studio, wersji i lokalizacji instalacji). Po umieszczeniu pliku programu PowerShell uruchom go, wprowadzając następujące polecenie w programie Windows PowerShell lub w wierszu polecenia programu PowerShell 6:
+Wyszukaj plik skryptu programu PowerShell o nazwie *Launch-VsDevShell.ps1* lub przejdź do folderu Tools dla programu Visual Studio, takiego jak *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools.* (Ścieżka zmienia się w zależności od Visual Studio, wersji i lokalizacji instalacji). Po zlokalizowaniu pliku programu PowerShell uruchom go, wprowadzając następujące polecenie w wierszu polecenia Windows PowerShell lub PowerShell 6:
 
 ```powershell
 & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\Launch-VsDevShell.ps1'
 ```
 
-Domyślnie Deweloper programu PowerShell, który zostanie uruchomiony, jest skonfigurowany dla instalacji programu Visual Studio, której ścieżka instalacji znajduje się w pliku *Launch-VsDevShell.ps1* .
+Domyślnie program PowerShell dla deweloperów, który jest uruchamiany, jest konfigurowany dla instalacji programu Visual Studio której znajduje się *Launch-VsDevShell.ps1* instalacji.
 
 > [!TIP]
-> Aby można było uruchomić, należy ustawić [zasady wykonywania](/powershell/module/microsoft.powershell.core/about/about_execution_policies) cmdlet .
+> Aby [można było](/powershell/module/microsoft.powershell.core/about/about_execution_policies) uruchomić program , należy ustawić zasady cmdlet wykonywania.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Program PowerShell dla deweloperów](https://devblogs.microsoft.com/visualstudio/the-powershell-you-know-and-love-now-with-a-side-of-visual-studio/)
-- [Powiedz Witaj na nowym terminalu programu Visual Studio](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/)
-- [Terminal systemu Windows](/windows/terminal/)
+- [Przywitaj się z nowym Visual Studio terminalu](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/)
+- [Terminal Windows](/windows/terminal/)
 - [Narzędzia programu .NET Framework](/dotnet/framework/tools/index)
 - [Zarządzanie narzędziami zewnętrznymi](../managing-external-tools.md)
-- [Używanie zestawu narzędzi platformy Microsoft C++ w wierszu polecenia](/cpp/build/building-on-the-command-line)
+- [Używanie zestawu narzędzi języka Microsoft C++ z wiersza polecenia](/cpp/build/building-on-the-command-line)
