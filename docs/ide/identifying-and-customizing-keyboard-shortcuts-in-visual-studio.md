@@ -18,87 +18,87 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221252"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038606"
 ---
-# <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio
+# <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio
 
 Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio, dostosować te skróty i eksportować je dla innych użytkowników. Wiele skrótów zawsze wywołuje te same polecenia, ale zachowanie skrótu może zależeć od następujących warunków:
 
-- Które domyślne ustawienia środowiska wybierasz podczas pierwszego otwierania programu Visual Studio &mdash; , na przykład ogólne programowanie lub Visual C#. (Aby uzyskać informacje o zmienianiu lub resetowaniu ustawień, zobacz [Ustawienia środowiska](environment-settings.md)).
+- Które domyślne ustawienia środowiska wybierasz przy pierwszym otwarciu, na Visual Studio na przykład &mdash; Ogólne lub Visual C#. (Aby uzyskać informacje na temat zmieniania lub resetowania ustawień, zobacz [Ustawienia środowiska).](environment-settings.md)
 
 - Czy dostosowywałeś zachowanie danego skrótu.
 
-- W którym kontekście jesteś w momencie wybierania skrótu. Na przykład skrót **F2** wywołuje `Edit.EditCell` polecenie, jeśli używasz **projektanta ustawień** i wywołuje `File.Rename` polecenie, jeśli używasz **Team Explorer**.
+- W którym kontekście jesteś w momencie wybierania skrótu. Na przykład skrót **F2** wywołuje polecenie, jeśli używasz Projektanta ustawień i wywołuje polecenie, jeśli używasz Team Explorer `Edit.EditCell`  `File.Rename` . 
 
-Niezależnie od ustawień, dostosowania i kontekstu, można zawsze znaleźć i zmienić skrót klawiaturowy w oknie dialogowym **Opcje** . Możesz również wyszukać domyślne skróty klawiaturowe kilku dziesiątek poleceń w [popularnych skrótach klawiaturowych](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md). Aby uzyskać pełną listę wszystkich skrótów domyślnych (na podstawie ogólnych ustawień **deweloperskich** ), zobacz [wszystkie skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Niezależnie od ustawień, dostosowywania i kontekstu w oknie dialogowym  Opcje zawsze można znaleźć i zmienić skrót klawiaturowy. Możesz również sprawdzić domyślne skróty klawiaturowe dla kilkudziesięciu poleceń w tece [Popularne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts). Aby uzyskać pełną listę wszystkich skrótów domyślnych (na podstawie ogólnych **ustawień programistyki),** zobacz Wszystkie [skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Jeśli skrót jest przypisany do polecenia w kontekście *globalnym* i nie ma innych kontekstów, ten skrót zawsze wywoła to polecenie. Jednak skrót może być przypisany do jednego polecenia w kontekście globalnym i innego polecenia w określonym kontekście. Gdy korzystasz z takiego skrótu podczas pracy w określonym kontekście, skrót wywołuje polecenie odpowiadające temu kontekstowi, a nie kontekstowi globalnemu.
 
 > [!NOTE]
-> Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ta strona jest oparta na profilu **ogólnych ustawień deweloperskich** .
+> Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ta strona jest oparta na **profilu Ogólne ustawienia** programowe.
 
 ## <a name="identify-a-keyboard-shortcut"></a>Identyfikowanie skrótu klawiaturowego
 
-1. Na pasku menu wybierz **Narzędzia**  >  **Opcje**.
+1. Na pasku menu wybierz pozycję **Opcje**  >  **narzędzi.**
 
-2. Rozwiń węzeł **środowisko**, a następnie wybierz pozycję **Klawiatura**.
+2. Rozwiń **pozycję Środowisko**, a następnie wybierz pozycję **Klawiatura.**
 
-   ![Wyświetl skróty klawiaturowe w oknie dialogowym Opcje](../ide/media/optionskeyboard.png)
+   ![Wyświetlanie skrótów klawiaturowych w oknie dialogowym Opcje](../ide/media/optionskeyboard.png)
 
-3. W polu **Pokaż polecenia zawierające** wpisz wszystko lub część nazwy polecenia bez spacji.
+3. W **pokaż polecenia zawierające** pole, wprowadź wszystkie lub część nazwy polecenia bez spacji.
 
-   Można na przykład znaleźć polecenia dla `solutionexplorer` .
+   Można na przykład znaleźć polecenia dla `solutionexplorer` polecenia .
 
 4. Na liście, wybierz odpowiednie polecenie.
 
-    Można na przykład wybrać opcję `View.SolutionExplorer` .
+    Możesz na przykład wybrać pozycję `View.SolutionExplorer` .
 
-5. Jeśli polecenie ma skrót klawiaturowy, pojawia się w **skrótach dla wybranej listy poleceń** .
+5. Jeśli polecenie ma skrót klawiaturowy, pojawia się na **liście Skróty dla wybranych** poleceń.
 
-   ![Wyświetl skrót do określonego polecenia](../ide/media/viewshortcut.png)
+   ![Wyświetlanie skrótu dla określonego polecenia](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Dostosowywanie skrótu klawiaturowego
 
-1. Na pasku menu wybierz **Narzędzia**  >  **Opcje**.
+1. Na pasku menu wybierz pozycję **Opcje**  >  **narzędzi.**
 
-2. Rozwiń węzeł **środowisko**, a następnie wybierz pozycję **Klawiatura**.
+2. Rozwiń **pozycję Środowisko**, a następnie wybierz pozycję **Klawiatura.**
 
-3. Opcjonalne: Przefiltruj listę poleceń, wprowadzając wszystkie lub część nazwy polecenia, bez spacji, w polu **Pokaż polecenia zawierające** .
+3. Opcjonalnie: filtruj listę poleceń, wprowadzając całą lub część nazwy polecenia bez spacji w polu **Pokaż polecenia zawierające.**
 
 4. Z listy wybierz polecenie, do którego chcesz przypisać skrót klawiaturowy.
 
-   Na liście **Użyj nowego skrótu w** wybierz obszar funkcji, w którym chcesz użyć skrótu.
+   Na liście **Użyj nowego skrótu wybierz** obszar funkcji, w którym chcesz użyć skrótu.
 
-   Na przykład, możesz wybrać **globalne** , jeśli chcesz, aby skrót działał we wszystkich kontekstach. Można użyć dowolnego skrótu, który nie jest mapowany (jako globalny) w innym edytorze. W przeciwnym razie edytor zastępuje skrót.
+   Możesz na przykład wybrać opcję **Globalne,** jeśli skrót ma działać we wszystkich kontekstach. Można użyć dowolnego skrótu, który nie jest mapowany (jako globalny) w innym edytorze. W przeciwnym razie edytor zastępuje skrót.
 
    > [!NOTE]
-   > Nie można przypisać następujących kluczy jako części skrótu klawiaturowego w języku **globalnym**:
+   > Nie można przypisać następujących klawiszy w ramach skrótu klawiaturowego w **globalnej**:
    >
-   > - ENTER, TAB, Caps Lock
-   > - Print Scrn/sys RQ, Scroll Lock, Pause/Break
-   > - Wstaw, Strona główna, końcowa, Strona w górę, Strona w dół
-   > - Klucz logo systemu Windows, klucz aplikacji, dowolny z klawiszy strzałek
-   > - Num Lock, DELETE lub Clear na klawiaturze numerycznej
-   > - Kombinacja klawiszy Ctrl + Alt + Delete
+   > - Enter, Tab, Caps Lock
+   > - Scrn drukowania/Sys Rq, blokada przewijania, wstrzymywanie/przerywanie
+   > - Insert, Home, End, Page Up, Page Down
+   > - Klucz logo systemu Windows, klucz aplikacji i dowolne klawisze strzałek
+   > - Blokada numeryczna, usuwanie lub usuwanie na klawiaturze numerycznej
+   > - Kombinacja klawiszy Ctrl+Alt+Delete
 
-6. W polu **naciśnij klawisz skrótu** Wprowadź skrót, którego chcesz użyć.
-
-    > [!NOTE]
-    > Można utworzyć skrót, który łączy literę z klawiszem **Alt** , klawiszem **Ctrl** lub obu. Możesz również utworzyć skrót, który łączy klawisz **SHIFT** i literę z klawiszem **Alt** , klawiszem **Ctrl** lub obu.
-
-     Jeśli skrót jest już przypisany do innego polecenia, pojawia się w polu **skrót aktualnie używany przez** . W takim przypadku wybierz klawisz **Backspace** , aby usunąć ten skrót przed podjęciem próby innej.
-
-    ![Określ inny skrót dla polecenia](../ide/media/reassignshortcut.png)
-
-7. Wybierz przycisk **Przypisz** .
+6. W **polu Naciśnij klawisze skrótu** wprowadź skrót, którego chcesz użyć.
 
     > [!NOTE]
-    > Jeśli określisz inny skrót dla polecenia, kliknij przycisk **Przypisz**, a następnie kliknij przycisk **Anuluj** , aby zamknąć okno dialogowe, przypisany skrót nie zostanie przywrócony.
+    > Możesz utworzyć skrót, który łączy literę z **klawiszem Alt,** **klawiszem Ctrl** lub obu. Można również utworzyć skrót, który łączy klawisz **Shift** i literę z klawiszem **Alt,** **Ctrl** lub obu.
+
+     Jeśli skrót jest już przypisany do innego polecenia, pojawia się on w polu **Skrót aktualnie używany przez.** W takim przypadku wybierz klawisz **Backspace,** aby usunąć ten skrót, zanim spróbujesz użyć innego.
+
+    ![Określanie innego skrótu dla polecenia](../ide/media/reassignshortcut.png)
+
+7. Wybierz przycisk **Przypisz.**
+
+    > [!NOTE]
+    > Jeśli określisz inny skrót dla polecenia, kliknij przycisk Przypisz **,** a następnie kliknij przycisk **Anuluj,** aby zamknąć okno dialogowe, przypisany skrót nie zostanie przywrócony.
 
 ## <a name="share-custom-keyboard-shortcuts"></a>Udostępnianie niestandardowych skrótów klawiaturowych
 
@@ -106,48 +106,48 @@ Możesz udostępniać własne skróty, eksportując je do pliku, a następnie pr
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Aby wyeksportować tylko skróty klawiaturowe
 
-1. Na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**.
+1. Na pasku menu wybierz pozycję **Narzędzia**  >  **Importuj i Eksportuj ustawienia.**
 
-2. Wybierz opcję **Eksportuj wybrane ustawienia środowiska**, a następnie wybierz przycisk **dalej**.
+2. Wybierz **pozycję Eksportuj wybrane ustawienia środowiska,** a następnie wybierz pozycję **Dalej.**
 
-3. W obszarze **jakie ustawienia chcesz eksportować?** wyczyść pole wyboru **wszystkie ustawienia** , rozwiń **Opcje**, a następnie rozwiń **środowisko**.
+3. W **obszarze Jakie ustawienia chcesz wyeksportować?** wyczyść pole wyboru **Wszystkie** ustawienia, rozwiń pozycję **Opcje**, a następnie rozwiń pozycję **Środowisko**.
 
-4. Zaznacz pole wyboru **Klawiatura** , a następnie wybierz przycisk **dalej**.
+4. Zaznacz pole **wyboru Klawiatura,** a następnie wybierz pozycję **Dalej.**
 
-   ![Eksportuj tylko dostosowane skróty klawiaturowe](../ide/media/exportshortcuts.png)
+   ![Eksportowanie tylko dostosowanych skrótów klawiaturowych](../ide/media/exportshortcuts.png)
 
-5. W polu **jak chcesz nazwać plik ustawień** i **Zapisz plik My Settings w tym katalogu** pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz pozycję **Zakończ**.
+5. W **polach What do you want to name your settings file** (Co chcesz nazwać plik ustawień) i Store my settings file in this **directory** (Przechowuj plik ustawień w tym katalogu) pozostaw wartości domyślne lub określ różne wartości, a następnie wybierz pozycję **Finish (Zakończ).**
 
 ::: moniker range="vs-2017"
 
-Domyślnie skróty są zapisywane w pliku w folderze *%USERPROFILE%\Documents\Visual Studio 2017 \ Settings (ustawienia* ). Nazwa pliku odzwierciedla datę wyeksportowania ustawień, a rozszerzenie to *. vssettings*.
+Domyślnie skróty są zapisywane w pliku w *folderze %USERPROFILE%\Documents\Visual Studio 2017\Settings.* Nazwa pliku odzwierciedla datę wyeksportowania ustawień, a rozszerzenie *to .vssettings*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Domyślnie skróty są zapisywane w pliku w folderze *%USERPROFILE%\Documents\Visual Studio 2019 \ Settings (ustawienia* ). Nazwa pliku odzwierciedla datę wyeksportowania ustawień, a rozszerzenie to *. vssettings*.
+Domyślnie skróty są zapisywane w pliku w *folderze %USERPROFILE%\Documents\Visual Studio 2019\Settings.* Nazwa pliku odzwierciedla datę wyeksportowania ustawień, a rozszerzenie *to .vssettings*.
 
 ::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Aby zaimportować tylko skróty klawiaturowe
 
-1. Na pasku menu wybierz kolejno opcje **Narzędzia**  >  **Importuj i Eksportuj ustawienia**.
+1. Na pasku menu wybierz pozycję **Narzędzia**  >  **Importuj i Eksportuj ustawienia.**
 
-2. Wybierz przycisk opcji **Importuj wybrane ustawienia środowiska** , a następnie wybierz **dalej**.
+2. Wybierz przycisk **Importuj wybrane ustawienia środowiska,** a następnie wybierz pozycję **Dalej.**
 
-3. Wybierz przycisk opcji **nie, tylko zaimportuj nowe ustawienia, zastępując Moje bieżące ustawienia** , a następnie wybierz **dalej**.
+3. Wybierz przycisk **Nie, po prostu zaimportuj** nowe ustawienia, nadpisując przycisk opcji Moje bieżące ustawienia, a następnie wybierz pozycję **Dalej.**
 
-4. W obszarze **Moje ustawienia** wybierz plik zawierający skróty, które chcesz zaimportować, lub kliknij przycisk **Przeglądaj** , aby zlokalizować właściwy plik.
+4. W **obszarze Moje** ustawienia wybierz plik zawierający skróty, które chcesz zaimportować, lub wybierz przycisk **Przeglądaj,** aby zlokalizować prawidłowy plik.
 
 5. Wybierz pozycję **Next** (Dalej).
 
-6. W obszarze **jakie ustawienia chcesz zaimportować?** wyczyść pole wyboru **wszystkie ustawienia** , rozwiń **Opcje**, a następnie rozwiń **środowisko**.
+6. W **obszarze Które ustawienia chcesz zaimportować?** wyczyść pole wyboru **Wszystkie** ustawienia, rozwiń pozycję **Opcje**, a następnie rozwiń pozycję **Środowisko**.
 
-7. Zaznacz pole wyboru **Klawiatura** , a następnie wybierz przycisk **Zakończ**.
+7. Zaznacz pole **wyboru Klawiatura,** a następnie wybierz pozycję **Zakończ.**
 
-   ![Importuj tylko dostosowane skróty klawiaturowe](../ide/media/importshortcuts.png)
+   ![Importowanie tylko dostosowanych skrótów klawiaturowych](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Funkcje ułatwień dostępu programu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Funkcje ułatwień dostępu Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

@@ -2,7 +2,7 @@
 title: Domyślne skróty klawiaturowe
 description: Dowiedz się więcej o domyślnych skrótach klawiaturowych Visual Studio, które umożliwiają dostęp do różnych poleceń i okien.
 ms.custom: SEO-VS-2020
-ms.date: 05/21/2021
+ms.date: 06/21/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac74ed04faaaf4626e63be7393a650b1bea225f3
-ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
+ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110328695"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038645"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w Visual Studio
 
@@ -28,11 +28,171 @@ Aby uzyskać dostęp do różnych [poleceń](reference/visual-studio-commands.md
 
 Aby uzyskać listę typowych skrótów klawiaturowych i inne informacje o produktywności, zobacz:
 
-- [Skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Porady dotyczące klawiatury](../ide/productivity-shortcuts.md)
 - [Wskazówki dotyczące produktywności](../ide/productivity-features.md).
 
 Aby uzyskać więcej informacji na temat [](../ide/reference/accessibility-tips-and-tricks.md) ułatwień dostępu w Visual Studio, zobacz Porady i wskazówki dotyczące ułatwień dostępu oraz [Porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+
+
+
+## <a name="most-popular-keyboard-shortcuts"></a>Popularne skróty klawiaturowe
+
+Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono inaczej. Kontekst *globalny* oznacza, że skrót ma zastosowanie w dowolnym oknie narzędzi w Visual Studio.
+
+> [!NOTE]
+> Skrót możesz [znaleźć w dowolnym](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) poleceniu, otwierając okno dialogowe Opcje, rozwijając węzeł **Środowisko,** a następnie wybierając pozycję **Klawiatura.** 
+
+
+#### <a name="build-popular-shortcuts"></a>Kompilacja: popularne skróty
+
+|Polecenia|Skróty klawiaturowe |
+|--------------| - |
+|Build.BuildSolution|**Ctrl+Shift+B** |
+|Build.Cancel|**Ctrl+Break** |
+|Build.Compile|**Ctrl+F7** |
+|Build.RunCodeAnalysisonSolution|**Alt+F11**|
+
+#### <a name="debug-popular-shortcuts"></a>Debugowanie: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|Debug.BreakatFunction|**Ctrl+B**|
+|Debug.BreakAll|**Ctrl+Alt+Break**|
+|Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9**|
+|Debug.Exceptions|**Ctrl+Alt+E**|
+|Debug.QuickWatch|**Ctrl+Alt+Q**<br /><br />lub **Shift+F9**|
+|Debug.Restart|**Ctrl+Shift+F5**|
+|Debug.RunToCursor|**Ctrl+F10**|
+|Debug.SetNextStatement|**Ctrl+Shift+F10**|
+|Debug.Start|**F5**|
+|Debug.StartWithoutDebugging|**Ctrl+F5**|
+|Debug.StepInto|**F11**|
+|Debug.StepOut|**Shift+ F11**|
+|Debug.StepOver|**F10**|
+|Debug.StopDebugging|**Shift+ F5**|
+|Debug.ToggleBreakpoint|**F9**|
+
+#### <a name="edit-popular-shortcuts"></a>Edytuj: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|Edit.BreakLine|**Wprowadź** tekst [Edytor tekstu, Projektant raportów, Projektant formularzy systemu Windows]<br /><br />lub **Shift+Enter** [Edytor tekstu]|
+|Edit.CollapseToDefinitions|**Ctrl+M,** **Ctrl+O** [Edytor tekstu]|
+|Edit.CommentSelection|**Ctrl+K,** **Ctrl+C** [Edytor tekstu]|
+|Edit.CompleteWord|**Alt+Strzałka w prawo** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K,** **W** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+W** [Projektant przepływu pracy]|
+|Edit.Copy|**Ctrl+C**<br /><br />lub **Ctrl+Insert**|
+|Edit.Cut|**Ctrl+X**<br /><br />lub **Shift +Delete**|
+|Edit.Delete|**Usuń** [Team Explorer]<br /><br />lub **Shift+Delete** [Diagram sekwencji, Diagram aktywności UML, Diagram warstwowy]<br /><br />lub **Ctrl+Delete** [Diagram klas]|
+|Edit.Find|**Ctrl+F**|
+|Edit.FindAllReferences|**Shift+F12**|
+|Edit.FindinFiles|**Ctrl+Shift+F**|
+|Edit.FindNext|**F3**|
+|Edit.FindNextSelected|**Ctrl+F3**|
+|Edit.FormatDocument|**Ctrl+K, Ctrl+D** [Edytor tekstu]|
+|Edit.FormatSelection|**Ctrl+K, Ctrl+F** [Edytor tekstu]|
+|Edit.GoTo|**Ctrl+G**|
+|Edit.GoToDeclaration|**Ctrl+F12**|
+|Edit.GoToDefinition|**F12**|
+|Edit.GoToFindCombo|**Ctrl + D**|
+|Edit.GoToNextLocation|**F8**|
+|Edit.InsertSnippet|**Ctrl+K,** **Ctrl+X**|
+|Edit.InsertTab|**Tab** [Projektant raportów, Projektant formularzy systemu Windows, Edytor tekstu]|
+|Edit.LineCut|**Ctrl+L** [Edytor tekstu]|
+|Edit.LineDownExtendColumn|**Shift+Alt+Strzałka w dół** [Edytor tekstu]|
+|Edit.LineOpenAbove|**Ctrl+Enter** [Edytor tekstu]|
+|Edit.ListMembers|**Ctrl+J** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+L** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, L** [Projektant przepływu pracy]|
+|Edit.NavigateTo|**Ctrl+,**|
+|Edit.OpenFile|**Ctrl+Shift+G**|
+|Edit.OvertypeMode|**Wstaw** [Edytor tekstu]|
+|Edit.ParameterInfo|**Ctrl+Shift+Spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+P** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, P** [Projektant przepływu pracy]|
+|Edit.Paste|**Ctrl+V**<br /><br />lub **Shift+Insert**|
+|Edit.PeekDefinition|**Alt+F12** [Edytor tekstu]|
+|Edit.Redo|**Ctrl+Y**<br /><br />lub **Shift+Alt+Backspace**<br /><br />lub **Ctrl+Shift+Z**|
+|Edit.Replace|**Ctrl+H**|
+|Edit.SelectAll|**Ctrl+A**|
+|Edit.SelectCurrentWord|**Ctrl+W** [Edytor tekstu]|
+|Edit.SelectionCancel|**Esc** [Edytor tekstu, Projektant raportów, Projektant ustawień, Projektant formularzy systemu Windows, Edytor zasobów zarządzanych]|
+|Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
+|Edit.TabLeft|**Shift+Tab** [Edytor tekstu, Projektant raportów, Windows Forms Edytor]|
+|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L** [Edytor tekstu]|
+|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K** [Edytor tekstu]|
+|Edit.ToggleCompletionMode|**Ctrl+Alt+Spacja** [Edytor tekstu]|
+|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Edytor tekstu]|
+|Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Edytor tekstu]|
+|Edit.Undo|**Ctrl+Z**<br /><br />lub **Alt+Backspace**|
+|Edit.WordDeleteToEnd|**Ctrl+Delete** [Edytor tekstu]|
+|Edit.WordDeleteToStart|**Ctrl+Backspace** [Edytor tekstu]|
+
+#### <a name="file-popular-shortcuts"></a>Plik: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|File.Exit|**Alt+F4**|
+|File.NewFile|**Ctrl+N**|
+|File.NewProject|**Ctrl+Shift+N**|
+|File.NewWebSite|**Shift+Alt+N**|
+|File.OpenFile|**Ctrl+O**|
+|File.OpenProject|**Ctrl+Shift+O**|
+|File.OpenWebSite|**Shift+Alt+O**|
+|File.Rename|**F2** [Team Explorer]|
+|File.SaveAll|**Ctrl+Shift+S**|
+|File.SaveSelectedItems|**Ctrl+S**|
+|File.ViewinBrowser|**Ctrl+Shift+W**|
+
+#### <a name="project-popular-shortcuts"></a>Projekt: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|Project.AddExistingItem|**Shift+Alt+A**|
+|Project.AddNewItem|**Ctrl+Shift+A**|
+
+#### <a name="refactor-popular-shortcuts"></a>Refaktoryzacja: popularne skróty
+
+|Polecenie|Skrót klawiaturowy [Konteksty specjalne]|
+|-------------| - |
+|Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
+
+#### <a name="tools-popular-shortcuts"></a>Narzędzia: popularne skróty
+
+|Polecenie|Skrót klawiaturowy [Konteksty specjalne]|
+|-------------| - |
+|Tools.AttachtoProcess|**Ctrl+Alt+P**|
+
+#### <a name="view-popular-shortcuts"></a>Widok: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|View.ClassView|**Ctrl+Shift+C**|
+|View.EditLabel|**F2**|
+|View.ErrorList|**Ctrl+, \\ Ctrl+E**<br /><br />lub **Ctrl+, \\ E**|
+|View.NavigateBackward|**Ctrl+-**|
+|View.NavigateForward|**Ctrl+Shift+-**|
+|View.ObjectBrowser|**Ctrl+Alt+J**|
+|View.Output|**Ctrl+Alt+O**|
+|View.PropertiesWindow|**F4**|
+|View.Refresh|**F5** [Team Explorer]|
+|View.ServerExplorer|**Ctrl+Alt+S**|
+|View.ShowSmartTag|**Ctrl+.**<br /><br />lub **Shift+Alt+F10** [Widok projektu edytora HTML]|
+|View.SolutionExplorer|**Ctrl+Alt+L**|
+|View.TfsTeamExplorer|**Ctrl+, \\ Ctrl+M**|
+|View.Toolbox|**Ctrl+Alt+X**|
+|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Projektant ustawień]|
+|View.ViewDesigner|**Shift+F7** [Widok źródła edytora HTML]|
+
+#### <a name="window-popular-shortcuts"></a>Okno: popularne skróty
+
+|Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
+|--------------| - |
+|Window.ActivateDocumentWindow|**Esc**|
+|Window.CloseDocumentWindow|**Ctrl+F4**|
+|Window.NextDocumentWindow|**Ctrl+F6**|
+|Window.NextDocumentWindowNav|**Ctrl+Tab**|
+|Window.NextSplitPane|**F6**|
+
+
+## <a name="global-shortcuts"></a>Skróty globalne
+
+Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy dowolne Visual Studio okno ma fokus.
 
 - [Analiza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -59,10 +219,6 @@ Aby uzyskać więcej informacji na temat [](../ide/reference/accessibility-tips-
 - [Menu kontekstowe team foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
-
-## <a name="global-shortcuts"></a>Skróty globalne
-
-Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy dowolne Visual Studio okno ma fokus.
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> Analizować
 
@@ -148,12 +304,12 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Debug.StepInto|**F11**|
 |Debug.StepIntoCurrentProcess|**Ctrl+Alt+F11**|
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
-|Debug.StepOut|**Shift+ F11**|
+|Debug.StepOut|**Shift + F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** (Podczas debugowania: wykonuje krok po kroku)|
+|Debug.StepOver|**F10** (Podczas debugowania: wykonuje krok nad akcją)|
 |Debug.StepOver|**F10 (Jeśli** nie debugowanie: rozpoczyna debugowanie i zatrzymuje się w pierwszym wierszu kodu użytkownika)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
-|Debug.StopDebugging|**Shift+ F5**|
+|Debug.StopDebugging|**Shift+F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
 |Debug.Tasks|**Ctrl+Shift+D, K**|
 |Debug.Threads|**Ctrl+Alt+H**|
@@ -296,8 +452,8 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Project.ClassWizard|**Ctrl+Shift+X**|
 |Project.Override|**Ctrl+Alt+Ins**|
 |Project.Previewchanges|**Alt+;** następnie **Alt + C**|
-|Project.Publishselectedfiles|**Alt+;** then **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+;** następnie **Alt + R**|
+|Project.Publishselectedfiles|**Alt+;** następnie **Alt + P**|
+|Project.Replaceselectedfilesfromserver|**Alt+;** następnie **Alt+ R**|
 
 ### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
 
@@ -384,7 +540,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+, \\ Ctrl+R**|
-|View.Backward|**Alt+Strzałka w lewo** (funkcje różnią się od funkcji View.NavigateBackward w edytorze tekstów)|
+|View.Backward|**Alt+Strzałka w lewo** (funkcje inne niż View.NavigateBackward w edytorze tekstów)|
 |View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
 |View.BrowseNext|**Ctrl+Shift+1**|
 |View.BrowsePrevious|**Ctrl+Shift+2**|
@@ -466,7 +622,12 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num, \* Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num, \* Ctrl+D**|
 
-## <a name="adonet-entity-data-model-designer"></a>Projektant modelu danych jednostki ADO.NET
+## <a name="context-specific-shortcuts"></a>Skróty kontekstowe
+
+
+### <a name="adonet-entity-data-model-designer"></a>Projektant modelu danych jednostki ADO.NET
+
+Skróty specyficzne dla tego kontekstu to:
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -481,11 +642,14 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |View.EntityDataModelBrowser|**Ctrl+1**|
 |View.EntityDataModelMappingDetails|**Ctrl+2**|
 
-## <a name="class-diagram"></a>Diagram klas
+### <a name="class-diagram"></a>Diagram klas
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
-|ClassDiagram.Collapse|**Num -**|
+|ClassDiagram.Collapse|**Liczba —**|
 |ClassDiagram.Expand|**Num +**|
 |Edit.Delete|**Ctrl+Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift+Alt+B**|
@@ -493,7 +657,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.RemovefromDiagram|**Usuwanie**|
 |View.ViewCode|**Enter**|
 
-## <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
+### <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -504,14 +671,20 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Shift+T**|
 
-## <a name="dataset-editor"></a>Edytor obiektów DataSet
+### <a name="dataset-editor"></a>Edytor obiektów DataSet
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Insert**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-## <a name="difference-viewer"></a>Podgląd różnic
+### <a name="difference-viewer"></a>Podgląd różnic
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -527,7 +700,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Shift+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl+Shift+P**|
 
-## <a name="dom-explorer"></a>Eksplorator DOM
+### <a name="dom-explorer"></a>Eksplorator DOM
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -535,13 +711,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Shift+I**|
 
-## <a name="f-interactive"></a>interakcyjne F#
+### <a name="f-interactive"></a>interakcyjne F#
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
-## <a name="graph-document-editor"></a>Edytor dokumentów wykresu
+### <a name="graph-document-editor"></a>Edytor dokumentów wykresu
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -553,7 +735,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-## <a name="graphics-diagnostics"></a>Diagnostyka grafiki
+### <a name="graphics-diagnostics"></a>Diagnostyka grafiki
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -567,13 +752,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Graphics.ZoomIn|**Shift+Alt+=**|
 |Graphics.ZoomOut|**Shift+Alt+-**|
 
-## <a name="html-editor"></a>Edytor HTML
+### <a name="html-editor"></a>Edytor HTML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
-## <a name="html-editor-design-view"></a>Widok projektu edytora HTML
+### <a name="html-editor-design-view"></a>Widok projektu edytora HTML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -596,7 +787,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |View.ViewMarkup|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-## <a name="html-editor-source-view"></a>Widok źródła edytora HTML
+### <a name="html-editor-source-view"></a>Widok źródła edytora HTML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -606,13 +800,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |View.ViewDesigner|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-## <a name="layer-diagram"></a>Diagram warstwowy
+### <a name="layer-diagram"></a>Diagram warstwowy
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.Delete|**Shift+Delete**|
 
-## <a name="managed-resources-editor"></a>Edytor zasobów zarządzanych
+### <a name="managed-resources-editor"></a>Edytor zasobów zarządzanych
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -627,7 +827,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Resources.Other|**Ctrl+6**|
 |Resources.Strings|**Ctrl+1**|
 
-## <a name="merge-editor-window"></a>Okno Edytor scalania
+### <a name="merge-editor-window"></a>Okno Edytor scalania
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -635,7 +838,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Narzędzia danych Microsoft SQL Server, Porównywanie schematów
+### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Narzędzia danych Microsoft SQL Server, Porównywanie schematów
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -646,7 +852,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |SQL.SSDTSchemaCompareStop|**Alt+Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift+Alt+U**|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
+### <a name="microsoft-sql-server-data-tools-table-designer"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -657,7 +866,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |SQL.Rename|**F2**<br /><br /> lub<br /><br /> **Ctrl+R, R**<br /><br /> lub<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Shift+Alt+PgDn**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL
+### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -678,7 +890,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL PDW
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Narzędzia danych Microsoft SQL Server, Edytor T-SQL PDW
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -693,13 +908,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-## <a name="page-inspector"></a>Inspektor strony
+### <a name="page-inspector"></a>Inspektor strony
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-## <a name="query-designer"></a>Projektant zapytań
+### <a name="query-designer"></a>Projektant zapytań
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -712,7 +933,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-## <a name="query-results"></a>Wyniki zapytania
+### <a name="query-results"></a>Wyniki zapytania
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -720,7 +944,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
 
-## <a name="report-designer"></a>Projektant raportów
+### <a name="report-designer"></a>Projektant raportów
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -746,14 +973,20 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.TabLeft|**Shift+Tab**|
 |View.ReportData|**Ctrl+Alt+D**|
 
-## <a name="sequence-diagram"></a>Diagramów sekwencji
+### <a name="sequence-diagram"></a>Diagramów sekwencji
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
-## <a name="settings-designer"></a>Projektant ustawień
+### <a name="settings-designer"></a>Projektant ustawień
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -762,13 +995,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Eksplorator rozwiązań
+### <a name="solution-explorer"></a>Eksplorator rozwiązań
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
-## <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer"></a>Team Explorer
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
@@ -793,13 +1032,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
 |View.Refresh|**F5**|
 
-## <a name="test-explorer"></a>Eksplorator testów
+### <a name="test-explorer"></a>Eksplorator testów
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-## <a name="text-editor"></a>Edytor tekstu
+### <a name="text-editor"></a>Edytor tekstu
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 | Polecenia | Skróty klawiaturowe |
 | - | - |
@@ -918,38 +1163,56 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
-## <a name="uml-activity-diagram"></a>Diagram aktywności UML
+### <a name="uml-activity-diagram"></a>Diagram aktywności UML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
-## <a name="uml-class-diagram"></a>Diagram klas UML
+### <a name="uml-class-diagram"></a>Diagram klas UML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="uml-component-diagram"></a>Diagram składników UML
+### <a name="uml-component-diagram"></a>Diagram składników UML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="uml-use-case-diagram"></a>Diagram przypadków użycia UML
+### <a name="uml-use-case-diagram"></a>Diagram przypadków użycia UML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-## <a name="vc-accelerator-editor"></a>Edytor klawiszy skrótów VC
+### <a name="vc-accelerator-editor"></a>Edytor klawiszy skrótów VC
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |Edit.NewAccelerator|**Insert**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
-## <a name="vc-dialog-editor"></a>Edytor okien dialogowych VC
+### <a name="vc-dialog-editor"></a>Edytor okien dialogowych VC
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -983,7 +1246,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
-## <a name="vc-image-editor"></a>Edytor obrazów VC
+### <a name="vc-image-editor"></a>Edytor obrazów VC
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1025,13 +1291,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Image.ZoomIn|**Ctrl+Shift+.**<br /><br /> lub<br /><br /> **Ctrl+Strzałka w górę**|
 |Image.ZoomOut|**Ctrl+Shift+,**<br /><br /> lub<br /><br /> **Ctrl+strzałka w dół**|
 
-## <a name="vc-string-editor"></a>Edytor ciągów VC
+### <a name="vc-string-editor"></a>Edytor ciągów VC
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |Edit.NewString|**Insert**|
 
-## <a name="view-designer"></a>Projektant widoków
+### <a name="view-designer"></a>Projektant widoków
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1044,13 +1316,19 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-## <a name="visual-studio"></a>Visual Studio
+### <a name="visual-studio"></a>Visual Studio
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenie|Skrót klawiaturowy|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
-## <a name="windows-forms-designer"></a>Projektant Windows Forms
+### <a name="windows-forms-designer"></a>Projektant Windows Forms
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1079,7 +1357,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.SizeControlUp|**Ctrl+Shift+Strzałka w górę**|
 |Edit.TabLeft|**Shift+Tab**|
 
-## <a name="work-item-editor"></a>Edytor elementu roboczego
+### <a name="work-item-editor"></a>Edytor elementu roboczego
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1087,7 +1368,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
 
-## <a name="work-item-query-view"></a>Widok zapytania o elementy robocze
+### <a name="work-item-query-view"></a>Widok zapytania o elementy robocze
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1098,7 +1382,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-## <a name="work-item-results-view"></a>Widok wyników dotyczących elementu pracy
+### <a name="work-item-results-view"></a>Widok wyników dotyczących elementu pracy
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1111,7 +1398,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-## <a name="workflow-designer"></a>Projektant przepływów pracy
+### <a name="workflow-designer"></a>Projektant przepływów pracy
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1137,9 +1427,12 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> lub<br /><br /> **Ctrl+E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> lub<br /><br /> **Ctrl+E, S**|
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
-|WorkflowDesigner.ZoomOut|**Ctrl+Num —**|
+|WorkflowDesigner.ZoomOut|**Ctrl+Num -**|
 
-## <a name="xaml-ui-designer"></a>Projektant języka XAML
+### <a name="xaml-ui-designer"></a>Projektant języka XAML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -1161,14 +1454,20 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |View.EdgeRightMoveRight|**Ctrl+Shift+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+Spacja**|
 
-## <a name="xml-text-editor"></a>Edytor (tekstu) XML
+### <a name="xml-text-editor"></a>Edytor (tekstu) XML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-## <a name="xml-schema-designer"></a>Projektant schematu XML
+### <a name="xml-schema-designer"></a>Projektant schematu XML
+
+Skróty specyficzne dla tego kontekstu to:
+
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
