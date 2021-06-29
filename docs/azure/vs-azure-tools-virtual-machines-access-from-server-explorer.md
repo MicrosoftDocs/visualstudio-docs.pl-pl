@@ -1,41 +1,55 @@
 ---
 title: Uzyskiwanie dostępu do usługi Azure Virtual Machines z Eksplorator serwera | Microsoft Docs
-description: Zapoznaj się z omówieniem tworzenia maszyn wirtualnych platformy Azure w Eksplorator serwera w programie Visual Studio i zarządzania nimi.
+description: Omówienie sposobu wyświetlania tworzenia maszyn wirtualnych platformy Azure i zarządzania nimi w Eksplorator serwera w Visual Studio.
 author: ghogen
 manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a40434845187490ee4f8437f8e15963bddd1998f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab67a81d761f2e17c82b75fb59a201188cf80986
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843790"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997634"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 
-Jeśli masz maszyny wirtualne hostowane przez platformę Azure, możesz uzyskać do nich dostęp w Eksplorator serwera. Musisz najpierw zalogować się do subskrypcji platformy Azure, aby wyświetlić swoje usługi mobilne. Aby się zalogować, otwórz menu skrótów dla węzła platformy Azure w Eksplorator serwera i wybierz polecenie **Połącz z Microsoft Azure**.
+::: moniker range=">=vs-2022"
+> [!Important]
+> Węzeł usługi Azure Eksplorator serwera został wycofany w Visual Studio 2022 r. Możesz użyć witryny Azure Portal lub nadal korzystać z węzła platformy Azure Eksplorator serwera poprzednich wersjach Visual Studio.
+>
+> Ponadto [Eksplorator usługi Microsoft Azure Storage](/azure/vs-azure-tools-storage-manage-with-storage-explorer) to bezpłatna, autonomiczna aplikacja firmy Microsoft. Można jej używać do wizualnej pracy z danymi usługi Azure Storage w systemach Windows, macOS i Linux.
+>
+> Aby uzyskać więcej informacji na Visual Studio 2022, zobacz nasze informacje [o wersji](/visualstudio/releases/2022/release-notes-preview/).
 
-1. W programie Cloud Explorer wybierz maszynę wirtualną, a następnie wybierz klawisz F4, aby wyświetlić okno właściwości.
+::: moniker-end
 
-    W poniższej tabeli przedstawiono właściwości dostępne, ale są one tylko do odczytu. Aby je zmienić, użyj [Azure Portal](https://portal.azure.com).
+::: moniker range="<=vs-2017"
+
+Jeśli masz maszyny wirtualne hostowane na platformie Azure, możesz uzyskać do nich dostęp w Eksplorator serwera. Aby wyświetlić usługi mobilne, musisz najpierw zalogować się do subskrypcji platformy Azure. Aby się zalogować, otwórz menu skrótów dla węzła platformy Azure w usłudze Eksplorator serwera, a następnie wybierz pozycję Połącz z **Microsoft Azure**.
+
+1. W Eksploratorze chmury wybierz maszynę wirtualną, a następnie naciśnij klawisz F4, aby wyświetlić okno właściwości.
+
+    W poniższej tabeli przedstawiono dostępne właściwości, ale wszystkie są tylko do odczytu. Aby je zmienić, użyj [Azure Portal](https://portal.azure.com).
 
    | Właściwość | Opis |
    | --- | --- |
    | Nazwa DNS |Adres URL z adresem internetowym maszyny wirtualnej. |
-   | Środowisko |Dla maszyny wirtualnej wartość tej właściwości jest zawsze produkcja. |
+   | Środowisko |W przypadku maszyny wirtualnej wartość tej właściwości to zawsze Produkcja. |
    | Nazwa |Nazwa maszyny wirtualnej. |
-   | Rozmiar |Rozmiar maszyny wirtualnej, który odzwierciedla ilość dostępnej pamięci i miejsca na dysku. Aby uzyskać więcej informacji, zobacz [rozmiary maszyn wirtualnych](/azure/cloud-services/cloud-services-sizes-specs). |
-   | Stan |Wartości obejmują uruchamianie, uruchamianie, zatrzymywanie, zatrzymanie i pobieranie stanu. Jeśli zostanie wyświetlony stan pobieranie, bieżący stan jest nieznany. Wartości tej właściwości różnią się od wartości, które są używane w [Azure Portal](https://portal.azure.com). |
-   | Identyfikator |Identyfikator subskrypcji Twojego konta platformy Azure. Te informacje można wyświetlić na [Azure Portal](https://portal.azure.com) , wyświetlając właściwości subskrypcji. |
-2. Wybierz węzeł punktu końcowego, a następnie Wyświetl okno **Właściwości** .
+   | Rozmiar |Rozmiar maszyny wirtualnej, który odzwierciedla ilość dostępnej pamięci i miejsca na dysku. Aby uzyskać więcej informacji, zobacz [Virtual Machine Sizes (Rozmiary maszyn wirtualnych).](/azure/cloud-services/cloud-services-sizes-specs) |
+   | Stan |Wartości obejmują uruchamianie, uruchamianie, zatrzymywanie, zatrzymywanie i pobieranie stanu. Jeśli zostanie wyświetlony stan Pobieranie, bieżący stan jest nieznany. Wartości tej właściwości różnią się od wartości używanych w Azure Portal [.](https://portal.azure.com) |
+   | Subscriptionid |Identyfikator subskrypcji dla konta platformy Azure. Te informacje można wyświetlić w [Azure Portal,](https://portal.azure.com) wyświetlając właściwości subskrypcji. |
+2. Wybierz węzeł punktu końcowego, a następnie wyświetl **okno** Właściwości.
 3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, użyj [Azure Portal](https://portal.azure.com).
 
    | Właściwość | Opis |
    | --- | --- |
    | Nazwa |Identyfikator punktu końcowego. |
-   | Port prywatny |Port wewnętrznego dostępu do sieci dla aplikacji. |
-   | Protokół |Protokół, który jest stosowany przez warstwę transportu dla tego punktu końcowego, TCP lub UDP. |
+   | Port prywatny |Port dostępu sieciowego do aplikacji. |
+   | Protokół |Protokół używany przez warstwę transportu dla tego punktu końcowego — TCP lub UDP. |
    | Port publiczny |Port używany do publicznego dostępu do aplikacji. |
+
+::: moniker-end
