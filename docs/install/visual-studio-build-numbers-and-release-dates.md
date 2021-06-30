@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numerów kompilacji dla Visual Studio posor
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 06/24/2021
+ms.date: 06/29/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: efef979a2b395b4f9ca85f7d101bfdc5570c5cc0
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: cbd86d9dfa8b1f34ab7a352936a2d8f7f2f2e33f
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997686"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046108"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -45,6 +45,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.3 | Release | 29 czerwca 2021 r. | 16.10.31424.327 |
 | 16.11.0 | Preview 2 | 15 czerwca 2021 r. | 16.11.31410.223 |
 | 16.10.2 | Release | 15 czerwca 2021 r. | 16.10.31410.357 |
 | 16.9.8 | Release | 15 czerwca 2021 r. | 16.9.31409.214 |
@@ -243,7 +244,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
 > [!NOTE]
-> Aby wyświetlić dane dla *poprzedniej* wersji, zobacz [numery kompilacji Visual Studio 2017 i daty wydania](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true).
+> Aby wyświetlić dane dla *poprzedniej* wersji, zobacz [numery kompilacji Visual Studio 2017](visual-studio-build-numbers-and-release-dates.md?view=vs-2017&preserve-view=true)i daty wydania .
 >
 >Aby wyświetlić dane dla *następnej* wersji, zobacz [numery kompilacji Visual Studio 2022 i daty wydania](visual-studio-build-numbers-and-release-dates.md?view=vs-2022&preserve-view=true).
 

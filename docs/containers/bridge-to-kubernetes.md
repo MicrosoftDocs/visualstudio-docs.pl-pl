@@ -1,62 +1,66 @@
 ---
-title: Używanie Mostka na platformę Kubernetes z programem Visual Studio
-titleSuffix: ''
+title: 'Samouczek: łączenie maszyn programistów z Bridge to Kubernetes'
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: Dowiedz się, jak używać programu Bridge do Kubernetes z programem Visual Studio, aby połączyć komputer deweloperski z klastrem Kubernetes
-keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Docker, Kubernetes, Azure, Containers
+ms.topic: tutorial
+description: Połącz komputer deweloperska z klastrem Kubernetes za pomocą Bridge to Kubernetes z Visual Studio.
+keywords: Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, kontenery
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635049"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046121"
 ---
-# <a name="use-bridge-to-kubernetes"></a>Korzystanie z mostka do Kubernetes
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>Samouczek: używanie Bridge to Kubernetes do łączenia klastrów i komputerów programistów
 
-Za pomocą mostka Kubernetes można przekierowywać ruch między klastrem Kubernetes i kodem uruchomionym na komputerze deweloperskim. Ten przewodnik zawiera również skrypt służący do wdrażania dużej przykładowej aplikacji z wieloma mikrousługami w klastrze Kubernetes.
+W tym samouczku dowiesz się, jak za pomocą usługi Bridge to Kubernetes przekierowywać ruch między klastrem Kubernetes i kodem uruchomionym na komputerze dewelopera. 
 
-## <a name="before-you-begin"></a>Zanim rozpoczniesz
+Ten przewodnik zawiera również skrypt do wdrażania dużej przykładowej aplikacji z wieloma mikrousługami w klastrze Kubernetes.
 
-Ten przewodnik zawiera [przykładową aplikację do wykonania aplikacji][todo-app-github] do zademonstrowania połączenia komputera deweloperskiego z klastrem Kubernetes. Jeśli masz już uruchomioną aplikację w klastrze Kubernetes, możesz wykonać poniższe kroki i użyć nazw własnych usług.
+Dowiedz się więcej Bridge to Kubernetes artykule How Bridge to Kubernetes works (Jak [Bridge to Kubernetes działa).](overview-bridge-to-kubernetes.md)
 
-Ten przykład ilustruje sposób, w jaki mostek Kubernetes może służyć do tworzenia mikrousług dla prostej aplikacji do wykonania w dowolnym klastrze Kubernetes. Ten przykład przy użyciu programu Visual Studio został dostosowany z kodu dostarczonego przez [TodoMVC](http://todomvc.com). Te kroki powinny współpracować z dowolnym klastrem Kubernetes.
+## <a name="prerequisites"></a>Wymagania wstępne
 
-Przykład aplikacji do zrobienia składa się z frontonu i zaplecza, który zapewnia magazyn trwały. Ten rozszerzony przykład dodaje składnik statystyki i dzieli aplikację na kilka mikrousług, w tym:
+- Klaster Kubernetes
+- [Visual Studio 2019][visual-studio] 16.7 (wersja zapoznawcza 4) lub nowsza uruchomiona na Windows 10.
+- [Bridge to Kubernetes zainstalowane rozszerzenie][btk-extension]
 
-- Fronton wywołuje interfejs API bazy danych w celu utrwalenia i zaktualizowania elementów do wykonania.
-- Usługa API Database korzysta z bazy danych Mongo, aby zachować elementy do wykonania.
-- Fronton zapisuje zdarzenia dodawania, kończenia i usuwania do kolejki RabbitMQ;
-- Pracownik przetwarzający dane statystyczne odbiera zdarzenia z kolejki RabbitMQ i aktualizuje pamięć podręczną Redis;
-- Interfejs API statystyk udostępnia buforowane statystyki dla frontonu do wyświetlenia.
+## <a name="about-the-data"></a>Informacje o danych
 
-W ogóle ta rozszerzona aplikacja do zrobienia składa się z sześciu powiązanych składników.
+W tym samouczku Bridge to Kubernetes tworzenie wersji mikrousług prostej przykładowej aplikacji TODO w dowolnym klastrze Kubernetes. Ta [przykładowa aplikacja TODO][todo-app-github]korzystająca z Visual Studio została dostosowana z kodu dostarczonego przez [todoMVC.](http://todomvc.com) 
 
-### <a name="prerequisites"></a>Wymagania wstępne
+ Te kroki powinny działać z dowolnym klastrem Kubernetes. Dlatego jeśli masz już własną aplikację uruchamianą w klastrze Kubernetes, nadal możesz wykonać poniższe kroki i użyć nazw własnych usług.
 
-- klaster Kubernetes
-- [Program Visual Studio 2019][visual-studio] w wersji 16,7 Preview 4 lub nowszej działający w systemie Windows 10.
-- [Zainstalowano rozszerzenie Bridge to Kubernetes][btk-extension].
+Przykład aplikacji TODO składa się z frontonu i zaplecza, które zapewnia magazyn trwały. Ten rozszerzony przykład dodaje składnik statystyk i dzieli aplikację na wiele mikrousług, a w szczególności:
 
-## <a name="check-the-cluster"></a>Sprawdź klaster
+- Frontend wywołuje interfejs database-api w celu utrwalania i aktualizowania elementów TODO;
+- Usługa database-api opiera się na bazie danych Mongo w celu utrwalania elementów TODO;
+- Frontend zapisuje zdarzenia w kolejce RabbitMQ, a następnie je kończy i usuwa.
+- Proces roboczy statystyk odbiera zdarzenia z kolejki RabbitMQ i aktualizuje pamięć podręczną Redis Cache.
+- Interfejs API statystyk uwidacznia buforowane statystyki dla frontonu do pokazania.
 
-Otwórz wiersz polecenia i sprawdź, czy polecenia kubectl jest zainstalowany i na ścieżce, klaster, który ma być używany, jest dostępny i gotowy, a następnie ustaw kontekst dla tego klastra.
+W ogóle ta rozszerzona aplikacja TODO składa się z sześciu wzajemnie powiązanych składników.
+
+
+## <a name="check-the-cluster"></a>Sprawdzanie klastra
+
+Otwórz wiersz polecenia i sprawdź, czy klaster jest zainstalowany, a w ścieżce klaster, którego chcesz użyć, jest dostępny i gotowy, a następnie ustaw kontekst `kubectl` na ten klaster.
 
 ```cmd
 kubectl cluster-info
 kubectl config use-context {context-name}
 ```
 
-gdzie {Context-Name} jest nazwą kontekstu klastra, którego chcesz użyć dla przykładu do wykonania aplikacji.
+gdzie {nazwa-kontekstu} to nazwa kontekstu dla klastra, którego chcesz użyć dla przykładu todo-app.
 
 ## <a name="deploy-the-application"></a>Wdrażanie aplikacji
 
-Sklonuj [repozytorium mindaro](https://github.com/Microsoft/mindaro) i Otwórz okno poleceń z bieżącym folderem roboczym do *przykładów/do zrobienia — aplikacji*.
+[Sklonuj repo mindaro](https://github.com/Microsoft/mindaro) i otwórz okno polecenia z bieżącym folderem pracy do *folderu samples/todo-app.*
 
 Utwórz przestrzeń nazw dla przykładu.
 
@@ -64,15 +68,15 @@ Utwórz przestrzeń nazw dla przykładu.
 kubectl create namespace todo-app
 ```
 
-Następnie Zastosuj manifest wdrożenia:
+Następnie zastosuj manifest wdrożenia:
 
 ```cmd
 kubectl apply -n todo-app -f deployment.yaml
 ```
 
-Jest to proste wdrożenie, które uwidacznia fronton przy użyciu usługi typu `LoadBalancer` . Poczekaj, aż wszystkie zasobniki będą działać i że zewnętrzny adres IP `frontend` usługi stanie się dostępny.
+Jest to proste wdrożenie, które uwidacznia fronton przy użyciu usługi typu `LoadBalancer` . Poczekaj, aż wszystkie zasobniki będą uruchomione, a zewnętrzny adres IP `frontend` usługi stanie się dostępny.
 
-Jeśli testujesz się za pomocą MiniKube, musisz użyć, `minikube tunnel` Aby rozwiązać zewnętrzny adres IP. Jeśli używasz usługi AKS lub innego dostawcy Kubernetes opartego na chmurze, zewnętrzny adres IP jest przypisywany automatycznie. Użyj poniższego polecenia, aby monitorować `frontend` usługę, aby czekać, aż zostanie uruchomiona:
+W przypadku testowania za pomocą rozwiązania MiniKube należy użyć metody w celu `minikube tunnel` rozpoznania zewnętrznego adresu IP. Jeśli używasz usługi AKS lub innego dostawcy Kubernetes opartego na chmurze, zewnętrzny adres IP jest przypisywany automatycznie. Użyj następującego polecenia, aby monitorować usługę w celu oczekiwania na `frontend` jej uruchomienie:
 
 ```output
 kubectl get service -n todo-app frontend --watch
@@ -81,72 +85,72 @@ NAME       TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
 frontend   LoadBalancer   10.0.245.78   20.73.226.228   80:31910/TCP   6m26s
 ```
 
-Przejdź do aplikacji przy użyciu zewnętrznego adresu IP i portu lokalnego (pierwszy numer w kolumnie PORT (S).
+Przejdź do aplikacji przy użyciu zewnętrznego adresu IP i portu lokalnego (pierwszy numer w kolumnie PORT(S).
 
 ```
 http://{external-ip}:{local-port}
 ```
 
-Przetestuj uruchomioną aplikację w przeglądarce. Po dodaniu, zakończeniu i usunięciu elementów do wykonania należy zauważyć, że strona statystyki jest aktualizowana o oczekiwanych metrykach.
+Przetestuj uruchamianą aplikację w przeglądarce. Podczas dodawania, ukończenia i usuwania elementów todo zwróć uwagę, że strona statystyk jest aktualizowana o oczekiwane metryki.
 
 ## <a name="connect-to-your-cluster-and-debug-a-service"></a>Nawiązywanie połączenia z klastrem i debugowanie usługi
 
-Otwórz *samples\todo-app\database-api\database-API.csproj* w programie Visual Studio. W projekcie wybierz pozycję **Kubernetes** z listy rozwijanej ustawienia uruchamiania, jak pokazano poniżej.
+Otwórz *folder samples\todo-app\database-api\database-api.csproj* w Visual Studio. W projekcie wybierz pozycję **Bridge to Kubernetes** z listy rozwijanej ustawień uruchamiania, jak pokazano poniżej.
 
-![Wybierz mostek do Kubernetes](media/bridge-to-kubernetes/choose-bridge-to-kubernetes.png)
+![Wybierz Bridge to Kubernetes](media/bridge-to-kubernetes/choose-bridge-to-kubernetes.png)
 
-Kliknij przycisk Start obok pozycji *mostek do Kubernetes*. W oknie dialogowym **Tworzenie profilu dla mostka do Kubernetes** :
+Kliknij przycisk Start obok *przycisku Bridge to Kubernetes*. W **oknie dialogowym Tworzenie profilu Bridge to Kubernetes** aplikacji:
 
 - Wybierz nazwę klastra.
-- Wybierz pozycję do *zrobienia — aplikacja* dla przestrzeni nazw.
-- Wybierz opcję *Database-API* dla usługi do przekierowania.
-- Wybierz ten sam adres URL, który został wcześniej użyty do uruchomienia przeglądarki, http://{External-IP}: {Local-Port}
+- Wybierz *pozycję todo-app* dla przestrzeni nazw.
+- Wybierz *pozycję database-api,* aby przekierowywać usługę.
+- Wybierz ten sam adres URL, który był wcześniej używany do uruchamiania przeglądarki, http://{external-ip}:{local-port}
 
-![Wybierz mostek do klastra Kubernetes](media/bridge-to-kubernetes/configure-bridge-debugging.png)
+![Wybieranie Bridge to Kubernetes klastra](media/bridge-to-kubernetes/configure-bridge-debugging.png)
 
-Zdecyduj, czy chcesz uruchomić odizolowany, co oznacza, że zmiany nie wpłyną na inne osoby korzystające z danego klastra. Ten tryb izolacji jest realizowany przez kierowanie żądań do kopii każdej usługi, której to dotyczy, ale przez kierowanie całego ruchu. Dokładniejsze wyjaśnienie tego, jak to zrobić, można znaleźć na drodze [działania programu Bridge do Kubernetes][btk-overview-routing].
+Wybierz, czy chcesz uruchamiać odizolowane klastry, co oznacza, że zmiany nie będą mieć wpływu na inne osoby używające klastra. Ten tryb izolacji jest osiągany przez kierowanie żądań do kopii każdej objętej usługi, ale kierowanie całego pozostałego ruchu normalnie. Więcej informacji na temat tego, jak to zrobić, można znaleźć na stronie How Bridge to Kubernetes Works (Jak [działa Bridge to Kubernetes).][btk-overview-routing]
 
-Kliknij przycisk **OK**. Cały ruch w klastrze Kubernetes jest przekierowywany dla usługi *API Database* do wersji aplikacji działającej na komputerze deweloperskim. Mostek do Kubernetes kieruje również cały ruch wychodzący z aplikacji z powrotem do klastra Kubernetes.
-
-> [!NOTE]
-> Zostanie wyświetlony monit o zezwolenie programowi *endpointmanager* na uruchomienie podniesienia uprawnień i zmodyfikowanie pliku Hosts.
-
-Komputer deweloperski jest połączony, gdy zostanie wyświetlony pasek stanu połączony z `database-api` usługą.
-
-![Komputer deweloperski jest podłączony](media/bridge-to-kubernetes/development-computer-connected.png)
+Kliknij przycisk **OK**. Cały ruch w klastrze Kubernetes jest przekierowywany dla usługi *database-api* do wersji aplikacji uruchomionej na komputerze dewelopera. Bridge to Kubernetes również kieruje cały ruch wychodzący z aplikacji z powrotem do klastra Kubernetes.
 
 > [!NOTE]
-> Przy kolejnych uruchomieniach nie zostanie wyświetlony monit z oknem dialogowym **Tworzenie profilu dla mostka do Kubernetes** . Te ustawienia są aktualizowane w **debugowaniu** we właściwościach projektu.
+> Zostanie wyświetlony monit o umożliwienie programowi *EndpointManager* uruchamiania z podwyższonym poziomem uprawnień i modyfikowania pliku hosts.
 
-Po nawiązaniu połączenia z komputerem deweloperskim ruch zaczyna się przekierować do komputera deweloperskiego w przypadku zastępowanej usługi.
+Komputer dewelopera jest połączony, gdy na pasku stanu jest widać, że masz połączenie z `database-api` usługą.
 
-> [!NOTE]
-> Aby później edytować profil debugowania, na przykład w celu przetestowania z inną usługą Kubernetes wybierz polecenie **Debuguj**  >  **właściwości debugowania**, a następnie kliknij przycisk **Zmień** .
-
-## <a name="set-a-break-point"></a>Ustaw punkt przerwania
-
-Otwórz MongoHelper. cs i kliknij w dowolnym miejscu w wierszu 68 w metodzie ontask, aby umieścić w niej kursor. Ustaw punkt przerwania, naciskając klawisz *F9* lub wybierając pozycję **Debuguj**  >  **przełączenie punktu przerwania**.
-
-Przejdź do przykładowej aplikacji, otwierając publiczny adres URL (zewnętrzny adres IP dla usługi frontonu). Aby wznowić działanie usługi, naciśnij klawisz **F5** lub kliknij pozycję **Debuguj**  >  **Kontynuuj**.
-
-Usuń punkt przerwania, umieszczając kursor w wierszu z punktem przerwania i naciskając klawisz **F9**.
+![Połączony komputer dewelopera](media/bridge-to-kubernetes/development-computer-connected.png)
 
 > [!NOTE]
-> Domyślnie Zatrzymywanie zadania debugowania powoduje także odłączenie komputera deweloperskiego od klastra Kubernetes. Możesz zmienić to zachowanie, zmieniając opcję **Rozłącz po debugowaniu** na `false` w sekcji **narzędzia debugowania Kubernetes** w   >  oknie dialogowym **Opcje** narzędzi. Po zaktualizowaniu tego ustawienia komputer programistyczny pozostanie połączony, gdy zatrzymasz i zaczniesz debugowanie. Aby odłączyć komputer deweloperski od klastra, kliknij przycisk **Rozłącz** na pasku narzędzi.
+> Podczas kolejnych uruchomień nie będzie wyświetlany monit o utworzenie profilu dla **Bridge to Kubernetes** uruchomieniowego. Te ustawienia są aktualizowane we **właściwościach projektu Debug** (Debugowanie).
+
+Po podłączeniu komputera dewelopera ruch rozpoczyna przekierowywanie do komputera dewelopera dla wymienianej usługi.
+
+> [!NOTE]
+> Aby później edytować profil debugowania, na przykład jeśli chcesz przetestować z inną usługą Kubernetes, wybierz pozycję  >  **Debuguj** właściwości debugowania i kliknij **przycisk** Zmień.
+
+## <a name="set-a-break-point"></a>Ustawianie punktu przerwania
+
+Otwórz pozycję MongoHelper.cs i kliknij gdzieś w wierszu 68 metody CreateTask, aby umieścić tam kursor. Ustaw punkt przerwania, naciskając klawisz *F9* lub wybierając **pozycję**  >  **Debuguj przełącz punkt przerwania.**
+
+Przejdź do przykładowej aplikacji, otwierając publiczny adres URL (zewnętrzny adres IP dla usługi frontendu). Aby wznowić działanie usługi, naciśnij **klawisz F5** lub kliknij pozycję **Kontynuuj**  >  **debugowanie.**
+
+Usuń punkt przerwania, umieszczając kursor w wierszu z punktem przerwania i naciskając **klawisz F9**.
+
+> [!NOTE]
+> Domyślnie zatrzymanie zadania debugowania odłącza również komputer dewelopera od klastra Kubernetes. To zachowanie można zmienić, zmieniając pole **Rozłącz** po debugowaniu na w sekcji Narzędzia debugowania `false` **Kubernetes** okna **dialogowego**  >  **Opcje** narzędzi. Po zaktualizowaniu tego ustawienia komputer dewelopera pozostanie połączony po zatrzymaniu i rozpoczęciu debugowania. Aby odłączyć komputer dewelopera od klastra, kliknij przycisk **Rozłącz** na pasku narzędzi.
 >
->![Zrzut ekranu przedstawiający opcje debugowania Kubernetes](media/bridge-to-kubernetes/kubernetes-debugging-options.png)
+>![Zrzut ekranu przedstawiający opcje debugowania rozwiązania Kubernetes](media/bridge-to-kubernetes/kubernetes-debugging-options.png)
 
 ## <a name="additional-configuration"></a>Dodatkowa konfiguracja
 
-Mostek do Kubernetes może obsługiwać ruch routingu i replikować zmienne środowiskowe bez żadnej dodatkowej konfiguracji. Jeśli musisz pobrać wszystkie pliki, które są zainstalowane do kontenera w klastrze Kubernetes, na przykład plik ConfigMap, możesz utworzyć, `KubernetesLocalProcessConfig.yaml` Aby pobrać te pliki na komputer deweloperski. Aby uzyskać więcej informacji, zobacz [Używanie KubernetesLocalProcessConfig. YAML w celu uzyskania dodatkowej konfiguracji programu dla mostka do Kubernetes][kubernetesLocalProcessConfig-yaml].
+Bridge to Kubernetes może obsługiwać ruch routingu i replikowanie zmiennych środowiskowych bez żadnej dodatkowej konfiguracji. Jeśli musisz pobrać pliki zainstalowane w kontenerze w klastrze Kubernetes, takie jak plik ConfigMap, możesz utworzyć plik , aby pobrać te pliki na `KubernetesLocalProcessConfig.yaml` komputer dewelopera. Aby uzyskać więcej informacji, zobacz [Using KubernetesLocalProcessConfig.yaml (Używanie pliku KubernetesLocalProcessConfig.yaml),][kubernetesLocalProcessConfig-yaml]aby uzyskać dodatkową konfigurację za pomocą pliku Bridge to Kubernetes .
 
-## <a name="using-logging-and-diagnostics"></a>Korzystanie z funkcji rejestrowania i diagnostyki
+## <a name="using-logging-and-diagnostics"></a>Korzystanie z rejestrowania i diagnostyki
 
-Dzienniki diagnostyczne znajdują się w `Bridge to Kubernetes` katalogu *tymczasowym* komputera deweloperskiego.
+Dzienniki diagnostyczne można znaleźć w katalogu w katalogu `Bridge to Kubernetes` *TEMP* komputera dewelopera.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się, jak działa mostek Kubernetes.
+Dowiedz się, Bridge to Kubernetes działa.
 
 > [!div class="nextstepaction"]
 > [Jak działa Mostek na platformę Kubernetes](overview-bridge-to-kubernetes.md)

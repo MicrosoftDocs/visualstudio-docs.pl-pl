@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a474a81ea70276ecee54beb8e82ab85afdb225b9
-ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
+ms.openlocfilehash: 23c4fcc02f94f5987ccbfd6c445188990db43de0
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "113038645"
+ms.locfileid: "113046082"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w Visual Studio
 
@@ -32,8 +32,6 @@ Aby uzyskać listę typowych skrótów klawiaturowych i inne informacje o produk
 - [Wskazówki dotyczące produktywności](../ide/productivity-features.md).
 
 Aby uzyskać więcej informacji na temat [](../ide/reference/accessibility-tips-and-tricks.md) ułatwień dostępu w Visual Studio, zobacz Porady i wskazówki dotyczące ułatwień dostępu oraz [Porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
-
-
 
 ## <a name="most-popular-keyboard-shortcuts"></a>Popularne skróty klawiaturowe
 
@@ -164,7 +162,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |--------------| - |
 |View.ClassView|**Ctrl+Shift+C**|
 |View.EditLabel|**F2**|
-|View.ErrorList|**Ctrl+, \\ Ctrl+E**<br /><br />lub **Ctrl+, \\ E**|
+|View.ErrorList|**Ctrl+, \\ Ctrl+E**<br /><br />lub **Ctrl+ \\ , E**|
 |View.NavigateBackward|**Ctrl+-**|
 |View.NavigateForward|**Ctrl+Shift+-**|
 |View.ObjectBrowser|**Ctrl+Alt+J**|
@@ -172,7 +170,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl+Alt+S**|
-|View.ShowSmartTag|**Ctrl+.**<br /><br />lub **Shift+Alt+F10** [Widok projektu edytora HTML]|
+|View.ShowSmartTag|**Ctrl+.**<br /><br />lub **Shift+Alt+F10** [Widok projektowy edytora HTML]|
 |View.SolutionExplorer|**Ctrl+Alt+L**|
 |View.TfsTeamExplorer|**Ctrl+, \\ Ctrl+M**|
 |View.Toolbox|**Ctrl+Alt+X**|
@@ -192,7 +190,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 
 ## <a name="global-shortcuts"></a>Skróty globalne
 
-Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy dowolne Visual Studio okno ma fokus.
+Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy Visual Studio okno ma fokus.
 
 - [Analiza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -216,7 +214,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 - [Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
 - [Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
 - [Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
-- [Menu kontekstowe team foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Menu kontekstowe team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
@@ -540,7 +538,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+, \\ Ctrl+R**|
-|View.Backward|**Alt+Strzałka w lewo** (funkcje inne niż View.NavigateBackward w edytorze tekstów)|
+|View.Backward|**Alt+Strzałka w lewo** (funkcje różnią się od funkcji View.NavigateBackward w edytorze tekstów)|
 |View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
 |View.BrowseNext|**Ctrl+Shift+1**|
 |View.BrowsePrevious|**Ctrl+Shift+2**|

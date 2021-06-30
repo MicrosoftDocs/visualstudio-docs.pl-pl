@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253c7f106f1d139f694fea3d469385f200c84029
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b3f5aa141d73879e61a06e7a2b19f03bd53243a7
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903115"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046030"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Uruchamianie programu Visual Studio przy użyciu DTE
 
@@ -35,7 +35,7 @@ Aby zobaczyć, jak kod uruchamia się w akcji, utwórz projekt, korzystając z p
 
 4. Wklej [przykładowy kod](#example-code) do pliku *Program.cs.*
 
-5. Naciśnij **klawisz F5,** aby uruchomić program. Przed zamknięciem Visual Studio 2019 r. powinna zostać otwarta.
+5. Naciśnij **klawisz F5,** aby uruchomić program. Przed zamknięciem Visual Studio 2019 r. powinien zostać wyświetlony czas otwarcia.
 
 ## <a name="example-code"></a>Przykładowy kod
 
@@ -158,10 +158,7 @@ namespace ConsoleLauncherApp
             {
                 ISetupInstance[] setupInstances = new ISetupInstance[1];
                 enumerator.Next(1, setupInstances, out count);
-                if (count == 1 &&
-                    setupInstances != null &&
-                    setupInstances.Length == 1 &&
-                    setupInstances[0] != null)
+                if (count == 1 && setupInstances[0] != null)
                 {
                     yield return setupInstances[0];
                 }
@@ -179,9 +176,6 @@ namespace ConsoleLauncherApp
         {
             [DllImport("ole32.dll")]
             public static extern int CreateBindCtx(uint reserved, out IBindCtx ppbc);
-
-            [DllImport("ole32.dll")]
-            public static extern void GetRunningObjectTable(int reserved, out IRunningObjectTable prot);
         }
     }
 }
