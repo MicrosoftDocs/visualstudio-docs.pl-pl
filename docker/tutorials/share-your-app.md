@@ -1,44 +1,43 @@
 ---
 title: 'Samouczek platformy Docker — część 3: udostępnianie aplikacji'
-description: Opisuje sposób udostępniania obrazów platformy Docker przy użyciu rejestru usługi Docker Hub.
+description: Opisuje sposób udostępniania obrazów platformy Docker przy użyciu Docker Hub rejestru.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d64d10c7abefc14f31c39c3b8397e95cec67e9f4
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061787"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222789"
 ---
 # <a name="share-your-app"></a>Udostępnianie aplikacji
 
-Teraz, po zbudowaniu obrazu, udostępnij go! Aby udostępnić obrazy platformy Docker, należy użyć rejestru platformy Docker. Domyślnym rejestrem jest Aparat Docker Hub i jest to miejsce, w którym pochodzą wszystkie z użytych obrazów.
+Teraz, gdy sbudowaliśmy obraz, udostępnijmy go! Aby udostępnić obrazy platformy Docker, należy użyć rejestru platformy Docker. Rejestr domyślny jest Docker Hub i jest to miejsce, z którego pochodzą wszystkie użyte przez nas obrazy.
 
-## <a name="create-a-repo"></a>Tworzenie repozytorium
+## <a name="create-a-repo"></a>Tworzenie repo
 
-Aby wypchnąć obraz, najpierw należy utworzyć repozytorium w usłudze Docker Hub.
+Aby wypchnąć obraz, najpierw musisz utworzyć repo na Docker Hub.
 
-1. Przejdź do [centrum platformy Docker](https://hub.docker.com/signup/msftedge?utm_source=msftedge) i zaloguj się, jeśli jest to konieczne.
+1. Przejdź do [Docker Hub](https://hub.docker.com/signup/msftedge?utm_source=msftedge) i w razie potrzeby zaloguj się.
 
-1. Kliknij przycisk **Utwórz repozytorium** .
+1. Kliknij przycisk **Create Repository (Utwórz repozytorium).**
 
-1. W polu Nazwa repozytorium Użyj `getting-started` . Upewnij się, że widoczność jest `Public` .
+1. Jako nazwę repo użyj `getting-started` . Upewnij się, że dla ustawienia Widoczność jest widoczna . `Public`
 
-1. Kliknij przycisk **Utwórz** .
+1. Kliknij przycisk **Utwórz.**
 
-Jeśli zobaczysz po prawej stronie strony, zobaczysz sekcję o nazwie **Docker Commands**. Zapewnia to przykładowe polecenie, które należy uruchomić, aby przeprowadzić wypychanie do tego repozytorium.
+Jeśli spojrzysz po prawej stronie, zobaczysz sekcję o nazwie **Polecenia platformy Docker**. Spowoduje to przykładowe polecenie, które należy uruchomić, aby wypchnąć do tego repo.
 
-![Polecenie Docker z przykładem push](media/push-command.png)
+![Polecenie platformy Docker z przykładem wypychania](media/push-command.png)
 
 ## <a name="push-the-image"></a>Wypychanie obrazu
 
-1. W wierszu polecenia spróbuj uruchomić polecenie push w usłudze Docker Hub. Należy pamiętać, że polecenie będzie używać przestrzeni nazw, a nie "Docker".
+1. W wierszu polecenia spróbuj uruchomić polecenie wypychania, które jest Docker Hub. Pamiętaj, że polecenie będzie używać przestrzeni nazw, a nie "docker".
 
     ```plaintext
     $ docker push docker/getting-started
@@ -46,57 +45,57 @@ Jeśli zobaczysz po prawej stronie strony, zobaczysz sekcję o nazwie **Docker C
     An image does not exist locally with the tag: docker/getting-started
     ```
 
-    Dlaczego Wystąpił błąd? Polecenie push szuka obrazu o nazwie Docker/Find-Started, ale go nie znaleziono. Jeśli uruchomisz `docker image ls` program, nie zobaczysz jednego z nich.
+    Dlaczego zakończyło się niepowodzeniem? Polecenie wypychania szukało obrazu o nazwie docker/getting-started, ale nie znalazło go. Jeśli uruchamiasz `docker image ls` , nie zobaczysz też jednego z nich.
 
-    Aby rozwiązać ten problem, musisz mieć "tag" istniejący utworzony wcześniej obraz, aby nadać mu inną nazwę.
+    Aby rozwiązać ten problem, musisz "oznaczyć" istniejący obraz, który sbudowaliśmy, aby nadać mu inną nazwę.
 
-1. Zaloguj się do usługi Docker Hub przy użyciu polecenia `docker login -u <username>` .
+1. Zaloguj się do aplikacji Docker Hub za pomocą polecenia `docker login -u <username>` .
 
-1. Użyj `docker tag` polecenia, aby nadać `getting-started` obrazowi nową nazwę. Pamiętaj, aby zamienić go na `<username>` identyfikator platformy Docker.
+1. Użyj polecenia `docker tag` , aby nadać `getting-started` obrazowi nową nazwę. Pamiętaj, aby zamienić `<username>` się z identyfikatorem platformy Docker.
 
     ```bash
     docker tag getting-started <username>/getting-started
     ```
 
-1. Teraz spróbuj ponownie wykonać polecenie push. Jeśli kopiujesz wartość z usługi Docker Hub, możesz usunąć `tagname` część, ponieważ nie dodano znacznika do nazwy obrazu. Jeśli nie określisz znacznika, Docker użyje tagu o nazwie `latest` .
+1. Teraz spróbuj ponownie wykonać polecenie wypychania. Jeśli kopiujesz wartość z Docker Hub, możesz upuścić część, ponieważ nie dodasz `tagname` tagu do nazwy obrazu. Jeśli nie określisz tagu, docker użyje tagu o nazwie `latest` .
 
     ```bash
     docker push <username>/getting-started
     ```
 
-    Zamiast wiersza polecenia, można również kliknąć prawym przyciskiem myszy tag obrazu w sekcji **obrazy** w widoku platformy Docker, a następnie wybrać polecenie **wypchnięcie...**, a następnie wybrać polecenie **Połącz rejestr...** , a następnie pozycję **Docker Hub**.
+    Zamiast wiersza polecenia możesz również kliknąć prawym przyciskiem myszy  tag obrazu w sekcji Obrazy w widoku platformy Docker, wybrać polecenie Wypchnąć..., a następnie wybrać pozycję Połączenie **registry..., a** następnie wybrać **Docker Hub**. 
 
-## <a name="run-the-image-on-a-new-instance"></a>Uruchamianie obrazu na nowym wystąpieniu
+## <a name="run-the-image-on-a-new-instance"></a>Uruchamianie obrazu w nowym wystąpieniu
 
-Teraz, gdy obraz został skompilowany i wypychany do rejestru, spróbuj uruchomić aplikację na zupełnie nowym wystąpieniu, które nigdy nie widziało tego obrazu kontenera! W tym celu użyjesz programu Play z platformą Docker.
+Teraz, gdy obraz został sbudowaną i wypchniętą do rejestru, spróbuj uruchomić aplikację w zupełnie nowym wystąpieniu, które nigdy nie widziało tego obrazu kontenera. W tym celu użyjemy funkcji Play with Docker.
 
-1. Otwórz przeglądarkę, aby [zagrać z platformą Docker](http://play-with-docker.com).
+1. Otwórz przeglądarkę, aby [odtworzyć za pomocą platformy Docker.](http://play-with-docker.com)
 
-1. Zaloguj się przy użyciu konta centrum platformy Docker.
+1. Zaloguj się przy użyciu Docker Hub konta.
 
-1. Po zalogowaniu kliknij link "+ Dodaj nowe wystąpienie" na pasku po lewej stronie. (Jeśli nie widzisz go, Zwiększ szerokość przeglądarki). Po kilku sekundach okno terminalu zostanie otwarte w przeglądarce.
+1. Po zalogowaniu kliknij link "+ DODAJ NOWE WYSTĄPIENIE" na pasku po lewej stronie. (Jeśli jej nie widzisz, przekszlij przeglądarkę). Po kilku sekundach w przeglądarce zostanie otwarte okno terminalu.
 
-    ![Odtwórz przy użyciu Dodaj nowe wystąpienie platformy Docker](media/pwd-add-new-instance.png)
+    ![Odtwarzanie przy użyciu platformy Docker w celu dodania nowego wystąpienia](media/pwd-add-new-instance.png)
 
-1. Na terminalu Rozpocznij swoją świeżą aplikację.
+1. W terminalu uruchom świeżo wypchniętą aplikację.
 
     ```bash
     docker run -dp 3000:3000 <username>/getting-started
     ```
 
-    Obraz powinien zostać wyświetlony i ostatecznie uruchomiony.
+    Obraz powinien zostać ściągnięty i po pewnym czasie powinien zostać wyświetlony.
 
-1. Kliknij wskaźnik 3000, gdy pojawi się, a zobaczysz aplikację ze zmianami. Hura! Jeśli wskaźnik 3000 nie jest widoczny, możesz kliknąć przycisk **Otwórz port** i wpisać w 3000.
+1. Gdy się pojawia, kliknij wskaźnik 3000. Powinna zostać wyświetlony aplikacja z wprowadzonymi zmianami. Brawo! Jeśli znaczek 3000 nie jest pokazywany, możesz kliknąć przycisk Otwórz **port** i wpisać 3000.
 
 ## <a name="recap"></a>Podsumowanie
 
-W tej sekcji przedstawiono sposób udostępniania obrazów przez wypychanie ich do rejestru. Następnie poszło do nowego wystąpienia i udało Ci się uruchomić świeżo wypchnięcie obrazu. Jest to bardzo popularne w potokach CI, gdzie potok utworzy obraz i wypchnij go do rejestru, a następnie środowisko produkcyjne może użyć najnowszej wersji obrazu.
+W tej sekcji opisano sposób udostępniania obrazów przez wypychanie ich do rejestru. Następnie poszło do zupełnie nowego wystąpienia i udało Ci się uruchomić świeżo wypchnięty obraz. Jest to dość typowe w potokach ciasnych, w których potok utworzy obraz i wypchnie go do rejestru, a następnie środowisko produkcyjne może użyć najnowszej wersji obrazu.
 
-Teraz, po wykonaniu tych zadań, należy odwołać się na końcu ostatniej sekcji po ponownym uruchomieniu aplikacji. wszystkie elementy listy zadań do zrobienia zostały utracone. Oczywiście to nie jest doskonałe środowisko użytkownika, więc dowiesz się, jak można utrwalać dane przez ponowne uruchomienie.
+Teraz, gdy już wiesz, jak to zrobić, przypomnij sobie, że na końcu ostatniej sekcji, po ponownym uruchomieniu aplikacji, utracisz wszystkie elementy listy zadań do stracenia. Oczywiście nie jest to doskonałe środowisko użytkownika, dlatego dowiesz się, jak można utrwalić dane po ponownym uruchomieniu.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Kontynuuj pracę z samouczkiem.
+Kontynuuj pracę z samouczkiem!
 
 > [!div class="nextstepaction"]
 > [Utrwalanie bazy danych](persist-your-data.md)

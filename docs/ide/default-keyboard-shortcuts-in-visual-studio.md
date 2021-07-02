@@ -15,30 +15,36 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c4fcc02f94f5987ccbfd6c445188990db43de0
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: 182102d4de3a2acbec8be82f69650c708817e54c
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046082"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222971"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w Visual Studio
 
-Aby uzyskać dostęp do różnych [poleceń](reference/visual-studio-commands.md) i okien w programie Visual Studio, wybierz odpowiedni skrót klawiaturowy. Ta strona zawiera listę domyślnych skrótów poleceń dla **profilu Ogólne,** które być może zostały wybrane podczas instalacji Visual Studio. Niezależnie od wybranego profilu [](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) możesz zidentyfikować skrót do polecenia, otwierając okno dialogowe  Opcje, rozwijając węzeł Środowisko, a następnie wybierając pozycję **Klawiatura.**  Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
+Aby uzyskać dostęp do różnych poleceń i [okien](reference/visual-studio-commands.md) w programie Visual Studio, wybierz odpowiedni skrót klawiaturowy. Ta strona zawiera listę domyślnych skrótów poleceń dla **profilu Ogólne,** które być może zostały wybrane podczas instalu Visual Studio. Niezależnie od wybranego profilu [](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) możesz zidentyfikować skrót do polecenia, otwierając okno dialogowe  Opcje, rozwijając węzeł Środowisko, a następnie wybierając pozycję **Klawiatura**.  Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.
 
 Aby uzyskać listę typowych skrótów klawiaturowych i inne informacje o produktywności, zobacz:
 
 - [Porady dotyczące klawiatury](../ide/productivity-shortcuts.md)
-- [Wskazówki dotyczące produktywności](../ide/productivity-features.md).
+- [Porady dotyczące produktywności.](../ide/productivity-features.md)
 
 Aby uzyskać więcej informacji na temat [](../ide/reference/accessibility-tips-and-tricks.md) ułatwień dostępu w Visual Studio, zobacz Porady i wskazówki dotyczące ułatwień dostępu oraz [Porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
+<!---## Printable shortcut cheatsheet
+
+Download and print our Visual Studio shortcut cheatsheet.
+
+[ ![Visual Studio Cheatsheet.](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet.png)](media/default-keyboard-shortcuts-in-visual-studio/visual-studio-shortcut-cheatsheet-extended.png#lightbox)
+-->
 ## <a name="most-popular-keyboard-shortcuts"></a>Popularne skróty klawiaturowe
 
-Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono inaczej. Kontekst *globalny* oznacza, że skrót ma zastosowanie w dowolnym oknie narzędzi w Visual Studio.
+Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono inaczej. Kontekst *globalny* oznacza, że skrót ma zastosowanie w każdym oknie narzędzi w Visual Studio.
 
 > [!NOTE]
-> Skrót możesz [znaleźć w dowolnym](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) poleceniu, otwierając okno dialogowe Opcje, rozwijając węzeł **Środowisko,** a następnie wybierając pozycję **Klawiatura.** 
+> Możesz [odszukać skrót do](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dowolnego polecenia, otwierając okno dialogowe Opcje, rozwijając węzeł  **Środowisko,** a następnie wybierając pozycję **Klawiatura**.
 
 
 #### <a name="build-popular-shortcuts"></a>Kompilacja: popularne skróty
@@ -65,22 +71,22 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |Debug.Start|**F5**|
 |Debug.StartWithoutDebugging|**Ctrl+F5**|
 |Debug.StepInto|**F11**|
-|Debug.StepOut|**Shift+ F11**|
+|Debug.StepOut|**Shift + F11**|
 |Debug.StepOver|**F10**|
-|Debug.StopDebugging|**Shift+ F5**|
+|Debug.StopDebugging|**Shift+F5**|
 |Debug.ToggleBreakpoint|**F9**|
 
 #### <a name="edit-popular-shortcuts"></a>Edytuj: popularne skróty
 
 |Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
 |--------------| - |
-|Edit.BreakLine|**Wprowadź** tekst [Edytor tekstu, Projektant raportów, Projektant formularzy systemu Windows]<br /><br />lub **Shift+Enter** [Edytor tekstu]|
+|Edit.BreakLine|**Wprowadź** tekst [Edytor tekstu, Projektant raportów, Windows Forms Designer]<br /><br />lub **Shift+Enter** [Edytor tekstu]|
 |Edit.CollapseToDefinitions|**Ctrl+M,** **Ctrl+O** [Edytor tekstu]|
 |Edit.CommentSelection|**Ctrl+K,** **Ctrl+C** [Edytor tekstu]|
 |Edit.CompleteWord|**Alt+Strzałka w prawo** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K,** **W** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+W** [Projektant przepływu pracy]|
 |Edit.Copy|**Ctrl+C**<br /><br />lub **Ctrl+Insert**|
-|Edit.Cut|**Ctrl+X**<br /><br />lub **Shift +Delete**|
-|Edit.Delete|**Usuń** [Team Explorer]<br /><br />lub **Shift+Delete** [Diagram sekwencji, Diagram aktywności UML, Diagram warstwowy]<br /><br />lub **Ctrl+Delete** [Diagram klas]|
+|Edit.Cut|**Ctrl+X**<br /><br />lub **Shift+Delete**|
+|Edit.Delete|**Usuń** [Team Explorer]<br /><br />lub **Shift+Delete** [Diagram sekwencji, diagram aktywności UML, diagram warstwowy]<br /><br />lub **Ctrl+Delete** [Diagram klas]|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl+Shift+F**|
@@ -94,7 +100,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |Edit.GoToFindCombo|**Ctrl + D**|
 |Edit.GoToNextLocation|**F8**|
 |Edit.InsertSnippet|**Ctrl+K,** **Ctrl+X**|
-|Edit.InsertTab|**Tab** [Projektant raportów, Projektant formularzy systemu Windows, Edytor tekstu]|
+|Edit.InsertTab|**Tab** [Projektant raportów, Windows Forms Designer, Edytor tekstu]|
 |Edit.LineCut|**Ctrl+L** [Edytor tekstu]|
 |Edit.LineDownExtendColumn|**Shift+Alt+Strzałka w dół** [Edytor tekstu]|
 |Edit.LineOpenAbove|**Ctrl+Enter** [Edytor tekstu]|
@@ -109,15 +115,15 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |Edit.Replace|**Ctrl+H**|
 |Edit.SelectAll|**Ctrl+A**|
 |Edit.SelectCurrentWord|**Ctrl+W** [Edytor tekstu]|
-|Edit.SelectionCancel|**Esc** [Edytor tekstu, Projektant raportów, Projektant ustawień, Projektant formularzy systemu Windows, Edytor zasobów zarządzanych]|
+|Edit.SelectionCancel|**Esc** [Edytor tekstu, Projektant raportów, Ustawienia Designer, Windows Forms Designer, Edytor zasobów zarządzanych]|
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
-|Edit.TabLeft|**Shift+Tab** [Edytor tekstu, Projektant raportów, Windows Forms Edytor]|
+|Edit.TabLeft|**Shift+Tab** [Edytor tekstu, Projektant raportów, Windows Forms]|
 |Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L** [Edytor tekstu]|
 |Edit.ToggleBookmark|**Ctrl+K, Ctrl+K** [Edytor tekstu]|
 |Edit.ToggleCompletionMode|**Ctrl+Alt+Spacja** [Edytor tekstu]|
 |Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Edytor tekstu]|
 |Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Edytor tekstu]|
-|Edit.Undo|**Ctrl+Z**<br /><br />lub **Alt+Backspace**|
+|Edit.Undo|**Ctrl+Z**<br /><br />lub **Alt + Backspace**|
 |Edit.WordDeleteToEnd|**Ctrl+Delete** [Edytor tekstu]|
 |Edit.WordDeleteToStart|**Ctrl+Backspace** [Edytor tekstu]|
 
@@ -137,7 +143,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Shift+W**|
 
-#### <a name="project-popular-shortcuts"></a>Projekt: popularne skróty
+#### <a name="project-popular-shortcuts"></a>Project: popularne skróty
 
 |Polecenia|Skróty klawiaturowe [Konteksty specjalne]|
 |--------------| - |
@@ -146,13 +152,13 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 
 #### <a name="refactor-popular-shortcuts"></a>Refaktoryzacja: popularne skróty
 
-|Polecenie|Skrót klawiaturowy [Konteksty specjalne]|
+|Polecenie|Skrót klawiaturowy [konteksty specjalne]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
 
 #### <a name="tools-popular-shortcuts"></a>Narzędzia: popularne skróty
 
-|Polecenie|Skrót klawiaturowy [Konteksty specjalne]|
+|Polecenie|Skrót klawiaturowy [konteksty specjalne]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 
@@ -174,7 +180,7 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |View.SolutionExplorer|**Ctrl+Alt+L**|
 |View.TfsTeamExplorer|**Ctrl+, \\ Ctrl+M**|
 |View.Toolbox|**Ctrl+Alt+X**|
-|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Projektant ustawień]|
+|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Ustawienia Designer]|
 |View.ViewDesigner|**Shift+F7** [Widok źródła edytora HTML]|
 
 #### <a name="window-popular-shortcuts"></a>Okno: popularne skróty
@@ -198,7 +204,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 - [Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
-- [Menu kontekstowe projektu i rozwiązania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
+- [Project kontekstowe i menu kontekstowe rozwiązania](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
 - [Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
 - [Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
 - [Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
@@ -302,12 +308,12 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Debug.StepInto|**F11**|
 |Debug.StepIntoCurrentProcess|**Ctrl+Alt+F11**|
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
-|Debug.StepOut|**Shift + F11**|
+|Debug.StepOut|**Shift+ F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** (Podczas debugowania: wykonuje krok nad akcją)|
+|Debug.StepOver|**F10** (Podczas debugowania: wykonuje krok po kroku)|
 |Debug.StepOver|**F10 (Jeśli** nie debugowanie: rozpoczyna debugowanie i zatrzymuje się w pierwszym wierszu kodu użytkownika)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
-|Debug.StopDebugging|**Shift+F5**|
+|Debug.StopDebugging|**Shift+ F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
 |Debug.Tasks|**Ctrl+Shift+D, K**|
 |Debug.Threads|**Ctrl+Alt+H**|
@@ -346,7 +352,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Edit.FindinFiles|**Ctrl+Shift+F**|
 |Edit.FindNext|**F3**|
 |Edit.FindNextSelected|**Ctrl+F3**|
-|Edit.FindPrevious|**Shift + F3**|
+|Edit.FindPrevious|**Shift +F3**|
 |Edit.FindPreviousSelected|**Ctrl+Shift+F3**|
 |Edit.GenerateMethod|**Ctrl+K, Ctrl+M**|
 |Edit.GoTo|**Ctrl+G**|
@@ -450,10 +456,10 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Project.ClassWizard|**Ctrl+Shift+X**|
 |Project.Override|**Ctrl+Alt+Ins**|
 |Project.Previewchanges|**Alt+;** następnie **Alt + C**|
-|Project.Publishselectedfiles|**Alt+;** następnie **Alt + P**|
-|Project.Replaceselectedfilesfromserver|**Alt+;** następnie **Alt+ R**|
+|Project.Publishselectedfiles|**Alt+;** then **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+;** , **a następnie Alt+R**|
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menu kontekstowe projektu i rozwiązania
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Project i menu kontekstowe rozwiązania
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -488,7 +494,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Team.Git.GoToGitCommits|**Ctrl+0** (zero), **Ctrl+O** (litera 'O')<br /><br /> lub<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe team foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe team Foundation
 
 |Polecenia|Skróty klawiaturowe|
 |--------------| - |
@@ -538,7 +544,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+, \\ Ctrl+R**|
-|View.Backward|**Alt+Strzałka w lewo** (funkcje różnią się od funkcji View.NavigateBackward w edytorze tekstów)|
+|View.Backward|**Alt+Strzałka w lewo** (funkcje inne niż View.NavigateBackward w edytorze tekstów)|
 |View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
 |View.BrowseNext|**Ctrl+Shift+1**|
 |View.BrowsePrevious|**Ctrl+Shift+2**|
@@ -1082,7 +1088,7 @@ Skróty specyficzne dla tego kontekstu to:
 | Edit.GotoNextIssueinFile | **Alt+PgDn** |
 | Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
-| Edit.IncreaseFilterLevel | **Alt +.** |
+| Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **CTRL + I** |
 | Edit.InsertCaretsatAllMatching | **Shift+Alt+;** |
 | Edit.InsertNextMatchingCaret | **Shift+Alt+.** |

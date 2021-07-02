@@ -1,44 +1,43 @@
 ---
 title: Samouczek platformy Docker — co dalej
-description: W tym artykule opisano opcje rozszerzania aplikacji platformy Docker z aranżacją przy użyciu natywnych projektów rozwiązania do obsługi rozwiązań w chmurze.
+description: Opisuje opcje rozszerzania aplikacji platformy Docker za pomocą aranżacji przy użyciu projektów Cloud Native Computing Foundation.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e777d80f44c9a11e4d2a893c968d33e348ca442a
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841656"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222698"
 ---
 # <a name="whats-next"></a>Co dalej
 
-Mimo że korzystasz z samouczka, nadal znajdziesz więcej informacji na temat kontenerów.
-Nie zamierzasz tutaj przeszukać głębokiej szczegółowe tutaj, ale Oto kilka innych obszarów, które chcesz zobaczyć dalej.
+Mimo że wszystko jest gotowe do pracy z samouczkiem, nadal możesz dowiedzieć się o wielu innych kontenerach.
+Nie zamierzasz tutaj zagłębiać się w to, ale oto kilka innych obszarów, które należy przyjrzeć się następnej!
 
 ## <a name="container-orchestration"></a>Aranżacja kontenerów
 
-Uruchomione kontenery w środowisku produkcyjnym są trudne. Nie chcesz zalogować się do maszyny i po prostu uruchomić program `docker run` lub `docker-compose up` . Czemu nie? Co się stanie, gdy kontenery są zachodzą? Jak skalować na kilku komputerach? Aranżacja kontenerów rozwiązuje ten problem. Narzędzia, takie jak Kubernetes, Swarm, Nomad i AKS, pomagają rozwiązać ten problem, a wszystko to na nieco różne sposoby.
+Uruchamianie kontenerów w środowisku produkcyjnym jest trudne. Nie chcesz logować się do maszyny i po prostu uruchom plik `docker run` lub `docker-compose up` . Czemu nie? Co się stanie, jeśli kontenery zginą? Jak można skalować na kilku maszynach? Aranżacja kontenerów rozwiązuje ten problem. Wszystkie narzędzia, takie jak Kubernetes, Swarm, Nomad i AKS, pomagają rozwiązać ten problem w nieco inny sposób.
 
-Ogólnym pomysłem jest to, że masz "menedżerów", którzy otrzymują **oczekiwany stan**. Ten stan może mieć wartość "chcę uruchomić dwa wystąpienia mojej aplikacji sieci Web i uwidocznić port 80". Menedżerowie sprawdzają następnie wszystkie maszyny w klastrze i delegowanie pracy do węzłów "proces roboczy". Menedżerowie oglądają zmiany (na przykład zamykające kontenery), a następnie pracują w celu zapewnienia **rzeczywistego stanu** odzwierciedlają oczekiwany stan.
+Ogólnie rzecz biorąc, masz "menedżerów", którzy otrzymują **oczekiwany stan**. Może to być stan "Chcę uruchomić dwa wystąpienia mojej aplikacji internetowej i uwidocznić port 80". Następnie menedżerowie przyjrzyją się wszystkim maszynom w klastrze i delegują pracę do węzłów "procesu roboczego". Menedżerowie obserwują zmiany (takie jak zamykanie kontenera), a następnie pracują nad tym, aby rzeczywisty stan **odzwierciedlał** oczekiwany stan.
 
-## <a name="cloud-native-computing-foundation-projects"></a>Natywne projekty obliczeniowe w chmurze
+## <a name="cloud-native-computing-foundation-projects"></a>Projekty Cloud Native Computing Foundation
 
-CNCF to niezależny od dostawcy dom dla różnych projektów typu "open source", w tym Kubernetes, Prometheus, wysłannika, konsolidatora, NAT i wiele innych. Możesz wyświetlić [stopniowane i inkubowane projekty tutaj](https://www.cncf.io/projects/) i cały [CNCF poziomą](https://landscape.cncf.io/). Istnieje wiele projektów pomagających w rozwiązywaniu problemów dotyczących monitorowania, rejestrowania, zabezpieczeń, rejestrów obrazów, wiadomości i innych elementów.
+THE EMAF to neutralny dla dostawcy dom dla różnych projektów typu open source, w tym Kubernetes, Prometheus, Envoy, Linkerd, NATS i innych. W tym miejscu możesz przejrzeć stopniowane i [inkubowane](https://www.cncf.io/projects/) projekty oraz cały [krajobraz CYKLUŚNiowy tutaj.](https://landscape.cncf.io/) Istnieje wiele projektów, które ułatwiają rozwiązywanie problemów związanych z monitorowaniem, rejestrowaniem, zabezpieczeniami, rejestrami obrazów, wiadomościami i nie tylko.
 
-Tak więc, jeśli dopiero zaczynasz Tworzenie aplikacji na poziomie kontenera i w chmurze, Witamy! Połącz się ze społecznością, zadawaj pytania i Kontynuuj naukę. Przyjemnościąmy!
+Jeśli więc jesteś nowym użytkownikiem krajobrazu kontenerów i tworzenia aplikacji natywnych dla chmury, zapraszamy! Połącz się ze społecznością, zadawaj pytania i ucz się dalej. Cieszymy się, że Cię masz!
 
-## <a name="working-with-docker-in-vs-code"></a>Praca z platformą Docker w VS Code
+## <a name="working-with-docker-in-vs-code"></a>Praca z programem Docker w programie VS Code
 
-Dowiedz się więcej o korzystaniu z rozszerzenia VS Code Docker:
+Dowiedz się więcej na temat używania VS Code platformy Docker:
 
-- [Przegląd rozszerzenia VS Code Docker](https://code.visualstudio.com/docs/containers/overview)
+- [VS Code Omówienie rozszerzenia platformy Docker](https://code.visualstudio.com/docs/containers/overview)
 - [Wprowadzenie do Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [Wprowadzenie do języka Python](https://code.visualstudio.com/docs/containers/quickstart-python)
-- [Wprowadzenie do platformy .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
-- [Debugowanie aplikacji w kontenerze](https://code.visualstudio.com/docs/containers/debug-common)
+- [Rozpoczynanie pracy z programem .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
+- [Debugowanie aplikacji konteneryzowanych](https://code.visualstudio.com/docs/containers/debug-common)

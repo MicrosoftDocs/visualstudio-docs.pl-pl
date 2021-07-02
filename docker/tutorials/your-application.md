@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042950"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222815"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Kompilowanie i uruchamianie przykładowej aplikacji z todo
 
@@ -26,9 +25,9 @@ W tym momencie twój zespół programistów jest dość mały i po prostu budowa
 
 ## <a name="get-the-app"></a>Pobierz aplikację
 
-Przed uruchomieniem aplikacji musisz pobrać kod źródłowy aplikacji na swoją maszynę. W przypadku rzeczywistych projektów zwykle klonowane jest repo. Jednak w tym samouczku utworzono plik ZIP zawierający aplikację.
+Przed uruchomieniem aplikacji należy pobrać kod źródłowy aplikacji na swoją maszynę. W przypadku rzeczywistych projektów zwykle klonowane jest repo. Jednak w tym samouczku utworzono plik ZIP zawierający aplikację.
 
-1. Upewnij się, że masz Docker for Windows lub Docker Community Edition zainstalowane na komputerze lokalnym. Zobacz [Docker for Windows instalacji systemu](https://docs.docker.com/docker-for-windows/install/). Proces instalacji udostępnia plik ZIP zawierający przykład pod adresem localhost.
+1. Upewnij się, że na komputerze lokalnym zainstalowano platformę Docker for Windows lub Docker Community Edition. Zobacz [dokumentację dotyczącą instalacji Windows Docker.](https://docs.docker.com/docker-for-windows/install/) Proces instalacji udostępnia plik ZIP zawierający przykład pod adresem localhost.
 
 1. Pobierz źródło aplikacji z repo [platformy Docker.](https://github.com/docker/getting-started) Możesz pobrać plik ZIP dla tego repo. Aby pobrać plik ZIP, użyj zielonego **przycisku Kod** i wybierz **pozycję Pobierz plik ZIP.** Otwórz plik ZIP i wyodrębnij wszystko, aby wyodrębnić źródło aplikacji z folderu *aplikacji* do folderu na dysku twardym.
 
@@ -36,13 +35,13 @@ Przed uruchomieniem aplikacji musisz pobrać kod źródłowy aplikacji na swoją
 
 1. Po wyodrębnienia użyj ulubionego edytora kodu, aby otworzyć projekt. Jeśli potrzebujesz edytora, możesz użyć Visual Studio Code [.](https://code.visualstudio.com/) Powinny zostać wyświetlony `package.json` podkatalogi i ( `src` i `spec` ).
 
-    ![Zrzut ekranu Visual Studio Code z załadowaną aplikacją](media/ide-screenshot.png)
+    ![Zrzut ekranu Visual Studio Code otwarty z załadowaną aplikacją](media/ide-screenshot.png)
 
 ## <a name="building-the-apps-container-image"></a>Budowania obrazu kontenera aplikacji
 
 Aby skompilować aplikację, należy użyć `Dockerfile` . Plik Dockerfile jest po prostu skryptem tekstowym z instrukcjami używanymi do tworzenia obrazu kontenera. Jeśli pliki Dockerfile zostały utworzone wcześniej, w poniższym pliku Dockerfile może być kilka wad. Ale nie martw się! Przejmiemy je.
 
-1. Utwórz plik o `Dockerfile` nazwie w tym samym folderze co plik o `package.json` następującej zawartości.
+1. Utwórz plik o nazwie `Dockerfile` w tym samym folderze co plik o `package.json` następującej zawartości.
 
     ```dockerfile
     FROM node:12-alpine
@@ -52,7 +51,7 @@ Aby skompilować aplikację, należy użyć `Dockerfile` . Plik Dockerfile jest 
     CMD ["node", "/app/src/index.js"]
     ```
 
-    Sprawdź, czy plik `Dockerfile` nie ma rozszerzenia pliku, takiego jak `.txt` . Niektóre edytory mogą automatycznie dołączać to rozszerzenie pliku, co spowoduje błąd w następnym kroku.
+    Sprawdź, czy plik nie `Dockerfile` ma rozszerzenia pliku, takiego jak `.txt` . Niektóre edytory mogą automatycznie dołączać to rozszerzenie pliku, co spowoduje błąd w następnym kroku.
 
 1. Jeśli jeszcze tego nie zrobiono, otwórz terminal i przejdź do `app` katalogu za pomocą . `Dockerfile` Teraz skompilowanie obrazu kontenera przy użyciu `docker build` polecenia .
 
@@ -62,7 +61,7 @@ Aby skompilować aplikację, należy użyć `Dockerfile` . Plik Dockerfile jest 
 
     Alternatywnie możesz również kliknąć prawym przyciskiem myszy plik Dockerfile i wybrać polecenie Build Image... (Skompilować **obraz),a** następnie określić tag w wierszu polecenia.
 
-    To polecenie użyło pliku Dockerfile do skompilowania nowego obrazu kontenera. Być może udało Ci się zauważyć, że pobrano wiele "warstw". Jest to spowodowane tym, że poinstruowany konstruktor, że chcesz rozpocząć od `node:12-alpine` obrazu. Jednak ponieważ nie masz go na swojej maszynie, ten obraz musiał zostać pobrany.
+    To polecenie użyło pliku Dockerfile do skompilowania nowego obrazu kontenera. Być może udało Ci się zauważyć, że pobrano wiele "warstw". Wynika to z tego, że poinstruowany konstruktor, że chcesz rozpocząć od `node:12-alpine` obrazu. Jednak ponieważ nie masz go na swojej maszynie, ten obraz musiał zostać pobrany.
 
     Po pobraniu obrazu został on skopiowany w aplikacji i użyty do zainstalowania `yarn` zależności aplikacji. Dyrektywa `CMD` określa domyślne polecenie do uruchomienia podczas uruchamiania kontenera z tego obrazu.
 
@@ -87,9 +86,9 @@ Teraz, gdy masz obraz, uruchom aplikację. Aby to zrobić, użyj `docker run` po
 
     ![Pusta lista zadań do zdjęć](media/todo-list-empty.png)
 
-1. Dodaj element lub dwa i zobacz, że działa zgodnie z oczekiwaniami. Możesz oznaczyć elementy jako ukończone i usunąć elementy. Frontonie pomyślnie przechowują elementy w za zaplecza. Dosyć szybko i łatwo, prawda?
+1. Dodaj element lub dwa i zobacz, że działa zgodnie z oczekiwaniami. Elementy można oznaczać jako ukończone i usuwać. Frontonia pomyślnie przechowuje elementy w za zaplecza. Dosyć szybko i łatwo, prawda?
 
-W tym momencie powinien być uruchomiony menedżer listy zadań do rzeczy do teraz z kilkoma elementami, wszystko sbudowaną przez Ciebie. Teraz dokonajmy kilku zmian i dowiedzmy się więcej na temat zarządzania kontenerami.
+W tym momencie powinien być uruchomiony menedżer listy zadań do rzeczy do uruchomienia z kilkoma elementami, wszystko sbudowaną przez Ciebie. Teraz dokonajmy kilku zmian i dowiedzmy się więcej na temat zarządzania kontenerami.
 
 Jeśli szybko przyjrzysz się rozszerzeniu VS Code, powinny zostać teraz uruchomione dwa kontenery (ten samouczek i twój nowo uruchomiony kontener aplikacji)!
 

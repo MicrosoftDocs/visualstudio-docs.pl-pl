@@ -1,44 +1,43 @@
 ---
-title: 'Samouczek platformy Docker — część 6: aplikacje z obsługą kontenera'
+title: 'Samouczek platformy Docker — część 6: aplikacje z wieloma kontenerami'
 description: Jak skonfigurować sieć między kontenerami i dodać kontener dla bazy danych MySQL.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d23d1f5d94729741630ee76263fd5b32041e9cfd
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841786"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222919"
 ---
 # <a name="multi-container-apps"></a>Aplikacje z wieloma kontenerami
 
-Do tego momentu pracujesz z aplikacjami z jednym kontenerem. Jednak teraz dodasz MySQL do stosu aplikacji. Poniższe pytania często się pojawiają — "gdzie będzie działać MySQL? Zainstaluj ją w tym samym kontenerze lub Uruchom osobno? ". Ogólnie rzecz biorąc, **każdy kontener powinien wykonać jedną czynność i zrobić to dobrze.** Kilka przyczyn:
+Do tej chwili pracujesz z aplikacjami z jednym kontenerem. Teraz jednak dodasz program MySQL do stosu aplikacji. Często pojawia się następujące pytanie: "Gdzie będzie działać program MySQL? Zainstaluj go w tym samym kontenerze lub uruchom go oddzielnie?". Ogólnie rzecz biorąc, **każdy kontener powinien wykonać jedną rzecz i zrobić to dobrze.** Z kilku powodów:
 
-- Istnieje dobrym prawdopodobieństwem, że trzeba będzie skalować interfejsy API i frontony inaczej niż bazy danych
-- Oddzielne kontenery umożliwiają przedzielenie wersji i aktualizacji na wersje
-- W przypadku korzystania z lokalnego kontenera bazy danych może być konieczne użycie usługi zarządzanej dla bazy danych w środowisku produkcyjnym. Nie chcesz dostarczać aparatu bazy danych do aplikacji.
-- Uruchomienie wielu procesów wymaga Menedżera procesów (kontener rozpocznie się tylko jeden proces), co zwiększa złożoność uruchamiania/zamykania kontenera.
+- Istnieje dobra szansa, że trzeba będzie skalować interfejsy API i frontonie inaczej niż bazy danych
+- Oddzielne kontenery umożliwiają izolowanie wersji i aktualizacji wersji
+- Chociaż możesz używać kontenera dla bazy danych lokalnie, możesz użyć usługi zarządzanej dla bazy danych w środowisku produkcyjnym. Nie chcesz wtedy dostarczać aparatu bazy danych wraz z aplikacją.
+- Uruchomienie wielu procesów wymaga menedżera procesów (kontener uruchamia tylko jeden proces), co zwiększa złożoność uruchamiania/zamykania kontenera.
 
-Z tego powodu. W związku z tym zaktualizujesz aplikację w taki sposób, aby działała następująco:
+Jest też więcej powodów. Dlatego zaktualizuj aplikację, aby działała w ten sposób:
 
-![Aplikacja do wykonania połączona z kontenerem MySQL](media/multi-app-architecture.png)
+![Aplikacja Todo połączona z kontenerem MySQL](media/multi-app-architecture.png)
 
 ## <a name="container-networking"></a>Sieć kontenerów
 
-Należy pamiętać, że kontenery są domyślnie uruchamiane w izolacji i nie wiedzą o innych procesach i kontenerach na tym samym komputerze. Jak to zrobić, aby umożliwić komunikację jednego kontenera z innym? Odpowiedź to **Sieć**. Teraz nie musisz być inżynierem sieciowym (hura!). Po prostu Zapamiętaj tę regułę...
+Należy pamiętać, że kontenery są domyślnie uruchamiane w izolacji i nie mają żadnych informacji o innych procesach lub kontenerach na tym samym komputerze. Jak więc zezwolić jedneowi kontenerowi na rozmowę z innym? Odpowiedzią jest **sieć**. Teraz nie musisz być inżynierem sieci (hooray!). Po prostu zapamiętaj tę regułę...
 
 > [!NOTE]
-> Jeśli dwa kontenery znajdują się w tej samej sieci, mogą komunikować się ze sobą. Jeśli nie, nie mogą.
+> Jeśli dwa kontenery znajdują się w tej samej sieci, mogą ze sobą rozmawiać. Jeśli tak nie jest, nie mogą.
 
-## <a name="start-mysql"></a>Uruchom MySQL
+## <a name="start-mysql"></a>Uruchamianie programu MySQL
 
-Istnieją dwa sposoby umieszczania kontenera w sieci: należy przypisać je na początku lub połączyć istniejący kontener. Na razie najpierw utworzysz sieć i Dołącz kontener MySQL przy uruchamianiu.
+Kontener można umieścić w sieci na dwa sposoby: przypisać go na początku lub połączyć z istniejącym kontenerem. Na razie najpierw utworzysz sieć i dołączysz kontener MySQL podczas uruchamiania.
 
 1. Utwórz sieć.
 
@@ -46,7 +45,7 @@ Istnieją dwa sposoby umieszczania kontenera w sieci: należy przypisać je na p
     docker network create todo-app
     ```
 
-1. Uruchom kontener MySQL i dołącz go do sieci. Definiujemy również kilka zmiennych środowiskowych, których baza danych będzie używać w celu zainicjowania bazy danych programu (zobacz sekcję "zmienne środowiskowe" w programie [MySQL Docker Hub list](https://hub.docker.com/_/mysql/)) (Zastąp ` \ ` znaki `` ` `` w programie Windows PowerShell).
+1. Uruchom kontener MySQL i dołącz go do sieci. Zdefiniujemy również kilka zmiennych środowiskowych, których baza danych użyje do zainicjowania bazy danych (zobacz sekcję "Zmienne środowiskowe" na liście [mySQL Docker Hub](https://hub.docker.com/_/mysql/)) (zastąp znaki znakiem w ciągu ` \ ` `` ` `` Windows PowerShell).
 
     ```bash
     docker run -d \
@@ -57,18 +56,18 @@ Istnieją dwa sposoby umieszczania kontenera w sieci: należy przypisać je na p
         mysql:5.7
     ```
 
-    Zobaczysz również, że określono `--network-alias` flagę. Powrócimy do tego przez chwilę.
+    Zobaczysz również, że określono `--network-alias` flagę . Wrócimy do tego za chwilę.
 
     > [!TIP]
-    > Zauważysz, że używasz tutaj nazwy woluminu `todo-mysql-data` i instalujesz ją w lokalizacji, w której dane są przechowywane w usłudze `/var/lib/mysql` MySQL. Jednak nigdy nie uruchomiono `docker volume create` polecenia. Platforma Docker rozpoznaje, że chcesz użyć nazwanego woluminu i automatycznie utworzy ją.
+    > Zauważysz, że w tym miejscu używasz nazwy woluminu i dzieje się to w miejscu , w którym `todo-mysql-data` `/var/lib/mysql` mySQL przechowuje swoje dane. Jednak nigdy nie uruchomiono `docker volume create` polecenia . Docker rozpoznaje, że chcesz użyć nazwanego woluminu, i tworzy go automatycznie.
 
-1. Aby upewnić się, że baza danych została uruchomiona i działa, nawiąż połączenie z bazą danych i sprawdź, czy jest ona połączona.
+1. Aby upewnić się, że baza danych jest uruchomiona, połącz się z bazą danych i sprawdź, czy nawiąże połączenie.
 
     ```bash
     docker exec -it <mysql-container-id> mysql -p
     ```
 
-    Po wyświetleniu monitu o hasło wpisz **wpis tajny**. W programie MySQL Shell Utwórz listę baz danych i sprawdź, czy została wyświetlona `todos` baza danych.
+    Gdy pojawi się monit o hasło, wpisz wpis **tajny**. W powłoki MySQL wyświetl listę baz danych i sprawdź, czy baza danych jest `todos` wyświetlona.
 
     ```cli
     mysql> SHOW DATABASES;
@@ -89,27 +88,27 @@ Istnieją dwa sposoby umieszczania kontenera w sieci: należy przypisać je na p
     5 rows in set (0.00 sec)
     ```
 
-    Hura! Twoja `todos` baza danych jest gotowa do użycia.
+    Brawo! Masz bazę `todos` danych i jest ona gotowa do użycia.
 
-## <a name="connect-to-mysql"></a>Łączenie z bazą danych MySQL
+## <a name="connect-to-mysql"></a>Połączenie do mySQL
 
-Teraz, gdy już wiesz, że baza danych MySQL jest uruchomiona, użyjmy go! Ale pytanie to... Jaka? Jeśli uruchamiasz inny kontener w tej samej sieci, jak znaleźć kontener (Pamiętaj, że każdy kontener ma własny adres IP)?
+Teraz, gdy wiesz, że program MySQL jest uruchomiony i działa, użyjmy go! Ale pytanie brzmi... Jak? Jeśli uruchamiasz inny kontener w tej samej sieci, jak znaleźć kontener (pamiętaj, że każdy kontener ma własny adres IP)?
 
-Aby to zrobić, zamierzasz korzystać z kontenera [nicolaka/](https://github.com/nicolaka/netshoot) , który dostarcza *wiele* narzędzi, które są przydatne do rozwiązywania problemów lub debugowania problemów z siecią.
+Aby to ustalić, użyjemy kontenera do rozwiązywania problemów z siecią, [który](https://github.com/nicolaka/netshoot) jest dostarczany z mnóstwem narzędzi przydatnych do rozwiązywania lub debugowania problemów z siecią. 
 
-1. Rozpocznij nowy kontener przy użyciu `nicolaka/netshoot` obrazu. Upewnij się, że połączenie jest nawiązywane z tą samą siecią.
+1. Uruchom nowy kontener przy użyciu `nicolaka/netshoot` obrazu. Pamiętaj, aby połączyć ją z tę samą siecią.
 
     ```bash
     docker run -it --network todo-app nicolaka/netshoot
     ```
 
-1. W kontenerze Użyj `dig` polecenia, które jest użytecznym NARZĘDZIEM DNS. Wyszukaj adres IP dla nazwy hosta `mysql` .
+1. Wewnątrz kontenera użyj polecenia `dig` , które jest przydatnym narzędziem DNS. Odszukaj adres IP dla nazwy hosta `mysql` .
 
     ```bash
     dig mysql
     ```
 
-    Otrzymasz dane wyjściowe podobne do tego...
+    Otrzymasz dane wyjściowe podobne do tych...
 
     ```text
     ; <<>> DiG 9.14.1 <<>> mysql
@@ -130,27 +129,27 @@ Aby to zrobić, zamierzasz korzystać z kontenera [nicolaka/](https://github.com
     ;; MSG SIZE  rcvd: 44
     ```
 
-    W sekcji "odpowiedź" zobaczysz `A` rekord dla programu `mysql` , który jest rozpoznawany jako `172.23.0.2` (adres IP prawdopodobnie będzie miał inną wartość). Chociaż `mysql` zwykle nie jest prawidłową nazwą hosta, Aparat Docker mógł go rozpoznać na adres IP kontenera, który miał ten alias sieci (należy pamiętać, że `--network-alias` flaga została użyta wcześniej?).
+    W sekcji "ANSWER SECTION" (SEKCJA ODPOWIEDZI) zostanie wyświetlony rekord dla adresu , który jest rozpoznany jako `A` `mysql` `172.23.0.2` (twój adres IP najprawdopodobniej będzie miał inną wartość). Chociaż zazwyczaj nie jest prawidłową nazwą hosta, platformie Docker udało się ją rozpoznać na adres IP kontenera, który miał alias sieciowy (pamiętasz flagę użytą `mysql` `--network-alias` wcześniej?).
 
-    Co oznacza to... Aplikacja tylko po prostu musi nawiązać połączenie z hostem o nazwie `mysql` i będzie komunikować się z bazą danych. Nie jest to znacznie prostsze niż to wszystko!
+    Oznacza to, że... Aplikacja po prostu musi połączyć się z hostem o nazwie `mysql` i będzie rozmawiała z bazą danych. Nie jest to znacznie prostsze!
 
-## <a name="run-your-app-with-mysql"></a>Uruchamianie aplikacji za pomocą programu MySQL
+## <a name="run-your-app-with-mysql"></a>Uruchamianie aplikacji za pomocą usługi MySQL
 
-Aplikacja do zrobienia obsługuje ustawienie kilku zmiennych środowiskowych w celu określenia ustawień połączenia MySQL. Są to:
+Aplikacja z todo obsługuje ustawienie kilku zmiennych środowiskowych w celu określenia ustawień połączenia mySQL. Są to:
 
-- `MYSQL_HOST` -Nazwa hosta dla uruchomionego serwera MySQL
-- `MYSQL_USER` -Nazwa użytkownika do użycia w przypadku połączenia
-- `MYSQL_PASSWORD` -hasło, które ma być używane na potrzeby połączenia
-- `MYSQL_DB` — Baza danych, która ma być używana po połączeniu
+- `MYSQL_HOST` — nazwa hosta uruchomionego serwera MySQL
+- `MYSQL_USER` — nazwa użytkownika do użycia dla połączenia
+- `MYSQL_PASSWORD` — hasło do połączenia
+- `MYSQL_DB` — baza danych do użycia po na połączeniu
 
 > [!WARNING]
-> **Ustawianie ustawień połączenia za pomocą zmiennych środowiskowych** Chociaż użycie zmiennych środowiskowych do ustawiania ustawień połączenia jest ogólnie dobry dla rozwoju, zdecydowanie odradza się w przypadku uruchamiania aplikacji w środowisku produkcyjnym. Aby zrozumieć, dlaczego, zobacz [dlaczego nie należy używać zmiennych środowiskowych dla danych tajnych](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/).
-> Bardziej bezpieczny mechanizm polega na użyciu tajnej pomocy technicznej dostarczonej przez strukturę aranżacji kontenerów. W większości przypadków te wpisy tajne są instalowane jako pliki w działającym kontenerze. Zobaczysz wiele aplikacji (w tym obraz MySQL i aplikacja do zrobienia), które obsługują także ENV zmiennych z `_FILE` sufiksem, aby wskazywał plik zawierający plik.
-> Na przykład ustawienie `MYSQL_PASSWORD_FILE` var spowoduje, że aplikacja będzie używać zawartości pliku, do którego istnieje odwołanie, jako hasła połączenia. Platforma Docker nie wykonuje żadnych czynności do obsługi tych zmiennych ENV. Aplikacja musi wiedzieć, aby wyszukać zmienną i pobrać zawartość pliku.
+> **Ustawianie ustawień Ustawienia za pomocą zmiennych środowiskowych** Mimo że ustawianie ustawień połączenia przy użyciu zmiennych środowiskowych jest ogólnie dobre dla procesów programistyczych, zdecydowanie nie zaleca się uruchamiania aplikacji w środowisku produkcyjnym. Aby zrozumieć, dlaczego nie należy używać zmiennych środowiskowych dla [tajnych danych, zobacz](https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/)dlaczego nie należy używać zmiennych.
+> Bezpieczniejszym mechanizmem jest użycie obsługi kluczy tajnych zapewnianych przez platformę orkiestracji kontenerów. W większości przypadków te wpisy tajne są instalowane jako pliki w uruchomionym kontenerze. Zobaczysz, że wiele aplikacji (w tym obraz MySQL i aplikacja todo) obsługuje również vars env z sufiksem, aby wskazać plik `_FILE` zawierający plik.
+> Na przykład ustawienie var spowoduje, że aplikacja będzie używać zawartości przywoływanych `MYSQL_PASSWORD_FILE` plików jako hasła połączenia. Docker nie robi niczego, aby obsługiwać te vars env. Aplikacja musi wiedzieć, aby poszukać zmiennej i pobrać zawartość pliku.
 
-Ze wszystkich tych wyjaśnień Rozpocznij tworzenie kontenera deweloperskiego!
+Po objaśnionej pracy uruchom kontener gotowy do tworzenia.
 
-1. Określ wszystkie powyższe zmienne środowiskowe i Połącz kontener z siecią aplikacji (Zastąp ` \ ` znaki `` ` `` w programie Windows PowerShell).
+1. Określ każdą z powyższych zmiennych środowiskowych i połącz kontener z siecią aplikacji (zastąp znaki w ` \ ` `` ` `` Windows PowerShell).
 
     ```bash hl_lines="3 4 5 6 7"
     docker run -dp 3000:3000 \
@@ -164,7 +163,7 @@ Ze wszystkich tych wyjaśnień Rozpocznij tworzenie kontenera deweloperskiego!
       sh -c "yarn install && yarn run dev"
     ```
 
-1. Jeśli przeszukiwane są dzienniki dla kontenera ( `docker logs <container-id>` ), powinien zostać wyświetlony komunikat informujący o tym, że używa bazy danych MySQL.
+1. Jeśli przyjrzysz się dziennikom kontenera ( ), powinien zostać wyświetlony komunikat informujący, że korzysta on z bazy danych `docker logs <container-id>` MySQL.
 
     ```plaintext hl_lines="7"
     # Previous log messages omitted
@@ -177,15 +176,15 @@ Ze wszystkich tych wyjaśnień Rozpocznij tworzenie kontenera deweloperskiego!
     Listening on port 3000
     ```
 
-1. Otwórz aplikację w przeglądarce i Dodaj kilka elementów do listy zadań do wykonania.
+1. Otwórz aplikację w przeglądarce i dodaj kilka elementów do listy zadań do oddawania.
 
-1. Nawiąż połączenie z bazą danych MySQL i Dowiedz się, że elementy są zapisywane w bazie danych. Pamiętaj, że hasło jest **tajne**.
+1. Połączenie do bazy danych MySQL i udowodnij, że elementy są zapisywane w bazie danych. Pamiętaj, że hasło jest **tajne.**
 
     ```bash
     docker exec -ti <mysql-container-id> mysql -p todos
     ```
 
-    I w usłudze MySQL Shell Uruchom następujące polecenie:
+    W powłoki MySQL uruchom następujące elementy:
 
     ```plaintext
     mysql> select * from todo_items;
@@ -197,23 +196,23 @@ Ze wszystkich tych wyjaśnień Rozpocznij tworzenie kontenera deweloperskiego!
     +--------------------------------------+--------------------+-----------+
     ```
 
-    Oczywiście tabela będzie wyglądać inaczej, ponieważ zawiera Twoje elementy. Powinny jednak być widoczne tam, gdzie są przechowywane.
+    Oczywiście tabela będzie wyglądać inaczej, ponieważ zawiera elementy. Jednak powinny być tam przechowywane.
 
-Jeśli przejdziesz do rozszerzenia Docker, zobaczysz, że masz uruchomione dwa kontenery aplikacji. Nie istnieje jednak rzeczywiste wskazanie, że są zgrupowane w jednej aplikacji. Zobaczysz, jak to zrobić lepiej!
+Jeśli szybko przyjrzysz się rozszerzeniu platformy Docker, zobaczysz, że masz uruchomione dwa kontenery aplikacji. Nie ma jednak rzeczywistego wskazania, że są one zgrupowane razem w jednej aplikacji. Wkrótce dowiesz się, jak to poprawić!
 
-![Rozszerzenie platformy Docker przedstawia dwa niezgrupowane kontenery aplikacji](media/vs-multi-container-app.png)
+![Rozszerzenie platformy Docker przedstawiające dwa niezgrupowane kontenery aplikacji](media/vs-multi-container-app.png)
 
 ## <a name="recap"></a>Podsumowanie
 
-W tym momencie masz aplikację, która przechowuje swoje dane w zewnętrznej bazie danych działającej w osobnym kontenerze. Zapoznaj się z małą ilością informacji o sieci kontenerów i zobacz, jak można wykonać odnajdywanie usługi przy użyciu systemu DNS.
+W tym momencie masz aplikację, która teraz przechowuje swoje dane w zewnętrznej bazie danych uruchomionej w oddzielnym kontenerze. Wiesz już trochę na temat sieci kontenerów i wiesz, jak można przeprowadzić odnajdywanie usług przy użyciu systemu DNS.
 
-Jednak istnieje dobry szansa, że zaczynasz nieco przeciążyć wszystko, czego potrzebujesz do uruchomienia tej aplikacji. Musisz utworzyć sieć, uruchomić kontenery, określić wszystkie zmienne środowiskowe, uwidocznić porty i inne. Jest to bardzo dużo do zapamiętania, co pozwala na trudniejsze przekazanie do kogoś innego.
+Istnieje jednak dobra szansa, że zaczniesz przytłoczać się wszystkim, co musisz zrobić, aby uruchomić tę aplikację. Musisz utworzyć sieć, uruchomić kontenery, określić wszystkie zmienne środowiskowe, uwidocznić porty i nie tylko. To dużo do zapamiętania i z pewnością utrudnia to komuś innemu.
 
-W następnej sekcji porozmawiamy o Docker Compose. Dzięki Docker Compose można udostępniać stosy aplikacji w znacznie łatwiejszy sposób i umożliwić innym osobom ich zaniechanie za pomocą jednego (i prostego) polecenia.
+W następnej sekcji omówienia Docker Compose. Dzięki Docker Compose możesz udostępniać stosy aplikacji w znacznie łatwiejszy sposób i pozwolić innym na ich rozkręcanie za pomocą jednego (i prostego) polecenia.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Kontynuuj pracę z samouczkiem.
+Kontynuuj pracę z samouczkiem!
 
 > [!div class="nextstepaction"]
-> [Używanie Docker Compose](use-docker-compose.md)
+> [Korzystanie z Docker Compose](use-docker-compose.md)

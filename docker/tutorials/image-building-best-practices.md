@@ -1,32 +1,31 @@
 ---
-title: 'Samouczek platformy Docker — część 8: Tworzenie warstw obrazów'
-description: Jak przejrzeć warstwy obrazu w obrazach platformy Docker i zarządzać nimi.
+title: 'Samouczek platformy Docker — część 8: warstwowanie obrazów'
+description: Jak badać warstwy obrazów w obrazach platformy Docker i zarządzać nimi.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8913c558c2860599fbfaaba03fa466d11931a528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f669baf6f3275f54c7e4a6ff2b31f9c260b2bb9
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837960"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222672"
 ---
-# <a name="image-layering"></a>Tworzenie warstw obrazów
+# <a name="image-layering"></a>Warstwy obrazów
 
-Czy wiesz, że możesz dowiedzieć się, jak to zrobić? Za pomocą `docker image history` polecenia można zobaczyć polecenie, które zostało użyte do utworzenia każdej warstwy w obrazie.
+Czy wiesz, że możesz przyjrzeć się, co składa się na obraz? Za pomocą `docker image history` polecenia można wyświetlić polecenie, które zostało użyte do utworzenia każdej warstwy w obrazie.
 
-1. Użyj `docker image history` polecenia, aby wyświetlić warstwy `getting-started` obrazu utworzonego wcześniej w samouczku.
+1. Użyj polecenia `docker image history` , aby wyświetlić warstwy na `getting-started` obrazie utworzonym wcześniej w tym samouczku.
 
     ```bash
     docker image history getting-started
     ```
 
-    Dane wyjściowe powinny wyglądać mniej więcej tak, jak to się dzieje (daty/identyfikatory mogą się różnić).
+    Powinny pojawić się dane wyjściowe podobne do tych (daty/identyfikatory mogą się różnić).
 
     ```plaintext
     IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
@@ -45,9 +44,9 @@ Czy wiesz, że możesz dowiedzieć się, jak to zrobić? Za pomocą `docker imag
     <missing>           13 days ago         /bin/sh -c #(nop) ADD file:e69d441d729412d24…   5.59MB   
     ```
 
-    Każda linia reprezentuje warstwę w obrazie. W tym miejscu wyświetlana jest podstawa u dołu z najnowszą warstwą u góry. Korzystając z tej opcji, można również szybko zobaczyć rozmiar każdej warstwy, pomagając zdiagnozować duże obrazy.
+    Każda linia reprezentuje warstwę na obrazie. W tym miejscu jest wyświetlana podstawa u dołu z najnowszą warstwą u góry. Dzięki temu można szybko sprawdzić rozmiar każdej warstwy, co ułatwia diagnozowanie dużych obrazów.
 
-1. Zauważ, że kilka wierszy zostanie obcięty. Jeśli dodasz `--no-trunc` flagę, uzyskasz pełne dane wyjściowe (tak, aby uzyskać niecięte dane wyjściowe, Użyj flagi obciętego).
+1. Zauważysz, że kilka wierszy jest obciętych. Jeśli dodasz flagę , otrzymasz pełne dane wyjściowe (tak, użyjesz obciętej flagi, aby uzyskać `--no-trunc` nieuprawnione dane wyjściowe).
 
     ```bash
     docker image history --no-trunc getting-started
@@ -55,11 +54,11 @@ Czy wiesz, że możesz dowiedzieć się, jak to zrobić? Za pomocą `docker imag
 
 ## <a name="layer-caching"></a>Buforowanie warstwy
 
-Teraz, po zapoznaniu się z działaniem warstwowym, istnieje ważna lekcja umożliwiająca skrócenie czasu kompilowania obrazów kontenerów.
+Teraz, gdy już wiesz, jaka jest warstwa w akcji, musisz nauczyć się, jak zmniejszyć czas kompilacji obrazów kontenerów.
 
-> Po zmianie warstwy wszystkie warstwy podrzędne muszą zostać ponownie utworzone.
+> Po zmianie warstwy należy również ponownie utworzyć wszystkie warstwy podrzędne
 
-Przyjrzyjmy się pliku dockerfileom, z których korzystasz jeszcze raz...
+Przyjrzyjmy się plikowi Dockerfile, który był jeszcze raz...
 
 ```dockerfile
 FROM node:12-alpine
@@ -69,11 +68,11 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-Powracając do danych wyjściowych historii obrazu, zobaczysz, że każde polecenie w pliku dockerfile będzie nową warstwą w obrazie. Warto pamiętać, że po wprowadzeniu zmiany w obrazie zależności przędzy musiały zostać ponownie zainstalowane. Czy istnieje sposób, aby rozwiązać ten problem? Nie ma sensu, aby zapewnić, że każdy z tych samych zależności jest dostarczany przy każdym kompilowaniu?
+Po powrocie do danych wyjściowych historii obrazu zobaczysz, że każde polecenie w pliku Dockerfile staje się nową warstwą obrazu. Być może pamiętasz, że podczas zmiany obrazu konieczne było ponowne zainstalowanie zależności yarn. Czy istnieje sposób na rozwiązanie tego problemu? Nie ma sensu, aby wysyłać te same zależności za każdym razem, gdy tworzysz, prawda?
 
-Aby rozwiązać ten problem, można zmienić strukturę pliku dockerfile, aby pomóc w buforowaniu zależności. W przypadku aplikacji opartych na węźle te zależności są zdefiniowane w `package.json` pliku. Co zrobić, jeśli skopiowano tylko ten plik w pierwszej kolejności, Zainstaluj zależności, a *następnie* Skopiuj wszystkie inne? Następnie można ponownie utworzyć zależności przędzy tylko w przypadku zmiany `package.json` . Czy warto mieć sens?
+Aby rozwiązać ten problem, możesz zmienić strukturę pliku Dockerfile, aby ułatwić obsługę buforowania zależności. W przypadku aplikacji opartych na węzłach te zależności są zdefiniowane w `package.json` pliku . Co więc zrobić, jeśli w pierwszej kolejności skopiowano tylko ten plik, zainstaluj zależności, a następnie *skopiuj* wszystko inne? Następnie zależności yarn są tworzone ponownie tylko w przypadku zmiany właściwości `package.json` . Sensu?
 
-1. Zaktualizuj pliku dockerfile do kopiowania w `package.json` pierwszej kolejności, Zainstaluj zależności, a następnie skopiuj wszystko inne w.
+1. Zaktualizuj plik Dockerfile, aby skopiował plik w pierwszej kolejności, zainstaluj `package.json` zależności, a następnie skopiuj wszystkie inne pliki.
 
     ```dockerfile hl_lines="3 4 5"
     FROM node:12-alpine
@@ -84,13 +83,13 @@ Aby rozwiązać ten problem, można zmienić strukturę pliku dockerfile, aby po
     CMD ["node", "/app/src/index.js"]
     ```
 
-1. Utwórz nowy obraz przy użyciu polecenia `docker build` .
+1. Skompilowanie nowego obrazu przy użyciu funkcji `docker build` .
 
     ```bash
     docker build -t getting-started .
     ```
 
-    Powinny pojawić się dane wyjściowe podobne do tego...
+    Powinny zostać wyświetlony dane wyjściowe podobne do tych...
 
     ```plaintext
     Sending build context to Docker daemon  219.1kB
@@ -123,11 +122,11 @@ Aby rozwiązać ten problem, można zmienić strukturę pliku dockerfile, aby po
     Successfully tagged getting-started:latest
     ```
 
-    Zobaczysz, że wszystkie warstwy zostały odbudowane. Doskonale prawidłowo, ponieważ pliku dockerfile całkiem jakiś bit.
+    Zobaczysz, że wszystkie warstwy zostały ponownie sbudować. Idealnie, ponieważ plik Dockerfile został dość zmieniony.
 
-1. Teraz wprowadź zmiany w `src/static/index.html` pliku (na przykład zmień, `<title>` aby powiedzieć, że aplikacja awesome do zrobienia).
+1. Teraz zmień plik (np. zmień nazwę na `src/static/index.html` `<title>` "The Awesome Todo App").
 
-1. Utwórz teraz obraz platformy Docker `docker build` . Tym razem dane wyjściowe powinny wyglądać nieco inaczej.
+1. Skompilowanie obrazu platformy Docker teraz ponownie przy `docker build` użyciu narzędzia . Tym razem dane wyjściowe powinny wyglądać nieco inaczej.
 
     ```plaintext hl_lines="5 8 11"
     Sending build context to Docker daemon  219.1kB
@@ -152,19 +151,19 @@ Aby rozwiązać ten problem, można zmienić strukturę pliku dockerfile, aby po
     Successfully tagged getting-started:latest
     ```
 
-    Najpierw należy zauważyć, że kompilacja była znacznie szybsza! Zobaczysz, że wszystkie kroki 1-4 wszystkie mają `Using cache` . Więc hura! Korzystasz z pamięci podręcznej kompilacji. Wypychanie i ściąganie tego obrazu oraz jego aktualizacje będą znacznie szybsze. Hura!
+    Po pierwsze należy zauważyć, że kompilacja była znacznie szybsza. Zobaczysz, że wszystkie kroki 1–4 `Using cache` mają . Więc hooray! Używasz pamięci podręcznej kompilacji. Wypychanie i ściąganie tego obrazu oraz aktualizacje do niego będą również znacznie szybsze. Brawo!
 
 ## <a name="multi-stage-builds"></a>Kompilacje wieloetapowe
 
-Mimo że nie szczegółowe się do niego za dużo w tym samouczku, kompilacje wieloetapowe są niezwykle zaawansowanym narzędziem ułatwiającym Tworzenie obrazu przy użyciu wielu etapów. Istnieje kilka korzyści dla nich:
+Chociaż w tym samouczku nie będziemy zbyt wiele zagłębiać się w ten samouczek, kompilacje wieloetapowe są niezwykle wydajnym narzędziem, które pomaga utworzyć obraz przy użyciu wielu etapów. Istnieje kilka zalet tych opcji:
 
-- Oddzielanie zależności czasu kompilacji od zależności środowiska uruchomieniowego
-- Zmniejszenie ogólnego rozmiaru obrazu przez wysyłkę *tylko* tego, co aplikacja musi uruchamiać
+- Oddziel zależności czasu kompilacji od zależności środowiska uruchomieniowego
+- Zmniejsz ogólny rozmiar obrazu, *wysyłając* tylko te informacje, których aplikacja potrzebuje do uruchomienia
 
-### <a name="maventomcat-example"></a>Przykład Maven/Tomcat
+### <a name="maventomcat-example"></a>Przykład maven/tomcat
 
-Podczas kompilowania aplikacji opartych na języku Java JDK jest wymagany do kompilowania kodu źródłowego na kod bajtowy Java. Jednak ten JDK nie jest wymagany w środowisku produkcyjnym. Ponadto możesz używać narzędzi takich jak Maven lub Gradle, aby pomóc w tworzeniu aplikacji.
-Nie są one również potrzebne w końcowym obrazie. Wieloetapowe kompilacje — pomoc.
+Podczas kompilowania aplikacji opartych na języku Java potrzebny jest zestaw JDK do skompilowania kodu źródłowego do kodu bajtowego Java. Jednak ten JDK nie jest wymagany w środowisku produkcyjnym. Ponadto możesz używać narzędzi, takich jak Maven lub Gradle, aby ułatwić tworzenie aplikacji.
+Nie są one również potrzebne na ostatnim obrazie. Pomocna jest kompilacja wieloetapowa.
 
 ```dockerfile
 FROM maven AS build
@@ -176,11 +175,11 @@ FROM tomcat
 COPY --from=build /app/target/file.war /usr/local/tomcat/webapps 
 ```
 
-W tym przykładzie użyto jednego etapu (o nazwie `build` ) do wykonania rzeczywistej kompilacji w języku Java przy użyciu Maven. Drugi etap (począwszy od `FROM tomcat` ) kopiuje pliki z `build` etapu. Końcowy obraz jest tylko ostatnim tworzonym etapem, który można zastąpić przy użyciu `--target` flagi.
+W tym przykładzie użyto jednego etapu (o nazwie ), aby wykonać `build` rzeczywistą kompilację języka Java przy użyciu narzędzia Maven. Drugi etap (rozpoczynający się `FROM tomcat` od ) kopiuje pliki z `build` etapu. Ostatni obraz jest tylko ostatnim tworzonym etapem (który można przesłonić przy użyciu `--target` flagi ).
 
-### <a name="react-example"></a>Przykład reakcji
+### <a name="react-example"></a>React przykład
 
-Podczas kompilowania aplikacji do reagowania potrzebne jest środowisko węzła do kompilowania kodu JS (zazwyczaj JSX), arkuszy stylów SASS i innych do statycznych języków HTML, JS i CSS. Jeśli nie wykonujesz renderowania po stronie serwera, nie potrzebujesz jeszcze środowiska węzła dla kompilacji produkcyjnej. Dlaczego nie należy dostarczać zasobów statycznych w statycznym kontenerze Nginx?
+Podczas kompilowania React potrzebujesz środowiska Node, aby skompilować kod JS (zazwyczaj JSX), arkusze stylów SASS i inne elementy do statycznego kodu HTML, JS i CSS. Jeśli nie korzystasz z renderowania po stronie serwera, nie potrzebujesz nawet środowiska Node na potrzeby kompilacji produkcyjnej. Dlaczego nie wysyłać zasobów statycznych w statycznym kontenerze nginx?
 
 ```dockerfile
 FROM node:12 AS build
@@ -195,15 +194,15 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 ```
 
-W tym miejscu jest używany `node:12` obraz do wykonania kompilacji (maksymalizowanie pamięci podręcznej), a następnie skopiowanie danych wyjściowych do kontenera Nginx. Chłodna, tak?
+W tym miejscu używasz obrazu do wykonania kompilacji (maksymalizowania buforowania warstwy), a następnie skopiowania danych wyjściowych `node:12` do kontenera nginx. Chłodno, prawda?
 
 ## <a name="recap"></a>Podsumowanie
 
-Dzięki zrozumieniu nieco informacji o strukturze obrazów można szybciej tworzyć obrazy i dostarczać mniejszą liczbę zmian. Kompilacje wieloetapowe pomagają również zmniejszyć ogólny rozmiar obrazu i zwiększyć zabezpieczenia kontenera końcowego, oddzielając zależności czasu kompilacji od zależności środowiska uruchomieniowego.
+Po zrozumieniu nieco struktury obrazów można szybciej tworzyć obrazy i wprowadzać mniejszą liczbę zmian. Kompilacje wieloetapowe pomagają również zmniejszyć ogólny rozmiar obrazu i zwiększyć ostateczne zabezpieczenia kontenera przez oddzielenie zależności czasu kompilacji od zależności środowiska uruchomieniowego.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Kontynuuj pracę z samouczkiem.
+Kontynuuj pracę z samouczkiem!
 
 > [!div class="nextstepaction"]
 > [Wdrażanie w chmurze](deploy-to-cloud.md)
