@@ -2,13 +2,15 @@
   href: analyze-and-model-your-architecture.md
 - name: Co nowego w dziedzinie projektowania w programie Visual Studio 2017
   href: what-s-new-for-design-in-visual-studio.md
+- name: Instalowanie narzędzi architektury
+  href: install-architecture-tools.md
 - name: Zmienianie projektu przy użyciu wizualizacji i modelowania
   href: scenario-change-your-design-using-visualization-and-modeling.md
 - name: Mapy kodu i diagramy zależności
   items:
     - name: Tworzenie wizualizacji kodu
       href: visualize-code.md
-    - name: Używanie map kodu do mapowania zależności
+    - name: Mapowanie zależności za pomocą map kodu
       href: map-dependencies-across-your-solutions.md
     - name: Udostępnianie map kodu
       href: share-code-maps.md
@@ -58,8 +60,6 @@
       href: generate-and-configure-your-app-from-models.md
     - name: Tworzenie struktury rozwiązania modelowania
       href: structure-your-modeling-solution.md
-    - name: Architektura Visual Studio — wskazówki dotyczące oprzyrządowania
-      href: visual-studio-architecture-tooling-guidance.md
 - name: Weryfikacja systemu w czasie opracowywania
   items:
     - name: Zadania walidacji oraz zasoby
