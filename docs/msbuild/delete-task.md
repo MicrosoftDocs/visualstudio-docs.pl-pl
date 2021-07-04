@@ -1,6 +1,6 @@
 ---
-title: Usuń zadanie | Microsoft Docs
-description: Poznaj parametry i zagadnienia dotyczące korzystania z zadania usuwania programu MSBuild w celu usunięcia określonych plików.
+title: Usuwanie zadania | Microsoft Docs
+description: Dowiedz się więcej o parametrach i zagadnieniach dotyczących MSBuild usuwania określonych plików.
 ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877346"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280432"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
 
@@ -39,18 +39,18 @@ W poniższej tabeli opisano parametry `Delete` zadania.
 |---------------|-----------------|
 |`DeletedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa pliki, które zostały pomyślnie usunięte.|
 |`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do usunięcia.|
-|`TreatErrorsAsWarnings`|`Boolean`Parametr opcjonalny<br /><br /> Jeśli `true` Błędy są rejestrowane jako ostrzeżenia. Wartość domyślna to `false`.|
+|`TreatErrorsAsWarnings`|Parametr `Boolean` opcjonalny<br /><br /> Jeśli `true` , błędy są rejestrowane jako ostrzeżenia. Wartość domyślna to `false`.|
 
 ## <a name="remarks"></a>Uwagi
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, która sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej to zadanie dziedziczy parametry z klasy , która <xref:Microsoft.Build.Tasks.TaskExtension> sama dziedziczy z <xref:Microsoft.Build.Utilities.Task> klasy . Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension, klasa bazowa](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
-> Należy zachować ostrożność w przypadku używania symboli wieloznacznych z `Delete` zadaniem. Można łatwo usunąć niewłaściwe pliki z wyrażeniami, takimi jak `$(SomeProperty)\**\*.*` lub `$(SomeProperty)/**/*.*` , zwłaszcza jeśli właściwość zwraca pusty ciąg, w takim przypadku `Files` parametr może zostać oceniony jako katalog główny dysku i usunąć wiele więcej niż chcesz usunąć.
+> Należy zachować ostrożność podczas używania symboli wieloznacznych w `Delete` zadaniu. Niewłaściwe pliki można łatwo usunąć za pomocą wyrażeń, takich jak lub , zwłaszcza jeśli właściwość ma wartość pustego ciągu. W takim przypadku parametr może zostać oceniony jako katalog główny dysku i usunąć znacznie więcej, niż chcesz `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*` `Files` usunąć.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład usuwa plik *MojaApl. pdb* podczas kompilowania `DeleteDebugSymbolFile` obiektu docelowego.
+Poniższy przykład usuwa plik *ConsoleApp1.pdb* podczas kompilowania obiektu `DeleteDebugSymbolFile` docelowego.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -73,7 +73,7 @@ Poniższy przykład usuwa plik *MojaApl. pdb* podczas kompilowania `DeleteDebugS
 
 ```
 
-Jeśli chcesz śledzić usunięte pliki, ustaw `TaskParameter` na wartość `DeletedFiles` przy użyciu nazwy elementu w następujący sposób:
+Jeśli chcesz śledzić usunięte pliki, ustaw na `TaskParameter` wartość z nazwą elementu w następujący `DeletedFiles` sposób:
 
 ```xml
       <Target Name="DeleteDebugSymbolFile">
@@ -84,11 +84,11 @@ Jeśli chcesz śledzić usunięte pliki, ustaw `TaskParameter` na wartość `Del
     </Target>
 ```
 
-Zamiast bezpośrednio korzystać z symboli wieloznacznych w `Delete` zadaniu, Utwórz `ItemGroup` pliki do usunięcia i uruchomienia `Delete` zadania. Pamiętaj jednak, aby `ItemGroup` uważnie umieścić. Jeśli umieścisz `ItemGroup` na najwyższego poziomu w pliku projektu, zostanie on obliczony na początku, przed rozpoczęciem kompilacji, więc nie będzie zawierać żadnych plików, które zostały skompilowane jako część procesu kompilacji. W tym celu należy umieścić element, `ItemGroup` który tworzy listę elementów do usunięcia w miejscu docelowym, blisko `Delete` zadania. Możesz również określić warunek, aby sprawdzić, czy właściwość nie jest pusta, aby nie utworzyć listy elementów ze ścieżką rozpoczynającą się w katalogu głównym dysku.
+Zamiast bezpośrednio używać symboli wieloznacznych w zadaniu, utwórz plik , aby usunąć i `Delete` uruchomić zadanie w tym `ItemGroup` `Delete` celu. Pamiętaj jednak, aby dokładnie umieścić `ItemGroup` to miejsce. Jeśli umieścisz element na najwyższym poziomie w pliku projektu, zostanie on oceniony na wczesnym etapie przed rozpoczęciem kompilacji, więc nie będzie zawierać żadnych plików, które zostały skompilowane w ramach `ItemGroup` procesu kompilacji. Dlatego umieść element , `ItemGroup` który tworzy listę elementów do usunięcia w celu blisko `Delete` zadania. Można również określić warunek, aby sprawdzić, czy właściwość nie jest pusta, aby nie można było utworzyć listy elementów ze ścieżką, która rozpoczyna się w katalogu głównym dysku.
 
-`Delete`Zadanie jest przeznaczone do usuwania plików. Jeśli chcesz usunąć katalog, użyj [RemoveDir —](removedir-task.md).
+Zadanie `Delete` jest przeznaczone do usuwania plików. Jeśli chcesz usunąć katalog, użyj [RemoveDir](removedir-task.md).
 
-`Delete`Zadanie nie udostępnia opcji usuwania plików tylko do odczytu. Aby usunąć pliki tylko do odczytu, można użyć `Exec` zadania do uruchomienia `del` polecenia lub równoważnego, z odpowiednią opcją włączenia usuwania plików tylko do odczytu. Musisz zwrócić uwagę na długość listy elementów wejściowych, ponieważ w wierszu polecenia występuje ograniczenie długości, a także upewnienie się, że nazwy plików są obsługiwane z spacjami, jak w tym przykładzie:
+Zadanie nie zapewnia opcji usuwania plików tylko `Delete` do odczytu. Aby usunąć pliki tylko do odczytu, można użyć zadania do uruchomienia polecenia lub równoważnego z odpowiednią opcją, aby włączyć usuwanie plików `Exec` `del` tylko do odczytu. Należy zwrócić uwagę na długość listy elementów wejściowych, ponieważ w wierszu polecenia istnieje ograniczenie długości, a także upewnij się, że nazwy plików są obsługiwane ze spacjami, jak w tym przykładzie:
 
 ```xml
 <Target Name="DeleteReadOnly">
@@ -99,7 +99,7 @@ Zamiast bezpośrednio korzystać z symboli wieloznacznych w `Delete` zadaniu, Ut
 </Target>
 ```
 
-Ogólnie rzecz biorąc, podczas pisania skryptów kompilacji, należy rozważyć, czy usuwanie jest logicznie częścią `Clean` operacji. Jeśli konieczne jest ustawienie niektórych plików do oczyszczenia w ramach normalnej `Clean` operacji, można dodać je do `@(FileWrites)` listy, a następnie zostaną usunięte `Clean` . Jeśli potrzebujesz więcej przetwarzania niestandardowego, zdefiniuj element docelowy i określ go do uruchomienia przez ustawienie atrybutu `BeforeTargets="Clean"` lub `AfterTargets="Clean"` lub Zdefiniuj swoją niestandardową wersję `BeforeClean` `AfterClean` elementów docelowych lub. Zobacz [Dostosowywanie kompilacji](customize-your-build.md).
+Ogólnie rzecz biorąc, podczas pisania skryptów kompilacji należy rozważyć, czy usunięcie jest logicznie częścią `Clean` operacji. Jeśli musisz ustawić niektóre pliki do wyczyszczenia w ramach normalnej operacji, możesz dodać je do listy i zostaną one usunięte w `Clean` `@(FileWrites)` następnym pliku `Clean` . Jeśli jest potrzebne więcej przetwarzania niestandardowego, zdefiniuj element docelowy i określ jego uruchomienie przez ustawienie atrybutu lub lub albo zdefiniuj niestandardową wersję obiektów `BeforeTargets="Clean"` `AfterTargets="Clean"` `BeforeClean` `AfterClean` docelowych lub . Zobacz [Dostosowywanie kompilacji.](customize-your-build.md)
 
 ## <a name="see-also"></a>Zobacz też
 

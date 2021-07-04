@@ -4,11 +4,13 @@
   items:
     - name: Środowisko git w usłudze Visual Studio
       href: git-with-visual-studio.md
+    - name: Ustawienia i preferencje usługi Git
+      href: git-settings.md
     - name: Jak Visual Studio ułatwia kontrolę źródła
       href: git-visual-studio-source-control.md
 - name: Rozpoczęcie pracy
   items:
-    - name: Wprowadzenie do usługi Git i usługi GitHub w Visual Studio
+    - name: Rozpoczynanie pracy z narzędziami Git i GitHub w usłudze Visual Studio
       href: /learn/modules/visual-studio-github-push/
     - name: Porównanie usługi Git i Team Explorer obok siebie
       href: git-team-explorer-feature-comparison.md
@@ -16,5 +18,5 @@
   items:
     - name: Zwiększona produktywność dzięki usłudze Git w Visual Studio (wersja zapoznawcza)
       href: 'https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/'
-    - name: Visual Studio wersji 2019
+    - name: Visual Studio 2019 r.
       href: /visualstudio/releases/2019/release-notes/

@@ -26,7 +26,7 @@
           href: deploy-app-service.md
         - name: Wdrażanie w usłudze Docker Hub
           href: deploy-docker-hub.md
-        - name: Zarządzanie profilami uruchamiania (wersja zapoznawcza)
+        - name: Zarządzanie profilami uruchamiania
           href: launch-profiles.md
         - name: Wyświetlanie oraz diagnozowanie kontenerów i obrazów
           href: view-and-diagnose-containers.md
