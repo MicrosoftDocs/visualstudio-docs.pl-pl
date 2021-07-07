@@ -1,8 +1,8 @@
 ---
-title: Instalowanie wizualizatora | Microsoft Docs
-description: Zapoznaj się z tematem Instalowanie wizualizatora, tak aby był dostępny do debugowania w programie Visual Studio.
+title: Instalowanie aplikacji Visualizer | Microsoft Docs
+description: Dowiedz się, jak zainstalować wizualizator, aby był dostępny do debugowania w Visual Studio.
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,60 +19,63 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904268"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298260"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
-Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora jest prostym procesem.
+Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostępny w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Instalowanie wizualizatora to prosty proces.
 
 > [!NOTE]
-> W aplikacjach platformy UWP obsługiwane są tylko wizualizacje tekstu standardowego, HTML, XML i JSON. Wizualizacje niestandardowe (utworzone przez użytkownika) nie są obsługiwane.
+> W aplikacjach platformy uniwersalnej systemu Windows obsługiwane są tylko standardowe wizualizatory tekstu, HTML, XML i JSON. Niestandardowe wizualizatory (utworzone przez użytkownika) nie są obsługiwane.
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Aby zainstalować wizualizator dla programu Visual Studio 2019
 
-1. Znajdź bibliotekę DLL, która zawiera skompilowany wizualizator.
+1. Znajdź bibliotekę DLL zawierającą sbudowaną wizualizator.
 
-   Zazwyczaj najlepiej, jeśli zarówno Biblioteka DLL po stronie debugera, jak i Biblioteka DLL debugowanego obiektu określają **dowolny procesor** jako platformę docelową. Biblioteka DLL po stronie debugera musi być **dowolnym procesorem** lub **32-bitowym**. Platforma docelowa dla biblioteki DLL debugowanego obiektu powinna odpowiadać procesowi debugee.
+   Zazwyczaj najlepszym rozwiązaniem jest określenie jako platformy docelowej zarówno biblioteki DLL  po stronie debugera, jak i biblioteki DLL po stronie debugera. Biblioteką DLL po stronie debugera musi być dowolny **procesor CPU** lub **32-bitowy .** Platforma docelowa dla biblioteki DLL po stronie debugera powinna odpowiadać procesowi debugowania.
 
-2. Skopiuj bibliotekę DLL [po stronie debugera](create-custom-visualizers-of-data.md#to-create-the-debugger-side) (i wszystkie biblioteki DLL, od których zależy) do jednej z następujących lokalizacji:
+   >[!NOTE]
+   > Wizualizator po stronie debugera jest ładowany w Visual Studio, więc musi to być .NET Framework DLL. Strona debugera może być .NET Framework lub .NET Standard w zależności od tego, który proces jest debugowany w Visual Studio.
+
+2. Skopiuj [bibliotekę](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL po stronie debugera (i wszystkie biblioteki DLL, od których zależy) do jednej z następujących lokalizacji:
 
     - *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\`*VisualStudioVersion*`\Visualizers`
 
-3. Skopiuj bibliotekę DLL [po stronie debugowanego obiektu](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) do jednej z następujących lokalizacji:
+3. Skopiuj [bibliotekę DLL po stronie](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) debugera do jednej z następujących lokalizacji:
 
-    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Struktura*
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework (Framework)*
 
-    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Struktura*
+    - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework (Framework)*
 
-    gdzie *Framework* jest:
-    - `net2.0` debuggees `.NET Framework` środowiska uruchomieniowego.
-    - `netstandard2.0` dla debuggees przy użyciu środowiska uruchomieniowego, które obsługuje program `netstandard 2.0` ( `.NET Framework v4.6.1+` lub `.NET Core 2.0+` ).
-    - `netcoreapp` debuggees `.NET Core` środowiska uruchomieniowego. (obsługuje `.NET Core 2.0+` )
+    gdzie *framework* to:
+    - `net2.0` w przypadku debugerów z uruchomionym środowiskiem `.NET Framework` uruchomieniowym.
+    - `netstandard2.0` Dla debugerów przy użyciu środowiska uruchomieniowego, które obsługuje `netstandard 2.0` ( `.NET Framework v4.6.1+` lub `.NET Core 2.0+` ).
+    - `netcoreapp` w przypadku debugerów z uruchomionym środowiskiem `.NET Core` uruchomieniowym. (obsługuje `.NET Core 2.0+` )
 
-   Biblioteka DLL debugowanego obiektu jest niezbędna, jeśli chcesz utworzyć autonomiczny wizualizator. Ta biblioteka DLL zawiera kod dla obiektu danych, który może implementować metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
+   Biblioteka DLL po stronie debugera jest niezbędna, jeśli chcesz utworzyć autonomiczny wizualizator. Ta biblioteka DLL zawiera kod obiektu danych, który może implementować metody <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
-   Jeśli masz wiele obiektów docelowych kodu debugowanego obiektu, biblioteka DLL po stronie debugowanego obiektu musi być umieszczona w folderze dla minimalnej obsługiwanej TFM.
+   W przypadku wieloadresowego kodu po stronie debugera biblioteka DLL po stronie debugera musi zostać umieszczona w folderze, aby program TFM obsługiował minimalną ilość danych.
 
 4. Uruchom ponownie sesję debugowania.
 
 > [!NOTE]
-> Procedura różni się w programie Visual Studio 2017 i starszych. Zobacz [poprzednią wersję](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) tego artykułu.
+> Procedura różni się w Visual Studio 2017 i starszych. Zobacz [poprzednią wersję](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) tego artykułu.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Aby zainstalować wizualizator dla programu Visual Studio 2017 i starszej wersji
+### <a name="to-install-a-visualizer-for-visual-studio-2017-and-older"></a>Aby zainstalować wizualizator dla Visual Studio 2017 i starszych
 
 > [!IMPORTANT]
-> Tylko Wizualizatory .NET Framework są obsługiwane w programie Visual Studio 2017 i starszych.
+> W programie .NET Framework 2017 i starszych obsługiwane są tylko Visual Studio wizualizatory.
 
-1. Znajdź bibliotekę DLL, która zawiera skompilowany wizualizator.
+1. Znajdź bibliotekę DLL zawierającą sbudowaną wizualizator.
 
 2. Skopiuj bibliotekę DLL do jednej z następujących lokalizacji:
 
@@ -83,7 +86,7 @@ Po utworzeniu wizualizatora należy zainstalować wizualizator, aby był dostęp
 3. Uruchom ponownie sesję debugowania.
 
 > [!NOTE]
-> Jeśli chcesz użyć zarządzanego wizualizatora na potrzeby debugowania zdalnego, Skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
+> Jeśli chcesz użyć zarządzanego wizualizatora do zdalnego debugowania, skopiuj bibliotekę DLL do tej samej ścieżki na komputerze zdalnym.
 ::: moniker-end
 
 ## <a name="see-also"></a>Zobacz też

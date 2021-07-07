@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Visual Studio dokumentacji dotyczącej kontroli wersji
-summary: Udostępnij kod z programu Visual Studio 2019 r. przy użyciu technologii kontroli wersji, takich jak Git i GitHub.
+summary: Udostępnianie kodu z poziomu Visual Studio przy użyciu technologii kontroli wersji, takich jak Git i GitHub.
 metadata:
   title: Kontrola wersji & kontroli źródła za pomocą usługi Git w usłudze Visual Studio
-  description: Używanie technologii kontroli wersji w Visual Studio. Możesz udostępniać i integrować wydania kodu oraz zarządzać nimi w usłudze Git & GitHub bez opuszczania bazy kodu.
+  description: Używanie technologii kontroli wersji w Visual Studio. Wydania kodu można udostępniać, integrować i zarządzać nimi w usłudze Git & GitHub bez opuszczania bazy kodu.
   ms.topic: landing-page
   ms.date: 07/02/2021
   author: TerryGLee
@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
-  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+  ms.openlocfilehash: 8143a897914a0b9c2ca3adcdc5093c89852a2f53
+  ms.sourcegitcommit: 4b19d18874a5d3c3dbea67a8e478dc7d3a813769
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 07/03/2021
-  ms.locfileid: "113280405"
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113363992"
 landingContent:
 - title: Omówienie
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Rozpoczynanie pracy z narzędziami Git i GitHub w Visual Studio
+    - text: Rozpoczynanie pracy z narzędziami Git i GitHub w usłudze Visual Studio
       url: /learn/modules/visual-studio-github-push/
   - linkListType: how-to-guide
     links:
@@ -44,7 +44,9 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Zwiększona produktywność dzięki usłudze Git w Visual Studio (wersja zapoznawcza)
+    - text: Zwiększona produktywność dzięki usłudze Git w Visual Studio
       url: https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/
+    - text: Visual Studio wersji 2022 (wersja zapoznawcza)
+      url: /visualstudio/releases/2022/release-notes-preview/
     - text: Visual Studio 2019 r.
       url: /visualstudio/releases/2019/release-notes/

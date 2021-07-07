@@ -1,8 +1,8 @@
 ---
-title: Testowanie i debugowanie wizualizatora | Microsoft Docs
-description: Przetestuj i Debuguj wizualizator, uruchamiając go ze sterownika testowego (hosta programowania wizualizatora) lub instalując program w programie Visual Studio i wywołując go z okna debugera.
+title: Testowanie i debugowanie narzędzia Visualizer | Microsoft Docs
+description: Przetestuj i debuguj wizualizator, uruchamiając go ze sterownika testowego (hosta dewelopera wizualizatora) lub instalując w programie Visual Studio i wywołując go z okna debugera.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,23 +19,26 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c97c0ee72a3d29052d98d8a37cdc746c26d27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa97453d08650b78a02eda873a01afe9e376caec
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298247"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Porady: testowanie i debugowanie wizualizera
-Po napisaniu wizualizatora należy go debugować i testować.
+Po napisie wizualizatora musisz go debugować i przetestować.
 
-Jednym ze sposobów przetestowania wizualizatora jest zainstalowanie go w programie Visual Studio i wywołanie go z okna debugera. (Zobacz [How to: Install the wizualizatorer](../debugger/how-to-install-a-visualizer.md)). Jeśli to zrobisz, musisz użyć drugiego wystąpienia programu Visual Studio do dołączenia i debugowania wizualizatora, który jest uruchomiony w pierwszym wystąpieniu debugera.
+Jednym ze sposobów testowania wizualizatora jest zainstalowanie go w Visual Studio wywołaniu go z okna debugera. (Zobacz [Instalowania wizualizatora).](../debugger/how-to-install-a-visualizer.md) Jeśli to zrobisz, konieczne będzie użycie drugiego wystąpienia klasy Visual Studio w celu dołączenia i debugowania wizualizatora, który jest uruchomiony w pierwszym wystąpieniu debugera.
 
-Łatwiejszym sposobem debugowania wizualizatora jest uruchomienie wizualizatora z sterownika testowego. Interfejsy API wizualizatora ułatwiają tworzenie takiego sterownika, który jest nazywany *hostem deweloperskim wizualizatora*.
+Łatwiejszym sposobem debugowania wizualizatora jest uruchomienie wizualizatora z sterownika testowego. Interfejsy API wizualizatora ułatwiają tworzenie takiego sterownika, który jest nazywany hostem *dewelopera wizualizatora*.
 
-### <a name="to-create-a-visualizer-development-host"></a>Aby utworzyć wizualizację hosta do programowania
+>[!NOTE]
+> Obecnie sterownik testowy jest obsługiwany tylko podczas wywoływania wizualizatora z .NET Framework aplikacji.
 
-1. W klasie po stronie debugera Dołącz metodę statyczną, która tworzy <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> obiekt i wywołuje jego metodę show:
+### <a name="to-create-a-visualizer-development-host"></a>Aby utworzyć hosta dewelopera wizualizatora
+
+1. W klasie po stronie debugera uwzględnij metodę statyczną, która tworzy <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> obiekt i wywołuje jego metodę show:
 
     ```csharp
     public static void TestShowVisualizer(object objectToVisualize)
@@ -45,17 +48,17 @@ Jednym ze sposobów przetestowania wizualizatora jest zainstalowanie go w progra
     }
     ```
 
-    Parametry używane do konstruowania hosta są obiektem danych, który będzie wyświetlany w wizualizatorze ( `objectToVisualize` ) i typie klasy po stronie debugera.
+    Parametry używane do konstruowania hosta to obiekt danych, który będzie wyświetlany w wizualizatorze ( ) i typ `objectToVisualize` klasy po stronie debugera.
 
-2. Dodaj następującą instrukcję, aby wywołać metodę `TestShowVisualizer` . Jeśli utworzono wizualizator w bibliotece klas, musisz utworzyć plik wykonywalny, aby wywołać bibliotekę klas i umieścić tę instrukcję w pliku wykonywalnym:
+2. Dodaj następującą instrukcje w celu `TestShowVisualizer` wywołania . Jeśli wizualizator został utworzony w bibliotece klas, musisz utworzyć plik wykonywalny, aby wywołać bibliotekę klas i umieścić tę instrukcje w pliku wykonywalnym:
 
     ```csharp
     DebuggerSide.TestShowVisualizer(myString);
     ```
 
-    Aby zapoznać się z bardziej kompletnym przykładem, zobacz [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
+    Aby uzyskać bardziej szczegółowy przykład, zobacz [Przewodnik: pisanie wizualizatora w języku C#.](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 
 ## <a name="see-also"></a>Zobacz też
 - [Wskazówki: Pisanie wizualizatora w C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
+- [How to: Install a Visualizer](../debugger/how-to-install-a-visualizer.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
