@@ -1,6 +1,6 @@
 ---
 title: Pisanie wizualizatora w języku C# | Microsoft Docs
-description: Postępuj zgodnie ze wskazówkim, aby utworzyć prosty wizualizator w języku C#. Przedstawiono w nim kroki wymagane zarówno z szablonem elementu Visualizer, jak i bez niego.
+description: Postępuj zgodnie z przewodnika, aby utworzyć prosty wizualizator w języku C#. Przedstawiono w nim kroki wymagane zarówno z szablonem elementu Visualizer, jak i bez niego.
 ms.custom: SEO-VS-2020
 ms.date: 07/02/2021
 ms.topic: conceptual
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c7fa8eaa5a735f05b338101a1aefe0601e9915
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: a6ce1a6d9f2f8a36d892d484cf9353e1312758b4
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298294"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549514"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Przewodnik: pisanie wizualizatora w języku C\#
 
 W tym przewodniku pokazano, jak napisać prosty wizualizator przy użyciu języka C#. Wizualizator, który utworzysz w tym przewodniku, wyświetla zawartość ciągu przy użyciu Windows formularza. Ten prosty wizualizator ciągów sam w sobie nie jest szczególnie przydatny, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej przydatne wizualizatory dla innych typów danych.
 
 > [!NOTE]
-> Wyświetlane okna dialogowe i polecenia menu mogą różnić się od tych opisanych w Pomocy, w zależności od aktywnych ustawień lub wersji. Aby zmienić ustawienia, przejdź do menu **Narzędzia** i wybierz pozycję Importuj i **eksportuj Ustawienia.** Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
+> Wyświetlane okna dialogowe i polecenia menu mogą różnić się od tych opisanych w Pomocy, w zależności od aktywnych ustawień lub wersji. Aby zmienić ustawienia, przejdź do menu **Narzędzia** i wybierz pozycję Importuj i **eksportuj** Ustawienia. Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../ide/environment-settings.md#reset-settings).
 
 Kod wizualizatora musi być umieszczony w bibliotece DLL, która będzie odczytywana przez debuger. W związku z tym pierwszym krokiem jest utworzenie projektu biblioteki klas dla biblioteki DLL.
 
@@ -69,7 +69,7 @@ Wykonaj poniższe zadania, aby utworzyć wizualizator.
 
 5. Kliknij przycisk **OK**.
 
-6. W debuggerSide.cs dodaj następujące do `using` dyrektyw:
+6. W debuggerSide.cs dodaj następujące `using` dyrektywy:
 
    ```csharp
    using Microsoft.VisualStudio.DebuggerVisualizers;
@@ -91,7 +91,7 @@ Wykonaj poniższe zadania, aby utworzyć wizualizator.
    public class DebuggerSide : DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer` Ma jedną metodę abstrakcyjną ( `Show` ), która musi zostać przesłonięcie.
+   `DialogDebuggerVisualizer` ma jedną metodę abstrakcyjną ( `Show` ), która musi zostać przesłonięcie.
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Aby zastąpić metodę DialogDebuggerVisualizer.Show
 
@@ -115,7 +115,7 @@ Wykonaj poniższe zadania, aby utworzyć wizualizator.
 
 3. Kliknij przycisk **OK**.
 
-4. W debuggerSide.cs dodaj następujące do `using` dyrektyw:
+4. W debuggerSide.cs dodaj następujące `using` dyrektywy:
 
    ```csharp
    using System.Windows.Forms;
@@ -153,7 +153,7 @@ W kodzie po stronie debugera należy określić typ wizualizacji (źródło obie
 
 2. W menu **Kompilacja** wybierz pozycję **Build MyFirstVisualizer (Kompilowanie myFirstVisualizer).** Projekt powinien zostać pomyślnie skompilowany. Popraw wszystkie błędy kompilacji przed kontynuowaniem.
 
-   W tym momencie pierwszy wizualizator jest gotowy. Jeśli kroki zostały wykonane prawidłowo, możesz skompilować wizualizator i zainstalować go w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Jednak przed zainstalowaniem wizualizatora w programie należy go przetestować, aby upewnić się, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] że działa prawidłowo. Teraz utworzysz testowy uprząż, aby uruchomić wizualizator bez instalowania go w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+   W tym momencie pierwszy wizualizator jest gotowy. Jeśli kroki zostały wykonane prawidłowo, możesz skompilować wizualizator i zainstalować go w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Jednak przed zainstalowaniem wizualizatora w programie należy go przetestować, aby upewnić się, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] że działa prawidłowo. Teraz utworzysz uprząż testową, aby uruchomić wizualizator bez instalowania go w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ### <a name="to-add-a-test-method-to-show-the-visualizer"></a>Aby dodać metodę testową w celu pokazania wizualizatora
 
@@ -169,7 +169,7 @@ W kodzie po stronie debugera należy określić typ wizualizacji (źródło obie
 
 2. W menu **Kompilacja** wybierz pozycję **Build MyFirstVisualizer (Kompilowanie myFirstVisualizer).** Projekt powinien zostać pomyślnie skompilowany. Popraw wszystkie błędy kompilacji przed kontynuowaniem.
 
-   Następnie należy utworzyć projekt wykonywalny w celu wywołania biblioteki DLL wizualizatora. Dla uproszczenia użyj projektu Aplikacja konsolowa.
+   Następnie należy utworzyć projekt wykonywalny, aby wywołać bibliotekę DLL wizualizatora. Dla uproszczenia użyj projektu Aplikacja konsolowa.
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Aby dodać projekt aplikacji konsolowej do rozwiązania
 
@@ -180,7 +180,7 @@ W kodzie po stronie debugera należy określić typ wizualizacji (źródło obie
     Wybierz **pozycję Plik**  >  **Nowy**  >  **Project**. Z listy rozwijanej języka wybierz pozycję **C#.** W polu wyszukiwania wpisz **nazwę aplikacja konsoli**, a następnie wybierz pozycję Aplikacja konsolowa **(.NET Framework)** lub **Aplikacja konsolowa** dla programu .NET. Kliknij przycisk **Dalej**. W wyświetlonym oknie dialogowym wpisz nazwę `MyTestConsole` , a następnie kliknij przycisk **Utwórz**.
 
     > [!NOTE]
-    > Jeśli chcesz łatwo przetestować wizualizator przy użyciu uprzęży testowej, utwórz .NET Framework konsoli. Zamiast tego możesz utworzyć aplikację konsolową .NET, ale opisany w dalszej części testów nie jest jeszcze obsługiwany dla programu .NET, dlatego w celu przetestowania go należy zainstalować wizualizator. W tym scenariuszu najpierw utwórz aplikację konsolową w tym miejscu, a następnie wykonaj kroki opisane w części Dodawanie obiektu danych [po stronie debugera](#add-a-debuggee-side-data-object).
+    > Jeśli chcesz łatwo przetestować wizualizator przy użyciu uprzęży testowej, utwórz .NET Framework konsoli. Zamiast tego można utworzyć aplikację konsolową .NET, ale opisany w dalszej części testów nie jest jeszcze obsługiwany przez platformę .NET, dlatego należy zainstalować wizualizator, aby go przetestować. W przypadku aplikacji konsolowej .NET najpierw utwórz aplikację konsolową w tym miejscu, dodaj wymagane odwołania do bibliotek DLL i projektu, a następnie wykonaj kroki opisane w części Dodawanie obiektu danych po stronie [debugera](#add-a-debuggee-side-data-object).
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na górnym pasku menu wybierz pozycję **Nowy** plik  >    >  **Project.** W lewym okienku  okna dialogowego Nowy projekt w obszarze **Visual C#** wybierz pozycję **Windows Desktop, a** następnie w środkowym okienku wybierz pozycję Aplikacja konsolowa **(.NET Framework).**
@@ -247,7 +247,7 @@ W kodzie po stronie debugera należy określić typ wizualizacji (źródło obie
 
 W tej sekcji przełączysz się z obiektu `System.String` danych na niestandardowy obiekt danych.  
 
-1. Wybierz **pozycję Plik**  >  **Nowy**  >  **Project**. Z listy rozwijanej języka wybierz pozycję **C#.** W polu wyszukiwania wpisz biblioteka **klas**, a następnie wybierz bibliotekę klas **(.NET Framework)** lub Bibliotekę **klas** dla .NET Standard.
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj,** a następnie kliknij pozycję **Nowy Project.** Z listy rozwijanej języka wybierz pozycję **C#.** W polu wyszukiwania wpisz biblioteka **klas**, a następnie wybierz bibliotekę klas **(.NET Framework)** lub Bibliotekę **klas** dla .NET Standard.
 
    >[!NOTE]
    >Jeśli używasz testowej .NET Framework konsoli, upewnij się, że .NET Framework projektu biblioteki klas.
@@ -255,6 +255,10 @@ W tej sekcji przełączysz się z obiektu `System.String` danych na niestandardo
 1. Kliknij przycisk **Dalej**. W wyświetlonym oknie dialogowym wpisz nazwę `MyDataObject` , a następnie kliknij przycisk **Utwórz**.
 
 1. (.NET Standard biblioteki klas) W Eksplorator rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Edytuj Project plik .** Zmień `<TargetFramework>` wartość na `netstandard2.0` .
+
+   ```xml
+   <TargetFramework>netstandard2.0</TargetFramework>
+   ```
 
 1. W przestrzeni `MyDataObject` nazw zastąp kod domyślny następującym kodem.
 
@@ -321,7 +325,7 @@ W tej sekcji przełączysz się z obiektu `System.String` danych na niestandardo
    }
    ```
 
-   Debuger wymaga odwołania do wizualizatora. Jednym ze sposobów zachowania odwołania jest zachowanie poprzedniego kodu na miejscu.
+   Aplikacja konsolowa wymaga odwołania środowiska uruchomieniowego do wizualizatora. Odwołanie można zachować, zachowując poprzedni kod, zamiast komentować go.
 
 1. W przypadku .NET Framework konsoli możesz uruchomić testowy uprząż **(naciśnij klawisz F5)** lub wykonać instrukcje w teście How to: Install a Visualizer (Instrukcje: instalowanie [wizualizatora).](../debugger/how-to-install-a-visualizer.md)
 

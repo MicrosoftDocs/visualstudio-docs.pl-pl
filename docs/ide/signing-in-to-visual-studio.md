@@ -1,6 +1,6 @@
 ---
 title: Zaloguj
-description: Dowiedz się, jak zalogować się do Visual Studio.
+description: Zaloguj się do Visual Studio, aby rozszerzyć okres Visual Studio wersji próbnej, odblokować Visual Studio i nie tylko
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222997"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549475"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>Zaloguj się do Visual Studio na Windows
+# <a name="sign-in-to-visual-studio-on-windows"></a>Zaloguj się do Visual Studio na Windows 
 
-Chociaż nie musisz się logować, możesz to zrobić z wieloma korzyściami. Po zalogowaniu się możesz personalizować, optymalizować i wzbogacać środowisko Visual Studio użytkownika. 
+Chociaż nie musisz się logować, możesz to zrobić z wieloma korzyściami. W tym artykule dowiesz się, jak zalogować [się,](#how-to-sign-in)jak zaktualizować profil [i](#update-your-profile)jakie są korzyści Visual Studio użytkownika. 
 
 > [!NOTE]
 > Ten temat dotyczy Visual Studio na Windows. Aby Visual Studio dla komputerów Mac, zobacz [Logowanie do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in).
@@ -31,8 +31,6 @@ Chociaż nie musisz się logować, możesz to zrobić z wieloma korzyściami. Po
 > Używanie programu Visual Studio 2017 do uzyskiwania dostępu do zasobów skonfigurowanych na dostęp warunkowy może spowodować obniżenie wydajności uwierzytelniania, co powoduje kilkukrotnie monitowanie o ponowne uwierzytelnienie w ramach tej samej Visual Studio dostępu. 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>Korzyści
 
 Oto pełna lista tego, czego można oczekiwać i co można zrobić po zalogowaniu się:
 

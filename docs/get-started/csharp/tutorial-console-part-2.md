@@ -1,14 +1,14 @@
 ---
 title: 'Samouczek: rozszerzanie prostej aplikacji konsolowej C#'
-description: Dowiedz się, jak opracować aplikację konsolową w języku C# Visual Studio, krok po kroku.
+description: Dowiedz się, jak tworzyć aplikację konsolową w języku C# Visual Studio, krok po kroku.
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,50 +16,50 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 84a79015dc4b1147f078b0a970df52c553189c92
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390180"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549501"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Samouczek: rozszerzanie prostej aplikacji konsolowej C#
 
-Z tego samouczka dowiesz się, jak za pomocą usługi Visual Studio rozszerzyć aplikację konsoli utworzoną w pierwszej części. Poznasz niektóre funkcje usługi Visual Studio potrzebne do codziennego tworzenia aplikacji, takie jak zarządzanie wieloma projektami i odwoływanie się do pakietów innych firm.
+Z tego samouczka dowiesz się, jak za pomocą Visual Studio rozszerzyć aplikację konsoli utworzoną w pierwszej części. Poznasz niektóre funkcje usługi Visual Studio, które będą potrzebne do codziennego tworzenia aplikacji, takie jak zarządzanie wieloma projektami i odwoływanie się do pakietów innych firm.
 
-Jeśli pierwsza część tej serii została [ukończona,](tutorial-console.md) masz już aplikację konsolą Calculator.  Aby pominąć część 1, możesz rozpocząć od otwarcia projektu z repozytorium GitHub. Aplikacja Kalkulator języka C# znajduje się w repocie [vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)więc możesz po prostu wykonać kroki opisane w samouczku: otwieranie projektu z [repo,](../tutorial-open-project-from-repo.md) aby rozpocząć pracę.
+Jeśli pierwsza część tej serii została [ukończona,](tutorial-console.md) masz już aplikację konsolą Calculator.  Aby pominąć część 1, możesz rozpocząć od otwarcia projektu z GitHub. Aplikacja Kalkulator języka C# znajduje się w repocie [vs-tutorial-samples,](https://github.com/MicrosoftDocs/vs-tutorial-samples)więc możesz po prostu wykonać kroki opisane w tece Samouczek: otwieranie projektu z [repo,](../tutorial-open-project-from-repo.md) aby rozpocząć pracę.
 
 ## <a name="add-a-new-project"></a>Dodawanie nowego projektu
 
 Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ramach rozwiązania. Teraz dodajmy kolejny projekt do aplikacji Calculator. Będzie to biblioteka klas, która udostępnia niektóre funkcje kalkulatora.
 
-1. W programie Visual Studio można użyć polecenia menu najwyższego poziomu Dodaj nowy projekt, aby dodać nowy projekt, ale możesz również kliknąć prawym przyciskiem myszy nazwę istniejącego projektu (nazywanego "węzłem projektu") i otworzyć menu skrótów  >    >   projektu (lub menu kontekstowe). To menu skrótów zawiera wiele sposobów dodawania funkcji do projektów. Dlatego kliknij prawym przyciskiem myszy węzeł projektu w **programie Eksplorator rozwiązań**, a następnie wybierz **polecenie Dodaj** nowy  >  **projekt**.
+1. Na platformie Visual Studio można użyć polecenia menu najwyższego poziomu Dodaj nowy Project, aby dodać nowy projekt, ale możesz również kliknąć prawym przyciskiem myszy nazwę istniejącego projektu (nazywanego "węzłem projektu") i otworzyć menu skrótów  >    >   projektu (lub menu kontekstowe). To menu skrótów zawiera wiele sposobów dodawania funkcji do projektów. Dlatego kliknij prawym przyciskiem myszy węzeł projektu w **programie Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  >  **nowy Project**.
 
 1. Wybierz szablon projektu języka C# **Biblioteka klas (.NET Standard).**
 
    ![Zrzut ekranu przedstawiający wybór szablonu projektu biblioteki klas](media/vs-2019/calculator2-add-project-dark.png)
 
-1. Wpisz nazwę projektu **CalculatorLibrary** i wybierz pozycję **Utwórz.** Ponownie wybierz pozycję .NET 3.1 po wybraniu monitu. Visual Studio nowy projekt i dodaje go do rozwiązania.
+1. Wpisz nazwę projektu **CalculatorLibrary** i wybierz pozycję **Utwórz**. Ponownie wybierz pozycję .NET 3.1 po wybraniu monitu. Visual Studio tworzy nowy projekt i dodaje go do rozwiązania.
 
-   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań dodanym projektem biblioteki klas CalculatorLibrary](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
+   ![Zrzut ekranu przedstawiający Eksplorator rozwiązań z dodanym projektem biblioteki klas CalculatorLibrary](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
-1. Zamiast pliku *Class1.cs* zmień nazwę pliku **CalculatorLibrary.cs.** Możesz kliknąć nazwę w oknie **Eksplorator rozwiązań** zmienić jej nazwę lub kliknąć prawym przyciskiem myszy i wybrać polecenie Zmień nazwę **lub** nacisnąć klawisz **F2.**
+1. Zamiast mieć *plik Class1.cs,* zmień nazwę pliku **CalculatorLibrary.cs.** Możesz kliknąć nazwę w  oknie Eksplorator rozwiązań, aby ją zmienić, lub kliknąć prawym przyciskiem myszy i wybrać polecenie Zmień nazwę **lub** nacisnąć **klawisz F2.**
 
    Może pojawić się pytanie, czy chcesz zmienić nazwę wszelkich odwołań `Class1` do w pliku. Nie ma znaczenia, jak udzielisz odpowiedzi, ponieważ zastąpisz kod w przyszłym kroku.
 
-1. Teraz musimy dodać odwołanie do projektu, aby pierwszy projekt może używać interfejsów API ujawnionych przez nową bibliotekę klas.  Kliknij prawym przyciskiem myszy węzeł **Zależności w** pierwszym projekcie i wybierz polecenie Dodaj odwołanie **do projektu**.
+1. Teraz musimy dodać odwołanie do projektu, aby w pierwszym projekcie można było używać interfejsów API ujawnionych przez nową bibliotekę klas.  Kliknij prawym przyciskiem myszy węzeł **Zależności** w pierwszym projekcie i wybierz polecenie Dodaj Project **odwołanie.**
 
-   ![Zrzut ekranu przedstawiający element menu Dodaj odwołanie do projektu](media/vs-2019/calculator2-add-project-reference-dark.png)
+   ![Zrzut ekranu przedstawiający Project menu Dodaj odwołanie](media/vs-2019/calculator2-add-project-reference-dark.png)
 
-   Zostanie **wyświetlone okno dialogowe** Menedżer odwoływać się. To okno dialogowe umożliwia dodawanie odwołań do innych projektów, a także zestawów i bibliotek DLL COM potrzebnych w projektach.
+   Zostanie **wyświetlone okno dialogowe Menedżer** odwoływać. To okno dialogowe umożliwia dodawanie odwołań do innych projektów, a także zestawów i bibliotek DLL COM potrzebnych w projektach.
 
    ![Zrzut ekranu okna dialogowego Menedżer odwoływać](media/vs-2019/calculator2-ref-manager-dark.png)
 
-1. W **oknie dialogowym Menedżer** odwoływać zaznacz pole wyboru projektu **CalculatorLibrary** i wybierz przycisk **OK.**  Odwołanie do projektu jest wyświetlane w **węźle Projekty** w **Eksplorator rozwiązań**.
+1. W **oknie dialogowym Menedżer** odwoływać zaznacz pole wyboru projektu **CalculatorLibrary,** a następnie wybierz przycisk **OK.**  Odwołanie do projektu jest wyświetlane w **węźle Projekty** w **Eksplorator rozwiązań**.
 
    ![Zrzut ekranu przedstawiający Eksplorator rozwiązań z odwołaniem do projektu](media/vs-2019/calculator2-solution-explorer-with-project-reference-dark2.png)
 
-1. W *program.cs* wybierz klasę i cały jej kod, a następnie `Calculator` naciśnij klawisze **CTRL+X,** aby wytnij ją z programu Program.cs. Następnie w **oknie CalculatorLibrary** w *oknie CalculatorLibrary.cs* wklej kod do przestrzeni `CalculatorLibrary` nazw . Następnie należy wprowadzić klasę Calculator, `public` aby uwidocznić ją poza biblioteką. Kod w *calculatorLibrary.cs powinien* teraz wyglądać następująco:
+1. W *programie Program.cs* wybierz klasę i cały jej kod, a następnie naciśnij klawisze `Calculator` **CTRL+X,** aby wytnij ją z programu Program.cs. Następnie w **oknie CalculatorLibrary** w *oknie CalculatorLibrary.cs* wklej kod do przestrzeni `CalculatorLibrary` nazw . Następnie należy wprowadzić klasę Calculator, `public` aby uwidocznić ją poza biblioteką. Kod w *calculatorLibrary.cs* powinien teraz wyglądać następująco:
 
    ```csharp
    using System;
@@ -101,7 +101,7 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
     }
    ```
 
-1. Pierwszy projekt zawiera odwołanie, ale zobaczysz błąd, który nie został rozwiązany przez wywołanie Calculator.DoOperation. Wynika to z tego, że calculatorLibrary znajduje się w innej przestrzeni nazw, więc dodaj `CalculatorLibrary` przestrzeń nazw dla w pełni kwalifikowanego odwołania.
+1. Pierwszy projekt zawiera odwołanie, ale zobaczysz błąd, który nie rozwiązuje wywołania Calculator.DoOperation. Wynika to z tego, że calculatorLibrary znajduje się w innej przestrzeni nazw, dlatego dodaj przestrzeń `CalculatorLibrary` nazw dla w pełni kwalifikowanego odwołania.
 
    ```csharp
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -113,7 +113,7 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
    using CalculatorLibrary;
    ```
 
-   Ta zmiana powinna pozwolić usunąć przestrzeń nazw CalculatorLibrary z witryny wywołań, ale teraz jest niejednoznaczność. Czy `Calculator` klasa w klasie CalculatorLibrary, czy jest przestrzenią nazw Calculator?  Aby rozwiązać niejednoznaczność, zmień nazwę przestrzeni nazw `CalculatorProgram` .
+   Ta zmiana powinna umożliwiać usunięcie przestrzeni nazw CalculatorLibrary z witryny wywołań, ale teraz istnieje niejednoznaczność. Czy `Calculator` klasa znajduje się w klasie CalculatorLibrary, czy też jest przestrzenią nazw Calculator?  Aby rozwiązać niejednoznaczność, zmień nazwę przestrzeni nazw `CalculatorProgram` .
 
    ```csharp
    namespace CalculatorProgram
@@ -121,14 +121,14 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Odwołania do bibliotek .NET: zapis w dzienniku
 
-1. Załóżmy, że teraz chcesz dodać dziennik wszystkich operacji i zapisać go w pliku tekstowym. Klasa .NET `Trace` udostępnia tę funkcję. (Jest to również przydatne w przypadku podstawowych technik debugowania drukowania).  Klasa Trace znajduje się w klasie System.Diagnostics i będziemy potrzebować klas System.IO, takich jak , więc zacznij od dodania dyrektyw using na początku plików `StreamWriter` *CalculatorLibrary.cs:*
+1. Załóżmy, że chcesz teraz dodać dziennik wszystkich operacji i zapisać go w pliku tekstowym. Klasa .NET `Trace` udostępnia tę funkcję. (Jest to również przydatne w przypadku podstawowych technik debugowania drukowania).  Klasa Trace znajduje się w klasie System.Diagnostics i będziemy potrzebować klas System.IO, takich jak , więc zacznij od dodania dyrektyw using w górnej części `StreamWriter` *plików CalculatorLibrary.cs:*
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. Patrząc na sposób, w jaki jest używana klasa Trace, należy przytrzymać odwołanie do klasy, która jest skojarzona z plikiem nadrzędnym. Oznacza to, że kalkulator będzie działać lepiej jako obiekt, więc dodajmy konstruktor na początku klasy Calculator w *klasie CalculatorLibrary.cs.*
+1. Patrząc na sposób, w jaki jest używana klasa Trace, należy przytrzymać odwołanie do klasy , która jest skojarzona z plikiem nadrzędnym. Oznacza to, że kalkulator będzie działać lepiej jako obiekt, więc dodajmy konstruktor na początku klasy Calculator w *calculatorLibrary.cs.*
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
         {
    ```
 
-1. Musimy zmienić metodę statyczną na metodę `DoOperation` członkowski, więc usuń słowo `static` kluczowe .  Dodajmy również dane wyjściowe do każdego obliczenia dziennika, tak aby metoda DoOperation wyglądała jak następujący kod:
+1. Musimy zmienić metodę statyczną `DoOperation` na metodę członkowskią, więc usuń słowo `static` kluczowe .  Dodajmy również dane wyjściowe do każdego obliczenia dla dziennika, tak aby metoda DoOperation wyglądała jak następujący kod:
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,19 +182,19 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
     }
    ```
 
-1. Teraz, po *powrocie do programu Program.cs,* statyczne wywołanie jest oflagowane czerwonąquiggly. Aby rozwiązać ten problem, `calculator` utwórz zmienną, dodając następujący wiersz tuż przed `while (!endApp)` pętlą:
+1. Teraz z powrotem w *programie Program.cs* wywołanie statyczne jest oflagowane z czerwoną chybieńą. Aby rozwiązać ten problem, `calculator` utwórz zmienną, dodając następujący wiersz tuż przed `while (!endApp)` pętlą:
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   Zmodyfikuj witrynę wywołań w następujący sposób, tak aby odwoływała się do obiektu o nazwie małymi literami, dzięki czemu jest to wywołanie członka, a nie wywołanie metody `DoOperation` `calculator` statycznej:
+   Zmodyfikuj witrynę wywołań w następujący sposób, aby odwoływali się do obiektu o nazwie małymi literami, dzięki czemu będzie to wywołanie członka, a nie wywołanie metody `DoOperation` `calculator` statycznej:
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
    ```
 
-1. Uruchom ponownie program, a po jego Eksplorator plików kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie Otwórz folder w programie **Eksplorator plików,** a następnie przejdź w dół do folderu wyjściowego. Może to być *bin/Debug/netcoreapp3.1* i otwórz plik *calculator.log.*
+1. Uruchom program ponownie, a po jego Eksplorator plików kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie Otwórz folder w **programie Eksplorator plików**, a następnie przejdź w dół w Eksplorator plików do folderu wyjściowego. Może to być *bin/Debug/netcoreapp3.1* i otwórz plik *calculator.log.*
 
     ```output
     Starting Calculator Log
@@ -203,7 +203,7 @@ Rzeczywisty kod obejmuje wiele projektów, które współpracują ze sobą w ram
     3 * 3 = 9
     ```
 
-Na tym etapie kod *CalculatorLibrary.cs* powinien wyglądać podobnie do tego:
+Na tym etapie *calculatorLibrary.cs* powinien wyglądać podobnie do tego:
 
 ```csharp
 using System;
@@ -350,21 +350,21 @@ namespace CalculatorProgram
 
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>Dodawanie pakietu NuGet: zapis do pliku JSON
 
-1. Teraz załóżmy, że chcemy wyprowadzić operacje w formacie JSON, popularnym i przenośnym formacie do przechowywania danych obiektów. Aby zaimplementować tę funkcję, musimy odwoływać się do pakietu NuGet, Newtonsoft.Jsna. Pakiety NuGet są podstawowym celem dystrybucji bibliotek klas .NET. W **Eksplorator rozwiązań** kliknij prawym przyciskiem myszy  węzeł Zależności dla projektu CalculatorLibrary, a następnie wybierz pozycję Zarządzaj **pakietami NuGet.**
+1. Teraz załóżmy, że chcemy wyprowadzić operacje w formacie JSON, popularnym i przenośnym formacie do przechowywania danych obiektów. Aby zaimplementować tę funkcję, należy odwołać się do NuGet pakietu Newtonsoft.Jsna. NuGet są podstawowym źródłem dystrybucji bibliotek klas .NET. W **Eksplorator rozwiązań** kliknij prawym przyciskiem  myszy węzeł Zależności dla projektu CalculatorLibrary, a następnie wybierz pozycję Zarządzaj NuGet **pakietów.**
 
-   ![Zrzut ekranu przedstawiający zarządzanie pakietami NuGet w menu skrótów](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
+   ![Zrzut ekranu przedstawiający zarządzanie NuGet pakietów w menu skrótów](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
-   Zostanie otwarty Menedżer pakietów NuGet.
+   Zostanie NuGet Menedżer pakietów.
 
-   ![Zrzut ekranu przedstawiający Menedżer pakietów NuGet](media/vs-2019/calculator2-nuget-package-manager-dark.png)
+   ![Zrzut ekranu przedstawiający NuGet Menedżer pakietów](media/vs-2019/calculator2-nuget-package-manager-dark.png)
 
-1. Wyszukaj pozycję Newtonsoft.Jsw pakiecie, a następnie wybierz pozycję **Zainstaluj**.
+1. Wyszukaj pozycję Newtonsoft.Jspakietu, a następnie wybierz pozycję **Zainstaluj**.
 
-   ![Zrzut ekranu przedstawiający informacje o pakiecie Newtonsoft NuGet](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
+   ![Zrzut ekranu przedstawiający informacje o pakiecie NuGet Newtonsoft](media/vs-2019/calculator2-nuget-newtonsoft-json-dark2.png)
 
    Pakiet zostanie pobrany i dodany do projektu, a nowy wpis pojawi się w węźle Odwołania w **Eksplorator rozwiązań**.
 
-1. Dodaj dyrektywę using dla System.IO i Newtonsoft.Jsna pakiecie na początku *calculatorLibrary.cs*.
+1. Dodaj dyrektywę using dla System.IO i Newtonsoft.Jsna pakiecie na początku *calculatorLibrary.cs.*
 
    ```csharp
    using Newtonsoft.Json;
@@ -445,7 +445,7 @@ namespace CalculatorProgram
     }
    ```
 
-1. A w *programie Program.cs* dodaj wywołanie finish na końcu.
+1. W *programie Program.cs* dodaj wywołanie finish na końcu.
 
    ```csharp
             // And call to close the JSON writer before return
@@ -454,7 +454,7 @@ namespace CalculatorProgram
         }
    ```
 
-1. Skompilowanie i uruchomienie aplikacji. Po wprowadzeniu kilku operacji zamknij aplikację prawidłowo przy użyciu polecenia "n".  Teraz otwórz plik calculatorlog.jspowinien zostać wyświetlony ekran podobny do następującego:
+1. Skompilowanie i uruchomienie aplikacji. Po zakończeniu wprowadzania kilku operacji zamknij aplikację prawidłowo, używając polecenia "n".  Teraz otwórz plik calculatorlog.jsi powinien zostać wyświetlony tekst podobny do następującego:
 
    ```json
    {
@@ -477,9 +477,9 @@ namespace CalculatorProgram
 
 ## <a name="debug-set-and-hit-a-breakpoint"></a>Debugowanie: ustawianie i trafianie punktu przerwania
 
-Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie kodu krok po kroku w celu znalezienia dokładnego punktu, w którym popełniliśmy błąd programisty. Następnie zrozumiesz, jakie poprawki należy wprowadzić w kodzie. Visual Studio umożliwia tymczasowe zmiany, aby można było kontynuować uruchamianie programu.
+Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie kodu krok po kroku w celu znalezienia dokładnego punktu, w którym popełniliśmy błąd programisty. Następnie zrozumiesz, jakie poprawki należy wprowadzić w kodzie. Visual Studio można wprowadzać tymczasowe zmiany, aby można było kontynuować uruchamianie programu.
 
-1. W *pliku Program.cs* kliknij margines z lewej strony następującego kodu (lub otwórz menu skrótów i wybierz pozycję **Punkt** przerwania Wstaw punkt przerwania  >  lub naciśnij **klawisz F9):**
+1. W *pliku Program.cs* kliknij margines z lewej strony następującego kodu (lub otwórz menu skrótów i wybierz pozycję **Wstaw** punkt przerwania punktu przerwania lub naciśnij  >  klawisz **F9):**
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -491,7 +491,7 @@ Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie
 
 1. Skompiluj i uruchom aplikację.
 
-1. W uruchomionej aplikacji wpisz kilka wartości do obliczenia:
+1. W uruchomionej aplikacji wpisz niektóre wartości dla obliczenia:
 
    - Jako pierwszą liczbę wpisz **8** i wprowadź ją.
    - Jako drugą liczbę wpisz **0** i wprowadź ją.
@@ -505,7 +505,7 @@ Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie
 
 ## <a name="debug-view-variables"></a>Debugowanie: wyświetlanie zmiennych
 
-1. W wyróżniony kod umieść wskaźnik myszy na zmiennych, takich jak `cleanNum1` i `op` . Zostaną wyświetlone bieżące wartości tych zmiennych ( `8` i `d` , odpowiednio), które są wyświetlane w etykietkach danych.
+1. W wyróżniony kod zatrzymaj wskaźnik myszy na zmiennych, takich jak `cleanNum1` i `op` . Zostaną wyświetlone bieżące wartości tych zmiennych ( `8` i `d` , odpowiednio), które są wyświetlane w etykietkach danych.
 
    ![Zrzut ekranu przedstawiający wyświetlanie etykietki danych](media/vs-2019/calculator-2-debug-view-datatip.png)
 
@@ -517,9 +517,9 @@ Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie
 
    ![Zrzut ekranu przedstawiający okno Locals (Lokalne)](media/vs-2019/calculator-2-debug-locals-window.png)
 
-3. Spójrz na **okno Autos (Automatyczne).**
+3. Spójrz na **okno Automatyczne.**
 
-   Okno Autos (Automatyczne)  jest podobne do okna Zmiennych lokalnych, ale wyświetla zmienne bezpośrednio poprzedzające bieżący wiersz kodu, w którym aplikacja jest wstrzymana, i następujące po nim.
+   Okno Autos (Automatyczne)  jest podobne do okna Zmiennych lokalnych, ale zawiera zmienne bezpośrednio poprzedzające bieżący wiersz kodu, w którym aplikacja jest wstrzymana, i następujące po nim.
 
    Następnie wykonasz kod w debugerze po jednej instrukcji na raz, która jest nazywana wykonywaniem *krokowym*.
 
@@ -531,55 +531,55 @@ Debuger Visual Studio to zaawansowane narzędzie, które umożliwia uruchamianie
 
    ![Zrzut ekranu przedstawiający polecenie krok do kroku](media/vs-2019/calculator-2-debug-step-into.png)
 
-   Właśnie weszliśmy do metody `DoOperation` w `Calculator` klasie .
+   Właśnie doszliśmy do metody `DoOperation` w `Calculator` klasie .
 
-1. Aby uzyskać hierarchiczne spojrzenie na przepływ programu, przyjrzyj się oknie **Stos** wywołań. (Jeśli jest zamknięty, wybierz pozycję **Debuguj**  >  **Windows**  >  **Stos wywołań).**
+1. Aby uzyskać hierarchiczny podgląd przepływu programu, spójrz na okno **Stos** wywołań. (Jeśli jest zamknięty, wybierz pozycję **Debuguj**  >  **Windows**  >  **Stos wywołań).**
 
    ![Zrzut ekranu przedstawiający stos wywołań](media/vs-2019/calculator-2-debug-call-stack.png)
 
-   Ten widok przedstawia bieżącą metodę wskazywaną przez żółty wskaźnik, a drugi wiersz pokazuje funkcję, która ją wywołała, z metody w `Calculator.DoOperation` `Main` *programie Program.cs*. Okno **Stos wywołań** pokazuje kolejność wywoływania metod i funkcji. Ponadto zapewnia dostęp do wielu funkcji debugera, takich jak **Przejdź** do kodu źródłowego, z menu skrótów.
+   Ten widok przedstawia bieżącą metodę wskazywaną przez żółty wskaźnik, a drugi wiersz przedstawia funkcję, która ją nazwała, z metody w `Calculator.DoOperation` `Main` *programie Program.cs*. Okno **Stos wywołań** pokazuje kolejność wywoływania metod i funkcji. Ponadto zapewnia dostęp do wielu funkcji debugera, takich jak **przejdź** do kodu źródłowego , z menu skrótów.
 
-1. **Naciskaj klawisz F10** (lub **Debuguj** krok  >  **powyżej**) kilka razy, aż aplikacja wstrzyma się na `switch` instrukcji .
+1. Naciśnij **kilka razy klawisz F10** (lub **Debuguj** krok  >  **powyżej),** aż aplikacja wstrzyma się na instrukcji `switch` .
 
    ```csharp
    switch (op)
    {
    ```
 
-   Polecenie Step Over jest podobne do polecenia Step Into, z tą różnicą, że jeśli bieżąca instrukcja wywołuje funkcję, debuger uruchamia kod w wywołanej funkcji i nie wstrzymuje wykonywania do momentu powrotu funkcji. Funkcja Step Over to szybszy sposób nawigowania po kodzie, jeśli nie interesuje Cię określonej funkcji.
+   Polecenie Step Over jest podobne do polecenia Step Into, z tą różnicą, że jeśli bieżąca instrukcja wywołuje funkcję, debuger uruchamia kod w wywołanej funkcji i nie wstrzymuje wykonywania do momentu powrotu funkcji. Krok po kroku to szybszy sposób nawigowania po kodzie, jeśli nie interesuje Cię określonej funkcji.
 
-1. Naciśnij jeszcze raz klawisz **F10,** aby aplikacja wstrzymała się w następującym wierszu kodu.
+1. Naciśnij jeszcze raz klawisz **F10,** aby aplikacja została wstrzymana w następującym wierszu kodu.
 
    ```csharp
    if (num2 != 0)
    {
    ```
 
-   Ten kod sprawdza, czy nie ma przypadku dzielenia przez zero. Jeśli aplikacja będzie kontynuować, zrzuci wyjątek ogólny (błąd), ale załóżmy, że rozważysz tę usterkę i chcesz zrobić coś innego, na przykład wyświetlić rzeczywistą zwróconą wartość w konsoli. Jedną z opcji jest użycie funkcji debugera o nazwie Edytuj i kontynuuj, aby wprowadzać zmiany w kodzie, a następnie kontynuować debugowanie. Jednak pokażemy Ci inny sposób na tymczasowe zmodyfikowanie przepływu wykonywania.
+   Ten kod sprawdza, czy nie ma przypadku dzielenia przez zero. Jeśli aplikacja będzie kontynuować pracę, zrzuci wyjątek ogólny (błąd), ale załóżmy, że rozważysz tę usterkę i chcesz zrobić coś innego, na przykład wyświetlić rzeczywistą zwróconą wartość w konsoli. Jedną z opcji jest użycie funkcji debugera o nazwie Edit-and-continue w celu zmiany kodu, a następnie kontynuowania debugowania. Jednak pokażemy Ci inny sposób na tymczasowe zmodyfikowanie przepływu wykonywania.
 
-## <a name="debug-test-a-temporary-change"></a>Debugowanie: testowanie tymczasowej zmiany
+## <a name="debug-test-a-temporary-change"></a>Debugowanie: testowanie zmiany tymczasowej
 
-1. Wybierz żółty wskaźnik, obecnie wstrzymany na instrukcji , i `if (num2 != 0)` przeciągnij go do następującej instrukcji.
+1. Wybierz żółty wskaźnik, który jest obecnie wstrzymany na `if (num2 != 0)` instrukcji , i przeciągnij go do następującej instrukcji.
 
    ```csharp
    result = num1 / num2;
    ```
 
-   W ten sposób aplikacja całkowicie pomija instrukcje , aby zobaczyć, co się stanie, gdy `if` podzielisz przez zero.
+   W ten sposób aplikacja całkowicie pominie instrukcje , aby zobaczyć, co się stanie, gdy `if` podzielisz wartość przez zero.
 
 1. Naciśnij **klawisz F10,** aby wykonać wiersz kodu.
 
-1. Zatrzymaj wskaźnik myszy na zmiennej `result` i zobaczysz, że przechowuje ona wartość `Infinity` .
+1. Najedź `result` kursorem na zmienną i zobaczysz, że przechowuje ona wartość `Infinity` .
 
-   W języku C# `Infinity` wynik jest wynikiem dzielenia przez zero.
+   W języku C# `Infinity` wartość jest wynikiem dzielenia przez zero.
 
-1. Naciśnij **klawisz F5** (lub **debuguj**  >  **kontynuuj debugowanie).**
+1. Naciśnij **klawisz F5** (lub kontynuuj **debugowanie).**  >  
 
-   Symbol nieskończoności pojawia się w konsoli w wyniku operacji matematycznych.
+   Symbol Nieskończoność pojawia się w konsoli w wyniku operacji matematycznych.
 
 1. Zamknij aplikację prawidłowo przy użyciu polecenia "n".
 
-## <a name="code-complete"></a>Ukończony kod
+## <a name="code-complete"></a>Ukończono kod
 
 Oto kompletny kod pliku *CalculatorLibrary.cs* po ukończeniu wszystkich kroków:
 
