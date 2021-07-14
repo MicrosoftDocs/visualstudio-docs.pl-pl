@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a63dbc1ad3ec544e52974a7ced9a69d4585ab629
-ms.sourcegitcommit: b5744be07b7882e30bae67ef2810db56cf68344f
+ms.openlocfilehash: dec9f76f2b21e11cc79bc55efc4a2de6fb7dedc3
+ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113487721"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113725524"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w Visual Studio
 
@@ -33,7 +33,8 @@ Aby uzyskać listę typowych skrótów klawiaturowych i inne informacje o produk
 
 Aby uzyskać więcej informacji na temat [](../ide/reference/accessibility-tips-and-tricks.md) ułatwień dostępu w Visual Studio, zobacz Porady i wskazówki dotyczące ułatwień dostępu oraz [Porady: używanie wyłącznie klawiatury](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-## <a name="most-popular-keyboard-shortcuts"></a>Popularne skróty klawiaturowe
+<a name="popular"></a>
+## <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skróty klawiaturowe dla Visual Studio
 
 Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono inaczej. Kontekst *globalny* oznacza, że skrót ma zastosowanie w dowolnym oknie narzędzi w Visual Studio.
 
@@ -161,18 +162,18 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |Polecenia|Skróty klawiaturowe [Konteksty specjalne]|Identyfikator polecenia|
 |-|-|-|
 |Widok klasy|**Ctrl+Shift+C**| View.ClassView |
-|Edytuj etykietę|**F2**| View.EditLabel |
-|Lista błędów|**Ctrl+, \\ Ctrl+E**<br /><br />lub **Ctrl+, \\ E**| View.ErrorList |
+|Edytowanie etykiety|**F2**| View.EditLabel |
+|Lista błędów|**Ctrl+, \\ Ctrl+E**<br /><br />lub **Ctrl+ \\ , E**| View.ErrorList |
 |Przechodzenie do tyłu|**Ctrl+-**| View.NavigateBackward |
-|Poruszanie się do przodu|**Ctrl+Shift+-**| View.NavigateForward |
+|Przechodzenie do przodu|**Ctrl+Shift+-**| View.NavigateForward |
 |Przeglądarka obiektów|**Ctrl+Alt+J**| View.ObjectBrowser |
 |Dane wyjściowe|**Ctrl+Alt+O**| View.Output |
 |Okno właściwości|**F4**| View.PropertiesWindow |
 |Odśwież|**F5** [Team Explorer]| View.Refresh |
 |Eksplorator serwera|**Ctrl+Alt+S**| View.ServerExplorer |
-|Pokazywanie tagu inteligentnego|**Ctrl+.**<br /><br />lub **Shift+Alt+F10** [Widok projektu edytora HTML]| View.ShowSmartTag |
+|Pokazywanie tagu inteligentnego|**Ctrl+.**<br /><br />lub **Shift+Alt+F10** [Widok projektowy edytora HTML]| View.ShowSmartTag |
 |Eksplorator rozwiązań|**Ctrl+Alt+L**| View.SolutionExplorer |
-|TFS Team Explorer|**Ctrl+, \\ Ctrl+M**| View.TfsTeamExplorer |
+|Tfs Team Explorer|**Ctrl+, \\ Ctrl+M**| View.TfsTeamExplorer |
 |Przybornik|**Ctrl+Alt+X**| View.Toolbox |
 |Wyświetlanie kodu|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Ustawienia Designer]| View.ViewCode |
 |Projektant widoków|**Shift+F7** [Widok źródła edytora HTML]| View.ViewDesigner |
@@ -183,14 +184,14 @@ Wszystkie skróty w tej sekcji są stosowane globalnie, chyba że określono ina
 |-|-|-|
 |Okno aktywowania dokumentu|**Esc**| Window.ActivateDocumentWindow |
 |Zamykanie okna dokumentu|**Ctrl+F4**| Window.CloseDocumentWindow |
-|Okno Następnego dokumentu|**Ctrl+F6**| Window.NextDocumentWindow |
+|Okno następnego dokumentu|**Ctrl+F6**| Window.NextDocumentWindow |
 |Okno następnego dokumentu nav|**Ctrl+Tab**| Window.NextDocumentWindowNav |
 |Następne okienko podziału|**F6**| Window.NextSplitPane |
 
 
 ## <a name="global-shortcuts"></a>Skróty globalne
 
-Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy dowolne Visual Studio okno ma fokus.
+Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy Visual Studio okno ma fokus.
 
 - [Analiza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
@@ -214,7 +215,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 - [Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
 - [Menu kontekstowe debugera](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
 - [Inne menu kontekstowe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
-- [Menu kontekstowe team foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
+- [Menu kontekstowe team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
 - [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
 - [Centrum diagnostyki](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
 
@@ -295,24 +296,24 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Uruchom w celu kursora|**Ctrl+F10**| Debug.RunToCursor |
 |Ustawianie następnej instrukcji|**Ctrl+Shift+F10**| Debug.SetNextStatement |
 |Pokazywanie stosu wywołań na mapie kodu|**Ctrl+Shift+'**| Debug.ShowCallStackonCodeMap |
-|Pokaż następną instrukcje|**Alt + Num** *| Debug.ShowNextStatement |
+|Pokaż następną instrukcja|**Alt + Num** *| Debug.ShowNextStatement |
 |Rozpocznij|**F5**| Debug.Start |
 |Uruchamianie analizy aplikacji systemu Windows Phone|**Alt+F1**| Debug.StartWindowsPhoneApplicationAnalysis |
 |Uruchamianie bez debugowania|**Ctrl+F5**| Debug.StartWithoutDebugging |
 |Krok do kroku|**F11**| Debug.StepInto |
 |Krok do bieżącego procesu|**Ctrl+Alt+F11**| Debug.StepIntoCurrentProcess |
 |Krok po kroku do określonych|**Shift+Alt+F11**| Debug.StepIntoSpecific |
-|Wyetapuj|**Shift + F11**| Debug.StepOut |
+|Wyetapuj|**Shift+ F11**| Debug.StepOut |
 |Wyetapuj bieżący proces|**Ctrl+Shift+Alt+F11**| Debug.StepOutCurrentProcess |
-|Krok po kroku|**F10** (Podczas debugowania: wykonuje krok nad akcją)| Debug.StepOver |
+|Krok po kroku|**F10** (Podczas debugowania: wykonuje krok po kroku)| Debug.StepOver |
 |Krok po kroku|**F10 (Jeśli** nie debugowanie: rozpoczyna debugowanie i zatrzymuje się w pierwszym wierszu kodu użytkownika)| Debug.StepOver |
 |Przekłoń bieżący proces|**Ctrl+Alt+F10**| Debug.StepOverCurrentProcess |
-|Zatrzymywanie debugowania|**Shift+F5**| Debug.StopDebugging |
+|Zatrzymywanie debugowania|**Shift+ F5**| Debug.StopDebugging |
 |Zatrzymywanie analizy wydajności|**Shift+Alt+F2**| Debug.StopPerformanceAnalysis |
 |Zadania|**Ctrl+Shift+D, K**| Debug.Tasks |
 |Wątki|**Ctrl+Alt+H**| Debug.Threads |
 |Przełącz punkt przerwania|**F9**| Debug.ToggleBreakpoint |
-|Przełącz dekompełt|**Ctrl+F11**| Debug.ToggleDisassembly |
+|Przełącz dekompsembler|**Ctrl+F11**| Debug.ToggleDisassembly |
 |Obejrzyj 1|**Ctrl+Alt+W, 1**| Debug.Watch1 |
 |Obejrzyj 2|**Ctrl+Alt+W, 2**| Debug.Watch2 |
 |Obejrzyj 3|**Ctrl+Alt+W, 3**| Debug.Watch3 |
@@ -323,7 +324,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
 |Usuń|**Alt+F9, D**| DebuggerContextMenus.BreakpointsWindow.Delete |
-|Przejdź do dekompasu|**Alt+F9, A**| DebuggerContextMenus.BreakpointsWindow.GoToDisassembly |
+|Przejdź do dezembedyzowania|**Alt+F9, A**| DebuggerContextMenus.BreakpointsWindow.GoToDisassembly |
 |Przejdź do kodu źródłowego|**Alt+F9, S**| DebuggerContextMenus.BreakpointsWindow.GoToSourceCode |
 
 ### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Centrum diagnostyki
@@ -451,7 +452,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Zastąpienie|**Ctrl+Alt+Ins**| Project.Override |
 |Podgląd zmian|**Alt+;** następnie **Alt + C**| Project.Previewchanges |
 |Publikowanie wybranych plików|**Alt+;** następnie **Alt + P**| Project.Publishselectedfiles |
-|Zastępowanie wybranych plików z serwera|**Alt+;** , **a następnie Alt+R**| Project.Replaceselectedfilesfromserver |
+|Zastępowanie wybranych plików z serwera|**Alt+;** następnie **Alt+ R**| Project.Replaceselectedfilesfromserver |
 
 ### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Project i menu kontekstowe rozwiązania
 
@@ -488,7 +489,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Przejdź do zatwierdzeń usługi Git|**Ctrl+0** (zero), **Ctrl+O** (litera 'O')<br /><br /> lub<br /><br /> **Ctrl+0, O**| Team.Git.GoToGitCommits |
 |Wyszukiwanie w programie Team Explorer|**Ctrl+'**| Team.TeamExplorerSearch |
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menu kontekstowe team foundation
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
@@ -592,11 +593,11 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Zamykanie okna narzędzia|**Shift + Esc**| Window.CloseToolWindow |
 |Zachowaj otwartą kartę|**Ctrl+Alt+Home**| Window.KeepTabOpen |
 |Przechodzenie do paska nawigacyjnego|**Ctrl+F2**| Window.MovetoNavigationBar |
-|Okno Następnego dokumentu|**Ctrl+F6**| Window.NextDocumentWindow |
+|Okno następnego dokumentu|**Ctrl+F6**| Window.NextDocumentWindow |
 |Okno następnego dokumentu nav|**Ctrl+Tab**| Window.NextDocumentWindowNav |
 |Następne okienko|**Alt+F6**| Window.NextPane |
 |Następne okienko podziału|**F6**| Window.NextSplitPane |
-|Karta Dalej|**Ctrl+Alt+PgDn**<br /><br /> lub<br /><br /> **Ctrl+PgDn**| Window.NextTab |
+|Następna karta|**Ctrl+Alt+PgDn**<br /><br /> lub<br /><br /> **Ctrl+PgDn**| Window.NextTab |
 |Następna karta i dodawanie do zaznaczenia|**Ctrl+Shift+Alt+PgDn**| Window.NextTabandAddtoSelection |
 |Następny nav okna narzędzi|**Alt+F7**| Window.NextToolWindowNav |
 |Okno poprzedniego dokumentu|**Ctrl+Shift+F6**| Window.PreviousDocumentWindow |
@@ -607,9 +608,9 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 |Poprzednia karta i dodawanie do zaznaczenia|**Ctrl+Shift+Alt+PgUp**| Window.PreviousTabandAddtoSelection |
 |Poprzednie okno narzędzia nav|**Shift+Alt+F7**| Window.PreviousToolWindowNav |
 |Szybkie uruchamianie|**Ctrl+Q**| Window.QuickLaunch |
-|Szybkie uruchamianie w poprzedniej kategorii|**Ctrl+Shift+Q**| Window.QuickLaunchPreviousCategory |
+|Poprzednia kategoria szybkiego uruchamiania|**Ctrl+Shift+Q**| Window.QuickLaunchPreviousCategory |
 |Menu Pokaż dokowanie|**Alt+-**| Window.ShowDockMenu |
-|Show Ex MDI file list (Pokaż listę plików Ex MDI)|**Ctrl+Alt+Strzałka w dół**| Window.ShowEzMDIFileList |
+|Wyświetlanie listy plików Ex MDI|**Ctrl+Alt+Strzałka w dół**| Window.ShowEzMDIFileList |
 |Wyszukiwanie w Eksploratorze rozwiązań|**Ctrl+;**| Window.SolutionExplorerSearch |
 |Wyszukiwanie w oknie|**Alt+'**| Window.WindowSearch |
 
@@ -625,7 +626,7 @@ Te skróty klawiaturowe *są globalne,* co oznacza, że można ich używać, gdy
 
 ### <a name="adonet-entity-data-model-designer"></a>Projektant modelu danych jednostki ADO.NET
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
@@ -634,7 +635,7 @@ Skróty specyficzne dla tego kontekstu to:
 |Do dołu|**Alt+End**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom |
 |Do góry|**Alt+Home**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToTop |
 |W górę|**Alt+Strzałka w górę**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up |
-|W górę 5|**Alt+PgUp**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5 |
+|Up 5|**Alt+PgUp**| OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Up5 |
 |Zmień nazwę|**Ctrl+R, R**| OtherContextMenus.MicrosoftDataEntityDesignContext.Refactor.Rename |
 |Usuń z diagramu|**Shift+Del**| OtherContextMenus.MicrosoftDataEntityDesignContext.RemovefromDiagram |
 |Przeglądarka modelu danych jednostki|**Ctrl+1**| View.EntityDataModelBrowser |
@@ -642,22 +643,22 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="class-diagram"></a>Diagram klas
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
-|Zwiń|**Liczba —**| ClassDiagram.Collapse |
+|Zwiń|**Num -**| ClassDiagram.Collapse |
 |Rozwiń|**Num +**| ClassDiagram.Expand |
 |Usuń|**Ctrl+Del**| Edit.Delete |
-|Rozwiń listę zwiń typ podstawowy|**Shift+Alt+B**| Edit.ExpandCollapseBaseTypeList |
+|Rozwijanie zwiniętej listy typów podstawowych|**Shift+Alt+B**| Edit.ExpandCollapseBaseTypeList |
 |Przejdź do wersji lollipop|**Shift+Alt+L**| Edit.NavigateToLollipop |
 |Usuń z diagramu|**Usuwanie**| Edit.RemovefromDiagram |
 |Wyświetlanie kodu|**Enter**| View.ViewCode |
 
 ### <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -671,7 +672,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="dataset-editor"></a>Edytor obiektów DataSet
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -681,13 +682,13 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="difference-viewer"></a>Podgląd różnic
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
 |Ignoruj odstępy przycięcia|**Ctrl+, \\ Ctrl+Spacja**| Diff.IgnoreTrimWhitespace |
-|Widok wbudowane|**Ctrl+, \\ Ctrl+1**| Diff.InlineView |
+|Widok w tekście|**Ctrl+, \\ Ctrl+1**| Diff.InlineView |
 |Widok tylko do lewej|**Ctrl+, \\ Ctrl+3**| Diff.LeftOnlyView |
 |Następna różnica|**F8**| Diff.NextDifference |
 |Poprzednia różnica|**Shift+F8**| Diff.PreviousDifference |
@@ -774,12 +775,12 @@ Skróty specyficzne dla tego kontekstu to:
 |Kursywa|**CTRL + I**| Format.Italic |
 |Podkreślenie|**Ctrl+U**| Format.Underline |
 |Dodawanie strony zawartości|**Ctrl+M, Ctrl+C**| Project.AddContentPage |
-|Kolumna po lewej stronie|**Ctrl+Alt+Strzałka w lewo**| Table.ColumntotheLeft |
-|Kolumna z prawej strony|**Ctrl+Alt+Strzałka w prawo**| Table.ColumntotheRight |
+|Kolumna z lewej strony|**Ctrl+Alt+Strzałka w lewo**| Table.ColumntotheLeft |
+|Kolumna po prawej stronie|**Ctrl+Alt+Strzałka w prawo**| Table.ColumntotheRight |
 |Wiersz powyżej|**Ctrl+Alt+Strzałka w górę**| Table.RowAbove |
 |Wiersz poniżej|**Ctrl+Alt+Strzałka w dół**| Table.RowBelow |
 |Kontrolki nievisualne sieci|**Ctrl+Shift+N**| View.ASP.NETNonvisualControls |
-|Edytowanie wzorca|**Ctrl+M, Ctrl+M**| View.EditMaster |
+|Edytuj wzorzec|**Ctrl+M, Ctrl+M**| View.EditMaster |
 |Następny widok|**Ctrl+PgDn**| View.NextView |
 |Pokazywanie tagu inteligentnego|**Shift+Alt+F10**| View.ShowSmartTag |
 |Wyświetlanie znaczników|**Shift+F7**| View.ViewMarkup |
@@ -847,7 +848,7 @@ Skróty specyficzne dla tego kontekstu to:
 |Porównywanie schematów SSDT — generowanie skryptu|**Shift+Alt+G**| SQL.SSDTSchemaCompareGenerateScript |
 |Porównywanie następnej zmiany schematu SSDT|**Shift+Alt+.**| SQL.SSDTSchemaCompareNextChange |
 |Porównanie schematów SSDT z poprzednią zmianą|**Shift+Alt+,**| SQL.SSDTSchemaComparePreviousChange |
-|Zatrzymywanie porównywania schematów SSDT|**Alt+Break**| SQL.SSDTSchemaCompareStop |
+|Zatrzymywanie porównania schematów SSDT|**Alt+Break**| SQL.SSDTSchemaCompareStop |
 |Porównanie aktualizacji zapisu w schemacie SSDT|**Shift+Alt+U**| SQL.SSDTSchemaCompareWriteUpdates |
 
 ### <a name="microsoft-sql-server-data-tools-table-designer"></a>Narzędzia danych Microsoft SQL Server, Projektant tabel
@@ -877,12 +878,12 @@ Skróty specyficzne dla tego kontekstu to:
 |W pełni kwalifikowane nazwy|**Ctrl+R, Q**<br /><br /> lub<br /><br /> **Ctrl+R, Ctrl+Q**| SQL.FullyqualifyNames |
 |Przejście do schematu|**Ctrl+R, M**<br /><br /> lub<br /><br /> **Ctrl+R, Ctrl+M**| SQL.MovetoSchema |
 |Zmień nazwę|**F2**<br /><br /> lub<br /><br /> **Ctrl+R, R**<br /><br /> lub<br /><br /> **Ctrl+R, Ctrl+R**| SQL.Rename |
-|T <1> <3> SQL editor cancel query|**Alt+Break**| SQL.TSqlEditorCancelQuery |
+|T SQL <1> <3> editor cancel query (Anulowanie zapytania w edytorze T)|**Alt+Break**| SQL.TSqlEditorCancelQuery |
 |T SQL wykonywania zapytania w edytorze|**Ctrl+Shift+E**| SQL.TSqlEditorExecuteQuery |
-|T <1> <3> editor results as file (T SQL wyniki edytora jako plik)|**Ctrl+D, F**| SQL.TSqlEditorResultsAsFile |
+|T SQL <1> <3> wyniki edytora jako plik|**Ctrl+D, F**| SQL.TSqlEditorResultsAsFile |
 |T SQL <1> <2> wyniki edytora jako siatka|**Ctrl+D, G**| SQL.TSqlEditorResultsAsGrid |
 |T SQL w edytorze jako tekst|**Ctrl+D, T**| SQL.TSqlEditorResultsAsText |
-|T <3> <8> editor show estimated plan (SQL Szacowany plan jest pokazywany w edytorze T)|**Ctrl+D, E**| SQL.TSqlEditorShowEstimatedPlan |
+|T SQL <3> <8> editor show estimated plan (Szacowany plan jest pokazywany w edytorze T)|**Ctrl+D, E**| SQL.TSqlEditorShowEstimatedPlan |
 |T SQL <2> <2> editor toggle execution plan (Przełączanie planu wykonywania w edytorze T)|**Ctrl+D, A**| SQL.TSqlEditorToggleExecutionPlan |
 |SQL T <1> <8> w okienku wyników przełączania|**Ctrl+D, R**| SQL.TSqlEditorToggleResultsPane |
 |T SQL klonowania edytora|**Ctrl+Alt+N**|SQL. TSqlEditorCloneQuery |
@@ -895,12 +896,12 @@ Skróty specyficzne dla tego kontekstu to:
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
-|T <1> <3> SQL editor cancel query|**Alt+Break**| SQL.TSqlEditorCancelQuery |
+|T SQL <1> <3> editor cancel query (Anulowanie zapytania w edytorze T)|**Alt+Break**| SQL.TSqlEditorCancelQuery |
 |T SQL wykonywania zapytania w edytorze|**Ctrl+Shift+E**| SQL.TSqlEditorExecuteQuery |
-|T <1> <3> editor results as file (T SQL wyniki edytora jako plik)|**Ctrl+D, F**| SQL.TSqlEditorResultsAsFile |
+|T SQL <1> <3> wyniki edytora jako plik|**Ctrl+D, F**| SQL.TSqlEditorResultsAsFile |
 |T SQL <1> <2> wyniki edytora jako siatka|**Ctrl+D, G**| SQL.TSqlEditorResultsAsGrid |
 |T SQL w edytorze jako tekst|**Ctrl+D, T**| SQL.TSqlEditorResultsAsText |
-|T <3> <8> editor show estimated plan (SQL Szacowany plan jest pokazywany w edytorze T)|**Ctrl+D, E**| SQL.TSqlEditorShowEstimatedPlan |
+|T SQL <3> <8> editor show estimated plan (Szacowany plan jest pokazywany w edytorze T)|**Ctrl+D, E**| SQL.TSqlEditorShowEstimatedPlan |
 |T SQL <2> <2> editor toggle execution plan (Przełączanie planu wykonywania w edytorze T)|**Ctrl+D, A**| SQL.TSqlEditorToggleExecutionPlan |
 |SQL T <1> <8> w okienku wyników przełączania|**Ctrl+D, R**| SQL.TSqlEditorToggleResultsPane |
 |T SQL klonowania edytora|**Ctrl+Alt+N**|SQL. TSqlEditorCloneQuery |
@@ -949,7 +950,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
-|Wiersz przerwania|**Enter**| Edit.BreakLine |
+|Linia przerwania|**Enter**| Edit.BreakLine |
 |Char left|**Strzałka w lewo**| Edit.CharLeft |
 |Char left extend|**Shift+Strzałka w lewo**| Edit.CharLeftExtend |
 |Char po prawej stronie|**Strzałka w prawo**| Edit.CharRight |
@@ -962,7 +963,7 @@ Skróty specyficzne dla tego kontekstu to:
 |Przenoszenie kontrolki w dół|**Ctrl+strzałka w dół**| Edit.MoveControlDown |
 |Przenoszenie kontrolki w lewo|**Ctrl+Strzałka w lewo**| Edit.MoveControlLeft |
 |Przenoszenie kontrolki w prawo|**Ctrl+Strzałka w prawo**| Edit.MoveControlRight |
-|Przenoszenie kontroli w górę|**Ctrl+Strzałka w górę**| Edit.MoveControlUp |
+|Przenieś kontrolę w górę|**Ctrl+Strzałka w górę**| Edit.MoveControlUp |
 |Anulowanie wyboru|**Esc**| Edit.SelectionCancel |
 |Kontrola rozmiaru w dół|**Ctrl+Shift+Strzałka w dół**| Edit.SizeControlDown |
 |Kontrolka rozmiaru w lewo|**Ctrl+Shift+Strzałka w lewo**| Edit.SizeControlLeft |
@@ -973,7 +974,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="sequence-diagram"></a>Diagramów sekwencji
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -983,19 +984,19 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="settings-designer"></a>Projektant ustawień
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
-|Edytowanie komórki|**F2**| Edit.EditCell |
+|Edytuj komórkę|**F2**| Edit.EditCell |
 |Usuwanie wiersza|**Ctrl+Delete**| Edit.RemoveRow |
 |Anulowanie wyboru|**Esc**| Edit.SelectionCancel |
 |Wyświetlanie kodu|**F7**| View.ViewCode |
 
 ### <a name="solution-explorer"></a>Eksplorator rozwiązań
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenie|Skrót klawiaturowy|Identyfikator polecenia|
@@ -1004,7 +1005,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="team-explorer"></a>Team Explorer
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenie|Skrót klawiaturowy|Identyfikator polecenia|
@@ -1129,16 +1130,16 @@ Skróty specyficzne dla tego kontekstu to:
 |Anulowanie wyboru| **Escape** | Edit.SelectionCancel |
 |Wybierz pozycję , aby ostatnio wrócić| **Ctrl+=** | Edit.SelectToLastGoBack |
 |Menu Pokaż kod obiektywu| **Ctrl+K, Ctrl+\`** | Edit.ShowCodeLensMenu |
-|Pokaż menu nawigowania| **Alt+\`** | Edit.ShowNavigateMenu |
+|Pokaż menu nawigowania| **Alt +\`** | Edit.ShowNavigateMenu |
 |Zatrzymywanie ukrywania bieżącego| **Ctrl+M, Ctrl+U** | Edit.StopHidingCurrent |
-|Zatrzymywanie linuowania| **Ctrl+M, Ctrl+P** | Edit.StopOutlining |
+|Zatrzymywanie linowania| **Ctrl+M, Ctrl+P** | Edit.StopOutlining |
 |Zamień kotwicę| **Ctrl+K, Ctrl+A** | Edit.SwapAnchor |
 |Tabulator po lewej stronie| **Shift+Tab** | Edit.TabLeft |
-|Przełącz wszystkie wyłoki| **Ctrl+M, Ctrl+L** | Edit.ToggleAllOutlining |
+|Przełącz wszystkie podsuwu| **Ctrl+M, Ctrl+L** | Edit.ToggleAllOutlining |
 |Przełącz zakładkę| **Ctrl+K, Ctrl+K** | Edit.ToggleBookmark |
-|Przełączanie trybu uzupełniania| **Ctrl+Alt+Spacja** | Edit.ToggleCompletionMode |
-|Przełączanie rozszerzania wyekslinowania| **Ctrl+M, Ctrl+M** | Edit.ToggleOutliningExpansion |
-|Skrót do przełączania listy zadań| **Ctrl+K, Ctrl+H** | Edit.ToggleTaskListShortcut |
+|Przełącz tryb uzupełniania| **Ctrl+Alt+Spacja** | Edit.ToggleCompletionMode |
+|Przełączanie rozszerzania w celu rozwinięcia| **Ctrl+M, Ctrl+M** | Edit.ToggleOutliningExpansion |
+|Skrót do listy zadań przełączania| **Ctrl+K, Ctrl+H** | Edit.ToggleTaskListShortcut |
 |Przełączanie zawijania wyrazów| **Ctrl+E, Ctrl+W** | Edit.ToggleWordWrap |
 |Zaznaczenie opcji Cokmentuj| **Ctrl+K, Ctrl+U** | Edit.UncommentSelection |
 |Wyświetl do dołu| **Ctrl+PgDn** | Edit.ViewBottom |
@@ -1146,11 +1147,11 @@ Skróty specyficzne dla tego kontekstu to:
 |Wyświetl u góry| **Ctrl+PgUp** | Edit.ViewTop |
 |Wyświetl górne rozszerzenie| **Ctrl+Shift+PgUp** | Edit.ViewTopExtend |
 |Wyświetlanie białych spacji| **Ctrl+R, Ctrl+W** | Edit.ViewWhiteSpace |
-|Usuwanie programu Word do końca| **Ctrl+Delete** | Edit.WordDeleteToEnd |
+|Usuwanie wyrazów do końca| **Ctrl+Delete** | Edit.WordDeleteToEnd |
 |Usuwanie programu Word do uruchomienia| **Ctrl+Backspace** | Edit.WordDeleteToStart |
-|Następne słowo| **Ctrl+Strzałka w prawo** | Edit.WordNext |
-|Następne rozszerzenie programu Word| **Ctrl+Shift+Strzałka w prawo** | Edit.WordNextExtend |
-|Następne rozszerzanie kolumny programu Word| **Ctrl+Shift+Alt+Strzałka w prawo** | Edit.WordNextExtendColumn |
+|Następny program Word| **Ctrl+Strzałka w prawo** | Edit.WordNext |
+|Kolejne rozszerzenie programu Word| **Ctrl+Shift+Strzałka w prawo** | Edit.WordNextExtend |
+|Kolejne rozszerzenie kolumny programu Word| **Ctrl+Shift+Alt+Strzałka w prawo** | Edit.WordNextExtendColumn |
 |Wyraz poprzedni| **Ctrl+Strzałka w lewo** | Edit.WordPrevious |
 |Poprzednie rozszerzenie programu Word| **Ctrl+Shift+Strzałka w lewo** | Edit.WordPreviousExtend |
 |Poprzednia kolumna rozszerzenia programu Word| **Ctrl+Shift+Alt+Strzałka w lewo** | Edit.WordPreviousExtendColumn |
@@ -1158,8 +1159,8 @@ Skróty specyficzne dla tego kontekstu to:
 |Wykonywanie w trybie interaktywnym| **Alt+Enter** | EditorContextMenus.CodeWindow.ExecuteInInteractive |
 |Wykonywanie wiersza w trybie interaktywnym| **Alt+'** | EditorContextMenus.CodeWindow.ExecuteLineInInteractive |
 |Wyświetlanie w inspektorze strony| **Ctrl+K, Ctrl+G** | OtherContextMenus.HTMLContext.ViewinPageInspector |
-|Tfs annotate move next region (Adnotacje TFS : przenoszenie następnego regionu)| **Alt+PgDn** | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion |
-|Tfs annotate move previous region (Przenoszenie poprzedniego regionu przy użyciu adnotacji tfs)| **Alt+PgUp** | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |
+|TfS annotate move next region (Przenoszenie następnego regionu przy użyciu adnotacji TFS)| **Alt+PgDn** | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion |
+|TfS annotate move previous region (Przenoszenie poprzedniego regionu przy użyciu adnotacji TFS)| **Alt+PgUp** | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |
 
 ### <a name="uml-activity-diagram"></a>Diagram aktywności UML
 
@@ -1229,7 +1230,7 @@ Skróty specyficzne dla tego kontekstu to:
 |Wyrównywanie dolnej części|**Ctrl+Shift+Strzałka w dół**| Format.AlignBottoms |
 |Wyrównaj centra|**Shift+F9**| Format.AlignCenters |
 |Wyrównaj do lewej|**Ctrl+Shift+Strzałka w lewo**| Format.AlignLefts |
-|Wyrównywanie środkowych|**F9**| Format.AlignMiddles |
+|Wyrównaj środek|**F9**| Format.AlignMiddles |
 |Wyrównywanie praw|**Ctrl+Shift+Strzałka w prawo**| Format.AlignRights |
 |Wyrównaj wierzchoł|**Ctrl+Shift+Strzałka w górę**| Format.AlignTops |
 |Dolna część przycisku|**Ctrl+B**| Format.ButtonBottom |
@@ -1259,13 +1260,13 @@ Skróty specyficzne dla tego kontekstu to:
 |Narzędzie do wymazywania|**Ctrl+Shift+I**| Image.EraseTool |
 |Narzędzie wypełnione wielokropka|**Ctrl+Shift+Alt+P**| Image.FilledEllipseTool |
 |Narzędzie wypełnionego prostokąta|**Ctrl+Shift+Alt+R**| Image.FilledRectangleTool |
-|Narzędzie wypełnionego prostokąta|**Ctrl+Shift+Alt+W**| Image.FilledRoundedRectangleTool |
-|Narzędzie wypełniania|**Ctrl+F**| Image.FillTool |
+|Narzędzie wypełnionego zaokrąglonego prostokąta|**Ctrl+Shift+Alt+W**| Image.FilledRoundedRectangleTool |
+|Narzędzie fill|**Ctrl+F**| Image.FillTool |
 |Przerzucanie w poziomie|**Ctrl+H**| Image.FlipHorizontal |
 |Przerzucanie w pionie|**Shift+Alt+H**| Image.FlipVertical |
 |Większy pędzl|**Ctrl+=**| Image.LargerBrush |
-|Narzędzie liniowe|**Ctrl+L**| Image.LineTool |
-|Narzędzie powiększania|**Ctrl+M**| Image.MagnificationTool |
+|Narzędzie wiersza|**Ctrl+L**| Image.LineTool |
+|Narzędzie do powiększania|**Ctrl+M**| Image.MagnificationTool |
 |Powiększyć|**Ctrl+Shift+M**| Image.Magnify |
 |Nowy typ obrazu|**Insert**| Image.NewImageType |
 |Następny kolor|**Ctrl+]**<br /><br /> lub<br /><br /> **Ctrl+Strzałka w prawo**| Image.NextColor |
@@ -1275,13 +1276,13 @@ Skróty specyficzne dla tego kontekstu to:
 |Narzędzie z zaokrąglonym prostokątem z konturem|**Shift+Alt+W**| Image.OutlinedRoundedRectangleTool |
 |Narzędzie ołówka|**CTRL + I**| Image.PencilTool |
 |Poprzedni kolor|**Ctrl+[**<br /><br /> lub<br /><br /> **Ctrl+Strzałka w lewo**| Image.PreviousColor |
-|Poprzedni prawy kolor|**Ctrl+Shift+[**<br /><br /> lub<br /><br /> **Ctrl+Shift+Strzałka w lewo**| Image.PreviousRightColor |
+|Poprzedni kolor po prawej stronie|**Ctrl+Shift+[**<br /><br /> lub<br /><br /> **Ctrl+Shift+Strzałka w lewo**| Image.PreviousRightColor |
 |Narzędzie wyboru prostokąta|**Shift+Alt+S**| Image.RectangleSelectionTool |
 |Narzędzie prostokąta|**Alt+R**| Image.RectangleTool |
-|Obrót o 90 stopni stopnia|**Ctrl+Shift+H**| Image.Rotate90Degrees |
+|Obrót o 90 stopni stopni|**Ctrl+Shift+H**| Image.Rotate90Degrees |
 |Narzędzie zaokrąglonego prostokąta|**Alt+W**| Image.RoundedRectangleTool |
-|Pokazywanie siatki|**Ctrl+Alt+S**| Image.ShowGrid |
-|Pokazywanie siatki kafelków|**Ctrl+Shift+Alt+S**| Image.ShowTileGrid |
+|Pokaż siatkę|**Ctrl+Alt+S**| Image.ShowGrid |
+|Pokaż siatkę kafelków|**Ctrl+Shift+Alt+S**| Image.ShowTileGrid |
 |Mały pędzl|**Ctrl+.**| Image.SmallBrush |
 |Mniejszy pędzl|**Ctrl+-**| Image.SmallerBrush |
 |Narzędzie tekstowe|**Ctrl+T**| Image.TextTool |
@@ -1291,7 +1292,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="vc-string-editor"></a>Edytor ciągów VC
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenie|Skrót klawiaturowy|Identyfikator polecenia|
@@ -1300,7 +1301,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="view-designer"></a>Projektant widoków
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -1316,7 +1317,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="visual-studio"></a>Visual Studio
 
-Skróty specyficzne dla tego kontekstu to:
+Skróty specyficzne dla tego kontekstu są:
 
 
 |Polecenie|Skrót klawiaturowy|Identyfikator polecenia|
@@ -1325,7 +1326,7 @@ Skróty specyficzne dla tego kontekstu to:
 
 ### <a name="windows-forms-designer"></a>Projektant Windows Forms
 
-Skróty specyficzne dla tego kontekstu są:
+Skróty specyficzne dla tego kontekstu to:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -1351,13 +1352,13 @@ Skróty specyficzne dla tego kontekstu są:
 |Anulowanie wyboru|**Escape**| Edit.SelectionCancel |
 |Kontrola rozmiaru w dół|**Ctrl+Shift+Strzałka w dół**| Edit.SizeControlDown |
 |Kontrolka rozmiaru w lewo|**Ctrl+Shift+Strzałka w lewo**| Edit.SizeControlLeft |
-|Prawo kontroli rozmiaru|**Ctrl+Shift+Strzałka w prawo**| Edit.SizeControlRight |
+|Prawa kontrolka rozmiaru|**Ctrl+Shift+Strzałka w prawo**| Edit.SizeControlRight |
 |Kontrola rozmiaru w górę|**Ctrl+Shift+Strzałka w górę**| Edit.SizeControlUp |
 |Tabulator po lewej stronie|**Shift+Tab**| Edit.TabLeft |
 
 ### <a name="work-item-editor"></a>Edytor elementu roboczego
 
-Skróty specyficzne dla tego kontekstu są:
+Skróty specyficzne dla tego kontekstu to:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
@@ -1368,14 +1369,14 @@ Skróty specyficzne dla tego kontekstu są:
 
 ### <a name="work-item-query-view"></a>Widok zapytania o elementy robocze
 
-Skróty specyficzne dla tego kontekstu są:
+Skróty specyficzne dla tego kontekstu to:
 
 
 |Polecenia|Skróty klawiaturowe|Identyfikator polecenia|
 |-|-|-|
 |Tworzenie kopii elementu roboczego|**Shift+Alt+C**| Edit.CreateCopyofWorkItem |
 |Wcięcie|**Shift+Alt+Strzałka w prawo**| Edit.Indent |
-|Wywęzłobienie|**Shift+Alt+Strzałka w lewo**| Edit.Outdent |
+|Wcięcie|**Shift+Alt+Strzałka w lewo**| Edit.Outdent |
 |Nowy połączony element pracy|**Shift+Alt+L**| Team.NewLinkedWorkItem |
 |Odśwież|**F5**| Team.Refresh |
 |przełączanie|**Shift+Alt+V**| Window.Toggle |
@@ -1389,8 +1390,8 @@ Skróty specyficzne dla tego kontekstu to:
 |-|-|-|
 |Tworzenie kopii elementu roboczego|**Shift+Alt+C**| Edit.CreateCopyofWorkItem |
 |Wcięcie|**Shift+Alt+Strzałka w prawo**| Edit.Indent |
-|Wywęzłobienie|**Shift+Alt+Strzałka w lewo**| Edit.Outdent |
-|Goto next work item (Goto next work item)Goto next work item|**Shift+Alt+N**| Team.GotoNextWorkItem |
+|Wcięcie|**Shift+Alt+Strzałka w lewo**| Edit.Outdent |
+|Goto next work item (Goto next work item)|**Shift+Alt+N**| Team.GotoNextWorkItem |
 |Goto previous work item (Goto previous work item)|**Shift+Alt+P**| Team.GotoPreviousWorkItem |
 |Nowy połączony element pracy|**Shift+Alt+L**| Team.NewLinkedWorkItem |
 |Odśwież|**F5**| Team.Refresh |
@@ -1411,21 +1412,21 @@ Skróty specyficzne dla tego kontekstu to:
 |Szybkie informacje|**Ctrl+K, I**<br /><br /> lub<br /><br /> **Ctrl+K, Ctrl+I**| Edit.QuickInfo |
 |Zwiń|**Ctrl+E, Ctrl+C**<br /><br /> lub<br /><br /> **Ctrl+E, C**| WorkflowDesigner.Collapse |
 |Zwiń wszystko|lub| WorkflowDesigner.CollapseAll |
-|Połączenie węzłów|**Ctrl+E, Ctrl+F**<br /><br /> lub<br /><br /> **Ctrl+E, F**| WorkflowDesigner.ConnectNodes |
+|Połączenie węzłach|**Ctrl+E, Ctrl+F**<br /><br /> lub<br /><br /> **Ctrl+E, F**| WorkflowDesigner.ConnectNodes |
 |Tworzenie zmiennej|**Ctrl+E, Ctrl+N**<br /><br /> lub<br /><br /> **Ctrl+E, N**| WorkflowDesigner.CreateVariable |
 |Rozwiń wszystko|**Ctrl+E, Ctrl+X**<br /><br /> lub<br /><br /> **Ctrl+E, X**| WorkflowDesigner.ExpandAll |
-|Rozwiń w miejscu|**Ctrl+E, Ctrl+E**<br /><br /> lub<br /><br /> **Ctrl+E, E**| WorkflowDesigner.ExpandInPlace |
+|Rozwijanie w miejscu|**Ctrl+E, Ctrl+E**<br /><br /> lub<br /><br /> **Ctrl+E, E**| WorkflowDesigner.ExpandInPlace |
 |Przejdź do elementu nadrzędnego|**Ctrl+E, Ctrl+P**<br /><br /> lub<br /><br /> **Ctrl+E, P**| WorkflowDesigner.GoToParent |
 |Przenieś fokus|**Ctrl+E, Ctrl+M**<br /><br /> lub<br /><br /> **Ctrl+E, M**| WorkflowDesigner.MoveFocus |
 |Nawigowanie po projektancie|**Ctrl+Alt+F6**| WorkflowDesigner.NavigateThroughDesigner |
 |Przywracanie|**Ctrl+E, Ctrl+R**<br /><br /> lub<br /><br /> **Ctrl+E, R**| WorkflowDesigner.Restore |
 |Pokaż projektanta ukrywania argumentów|**Ctrl+E, Ctrl+A**<br /><br /> lub<br /><br /> **Ctrl+E, A**| WorkflowDesigner.ShowHideArgumentDesigner |
-|Show hide imports designer (Pokaż projektant ukrywania importów)|**Ctrl+E, Ctrl+I**<br /><br /> lub<br /><br /> **Ctrl+E, I**| WorkflowDesigner.ShowHideImportsDesigner |
-|Pokaż mapę ukrywania przeglądu|**Ctrl+E, Ctrl+O** (litera 'O')<br /><br /> lub<br /><br /> **Ctrl+E, O**| WorkflowDesigner.ShowHideOverviewMap |
+|Pokaż projektant ukrywania importów|**Ctrl+E, Ctrl+I**<br /><br /> lub<br /><br /> **Ctrl+E, I**| WorkflowDesigner.ShowHideImportsDesigner |
+|Pokaż ukrywanie mapy przeglądu|**Ctrl+E, Ctrl+O** (litera 'O')<br /><br /> lub<br /><br /> **Ctrl+E, O**| WorkflowDesigner.ShowHideOverviewMap |
 |Pokaż ukrywanie projektanta zmiennych|**Ctrl+E, Ctrl+V**<br /><br /> lub<br /><br /> **Ctrl+E, V**| WorkflowDesigner.ShowHideVariableDesigner |
 |Przełączanie zaznaczenia|**Ctrl+E, Ctrl+S**<br /><br /> lub<br /><br /> **Ctrl+E, S**| WorkflowDesigner.ToggleSelection |
 |Powiększanie|**Ctrl+Num +**| WorkflowDesigner.ZoomIn |
-|Pomniejszanie|**Ctrl+Num —**| WorkflowDesigner.ZoomOut |
+|Pomniejszanie|**Ctrl+Num -**| WorkflowDesigner.ZoomOut |
 
 ### <a name="xaml-ui-designer"></a>Projektant języka XAML
 
@@ -1446,7 +1447,7 @@ Skróty specyficzne dla tego kontekstu to:
 |Blokada (tylko blend)|**Ctrl+L**| Timeline.Lock (tylko blend) |
 |Pokaż (tylko blend)|**Ctrl+Shift+H**| Timeline.Show (tylko blend) |
 |Odblokowywanie (tylko blend)|**Ctrl+Shift+L**| Timeline.Unlock (tylko blend) |
-|Lewy ruch brzegowy w lewo|**Ctrl+Shift+,**| View.EdgeLeftMoveLeft |
+|Lewe przesuwanie krawędzi w lewo|**Ctrl+Shift+,**| View.EdgeLeftMoveLeft |
 |Przesuwanie krawędzi w lewo w prawo|**Ctrl+Shift+.**| View.EdgeLeftMoveRight |
 |Przesuwanie krawędzi w lewo w prawo|**Ctrl+Shift+Alt+,**| View.EdgeRightMoveLeft |
 |Prawe przesuwanie krawędzi w prawo|**Ctrl+Shift+Alt+.**| View.EdgeRightMoveRight |
