@@ -5,19 +5,19 @@ description: Lista wydanych wersji i numerów kompilacji dla Visual Studio posor
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 07/13/2021
+ms.date: 07/14/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: d882c7b642a64720128859b89e3bcd899bc8ab85
-ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
+ms.openlocfilehash: c92c3d7676b78ddf4505862150a90535a26e1ca6
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113756932"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201783"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 

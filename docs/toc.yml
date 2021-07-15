@@ -1427,21 +1427,23 @@
 - name: Resources
   expanded: true
   items:
-    - name: 'Visual Studio 2017: Co nowego'
-      href: ide/whats-new-visual-studio-2017.md
+    - name: 'Visual Studio 2022 r.: Co nowego'
+      href: ide/whats-new-visual-studio-2022.md
     - name: 'Visual Studio 2019: Co nowego'
       href: ide/whats-new-visual-studio-2019.md
+    - name: 'Visual Studio 2017: Co nowego'
+      href: ide/whats-new-visual-studio-2017.md
     - name: Co nowego w dokumentacji
       href: ide/whats-new-visual-studio-docs.md
     - name: Informacje o wersji
       items:
         - name: Rytm wydawania
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio z 2019 r.
+        - name: Visual Studio 2019 r.
           href: /visualstudio/releases/2019/release-notes/
         - name: Visual Studio z 2017 r.
           href: /visualstudio/releasenotes/vs2017-relnotes/
-        - name: Visual Studio dokumentów z 2015 r.
+        - name: Visual Studio z 2015 r.
           href: vs-2015-archive.md
         - name: Postanowienia licencyjne
           href: 'https://visualstudio.microsoft.com/license-terms/'
