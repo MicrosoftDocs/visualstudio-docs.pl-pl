@@ -1,6 +1,6 @@
 ---
-title: Co &apos; nowego w zestawie SDK programu Visual Studio 2017 | Microsoft Docs
-description: Zestaw Visual Studio SDK zawiera nowe i zaktualizowane funkcje programu Visual Studio 2017, w tym zaktualizowany format VSIX w wersji 3.
+title: Co &apos; nowego w zestawie SDK Visual Studio 2017 | Microsoft Docs
+description: Zestaw VISUAL STUDIO SDK zawiera nowe i zaktualizowane funkcje dla wersji Visual Studio 2017, w tym zaktualizowany format VSIX w wersji 3.
 ms.custom: SEO-VS-2020
 ms.date: 10/31/2017
 ms.topic: conceptual
@@ -10,42 +10,42 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a1e34ac23a0e6c298dae14c1613e7af0fc7b25d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0b0b7852fa7e20f4ee6951e57c5c19f4b5454028
+ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061930"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113756897"
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Co nowego w&#39;s w zestawie SDK programu Visual Studio 2017
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Co&#39;nowego w zestawie SDK Visual Studio 2017
 
-Zestaw Visual Studio SDK zawiera następujące nowe i zaktualizowane funkcje programu Visual Studio 2017.
+Zestaw Visual Studio SDK zawiera następujące nowe i zaktualizowane funkcje w wersji Visual Studio 2017.
 
 ## <a name="vsix-v3-format"></a>Format VSIX v3
 
-Aby zapewnić obsługę nowej instalacji lekkiej programu Visual Studio 2017, format manifestu rozszerzenia VSIX został zaktualizowany do wersji 3 (VSIX v3).
+W celu obsługi nowej lekkiej instalacji programu Visual Studio 2017 format manifestu rozszerzenia VSIX został zaktualizowany do wersji 3 (VSIX v3).
 
 Nowy format obsługuje:
 
-* Jawne deklarowanie wymagań wstępnych, które mają być wykrywane i instalowane przez Instalator VSIX.
-* Zestawy NGen podczas instalacji rozszerzenia.
-* Instalowanie zasobów poza zwykłym katalogiem głównym rozszerzenia.
+* Jawne deklarowanie wymagań wstępnych, które mają być wykrywane i instalowane przez program VSIXInstaller.
+* Zestawy Ngen podczas instalacji rozszerzenia.
+* Instalowanie zasobów poza zwykłym głównym rozszerzeniem.
 
 Aby dowiedzieć się więcej o tych zmianach, zobacz następujące tematy:
 
-* [Zmiany rozszerzalności dla programu Visual Studio 2017](breaking-changes-2017.md)
+* [Zmiany rozszerzalności w Visual Studio 2017 r.](breaking-changes-2017.md)
 * [Obsługa Ngen w rozszerzeniu VSIX v3](ngen-support.md)
 * [Instalowanie poza folderem rozszerzeń](set-install-root.md)
-* [Często zadawane pytania dotyczące rozszerzalności programu Visual Studio 2017](faq-2017.md)
+* [Często zadawane pytania dotyczące rozszerzalności Visual Studio 2017](faq-2017.yml)
 
-## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Migrowanie projektu rozszerzalności do programu Visual Studio 2017
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>Migrowanie projektu rozszerzalności do Visual Studio 2017 r.
 
-Aby dowiedzieć się, jak zaktualizować swoje projekty rozszerzalności i ich manifesty VSIX do programu Visual Studio 2017, zobacz [How to: Migrowanie projektów rozszerzalności do programu Visual studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Aby dowiedzieć się, jak zaktualizować projekty rozszerzalności i ich manifesty VSIX do programu Visual Studio 2017, zobacz Temat How [to: Migrate extensibility projects to Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)(Jak migrować projekty rozszerzalności do programu Visual Studio 2017).
 
 ## <a name="custom-project-and-item-templates"></a>Niestandardowe szablony projektów i elementów
 
-Począwszy od programu Visual Studio 2017, skanowanie w poszukiwaniu niestandardowych szablonów projektów i elementów nie będzie już wykonywane. Zamiast tego rozszerzenie musi dostarczyć pliki manifestu szablonu opisujące lokalizację instalacji tych szablonów. Aby zaktualizować rozszerzenia VSIX, można użyć programu Visual Studio 2017. W przypadku wdrożenia rozszerzenia przy użyciu pliku MSI musisz ręcznie wygenerować pliki manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schemat manifestu szablonu jest udokumentowany w [dokumentacji schematu manifestu szablonu programu Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+Począwszy od Visual Studio 2017 r., skanowanie w celu skanowania niestandardowych szablonów projektów i elementów nie będzie już wykonywane. Zamiast tego rozszerzenie musi dostarczać pliki manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Rozszerzenia VSIX Visual Studio 2017 można zaktualizować za pomocą programu . W przypadku wdrażania rozszerzenia przy użyciu pliku MSI należy ręcznie wygenerować pliki manifestu szablonu. Aby uzyskać więcej informacji, zobacz Upgrade custom project and item templates for Visual Studio 2017 (Uaktualnianie niestandardowych szablonów projektów i elementów [dla programu Visual Studio 2017).](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md) Schemat manifestu szablonu jest udokumentowany w Visual Studio [manifestu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
-## <a name="updated-extension-performance-guidelines"></a>Zaktualizowane wskazówki dotyczące wydajności rozszerzenia
+## <a name="updated-extension-performance-guidelines"></a>Zaktualizowane wytyczne dotyczące wydajności rozszerzeń
 
-Istnieje nowa [procedura: diagnozowanie](how-to-diagnose-extension-performance.md) artykułu dotyczącego wydajności rozszerzeń w obszarze [Zarządzanie pakietów VSPackage](managing-vspackages.md) , aby pokazać, jak wykrywać i analizować wpływ rozszerzeń na czas uruchamiania i ładowania rozwiązań w programie Visual Studio.
+W obszarze Zarządzanie [pakietami](how-to-diagnose-extension-performance.md) [VSPackage](managing-vspackages.md) znajduje się nowy artykuł Jak diagnozować wydajność rozszerzenia, aby pokazać, jak wykrywać i analizować wpływ rozszerzenia na czas uruchamiania Visual Studio ładowania rozwiązań.

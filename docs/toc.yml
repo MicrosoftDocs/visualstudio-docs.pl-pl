@@ -1437,11 +1437,11 @@
       items:
         - name: Rytm wydawania
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2019 r.
+        - name: Visual Studio z 2019 r.
           href: /visualstudio/releases/2019/release-notes/
         - name: Visual Studio z 2017 r.
           href: /visualstudio/releasenotes/vs2017-relnotes/
-        - name: Visual Studio z 2015 r.
+        - name: Visual Studio dokumentów z 2015 r.
           href: vs-2015-archive.md
         - name: Postanowienia licencyjne
           href: 'https://visualstudio.microsoft.com/license-terms/'
@@ -1467,7 +1467,7 @@
         - name: zgłaszanie problemu
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: Zgłaszanie problemu — stany i często zadawane pytania
-          href: ide/report-a-problem.md
+          href: ide/report-a-problem.yml
         - name: Szybsze rozwiązywanie problemów z wydajnością
           href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: Tworzenie minizrzutów przy użyciu stosów wywołań

@@ -9,7 +9,7 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 'Tworzenie pierwszego rozszerzenia: Hello World'
       href: extensibility-hello-world.md
-    - name: Rozszerzenia aktualizacji dla programu Visual Studio 2022 (wersja zapoznawcza)
+    - name: Aktualizowanie rozszerzeń dla programu Visual Studio 2022 (wersja zapoznawcza)
       items:
         - name: Aktualizowanie rozszerzenia
           href: migration/update-visual-studio-extension.md
@@ -17,7 +17,7 @@
           href: migration/samples.md
         - name: Kierowanie do poprzednich wersji
           href: migration/target-previous-versions.md
-        - name: 'Lista interfejsów API, które nie są istotne'
+        - name: Lista przełomowych interfejsów API
           href: migration/breaking-api-list.md
         - name: Usunięto listę interfejsów API
           href: migration/removed-api-list.md
@@ -42,7 +42,7 @@
         - name: Migrowanie rejestracji debugera COM
           href: migrate-debugger-com-registration.md
         - name: Często zadawane pytania
-          href: faq-2017.md
+          href: faq-2017.yml
     - name: Migrowanie projektów rozszerzalności do programu Visual Studio 2017
       href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
     - name: Komunikacja dwukierunkowa rozszerzeń dla programu Visual Studio

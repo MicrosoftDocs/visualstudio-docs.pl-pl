@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c38650704a0f95c14e344e7112a8b3cbe44264b6
-ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
+ms.openlocfilehash: d882c7b642a64720128859b89e3bcd899bc8ab85
+ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "113725537"
+ms.locfileid: "113756932"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +29,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla Visual Studi
 
 | **Wersja**| **Kanał** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 17.0.0 | Preview 2 | 14 lipca 2021 r. | 17.0.31512.422 |
 | 17.0.0 | Wersja zapoznawcza 1.1 | 24 czerwca 2021 r. | 17.0.31423.177 |
 | 17.0.0 | Wersja zapoznawcza 1 | 17 czerwca 2021 r. | 17.0.31410.414 |
 
