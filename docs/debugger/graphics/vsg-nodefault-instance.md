@@ -1,23 +1,23 @@
 ---
-description: Definiuje przez jego obecność, niezależnie od tego, czy jest to domyślne wystąpienie klasy klasy VsgDbg, która zapewnia interfejs przechwytywania programowego — jest dostarczany.
+description: Określa, czy jest dostarczane domyślne wystąpienie klasy VsgDbg, która udostępnia interfejs przechwytywania programowego.
 title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eccdd71c66a9f25e1b0a26f4ea851bcccb738a0b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 75bb54adb5667f3e8246034eca1075d339755785
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155249"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232417"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
-Definiuje przez jego obecność, niezależnie od tego, czy jest to domyślne wystąpienie klasy [klasy VsgDbg](vsgdbg-class.md) , która zapewnia interfejs przechwytywania programowego — jest dostarczany.
+Określa, czy jest dostarczane domyślne wystąpienie klasy [VsgDbg,](vsgdbg-class.md) która udostępnia interfejs przechwytywania programowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -26,23 +26,23 @@ Definiuje przez jego obecność, niezależnie od tego, czy jest to domyślne wys
 ```
 
 ## <a name="value"></a>Wartość
- Symbol preprocesora, który jest obecny w obecności lub nieobecności, określa, czy `VsgDbg` jest udostępniane wystąpienie domyślne klasy. Jeśli ten symbol jest zdefiniowany, nie zostanie podane żadne domyślne wystąpienie `VsgDbg` klasy; w przeciwnym razie wystąpienie domyślne jest dostarczane i inicjowane przed uruchomieniem programu.
+ Symbol preprocesora, który przez jego obecność lub brak określa, czy jest podane domyślne `VsgDbg` wystąpienie klasy. Jeśli ten symbol jest zdefiniowany, nie zostanie podane domyślne wystąpienie klasy. W przeciwnym razie przed rozpoczęciem programu zostanie podane i zainicjowane `VsgDbg` wystąpienie domyślne.
 
- Interfejs przechwytywania programistycznego jest dostarczany za pomocą wskaźnika, który ma zakres globalny, `g_pVsgDbg` .
+ Interfejs przechwytywania programowego jest dostarczany za pośrednictwem wskaźnika o zakresie globalnym, `g_pVsgDbg` .
 
 ```cpp
 VsgDbg *g_pVsgDbg;
 ```
 
 ## <a name="remarks"></a>Uwagi
- Wystąpienie domyślne jest często wystarczające, ale do korzystania z interfejsu przechwycenia programistycznego w bibliotece DLL, gdy urządzenie D3D zostało utworzone poza tą biblioteką DLL, należy utworzyć własne wystąpienie klasy i zarządzać nim `VsgDbg` . Jeśli zarządzasz własnym interfejsem do interfejsu API przechwytywania programistycznego w ten sposób, Wyłącz domyślne wystąpienie przez zdefiniowanie, `VSG_NODEFAULT_INSTANCE` Aby uniknąć narzutu.
+ Wystąpienie domyślne jest często wystarczające, ale aby użyć interfejsu przechwytywania programowego wewnątrz biblioteki DLL, gdy urządzenie D3D zostało utworzone poza biblioteką DLL, należy utworzyć własne wystąpienie klasy i zarządzać `VsgDbg` nim. Jeśli zarządzasz własnym interfejsem interfejsu API przechwytywania programowego w ten sposób, wyłącz wystąpienie domyślne przez zdefiniowanie, `VSG_NODEFAULT_INSTANCE` aby uniknąć narzutu.
 
- Jeśli wystąpienie domyślne nie jest wyłączone, zostanie automatycznie zainicjowane przed uruchomieniem programu i zostanie automatycznie zniszczone po zakończeniu działania programu. Nie jest konieczne jawne inicjowanie lub inicjowanie tego wystąpienia.
+ Jeśli domyślne wystąpienie nie jest wyłączone, jest ono automatycznie inicjowane przed rozpoczęciem programu i jest automatycznie niszczone po zakończeniu programu. Nie trzeba jawnie zainicjować ani niezainicjować tego wystąpienia.
 
- Aby wyłączyć domyślne wystąpienie, należy zdefiniować `VSG_NODEFAULT_INSTANCE` przed dołączeniem do `vsgcapture.h` programu.
+ Aby wyłączyć wystąpienie domyślne, należy zdefiniować przed `VSG_NODEFAULT_INSTANCE` dodaniem `vsgcapture.h` do programu.
 
 ## <a name="example"></a>Przykład
- Ten przykład pokazuje, jak wyłączyć domyślne wystąpienie:
+ W tym przykładzie pokazano, jak wyłączyć wystąpienie domyślne:
 
 ```cpp
 // Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h

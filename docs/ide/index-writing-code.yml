@@ -1,21 +1,21 @@
 ### YamlMime:Landing
-title: Organizowanie i edytowanie kodu w programie Visual Studio
-summary: Dowiedz się więcej o pracy z projektami kodu, przy użyciu funkcji edytora kodu i zachowaniu spójnego stylu kodu.
+title: Organizowanie i edytowanie kodu w Visual Studio
+summary: Dowiedz się więcej o pracy z projektami kodu, używaniu funkcji edytora kodu i zachowaniu spójnego stylu kodu.
 metadata:
   title: Funkcje edytora kodu
-  description: Dowiedz się więcej o funkcjach edytowania kodu w programie Visual Studio.
+  description: Dowiedz się więcej o funkcjach edytowania kodu w Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: terryglee
+  ms.author: tglee
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9879f8709aea87a72c10319de4e0c5fdb6f3ff3e
-  ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+  ms.openlocfilehash: 4c5fd5efd2c3473698c488357bbc512e8e43e993
+  ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
   ms.translationtype: MT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/19/2020
-  ms.locfileid: "92197468"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "114232885"
 landingContent:
 - title: Otwieranie lub tworzenie projektu
   linkLists:
@@ -27,23 +27,23 @@ landingContent:
       url: ../get-started/tutorial-open-project-from-repo.md
   - linkListType: how-to-guide
     links:
-    - text: Korzystanie z programu Visual Studio bez projektów i rozwiązań
+    - text: Używanie Visual Studio bez projektów ani rozwiązań
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-    - text: Korzystanie z programu Visual Studio Search
+    - text: Korzystanie z Visual Studio wyszukiwania
       url: visual-studio-search.md
-- title: Korzystanie z funkcji edytowania
+- title: Korzystanie z funkcji edycji
   linkLists:
   - linkListType: overview
     links:
     - text: Korzystanie z edytora kodu
       url: writing-code-in-the-code-and-text-editor.md
-    - text: Nawiguj po kodzie
+    - text: Nawigowanie po kodzie
       url: navigating-code.md
     - text: Generowanie i naprawianie kodu
       url: code-generation-in-visual-studio.md
-    - text: Korzystanie z funkcji IntelliSense do uzupełniania kodu
+    - text: Używanie funkcji IntelliSense do uzupełniania kodu
       url: using-intellisense.md
-    - text: Zarządzaj preferencjami stylu kodu
+    - text: Zarządzanie preferencjami stylu kodu
       url: code-styles-and-code-cleanup.md
     - text: Analiza kodu
       url: ../code-quality/roslyn-analyzers-overview.md
@@ -53,13 +53,13 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
+    - text: Wprowadzenie do języka C# i ASP.NET Core w Visual Studio
       url: ../get-started/csharp/tutorial-aspnet-core.md
-    - text: Tworzenie aplikacji konsolowej w języku C++ w programie Visual Studio
+    - text: Tworzenie aplikacji konsolowej w języku C++ w Visual Studio
       url: /cpp/get-started/tutorial-console-cpp
     - text: Wprowadzenie do języka Python w programie Visual Studio
       url: quickstart-python.md
     - text: Tworzenie aplikacji konsolowej przy użyciu Visual Basic
       url: quickstart-visual-basic-console.md
-    - text: Tworzenie aplikacji sieci Web za pomocą Node.js
+    - text: Tworzenie aplikacji internetowej za pomocą Node.js
       url: quickstart-nodejs.md

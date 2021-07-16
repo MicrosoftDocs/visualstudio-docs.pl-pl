@@ -1,12 +1,11 @@
 ---
 title: Tworzenie projektów & rozwiązań
-description: Dowiedz się, jak tworzyć rozwiązania i projekty Visual Studio używać ich do przechowywania artefaktów.
+description: Dowiedz się, jak tworzyć i używać Visual Studio i projektów do przechowywania artefaktów.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
-- VS.ToolsOptionsPages.Projects.General
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76051c2be5bf6f260c953ded3d1e10ecb676ea9
-ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
+ms.openlocfilehash: f05a940787c2ab601b0b29db8ec5004c621a16b8
+ms.sourcegitcommit: d856c46d78638be609e7045621ed1bd7521a6dcc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201809"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114283850"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Tworzenie, praca z projektami i rozwiązaniami oraz Visual Studio z projektami i rozwiązaniami
 
@@ -31,7 +30,7 @@ W tym artykule dowiesz się, jak tworzyć i używać projektów Visual Studio od
 ![Diagram przedstawiający hierarchię rozwiązania i projektu.](./media/vside-proj-soln.png)
 
 > [!NOTE]
-> Ten temat dotyczy Visual Studio na Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Create projects in Visual Studio dla komputerów Mac (Tworzenie projektów w programie Visual Studio dla komputerów Mac](/visualstudio/mac/create-new-projects)).
+> Ten temat dotyczy Visual Studio na Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz Create projects in Visual Studio dla komputerów Mac (Tworzenie [projektów w programie Visual Studio dla komputerów Mac](/visualstudio/mac/create-new-projects)).
 
 Rozwiązania i projekty można wyświetlać w oknie narzędzi o nazwie **Eksplorator rozwiązań**. Poniższy zrzut ekranu przedstawia przykładowe rozwiązanie w programie **Eksplorator rozwiązań** **(BikeSharing.Xamarin-UWP),** które zawiera dwa projekty: **BikeSharing.Clients.Core** i **BikeSharing.Clients.Windows**. Każdy projekt zawiera wiele plików, folderów i odwołań. Nazwa projektu pogrubiona to *projekt startowy*. oznacza to, że projekt, który jest uruchamiany po uruchomieniu aplikacji. Możesz określić, który projekt jest projektem startowym.
 
@@ -39,11 +38,11 @@ Rozwiązania i projekty można wyświetlać w oknie narzędzi o nazwie **Eksplor
 
 Chociaż projekt można skonstruować samodzielnie, dodając do niego niezbędne pliki, Visual Studio oferuje wybór szablonów projektów, które zapewniają początek pracy. Utworzenie nowego projektu na podstawie szablonu daje projekt z podstawowymi elementami dla tego typu projektu i można zmienić nazwy plików lub dodać do niego nowy lub istniejący kod i inne zasoby zgodnie z potrzebami.
 
-Oznacza to, że rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć kod sklonowany z usługi Git lub pobrany w innym miejscu. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu [w programie Visual Studio bez projektów lub rozwiązań).](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+Oznacza to, że rozwiązania i projekty nie są wymagane do tworzenia aplikacji w Visual Studio. Możesz również po prostu otworzyć kod sklonowany z usługi Git lub pobrany w innym miejscu. Aby uzyskać więcej informacji, zobacz Develop code in Visual Studio without projects or solutions (Tworzenie kodu [w programie Visual Studio bez projektów i rozwiązań).](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 
 ## <a name="create-a-project-from-a-project-template"></a>Tworzenie projektu na podstawie szablonu projektu
 
-Aby uzyskać informacje na temat wybierania szablonu w celu utworzenia nowego projektu, zobacz [Tworzenie nowego projektu w](create-new-project.md)Visual Studio . Aby uzyskać przykładowy projekt i rozwiązanie utworzone od podstaw, wraz z instrukcjami krok po kroku i przykładowym kodem, zobacz Introduction to projects and solutions (Wprowadzenie do projektów [i rozwiązań).](../get-started/tutorial-projects-solutions.md)
+Aby uzyskać informacje na temat wybierania szablonu w celu utworzenia nowego projektu, zobacz [Tworzenie nowego projektu w programie Visual Studio](create-new-project.md). Aby uzyskać przykładowy projekt i rozwiązanie utworzone od podstaw, wraz z instrukcjami krok po kroku i przykładowym kodem, zobacz Introduction to projects and solutions (Wprowadzenie do projektów [i rozwiązań).](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="create-a-project-from-existing-code-files"></a>Tworzenie projektu z istniejących plików kodu
 
@@ -82,7 +81,7 @@ Aby określić .NET Framework wersji, wybierz menu rozwijane **Framework** w okn
 
 ::: moniker range=">=vs-2019"
 
-Aby określić .NET Framework, wybierz menu rozwijane **Framework** na stronie **Tworzenie nowego** projektu.
+Aby określić .NET Framework wersji, wybierz menu rozwijane **Framework** na stronie **Tworzenie nowego** projektu.
 
 ![Zrzut ekranu selektora struktury w oknie dialogowym "Konfigurowanie nowego projektu".](media/vs-2019/configure-new-project-framework.png)
 
@@ -102,7 +101,7 @@ Można również tworzyć puste rozwiązania, które nie mają projektów. Może
 
 3. W środkowym okienku wybierz pozycję **Puste rozwiązanie.**
 
-4. Wprowadź **wartości** **Nazwa i Lokalizacja** dla rozwiązania, a następnie wybierz przycisk **OK.**
+4. Wprowadź **wartości** Nazwa **i Lokalizacja** dla rozwiązania, a następnie wybierz przycisk **OK.**
 
 ::: moniker-end
 
@@ -118,13 +117,13 @@ Można również tworzyć puste rozwiązania, które nie mają projektów. Może
 
 Po utworzeniu pustego rozwiązania możesz dodać do niego nowe  lub istniejące  projekty lub elementy, wybierając pozycję Dodaj nowy element lub Dodaj istniejący element w **Project** menu.
 
-Jak wspomniano wcześniej, można również otwierać pliki kodu bez konieczności użycia projektu lub rozwiązania. Aby dowiedzieć się więcej na temat tworzenia kodu w ten sposób, zobacz [Develop code in Visual Studio without projects or solutions (Tworzenie kodu w](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)programie Visual Studio bez projektów i rozwiązań).
+Jak wspomniano wcześniej, można również otwierać pliki kodu bez konieczności użycia projektu lub rozwiązania. Aby dowiedzieć się więcej na temat tworzenia kodu w ten sposób, zobacz [Develop code in Visual Studio without projects or solutions (Tworzenie](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)kodu w programie Visual Studio bez projektów i rozwiązań).
 
 ::: moniker range="vs-2017"
 
 ## <a name="create-a-temporary-project"></a>Tworzenie projektu tymczasowego
 
-(Tylko język C# i Visual Basic)
+(Tylko C# i Visual Basic)
 
 Jeśli tworzysz . Projekt oparty na sieci bez określania lokalizacji dysku jest projektem tymczasowym. Projekty tymczasowe umożliwiają eksperymentowanie z projektami .NET. W dowolnym momencie podczas pracy z projektem tymczasowym możesz go zapisać lub odrzucić.
 
