@@ -196,7 +196,7 @@
           href: ide/creating-solutions-and-projects.md
         - name: Otwieranie projektu z repo w programie Visual Studio 2017
           href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
-        - name: Otwieranie projektu z repo w programie Visual Studio 2019
+        - name: Otwieranie projektu z repo w Visual Studio 2019 r.
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 'Przenoszenie, migrowanie i uaktualnianie projektów'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -1112,8 +1112,6 @@
                   href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
                 - name: Ustawienia międzynarodowe
                   href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: Klawiatura
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
                 - name: Funkcje w wersji zapoznawczej
                   href: ide/reference/environment-preview-features-options.md
                 - name: Powiadomienia
